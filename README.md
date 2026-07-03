@@ -4,6 +4,7 @@
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
 
 ---
 
@@ -51,6 +52,15 @@ A API possui documentação interativa gerada automaticamente pelo **SpringDoc O
 | Especificação OpenAPI (JSON) | http://localhost:8080/v3/api-docs |
 
 > O acesso à documentação é público e não exige autenticação JWT.
+
+---
+
+## 🌐 Infraestrutura e Deploy
+
+O ecossistema do **LocusPark** foi projetado para alta escalabilidade, baixo custo operacional e resiliência em produção através de um modelo moderno de computação em nuvem:
+
+* **Backend (API):** Hospedado de forma Serverless no **AWS Lambda**. Para mitigar o problema de inicialização lenta (*cold start*) comum em ecossistemas Java/Spring, o projeto adota o **AWS Lambda SnapStart**. Essa tecnologia pré-inicializa a máquina virtual e armazena um snapshot criptografado da memória, permitindo que a API acorde de forma quase instantânea para processar as requisições.
+* **Frontend (Painel SPA):** Hospedado e distribuído globalmente pela **Vercel**, garantindo carregamento rápido da interface, otimização automática de pacotes e CI/CD integrado diretamente com a branch de produção.
 
 ---
 

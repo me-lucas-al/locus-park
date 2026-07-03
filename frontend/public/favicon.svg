@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 472 472" width="100%" height="100%">
+  <!-- Quadrado externo com fundo branco e borda preta espessa -->
+  <rect x="45" y="45" width="422" height="422" rx="95" ry="95" fill="#ffffff" stroke="#000000" stroke-width="48" />
+
+  <!-- Rodas/Pneus do carro -->
+  <rect x="139" y="300" width="50" height="70" rx="25" fill="#000000" />
+  <rect x="323" y="300" width="50" height="70" rx="25" fill="#000000" />
+
+  <!-- Cabine/Teto do carro -->
+  <path d="M 135,222 
+           L 173,124 
+           A 16,16 0 0,1 188,115 
+           L 324,115 
+           A 16,16 0 0,1 339,124 
+           L 377,222 Z" 
+        fill="#000000" />
+
+  <!-- Para-brisa (recorte interno da cabine) -->
+  <path d="M 173,210 
+           L 199,157 
+           A 10,10 0 0,1 208,150 
+           L 304,150 
+           A 10,10 0 0,1 313,157 
+           L 339,210 
+           A 8,8 0 0,1 331,216 
+           L 181,216 
+           A 8,8 0 0,1 173,210 Z" 
+        fill="#ffffff" />
+
+  <!-- Corpo principal do carro -->
+  <rect x="115" y="220" width="282" height="100" rx="28" fill="#000000" />
+
+  <!-- Faróis (círculos brancos) -->
+  <circle cx="163" cy="270" r="18" fill="#ffffff" />
+  <circle cx="349" cy="270" r="18" fill="#ffffff" />
+</svg>
