@@ -47,7 +47,21 @@
   <!-- Mapa de Vagas -->
   <section class="section-card">
     <div class="section-header">
-      <h2>Mapa de Vagas</h2>
+      <div class="header-title-area">
+        <h2>Mapa de Vagas</h2>
+        <div class="spots-config">
+          <label for="total-spots-input">Vagas Totais:</label>
+          <input
+            id="total-spots-input"
+            type="number"
+            min="10"
+            max="300"
+            [value]="totalSpots()"
+            (change)="updateTotalSpots($event)"
+            class="spots-input"
+          />
+        </div>
+      </div>
       <div class="parking-legend">
         <div class="legend-item">
           <span class="legend-dot free"></span>
@@ -66,23 +80,41 @@
     @if (ticketsQuery.isLoading()) {
       <div class="loading-placeholder">Carregando mapa de vagas...</div>
     } @else {
-      <div class="parking-grid">
-        @for (spot of gridSpots(); track spot.number) {
-          <div
-            class="parking-space"
-            [class.occupied]="spot.status === 'Ocupada'"
-            (click)="spot.status === 'Ocupada' && spot.ticket ? abrirModalSaida(spot.ticket) : null"
-          >
-            <span class="space-number">{{ spot.number }}</span>
-            @if (spot.status === 'Ocupada' && spot.ticket) {
-              <svg class="space-car-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h7.5m3 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h2.086c.83 0 1.545-.5 1.828-1.28l1.396-3.84a1.5 1.5 0 0 0-1.413-2.013H2.27A1.5 1.5 0 0 0 .857 13.626l1.396 3.84a1.5 1.5 0 0 0 1.828 1.28H8.25Z" />
-              </svg>
-              <span class="space-plate">{{ spot.ticket.vehicle.plate }}</span>
-            } @else {
-              <span class="space-free-label">Livre</span>
-            }
-          </div>
+      <div class="parking-grid" [style.--spots-per-row]="spotsPerRow()">
+        @for (item of layoutItems(); track $index) {
+          @if (item.type === 'corridor') {
+            <div class="parking-corridor" [style.grid-column]="'span ' + spotsPerRow()">
+              <div class="corridor-road">
+                <div class="road-dashed-line"></div>
+                <div class="corridor-direction" [class.left]="item.direction === 'left'">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="direction-arrow">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  <span>SETOR {{ item.direction === 'left' ? 'OESTE' : 'LESTE' }}</span>
+                </div>
+              </div>
+            </div>
+          } @else if (item.type === 'spot' && item.spot) {
+            <div
+              class="parking-space"
+              [class.occupied]="item.spot.status === 'Ocupada'"
+              [class.top-open]="item.orientation === 'top-open'"
+              [class.bottom-open]="item.orientation === 'bottom-open'"
+              (click)="item.spot.status === 'Ocupada' && item.spot.ticket ? abrirModalSaida(item.spot.ticket) : null"
+            >
+              <span class="space-number">{{ item.spot.number }}</span>
+              @if (item.spot.status === 'Ocupada' && item.spot.ticket) {
+                <svg class="space-car-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h7.5m3 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h2.086c.83 0 1.545-.5 1.828-1.28l1.396-3.84a1.5 1.5 0 0 0-1.413-2.013H2.27A1.5 1.5 0 0 0 .857 13.626l1.396 3.84a1.5 1.5 0 0 0 1.828 1.28H8.25Z" />
+                </svg>
+                <span class="space-plate">{{ item.spot.ticket.vehicle.plate }}</span>
+              } @else {
+                <span class="space-free-label">Livre</span>
+              }
+            </div>
+          } @else {
+            <div class="parking-space-empty"></div>
+          }
         }
       </div>
     }
