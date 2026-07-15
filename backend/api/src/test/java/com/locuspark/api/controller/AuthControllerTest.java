@@ -68,7 +68,10 @@ class AuthControllerTest {
         @DisplayName("Deve retornar 200 OK e o token no login bem-sucedido")
         void shouldLoginSuccessfully() throws Exception {
             AuthRequest request = new AuthRequest("user", "pass");
-            User mockUser = new User("user", "hashedPass", UserRole.EMPLOYEE);
+            java.util.UUID companyId = java.util.UUID.randomUUID();
+            Company mockCompany = new Company();
+            mockCompany.setId(companyId);
+            User mockUser = new User("user", "hashedPass", UserRole.EMPLOYEE, mockCompany);
             Authentication auth = mock(Authentication.class);
 
             when(auth.getPrincipal()).thenReturn(mockUser);
@@ -80,7 +83,8 @@ class AuthControllerTest {
                             .content(objectMapper.writeValueAsString(request)))
                     .andExpect(status().isOk())
                     .andExpect(jsonPath("$.token").value("fake-jwt-token"))
-                    .andExpect(jsonPath("$.username").value("user"));
+                    .andExpect(jsonPath("$.username").value("user"))
+                    .andExpect(jsonPath("$.companyId").value(companyId.toString()));
         }
 
         @Test

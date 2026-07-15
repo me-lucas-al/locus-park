@@ -50,7 +50,9 @@ public class AuthController {
 
             var token = tokenService.generateToken((User) auth.getPrincipal());
 
-            return ResponseEntity.ok(new AuthResponse(token, user.getId(), user.getUsername(), user.getRole()));
+            var companyId = user.getCompany() != null ? user.getCompany().getId() : null;
+
+            return ResponseEntity.ok(new AuthResponse(token, user.getId(), user.getUsername(), user.getRole(), companyId));
 
         } catch (BadCredentialsException e) {
             throw new InvalidCredentialsException("Usuário ou senha incorretos");
