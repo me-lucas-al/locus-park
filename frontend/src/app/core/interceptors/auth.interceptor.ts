@@ -10,7 +10,11 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const router = inject(Router);
   const authService = inject(AuthService);
 
-  if (token) {
+  const isAuthRoute = req.url.includes('/auth/login') || 
+                      req.url.includes('/auth/register') || 
+                      req.url.includes('/login');
+
+  if (token && !isAuthRoute) {
     if (isTokenExpired(token)) {
       authService.logout();
       router.navigate(['/login']);
@@ -26,7 +30,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
 
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
-      if (error.status === 401) {
+      if (error.status === 401 && !isAuthRoute) {
         authService.logout();
         router.navigate(['/login']);
       }
@@ -34,3 +38,4 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
     })
   );
 };
+
