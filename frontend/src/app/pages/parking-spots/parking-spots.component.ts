@@ -4,6 +4,8 @@ import { useTicketsQuery } from '../../core/domains/ticket/ticket.hooks';
 import { TicketResponse } from '../../core/domains/ticket/ticket.types';
 import { ModalExit } from '../../shared/components/modal-exit/modal-exit.component';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
+import { ParkingMap } from './components/parking-map/parking-map.component';
+import { ParkingSpotForm } from './components/parking-spot-form/parking-spot-form.component';
 
 interface GridSpot {
   number: number;
@@ -14,30 +16,25 @@ interface GridSpot {
 @Component({
   selector: 'app-parking-spots',
   standalone: true,
-  imports: [CommonModule, ModalExit],
+  imports: [CommonModule, ModalExit, ParkingMap, ParkingSpotForm],
   templateUrl: './parking-spots.component.html',
   styleUrl: './parking-spots.component.css',
 })
 export class ParkingSpots {
   private readonly spotAssignmentService = inject(SpotAssignmentService);
 
-  // Queries
   protected readonly ticketsQuery = useTicketsQuery();
 
-  // Constantes
   readonly totalSpots = 120;
-
-  // Modal checkout
   readonly modalOpen = signal(false);
   readonly selectedTicket = signal<TicketResponse | null>(null);
+  readonly selectedSpotForRegister = signal<number | null>(null);
 
-  // Mapeamento dinâmico das vagas de 1 a 120
   protected readonly gridSpots = computed<GridSpot[]>(() => {
     const activeTickets = this.ticketsQuery.data() || [];
     this.spotAssignmentService.cleanInactiveTickets(activeTickets);
 
     const ticketMap = new Map<number, TicketResponse>();
-    
     activeTickets.forEach((t) => {
       const spot = this.spotAssignmentService.getSpot(t);
       if (spot) {
@@ -58,10 +55,13 @@ export class ParkingSpots {
   });
 
   protected handleSpotClick(spot: GridSpot): void {
-    if (spot.ticket) {
+    if (spot.status === 'Ocupada' && spot.ticket) {
       this.selectedTicket.set(spot.ticket);
       this.modalOpen.set(true);
+      this.selectedSpotForRegister.set(null);
+      return;
     }
+    this.selectedSpotForRegister.set(spot.number);
   }
 
   protected closeCheckoutModal(): void {
@@ -71,5 +71,14 @@ export class ParkingSpots {
 
   protected handleCheckoutConfirmed(): void {
     this.ticketsQuery.refetch();
+  }
+
+  protected onFormConfirmed(): void {
+    this.ticketsQuery.refetch();
+    this.selectedSpotForRegister.set(null);
+  }
+
+  protected onFormCancel(): void {
+    this.selectedSpotForRegister.set(null);
   }
 }

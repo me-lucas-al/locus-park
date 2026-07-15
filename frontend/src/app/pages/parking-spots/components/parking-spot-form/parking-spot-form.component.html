@@ -1,0 +1,64 @@
+<div class="form-container">
+  <div class="form-header">
+    <h3>Entrada - Vaga {{ spotNumber() }}</h3>
+    <button class="close-btn" (click)="cancel.emit()">&times;</button>
+  </div>
+
+  <form (submit)="$event.preventDefault(); submitForm()">
+    <div class="form-field">
+      <label for="plate">Placa <span class="required">*</span></label>
+      <input
+        id="plate"
+        type="text"
+        [value]="plate()"
+        (input)="plate.set($any($event.target).value)"
+        placeholder="ABC-1234"
+        maxlength="8"
+        required
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="model">Modelo / Marca <span class="required">*</span></label>
+      <input
+        id="model"
+        type="text"
+        [value]="modelName()"
+        (input)="modelName.set($any($event.target).value)"
+        placeholder="Ex: Honda Civic, Toyota Corolla..."
+        required
+      />
+    </div>
+
+    <div class="form-field">
+      <label>Cor do Veículo <span class="required">*</span></label>
+      <app-color-select
+        [selectedColor]="selectedColor()"
+        (colorChange)="onColorSelect($event)"
+      />
+    </div>
+
+    @if (selectedColor() === 'outro') {
+      <div class="form-field fade-in">
+        <label for="customColor">Digite a Cor <span class="required">*</span></label>
+        <input
+          id="customColor"
+          type="text"
+          [value]="customColorName()"
+          (input)="customColorName.set($any($event.target).value)"
+          placeholder="Ex: Verde Abacate, Azul Calcinha..."
+          required
+        />
+      </div>
+    }
+
+    <div class="form-actions">
+      <button type="button" class="btn-cancel" (click)="cancel.emit()">
+        Cancelar
+      </button>
+      <button type="submit" class="btn-submit" [disabled]="isPending()">
+        {{ isPending() ? 'Salvando...' : 'Confirmar' }}
+      </button>
+    </div>
+  </form>
+</div>

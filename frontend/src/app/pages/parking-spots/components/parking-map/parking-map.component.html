@@ -1,0 +1,43 @@
+<div class="parking-lot-map">
+  <div class="map-container">
+    @for (street of streets(); track $index) {
+      <div class="parking-street">
+        <div class="parking-row top-row">
+          @for (spot of street.topSpots; track spot.number) {
+            <div
+              class="spot-box top-spot"
+              [class.free]="spot.status === 'Livre'"
+              [class.occupied]="spot.status === 'Ocupada'"
+              (click)="spotClick.emit(spot)"
+            >
+              <span class="spot-label">{{ spot.number }}</span>
+              @if (spot.status === 'Ocupada' && spot.ticket) {
+                <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+              }
+            </div>
+          }
+        </div>
+
+        <div class="street-corridor">
+          <div class="dashed-line"></div>
+        </div>
+
+        <div class="parking-row bottom-row">
+          @for (spot of street.bottomSpots; track spot.number) {
+            <div
+              class="spot-box bottom-spot"
+              [class.free]="spot.status === 'Livre'"
+              [class.occupied]="spot.status === 'Ocupada'"
+              (click)="spotClick.emit(spot)"
+            >
+              <span class="spot-label">{{ spot.number }}</span>
+              @if (spot.status === 'Ocupada' && spot.ticket) {
+                <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>
