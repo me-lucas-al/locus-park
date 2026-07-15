@@ -32,7 +32,8 @@ export class Dashboard {
   readonly veiculoSelecionado = signal<TicketResponse | null>(null);
 
   protected readonly occupiedSpotsCount = computed(() => {
-    return this.ticketsQuery.data()?.length || 0;
+    const tickets = this.ticketsQuery.data() || [];
+    return tickets.filter((t) => !t.exitedAt).length;
   });
 
   protected readonly freeSpotsCount = computed(() => {

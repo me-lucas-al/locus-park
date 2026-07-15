@@ -57,7 +57,10 @@ export class Entry implements OnInit, OnDestroy {
   readonly vehicleCustomColor = signal('');
 
 
-  protected readonly occupiedSpotsCount = computed(() => this.ticketsQuery.data()?.length || 0);
+  protected readonly occupiedSpotsCount = computed(() => {
+    const tickets = this.ticketsQuery.data() || [];
+    return tickets.filter((t) => !t.exitedAt).length;
+  });
   protected readonly freeSpotsCount = computed(() =>
     Math.max(0, this.totalSpots - this.occupiedSpotsCount()),
   );
