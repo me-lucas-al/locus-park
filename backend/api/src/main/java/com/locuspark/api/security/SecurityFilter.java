@@ -52,11 +52,15 @@ public class SecurityFilter extends OncePerRequestFilter {
         }
         try {
             var token = this.recoverToken(request);
-            String path = request.getRequestURI();
+            String path = request.getServletPath();
+            if (path == null || path.isEmpty()) {
+                path = request.getRequestURI();
+            }
 
             boolean isPublic = path.equals("/auth/login") || path.equals("/auth/register") ||
                     path.equals("/api/hello") ||
-                    path.startsWith("/v3/api-docs") || path.startsWith("/swagger-ui");
+                    path.startsWith("/v3/api-docs") || path.startsWith("/swagger-ui") ||
+                    path.startsWith("/swagger-resources") || path.startsWith("/webjars");
 
             if (token == null && !isPublic) {
                 throw new TokenMissingException("Token não fornecido ou cabeçalho Authorization ausente.");
