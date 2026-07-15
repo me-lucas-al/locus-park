@@ -175,28 +175,32 @@
 }
 
 .parking-grid {
-  padding: 32px;
+  padding: 24px;
   display: grid;
   grid-template-columns: repeat(var(--spots-per-row, 10), 1fr);
-  gap: 12px 8px;
-  background: #1e293b; /* Asfalto cinza escuro */
-  border-radius: 16px;
-  border: 8px solid #0f172a; /* Meio-fio escuro do estacionamento */
+  gap: 16px 2px;
+  background: #ececec; /* Piso de concreto cinza claro realístico */
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0),
+                    radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px; /* Textura sutil de cimento */
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
   position: relative;
   overflow-x: auto;
   min-width: 100%;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.025);
 }
 
 .parking-corridor {
-  height: 52px;
-  background-color: #0f172a; /* Pista de tráfego de asfalto escuro */
+  height: 48px;
+  background-color: transparent; /* Integrado ao concreto geral */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 6px -32px;
-  padding: 0 32px;
+  margin: 6px -24px;
+  padding: 0 24px;
 }
 
 .corridor-road {
@@ -213,27 +217,27 @@
   left: 0;
   right: 0;
   height: 0;
-  border-top: 2px dashed #f59e0b; /* Faixa amarela de divisão do tráfego */
+  border-top: 3px dashed #eab308; /* Faixa amarela de trânsito bem visível */
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .corridor-direction {
   position: relative;
-  background: rgba(15, 23, 42, 0.9);
-  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3px 12px;
   border-radius: 999px;
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #f59e0b;
+  color: #ca8a04;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.8px;
-  border: 1px solid rgba(245, 158, 11, 0.35);
+  border: 1px solid rgba(202, 138, 4, 0.3);
   z-index: 2;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .direction-arrow {
@@ -246,115 +250,87 @@
 }
 
 .parking-space {
-  height: 80px;
-  min-width: 60px;
+  height: 60px;
+  min-width: 90px;
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  background: #334155; /* Cor da vaga (asfalto mais claro) */
-  color: #ffffff;
-  padding: 8px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  transition: all 0.15s ease-in-out;
+  background: transparent; /* Piso integrado ao grid */
+  color: #1e293b;
+  padding: 4px;
 }
 
-/* Marcação de vaga - fileira superior (abre para cima em direção ao corredor superior) */
+/* Marcação de vaga - fileira superior (apenas linhas divisórias brancas verticais) */
 .parking-space.top-open {
-  border-left: 2px dashed rgba(255, 255, 255, 0.4);
-  border-right: 2px dashed rgba(255, 255, 255, 0.4);
-  border-bottom: 4px solid #ffffff; /* Fundo da vaga fechado com linha branca pintada */
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: none;
   border-top: none;
-  border-radius: 0 0 6px 6px;
 }
 
-/* Marcação de vaga - fileira inferior (abre para baixo em direção ao corredor inferior) */
+/* Marcação de vaga - fileira inferior (apenas linhas divisórias brancas verticais) */
 .parking-space.bottom-open {
-  border-left: 2px dashed rgba(255, 255, 255, 0.4);
-  border-right: 2px dashed rgba(255, 255, 255, 0.4);
-  border-top: 4px solid #ffffff; /* Fundo da vaga fechado com linha branca pintada */
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-top: none;
   border-bottom: none;
-  border-radius: 6px 6px 0 0;
 }
 
 .parking-space:hover {
-  background: #475569;
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
   z-index: 5;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .parking-space.occupied {
-  background: #1e293b;
-  color: #ffffff;
-  box-shadow: inset 0 0 12px rgba(0,0,0,0.6);
-}
-
-.parking-space.occupied.top-open {
-  border-bottom-color: #ef4444; /* Linha de fundo vermelha indicando ocupação */
-  border-left-color: rgba(239, 68, 68, 0.3);
-  border-right-color: rgba(239, 68, 68, 0.3);
-}
-
-.parking-space.occupied.bottom-open {
-  border-top-color: #ef4444; /* Linha de fundo vermelha indicando ocupação */
-  border-left-color: rgba(239, 68, 68, 0.3);
-  border-right-color: rgba(239, 68, 68, 0.3);
+  background: transparent;
 }
 
 .space-number {
-  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
   font-weight: 800;
-  color: #94a3b8;
+  color: #1e293b;
   letter-spacing: 0.5px;
+  z-index: 10;
+  pointer-events: none;
+  /* Contorno branco para garantir legibilidade por cima do carro ou concreto */
+  text-shadow: -1.5px -1.5px 0 #ffffff, 
+                1.5px -1.5px 0 #ffffff, 
+               -1.5px 1.5px 0 #ffffff, 
+                1.5px 1.5px 0 #ffffff;
 }
 
 .parking-space.occupied .space-number {
-  color: #64748b;
-}
-
-.space-plate {
-  font-size: 9px;
-  font-weight: 700;
-  color: #ffffff;
-  background: #ef4444; /* Placa em fundo vermelho para fácil identificação */
-  padding: 1px 5px;
-  border-radius: 3px;
-  letter-spacing: 0.3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-.space-free-label {
-  font-size: 9px;
-  font-weight: 700;
-  color: #10b981; /* Verde esmeralda brilhante para Livre */
-  background: rgba(16, 185, 129, 0.15);
-  padding: 1px 5px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  color: #0f172a;
 }
 
 .space-car-icon {
-  width: 22px;
-  height: 22px;
-  color: #ef4444; /* Veículo vermelho */
-  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.4));
-  animation: carSettle 0.25s ease-out;
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.22)); /* Sombra 3D realista */
+  z-index: 2;
+  pointer-events: none;
+  animation: carSettle 0.2s ease-out;
 }
 
 .parking-space-empty {
-  height: 80px;
+  height: 60px;
   background: transparent;
   pointer-events: none;
 }
 
 @keyframes carSettle {
-  0% { transform: scale(0.85) translateY(-4px); opacity: 0; }
-  100% { transform: scale(1) translateY(0); opacity: 1; }
+  0% { transform: scale(0.9) opacity: 0; }
+  100% { transform: scale(1) opacity: 1; }
 }
 
 .stat-icon.red img {

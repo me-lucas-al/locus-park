@@ -257,3 +257,122 @@
   border-radius: 999px;
   transition: width 0.3s ease;
 }
+
+/* Estilos do Seletor de Cores Customizado */
+.color-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.color-select-input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  height: 42px;
+  cursor: text;
+  transition: all 0.15s ease;
+}
+
+.color-select-input-wrapper:focus-within {
+  border-color: #0f172a;
+  box-shadow: 0 0 0 1px #0f172a;
+}
+
+.color-indicator-badge {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.color-search-input {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  flex: 1;
+  height: 100%;
+  font-size: 0.875rem;
+  color: #0f172a;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.dropdown-chevron {
+  width: 18px;
+  height: 18px;
+  color: #64748b;
+  margin-left: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-select-input-wrapper:focus-within .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.color-dropdown-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.color-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.color-dropdown-item:hover {
+  background-color: #f1f5f9;
+}
+
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  margin-right: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.color-name {
+  font-size: 0.875rem;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.color-dropdown-no-results {
+  padding: 12px 14px;
+  font-size: 0.875rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.custom-color-field {
+  margin-top: 4px;
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

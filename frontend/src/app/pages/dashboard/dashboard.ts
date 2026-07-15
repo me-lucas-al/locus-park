@@ -179,7 +179,65 @@ export class Dashboard {
     return this.spotAssignmentService.getSpot(ticket);
   }
 
-
+  protected obterCorHex(ticket: TicketResponse | null): string {
+    if (!ticket || !ticket.vehicle) return '#FFFFFF';
+    const cor = ticket.vehicle.color?.toLowerCase().trim();
+    if (!cor) return '#FFFFFF';
+    
+    // Se for hexadecimal direto
+    if (cor.startsWith('#')) return cor;
+    
+    // Mapeamento de cores automotivas brasileiras
+    const coresMap: Record<string, string> = {
+      branco: '#FFFFFF',
+      creme: '#FFFDD0',
+      prata: '#C0C0C0',
+      cinza: '#708090',
+      grafite: '#4F5D65',
+      chumbo: '#374151',
+      preto: '#1C1C1C',
+      vermelho: '#D32F2F',
+      vinho: '#58111A',
+      rosa: '#FF69B4',
+      roxo: '#4B0082',
+      azul_claro: '#7EC8E3',
+      azul_royal: '#0040FF',
+      azul: '#1C3B57',
+      ciano: '#00A896',
+      verde_claro: '#A3E635',
+      verde: '#1B4D3E',
+      verde_militar: '#4B5320',
+      bege: '#F5F5DC',
+      champanhe: '#EEDC82',
+      dourado: '#D4AF37',
+      bronze: '#A87C43',
+      marrom: '#5C4033',
+      amarelo: '#F9A602',
+      laranja: '#E65C00',
+      outro: '#5A5A5A'
+    };
+    
+    if (coresMap[cor]) {
+      return coresMap[cor];
+    }
+    
+    // Se for 'n/a' ou não listado, geramos um hexadecimal determinístico bonito baseado na placa
+    const plate = ticket.vehicle.plate || '';
+    if (plate && plate !== 'N/A') {
+      const coresDisponiveis = [
+        '#FFFFFF', '#C0C0C0', '#708090', '#1C1C1C', '#D32F2F', 
+        '#1C3B57', '#1B4D3E', '#F5F5DC', '#A87C43', '#5C4033'
+      ];
+      let hash = 0;
+      for (let i = 0; i < plate.length; i++) {
+        hash = plate.charCodeAt(i) + ((hash << 5) - hash);
+      }
+      const index = Math.abs(hash) % coresDisponiveis.length;
+      return coresDisponiveis[index];
+    }
+    
+    return '#5A5A5A'; // Neutro padrão para outros casos
+  }
 
   protected formatarDataAtual(): string {
     const data = new Date();

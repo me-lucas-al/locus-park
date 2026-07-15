@@ -53,6 +53,57 @@
             />
           </div>
 
+          <!-- Campo de Seleção de Cor Inteligente com Filtro -->
+          <div class="form-field">
+            <label>Cor do Veículo <span class="required">*</span></label>
+            <div class="color-select-container">
+              <div class="color-select-input-wrapper">
+                <span class="color-indicator-badge" [style.background-color]="obterHexDaCor(selectedColor())"></span>
+                <input
+                  type="text"
+                  placeholder="Digite para filtrar as cores..."
+                  [value]="colorSearchQuery()"
+                  (input)="onColorSearchInput($event)"
+                  (focus)="openColorDropdown()"
+                  (blur)="closeColorDropdown()"
+                  class="color-search-input"
+                />
+                <svg class="dropdown-chevron" (click)="toggleColorDropdown()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              
+              @if (colorDropdownOpen()) {
+                <div class="color-dropdown-list">
+                  @for (cor of filteredColors(); track cor.key) {
+                    <div class="color-dropdown-item" (mousedown)="selectColorOption(cor.key)">
+                      <span class="color-dot" [style.background-color]="cor.hex"></span>
+                      <span class="color-name">{{ cor.label }}</span>
+                    </div>
+                  }
+                  @if (filteredColors().length === 0) {
+                    <div class="color-dropdown-no-results">Nenhuma cor encontrada</div>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+
+          <!-- Input Reativo para Cor Customizada (Outro) -->
+          @if (selectedColor() === 'outro') {
+            <div class="form-field custom-color-field">
+              <label for="customColor">Especifique a Cor Customizada <span class="required">*</span></label>
+              <input
+                id="customColor"
+                type="text"
+                [value]="customColor()"
+                (input)="customColor.set($any($event.target).value)"
+                placeholder="Ex: Verde Abacate, Azul Metálico..."
+                required
+              />
+            </div>
+          }
+
           <div class="form-field">
             <label for="selectedSpot">Número da Vaga <span class="required">*</span></label>
             <select
