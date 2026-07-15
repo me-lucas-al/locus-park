@@ -84,8 +84,7 @@ public class UserService {
 
     @Transactional(readOnly = true)
     public List<UserResponse> listAllByCompany(UUID companyId) {
-        return userRepository.findAll().stream()
-                .filter(u -> u.getCompany() != null && u.getCompany().getId().equals(companyId))
+        return userRepository.findByCompanyId(companyId).stream()
                 .map(userMapper::toResponse)
                 .collect(Collectors.toList());
     }
