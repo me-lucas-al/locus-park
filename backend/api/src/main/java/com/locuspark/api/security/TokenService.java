@@ -25,6 +25,7 @@ public class TokenService {
             return JWT.create()
                     .withIssuer("locuspark-api")
                     .withSubject(user.getUsername())
+                    .withClaim("role", user.getRole().name())
                     .withExpiresAt(generateExpirationDate())
                     .sign(algorithm);
         } catch (JWTCreationException exception) {

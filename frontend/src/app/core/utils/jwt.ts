@@ -44,6 +44,12 @@ export function decodeToken(token: string | null): any {
 }
 
 export function isAdmin(): boolean {
+  const localRole = localStorage.getItem('role');
+  if (localRole) {
+    const uRole = localRole.toUpperCase();
+    return uRole === 'ADMIN' || uRole === 'SUPERADMIN';
+  }
+
   const token = localStorage.getItem('token');
   if (!token) return false;
   try {
