@@ -13,7 +13,7 @@ import { SpotAssignmentService } from '../../../../shared/services/spot-assignme
   standalone: true,
   imports: [CommonModule, FormsModule, ColorSelect],
   templateUrl: './parking-spot-form.component.html',
-  styleUrl: './parking-spot-form.component.css'
+  styleUrl: './parking-spot-form.component.css',
 })
 export class ParkingSpotForm {
   private readonly toastService = inject(ToastService);
@@ -29,8 +29,8 @@ export class ParkingSpotForm {
   protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
 
-  protected readonly isPending = computed(() => 
-    this.createVehicleMutation.isPending() || this.checkInMutation.isPending()
+  protected readonly isPending = computed(
+    () => this.createVehicleMutation.isPending() || this.checkInMutation.isPending(),
   );
 
   protected readonly plate = signal('');
@@ -45,7 +45,8 @@ export class ParkingSpotForm {
   protected submitForm(): void {
     const rawPlate = this.plate().toUpperCase().trim();
     const model = this.modelName().trim();
-    const color = this.selectedColor() === 'outro' ? this.customColorName().trim() : this.selectedColor();
+    const color =
+      this.selectedColor() === 'outro' ? this.customColorName().trim() : this.selectedColor();
 
     if (!rawPlate) {
       this.toastService.error('Placa do veículo é obrigatória.');
@@ -67,14 +68,16 @@ export class ParkingSpotForm {
           this.checkInMutation.mutate(vehicleResponse.id, {
             onSuccess: (ticketResponse) => {
               this.spotAssignmentService.assignSpot(ticketResponse.id, this.spotNumber());
-              this.toastService.success(`Entrada registrada com sucesso na vaga ${this.spotNumber()}!`);
+              this.toastService.success(
+                `Entrada registrada com sucesso na vaga ${this.spotNumber()}!`,
+              );
               this.confirmed.emit();
             },
-            onError: () => this.toastService.error('Erro ao realizar check-in do veículo.')
+            onError: () => this.toastService.error('Erro ao realizar check-in do veículo.'),
           });
         },
-        onError: () => this.toastService.error('Erro ao cadastrar veículo.')
-      }
+        onError: () => this.toastService.error('Erro ao cadastrar veículo.'),
+      },
     );
   }
 }

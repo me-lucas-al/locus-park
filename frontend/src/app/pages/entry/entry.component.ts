@@ -27,7 +27,9 @@ export class Entry implements OnInit, OnDestroy {
   protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
   protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
-  protected readonly isConfirming = computed(() => this.createVehicleMutation.isPending() || this.checkInMutation.isPending());
+  protected readonly isConfirming = computed(
+    () => this.createVehicleMutation.isPending() || this.checkInMutation.isPending(),
+  );
 
   readonly timeString = signal('');
   readonly dateString = signal('');
@@ -43,11 +45,15 @@ export class Entry implements OnInit, OnDestroy {
   readonly vehicleCustomColor = signal('');
 
   protected readonly occupiedSpotsCount = computed(() => this.ticketsQuery.data()?.length || 0);
-  protected readonly freeSpotsCount = computed(() => Math.max(0, this.totalSpots - this.occupiedSpotsCount()));
+  protected readonly freeSpotsCount = computed(() =>
+    Math.max(0, this.totalSpots - this.occupiedSpotsCount()),
+  );
 
   protected readonly availableSpots = computed<SpotOption[]>(() => {
     const activeTickets = this.ticketsQuery.data() || [];
-    const occupiedNumbers = new Set(activeTickets.map(t => this.spotAssignmentService.getSpot(t)));
+    const occupiedNumbers = new Set(
+      activeTickets.map((t) => this.spotAssignmentService.getSpot(t)),
+    );
     const options: SpotOption[] = [];
     for (let i = 1; i <= this.totalSpots; i++) {
       if (!occupiedNumbers.has(i)) {
@@ -68,8 +74,14 @@ export class Entry implements OnInit, OnDestroy {
 
   private updateClock(): void {
     const now = new Date();
-    this.timeString.set(now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
-    const date = now.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' });
+    this.timeString.set(
+      now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
+    );
+    const date = now.toLocaleDateString('pt-BR', {
+      weekday: 'long',
+      day: '2-digit',
+      month: 'long',
+    });
     this.dateString.set(date.charAt(0).toUpperCase() + date.slice(1));
   }
 
@@ -82,7 +94,8 @@ export class Entry implements OnInit, OnDestroy {
     if (!model) return this.toastService.error('Modelo/Marca do veículo é obrigatório.');
     if (spot <= 0) return this.toastService.error('Selecione uma vaga disponível.');
 
-    const colorValue = this.vehicleColor() === 'outro' ? this.vehicleCustomColor().trim() : this.vehicleColor();
+    const colorValue =
+      this.vehicleColor() === 'outro' ? this.vehicleCustomColor().trim() : this.vehicleColor();
     this.createVehicleMutation.mutate(
       { plate: rawPlate, model, color: colorValue || 'outro' },
       {
@@ -93,11 +106,14 @@ export class Entry implements OnInit, OnDestroy {
               this.toastService.success(`Entrada registrada na Vaga ${spot}!`);
               this.resetForm();
             },
-            onError: () => this.toastService.error('Erro ao registrar entrada do veículo.')
+            onError: () => this.toastService.error('Erro ao registrar entrada do veículo.'),
           });
         },
-        onError: () => this.toastService.error('Erro ao cadastrar veículo. Verifique se a placa já está no sistema.')
-      }
+        onError: () =>
+          this.toastService.error(
+            'Erro ao cadastrar veículo. Verifique se a placa já está no sistema.',
+          ),
+      },
     );
   }
 
