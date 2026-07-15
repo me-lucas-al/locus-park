@@ -78,10 +78,9 @@
     @if (ticketsQuery.isLoading()) {
       <div class="loading-placeholder">Carregando mapa de vagas...</div>
     } @else {
-      <app-parking-grid
-        [tickets]="ticketsQuery.data() || []"
-        [totalSpots]="totalSpots()"
-        (spotClick)="openCheckoutModal($event)"
+      <app-parking-map
+        [spots]="gridSpots()"
+        (spotClick)="handleSpotClick($event)"
       />
     }
   </section>
