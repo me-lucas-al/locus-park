@@ -5,13 +5,15 @@ import { ColorSelect } from '../color-select/color-select.component';
 import { useCheckInMutation } from '../../../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../../../core/domains/user/user.hooks';
+import { useTariffQuery } from '../../../../core/domains/tariff/tariff.hooks';
+import { RouterModule } from '@angular/router';
 import { ToastService } from '../../../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../../../shared/services/spot-assignment.service';
 
 @Component({
   selector: 'app-parking-spot-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ColorSelect],
+  imports: [CommonModule, FormsModule, ColorSelect, RouterModule],
   templateUrl: './parking-spot-form.component.html',
   styleUrl: './parking-spot-form.component.css',
 })
@@ -28,6 +30,15 @@ export class ParkingSpotForm {
 
   protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
+  protected readonly tariffQuery = useTariffQuery();
+
+  protected readonly isTariffConfigured = computed(() => {
+    return !this.tariffQuery.isError() && !!this.tariffQuery.data();
+  });
+
+  protected readonly isEntryBlocked = computed(() => {
+    return !this.tariffQuery.isLoading() && !this.isTariffConfigured();
+  });
 
   protected readonly isPending = computed(
     () => this.createVehicleMutation.isPending() || this.checkInMutation.isPending(),
@@ -44,6 +55,11 @@ export class ParkingSpotForm {
   }
 
   protected submitForm(): void {
+    if (this.isEntryBlocked()) {
+      this.toastService.error('Não é possível registrar entrada. Configure os preços do estacionamento primeiro.');
+      return;
+    }
+
     const rawPlate = this.plate().toUpperCase().trim();
     const model = this.modelName().trim();
     const color =

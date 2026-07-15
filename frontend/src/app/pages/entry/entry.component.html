@@ -4,6 +4,20 @@
       <h1>Entrada de Veículos</h1>
     </div>
 
+    @if (isEntryBlocked()) {
+      <div class="tariff-warning-alert">
+        <div class="tariff-warning-content">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#ea580c" class="alert-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+          </svg>
+          <div>
+            <h3>Preços não configurados</h3>
+            <p>Não é possível registrar entradas de veículos sem antes definir os preços do estacionamento. <a routerLink="/settings-price">Configurar tarifas agora</a>.</p>
+          </div>
+        </div>
+      </div>
+    }
+
     <div class="form-card">
       <div class="form-card-header">
         <h2>Dados do Veículo</h2>
@@ -91,7 +105,7 @@
             </button>
           </div>
 
-          <button type="submit" class="btn-confirmar" [appLoading]="isConfirming()" loadingText="Confirmando...">
+          <button type="submit" class="btn-confirmar" [disabled]="isEntryBlocked()" [appLoading]="isConfirming()" loadingText="Confirmando...">
             Confirmar Entrada
           </button>
         </form>

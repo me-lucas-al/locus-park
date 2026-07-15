@@ -1,7 +1,9 @@
 export interface TariffConfigurationRequest {
-  firstHourRate: number;
-  additionalHourRate: number;
-  gracePeriodMinutes: number;
+  toleranceMinutes: number;
+  firstHourValue: number;
+  additionalFractionValue: number;
+  overnightFee: number;
+  lostTicketFee: number;
 }
 
 export interface TariffConfigurationResponse {
@@ -15,9 +17,9 @@ export interface TariffConfigurationResponse {
 }
 
 export interface PricingConfigurationRequest {
-  timeFractioningMinutes: number;
-  monthlyMemberFee: number;
-  overnightStayFee: number;
+  dailyTriggerHours: number;
+  dailyValue: number;
+  monthlyBaseValue: number;
 }
 
 export interface PricingConfigurationResponse {

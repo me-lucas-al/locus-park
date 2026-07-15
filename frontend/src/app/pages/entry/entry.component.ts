@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { useTicketsQuery, useCheckInMutation } from '../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
+import { useTariffQuery } from '../../core/domains/tariff/tariff.hooks';
+import { RouterModule } from '@angular/router';
 import { ToastService } from '../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
 import { LoadingDirective } from '../../shared/directives/loading.directive';
@@ -13,7 +15,7 @@ import { SpotOption } from './entry.types';
 @Component({
   selector: 'app-entry',
   standalone: true,
-  imports: [CommonModule, FormsModule, LoadingDirective, ColorSelectComponent],
+  imports: [CommonModule, FormsModule, LoadingDirective, ColorSelectComponent, RouterModule],
   templateUrl: './entry.component.html',
   styleUrl: './entry.component.css',
 })
@@ -27,6 +29,16 @@ export class Entry implements OnInit, OnDestroy {
   protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
   protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
+  protected readonly tariffQuery = useTariffQuery();
+
+  protected readonly isTariffConfigured = computed(() => {
+    return !this.tariffQuery.isError() && !!this.tariffQuery.data();
+  });
+
+  protected readonly isEntryBlocked = computed(() => {
+    return !this.tariffQuery.isLoading() && !this.isTariffConfigured();
+  });
+
   protected readonly isConfirming = computed(
     () => this.createVehicleMutation.isPending() || this.checkInMutation.isPending(),
   );
@@ -87,6 +99,11 @@ export class Entry implements OnInit, OnDestroy {
   }
 
   protected confirmEntry(): void {
+    if (this.isEntryBlocked()) {
+      this.toastService.error('Não é possível registrar entrada. Configure os preços do estacionamento primeiro.');
+      return;
+    }
+
     const rawPlate = this.plate().toUpperCase().trim();
     const model = this.modelName().trim();
     const spot = this.selectedSpot();

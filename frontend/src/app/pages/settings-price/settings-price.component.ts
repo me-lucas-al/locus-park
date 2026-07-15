@@ -72,6 +72,7 @@ export class SettingsPrice {
         this.firstHourRate.set(tariff.firstHourValue);
         this.additionalHourRate.set(tariff.additionalFractionValue);
         this.gracePeriodMinutes.set(tariff.toleranceMinutes);
+        this.overnightStayFee.set(tariff.overnightFee);
       }
     });
 
@@ -79,7 +80,7 @@ export class SettingsPrice {
     effect(() => {
       const pricing = this.pricingQuery.data();
       if (pricing) {
-        this.timeFractioningMinutes.set(pricing.dailyTriggerHours * 5); // Simulação ou valor real
+        this.dailyTriggerHours.set(pricing.dailyTriggerHours);
         this.dailyValue.set(pricing.dailyValue);
         this.monthlyMemberFee.set(pricing.monthlyBaseValue);
       }
@@ -94,18 +95,20 @@ export class SettingsPrice {
     // Mutar tarifas
     this.updateTariffMutation.mutate(
       {
-        firstHourRate: this.firstHourRate(),
-        additionalHourRate: this.additionalHourRate(),
-        gracePeriodMinutes: this.gracePeriodMinutes(),
+        firstHourValue: this.firstHourRate(),
+        additionalFractionValue: this.additionalHourRate(),
+        toleranceMinutes: this.gracePeriodMinutes(),
+        overnightFee: this.overnightStayFee(),
+        lostTicketFee: 30.00, // Passando valor padrão de perda de ticket
       },
       {
         onSuccess: () => {
           // Mutar pricing
           this.updatePricingMutation.mutate(
             {
-              timeFractioningMinutes: this.timeFractioningMinutes(),
-              monthlyMemberFee: this.monthlyMemberFee(),
-              overnightStayFee: this.overnightStayFee(),
+              dailyTriggerHours: this.dailyTriggerHours(),
+              dailyValue: this.dailyValue(),
+              monthlyBaseValue: this.monthlyMemberFee(),
             },
             {
               onSuccess: () => {

@@ -20,7 +20,11 @@ const mockTariffResponse: TariffConfigurationResponse = {
 };
 
 const mockTariffRequest: TariffConfigurationRequest = {
-  firstHourRate: 10, additionalHourRate: 5, gracePeriodMinutes: 10,
+  toleranceMinutes: 10,
+  firstHourValue: 10,
+  additionalFractionValue: 5,
+  overnightFee: 50,
+  lostTicketFee: 30,
 };
 
 const mockPricingResponse: PricingConfigurationResponse = {
@@ -28,7 +32,9 @@ const mockPricingResponse: PricingConfigurationResponse = {
 };
 
 const mockPricingRequest: PricingConfigurationRequest = {
-  timeFractioningMinutes: 15, monthlyMemberFee: 300, overnightStayFee: 80,
+  dailyTriggerHours: 12,
+  dailyValue: 80,
+  monthlyBaseValue: 300,
 };
 
 describe('TariffService', () => {
