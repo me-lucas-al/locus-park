@@ -3,10 +3,13 @@ package com.locuspark.api.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.locuspark.api.dto.request.AuthRequest;
 import com.locuspark.api.dto.request.RegisterRequest;
+import com.locuspark.api.entity.Company;
 import com.locuspark.api.entity.User;
 import com.locuspark.api.enums.UserRole;
 import com.locuspark.api.repository.UserRepository;
 import com.locuspark.api.security.TokenService;
+import com.locuspark.api.service.CompanyService;
+import com.locuspark.api.repository.CompanyRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -51,6 +54,12 @@ class AuthControllerTest {
     @MockitoBean
     private PasswordEncoder passwordEncoder;
 
+    @MockitoBean
+    private CompanyService companyService;
+
+    @MockitoBean
+    private CompanyRepository companyRepository;
+
     @Nested
     @DisplayName("Fluxo de Login")
     class LoginTests {
@@ -94,9 +103,14 @@ class AuthControllerTest {
         @Test
         @DisplayName("Deve retornar 201 Created quando o registo é bem-sucedido")
         void shouldRegisterSuccessfully() throws Exception {
-            RegisterRequest request = new RegisterRequest("newuser", "password123", java.util.UUID.randomUUID());
+            java.util.UUID companyId = java.util.UUID.randomUUID();
+            RegisterRequest request = new RegisterRequest("newuser", "password123", companyId);
+            Company mockCompany = new Company();
+            mockCompany.setId(companyId);
+
             when(userRepository.findByUsername("newuser")).thenReturn(null);
             when(passwordEncoder.encode("password123")).thenReturn("hashedPass");
+            when(companyRepository.findById(companyId)).thenReturn(java.util.Optional.of(mockCompany));
 
             mockMvc.perform(post("/auth/register")
                             .contentType(MediaType.APPLICATION_JSON)

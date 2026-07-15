@@ -14,5 +14,13 @@ public record RegisterRequest(
         @Size(min = 6, message = "A senha deve ter no mínimo 6 caracteres")
         String password,
 
-        UUID companyId
-) {}
+        UUID companyId,
+
+        String companyName,
+        String cnpj,
+        Integer totalSpots
+) {
+    public RegisterRequest(String username, String password, UUID companyId) {
+        this(username, password, companyId, null, null, null);
+    }
+}
