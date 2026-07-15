@@ -2,6 +2,7 @@ package com.locuspark.api.dto.request;
 
 import com.locuspark.api.enums.VehicleType;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import java.util.UUID;
 
 public record VehicleRequest(
@@ -14,8 +15,9 @@ public record VehicleRequest(
         @NotBlank(message = "A cor do veículo é obrigatória")
         String color,
 
-        @NotBlank(message = "O tipo do veículo é obrigatório")
+        @NotNull(message = "O tipo do veículo é obrigatório")
         VehicleType type,
 
         UUID clientId
 ) {}
+

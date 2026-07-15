@@ -35,6 +35,7 @@ export class ParkingSpotForm {
 
   protected readonly plate = signal('');
   protected readonly modelName = signal('');
+  protected readonly vehicleType = signal<'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK'>('CAR');
   protected readonly selectedColor = signal('branco');
   protected readonly customColorName = signal('');
 
@@ -62,7 +63,7 @@ export class ParkingSpotForm {
     }
 
     this.createVehicleMutation.mutate(
-      { plate: rawPlate, model, color },
+      { plate: rawPlate, model, color, type: this.vehicleType() },
       {
         onSuccess: (vehicleResponse) => {
           this.checkInMutation.mutate(vehicleResponse.id, {

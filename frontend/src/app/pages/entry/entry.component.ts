@@ -38,11 +38,12 @@ export class Entry implements OnInit, OnDestroy {
 
   readonly plate = signal('');
   readonly modelName = signal('');
-  readonly vehicleType = signal('Carro');
+  readonly vehicleType = signal<'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK'>('CAR');
   readonly selectedSpot = signal(0);
   readonly isMonthly = signal(false);
   readonly vehicleColor = signal('branco');
   readonly vehicleCustomColor = signal('');
+
 
   protected readonly occupiedSpotsCount = computed(() => this.ticketsQuery.data()?.length || 0);
   protected readonly freeSpotsCount = computed(() =>
@@ -97,7 +98,7 @@ export class Entry implements OnInit, OnDestroy {
     const colorValue =
       this.vehicleColor() === 'outro' ? this.vehicleCustomColor().trim() : this.vehicleColor();
     this.createVehicleMutation.mutate(
-      { plate: rawPlate, model, color: colorValue || 'outro' },
+      { plate: rawPlate, model, color: colorValue || 'outro', type: this.vehicleType() },
       {
         onSuccess: (res) => {
           this.checkInMutation.mutate(res.id, {
@@ -120,7 +121,7 @@ export class Entry implements OnInit, OnDestroy {
   private resetForm(): void {
     this.plate.set('');
     this.modelName.set('');
-    this.vehicleType.set('Carro');
+    this.vehicleType.set('CAR');
     this.selectedSpot.set(0);
     this.isMonthly.set(false);
     this.colorSelect?.reset();

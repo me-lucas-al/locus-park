@@ -8,17 +8,18 @@ import { environment } from '@environments/environment';
 
 const BASE = `${environment.apiUrl}auth`;
 
-const loginRequest: LoginRequest = { email: 'admin@park.com', password: 'senha123' };
+const loginRequest: LoginRequest = { username: 'admin', password: 'senha123' };
 const registerRequest: RegisterRequest = {
-  name: 'Admin', email: 'admin@park.com', password: 'senha123', companyName: 'Estacionamento Central',
+  name: 'Admin', username: 'admin', password: 'senha123', companyName: 'Estacionamento Central',
 };
-const authResponse: AuthResponse = { token: 'jwt.mock.token', companyId: 'c-1' };
+const authResponse: AuthResponse = { token: 'jwt.mock.token', id: 'u-1', username: 'admin', role: 'ADMIN', companyId: 'c-1' };
 
 describe('AuthService', () => {
   let service: AuthService;
   let httpMock: HttpTestingController;
 
   beforeEach(() => {
+    localStorage.clear();
     TestBed.configureTestingModule({
       providers: [AuthService, provideHttpClient(), provideHttpClientTesting()],
     });
@@ -55,8 +56,8 @@ describe('AuthService', () => {
     const req = httpMock.expectOne(`${BASE}/register`);
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual(registerRequest);
-    req.flush(authResponse);
-    expect(await promise).toEqual(authResponse);
+    req.flush('', { status: 201, statusText: 'Created' });
+    expect(await promise).toBe('');
   });
 
   it('deve limpar Signals ao realizar logout', () => {

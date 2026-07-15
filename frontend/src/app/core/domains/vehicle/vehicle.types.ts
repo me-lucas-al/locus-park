@@ -2,6 +2,7 @@ export interface VehicleRequest {
   plate: string;
   model: string;
   color: string;
+  type: 'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK';
   clientId?: string;
 }
 
@@ -10,6 +11,7 @@ export interface VehicleResponse {
   plate: string;
   model: string;
   color: string;
+  type: 'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK';
   clientId?: string;
   companyId: string;
 }
@@ -19,3 +21,4 @@ export interface UpdateVehicleParams {
   id: string;
   request: VehicleRequest;
 }
+

@@ -19,6 +19,20 @@
     </div>
 
     <div class="form-field">
+      <label for="vehicleType">Tipo de Veículo</label>
+      <select
+        id="vehicleType"
+        [value]="vehicleType()"
+        (change)="vehicleType.set($any($event.target).value)"
+      >
+        <option value="CAR">Carro</option>
+        <option value="MOTORCYCLE">Moto</option>
+        <option value="VAN">Van</option>
+        <option value="TRUCK">Caminhão</option>
+      </select>
+    </div>
+
+    <div class="form-field">
       <label for="model">Modelo / Marca <span class="required">*</span></label>
       <input
         id="model"

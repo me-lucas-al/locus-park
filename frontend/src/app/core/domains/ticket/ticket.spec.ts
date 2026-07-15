@@ -8,7 +8,7 @@ import { environment } from '@environments/environment';
 
 const BASE = `${environment.apiUrl}tickets`;
 
-const mockVehicle = { id: 'v-1', plate: 'ABC1234', model: 'Gol', color: 'Branco', companyId: 'c-1' };
+const mockVehicle = { id: 'v-1', plate: 'ABC1234', model: 'Gol', color: 'Branco', type: 'CAR' as const, companyId: 'c-1' };
 const mockTicket: TicketResponse = {
   id: 't-1', companyId: 'c-1', vehicle: mockVehicle,
   enteredAt: '2024-01-01T10:00:00Z', status: 'ACTIVE',

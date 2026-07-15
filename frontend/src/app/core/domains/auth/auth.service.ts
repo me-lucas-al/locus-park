@@ -27,6 +27,10 @@ export class AuthService {
       tap((response) => {
         this.token.set(response.token);
         localStorage.setItem('token', response.token);
+        if (response.companyId) {
+          this.companyId.set(response.companyId);
+          localStorage.setItem('companyId', response.companyId);
+        }
       })
     );
   }
