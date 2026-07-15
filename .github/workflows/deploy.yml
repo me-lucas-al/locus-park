@@ -2,14 +2,16 @@ name: LocusPark Backend Pipeline (AWS Lambda Deploy)
 
 on:
   push:
-    branches: [ backend ]
+    branches: [ master ]
+    paths:
+      - 'backend/**'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: api
+        working-directory: backend/api
 
     steps:
       - uses: actions/checkout@v4
