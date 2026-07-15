@@ -10,13 +10,15 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
-import java.time.LocalDateTime;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 
 @Service
 public class PaymentService {
 
-    public BigDecimal calculateStayAmount(Ticket ticket, LocalDateTime exitTime, TariffConfiguration tariff, PricingConfiguration pricing) {
-        LocalDateTime entryTime = ticket.getEnteredAt();
+    public BigDecimal calculateStayAmount(Ticket ticket, Instant exitTime, TariffConfiguration tariff, PricingConfiguration pricing) {
+        Instant entryTime = ticket.getEnteredAt();
 
         if (exitTime.isBefore(entryTime)) {
             throw new IllegalArgumentException("A data de saída não pode ser menor que a data de entrada.");
@@ -55,7 +57,10 @@ public class PaymentService {
         }
 
         // 5. Aplicação de Taxa de Pernoite se houver virada de dia (opcional no pátio)
-        if (entryTime.toLocalDate().isBefore(exitTime.toLocalDate()) && tariff.getOvernightFee() != null) {
+        ZoneId zoneId = ZoneId.of("America/Sao_Paulo");
+        LocalDate entryDate = entryTime.atZone(zoneId).toLocalDate();
+        LocalDate exitDate = exitTime.atZone(zoneId).toLocalDate();
+        if (entryDate.isBefore(exitDate) && tariff.getOvernightFee() != null) {
             baseAmount = baseAmount.add(tariff.getOvernightFee());
         }
 
