@@ -9,6 +9,7 @@ export function useUserProfileQuery() {
   return injectQuery(() => ({
     queryKey: ['profile'] as const,
     queryFn: () => lastValueFrom(service.getProfile()),
+    staleTime: Infinity,
   }));
 }
 
@@ -18,6 +19,7 @@ export function useUsersByCompanyQuery(companyId: Signal<string>) {
     queryKey: ['users', 'company', companyId()] as const,
     queryFn: () => lastValueFrom(service.getByCompany(companyId())),
     enabled: !!companyId() && companyId() !== 'null' && companyId() !== 'undefined',
+    staleTime: Infinity,
   }));
 }
 
@@ -37,7 +39,10 @@ export function useUpdateUserMutation() {
   return injectMutation(() => ({
     mutationFn: (params: UpdateUserParams) =>
       lastValueFrom(service.update(params.id, params.request)),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['users'] }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['users'] });
+      queryClient.invalidateQueries({ queryKey: ['profile'] });
+    },
   }));
 }
 

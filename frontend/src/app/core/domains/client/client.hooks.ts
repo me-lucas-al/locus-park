@@ -9,6 +9,7 @@ export function useClientsQuery() {
   return injectQuery(() => ({
     queryKey: ['clients'] as const,
     queryFn: () => lastValueFrom(service.getAll()),
+    staleTime: Infinity,
   }));
 }
 
@@ -18,6 +19,7 @@ export function useClientByIdQuery(id: Signal<string>) {
     queryKey: ['clients', id()] as const,
     queryFn: () => lastValueFrom(service.getById(id())),
     enabled: !!id(),
+    staleTime: Infinity,
   }));
 }
 

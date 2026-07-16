@@ -9,6 +9,7 @@ export function useTariffQuery() {
   return injectQuery(() => ({
     queryKey: ['tariff'] as const,
     queryFn: () => lastValueFrom(service.getTariff()),
+    staleTime: Infinity,
   }));
 }
 
@@ -35,6 +36,7 @@ export function usePricingQuery() {
   return injectQuery(() => ({
     queryKey: ['pricing'] as const,
     queryFn: () => lastValueFrom(service.getPricing()),
+    staleTime: Infinity,
   }));
 }
 
