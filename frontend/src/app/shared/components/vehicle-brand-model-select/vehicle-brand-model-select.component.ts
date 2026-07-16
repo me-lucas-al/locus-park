@@ -23,6 +23,7 @@ export class VehicleBrandModelSelectComponent {
   readonly brandSelected = output<SelectOption>();
   readonly modelSelected = output<SelectOption>();
 
+  private readonly brandSelectRef = viewChild<SearchableSelectComponent>('brandSelect');
   private readonly modelSelectRef = viewChild<SearchableSelectComponent>('modelSelect');
 
   protected readonly selectedBrandCode = signal('');
@@ -49,4 +50,11 @@ export class VehicleBrandModelSelectComponent {
   protected onModelSelected(model: SelectOption): void {
     this.modelSelected.emit(model);
   }
+
+  reset(): void {
+    this.selectedBrandCode.set('');
+    this.brandSelectRef()?.reset();
+    this.modelSelectRef()?.reset();
+  }
 }
+

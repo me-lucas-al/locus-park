@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, inject, signal, computed, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject, signal, computed, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { useTicketsQuery, useCheckInMutation } from '../../core/domains/ticket/ticket.hooks';
@@ -10,19 +10,22 @@ import { ToastService } from '../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
 import { LoadingDirective } from '../../shared/directives/loading.directive';
 import { ColorSelectComponent } from '../../shared/components/color-select/color-select.component';
+import { VehicleBrandModelSelectComponent } from '../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
+import { SelectOption } from '../../core/domains/fipe/fipe.types';
 import { SpotOption } from './entry.types';
 
 @Component({
   selector: 'app-entry',
   standalone: true,
-  imports: [CommonModule, FormsModule, LoadingDirective, ColorSelectComponent, RouterModule],
+  imports: [CommonModule, FormsModule, LoadingDirective, ColorSelectComponent, VehicleBrandModelSelectComponent, RouterModule],
   templateUrl: './entry.component.html',
   styleUrl: './entry.component.css',
 })
 export class Entry implements OnInit, OnDestroy {
   private readonly toastService = inject(ToastService);
   private readonly spotAssignmentService = inject(SpotAssignmentService);
-  @ViewChild(ColorSelectComponent) colorSelect?: ColorSelectComponent;
+  private readonly colorSelectRef = viewChild(ColorSelectComponent);
+  private readonly vehicleBrandModelSelectRef = viewChild(VehicleBrandModelSelectComponent);
 
   protected readonly ticketsQuery = useTicketsQuery();
   protected readonly profileQuery = useUserProfileQuery();
@@ -138,12 +141,17 @@ export class Entry implements OnInit, OnDestroy {
     );
   }
 
+  protected onVehicleModelSelected(model: SelectOption): void {
+    this.modelName.set(model.label);
+  }
+
   private resetForm(): void {
     this.plate.set('');
     this.modelName.set('');
     this.vehicleType.set('CAR');
     this.selectedSpot.set(0);
     this.isMonthly.set(false);
-    this.colorSelect?.reset();
+    this.colorSelectRef()?.reset();
+    this.vehicleBrandModelSelectRef()?.reset();
   }
 }

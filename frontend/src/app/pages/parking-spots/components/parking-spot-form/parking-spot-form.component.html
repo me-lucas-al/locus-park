@@ -47,14 +47,8 @@
     </div>
 
     <div class="form-field">
-      <label for="model">Modelo / Marca <span class="required">*</span></label>
-      <input
-        id="model"
-        type="text"
-        [value]="modelName()"
-        (input)="modelName.set($any($event.target).value)"
-        placeholder="Ex: Honda Civic, Toyota Corolla..."
-        required
+      <app-vehicle-brand-model-select
+        (modelSelected)="onVehicleModelSelected($event)"
       />
     </div>
 

@@ -1,7 +1,9 @@
-import { Component, inject, signal, computed, input, output } from '@angular/core';
+import { Component, inject, signal, computed, input, output, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ColorSelect } from '../color-select/color-select.component';
+import { VehicleBrandModelSelectComponent } from '../../../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
+import { SelectOption } from '../../../../core/domains/fipe/fipe.types';
 import { useCheckInMutation } from '../../../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../../../core/domains/user/user.hooks';
@@ -13,7 +15,7 @@ import { SpotAssignmentService } from '../../../../shared/services/spot-assignme
 @Component({
   selector: 'app-parking-spot-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ColorSelect, RouterModule],
+  imports: [CommonModule, FormsModule, ColorSelect, VehicleBrandModelSelectComponent, RouterModule],
   templateUrl: './parking-spot-form.component.html',
   styleUrl: './parking-spot-form.component.css',
 })
@@ -21,6 +23,7 @@ export class ParkingSpotForm {
   private readonly toastService = inject(ToastService);
   private readonly spotAssignmentService = inject(SpotAssignmentService);
   private readonly profileQuery = useUserProfileQuery();
+  private readonly vehicleBrandModelSelectRef = viewChild(VehicleBrandModelSelectComponent);
 
   readonly spotNumber = input<number>(0);
   readonly confirmed = output<void>();
@@ -52,6 +55,10 @@ export class ParkingSpotForm {
 
   protected onColorSelect(color: string): void {
     this.selectedColor.set(color);
+  }
+
+  protected onVehicleModelSelected(model: SelectOption): void {
+    this.modelName.set(model.label);
   }
 
   protected submitForm(): void {
@@ -88,6 +95,7 @@ export class ParkingSpotForm {
               this.toastService.success(
                 `Entrada registrada com sucesso na vaga ${this.spotNumber()}!`,
               );
+              this.vehicleBrandModelSelectRef()?.reset();
               this.confirmed.emit();
             },
             onError: () => this.toastService.error('Erro ao realizar check-in do veículo.'),

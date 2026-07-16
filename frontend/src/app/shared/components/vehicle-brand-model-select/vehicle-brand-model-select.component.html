@@ -3,6 +3,7 @@
   <div class="vehicle-select-field-group">
     <label class="vehicle-select-label" for="brand-select-input">Marca</label>
     <app-searchable-select
+      #brandSelect
       placeholder="Digite para filtrar as marcas..."
       [options]="brandsQuery.data() ?? []"
       [isLoading]="brandsQuery.isPending()"
