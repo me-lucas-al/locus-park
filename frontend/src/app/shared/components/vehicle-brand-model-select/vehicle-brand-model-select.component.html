@@ -1,7 +1,7 @@
 <div class="vehicle-select-container">
 
   <div class="vehicle-select-field-group">
-    <label class="vehicle-select-label" for="brand-select-input">Marca</label>
+    <label class="vehicle-select-label">Marca</label>
     <app-searchable-select
       #brandSelect
       placeholder="Digite para filtrar as marcas..."
@@ -13,11 +13,11 @@
   </div>
 
   <div class="vehicle-select-field-group">
-    <label class="vehicle-select-label" for="model-select-input">Modelo</label>
+    <label class="vehicle-select-label">Modelo</label>
     <app-searchable-select
       #modelSelect
       placeholder="Selecione uma marca primeiro..."
-      [options]="modelsQuery.data() ?? []"
+      [options]="modelOptions()"
       [isLoading]="modelsQuery.isFetching()"
       [disabled]="isModelSelectDisabled()"
       [errorMessage]="modelsError()"

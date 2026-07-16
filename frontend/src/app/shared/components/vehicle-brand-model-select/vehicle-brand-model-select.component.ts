@@ -9,7 +9,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { SearchableSelectComponent } from '../searchable-select/searchable-select.component';
 import { useFipeBrandsQuery, useFipeModelsByBrandQuery } from '../../../core/domains/fipe/fipe.hooks';
-import { SelectOption } from '../../../core/domains/fipe/fipe.types';
+import { SelectOption, OUTRO_OPTION } from '../../../core/domains/fipe/fipe.types';
 
 @Component({
   selector: 'app-vehicle-brand-model-select',
@@ -33,6 +33,11 @@ export class VehicleBrandModelSelectComponent {
 
   protected readonly isModelSelectDisabled = computed(() => !this.selectedBrandCode());
 
+  protected readonly modelOptions = computed<SelectOption[]>(() => {
+    if (this.selectedBrandCode() === OUTRO_OPTION.code) return [OUTRO_OPTION];
+    return this.modelsQuery.data() ?? [];
+  });
+
   protected readonly brandsError = computed(() =>
     this.brandsQuery.isError() ? 'Erro ao carregar marcas. Verifique sua conexão.' : null
   );
@@ -42,8 +47,9 @@ export class VehicleBrandModelSelectComponent {
   );
 
   protected onBrandSelected(brand: SelectOption): void {
+    const isSameBrand = this.selectedBrandCode() === brand.code;
     this.selectedBrandCode.set(brand.code);
-    this.modelSelectRef()?.reset();
+    if (!isSameBrand) this.modelSelectRef()?.reset();
     this.brandSelected.emit(brand);
   }
 
@@ -57,4 +63,3 @@ export class VehicleBrandModelSelectComponent {
     this.modelSelectRef()?.reset();
   }
 }
-

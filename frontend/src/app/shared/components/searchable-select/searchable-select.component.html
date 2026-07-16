@@ -17,7 +17,7 @@
       <input
         type="text"
         class="searchable-select-input"
-        [placeholder]="selectedLabel() ? selectedLabel() : placeholder()"
+        [placeholder]="displayLabel() ? displayLabel() : placeholder()"
         [value]="displayValue()"
         [disabled]="disabled()"
         (focus)="openDropdown()"
@@ -40,6 +40,16 @@
           <div class="dropdown-no-results">Nenhum resultado encontrado</div>
         }
       </div>
+    }
+
+    @if (isOtherOptionSelected()) {
+      <input
+        type="text"
+        class="custom-other-input"
+        placeholder="Digite o nome..."
+        [value]="customOtherText()"
+        (input)="onCustomOtherInput($event)"
+      />
     }
   }
 

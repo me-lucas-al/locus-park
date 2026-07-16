@@ -134,6 +134,33 @@
   flex-shrink: 0;
 }
 
+.custom-other-input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 0 14px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: #0f172a;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  animation: dropdownFadeIn 0.2s ease-out;
+}
+
+.custom-other-input:focus {
+  border-color: #0f172a;
+  box-shadow: 0 0 0 1px #0f172a;
+}
+
+.custom-other-input::placeholder {
+  color: #94a3b8;
+}
+
 @keyframes dropdownFadeIn {
   from { opacity: 0; transform: translateY(-6px); }
   to   { opacity: 1; transform: translateY(0); }

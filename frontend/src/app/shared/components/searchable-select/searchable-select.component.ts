@@ -9,6 +9,8 @@ import {
 import { CommonModule } from '@angular/common';
 import { SelectOption } from '../../../core/domains/fipe/fipe.types';
 
+const OTHER_OPTION_CODE = 'outro';
+
 @Component({
   selector: 'app-searchable-select',
   standalone: true,
@@ -28,10 +30,22 @@ export class SearchableSelectComponent {
 
   protected readonly searchQuery = signal('');
   protected readonly isDropdownOpen = signal(false);
-  protected readonly selectedLabel = signal('');
+  protected readonly selectedOption = signal<SelectOption | null>(null);
+  protected readonly customOtherText = signal('');
+
+  protected readonly isOtherOptionSelected = computed(
+    () => this.selectedOption()?.code === OTHER_OPTION_CODE
+  );
+
+  protected readonly displayLabel = computed(() => {
+    const option = this.selectedOption();
+    if (!option) return '';
+    if (option.code === OTHER_OPTION_CODE) return this.customOtherText() || option.label;
+    return option.label;
+  });
 
   protected readonly displayValue = computed(
-    () => this.searchQuery() || this.selectedLabel()
+    () => this.searchQuery() || this.displayLabel()
   );
 
   protected readonly filteredOptions = computed(() => {
@@ -51,7 +65,7 @@ export class SearchableSelectComponent {
   protected closeDropdown(): void {
     setTimeout(() => {
       this.isDropdownOpen.set(false);
-      this.searchQuery.set(this.selectedLabel());
+      this.searchQuery.set(this.displayLabel());
     }, 200);
   }
 
@@ -61,17 +75,23 @@ export class SearchableSelectComponent {
   }
 
   protected selectOption(option: SelectOption): void {
-    this.selectedLabel.set(option.label);
+    this.selectedOption.set(option);
+    this.customOtherText.set('');
     this.searchQuery.set(option.label);
     this.isDropdownOpen.set(false);
     this.optionSelected.emit(option);
   }
 
+  protected onCustomOtherInput(event: Event): void {
+    const typedValue = (event.target as HTMLInputElement).value;
+    this.customOtherText.set(typedValue);
+    this.optionSelected.emit({ code: OTHER_OPTION_CODE, label: typedValue });
+  }
+
   reset(): void {
-    this.selectedLabel.set('');
+    this.selectedOption.set(null);
+    this.customOtherText.set('');
     this.searchQuery.set('');
     this.isDropdownOpen.set(false);
   }
-
-
 }
