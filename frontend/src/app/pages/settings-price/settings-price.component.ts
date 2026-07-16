@@ -10,9 +10,11 @@ import {
 import {
   usePartnershipsQuery,
   useCreatePartnershipMutation,
+  useUpdatePartnershipMutation,
   useDeletePartnershipMutation
 } from '../../core/domains/partnership/partnership.hooks';
 import { ToastService } from '../../shared/services/toast.service';
+import { getBackendErrorMessage } from '../../core/utils/error-handler.util';
 
 import { LoadingDirective } from '../../shared/directives/loading.directive';
 
@@ -34,6 +36,7 @@ export class SettingsPrice {
   protected readonly updateTariffMutation = useUpdateTariffMutation();
   protected readonly updatePricingMutation = useUpdatePricingMutation();
   protected readonly createPartnershipMutation = useCreatePartnershipMutation();
+  protected readonly updatePartnershipMutation = useUpdatePartnershipMutation();
   protected readonly deletePartnershipMutation = useDeletePartnershipMutation();
 
   protected readonly isSavingTariffs = computed(() => 
@@ -41,7 +44,7 @@ export class SettingsPrice {
   );
 
   protected readonly isAddingPartnership = computed(() => 
-    this.createPartnershipMutation.isPending()
+    this.createPartnershipMutation.isPending() || this.updatePartnershipMutation.isPending()
   );
 
   // Controle de Abas
@@ -64,6 +67,18 @@ export class SettingsPrice {
   readonly newPartnershipDiscountType = signal('PERCENTAGE');
   readonly newPartnershipValue = signal(10);
 
+  // Controle de Edição de Convênios
+  readonly editingPartnershipId = signal<string | null>(null);
+  readonly editingPartnershipName = signal('');
+  readonly editingPartnershipDiscountType = signal('PERCENTAGE');
+  readonly editingPartnershipValue = signal(0);
+
+  // Controle de Regras Adicionais
+  readonly lostTicketRate = signal(30.00);
+  readonly overnightStartHours = signal(localStorage.getItem('overnightStartHours') || '22:00');
+
+  protected readonly isSavingExtra = computed(() => this.updateTariffMutation.isPending());
+
   constructor() {
     // Efeito para carregar dados das queries nos inputs do formulário de tarifas
     effect(() => {
@@ -73,6 +88,9 @@ export class SettingsPrice {
         this.additionalHourRate.set(tariff.additionalFractionValue);
         this.gracePeriodMinutes.set(tariff.toleranceMinutes);
         this.overnightStayFee.set(tariff.overnightFee);
+        if (tariff.lostTicketFee !== undefined && tariff.lostTicketFee !== null) {
+          this.lostTicketRate.set(tariff.lostTicketFee);
+        }
       }
     });
 
@@ -99,7 +117,7 @@ export class SettingsPrice {
         additionalFractionValue: this.additionalHourRate(),
         toleranceMinutes: this.gracePeriodMinutes(),
         overnightFee: this.overnightStayFee(),
-        lostTicketFee: 30.00, // Passando valor padrão de perda de ticket
+        lostTicketFee: this.lostTicketRate(), // Usando o signal dinâmico
       },
       {
         onSuccess: () => {
@@ -172,5 +190,74 @@ export class SettingsPrice {
         }
       });
     }
+  }
+
+  protected startEdit(partnership: any): void {
+    this.editingPartnershipId.set(partnership.id);
+    this.editingPartnershipName.set(partnership.name);
+    this.editingPartnershipDiscountType.set(partnership.discountType.toUpperCase());
+    this.editingPartnershipValue.set(partnership.value);
+  }
+
+  protected cancelEdit(): void {
+    this.editingPartnershipId.set(null);
+  }
+
+  protected saveEdit(partnershipId: string): void {
+    const name = this.editingPartnershipName().trim();
+    const type = this.editingPartnershipDiscountType();
+    const val = this.editingPartnershipValue();
+
+    if (!name) {
+      this.toastService.error('O nome do convênio/parceria é obrigatório.');
+      return;
+    }
+
+    if (val <= 0) {
+      this.toastService.error('O valor do desconto deve ser maior do que zero.');
+      return;
+    }
+
+    this.updatePartnershipMutation.mutate(
+      {
+        id: partnershipId,
+        request: {
+          name,
+          discountType: type,
+          value: val,
+        },
+      },
+      {
+        onSuccess: () => {
+          this.toastService.success('Parceria atualizada com sucesso!');
+          this.editingPartnershipId.set(null);
+        },
+        onError: (err: any) => {
+          const errMsg = getBackendErrorMessage(err, 'Erro ao atualizar parceria.');
+          this.toastService.error(errMsg);
+        },
+      }
+    );
+  }
+
+  protected saveExtraSettings(): void {
+    this.updateTariffMutation.mutate(
+      {
+        firstHourValue: this.firstHourRate(),
+        additionalFractionValue: this.additionalHourRate(),
+        toleranceMinutes: this.gracePeriodMinutes(),
+        overnightFee: this.overnightStayFee(),
+        lostTicketFee: this.lostTicketRate(),
+      },
+      {
+        onSuccess: () => {
+          localStorage.setItem('overnightStartHours', this.overnightStartHours());
+          this.toastService.success('Configurações adicionais salvas com sucesso!');
+        },
+        onError: () => {
+          this.toastService.error('Erro ao atualizar configurações adicionais.');
+        }
+      }
+    );
   }
 }
