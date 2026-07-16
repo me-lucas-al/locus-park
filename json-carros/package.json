@@ -1,0 +1,12 @@
+{
+  "name": "fipe-catalogo",
+  "version": "1.0.0",
+  "description": "Monta um JSON local com todas as marcas e modelos de carros da FIPE",
+  "main": "src/montarCatalogo.js",
+  "scripts": {
+    "montar": "node src/montarCatalogo.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
