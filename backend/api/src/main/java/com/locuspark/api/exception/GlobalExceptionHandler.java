@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -48,6 +49,22 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<ErrorResponse> handleDataIntegrity(DataIntegrityViolationException ex, HttpServletRequest request) {
         return buildResponseEntity(HttpStatus.BAD_REQUEST, "Erro de integridade de dados. Verifique se os campos estão corretos.", request.getRequestURI());
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<ErrorResponse> handleHttpMessageNotReadable(HttpMessageNotReadableException ex, HttpServletRequest request) {
+        Throwable mostSpecificCause = ex.getMostSpecificCause();
+        String detailMessage = mostSpecificCause.getMessage();
+        String userFriendlyMessage = "Corpo da requisição inválido ou malformado. ";
+        
+        if (detailMessage != null) {
+            if (detailMessage.contains("DiscountType")) {
+                userFriendlyMessage += "O tipo de desconto fornecido é inválido. Valores permitidos: PERCENTAGE, FIXED_VALUE, FREE_HOURS.";
+            } else {
+                userFriendlyMessage += mostSpecificCause.getLocalizedMessage();
+            }
+        }
+        return buildResponseEntity(HttpStatus.BAD_REQUEST, userFriendlyMessage, request.getRequestURI());
     }
 
     @ExceptionHandler(Exception.class)

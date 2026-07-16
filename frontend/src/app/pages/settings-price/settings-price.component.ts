@@ -61,7 +61,7 @@ export class SettingsPrice {
 
   // Formulário Convênios
   readonly newPartnershipName = signal('');
-  readonly newPartnershipDiscountType = signal('percentage');
+  readonly newPartnershipDiscountType = signal('PERCENTAGE');
   readonly newPartnershipValue = signal(10);
 
   constructor() {

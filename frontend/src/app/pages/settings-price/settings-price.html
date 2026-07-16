@@ -190,8 +190,8 @@
                 [value]="newPartnershipDiscountType()"
                 (change)="newPartnershipDiscountType.set($any($event.target).value)"
               >
-                <option value="percentage">Porcentagem (%)</option>
-                <option value="fixed">Valor Fixo (R$)</option>
+                <option value="PERCENTAGE">Porcentagem (%)</option>
+                <option value="FIXED_VALUE">Valor Fixo (R$)</option>
               </select>
             </div>
             <div class="form-field">
@@ -238,8 +238,8 @@
                   @for (p of partnershipsQuery.data(); track p.id) {
                     <tr>
                       <td class="text-bold">{{ p.name }}</td>
-                      <td>{{ p.discountType === 'percentage' ? 'Porcentagem' : 'Valor Fixo' }}</td>
-                      <td>{{ p.discountType === 'percentage' ? p.value + '%' : 'R$ ' + p.value }}</td>
+                      <td>{{ p.discountType.toUpperCase() === 'PERCENTAGE' ? 'Porcentagem' : 'Valor Fixo' }}</td>
+                      <td>{{ p.discountType.toUpperCase() === 'PERCENTAGE' ? p.value + '%' : 'R$ ' + p.value }}</td>
                       <td class="text-right">
                         <button class="btn-delete" (click)="deletePartnership(p.id)" title="Excluir Convênio">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
