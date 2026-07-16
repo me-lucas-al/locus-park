@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { useRegisterMutation } from '../../../core/domains/auth/auth.hooks';
 import { ToastService } from '../../../shared/services/toast.service';
+import { getBackendErrorMessage } from '../../../core/utils/error-handler.util';
 import { LoadingDirective } from '../../../shared/directives/loading.directive';
 
 @Component({
@@ -91,8 +92,8 @@ export class Register {
           this.toastService.success('Cadastro realizado com sucesso!');
           this.router.navigate(['/login']);
         },
-        onError: () => {
-          this.errorMessage = 'Erro ao realizar o cadastro. Verifique as informações ou se o usuário já existe.';
+        onError: (err: any) => {
+          this.errorMessage = getBackendErrorMessage(err, 'Erro ao realizar o cadastro. Verifique as informações.');
           this.toastService.error(this.errorMessage);
         },
       }

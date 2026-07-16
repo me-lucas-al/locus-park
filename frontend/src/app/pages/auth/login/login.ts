@@ -6,6 +6,7 @@ import { useLoginMutation } from '../../../core/domains/auth/auth.hooks';
 import { UserService } from '../../../core/domains/user/user.service';
 import { AuthService } from '../../../core/domains/auth/auth.service';
 import { ToastService } from '../../../shared/services/toast.service';
+import { getBackendErrorMessage } from '../../../core/utils/error-handler.util';
 import { lastValueFrom } from 'rxjs';
 
 import { LoadingDirective } from '../../../shared/directives/loading.directive';
@@ -59,11 +60,7 @@ export class Login {
         },
         onError: (err: any) => {
           console.error('Erro ao realizar login:', err);
-          if (err?.status === 0 || err?.status >= 500) {
-            this.erroLogin = 'O servidor está iniciando. Por favor, aguarde alguns instantes e tente novamente.';
-          } else {
-            this.erroLogin = 'Usuário ou senha incorretos.';
-          }
+          this.erroLogin = getBackendErrorMessage(err, 'Usuário ou senha incorretos.');
           this.toastService.error(this.erroLogin);
         },
       }
