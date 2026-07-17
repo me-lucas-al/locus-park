@@ -1,11 +1,11 @@
 import { Signal } from '@angular/core';
 import { injectQuery } from '@tanstack/angular-query-experimental';
-import { SelectOption, OUTRO_OPTION } from './fipe.types';
-import catalogo from './catalogo-fipe-limpo.json';
+import { SelectOption, OUTRO_OPTION } from './vehicle-catalog.types';
+import catalogo from './vehicles-catalog.json';
 
-export function useFipeBrandsQuery() {
+export function useVehicleBrandsQuery() {
   return injectQuery(() => ({
-    queryKey: ['fipe', 'brands'] as const,
+    queryKey: ['vehicle-catalog', 'brands'] as const,
     queryFn: async (): Promise<SelectOption[]> => {
       const options = catalogo.map(item => ({ code: item.marca, label: item.marca }));
       options.sort((a, b) => a.label.localeCompare(b.label));
@@ -15,9 +15,9 @@ export function useFipeBrandsQuery() {
   }));
 }
 
-export function useFipeModelsByBrandQuery(selectedBrandCode: Signal<string>) {
+export function useVehicleModelsByBrandQuery(selectedBrandCode: Signal<string>) {
   return injectQuery(() => ({
-    queryKey: ['fipe', 'models', selectedBrandCode()] as const,
+    queryKey: ['vehicle-catalog', 'models', selectedBrandCode()] as const,
     queryFn: async (): Promise<SelectOption[]> => {
       const brandName = selectedBrandCode();
       const brand = catalogo.find(item => item.marca === brandName);

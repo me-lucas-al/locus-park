@@ -11,7 +11,7 @@ import { SpotAssignmentService } from '../../shared/services/spot-assignment.ser
 import { LoadingDirective } from '../../shared/directives/loading.directive';
 import { ColorSelectComponent } from '../../shared/components/color-select/color-select.component';
 import { VehicleBrandModelSelectComponent } from '../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
-import { SelectOption } from '../../core/domains/fipe/fipe.types';
+import { SelectOption } from '../../core/domains/vehicle-catalog/vehicle-catalog.types';
 import { SpotOption } from './entry.types';
 
 @Component({

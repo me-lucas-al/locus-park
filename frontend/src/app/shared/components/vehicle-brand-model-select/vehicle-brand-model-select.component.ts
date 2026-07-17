@@ -8,8 +8,8 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchableSelectComponent } from '../searchable-select/searchable-select.component';
-import { useFipeBrandsQuery, useFipeModelsByBrandQuery } from '../../../core/domains/fipe/fipe.hooks';
-import { SelectOption, OUTRO_OPTION } from '../../../core/domains/fipe/fipe.types';
+import { useVehicleBrandsQuery, useVehicleModelsByBrandQuery } from '../../../core/domains/vehicle-catalog/vehicle-catalog.hooks';
+import { SelectOption, OUTRO_OPTION } from '../../../core/domains/vehicle-catalog/vehicle-catalog.types';
 
 @Component({
   selector: 'app-vehicle-brand-model-select',
@@ -28,8 +28,8 @@ export class VehicleBrandModelSelectComponent {
 
   protected readonly selectedBrandCode = signal('');
 
-  protected readonly brandsQuery = useFipeBrandsQuery();
-  protected readonly modelsQuery = useFipeModelsByBrandQuery(this.selectedBrandCode);
+  protected readonly brandsQuery = useVehicleBrandsQuery();
+  protected readonly modelsQuery = useVehicleModelsByBrandQuery(this.selectedBrandCode);
 
   protected readonly isModelSelectDisabled = computed(() => !this.selectedBrandCode());
 

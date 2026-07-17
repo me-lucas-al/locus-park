@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ColorSelect } from '../color-select/color-select.component';
 import { VehicleBrandModelSelectComponent } from '../../../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
-import { SelectOption } from '../../../../core/domains/fipe/fipe.types';
+import { SelectOption } from '../../../../core/domains/vehicle-catalog/vehicle-catalog.types';
 import { useCheckInMutation } from '../../../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../../../core/domains/user/user.hooks';

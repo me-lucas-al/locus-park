@@ -7,7 +7,7 @@ import {
   ChangeDetectionStrategy,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SelectOption } from '../../../core/domains/fipe/fipe.types';
+import { SelectOption } from '../../../core/domains/vehicle-catalog/vehicle-catalog.types';
 
 const OTHER_OPTION_CODE = 'outro';
 
