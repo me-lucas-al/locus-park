@@ -1,0 +1,8469 @@
+[
+  {
+    "marca": "Am Gen",
+    "modelos": [
+      {
+        "nome": "Hummer Hard-Top",
+        "codigoReferencia": 21
+      },
+      {
+        "nome": "Hummer Open-Top",
+        "codigoReferencia": 22
+      },
+      {
+        "nome": "Hummer",
+        "codigoReferencia": 23
+      }
+    ]
+  },
+  {
+    "marca": "Aston Martin",
+    "modelos": [
+      {
+        "nome": "Db12",
+        "codigoReferencia": 11338
+      },
+      {
+        "nome": "Db12 Volante",
+        "codigoReferencia": 11339
+      },
+      {
+        "nome": "Db9",
+        "codigoReferencia": 6906
+      },
+      {
+        "nome": "Db9 Volante",
+        "codigoReferencia": 6340
+      },
+      {
+        "nome": "Dbs",
+        "codigoReferencia": 10560
+      },
+      {
+        "nome": "Dbx",
+        "codigoReferencia": 10561
+      },
+      {
+        "nome": "Dbx707",
+        "codigoReferencia": 10562
+      },
+      {
+        "nome": "Rapide",
+        "codigoReferencia": 6341
+      },
+      {
+        "nome": "Vanquish",
+        "codigoReferencia": 11853
+      },
+      {
+        "nome": "Vantage",
+        "codigoReferencia": 6342
+      },
+      {
+        "nome": "Vantage Cupê",
+        "codigoReferencia": 10144
+      },
+      {
+        "nome": "Virage",
+        "codigoReferencia": 6346
+      }
+    ]
+  },
+  {
+    "marca": "Acura",
+    "modelos": [
+      {
+        "nome": "Integra",
+        "codigoReferencia": 1
+      },
+      {
+        "nome": "Legend",
+        "codigoReferencia": 2
+      },
+      {
+        "nome": "Nsx",
+        "codigoReferencia": 3
+      }
+    ]
+  },
+  {
+    "marca": "Agrale",
+    "modelos": [
+      {
+        "nome": "Marruá",
+        "codigoReferencia": 4
+      }
+    ]
+  },
+  {
+    "marca": "Alfa Romeo",
+    "modelos": [
+      {
+        "nome": "145 Elegant",
+        "codigoReferencia": 5
+      },
+      {
+        "nome": "145",
+        "codigoReferencia": 8
+      },
+      {
+        "nome": "145 Quadrifoglio",
+        "codigoReferencia": 7
+      },
+      {
+        "nome": "147",
+        "codigoReferencia": 9
+      },
+      {
+        "nome": "155",
+        "codigoReferencia": 10
+      },
+      {
+        "nome": "156",
+        "codigoReferencia": 12
+      },
+      {
+        "nome": "164",
+        "codigoReferencia": 16
+      },
+      {
+        "nome": "166",
+        "codigoReferencia": 18
+      },
+      {
+        "nome": "2300",
+        "codigoReferencia": 19
+      },
+      {
+        "nome": "Spider",
+        "codigoReferencia": 20
+      }
+    ]
+  },
+  {
+    "marca": "Asia Motors",
+    "modelos": [
+      {
+        "nome": "Am-825 Luxo",
+        "codigoReferencia": 24
+      },
+      {
+        "nome": "Am-825",
+        "codigoReferencia": 25
+      },
+      {
+        "nome": "Hi-Topic",
+        "codigoReferencia": 26
+      },
+      {
+        "nome": "Jipe Rocsta",
+        "codigoReferencia": 29
+      },
+      {
+        "nome": "Topic Carga",
+        "codigoReferencia": 30
+      },
+      {
+        "nome": "Topic Luxo",
+        "codigoReferencia": 31
+      },
+      {
+        "nome": "Topic",
+        "codigoReferencia": 32
+      },
+      {
+        "nome": "Towner Coach Full",
+        "codigoReferencia": 33
+      },
+      {
+        "nome": "Towner",
+        "codigoReferencia": 34
+      },
+      {
+        "nome": "Towner Glass",
+        "codigoReferencia": 35
+      },
+      {
+        "nome": "Towner Luxo",
+        "codigoReferencia": 36
+      },
+      {
+        "nome": "Towner Multiuso",
+        "codigoReferencia": 37
+      },
+      {
+        "nome": "Towner Panel",
+        "codigoReferencia": 38
+      },
+      {
+        "nome": "Towner Truck",
+        "codigoReferencia": 42
+      }
+    ]
+  },
+  {
+    "marca": "Audi",
+    "modelos": [
+      {
+        "nome": "100",
+        "codigoReferencia": 43
+      },
+      {
+        "nome": "80",
+        "codigoReferencia": 46
+      },
+      {
+        "nome": "A1",
+        "codigoReferencia": 5496
+      },
+      {
+        "nome": "A3",
+        "codigoReferencia": 52
+      },
+      {
+        "nome": "A4",
+        "codigoReferencia": 68
+      },
+      {
+        "nome": "A4 Perfor",
+        "codigoReferencia": 9223
+      },
+      {
+        "nome": "A5",
+        "codigoReferencia": 4798
+      },
+      {
+        "nome": "A6",
+        "codigoReferencia": 7254
+      },
+      {
+        "nome": "A6 Allroad",
+        "codigoReferencia": 6462
+      },
+      {
+        "nome": "A7",
+        "codigoReferencia": 9319
+      },
+      {
+        "nome": "A8",
+        "codigoReferencia": 7127
+      },
+      {
+        "nome": "Allroad",
+        "codigoReferencia": 128
+      },
+      {
+        "nome": "Avant",
+        "codigoReferencia": 129
+      },
+      {
+        "nome": "E-Tron",
+        "codigoReferencia": 10814
+      },
+      {
+        "nome": "E-Tron Performa",
+        "codigoReferencia": 9077
+      },
+      {
+        "nome": "E-Tron Performace",
+        "codigoReferencia": 9078
+      },
+      {
+        "nome": "Q3",
+        "codigoReferencia": 7255
+      },
+      {
+        "nome": "Q5",
+        "codigoReferencia": 6573
+      },
+      {
+        "nome": "Q5 Advanced",
+        "codigoReferencia": 11727
+      },
+      {
+        "nome": "Q5 S-Line",
+        "codigoReferencia": 12030
+      },
+      {
+        "nome": "Q6 E-Tron",
+        "codigoReferencia": 11325
+      },
+      {
+        "nome": "Q7",
+        "codigoReferencia": 7917
+      },
+      {
+        "nome": "Q7 S-Line",
+        "codigoReferencia": 11297
+      },
+      {
+        "nome": "Q8 E-Tron",
+        "codigoReferencia": 10869
+      },
+      {
+        "nome": "Q8",
+        "codigoReferencia": 10996
+      },
+      {
+        "nome": "Q8 Perfo",
+        "codigoReferencia": 10997
+      },
+      {
+        "nome": "R8",
+        "codigoReferencia": 5235
+      },
+      {
+        "nome": "RS E-Tron",
+        "codigoReferencia": 9606
+      },
+      {
+        "nome": "RS",
+        "codigoReferencia": 6865
+      },
+      {
+        "nome": "Rs3",
+        "codigoReferencia": 8175
+      },
+      {
+        "nome": "Rs4",
+        "codigoReferencia": 130
+      },
+      {
+        "nome": "Rs5",
+        "codigoReferencia": 5410
+      },
+      {
+        "nome": "Rs6",
+        "codigoReferencia": 10227
+      },
+      {
+        "nome": "Rs7",
+        "codigoReferencia": 6883
+      },
+      {
+        "nome": "S3",
+        "codigoReferencia": 133
+      },
+      {
+        "nome": "S4",
+        "codigoReferencia": 134
+      },
+      {
+        "nome": "S5",
+        "codigoReferencia": 6087
+      },
+      {
+        "nome": "S6",
+        "codigoReferencia": 138
+      },
+      {
+        "nome": "S7",
+        "codigoReferencia": 6632
+      },
+      {
+        "nome": "S8",
+        "codigoReferencia": 7128
+      },
+      {
+        "nome": "Sq5",
+        "codigoReferencia": 11779
+      },
+      {
+        "nome": "Sq6",
+        "codigoReferencia": 11851
+      },
+      {
+        "nome": "Sq8",
+        "codigoReferencia": 11197
+      },
+      {
+        "nome": "Tt",
+        "codigoReferencia": 149
+      },
+      {
+        "nome": "Ttrs",
+        "codigoReferencia": 6258
+      },
+      {
+        "nome": "Tts",
+        "codigoReferencia": 5128
+      }
+    ]
+  },
+  {
+    "marca": "Bmw",
+    "modelos": [
+      {
+        "nome": "116ia",
+        "codigoReferencia": 6146
+      },
+      {
+        "nome": "118i",
+        "codigoReferencia": 9955
+      },
+      {
+        "nome": "118ia",
+        "codigoReferencia": 5576
+      },
+      {
+        "nome": "118ia Full",
+        "codigoReferencia": 6147
+      },
+      {
+        "nome": "118ia Urban",
+        "codigoReferencia": 5923
+      },
+      {
+        "nome": "120i",
+        "codigoReferencia": 152
+      },
+      {
+        "nome": "120ia",
+        "codigoReferencia": 153
+      },
+      {
+        "nome": "125i",
+        "codigoReferencia": 6377
+      },
+      {
+        "nome": "130i",
+        "codigoReferencia": 3879
+      },
+      {
+        "nome": "130ia",
+        "codigoReferencia": 4473
+      },
+      {
+        "nome": "135ia",
+        "codigoReferencia": 4961
+      },
+      {
+        "nome": "218i Gran",
+        "codigoReferencia": 11119
+      },
+      {
+        "nome": "220i Gran",
+        "codigoReferencia": 11529
+      },
+      {
+        "nome": "220i Tourer",
+        "codigoReferencia": 7448
+      },
+      {
+        "nome": "225i",
+        "codigoReferencia": 7129
+      },
+      {
+        "nome": "316 (todas)",
+        "codigoReferencia": 154
+      },
+      {
+        "nome": "316i",
+        "codigoReferencia": 6660
+      },
+      {
+        "nome": "318ti Compact",
+        "codigoReferencia": 159
+      },
+      {
+        "nome": "318ti",
+        "codigoReferencia": 160
+      },
+      {
+        "nome": "318i",
+        "codigoReferencia": 155
+      },
+      {
+        "nome": "318ia",
+        "codigoReferencia": 5607
+      },
+      {
+        "nome": "318is",
+        "codigoReferencia": 158
+      },
+      {
+        "nome": "320i",
+        "codigoReferencia": 161
+      },
+      {
+        "nome": "320ia",
+        "codigoReferencia": 162
+      },
+      {
+        "nome": "320ia Modern",
+        "codigoReferencia": 6091
+      },
+      {
+        "nome": "323ci",
+        "codigoReferencia": 163
+      },
+      {
+        "nome": "323cia",
+        "codigoReferencia": 164
+      },
+      {
+        "nome": "323ti Compact",
+        "codigoReferencia": 176
+      },
+      {
+        "nome": "323tia Compact",
+        "codigoReferencia": 178
+      },
+      {
+        "nome": "323i",
+        "codigoReferencia": 165
+      },
+      {
+        "nome": "323i Confort",
+        "codigoReferencia": 166
+      },
+      {
+        "nome": "323ia",
+        "codigoReferencia": 169
+      },
+      {
+        "nome": "323ia Confort",
+        "codigoReferencia": 170
+      },
+      {
+        "nome": "323ia Entry",
+        "codigoReferencia": 171
+      },
+      {
+        "nome": "325i",
+        "codigoReferencia": 179
+      },
+      {
+        "nome": "325ia",
+        "codigoReferencia": 181
+      },
+      {
+        "nome": "328i",
+        "codigoReferencia": 184
+      },
+      {
+        "nome": "328ia",
+        "codigoReferencia": 6046
+      },
+      {
+        "nome": "330ci",
+        "codigoReferencia": 191
+      },
+      {
+        "nome": "330cia",
+        "codigoReferencia": 192
+      },
+      {
+        "nome": "330e",
+        "codigoReferencia": 9956
+      },
+      {
+        "nome": "330i",
+        "codigoReferencia": 8630
+      },
+      {
+        "nome": "330i Motorsport",
+        "codigoReferencia": 193
+      },
+      {
+        "nome": "330ia",
+        "codigoReferencia": 3956
+      },
+      {
+        "nome": "330ia Motorsport",
+        "codigoReferencia": 194
+      },
+      {
+        "nome": "335i",
+        "codigoReferencia": 9957
+      },
+      {
+        "nome": "335ia",
+        "codigoReferencia": 4272
+      },
+      {
+        "nome": "420i",
+        "codigoReferencia": 9785
+      },
+      {
+        "nome": "428i",
+        "codigoReferencia": 6952
+      },
+      {
+        "nome": "428i Gran",
+        "codigoReferencia": 7084
+      },
+      {
+        "nome": "430i",
+        "codigoReferencia": 7728
+      },
+      {
+        "nome": "430i Gran",
+        "codigoReferencia": 7729
+      },
+      {
+        "nome": "435ia",
+        "codigoReferencia": 6691
+      },
+      {
+        "nome": "520i",
+        "codigoReferencia": 196
+      },
+      {
+        "nome": "525i",
+        "codigoReferencia": 197
+      },
+      {
+        "nome": "528i",
+        "codigoReferencia": 199
+      },
+      {
+        "nome": "528ia",
+        "codigoReferencia": 6149
+      },
+      {
+        "nome": "530e",
+        "codigoReferencia": 9959
+      },
+      {
+        "nome": "530i",
+        "codigoReferencia": 7918
+      },
+      {
+        "nome": "530i Security",
+        "codigoReferencia": 8816
+      },
+      {
+        "nome": "535i",
+        "codigoReferencia": 204
+      },
+      {
+        "nome": "535ia",
+        "codigoReferencia": 5267
+      },
+      {
+        "nome": "540i",
+        "codigoReferencia": 205
+      },
+      {
+        "nome": "540ia",
+        "codigoReferencia": 207
+      },
+      {
+        "nome": "540ia Motorsport",
+        "codigoReferencia": 208
+      },
+      {
+        "nome": "540ia Protection",
+        "codigoReferencia": 209
+      },
+      {
+        "nome": "540ita",
+        "codigoReferencia": 210
+      },
+      {
+        "nome": "545ia",
+        "codigoReferencia": 211
+      },
+      {
+        "nome": "550ia",
+        "codigoReferencia": 5268
+      },
+      {
+        "nome": "550ia Security",
+        "codigoReferencia": 4432
+      },
+      {
+        "nome": "640i Gran",
+        "codigoReferencia": 6378
+      },
+      {
+        "nome": "645ci",
+        "codigoReferencia": 3929
+      },
+      {
+        "nome": "645ia",
+        "codigoReferencia": 212
+      },
+      {
+        "nome": "650ci",
+        "codigoReferencia": 5718
+      },
+      {
+        "nome": "650i Gran",
+        "codigoReferencia": 6634
+      },
+      {
+        "nome": "650ia",
+        "codigoReferencia": 6150
+      },
+      {
+        "nome": "730i",
+        "codigoReferencia": 213
+      },
+      {
+        "nome": "730ia",
+        "codigoReferencia": 214
+      },
+      {
+        "nome": "735i",
+        "codigoReferencia": 215
+      },
+      {
+        "nome": "740i",
+        "codigoReferencia": 216
+      },
+      {
+        "nome": "740ia",
+        "codigoReferencia": 217
+      },
+      {
+        "nome": "740il",
+        "codigoReferencia": 218
+      },
+      {
+        "nome": "740ila Protection",
+        "codigoReferencia": 219
+      },
+      {
+        "nome": "745le",
+        "codigoReferencia": 9961
+      },
+      {
+        "nome": "745ia",
+        "codigoReferencia": 220
+      },
+      {
+        "nome": "750i",
+        "codigoReferencia": 221
+      },
+      {
+        "nome": "750ia",
+        "codigoReferencia": 222
+      },
+      {
+        "nome": "750il",
+        "codigoReferencia": 223
+      },
+      {
+        "nome": "750ila",
+        "codigoReferencia": 9962
+      },
+      {
+        "nome": "760il",
+        "codigoReferencia": 224
+      },
+      {
+        "nome": "840ci",
+        "codigoReferencia": 225
+      },
+      {
+        "nome": "840cia",
+        "codigoReferencia": 226
+      },
+      {
+        "nome": "850csi",
+        "codigoReferencia": 229
+      },
+      {
+        "nome": "850ci",
+        "codigoReferencia": 227
+      },
+      {
+        "nome": "850i",
+        "codigoReferencia": 230
+      },
+      {
+        "nome": "M 135i",
+        "codigoReferencia": 10784
+      },
+      {
+        "nome": "M 235i",
+        "codigoReferencia": 6910
+      },
+      {
+        "nome": "M",
+        "codigoReferencia": 231
+      },
+      {
+        "nome": "M1",
+        "codigoReferencia": 5719
+      },
+      {
+        "nome": "M140i",
+        "codigoReferencia": 7823
+      },
+      {
+        "nome": "M2",
+        "codigoReferencia": 9339
+      },
+      {
+        "nome": "M235i",
+        "codigoReferencia": 9104
+      },
+      {
+        "nome": "M240i",
+        "codigoReferencia": 7857
+      },
+      {
+        "nome": "M3",
+        "codigoReferencia": 232
+      },
+      {
+        "nome": "M340i",
+        "codigoReferencia": 9105
+      },
+      {
+        "nome": "M4",
+        "codigoReferencia": 11268
+      },
+      {
+        "nome": "M440i",
+        "codigoReferencia": 9524
+      },
+      {
+        "nome": "M5",
+        "codigoReferencia": 236
+      },
+      {
+        "nome": "M5 Perform",
+        "codigoReferencia": 8389
+      },
+      {
+        "nome": "M6",
+        "codigoReferencia": 238
+      },
+      {
+        "nome": "M6 Gran",
+        "codigoReferencia": 6635
+      },
+      {
+        "nome": "M760li",
+        "codigoReferencia": 8735
+      },
+      {
+        "nome": "M8 Gran",
+        "codigoReferencia": 9188
+      },
+      {
+        "nome": "M850i",
+        "codigoReferencia": 8736
+      },
+      {
+        "nome": "X1",
+        "codigoReferencia": 5269
+      },
+      {
+        "nome": "X2",
+        "codigoReferencia": 8820
+      },
+      {
+        "nome": "X3 Family",
+        "codigoReferencia": 239
+      },
+      {
+        "nome": "X3",
+        "codigoReferencia": 8842
+      },
+      {
+        "nome": "X4",
+        "codigoReferencia": 8985
+      },
+      {
+        "nome": "X5",
+        "codigoReferencia": 242
+      },
+      {
+        "nome": "X5 M",
+        "codigoReferencia": 5188
+      },
+      {
+        "nome": "X5 Security",
+        "codigoReferencia": 4242
+      },
+      {
+        "nome": "X6 M",
+        "codigoReferencia": 5189
+      },
+      {
+        "nome": "X6",
+        "codigoReferencia": 4745
+      },
+      {
+        "nome": "X7",
+        "codigoReferencia": 9038
+      },
+      {
+        "nome": "Z3",
+        "codigoReferencia": 246
+      },
+      {
+        "nome": "Z4",
+        "codigoReferencia": 4243
+      },
+      {
+        "nome": "Z8",
+        "codigoReferencia": 253
+      },
+      {
+        "nome": "I3",
+        "codigoReferencia": 8817
+      },
+      {
+        "nome": "I4",
+        "codigoReferencia": 10371
+      },
+      {
+        "nome": "I5",
+        "codigoReferencia": 10989
+      },
+      {
+        "nome": "I7",
+        "codigoReferencia": 10824
+      },
+      {
+        "nome": "I8 Road",
+        "codigoReferencia": 10020
+      },
+      {
+        "nome": "I8",
+        "codigoReferencia": 10019
+      },
+      {
+        "nome": "Ix 1",
+        "codigoReferencia": 11103
+      },
+      {
+        "nome": "Ix 2",
+        "codigoReferencia": 11104
+      },
+      {
+        "nome": "Ix 3",
+        "codigoReferencia": 9910
+      },
+      {
+        "nome": "Ix",
+        "codigoReferencia": 10782
+      }
+    ]
+  },
+  {
+    "marca": "Brm",
+    "modelos": [
+      {
+        "nome": "Buggy",
+        "codigoReferencia": 255
+      }
+    ]
+  },
+  {
+    "marca": "Byd",
+    "modelos": [
+      {
+        "nome": "Atto 8",
+        "codigoReferencia": 11920
+      },
+      {
+        "nome": "D1",
+        "codigoReferencia": 9902
+      },
+      {
+        "nome": "Dolphin",
+        "codigoReferencia": 10813
+      },
+      {
+        "nome": "Dolphin Mini",
+        "codigoReferencia": 10986
+      },
+      {
+        "nome": "Dolphin Plus",
+        "codigoReferencia": 10878
+      },
+      {
+        "nome": "Han",
+        "codigoReferencia": 9860
+      },
+      {
+        "nome": "King",
+        "codigoReferencia": 11078
+      },
+      {
+        "nome": "Shark",
+        "codigoReferencia": 11277
+      },
+      {
+        "nome": "Seal",
+        "codigoReferencia": 10833
+      },
+      {
+        "nome": "Sealion 7",
+        "codigoReferencia": 12037
+      },
+      {
+        "nome": "Song Plus",
+        "codigoReferencia": 11084
+      },
+      {
+        "nome": "Song Plus Premium",
+        "codigoReferencia": 11299
+      },
+      {
+        "nome": "Song Pro",
+        "codigoReferencia": 11106
+      },
+      {
+        "nome": "Tan",
+        "codigoReferencia": 9775
+      },
+      {
+        "nome": "Yuan",
+        "codigoReferencia": 10184
+      },
+      {
+        "nome": "Et3",
+        "codigoReferencia": 9831
+      }
+    ]
+  },
+  {
+    "marca": "Baby",
+    "modelos": [
+      {
+        "nome": "Buggy",
+        "codigoReferencia": 8274
+      }
+    ]
+  },
+  {
+    "marca": "Bugre",
+    "modelos": [
+      {
+        "nome": "Buggy",
+        "codigoReferencia": 4053
+      }
+    ]
+  },
+  {
+    "marca": "Cab Motors",
+    "modelos": [
+      {
+        "nome": "Stark Mountaim",
+        "codigoReferencia": 9561
+      },
+      {
+        "nome": "Stark Superação",
+        "codigoReferencia": 9562
+      }
+    ]
+  },
+  {
+    "marca": "Cbt Jipe",
+    "modelos": [
+      {
+        "nome": "Javali",
+        "codigoReferencia": 260
+      }
+    ]
+  },
+  {
+    "marca": "Chana",
+    "modelos": [
+      {
+        "nome": "Cargo",
+        "codigoReferencia": 4392
+      },
+      {
+        "nome": "Family",
+        "codigoReferencia": 4395
+      },
+      {
+        "nome": "Utility",
+        "codigoReferencia": 4396
+      }
+    ]
+  },
+  {
+    "marca": "Changan",
+    "modelos": [
+      {
+        "nome": "Mini Star",
+        "codigoReferencia": 5872
+      },
+      {
+        "nome": "Mini Star Family",
+        "codigoReferencia": 5876
+      },
+      {
+        "nome": "Mini Star Utility",
+        "codigoReferencia": 5877
+      }
+    ]
+  },
+  {
+    "marca": "Cadillac",
+    "modelos": [
+      {
+        "nome": "Deville Eldorado",
+        "codigoReferencia": 258
+      },
+      {
+        "nome": "Seville",
+        "codigoReferencia": 259
+      }
+    ]
+  },
+  {
+    "marca": "Caoa Changan",
+    "modelos": [
+      {
+        "nome": "Avatr11",
+        "codigoReferencia": 11987
+      },
+      {
+        "nome": "Cs75",
+        "codigoReferencia": 12014
+      },
+      {
+        "nome": "Uni-T",
+        "codigoReferencia": 11966
+      }
+    ]
+  },
+  {
+    "marca": "Caoa Chery",
+    "modelos": [
+      {
+        "nome": "Arrizo 6",
+        "codigoReferencia": 9628
+      },
+      {
+        "nome": "Tiggo 3x",
+        "codigoReferencia": 9532
+      },
+      {
+        "nome": "Tiggo 5x",
+        "codigoReferencia": 10067
+      },
+      {
+        "nome": "Tiggo 7",
+        "codigoReferencia": 10068
+      },
+      {
+        "nome": "Tiggo 8",
+        "codigoReferencia": 9924
+      },
+      {
+        "nome": "Icar",
+        "codigoReferencia": 9862
+      }
+    ]
+  },
+  {
+    "marca": "Caoa Chery",
+    "modelos": [
+      {
+        "nome": "Arrizo 5",
+        "codigoReferencia": 9039
+      },
+      {
+        "nome": "Arrizo 5e",
+        "codigoReferencia": 9299
+      },
+      {
+        "nome": "Arrizo 6",
+        "codigoReferencia": 9106
+      },
+      {
+        "nome": "Cielo",
+        "codigoReferencia": 5208
+      },
+      {
+        "nome": "Celer",
+        "codigoReferencia": 6379
+      },
+      {
+        "nome": "Face",
+        "codigoReferencia": 5210
+      },
+      {
+        "nome": "Qq",
+        "codigoReferencia": 7224
+      },
+      {
+        "nome": "S-18",
+        "codigoReferencia": 5740
+      },
+      {
+        "nome": "Tiggo 2",
+        "codigoReferencia": 8339
+      },
+      {
+        "nome": "Tiggo 2 Look",
+        "codigoReferencia": 8340
+      },
+      {
+        "nome": "Tiggo 2 Smile",
+        "codigoReferencia": 9492
+      },
+      {
+        "nome": "Tiggo",
+        "codigoReferencia": 6661
+      },
+      {
+        "nome": "Tiggo 5x",
+        "codigoReferencia": 8571
+      },
+      {
+        "nome": "Tiggo 7",
+        "codigoReferencia": 8586
+      },
+      {
+        "nome": "Tiggo 8",
+        "codigoReferencia": 9162
+      }
+    ]
+  },
+  {
+    "marca": "Chrysler",
+    "modelos": [
+      {
+        "nome": "300",
+        "codigoReferencia": 4528
+      },
+      {
+        "nome": "Caravan",
+        "codigoReferencia": 262
+      },
+      {
+        "nome": "Cirrus",
+        "codigoReferencia": 265
+      },
+      {
+        "nome": "Grand Caravan",
+        "codigoReferencia": 267
+      },
+      {
+        "nome": "Le Baron",
+        "codigoReferencia": 270
+      },
+      {
+        "nome": "Neon",
+        "codigoReferencia": 272
+      },
+      {
+        "nome": "Pt Cruiser",
+        "codigoReferencia": 4255
+      },
+      {
+        "nome": "Pt Cruiser Classic",
+        "codigoReferencia": 3882
+      },
+      {
+        "nome": "Sebring",
+        "codigoReferencia": 277
+      },
+      {
+        "nome": "Stratus",
+        "codigoReferencia": 278
+      },
+      {
+        "nome": "Town & Country",
+        "codigoReferencia": 4623
+      },
+      {
+        "nome": "Vision",
+        "codigoReferencia": 282
+      }
+    ]
+  },
+  {
+    "marca": "Citroën",
+    "modelos": [
+      {
+        "nome": "Aircross 100 Anos",
+        "codigoReferencia": 8737
+      },
+      {
+        "nome": "Aircross Business",
+        "codigoReferencia": 8045
+      },
+      {
+        "nome": "Aircross",
+        "codigoReferencia": 6418
+      },
+      {
+        "nome": "Aircross Feel",
+        "codigoReferencia": 11785
+      },
+      {
+        "nome": "Aircross Live",
+        "codigoReferencia": 7422
+      },
+      {
+        "nome": "Aircross Salomon",
+        "codigoReferencia": 7903
+      },
+      {
+        "nome": "Aircross Salomon Tendance",
+        "codigoReferencia": 7092
+      },
+      {
+        "nome": "Aircross Shine",
+        "codigoReferencia": 11786
+      },
+      {
+        "nome": "Aircross Start",
+        "codigoReferencia": 7425
+      },
+      {
+        "nome": "Aircross Tendance",
+        "codigoReferencia": 6770
+      },
+      {
+        "nome": "Aircross7",
+        "codigoReferencia": 11787
+      },
+      {
+        "nome": "Aircross7 Feel",
+        "codigoReferencia": 11788
+      },
+      {
+        "nome": "Aircross7 Shine",
+        "codigoReferencia": 11789
+      },
+      {
+        "nome": "Ax",
+        "codigoReferencia": 283
+      },
+      {
+        "nome": "Basalt",
+        "codigoReferencia": 11631
+      },
+      {
+        "nome": "Basalt Feel",
+        "codigoReferencia": 11214
+      },
+      {
+        "nome": "Basalt Shine",
+        "codigoReferencia": 11217
+      },
+      {
+        "nome": "Bx",
+        "codigoReferencia": 287
+      },
+      {
+        "nome": "Berlingo",
+        "codigoReferencia": 8391
+      },
+      {
+        "nome": "Berlingo Multspace",
+        "codigoReferencia": 285
+      },
+      {
+        "nome": "C3 100 Anos",
+        "codigoReferencia": 8738
+      },
+      {
+        "nome": "C3 Attra Origine",
+        "codigoReferencia": 6835
+      },
+      {
+        "nome": "C3",
+        "codigoReferencia": 7964
+      },
+      {
+        "nome": "C3 Excl",
+        "codigoReferencia": 6152
+      },
+      {
+        "nome": "C3 Excl Excl Solar Sonora",
+        "codigoReferencia": 4761
+      },
+      {
+        "nome": "C3 Exclus Excl Solaris",
+        "codigoReferencia": 289
+      },
+      {
+        "nome": "C3 Feel",
+        "codigoReferencia": 10091
+      },
+      {
+        "nome": "C3 Live",
+        "codigoReferencia": 10096
+      },
+      {
+        "nome": "C3 Ocimar Versolato",
+        "codigoReferencia": 292
+      },
+      {
+        "nome": "C3 Origine",
+        "codigoReferencia": 6154
+      },
+      {
+        "nome": "C3 Picasso Excl",
+        "codigoReferencia": 5611
+      },
+      {
+        "nome": "C3 Picasso",
+        "codigoReferencia": 5551
+      },
+      {
+        "nome": "C3 Picasso Origine",
+        "codigoReferencia": 6773
+      },
+      {
+        "nome": "C3 Picasso Tendance",
+        "codigoReferencia": 6774
+      },
+      {
+        "nome": "C3 Start",
+        "codigoReferencia": 8003
+      },
+      {
+        "nome": "C3 Tendance",
+        "codigoReferencia": 6155
+      },
+      {
+        "nome": "C3 Urban",
+        "codigoReferencia": 8341
+      },
+      {
+        "nome": "C3 X-Box",
+        "codigoReferencia": 6777
+      },
+      {
+        "nome": "C4 Cactus",
+        "codigoReferencia": 8739
+      },
+      {
+        "nome": "C4 Cactus C-Series",
+        "codigoReferencia": 9207
+      },
+      {
+        "nome": "C4 Cactus Feel",
+        "codigoReferencia": 8466
+      },
+      {
+        "nome": "C4 Cactus Live",
+        "codigoReferencia": 9191
+      },
+      {
+        "nome": "C4 Cactus Noir",
+        "codigoReferencia": 10807
+      },
+      {
+        "nome": "C4 Cactus Shine",
+        "codigoReferencia": 9757
+      },
+      {
+        "nome": "C4 Cactus X-Series",
+        "codigoReferencia": 9609
+      },
+      {
+        "nome": "C4",
+        "codigoReferencia": 6574
+      },
+      {
+        "nome": "C4 Excl Excl Solar",
+        "codigoReferencia": 4888
+      },
+      {
+        "nome": "C4 Excl",
+        "codigoReferencia": 4845
+      },
+      {
+        "nome": "C4 Lounge",
+        "codigoReferencia": 8740
+      },
+      {
+        "nome": "C4 Lounge Feel",
+        "codigoReferencia": 8234
+      },
+      {
+        "nome": "C4 Lounge Live",
+        "codigoReferencia": 8515
+      },
+      {
+        "nome": "C4 Lounge Orig Business",
+        "codigoReferencia": 7658
+      },
+      {
+        "nome": "C4 Lounge Origine",
+        "codigoReferencia": 7684
+      },
+      {
+        "nome": "C4 Lounge Shine",
+        "codigoReferencia": 8235
+      },
+      {
+        "nome": "C4 Lounge Tendance",
+        "codigoReferencia": 6884
+      },
+      {
+        "nome": "C4 Pallas",
+        "codigoReferencia": 4398
+      },
+      {
+        "nome": "C4 Picasso Intensive",
+        "codigoReferencia": 7426
+      },
+      {
+        "nome": "C4 Picasso Seduction",
+        "codigoReferencia": 7427
+      },
+      {
+        "nome": "C4 Picasso",
+        "codigoReferencia": 4824
+      },
+      {
+        "nome": "C4 Tendance",
+        "codigoReferencia": 6737
+      },
+      {
+        "nome": "C5",
+        "codigoReferencia": 293
+      },
+      {
+        "nome": "C5 Tourer",
+        "codigoReferencia": 4937
+      },
+      {
+        "nome": "C6",
+        "codigoReferencia": 4328
+      },
+      {
+        "nome": "C8",
+        "codigoReferencia": 298
+      },
+      {
+        "nome": "Ds3",
+        "codigoReferencia": 6050
+      },
+      {
+        "nome": "Ds4",
+        "codigoReferencia": 7068
+      },
+      {
+        "nome": "Ds5",
+        "codigoReferencia": 7095
+      },
+      {
+        "nome": "Evasion",
+        "codigoReferencia": 299
+      },
+      {
+        "nome": "Grand",
+        "codigoReferencia": 10777
+      },
+      {
+        "nome": "Jumper",
+        "codigoReferencia": 9556
+      },
+      {
+        "nome": "Jumper Cargo",
+        "codigoReferencia": 9763
+      },
+      {
+        "nome": "Jumper Vitré",
+        "codigoReferencia": 11377
+      },
+      {
+        "nome": "Jumpy",
+        "codigoReferencia": 8078
+      },
+      {
+        "nome": "Jumpy Cargo",
+        "codigoReferencia": 9741
+      },
+      {
+        "nome": "Jumpy Vitré",
+        "codigoReferencia": 9192
+      },
+      {
+        "nome": "Xm",
+        "codigoReferencia": 319
+      },
+      {
+        "nome": "Xm Sensation",
+        "codigoReferencia": 322
+      },
+      {
+        "nome": "Xantia",
+        "codigoReferencia": 305
+      },
+      {
+        "nome": "Xantia Activa",
+        "codigoReferencia": 306
+      },
+      {
+        "nome": "Xantia Break",
+        "codigoReferencia": 309
+      },
+      {
+        "nome": "Xsara Break",
+        "codigoReferencia": 323
+      },
+      {
+        "nome": "Xsara",
+        "codigoReferencia": 331
+      },
+      {
+        "nome": "Xsara Picasso",
+        "codigoReferencia": 344
+      },
+      {
+        "nome": "Xsara Picasso Exclus",
+        "codigoReferencia": 3930
+      },
+      {
+        "nome": "Zx Cupê",
+        "codigoReferencia": 352
+      },
+      {
+        "nome": "Zx Dakar",
+        "codigoReferencia": 353
+      },
+      {
+        "nome": "Zx Furio",
+        "codigoReferencia": 354
+      },
+      {
+        "nome": "Zx Paris",
+        "codigoReferencia": 355
+      },
+      {
+        "nome": "Zx Volcane",
+        "codigoReferencia": 356
+      },
+      {
+        "nome": "Ë-Jumpy Cargo",
+        "codigoReferencia": 9759
+      }
+    ]
+  },
+  {
+    "marca": "Cross Lander",
+    "modelos": [
+      {
+        "nome": "Cl-244",
+        "codigoReferencia": 357
+      },
+      {
+        "nome": "Cl-330",
+        "codigoReferencia": 3964
+      }
+    ]
+  },
+  {
+    "marca": "D2d Motors",
+    "modelos": [
+      {
+        "nome": "Buggy",
+        "codigoReferencia": 10626
+      }
+    ]
+  },
+  {
+    "marca": "Dfsk",
+    "modelos": [
+      {
+        "nome": "Ec31",
+        "codigoReferencia": 10921
+      },
+      {
+        "nome": "Ec35",
+        "codigoReferencia": 10922
+      }
+    ]
+  },
+  {
+    "marca": "Daewoo",
+    "modelos": [
+      {
+        "nome": "Espero",
+        "codigoReferencia": 358
+      },
+      {
+        "nome": "Lanos",
+        "codigoReferencia": 360
+      },
+      {
+        "nome": "Leganza",
+        "codigoReferencia": 363
+      },
+      {
+        "nome": "Nubira",
+        "codigoReferencia": 365
+      },
+      {
+        "nome": "Prince",
+        "codigoReferencia": 369
+      },
+      {
+        "nome": "Racer",
+        "codigoReferencia": 370
+      },
+      {
+        "nome": "Super Salon",
+        "codigoReferencia": 371
+      },
+      {
+        "nome": "Tico",
+        "codigoReferencia": 372
+      }
+    ]
+  },
+  {
+    "marca": "Daihatsu",
+    "modelos": [
+      {
+        "nome": "Applause",
+        "codigoReferencia": 373
+      },
+      {
+        "nome": "Charade",
+        "codigoReferencia": 375
+      },
+      {
+        "nome": "Cuore 0",
+        "codigoReferencia": 380
+      },
+      {
+        "nome": "Cuore",
+        "codigoReferencia": 381
+      },
+      {
+        "nome": "Feroza",
+        "codigoReferencia": 383
+      },
+      {
+        "nome": "Gran Move",
+        "codigoReferencia": 385
+      },
+      {
+        "nome": "Move",
+        "codigoReferencia": 386
+      },
+      {
+        "nome": "Terios",
+        "codigoReferencia": 387
+      }
+    ]
+  },
+  {
+    "marca": "Denza",
+    "modelos": [
+      {
+        "nome": "B5",
+        "codigoReferencia": 11873
+      }
+    ]
+  },
+  {
+    "marca": "Dodge",
+    "modelos": [
+      {
+        "nome": "Avenger",
+        "codigoReferencia": 388
+      },
+      {
+        "nome": "Dakota",
+        "codigoReferencia": 389
+      },
+      {
+        "nome": "Dakota Durango",
+        "codigoReferencia": 391
+      },
+      {
+        "nome": "Durango Citadel",
+        "codigoReferencia": 6316
+      },
+      {
+        "nome": "Durango",
+        "codigoReferencia": 6317
+      },
+      {
+        "nome": "Intrepid",
+        "codigoReferencia": 393
+      },
+      {
+        "nome": "Journey Crossroad",
+        "codigoReferencia": 6953
+      },
+      {
+        "nome": "Journey",
+        "codigoReferencia": 5695
+      },
+      {
+        "nome": "Ram 2500",
+        "codigoReferencia": 406
+      },
+      {
+        "nome": "Ram 2500 Laramie",
+        "codigoReferencia": 5924
+      },
+      {
+        "nome": "Ram 2500 Tropivan",
+        "codigoReferencia": 5150
+      },
+      {
+        "nome": "Ram Laramie",
+        "codigoReferencia": 407
+      },
+      {
+        "nome": "Ram",
+        "codigoReferencia": 409
+      },
+      {
+        "nome": "Stealth",
+        "codigoReferencia": 410
+      }
+    ]
+  },
+  {
+    "marca": "Effa",
+    "modelos": [
+      {
+        "nome": "K01",
+        "codigoReferencia": 7342
+      },
+      {
+        "nome": "K02",
+        "codigoReferencia": 7343
+      },
+      {
+        "nome": "M-100",
+        "codigoReferencia": 4637
+      },
+      {
+        "nome": "Plutus",
+        "codigoReferencia": 5660
+      },
+      {
+        "nome": "Start Picape",
+        "codigoReferencia": 5661
+      },
+      {
+        "nome": "Start",
+        "codigoReferencia": 5663
+      },
+      {
+        "nome": "Ulc",
+        "codigoReferencia": 4638
+      },
+      {
+        "nome": "Ulc Picape",
+        "codigoReferencia": 4639
+      },
+      {
+        "nome": "Ulc Picape Longa",
+        "codigoReferencia": 5359
+      },
+      {
+        "nome": "V21",
+        "codigoReferencia": 7344
+      },
+      {
+        "nome": "V22",
+        "codigoReferencia": 7345
+      },
+      {
+        "nome": "V25",
+        "codigoReferencia": 9041
+      }
+    ]
+  },
+  {
+    "marca": "Engesa",
+    "modelos": [
+      {
+        "nome": "4x4",
+        "codigoReferencia": 411
+      }
+    ]
+  },
+  {
+    "marca": "Envemo",
+    "modelos": [
+      {
+        "nome": "Camper",
+        "codigoReferencia": 413
+      },
+      {
+        "nome": "Master",
+        "codigoReferencia": 416
+      }
+    ]
+  },
+  {
+    "marca": "Fever",
+    "modelos": [
+      {
+        "nome": "Nextem",
+        "codigoReferencia": 11229
+      }
+    ]
+  },
+  {
+    "marca": "Foton",
+    "modelos": [
+      {
+        "nome": "Aumark",
+        "codigoReferencia": 7028
+      },
+      {
+        "nome": "Minitruck",
+        "codigoReferencia": 8474
+      },
+      {
+        "nome": "Tunland",
+        "codigoReferencia": 11515
+      },
+      {
+        "nome": "Etoano",
+        "codigoReferencia": 11922
+      },
+      {
+        "nome": "Eview",
+        "codigoReferencia": 11993
+      },
+      {
+        "nome": "Eview Grand Teto Baixo",
+        "codigoReferencia": 11994
+      },
+      {
+        "nome": "Eview Grand Teto Médio",
+        "codigoReferencia": 11995
+      },
+      {
+        "nome": "Ewonder",
+        "codigoReferencia": 11927
+      }
+    ]
+  },
+  {
+    "marca": "Ferrari",
+    "modelos": [
+      {
+        "nome": "12cilinrdri",
+        "codigoReferencia": 11398
+      },
+      {
+        "nome": "12cilinrdri Spider",
+        "codigoReferencia": 11399
+      },
+      {
+        "nome": "296",
+        "codigoReferencia": 10159
+      },
+      {
+        "nome": "296 Speciale",
+        "codigoReferencia": 12005
+      },
+      {
+        "nome": "348",
+        "codigoReferencia": 417
+      },
+      {
+        "nome": "348 Spider",
+        "codigoReferencia": 418
+      },
+      {
+        "nome": "355 Berlinetta",
+        "codigoReferencia": 420
+      },
+      {
+        "nome": "355",
+        "codigoReferencia": 422
+      },
+      {
+        "nome": "355 Spider",
+        "codigoReferencia": 426
+      },
+      {
+        "nome": "360 Challenge Stradale",
+        "codigoReferencia": 427
+      },
+      {
+        "nome": "360 Modena",
+        "codigoReferencia": 428
+      },
+      {
+        "nome": "360 Spider",
+        "codigoReferencia": 430
+      },
+      {
+        "nome": "456",
+        "codigoReferencia": 432
+      },
+      {
+        "nome": "456 M-GT",
+        "codigoReferencia": 434
+      },
+      {
+        "nome": "458 Speciale",
+        "codigoReferencia": 7881
+      },
+      {
+        "nome": "488",
+        "codigoReferencia": 7502
+      },
+      {
+        "nome": "488 Pista",
+        "codigoReferencia": 9107
+      },
+      {
+        "nome": "488 Pista Spider",
+        "codigoReferencia": 8986
+      },
+      {
+        "nome": "488 Spider",
+        "codigoReferencia": 7876
+      },
+      {
+        "nome": "550 Maranello",
+        "codigoReferencia": 435
+      },
+      {
+        "nome": "575m Maranello",
+        "codigoReferencia": 436
+      },
+      {
+        "nome": "612 Scaglietti",
+        "codigoReferencia": 3932
+      },
+      {
+        "nome": "812",
+        "codigoReferencia": 9447
+      },
+      {
+        "nome": "812 Superfast",
+        "codigoReferencia": 8343
+      },
+      {
+        "nome": "Amalfi",
+        "codigoReferencia": 12011
+      },
+      {
+        "nome": "California",
+        "codigoReferencia": 7179
+      },
+      {
+        "nome": "F12 Berlinetta",
+        "codigoReferencia": 6463
+      },
+      {
+        "nome": "F12",
+        "codigoReferencia": 7788
+      },
+      {
+        "nome": "F430",
+        "codigoReferencia": 3812
+      },
+      {
+        "nome": "F430 Scuderia",
+        "codigoReferencia": 4809
+      },
+      {
+        "nome": "F430 Spider",
+        "codigoReferencia": 4055
+      },
+      {
+        "nome": "F458 Italia",
+        "codigoReferencia": 6094
+      },
+      {
+        "nome": "F458 Speciale",
+        "codigoReferencia": 6912
+      },
+      {
+        "nome": "F458 Spider",
+        "codigoReferencia": 6156
+      },
+      {
+        "nome": "F599",
+        "codigoReferencia": 4289
+      },
+      {
+        "nome": "F8 Spider",
+        "codigoReferencia": 9249
+      },
+      {
+        "nome": "F8 Tributo",
+        "codigoReferencia": 9193
+      },
+      {
+        "nome": "Ff",
+        "codigoReferencia": 6095
+      },
+      {
+        "nome": "Gtc4 Lusso",
+        "codigoReferencia": 8176
+      },
+      {
+        "nome": "Portofino",
+        "codigoReferencia": 8517
+      },
+      {
+        "nome": "Purosangue",
+        "codigoReferencia": 10995
+      },
+      {
+        "nome": "Roma",
+        "codigoReferencia": 9528
+      },
+      {
+        "nome": "Roma Spider",
+        "codigoReferencia": 11298
+      },
+      {
+        "nome": "Sf 90 Spider",
+        "codigoReferencia": 9773
+      },
+      {
+        "nome": "Sf 90 Stradale",
+        "codigoReferencia": 9488
+      }
+    ]
+  },
+  {
+    "marca": "Fiat",
+    "modelos": [
+      {
+        "nome": "147",
+        "codigoReferencia": 437
+      },
+      {
+        "nome": "500",
+        "codigoReferencia": 7097
+      },
+      {
+        "nome": "500 Cult",
+        "codigoReferencia": 5613
+      },
+      {
+        "nome": "500 Lounge",
+        "codigoReferencia": 5059
+      },
+      {
+        "nome": "500e Icon",
+        "codigoReferencia": 9584
+      },
+      {
+        "nome": "Argo",
+        "codigoReferencia": 11401
+      },
+      {
+        "nome": "Argo Precision",
+        "codigoReferencia": 7971
+      },
+      {
+        "nome": "Brava",
+        "codigoReferencia": 440
+      },
+      {
+        "nome": "Bravo",
+        "codigoReferencia": 5446
+      },
+      {
+        "nome": "Bravo Blackmotion",
+        "codigoReferencia": 7132
+      },
+      {
+        "nome": "Bravo Wolverine",
+        "codigoReferencia": 6515
+      },
+      {
+        "nome": "Cronos",
+        "codigoReferencia": 9988
+      },
+      {
+        "nome": "Cronos Precision",
+        "codigoReferencia": 10394
+      },
+      {
+        "nome": "Cinquecento",
+        "codigoReferencia": 444
+      },
+      {
+        "nome": "Coupe",
+        "codigoReferencia": 445
+      },
+      {
+        "nome": "Doblo",
+        "codigoReferencia": 5104
+      },
+      {
+        "nome": "Doblo Cargo",
+        "codigoReferencia": 5105
+      },
+      {
+        "nome": "Ducato Cargo",
+        "codigoReferencia": 10659
+      },
+      {
+        "nome": "Ducato Cargo Curto",
+        "codigoReferencia": 8204
+      },
+      {
+        "nome": "Ducato Cargo Longo",
+        "codigoReferencia": 5023
+      },
+      {
+        "nome": "Ducato Cargo Médio",
+        "codigoReferencia": 8205
+      },
+      {
+        "nome": "Ducato",
+        "codigoReferencia": 8206
+      },
+      {
+        "nome": "Ducato Combinato",
+        "codigoReferencia": 5024
+      },
+      {
+        "nome": "Ducato Executivo",
+        "codigoReferencia": 8395
+      },
+      {
+        "nome": "Ducato Maxi Curta",
+        "codigoReferencia": 5025
+      },
+      {
+        "nome": "Ducato Maxi Long",
+        "codigoReferencia": 5026
+      },
+      {
+        "nome": "Ducato Maxicargo",
+        "codigoReferencia": 10660
+      },
+      {
+        "nome": "Ducato Maximulti",
+        "codigoReferencia": 8208
+      },
+      {
+        "nome": "Ducato Mult Vetrato",
+        "codigoReferencia": 460
+      },
+      {
+        "nome": "Ducato Multi",
+        "codigoReferencia": 10663
+      },
+      {
+        "nome": "Ducato Multi Long",
+        "codigoReferencia": 5029
+      },
+      {
+        "nome": "Ducato-10",
+        "codigoReferencia": 463
+      },
+      {
+        "nome": "Ducato-15",
+        "codigoReferencia": 464
+      },
+      {
+        "nome": "Ducato-8",
+        "codigoReferencia": 466
+      },
+      {
+        "nome": "Duna",
+        "codigoReferencia": 467
+      },
+      {
+        "nome": "E-Scudo",
+        "codigoReferencia": 10369
+      },
+      {
+        "nome": "Elba",
+        "codigoReferencia": 468
+      },
+      {
+        "nome": "Elba Weekend",
+        "codigoReferencia": 471
+      },
+      {
+        "nome": "Freemont Emot Precision",
+        "codigoReferencia": 5618
+      },
+      {
+        "nome": "Fastback",
+        "codigoReferencia": 10754
+      },
+      {
+        "nome": "Fastback Audace",
+        "codigoReferencia": 10101
+      },
+      {
+        "nome": "Fastback Impetus",
+        "codigoReferencia": 10102
+      },
+      {
+        "nome": "Fastback Tributo",
+        "codigoReferencia": 11264
+      },
+      {
+        "nome": "Fiorino",
+        "codigoReferencia": 11376
+      },
+      {
+        "nome": "Fiorino Furg",
+        "codigoReferencia": 473
+      },
+      {
+        "nome": "Grand Siena",
+        "codigoReferencia": 9209
+      },
+      {
+        "nome": "Grand Siena Attrac",
+        "codigoReferencia": 5925
+      },
+      {
+        "nome": "Grand Siena Essen Italia Dual",
+        "codigoReferencia": 6955
+      },
+      {
+        "nome": "Grand Siena Essen Sublime",
+        "codigoReferencia": 6488
+      },
+      {
+        "nome": "Grand Siena Essen Sublime Dual",
+        "codigoReferencia": 6489
+      },
+      {
+        "nome": "Idea",
+        "codigoReferencia": 7504
+      },
+      {
+        "nome": "Idea Advent",
+        "codigoReferencia": 4160
+      },
+      {
+        "nome": "Linea",
+        "codigoReferencia": 4748
+      },
+      {
+        "nome": "Linea Essen Sublime",
+        "codigoReferencia": 6581
+      },
+      {
+        "nome": "Linea Essen Sublime Dual",
+        "codigoReferencia": 6582
+      },
+      {
+        "nome": "Mobi",
+        "codigoReferencia": 7825
+      },
+      {
+        "nome": "Mobi Easy",
+        "codigoReferencia": 7538
+      },
+      {
+        "nome": "Marea",
+        "codigoReferencia": 482
+      },
+      {
+        "nome": "Marea Weekend",
+        "codigoReferencia": 493
+      },
+      {
+        "nome": "Oggi",
+        "codigoReferencia": 504
+      },
+      {
+        "nome": "Pulse",
+        "codigoReferencia": 11509
+      },
+      {
+        "nome": "Pulse Audace",
+        "codigoReferencia": 9645
+      },
+      {
+        "nome": "Pulse Impetus",
+        "codigoReferencia": 9649
+      },
+      {
+        "nome": "Pulse Tributo",
+        "codigoReferencia": 11271
+      },
+      {
+        "nome": "Palio",
+        "codigoReferencia": 4826
+      },
+      {
+        "nome": "Palio Attra Best Seller",
+        "codigoReferencia": 7180
+      },
+      {
+        "nome": "Palio Attra Itália",
+        "codigoReferencia": 5271
+      },
+      {
+        "nome": "Palio Celebration",
+        "codigoReferencia": 3965
+      },
+      {
+        "nome": "Palio Citymatic",
+        "codigoReferencia": 513
+      },
+      {
+        "nome": "Palio Stile",
+        "codigoReferencia": 541
+      },
+      {
+        "nome": "Palio Week",
+        "codigoReferencia": 5272
+      },
+      {
+        "nome": "Palio Weekend",
+        "codigoReferencia": 542
+      },
+      {
+        "nome": "Palio Weekend Stile",
+        "codigoReferencia": 560
+      },
+      {
+        "nome": "Palio Young",
+        "codigoReferencia": 562
+      },
+      {
+        "nome": "Panorama",
+        "codigoReferencia": 566
+      },
+      {
+        "nome": "Premio",
+        "codigoReferencia": 567
+      },
+      {
+        "nome": "Punto",
+        "codigoReferencia": 4421
+      },
+      {
+        "nome": "Punto Blackmotion",
+        "codigoReferencia": 6560
+      },
+      {
+        "nome": "Punto Blackmotion Dual",
+        "codigoReferencia": 6561
+      },
+      {
+        "nome": "Scudo Cargo",
+        "codigoReferencia": 9919
+      },
+      {
+        "nome": "Scudo Multi",
+        "codigoReferencia": 9920
+      },
+      {
+        "nome": "Siena",
+        "codigoReferencia": 576
+      },
+      {
+        "nome": "Siena Celebration",
+        "codigoReferencia": 3967
+      },
+      {
+        "nome": "Siena Stile",
+        "codigoReferencia": 595
+      },
+      {
+        "nome": "Stilo",
+        "codigoReferencia": 5064
+      },
+      {
+        "nome": "Strada",
+        "codigoReferencia": 600
+      },
+      {
+        "nome": "Strada Celeb",
+        "codigoReferencia": 5274
+      },
+      {
+        "nome": "Strada Trek",
+        "codigoReferencia": 6519
+      },
+      {
+        "nome": "Strada Volc Tributo",
+        "codigoReferencia": 11279
+      },
+      {
+        "nome": "Strada Strada",
+        "codigoReferencia": 616
+      },
+      {
+        "nome": "Tempra",
+        "codigoReferencia": 618
+      },
+      {
+        "nome": "Tempra Stile",
+        "codigoReferencia": 625
+      },
+      {
+        "nome": "Tipo",
+        "codigoReferencia": 630
+      },
+      {
+        "nome": "Titano",
+        "codigoReferencia": 10999
+      },
+      {
+        "nome": "Toro Blackjack",
+        "codigoReferencia": 8046
+      },
+      {
+        "nome": "Toro",
+        "codigoReferencia": 9493
+      },
+      {
+        "nome": "Uno Attracti Celeb",
+        "codigoReferencia": 5480
+      },
+      {
+        "nome": "Uno",
+        "codigoReferencia": 6957
+      },
+      {
+        "nome": "Uno Ciao",
+        "codigoReferencia": 9725
+      },
+      {
+        "nome": "Uno Economy",
+        "codigoReferencia": 5664
+      },
+      {
+        "nome": "Uno Economy Celeb",
+        "codigoReferencia": 5666
+      },
+      {
+        "nome": "Uno Mille",
+        "codigoReferencia": 6320
+      },
+      {
+        "nome": "Uno Vivace",
+        "codigoReferencia": 5483
+      },
+      {
+        "nome": "Uno Vivace Celeb",
+        "codigoReferencia": 5484
+      },
+      {
+        "nome": "Uno Vivace College",
+        "codigoReferencia": 6520
+      },
+      {
+        "nome": "Uno Vivace Italia",
+        "codigoReferencia": 7149
+      },
+      {
+        "nome": "Uno Mille Celeb",
+        "codigoReferencia": 4763
+      },
+      {
+        "nome": "Uno Mille Celeb Celeb Econ",
+        "codigoReferencia": 4316
+      },
+      {
+        "nome": "Uno Mille Grazie",
+        "codigoReferencia": 6692
+      },
+      {
+        "nome": "Uno Mille Mille",
+        "codigoReferencia": 649
+      }
+    ]
+  },
+  {
+    "marca": "Fibravan",
+    "modelos": [
+      {
+        "nome": "Buggy",
+        "codigoReferencia": 10806
+      }
+    ]
+  },
+  {
+    "marca": "Ford",
+    "modelos": [
+      {
+        "nome": "Aerostar Mini-Van",
+        "codigoReferencia": 655
+      },
+      {
+        "nome": "Aspire",
+        "codigoReferencia": 656
+      },
+      {
+        "nome": "Belina",
+        "codigoReferencia": 657
+      },
+      {
+        "nome": "Bronco",
+        "codigoReferencia": 11489
+      },
+      {
+        "nome": "Club",
+        "codigoReferencia": 659
+      },
+      {
+        "nome": "Contour",
+        "codigoReferencia": 661
+      },
+      {
+        "nome": "Corcel",
+        "codigoReferencia": 663
+      },
+      {
+        "nome": "Courier",
+        "codigoReferencia": 665
+      },
+      {
+        "nome": "Crown Victoria",
+        "codigoReferencia": 671
+      },
+      {
+        "nome": "Del Rey Belina",
+        "codigoReferencia": 673
+      },
+      {
+        "nome": "Del Rey",
+        "codigoReferencia": 677
+      },
+      {
+        "nome": "E-Transit",
+        "codigoReferencia": 11611
+      },
+      {
+        "nome": "Edge",
+        "codigoReferencia": 5413
+      },
+      {
+        "nome": "Edge Titanium",
+        "codigoReferencia": 7718
+      },
+      {
+        "nome": "Ecosport 100 Anos",
+        "codigoReferencia": 8743
+      },
+      {
+        "nome": "Ecosport",
+        "codigoReferencia": 679
+      },
+      {
+        "nome": "Ecosport Freestyle",
+        "codigoReferencia": 8004
+      },
+      {
+        "nome": "Ecosport Titanium",
+        "codigoReferencia": 8588
+      },
+      {
+        "nome": "Escort Racer",
+        "codigoReferencia": 685
+      },
+      {
+        "nome": "Escort",
+        "codigoReferencia": 688
+      },
+      {
+        "nome": "Escort Guarujá",
+        "codigoReferencia": 696
+      },
+      {
+        "nome": "Escort Hobby",
+        "codigoReferencia": 697
+      },
+      {
+        "nome": "Expedition",
+        "codigoReferencia": 710
+      },
+      {
+        "nome": "Explorer",
+        "codigoReferencia": 711
+      },
+      {
+        "nome": "F-100",
+        "codigoReferencia": 718
+      },
+      {
+        "nome": "F-100 Blazer",
+        "codigoReferencia": 719
+      },
+      {
+        "nome": "F-1000",
+        "codigoReferencia": 723
+      },
+      {
+        "nome": "F-1000 Lightning",
+        "codigoReferencia": 725
+      },
+      {
+        "nome": "F-1000 Regular",
+        "codigoReferencia": 726
+      },
+      {
+        "nome": "F-1000 Tropical",
+        "codigoReferencia": 738
+      },
+      {
+        "nome": "F-150 Lariat",
+        "codigoReferencia": 10398
+      },
+      {
+        "nome": "F-150",
+        "codigoReferencia": 10399
+      },
+      {
+        "nome": "F-150 Tremor",
+        "codigoReferencia": 11494
+      },
+      {
+        "nome": "F-250 F-Milha",
+        "codigoReferencia": 5191
+      },
+      {
+        "nome": "F-250 Tropicab",
+        "codigoReferencia": 4161
+      },
+      {
+        "nome": "F-250 Tropica Tropmine",
+        "codigoReferencia": 6032
+      },
+      {
+        "nome": "F-250 Tropical",
+        "codigoReferencia": 755
+      },
+      {
+        "nome": "F-250 Tropicampo",
+        "codigoReferencia": 4162
+      },
+      {
+        "nome": "F-250 Tropiclassic",
+        "codigoReferencia": 4163
+      },
+      {
+        "nome": "F-250 Tropivan",
+        "codigoReferencia": 4164
+      },
+      {
+        "nome": "F-250 Tropivan Tropi",
+        "codigoReferencia": 4165
+      },
+      {
+        "nome": "F-250",
+        "codigoReferencia": 762
+      },
+      {
+        "nome": "Fiesta",
+        "codigoReferencia": 4135
+      },
+      {
+        "nome": "Fiesta Personnalité",
+        "codigoReferencia": 784
+      },
+      {
+        "nome": "Fiesta Street",
+        "codigoReferencia": 792
+      },
+      {
+        "nome": "Fiesta Street Action",
+        "codigoReferencia": 794
+      },
+      {
+        "nome": "Fiesta Titanium",
+        "codigoReferencia": 6432
+      },
+      {
+        "nome": "Focus",
+        "codigoReferencia": 6610
+      },
+      {
+        "nome": "Focus Fastback",
+        "codigoReferencia": 7284
+      },
+      {
+        "nome": "Focus Tita Tita",
+        "codigoReferencia": 5451
+      },
+      {
+        "nome": "Focus Titanium",
+        "codigoReferencia": 5452
+      },
+      {
+        "nome": "Furglaine",
+        "codigoReferencia": 808
+      },
+      {
+        "nome": "Furglaine Chateaux",
+        "codigoReferencia": 810
+      },
+      {
+        "nome": "Fusion",
+        "codigoReferencia": 10006
+      },
+      {
+        "nome": "Fusion Titanium",
+        "codigoReferencia": 10007
+      },
+      {
+        "nome": "Ibiza",
+        "codigoReferencia": 811
+      },
+      {
+        "nome": "Ibiza Chat",
+        "codigoReferencia": 812
+      },
+      {
+        "nome": "Ka",
+        "codigoReferencia": 4514
+      },
+      {
+        "nome": "Ka Action",
+        "codigoReferencia": 814
+      },
+      {
+        "nome": "Ka Image",
+        "codigoReferencia": 820
+      },
+      {
+        "nome": "Ka Street",
+        "codigoReferencia": 821
+      },
+      {
+        "nome": "Ka Tecno",
+        "codigoReferencia": 822
+      },
+      {
+        "nome": "Ka+",
+        "codigoReferencia": 6919
+      },
+      {
+        "nome": "Maverick",
+        "codigoReferencia": 11505
+      },
+      {
+        "nome": "Maverick Lariat",
+        "codigoReferencia": 9744
+      },
+      {
+        "nome": "Maverick Tremor",
+        "codigoReferencia": 11506
+      },
+      {
+        "nome": "Mondeo",
+        "codigoReferencia": 824
+      },
+      {
+        "nome": "Mustang",
+        "codigoReferencia": 837
+      },
+      {
+        "nome": "Mustang Cobra",
+        "codigoReferencia": 839
+      },
+      {
+        "nome": "Mustang Mach",
+        "codigoReferencia": 9354
+      },
+      {
+        "nome": "Mustang Mach-E",
+        "codigoReferencia": 10868
+      },
+      {
+        "nome": "Pampa",
+        "codigoReferencia": 842
+      },
+      {
+        "nome": "Probe",
+        "codigoReferencia": 848
+      },
+      {
+        "nome": "Ranger",
+        "codigoReferencia": 850
+      },
+      {
+        "nome": "Ranger Limited+",
+        "codigoReferencia": 10762
+      },
+      {
+        "nome": "Ranger Raptor",
+        "codigoReferencia": 10891
+      },
+      {
+        "nome": "Ranger Sportrac",
+        "codigoReferencia": 8079
+      },
+      {
+        "nome": "Ranger Splash",
+        "codigoReferencia": 860
+      },
+      {
+        "nome": "Ranger Tropicab",
+        "codigoReferencia": 6525
+      },
+      {
+        "nome": "Ranger Tropivan",
+        "codigoReferencia": 6527
+      },
+      {
+        "nome": "Royale",
+        "codigoReferencia": 905
+      },
+      {
+        "nome": "Territory",
+        "codigoReferencia": 9163
+      },
+      {
+        "nome": "Territory Titanium",
+        "codigoReferencia": 9164
+      },
+      {
+        "nome": "Transit",
+        "codigoReferencia": 6202
+      },
+      {
+        "nome": "Taurus",
+        "codigoReferencia": 907
+      },
+      {
+        "nome": "Thunderbird",
+        "codigoReferencia": 912
+      },
+      {
+        "nome": "Verona",
+        "codigoReferencia": 914
+      },
+      {
+        "nome": "Versailles",
+        "codigoReferencia": 922
+      },
+      {
+        "nome": "Windstar",
+        "codigoReferencia": 924
+      }
+    ]
+  },
+  {
+    "marca": "Fyber",
+    "modelos": [
+      {
+        "nome": "Buggy 2000w",
+        "codigoReferencia": 7591
+      },
+      {
+        "nome": "Buggy Fyberx",
+        "codigoReferencia": 10365
+      }
+    ]
+  },
+  {
+    "marca": "Gac",
+    "modelos": [
+      {
+        "nome": "Aion Es",
+        "codigoReferencia": 11484
+      },
+      {
+        "nome": "Aion Ut",
+        "codigoReferencia": 12009
+      },
+      {
+        "nome": "Aion Ut Premium",
+        "codigoReferencia": 12010
+      },
+      {
+        "nome": "Aion V",
+        "codigoReferencia": 11485
+      },
+      {
+        "nome": "Aion Y",
+        "codigoReferencia": 11486
+      },
+      {
+        "nome": "Aion Y Premium",
+        "codigoReferencia": 11487
+      },
+      {
+        "nome": "Gs3",
+        "codigoReferencia": 11928
+      },
+      {
+        "nome": "Gs3 Premium",
+        "codigoReferencia": 11929
+      },
+      {
+        "nome": "Gs4",
+        "codigoReferencia": 11495
+      },
+      {
+        "nome": "Gs4 Premium",
+        "codigoReferencia": 11496
+      },
+      {
+        "nome": "Hyptec",
+        "codigoReferencia": 11497
+      }
+    ]
+  },
+  {
+    "marca": "Geely",
+    "modelos": [
+      {
+        "nome": "Ec7",
+        "codigoReferencia": 6778
+      },
+      {
+        "nome": "Ex2",
+        "codigoReferencia": 11770
+      },
+      {
+        "nome": "Ex5 Em-I",
+        "codigoReferencia": 11947
+      },
+      {
+        "nome": "Ex5",
+        "codigoReferencia": 11536
+      },
+      {
+        "nome": "Gc2",
+        "codigoReferencia": 7031
+      }
+    ]
+  },
+  {
+    "marca": "Chevrolet",
+    "modelos": [
+      {
+        "nome": "A-10",
+        "codigoReferencia": 926
+      },
+      {
+        "nome": "A-20",
+        "codigoReferencia": 928
+      },
+      {
+        "nome": "Agile",
+        "codigoReferencia": 5069
+      },
+      {
+        "nome": "Astra",
+        "codigoReferencia": 931
+      },
+      {
+        "nome": "Astra 500",
+        "codigoReferencia": 936
+      },
+      {
+        "nome": "Blazer",
+        "codigoReferencia": 11218
+      },
+      {
+        "nome": "Bolt",
+        "codigoReferencia": 10726
+      },
+      {
+        "nome": "Blazer Jimmy",
+        "codigoReferencia": 964
+      },
+      {
+        "nome": "Blazer Ss-10",
+        "codigoReferencia": 966
+      },
+      {
+        "nome": "Bonanza",
+        "codigoReferencia": 967
+      },
+      {
+        "nome": "Brasinca Blazer",
+        "codigoReferencia": 969
+      },
+      {
+        "nome": "C-10",
+        "codigoReferencia": 971
+      },
+      {
+        "nome": "C-20",
+        "codigoReferencia": 975
+      },
+      {
+        "nome": "Camaro",
+        "codigoReferencia": 7790
+      },
+      {
+        "nome": "Captiva",
+        "codigoReferencia": 11791
+      },
+      {
+        "nome": "Cobalt",
+        "codigoReferencia": 9588
+      },
+      {
+        "nome": "Cruze",
+        "codigoReferencia": 8573
+      },
+      {
+        "nome": "Calibra",
+        "codigoReferencia": 979
+      },
+      {
+        "nome": "Caprice",
+        "codigoReferencia": 983
+      },
+      {
+        "nome": "Caprice Victoria",
+        "codigoReferencia": 985
+      },
+      {
+        "nome": "Caravan",
+        "codigoReferencia": 986
+      },
+      {
+        "nome": "Cavalier",
+        "codigoReferencia": 989
+      },
+      {
+        "nome": "Celta",
+        "codigoReferencia": 991
+      },
+      {
+        "nome": "Chevette",
+        "codigoReferencia": 1009
+      },
+      {
+        "nome": "Chevy 500",
+        "codigoReferencia": 1011
+      },
+      {
+        "nome": "Cheynne",
+        "codigoReferencia": 1012
+      },
+      {
+        "nome": "Classic",
+        "codigoReferencia": 6747
+      },
+      {
+        "nome": "Corsa",
+        "codigoReferencia": 1013
+      },
+      {
+        "nome": "Corsa Hatchback",
+        "codigoReferencia": 1023
+      },
+      {
+        "nome": "Corsa Wind",
+        "codigoReferencia": 1063
+      },
+      {
+        "nome": "Corsa Wind Piquet Champ",
+        "codigoReferencia": 1067
+      },
+      {
+        "nome": "Corvette",
+        "codigoReferencia": 1068
+      },
+      {
+        "nome": "D-10",
+        "codigoReferencia": 1070
+      },
+      {
+        "nome": "D-20",
+        "codigoReferencia": 1072
+      },
+      {
+        "nome": "Equinox Activ",
+        "codigoReferencia": 11294
+      },
+      {
+        "nome": "Equinox",
+        "codigoReferencia": 11261
+      },
+      {
+        "nome": "Ipanema",
+        "codigoReferencia": 1078
+      },
+      {
+        "nome": "Joy",
+        "codigoReferencia": 8821
+      },
+      {
+        "nome": "Kadett",
+        "codigoReferencia": 1081
+      },
+      {
+        "nome": "Lumina",
+        "codigoReferencia": 1088
+      },
+      {
+        "nome": "Malibu",
+        "codigoReferencia": 5276
+      },
+      {
+        "nome": "Montana",
+        "codigoReferencia": 1096
+      },
+      {
+        "nome": "Montana Arena",
+        "codigoReferencia": 5107
+      },
+      {
+        "nome": "Montana Combo",
+        "codigoReferencia": 5030
+      },
+      {
+        "nome": "Marajo",
+        "codigoReferencia": 1089
+      },
+      {
+        "nome": "Meriva",
+        "codigoReferencia": 1090
+      },
+      {
+        "nome": "Meriva Collection",
+        "codigoReferencia": 6058
+      },
+      {
+        "nome": "Meriva Expres Easytronic",
+        "codigoReferencia": 4767
+      },
+      {
+        "nome": "Meriva Maxx",
+        "codigoReferencia": 4769
+      },
+      {
+        "nome": "Meriva Prem Easytronic",
+        "codigoReferencia": 4475
+      },
+      {
+        "nome": "Meriva Premium",
+        "codigoReferencia": 1095
+      },
+      {
+        "nome": "Monza",
+        "codigoReferencia": 1099
+      },
+      {
+        "nome": "Monza Classic",
+        "codigoReferencia": 1101
+      },
+      {
+        "nome": "Onix Lollapalooza",
+        "codigoReferencia": 6748
+      },
+      {
+        "nome": "Onix",
+        "codigoReferencia": 8988
+      },
+      {
+        "nome": "Omega",
+        "codigoReferencia": 1108
+      },
+      {
+        "nome": "Omega Diamond",
+        "codigoReferencia": 1110
+      },
+      {
+        "nome": "Opala",
+        "codigoReferencia": 1114
+      },
+      {
+        "nome": "Prisma",
+        "codigoReferencia": 4188
+      },
+      {
+        "nome": "S10 Blazer",
+        "codigoReferencia": 1117
+      },
+      {
+        "nome": "S10 Blazer Colina",
+        "codigoReferencia": 1121
+      },
+      {
+        "nome": "S10 Blazer Tornado",
+        "codigoReferencia": 1132
+      },
+      {
+        "nome": "S10 P-Up",
+        "codigoReferencia": 1164
+      },
+      {
+        "nome": "S10 P-Up Colina",
+        "codigoReferencia": 1142
+      },
+      {
+        "nome": "S10 P-Up Freeride",
+        "codigoReferencia": 7304
+      },
+      {
+        "nome": "S10 P-Up Tornado",
+        "codigoReferencia": 1170
+      },
+      {
+        "nome": "S10",
+        "codigoReferencia": 8081
+      },
+      {
+        "nome": "Sonic",
+        "codigoReferencia": 6266
+      },
+      {
+        "nome": "Spark",
+        "codigoReferencia": 11621
+      },
+      {
+        "nome": "Spin",
+        "codigoReferencia": 11803
+      },
+      {
+        "nome": "Spin Activ",
+        "codigoReferencia": 7098
+      },
+      {
+        "nome": "Ss10",
+        "codigoReferencia": 1197
+      },
+      {
+        "nome": "Saturn",
+        "codigoReferencia": 1171
+      },
+      {
+        "nome": "Sierra",
+        "codigoReferencia": 1172
+      },
+      {
+        "nome": "Silverado",
+        "codigoReferencia": 1174
+      },
+      {
+        "nome": "Silverado Conquest",
+        "codigoReferencia": 1178
+      },
+      {
+        "nome": "Silverado Grand Blazer",
+        "codigoReferencia": 1185
+      },
+      {
+        "nome": "Silverado Trop",
+        "codigoReferencia": 1188
+      },
+      {
+        "nome": "Silverado Tropical",
+        "codigoReferencia": 1189
+      },
+      {
+        "nome": "Sonoma",
+        "codigoReferencia": 1192
+      },
+      {
+        "nome": "Spacevan",
+        "codigoReferencia": 1193
+      },
+      {
+        "nome": "Spacevan Passageiro",
+        "codigoReferencia": 1195
+      },
+      {
+        "nome": "Suburban",
+        "codigoReferencia": 1198
+      },
+      {
+        "nome": "Suprema",
+        "codigoReferencia": 1199
+      },
+      {
+        "nome": "Suprema Diamond",
+        "codigoReferencia": 1200
+      },
+      {
+        "nome": "Syclone",
+        "codigoReferencia": 1204
+      },
+      {
+        "nome": "Tracker",
+        "codigoReferencia": 9597
+      },
+      {
+        "nome": "Tracker 100 Anos",
+        "codigoReferencia": 11622
+      },
+      {
+        "nome": "Tracker Freeride",
+        "codigoReferencia": 6664
+      },
+      {
+        "nome": "Trailblazer",
+        "codigoReferencia": 11085
+      },
+      {
+        "nome": "Tigra",
+        "codigoReferencia": 1205
+      },
+      {
+        "nome": "Trafic",
+        "codigoReferencia": 1208
+      },
+      {
+        "nome": "Trafic Passageiros",
+        "codigoReferencia": 1211
+      },
+      {
+        "nome": "Vectra",
+        "codigoReferencia": 1213
+      },
+      {
+        "nome": "Vectra Collection",
+        "codigoReferencia": 5554
+      },
+      {
+        "nome": "Vectra Elegan",
+        "codigoReferencia": 3820
+      },
+      {
+        "nome": "Vectra Expres Collection",
+        "codigoReferencia": 1220
+      },
+      {
+        "nome": "Vectra GT-X",
+        "codigoReferencia": 4435
+      },
+      {
+        "nome": "Veraneio",
+        "codigoReferencia": 1226
+      },
+      {
+        "nome": "Zafira",
+        "codigoReferencia": 1228
+      },
+      {
+        "nome": "Zafira Collection",
+        "codigoReferencia": 6065
+      },
+      {
+        "nome": "Zafira Expres",
+        "codigoReferencia": 4259
+      }
+    ]
+  },
+  {
+    "marca": "Great Wall",
+    "modelos": [
+      {
+        "nome": "Hover",
+        "codigoReferencia": 4791
+      }
+    ]
+  },
+  {
+    "marca": "Gwm",
+    "modelos": [
+      {
+        "nome": "Haval H6",
+        "codigoReferencia": 11719
+      },
+      {
+        "nome": "Haval H9",
+        "codigoReferencia": 11644
+      },
+      {
+        "nome": "Ora 03",
+        "codigoReferencia": 11619
+      },
+      {
+        "nome": "Ora 05",
+        "codigoReferencia": 12027
+      },
+      {
+        "nome": "Poer P30",
+        "codigoReferencia": 11650
+      },
+      {
+        "nome": "Tank 300",
+        "codigoReferencia": 11433
+      },
+      {
+        "nome": "Wey 07",
+        "codigoReferencia": 11735
+      }
+    ]
+  },
+  {
+    "marca": "Gurgel",
+    "modelos": [
+      {
+        "nome": "Br-800 (todos) Supermini",
+        "codigoReferencia": 1238
+      },
+      {
+        "nome": "Carajas",
+        "codigoReferencia": 1239
+      },
+      {
+        "nome": "Carajas Tocantis Xavante",
+        "codigoReferencia": 1240
+      }
+    ]
+  },
+  {
+    "marca": "Hafei",
+    "modelos": [
+      {
+        "nome": "Towner",
+        "codigoReferencia": 4771
+      },
+      {
+        "nome": "Towner Passageiro",
+        "codigoReferencia": 4772
+      }
+    ]
+  },
+  {
+    "marca": "Hitech Electric",
+    "modelos": [
+      {
+        "nome": "Delivery",
+        "codigoReferencia": 11403
+      },
+      {
+        "nome": "E-Work",
+        "codigoReferencia": 11638
+      },
+      {
+        "nome": "E-Co Cargo 10kw",
+        "codigoReferencia": 9434
+      },
+      {
+        "nome": "E-Co Cargo",
+        "codigoReferencia": 10728
+      },
+      {
+        "nome": "E-Co Cargo 7,5kw",
+        "codigoReferencia": 9435
+      },
+      {
+        "nome": "E-Co Delivery 15,7kwh",
+        "codigoReferencia": 10729
+      },
+      {
+        "nome": "E-Co Delivery 7,7kwh",
+        "codigoReferencia": 10730
+      },
+      {
+        "nome": "E-Co",
+        "codigoReferencia": 9436
+      },
+      {
+        "nome": "E-Co Truck 10kw",
+        "codigoReferencia": 9438
+      },
+      {
+        "nome": "E-Co Truck 15,7kwh",
+        "codigoReferencia": 10731
+      },
+      {
+        "nome": "E-Co Truck 7,5kw",
+        "codigoReferencia": 9439
+      },
+      {
+        "nome": "E-Co Truck",
+        "codigoReferencia": 11073
+      }
+    ]
+  },
+  {
+    "marca": "Honda",
+    "modelos": [
+      {
+        "nome": "Accord",
+        "codigoReferencia": 1241
+      },
+      {
+        "nome": "City Hatchback",
+        "codigoReferencia": 10964
+      },
+      {
+        "nome": "City",
+        "codigoReferencia": 5372
+      },
+      {
+        "nome": "Cr-V",
+        "codigoReferencia": 1270
+      },
+      {
+        "nome": "Civic",
+        "codigoReferencia": 1249
+      },
+      {
+        "nome": "Civic Type-R",
+        "codigoReferencia": 10727
+      },
+      {
+        "nome": "Fit",
+        "codigoReferencia": 6613
+      },
+      {
+        "nome": "Fit Personal",
+        "codigoReferencia": 8050
+      },
+      {
+        "nome": "Fit Twist",
+        "codigoReferencia": 6270
+      },
+      {
+        "nome": "Hr-V",
+        "codigoReferencia": 10216
+      },
+      {
+        "nome": "Odyssey",
+        "codigoReferencia": 1279
+      },
+      {
+        "nome": "Passport",
+        "codigoReferencia": 1281
+      },
+      {
+        "nome": "Prelude",
+        "codigoReferencia": 1284
+      },
+      {
+        "nome": "Wr-V",
+        "codigoReferencia": 7899
+      },
+      {
+        "nome": "Zr-V",
+        "codigoReferencia": 10894
+      }
+    ]
+  },
+  {
+    "marca": "Hyundai",
+    "modelos": [
+      {
+        "nome": "Azera",
+        "codigoReferencia": 5726
+      },
+      {
+        "nome": "Accent",
+        "codigoReferencia": 1286
+      },
+      {
+        "nome": "Atos",
+        "codigoReferencia": 1291
+      },
+      {
+        "nome": "Coupe",
+        "codigoReferencia": 1295
+      },
+      {
+        "nome": "Creta 1 Million",
+        "codigoReferencia": 8451
+      },
+      {
+        "nome": "Creta Action",
+        "codigoReferencia": 11991
+      },
+      {
+        "nome": "Creta Attitude",
+        "codigoReferencia": 9589
+      },
+      {
+        "nome": "Creta",
+        "codigoReferencia": 9601
+      },
+      {
+        "nome": "Creta Limit Safety",
+        "codigoReferencia": 10858
+      },
+      {
+        "nome": "Creta Pulse",
+        "codigoReferencia": 7831
+      },
+      {
+        "nome": "Creta Smart",
+        "codigoReferencia": 8521
+      },
+      {
+        "nome": "Cupê",
+        "codigoReferencia": 1299
+      },
+      {
+        "nome": "Equus",
+        "codigoReferencia": 6176
+      },
+      {
+        "nome": "Elantra",
+        "codigoReferencia": 7756
+      },
+      {
+        "nome": "Elantra Special",
+        "codigoReferencia": 7757
+      },
+      {
+        "nome": "Excel",
+        "codigoReferencia": 1306
+      },
+      {
+        "nome": "Genesis",
+        "codigoReferencia": 5930
+      },
+      {
+        "nome": "Galloper",
+        "codigoReferencia": 1310
+      },
+      {
+        "nome": "Grand Santa",
+        "codigoReferencia": 6694
+      },
+      {
+        "nome": "H1 Starex",
+        "codigoReferencia": 1315
+      },
+      {
+        "nome": "H100",
+        "codigoReferencia": 1318
+      },
+      {
+        "nome": "H100 Porter Truck",
+        "codigoReferencia": 1325
+      },
+      {
+        "nome": "Hb20 1 Million",
+        "codigoReferencia": 8452
+      },
+      {
+        "nome": "Hb20 5 Anos",
+        "codigoReferencia": 8011
+      },
+      {
+        "nome": "Hb20",
+        "codigoReferencia": 6207
+      },
+      {
+        "nome": "Hb20 Copa Mundo Qatar",
+        "codigoReferencia": 10167
+      },
+      {
+        "nome": "Hb20 Copa",
+        "codigoReferencia": 6739
+      },
+      {
+        "nome": "Hb20 Diamond",
+        "codigoReferencia": 8849
+      },
+      {
+        "nome": "Hb20 Edição Especial",
+        "codigoReferencia": 10212
+      },
+      {
+        "nome": "Hb20 Evol Bluelink",
+        "codigoReferencia": 9472
+      },
+      {
+        "nome": "Hb20 Ocean",
+        "codigoReferencia": 7697
+      },
+      {
+        "nome": "Hb20 Premium",
+        "codigoReferencia": 6208
+      },
+      {
+        "nome": "Hb20 Spicy",
+        "codigoReferencia": 7154
+      },
+      {
+        "nome": "Hb20 Unique",
+        "codigoReferencia": 8317
+      },
+      {
+        "nome": "Hb20s Impress",
+        "codigoReferencia": 7260
+      },
+      {
+        "nome": "Hb20s 1 Million",
+        "codigoReferencia": 8453
+      },
+      {
+        "nome": "Hb20s 5 Anos",
+        "codigoReferencia": 8013
+      },
+      {
+        "nome": "Hb20s",
+        "codigoReferencia": 6436
+      },
+      {
+        "nome": "Hb20s Copa Mundo Qatar",
+        "codigoReferencia": 10169
+      },
+      {
+        "nome": "Hb20s Copa",
+        "codigoReferencia": 6742
+      },
+      {
+        "nome": "Hb20s Diamond",
+        "codigoReferencia": 8896
+      },
+      {
+        "nome": "Hb20s Edição Especial",
+        "codigoReferencia": 10214
+      },
+      {
+        "nome": "Hb20s Evol Bluelink",
+        "codigoReferencia": 9476
+      },
+      {
+        "nome": "Hb20s Ocean",
+        "codigoReferencia": 7701
+      },
+      {
+        "nome": "Hb20s Premium",
+        "codigoReferencia": 6437
+      },
+      {
+        "nome": "Hb20s Unique",
+        "codigoReferencia": 8475
+      },
+      {
+        "nome": "Hb20x Diamond",
+        "codigoReferencia": 8951
+      },
+      {
+        "nome": "Hb20x Evol Bluelink",
+        "codigoReferencia": 9480
+      },
+      {
+        "nome": "Hb20x",
+        "codigoReferencia": 8953
+      },
+      {
+        "nome": "Hb20x Premium",
+        "codigoReferencia": 6352
+      },
+      {
+        "nome": "Hr",
+        "codigoReferencia": 10635
+      },
+      {
+        "nome": "I20",
+        "codigoReferencia": 12016
+      },
+      {
+        "nome": "Ioniq",
+        "codigoReferencia": 10670
+      },
+      {
+        "nome": "Ioniq 5",
+        "codigoReferencia": 11227
+      },
+      {
+        "nome": "Kona",
+        "codigoReferencia": 10756
+      },
+      {
+        "nome": "Matrix",
+        "codigoReferencia": 1329
+      },
+      {
+        "nome": "Palisade",
+        "codigoReferencia": 11194
+      },
+      {
+        "nome": "Porter",
+        "codigoReferencia": 1331
+      },
+      {
+        "nome": "Santa",
+        "codigoReferencia": 8860
+      },
+      {
+        "nome": "Scoupe",
+        "codigoReferencia": 1334
+      },
+      {
+        "nome": "Sonata",
+        "codigoReferencia": 5398
+      },
+      {
+        "nome": "Terracan",
+        "codigoReferencia": 1340
+      },
+      {
+        "nome": "Trajet",
+        "codigoReferencia": 1343
+      },
+      {
+        "nome": "Tucson",
+        "codigoReferencia": 1344
+      },
+      {
+        "nome": "Veracruz",
+        "codigoReferencia": 4384
+      },
+      {
+        "nome": "Veloster",
+        "codigoReferencia": 5640
+      },
+      {
+        "nome": "I30",
+        "codigoReferencia": 6356
+      },
+      {
+        "nome": "I30 Serie Limitada",
+        "codigoReferencia": 7346
+      },
+      {
+        "nome": "I30cw",
+        "codigoReferencia": 5303
+      },
+      {
+        "nome": "Ix35",
+        "codigoReferencia": 5280
+      }
+    ]
+  },
+  {
+    "marca": "Iveco",
+    "modelos": [
+      {
+        "nome": "Daily",
+        "codigoReferencia": 9691
+      },
+      {
+        "nome": "Daily 45-160 Vetrato",
+        "codigoReferencia": 10629
+      },
+      {
+        "nome": "Daily 45-170 Vetrato",
+        "codigoReferencia": 9737
+      },
+      {
+        "nome": "Daily 50-180 Vetrato",
+        "codigoReferencia": 10630
+      }
+    ]
+  },
+  {
+    "marca": "Isuzu",
+    "modelos": [
+      {
+        "nome": "Amigo",
+        "codigoReferencia": 1348
+      },
+      {
+        "nome": "Hombre 2",
+        "codigoReferencia": 1349
+      },
+      {
+        "nome": "Rodeo",
+        "codigoReferencia": 1350
+      }
+    ]
+  },
+  {
+    "marca": "Jac",
+    "modelos": [
+      {
+        "nome": "E-J7",
+        "codigoReferencia": 11182
+      },
+      {
+        "nome": "E-Js1",
+        "codigoReferencia": 11183
+      },
+      {
+        "nome": "E-Jt3.5",
+        "codigoReferencia": 11877
+      },
+      {
+        "nome": "E-Jv",
+        "codigoReferencia": 11127
+      },
+      {
+        "nome": "E-Jv12",
+        "codigoReferencia": 11128
+      },
+      {
+        "nome": "E-Jv5.5",
+        "codigoReferencia": 10138
+      },
+      {
+        "nome": "E-Jv7l",
+        "codigoReferencia": 11184
+      },
+      {
+        "nome": "Hunter 4work",
+        "codigoReferencia": 11772
+      },
+      {
+        "nome": "Hunter",
+        "codigoReferencia": 11225
+      },
+      {
+        "nome": "J2",
+        "codigoReferencia": 6272
+      },
+      {
+        "nome": "J3",
+        "codigoReferencia": 5498
+      },
+      {
+        "nome": "J3 Brasil",
+        "codigoReferencia": 5698
+      },
+      {
+        "nome": "J3 Turin",
+        "codigoReferencia": 5499
+      },
+      {
+        "nome": "J5",
+        "codigoReferencia": 5933
+      },
+      {
+        "nome": "J6",
+        "codigoReferencia": 5579
+      },
+      {
+        "nome": "T 140",
+        "codigoReferencia": 6440
+      },
+      {
+        "nome": "T40",
+        "codigoReferencia": 7972
+      },
+      {
+        "nome": "T5",
+        "codigoReferencia": 7794
+      },
+      {
+        "nome": "T50",
+        "codigoReferencia": 8477
+      },
+      {
+        "nome": "T6",
+        "codigoReferencia": 7102
+      },
+      {
+        "nome": "T60",
+        "codigoReferencia": 8957
+      },
+      {
+        "nome": "T8",
+        "codigoReferencia": 6713
+      },
+      {
+        "nome": "T80",
+        "codigoReferencia": 8575
+      },
+      {
+        "nome": "V260",
+        "codigoReferencia": 8082
+      },
+      {
+        "nome": "E-Js4",
+        "codigoReferencia": 9470
+      },
+      {
+        "nome": "Iev 20",
+        "codigoReferencia": 8989
+      },
+      {
+        "nome": "Iev",
+        "codigoReferencia": 8956
+      },
+      {
+        "nome": "Iev 350t",
+        "codigoReferencia": 9664
+      },
+      {
+        "nome": "Iev 40",
+        "codigoReferencia": 8694
+      }
+    ]
+  },
+  {
+    "marca": "Jinbei",
+    "modelos": [
+      {
+        "nome": "Topic",
+        "codigoReferencia": 4851
+      },
+      {
+        "nome": "Vkn",
+        "codigoReferencia": 7666
+      }
+    ]
+  },
+  {
+    "marca": "Jpx",
+    "modelos": [
+      {
+        "nome": "Jipe Montez",
+        "codigoReferencia": 1386
+      },
+      {
+        "nome": "Picape Montez",
+        "codigoReferencia": 1389
+      }
+    ]
+  },
+  {
+    "marca": "Jaecoo",
+    "modelos": [
+      {
+        "nome": "7",
+        "codigoReferencia": 11985
+      }
+    ]
+  },
+  {
+    "marca": "Jaguar",
+    "modelos": [
+      {
+        "nome": "Daimler",
+        "codigoReferencia": 1351
+      },
+      {
+        "nome": "E-Pace",
+        "codigoReferencia": 8284
+      },
+      {
+        "nome": "F-Pace",
+        "codigoReferencia": 8901
+      },
+      {
+        "nome": "F-Type",
+        "codigoReferencia": 9739
+      },
+      {
+        "nome": "F-Type 75",
+        "codigoReferencia": 10776
+      },
+      {
+        "nome": "I-Pace",
+        "codigoReferencia": 10018
+      },
+      {
+        "nome": "S-Type",
+        "codigoReferencia": 1352
+      },
+      {
+        "nome": "X-Type Estate",
+        "codigoReferencia": 1368
+      },
+      {
+        "nome": "X-Type",
+        "codigoReferencia": 1369
+      },
+      {
+        "nome": "Xe",
+        "codigoReferencia": 8902
+      },
+      {
+        "nome": "Xf",
+        "codigoReferencia": 7071
+      },
+      {
+        "nome": "Xfr",
+        "codigoReferencia": 5130
+      },
+      {
+        "nome": "Xfr-S",
+        "codigoReferencia": 6750
+      },
+      {
+        "nome": "Xj",
+        "codigoReferencia": 6751
+      },
+      {
+        "nome": "Xj-12",
+        "codigoReferencia": 1356
+      },
+      {
+        "nome": "Xj-12 Conv",
+        "codigoReferencia": 1357
+      },
+      {
+        "nome": "Xj-6",
+        "codigoReferencia": 1358
+      },
+      {
+        "nome": "Xj-8 Daimler",
+        "codigoReferencia": 1359
+      },
+      {
+        "nome": "Xj-8",
+        "codigoReferencia": 1360
+      },
+      {
+        "nome": "Xj-8 Sovereign",
+        "codigoReferencia": 1362
+      },
+      {
+        "nome": "Xjr",
+        "codigoReferencia": 1363
+      },
+      {
+        "nome": "Xjs",
+        "codigoReferencia": 1364
+      },
+      {
+        "nome": "Xjs-C",
+        "codigoReferencia": 1365
+      },
+      {
+        "nome": "Xk-8",
+        "codigoReferencia": 1366
+      },
+      {
+        "nome": "Xkr",
+        "codigoReferencia": 4437
+      },
+      {
+        "nome": "Xkr-S",
+        "codigoReferencia": 6753
+      }
+    ]
+  },
+  {
+    "marca": "Jeep",
+    "modelos": [
+      {
+        "nome": "Compass",
+        "codigoReferencia": 11014
+      },
+      {
+        "nome": "Compass Blackhawk Hurricane",
+        "codigoReferencia": 11915
+      },
+      {
+        "nome": "Compass Long",
+        "codigoReferencia": 9457
+      },
+      {
+        "nome": "Compass Over Hurric",
+        "codigoReferencia": 11016
+      },
+      {
+        "nome": "Cherokee Country",
+        "codigoReferencia": 1371
+      },
+      {
+        "nome": "Cherokee",
+        "codigoReferencia": 6961
+      },
+      {
+        "nome": "Commander",
+        "codigoReferencia": 11012
+      },
+      {
+        "nome": "Commander Overl",
+        "codigoReferencia": 11368
+      },
+      {
+        "nome": "Gladiator",
+        "codigoReferencia": 10008
+      },
+      {
+        "nome": "Grand Cherokee 4xe",
+        "codigoReferencia": 10925
+      },
+      {
+        "nome": "Grand Cherokee",
+        "codigoReferencia": 9661
+      },
+      {
+        "nome": "Grand Cherokee Laredo",
+        "codigoReferencia": 1376
+      },
+      {
+        "nome": "Grand Cherokee Limit",
+        "codigoReferencia": 1379
+      },
+      {
+        "nome": "Grand Cherokee Nova",
+        "codigoReferencia": 1383
+      },
+      {
+        "nome": "Renegade",
+        "codigoReferencia": 11732
+      },
+      {
+        "nome": "Renegade 75 Anos",
+        "codigoReferencia": 7702
+      },
+      {
+        "nome": "Renegade Altitude",
+        "codigoReferencia": 11510
+      },
+      {
+        "nome": "Renegade Long",
+        "codigoReferencia": 9745
+      },
+      {
+        "nome": "Renegade Moab",
+        "codigoReferencia": 9165
+      },
+      {
+        "nome": "Renegade Willys",
+        "codigoReferencia": 8664
+      },
+      {
+        "nome": "Wrangler",
+        "codigoReferencia": 1384
+      },
+      {
+        "nome": "Wrangler Unlimited",
+        "codigoReferencia": 7763
+      }
+    ]
+  },
+  {
+    "marca": "Jetour",
+    "modelos": [
+      {
+        "nome": "S06",
+        "codigoReferencia": 11881
+      },
+      {
+        "nome": "S06 Premium",
+        "codigoReferencia": 11882
+      },
+      {
+        "nome": "T1",
+        "codigoReferencia": 11884
+      },
+      {
+        "nome": "T1 Premium",
+        "codigoReferencia": 11885
+      },
+      {
+        "nome": "T2",
+        "codigoReferencia": 11886
+      },
+      {
+        "nome": "T2 Premium",
+        "codigoReferencia": 11887
+      }
+    ]
+  },
+  {
+    "marca": "Kia Motors",
+    "modelos": [
+      {
+        "nome": "Besta",
+        "codigoReferencia": 1390
+      },
+      {
+        "nome": "Bongo",
+        "codigoReferencia": 1399
+      },
+      {
+        "nome": "Cadenza",
+        "codigoReferencia": 5417
+      },
+      {
+        "nome": "Carens",
+        "codigoReferencia": 4684
+      },
+      {
+        "nome": "Carnival",
+        "codigoReferencia": 1405
+      },
+      {
+        "nome": "Cerato",
+        "codigoReferencia": 6441
+      },
+      {
+        "nome": "Cerato Koup",
+        "codigoReferencia": 5581
+      },
+      {
+        "nome": "Ceres",
+        "codigoReferencia": 1407
+      },
+      {
+        "nome": "Clarus",
+        "codigoReferencia": 1408
+      },
+      {
+        "nome": "Ev5 Land",
+        "codigoReferencia": 11188
+      },
+      {
+        "nome": "Ev9",
+        "codigoReferencia": 11373
+      },
+      {
+        "nome": "Grand Carnival",
+        "codigoReferencia": 7351
+      },
+      {
+        "nome": "Mohave",
+        "codigoReferencia": 4891
+      },
+      {
+        "nome": "Magentis",
+        "codigoReferencia": 4121
+      },
+      {
+        "nome": "Niro",
+        "codigoReferencia": 10104
+      },
+      {
+        "nome": "Optima",
+        "codigoReferencia": 6891
+      },
+      {
+        "nome": "Opirus",
+        "codigoReferencia": 1412
+      },
+      {
+        "nome": "Picanto",
+        "codigoReferencia": 4141
+      },
+      {
+        "nome": "Quoris",
+        "codigoReferencia": 7073
+      },
+      {
+        "nome": "Rio",
+        "codigoReferencia": 8990
+      },
+      {
+        "nome": "Soul",
+        "codigoReferencia": 4977
+      },
+      {
+        "nome": "Stonic",
+        "codigoReferencia": 9668
+      },
+      {
+        "nome": "Sephia",
+        "codigoReferencia": 1413
+      },
+      {
+        "nome": "Shuma",
+        "codigoReferencia": 1418
+      },
+      {
+        "nome": "Sorento",
+        "codigoReferencia": 5249
+      },
+      {
+        "nome": "Sportage",
+        "codigoReferencia": 1424
+      },
+      {
+        "nome": "Sportage Grand",
+        "codigoReferencia": 1430
+      },
+      {
+        "nome": "Sportage Targa",
+        "codigoReferencia": 1435
+      },
+      {
+        "nome": "Stinger",
+        "codigoReferencia": 8496
+      }
+    ]
+  },
+  {
+    "marca": "Lamborghini",
+    "modelos": [
+      {
+        "nome": "Aventador 770-4",
+        "codigoReferencia": 9521
+      },
+      {
+        "nome": "Aventador",
+        "codigoReferencia": 6110
+      },
+      {
+        "nome": "Gallardo",
+        "codigoReferencia": 6112
+      },
+      {
+        "nome": "Huracan",
+        "codigoReferencia": 7138
+      },
+      {
+        "nome": "Huracan Tecnica",
+        "codigoReferencia": 10953
+      },
+      {
+        "nome": "Huracán Sterrato",
+        "codigoReferencia": 11541
+      },
+      {
+        "nome": "Revuelto",
+        "codigoReferencia": 11235
+      },
+      {
+        "nome": "Urus 650-4",
+        "codigoReferencia": 11517
+      },
+      {
+        "nome": "Urus Performante 650-4",
+        "codigoReferencia": 11518
+      },
+      {
+        "nome": "Urus",
+        "codigoReferencia": 11519
+      }
+    ]
+  },
+  {
+    "marca": "Lifan",
+    "modelos": [
+      {
+        "nome": "320",
+        "codigoReferencia": 5346
+      },
+      {
+        "nome": "530",
+        "codigoReferencia": 7037
+      },
+      {
+        "nome": "530 Talent",
+        "codigoReferencia": 7038
+      },
+      {
+        "nome": "620 Talent",
+        "codigoReferencia": 5347
+      },
+      {
+        "nome": "Foison",
+        "codigoReferencia": 6871
+      },
+      {
+        "nome": "X60",
+        "codigoReferencia": 6467
+      },
+      {
+        "nome": "X80",
+        "codigoReferencia": 8414
+      }
+    ]
+  },
+  {
+    "marca": "Lobini",
+    "modelos": [
+      {
+        "nome": "H1",
+        "codigoReferencia": 4277
+      }
+    ]
+  },
+  {
+    "marca": "Lada",
+    "modelos": [
+      {
+        "nome": "Laika",
+        "codigoReferencia": 1436
+      },
+      {
+        "nome": "Niva",
+        "codigoReferencia": 1439
+      },
+      {
+        "nome": "Samara",
+        "codigoReferencia": 1442
+      }
+    ]
+  },
+  {
+    "marca": "Land Rover",
+    "modelos": [
+      {
+        "nome": "Range Rover Velar",
+        "codigoReferencia": 11944
+      },
+      {
+        "nome": "Defender 90",
+        "codigoReferencia": 11490
+      },
+      {
+        "nome": "Defender 110",
+        "codigoReferencia": 10912
+      },
+      {
+        "nome": "Defender 130",
+        "codigoReferencia": 10913
+      },
+      {
+        "nome": "Defender 110 75th",
+        "codigoReferencia": 10655
+      },
+      {
+        "nome": "Defender 130 Chassis",
+        "codigoReferencia": 1450
+      },
+      {
+        "nome": "Defender 90 Soft",
+        "codigoReferencia": 1454
+      },
+      {
+        "nome": "Discovery Sport",
+        "codigoReferencia": 9997
+      },
+      {
+        "nome": "Discovery",
+        "codigoReferencia": 10916
+      },
+      {
+        "nome": "Discovery Sport Landmark",
+        "codigoReferencia": 11921
+      },
+      {
+        "nome": "Discovery Tempest",
+        "codigoReferencia": 11637
+      },
+      {
+        "nome": "Discovery3",
+        "codigoReferencia": 1463
+      },
+      {
+        "nome": "Discovery4",
+        "codigoReferencia": 5624
+      },
+      {
+        "nome": "Freelander",
+        "codigoReferencia": 1467
+      },
+      {
+        "nome": "Freelander2",
+        "codigoReferencia": 6177
+      },
+      {
+        "nome": "New Range Range Rover Vogue",
+        "codigoReferencia": 1471
+      },
+      {
+        "nome": "Range Rover",
+        "codigoReferencia": 10220
+      },
+      {
+        "nome": "Range Rover Sport",
+        "codigoReferencia": 10673
+      },
+      {
+        "nome": "Range Rover Vogue",
+        "codigoReferencia": 5421
+      },
+      {
+        "nome": "Range Rover Evoque",
+        "codigoReferencia": 7926
+      },
+      {
+        "nome": "Range Rover Sport Superchaged",
+        "codigoReferencia": 3825
+      }
+    ]
+  },
+  {
+    "marca": "Leapmotor",
+    "modelos": [
+      {
+        "nome": "B10",
+        "codigoReferencia": 11751
+      },
+      {
+        "nome": "C10",
+        "codigoReferencia": 11752
+      }
+    ]
+  },
+  {
+    "marca": "Lexus",
+    "modelos": [
+      {
+        "nome": "Ct200h",
+        "codigoReferencia": 9992
+      },
+      {
+        "nome": "Ct200h F-Sport",
+        "codigoReferencia": 9993
+      },
+      {
+        "nome": "Es-300",
+        "codigoReferencia": 1474
+      },
+      {
+        "nome": "Es-330",
+        "codigoReferencia": 1475
+      },
+      {
+        "nome": "Es-350",
+        "codigoReferencia": 4260
+      },
+      {
+        "nome": "Es300h",
+        "codigoReferencia": 10003
+      },
+      {
+        "nome": "Gs 300",
+        "codigoReferencia": 1476
+      },
+      {
+        "nome": "Is-250",
+        "codigoReferencia": 6537
+      },
+      {
+        "nome": "Is-300",
+        "codigoReferencia": 6066
+      },
+      {
+        "nome": "Ls 400",
+        "codigoReferencia": 1477
+      },
+      {
+        "nome": "Ls 430",
+        "codigoReferencia": 1478
+      },
+      {
+        "nome": "Ls 460",
+        "codigoReferencia": 4306
+      },
+      {
+        "nome": "Ls 500h",
+        "codigoReferencia": 10024
+      },
+      {
+        "nome": "Ls-460l",
+        "codigoReferencia": 6067
+      },
+      {
+        "nome": "Nx-200t F-Sport",
+        "codigoReferencia": 11408
+      },
+      {
+        "nome": "Nx-200t",
+        "codigoReferencia": 11409
+      },
+      {
+        "nome": "Nx-300",
+        "codigoReferencia": 11410
+      },
+      {
+        "nome": "Nx-300 F-Sport",
+        "codigoReferencia": 11411
+      },
+      {
+        "nome": "Nx-300h",
+        "codigoReferencia": 11413
+      },
+      {
+        "nome": "Nx-300h F-Sport",
+        "codigoReferencia": 11414
+      },
+      {
+        "nome": "Nx-350h",
+        "codigoReferencia": 11416
+      },
+      {
+        "nome": "Nx-450h+",
+        "codigoReferencia": 11419
+      },
+      {
+        "nome": "Rx 300",
+        "codigoReferencia": 11421
+      },
+      {
+        "nome": "Rx-350",
+        "codigoReferencia": 11422
+      },
+      {
+        "nome": "Rx-350 F-Sport",
+        "codigoReferencia": 11423
+      },
+      {
+        "nome": "Rx-450h F-Sport",
+        "codigoReferencia": 11424
+      },
+      {
+        "nome": "Rx-450h",
+        "codigoReferencia": 11425
+      },
+      {
+        "nome": "Rx-450h+",
+        "codigoReferencia": 11426
+      },
+      {
+        "nome": "Rx-500h",
+        "codigoReferencia": 11427
+      },
+      {
+        "nome": "Rz-500e",
+        "codigoReferencia": 12000
+      },
+      {
+        "nome": "Sc 400",
+        "codigoReferencia": 1480
+      },
+      {
+        "nome": "Ux-250h",
+        "codigoReferencia": 10072
+      },
+      {
+        "nome": "Ux-250h F-Sport",
+        "codigoReferencia": 10073
+      },
+      {
+        "nome": "Ux-300h",
+        "codigoReferencia": 11281
+      }
+    ]
+  },
+  {
+    "marca": "Lotus",
+    "modelos": [
+      {
+        "nome": "Elan",
+        "codigoReferencia": 1481
+      },
+      {
+        "nome": "Esprit",
+        "codigoReferencia": 1482
+      }
+    ]
+  },
+  {
+    "marca": "Mg",
+    "modelos": [
+      {
+        "nome": "4",
+        "codigoReferencia": 11781
+      },
+      {
+        "nome": "4 Xpower",
+        "codigoReferencia": 11783
+      },
+      {
+        "nome": "550",
+        "codigoReferencia": 5310
+      },
+      {
+        "nome": "Cyberster",
+        "codigoReferencia": 11793
+      },
+      {
+        "nome": "Mg6",
+        "codigoReferencia": 5582
+      },
+      {
+        "nome": "S5",
+        "codigoReferencia": 11801
+      }
+    ]
+  },
+  {
+    "marca": "Mini",
+    "modelos": [
+      {
+        "nome": "Aceman",
+        "codigoReferencia": 11533
+      },
+      {
+        "nome": "Cooper",
+        "codigoReferencia": 6868
+      },
+      {
+        "nome": "Cooper Clubman",
+        "codigoReferencia": 5731
+      },
+      {
+        "nome": "Cooper Clubman John Work",
+        "codigoReferencia": 8926
+      },
+      {
+        "nome": "Cooper Country John",
+        "codigoReferencia": 11755
+      },
+      {
+        "nome": "Cooper Country John Works",
+        "codigoReferencia": 6666
+      },
+      {
+        "nome": "Cooper Country",
+        "codigoReferencia": 11123
+      },
+      {
+        "nome": "Cooper Countryman",
+        "codigoReferencia": 7906
+      },
+      {
+        "nome": "Cooper John Works",
+        "codigoReferencia": 6565
+      },
+      {
+        "nome": "Cooper John Works 25k",
+        "codigoReferencia": 10750
+      },
+      {
+        "nome": "Cooper John Works Aceman",
+        "codigoReferencia": 11605
+      },
+      {
+        "nome": "Cooper John",
+        "codigoReferencia": 10098
+      },
+      {
+        "nome": "Cooper Paceman",
+        "codigoReferencia": 6492
+      },
+      {
+        "nome": "One",
+        "codigoReferencia": 8242
+      }
+    ]
+  },
+  {
+    "marca": "Mahindra",
+    "modelos": [
+      {
+        "nome": "Pik-Up",
+        "codigoReferencia": 6838
+      },
+      {
+        "nome": "Scorpio",
+        "codigoReferencia": 4500
+      },
+      {
+        "nome": "Suv",
+        "codigoReferencia": 6962
+      }
+    ]
+  },
+  {
+    "marca": "Maserati",
+    "modelos": [
+      {
+        "nome": "222",
+        "codigoReferencia": 1483
+      },
+      {
+        "nome": "228",
+        "codigoReferencia": 1484
+      },
+      {
+        "nome": "3200",
+        "codigoReferencia": 1485
+      },
+      {
+        "nome": "430",
+        "codigoReferencia": 1487
+      },
+      {
+        "nome": "Coupé",
+        "codigoReferencia": 1489
+      },
+      {
+        "nome": "Ghibli",
+        "codigoReferencia": 1490
+      },
+      {
+        "nome": "Gran Turismo",
+        "codigoReferencia": 7074
+      },
+      {
+        "nome": "Grancabrio",
+        "codigoReferencia": 5471
+      },
+      {
+        "nome": "Gransport",
+        "codigoReferencia": 4062
+      },
+      {
+        "nome": "Granturismo",
+        "codigoReferencia": 4695
+      },
+      {
+        "nome": "Levante",
+        "codigoReferencia": 7799
+      },
+      {
+        "nome": "Levante Trofeo",
+        "codigoReferencia": 8546
+      },
+      {
+        "nome": "Mc20",
+        "codigoReferencia": 11461
+      },
+      {
+        "nome": "Quattroporte Automatica",
+        "codigoReferencia": 4696
+      },
+      {
+        "nome": "Quattroporte Evolucione",
+        "codigoReferencia": 1491
+      },
+      {
+        "nome": "Quattroporte",
+        "codigoReferencia": 1493
+      },
+      {
+        "nome": "Shamal",
+        "codigoReferencia": 1495
+      },
+      {
+        "nome": "Spyder",
+        "codigoReferencia": 1497
+      }
+    ]
+  },
+  {
+    "marca": "Matra",
+    "modelos": [
+      {
+        "nome": "Pick-Up",
+        "codigoReferencia": 1498
+      }
+    ]
+  },
+  {
+    "marca": "Mazda",
+    "modelos": [
+      {
+        "nome": "323",
+        "codigoReferencia": 1502
+      },
+      {
+        "nome": "626",
+        "codigoReferencia": 1503
+      },
+      {
+        "nome": "929",
+        "codigoReferencia": 1511
+      },
+      {
+        "nome": "B-2500",
+        "codigoReferencia": 1514
+      },
+      {
+        "nome": "B2200",
+        "codigoReferencia": 1512
+      },
+      {
+        "nome": "Mpv Minivan",
+        "codigoReferencia": 1518
+      },
+      {
+        "nome": "Mx-3",
+        "codigoReferencia": 1519
+      },
+      {
+        "nome": "Mx-5",
+        "codigoReferencia": 1521
+      },
+      {
+        "nome": "Millenia",
+        "codigoReferencia": 1517
+      },
+      {
+        "nome": "Navajo",
+        "codigoReferencia": 1522
+      },
+      {
+        "nome": "Protegé",
+        "codigoReferencia": 1523
+      },
+      {
+        "nome": "Rx 7",
+        "codigoReferencia": 1526
+      }
+    ]
+  },
+  {
+    "marca": "Mclaren",
+    "modelos": [
+      {
+        "nome": "540c",
+        "codigoReferencia": 9426
+      },
+      {
+        "nome": "570s",
+        "codigoReferencia": 9427
+      },
+      {
+        "nome": "570s Spider",
+        "codigoReferencia": 9429
+      },
+      {
+        "nome": "600lt",
+        "codigoReferencia": 9430
+      },
+      {
+        "nome": "600lt Spider",
+        "codigoReferencia": 9520
+      },
+      {
+        "nome": "720s",
+        "codigoReferencia": 9431
+      },
+      {
+        "nome": "720s Spider",
+        "codigoReferencia": 9432
+      },
+      {
+        "nome": "750s",
+        "codigoReferencia": 11095
+      },
+      {
+        "nome": "750s Spider",
+        "codigoReferencia": 11035
+      },
+      {
+        "nome": "765lt",
+        "codigoReferencia": 9433
+      },
+      {
+        "nome": "765lt Spider",
+        "codigoReferencia": 10558
+      },
+      {
+        "nome": "Artura",
+        "codigoReferencia": 10364
+      },
+      {
+        "nome": "Artura Spider",
+        "codigoReferencia": 11169
+      },
+      {
+        "nome": "GT",
+        "codigoReferencia": 9440
+      },
+      {
+        "nome": "GTS",
+        "codigoReferencia": 11539
+      }
+    ]
+  },
+  {
+    "marca": "Mercedes-Benz",
+    "modelos": [
+      {
+        "nome": "180-D",
+        "codigoReferencia": 1527
+      },
+      {
+        "nome": "190-E",
+        "codigoReferencia": 1529
+      },
+      {
+        "nome": "230-E",
+        "codigoReferencia": 1530
+      },
+      {
+        "nome": "260-E",
+        "codigoReferencia": 1531
+      },
+      {
+        "nome": "300-D",
+        "codigoReferencia": 1532
+      },
+      {
+        "nome": "300-E",
+        "codigoReferencia": 1533
+      },
+      {
+        "nome": "300-Se",
+        "codigoReferencia": 1534
+      },
+      {
+        "nome": "300-Sl",
+        "codigoReferencia": 1535
+      },
+      {
+        "nome": "300-Te",
+        "codigoReferencia": 1536
+      },
+      {
+        "nome": "500-E",
+        "codigoReferencia": 1537
+      },
+      {
+        "nome": "500-Sec",
+        "codigoReferencia": 1538
+      },
+      {
+        "nome": "500-Sel",
+        "codigoReferencia": 1539
+      },
+      {
+        "nome": "560-Sel",
+        "codigoReferencia": 1540
+      },
+      {
+        "nome": "A 200",
+        "codigoReferencia": 8752
+      },
+      {
+        "nome": "A 250",
+        "codigoReferencia": 9318
+      },
+      {
+        "nome": "A-35",
+        "codigoReferencia": 9117
+      },
+      {
+        "nome": "A-45",
+        "codigoReferencia": 9166
+      },
+      {
+        "nome": "C-180",
+        "codigoReferencia": 7308
+      },
+      {
+        "nome": "C-180 Classic Classic",
+        "codigoReferencia": 1541
+      },
+      {
+        "nome": "C-180 Kompressor Classic",
+        "codigoReferencia": 5213
+      },
+      {
+        "nome": "C-200",
+        "codigoReferencia": 9966
+      },
+      {
+        "nome": "C-200 Avantgarde",
+        "codigoReferencia": 6963
+      },
+      {
+        "nome": "C-200 Classic",
+        "codigoReferencia": 1543
+      },
+      {
+        "nome": "C-200 Kompressor",
+        "codigoReferencia": 1544
+      },
+      {
+        "nome": "C-200 Kompressor Classic",
+        "codigoReferencia": 4358
+      },
+      {
+        "nome": "C-200 Sportcoupé Komp",
+        "codigoReferencia": 1545
+      },
+      {
+        "nome": "C-220 Classic",
+        "codigoReferencia": 1547
+      },
+      {
+        "nome": "C-230 Avantgarde",
+        "codigoReferencia": 3826
+      },
+      {
+        "nome": "C-230 Komp Sportcoupé",
+        "codigoReferencia": 1548
+      },
+      {
+        "nome": "C-230 Kompressor Avantgarde",
+        "codigoReferencia": 1549
+      },
+      {
+        "nome": "C-230",
+        "codigoReferencia": 1550
+      },
+      {
+        "nome": "C-240 Avantgarde",
+        "codigoReferencia": 1552
+      },
+      {
+        "nome": "C-240 Classic",
+        "codigoReferencia": 1553
+      },
+      {
+        "nome": "C-240",
+        "codigoReferencia": 1554
+      },
+      {
+        "nome": "C-250 Avantgarde",
+        "codigoReferencia": 7975
+      },
+      {
+        "nome": "C-250",
+        "codigoReferencia": 5500
+      },
+      {
+        "nome": "C-280 Avantgarde",
+        "codigoReferencia": 4386
+      },
+      {
+        "nome": "C-280 Classic",
+        "codigoReferencia": 1556
+      },
+      {
+        "nome": "C-280",
+        "codigoReferencia": 1557
+      },
+      {
+        "nome": "C-300",
+        "codigoReferencia": 9967
+      },
+      {
+        "nome": "C-300 Anniversary",
+        "codigoReferencia": 7800
+      },
+      {
+        "nome": "C-300 Avantgarde",
+        "codigoReferencia": 5002
+      },
+      {
+        "nome": "C-300 Estate Avantgarde",
+        "codigoReferencia": 7976
+      },
+      {
+        "nome": "C-320 Avantgarde",
+        "codigoReferencia": 1559
+      },
+      {
+        "nome": "C-320",
+        "codigoReferencia": 1560
+      },
+      {
+        "nome": "C-350 Avantgarde",
+        "codigoReferencia": 3802
+      },
+      {
+        "nome": "C-350",
+        "codigoReferencia": 5730
+      },
+      {
+        "nome": "C-350 Sportcoupé",
+        "codigoReferencia": 3893
+      },
+      {
+        "nome": "C-36",
+        "codigoReferencia": 1562
+      },
+      {
+        "nome": "C-43",
+        "codigoReferencia": 1563
+      },
+      {
+        "nome": "C-450",
+        "codigoReferencia": 7376
+      },
+      {
+        "nome": "C-55",
+        "codigoReferencia": 3827
+      },
+      {
+        "nome": "C-63",
+        "codigoReferencia": 7620
+      },
+      {
+        "nome": "Cl-500",
+        "codigoReferencia": 1564
+      },
+      {
+        "nome": "Cl-600",
+        "codigoReferencia": 1565
+      },
+      {
+        "nome": "Cl-63",
+        "codigoReferencia": 4516
+      },
+      {
+        "nome": "Cl-65",
+        "codigoReferencia": 9679
+      },
+      {
+        "nome": "Cla-180",
+        "codigoReferencia": 8215
+      },
+      {
+        "nome": "Cla-200",
+        "codigoReferencia": 7958
+      },
+      {
+        "nome": "Cla-200 Urban",
+        "codigoReferencia": 6965
+      },
+      {
+        "nome": "Cla-250",
+        "codigoReferencia": 8866
+      },
+      {
+        "nome": "Cla-35",
+        "codigoReferencia": 9139
+      },
+      {
+        "nome": "Cla-45",
+        "codigoReferencia": 6867
+      },
+      {
+        "nome": "Clc 200 Kompressor",
+        "codigoReferencia": 4856
+      },
+      {
+        "nome": "Clk-230",
+        "codigoReferencia": 1578
+      },
+      {
+        "nome": "Clk-230 Kompressor",
+        "codigoReferencia": 1579
+      },
+      {
+        "nome": "Clk-320 Avantgarde",
+        "codigoReferencia": 1580
+      },
+      {
+        "nome": "Clk-320",
+        "codigoReferencia": 1582
+      },
+      {
+        "nome": "Clk-350",
+        "codigoReferencia": 3895
+      },
+      {
+        "nome": "Clk-430 Avantgarde",
+        "codigoReferencia": 1587
+      },
+      {
+        "nome": "Clk-430 Avantgard",
+        "codigoReferencia": 1586
+      },
+      {
+        "nome": "Clk-430",
+        "codigoReferencia": 1588
+      },
+      {
+        "nome": "Clk-500",
+        "codigoReferencia": 1591
+      },
+      {
+        "nome": "Clk-55",
+        "codigoReferencia": 1593
+      },
+      {
+        "nome": "Cls-350",
+        "codigoReferencia": 5746
+      },
+      {
+        "nome": "Cls-400",
+        "codigoReferencia": 7141
+      },
+      {
+        "nome": "Cls-450",
+        "codigoReferencia": 9977
+      },
+      {
+        "nome": "Cls-500",
+        "codigoReferencia": 1595
+      },
+      {
+        "nome": "Cls-53",
+        "codigoReferencia": 9979
+      },
+      {
+        "nome": "Cls-55 Kompressor",
+        "codigoReferencia": 3803
+      },
+      {
+        "nome": "Cls-63",
+        "codigoReferencia": 5593
+      },
+      {
+        "nome": "Classe A",
+        "codigoReferencia": 1566
+      },
+      {
+        "nome": "Classe A45",
+        "codigoReferencia": 6698
+      },
+      {
+        "nome": "Classe B",
+        "codigoReferencia": 4831
+      },
+      {
+        "nome": "Classe R",
+        "codigoReferencia": 4064
+      },
+      {
+        "nome": "Classic",
+        "codigoReferencia": 1577
+      },
+      {
+        "nome": "E-190",
+        "codigoReferencia": 1596
+      },
+      {
+        "nome": "E-190 Classic",
+        "codigoReferencia": 1597
+      },
+      {
+        "nome": "E-200 Classic",
+        "codigoReferencia": 1598
+      },
+      {
+        "nome": "E-220 Classic",
+        "codigoReferencia": 1599
+      },
+      {
+        "nome": "E-230",
+        "codigoReferencia": 1600
+      },
+      {
+        "nome": "E-240",
+        "codigoReferencia": 1601
+      },
+      {
+        "nome": "E-250",
+        "codigoReferencia": 5538
+      },
+      {
+        "nome": "E-250 Excl",
+        "codigoReferencia": 7766
+      },
+      {
+        "nome": "E-280 Classic",
+        "codigoReferencia": 1602
+      },
+      {
+        "nome": "E-280",
+        "codigoReferencia": 1603
+      },
+      {
+        "nome": "E-300",
+        "codigoReferencia": 9551
+      },
+      {
+        "nome": "E-300 Avantgarde",
+        "codigoReferencia": 8781
+      },
+      {
+        "nome": "E-320",
+        "codigoReferencia": 1604
+      },
+      {
+        "nome": "E-320 Avantgarde",
+        "codigoReferencia": 1606
+      },
+      {
+        "nome": "E-350",
+        "codigoReferencia": 3898
+      },
+      {
+        "nome": "E-350 Avantgarde",
+        "codigoReferencia": 1611
+      },
+      {
+        "nome": "E-400 Avantgarde",
+        "codigoReferencia": 7103
+      },
+      {
+        "nome": "E-400",
+        "codigoReferencia": 7262
+      },
+      {
+        "nome": "E-420 Classic",
+        "codigoReferencia": 1612
+      },
+      {
+        "nome": "E-420",
+        "codigoReferencia": 1613
+      },
+      {
+        "nome": "E-43",
+        "codigoReferencia": 7978
+      },
+      {
+        "nome": "E-430 Avantgarde",
+        "codigoReferencia": 1614
+      },
+      {
+        "nome": "E-430",
+        "codigoReferencia": 1615
+      },
+      {
+        "nome": "E-500 Avangarde",
+        "codigoReferencia": 5423
+      },
+      {
+        "nome": "E-500",
+        "codigoReferencia": 4774
+      },
+      {
+        "nome": "E-500 Tour",
+        "codigoReferencia": 1618
+      },
+      {
+        "nome": "E-53",
+        "codigoReferencia": 10001
+      },
+      {
+        "nome": "E-55",
+        "codigoReferencia": 1619
+      },
+      {
+        "nome": "E-63",
+        "codigoReferencia": 6120
+      },
+      {
+        "nome": "Eqa 250",
+        "codigoReferencia": 10163
+      },
+      {
+        "nome": "Eqb 250",
+        "codigoReferencia": 10164
+      },
+      {
+        "nome": "Eqb 250+",
+        "codigoReferencia": 11643
+      },
+      {
+        "nome": "Eqb 350",
+        "codigoReferencia": 11074
+      },
+      {
+        "nome": "Eqc 400",
+        "codigoReferencia": 9196
+      },
+      {
+        "nome": "Eqe 300",
+        "codigoReferencia": 11222
+      },
+      {
+        "nome": "Eqe 350+",
+        "codigoReferencia": 11491
+      },
+      {
+        "nome": "Eqe 53",
+        "codigoReferencia": 10987
+      },
+      {
+        "nome": "Eqs 450",
+        "codigoReferencia": 11186
+      },
+      {
+        "nome": "Eqs 450+",
+        "codigoReferencia": 11187
+      },
+      {
+        "nome": "Eqs 53",
+        "codigoReferencia": 10002
+      },
+      {
+        "nome": "G-55 Kompressor",
+        "codigoReferencia": 5151
+      },
+      {
+        "nome": "G-63",
+        "codigoReferencia": 9471
+      },
+      {
+        "nome": "Gl-350",
+        "codigoReferencia": 6642
+      },
+      {
+        "nome": "Gl-500",
+        "codigoReferencia": 6445
+      },
+      {
+        "nome": "Gl-63",
+        "codigoReferencia": 6468
+      },
+      {
+        "nome": "Gla 200",
+        "codigoReferencia": 9329
+      },
+      {
+        "nome": "Gla 200 Enduro",
+        "codigoReferencia": 7397
+      },
+      {
+        "nome": "Gla 250 Enduro",
+        "codigoReferencia": 7430
+      },
+      {
+        "nome": "Gla 250",
+        "codigoReferencia": 7195
+      },
+      {
+        "nome": "Gla 35",
+        "codigoReferencia": 9762
+      },
+      {
+        "nome": "Gla 45",
+        "codigoReferencia": 7122
+      },
+      {
+        "nome": "Glb 200",
+        "codigoReferencia": 9350
+      },
+      {
+        "nome": "Glb 220",
+        "codigoReferencia": 11189
+      },
+      {
+        "nome": "Glb 35",
+        "codigoReferencia": 9793
+      },
+      {
+        "nome": "Glc 220d",
+        "codigoReferencia": 9615
+      },
+      {
+        "nome": "Glc 250",
+        "codigoReferencia": 7508
+      },
+      {
+        "nome": "Glc 250 Highway",
+        "codigoReferencia": 7941
+      },
+      {
+        "nome": "Glc-300",
+        "codigoReferencia": 10973
+      },
+      {
+        "nome": "Glc-43",
+        "codigoReferencia": 11102
+      },
+      {
+        "nome": "Glc-63",
+        "codigoReferencia": 8633
+      },
+      {
+        "nome": "Gle-350",
+        "codigoReferencia": 7484
+      },
+      {
+        "nome": "Gle-350 Family",
+        "codigoReferencia": 7485
+      },
+      {
+        "nome": "Gle-350 Highway",
+        "codigoReferencia": 7927
+      },
+      {
+        "nome": "Gle-400",
+        "codigoReferencia": 9251
+      },
+      {
+        "nome": "Gle-43",
+        "codigoReferencia": 8103
+      },
+      {
+        "nome": "Gle-450",
+        "codigoReferencia": 10923
+      },
+      {
+        "nome": "Gle-53",
+        "codigoReferencia": 10009
+      },
+      {
+        "nome": "Gle-63",
+        "codigoReferencia": 7512
+      },
+      {
+        "nome": "Glk-220",
+        "codigoReferencia": 11842
+      },
+      {
+        "nome": "Glk-280",
+        "codigoReferencia": 11844
+      },
+      {
+        "nome": "Glk-300",
+        "codigoReferencia": 11845
+      },
+      {
+        "nome": "Gls-350",
+        "codigoReferencia": 7594
+      },
+      {
+        "nome": "Gls-450",
+        "codigoReferencia": 11847
+      },
+      {
+        "nome": "Gls-500",
+        "codigoReferencia": 7896
+      },
+      {
+        "nome": "Gls-63",
+        "codigoReferencia": 8130
+      },
+      {
+        "nome": "GT 43",
+        "codigoReferencia": 10011
+      },
+      {
+        "nome": "GT 63",
+        "codigoReferencia": 9332
+      },
+      {
+        "nome": "GT",
+        "codigoReferencia": 7769
+      },
+      {
+        "nome": "Ml-230",
+        "codigoReferencia": 1621
+      },
+      {
+        "nome": "Ml-320",
+        "codigoReferencia": 4686
+      },
+      {
+        "nome": "Ml-350",
+        "codigoReferencia": 5035
+      },
+      {
+        "nome": "Ml-430",
+        "codigoReferencia": 1624
+      },
+      {
+        "nome": "Ml-500",
+        "codigoReferencia": 1625
+      },
+      {
+        "nome": "Ml-55",
+        "codigoReferencia": 1626
+      },
+      {
+        "nome": "Ml-63",
+        "codigoReferencia": 6239
+      },
+      {
+        "nome": "S-320",
+        "codigoReferencia": 1627
+      },
+      {
+        "nome": "S-400",
+        "codigoReferencia": 10062
+      },
+      {
+        "nome": "S-420 Classic",
+        "codigoReferencia": 1628
+      },
+      {
+        "nome": "S-500",
+        "codigoReferencia": 1629
+      },
+      {
+        "nome": "S-500 Maybach",
+        "codigoReferencia": 8060
+      },
+      {
+        "nome": "S-500l",
+        "codigoReferencia": 6700
+      },
+      {
+        "nome": "S-55",
+        "codigoReferencia": 1633
+      },
+      {
+        "nome": "S-560l",
+        "codigoReferencia": 8216
+      },
+      {
+        "nome": "S-600",
+        "codigoReferencia": 1634
+      },
+      {
+        "nome": "S-63",
+        "codigoReferencia": 5747
+      },
+      {
+        "nome": "S-65",
+        "codigoReferencia": 4261
+      },
+      {
+        "nome": "Se-500",
+        "codigoReferencia": 1636
+      },
+      {
+        "nome": "Sl-280 Classic",
+        "codigoReferencia": 1637
+      },
+      {
+        "nome": "Sl-320",
+        "codigoReferencia": 1638
+      },
+      {
+        "nome": "Sl-350",
+        "codigoReferencia": 3899
+      },
+      {
+        "nome": "Sl-400",
+        "codigoReferencia": 7197
+      },
+      {
+        "nome": "Sl-500",
+        "codigoReferencia": 1639
+      },
+      {
+        "nome": "Sl-55",
+        "codigoReferencia": 1640
+      },
+      {
+        "nome": "Sl-600",
+        "codigoReferencia": 1641
+      },
+      {
+        "nome": "Sl-63",
+        "codigoReferencia": 6359
+      },
+      {
+        "nome": "Sl-65",
+        "codigoReferencia": 4702
+      },
+      {
+        "nome": "Slc-300",
+        "codigoReferencia": 7705
+      },
+      {
+        "nome": "Slc-43",
+        "codigoReferencia": 7719
+      },
+      {
+        "nome": "Slk-200 Kompressor",
+        "codigoReferencia": 1642
+      },
+      {
+        "nome": "Slk-230 Kompressor",
+        "codigoReferencia": 1643
+      },
+      {
+        "nome": "Slk-230",
+        "codigoReferencia": 1644
+      },
+      {
+        "nome": "Slk-250",
+        "codigoReferencia": 5935
+      },
+      {
+        "nome": "Slk-300",
+        "codigoReferencia": 7398
+      },
+      {
+        "nome": "Slk-320",
+        "codigoReferencia": 1645
+      },
+      {
+        "nome": "Slk-350",
+        "codigoReferencia": 1646
+      },
+      {
+        "nome": "Slk-55",
+        "codigoReferencia": 1647
+      },
+      {
+        "nome": "Sls-63",
+        "codigoReferencia": 6755
+      },
+      {
+        "nome": "Sprin 417",
+        "codigoReferencia": 11050
+      },
+      {
+        "nome": "Sprin 517",
+        "codigoReferencia": 10685
+      },
+      {
+        "nome": "Sprinter 310",
+        "codigoReferencia": 1648
+      },
+      {
+        "nome": "Sprinter 311",
+        "codigoReferencia": 1655
+      },
+      {
+        "nome": "Sprinter 311 Street Luxo",
+        "codigoReferencia": 1659
+      },
+      {
+        "nome": "Sprinter 311 Street",
+        "codigoReferencia": 1660
+      },
+      {
+        "nome": "Sprinter 312",
+        "codigoReferencia": 1665
+      },
+      {
+        "nome": "Sprinter 312-D",
+        "codigoReferencia": 1680
+      },
+      {
+        "nome": "Sprinter 313",
+        "codigoReferencia": 7706
+      },
+      {
+        "nome": "Sprinter 314",
+        "codigoReferencia": 8964
+      },
+      {
+        "nome": "Sprinter 314 Truck",
+        "codigoReferencia": 9873
+      },
+      {
+        "nome": "Sprinter 314 Truck Longo",
+        "codigoReferencia": 9874
+      },
+      {
+        "nome": "Sprinter 315 Furg",
+        "codigoReferencia": 10573
+      },
+      {
+        "nome": "Sprinter 315",
+        "codigoReferencia": 10574
+      },
+      {
+        "nome": "Sprinter 315 Truck",
+        "codigoReferencia": 10577
+      },
+      {
+        "nome": "Sprinter 315 Truck Longo",
+        "codigoReferencia": 10578
+      },
+      {
+        "nome": "Sprinter 317",
+        "codigoReferencia": 12003
+      },
+      {
+        "nome": "Sprinter 412-D",
+        "codigoReferencia": 1692
+      },
+      {
+        "nome": "Sprinter 413",
+        "codigoReferencia": 1693
+      },
+      {
+        "nome": "Sprinter 413-D",
+        "codigoReferencia": 1694
+      },
+      {
+        "nome": "Sprinter 415",
+        "codigoReferencia": 6179
+      },
+      {
+        "nome": "Sprinter 416",
+        "codigoReferencia": 8914
+      },
+      {
+        "nome": "Sprinter 417",
+        "codigoReferencia": 10579
+      },
+      {
+        "nome": "Sprinter 515",
+        "codigoReferencia": 6186
+      },
+      {
+        "nome": "Sprinter 516",
+        "codigoReferencia": 8923
+      },
+      {
+        "nome": "Sprinter 517",
+        "codigoReferencia": 10590
+      },
+      {
+        "nome": "Vito 111",
+        "codigoReferencia": 7399
+      },
+      {
+        "nome": "Vito Tourer",
+        "codigoReferencia": 7400
+      },
+      {
+        "nome": "Esprinter 320",
+        "codigoReferencia": 11319
+      },
+      {
+        "nome": "Esprinter 420",
+        "codigoReferencia": 11321
+      }
+    ]
+  },
+  {
+    "marca": "Mercury",
+    "modelos": [
+      {
+        "nome": "Mystique",
+        "codigoReferencia": 1695
+      },
+      {
+        "nome": "Sable",
+        "codigoReferencia": 1696
+      }
+    ]
+  },
+  {
+    "marca": "Mitsubishi",
+    "modelos": [
+      {
+        "nome": "3000",
+        "codigoReferencia": 1697
+      },
+      {
+        "nome": "Asx",
+        "codigoReferencia": 7288
+      },
+      {
+        "nome": "Asx Hpe-S",
+        "codigoReferencia": 8634
+      },
+      {
+        "nome": "Asx Outdoor",
+        "codigoReferencia": 7432
+      },
+      {
+        "nome": "Asx-S",
+        "codigoReferencia": 7514
+      },
+      {
+        "nome": "Airtrek",
+        "codigoReferencia": 4251
+      },
+      {
+        "nome": "Colt Glxi",
+        "codigoReferencia": 1700
+      },
+      {
+        "nome": "Colt",
+        "codigoReferencia": 1701
+      },
+      {
+        "nome": "Diamant",
+        "codigoReferencia": 1702
+      },
+      {
+        "nome": "Eclipse",
+        "codigoReferencia": 11757
+      },
+      {
+        "nome": "Expo",
+        "codigoReferencia": 1707
+      },
+      {
+        "nome": "Grandis",
+        "codigoReferencia": 1713
+      },
+      {
+        "nome": "Galant",
+        "codigoReferencia": 1709
+      },
+      {
+        "nome": "L200",
+        "codigoReferencia": 1714
+      },
+      {
+        "nome": "L200 Outdoor",
+        "codigoReferencia": 4122
+      },
+      {
+        "nome": "L200 Savana",
+        "codigoReferencia": 1724
+      },
+      {
+        "nome": "L200 Trit",
+        "codigoReferencia": 11022
+      },
+      {
+        "nome": "L200 Triton",
+        "codigoReferencia": 8321
+      },
+      {
+        "nome": "L200 Triton Motorsports",
+        "codigoReferencia": 9120
+      },
+      {
+        "nome": "L200 Triton Outdoor",
+        "codigoReferencia": 10733
+      },
+      {
+        "nome": "L200 Triton Savana",
+        "codigoReferencia": 10734
+      },
+      {
+        "nome": "L200 Triton Savanaoff",
+        "codigoReferencia": 7230
+      },
+      {
+        "nome": "L300",
+        "codigoReferencia": 1729
+      },
+      {
+        "nome": "Lancer",
+        "codigoReferencia": 5733
+      },
+      {
+        "nome": "Lancer Evol",
+        "codigoReferencia": 1731
+      },
+      {
+        "nome": "Lancer Evolut",
+        "codigoReferencia": 4143
+      },
+      {
+        "nome": "Lancer Hl-T",
+        "codigoReferencia": 7433
+      },
+      {
+        "nome": "Mirage",
+        "codigoReferencia": 1737
+      },
+      {
+        "nome": "Montero",
+        "codigoReferencia": 1740
+      },
+      {
+        "nome": "Outlander",
+        "codigoReferencia": 5503
+      },
+      {
+        "nome": "Outlander Hpe-S",
+        "codigoReferencia": 8635
+      },
+      {
+        "nome": "Pajero",
+        "codigoReferencia": 7198
+      },
+      {
+        "nome": "Pajero Dakar",
+        "codigoReferencia": 4979
+      },
+      {
+        "nome": "Pajero Full",
+        "codigoReferencia": 4802
+      },
+      {
+        "nome": "Pajero Full Legend",
+        "codigoReferencia": 9485
+      },
+      {
+        "nome": "Pajero Hd-S",
+        "codigoReferencia": 8219
+      },
+      {
+        "nome": "Pajero Hpe-S",
+        "codigoReferencia": 7358
+      },
+      {
+        "nome": "Pajero Outdoor",
+        "codigoReferencia": 7621
+      },
+      {
+        "nome": "Space",
+        "codigoReferencia": 1776
+      },
+      {
+        "nome": "Triton",
+        "codigoReferencia": 11349
+      },
+      {
+        "nome": "Triton Hpe-S",
+        "codigoReferencia": 11351
+      },
+      {
+        "nome": "Triton Katana",
+        "codigoReferencia": 11352
+      },
+      {
+        "nome": "Triton Savana",
+        "codigoReferencia": 11805
+      },
+      {
+        "nome": "Triton Terra",
+        "codigoReferencia": 12040
+      }
+    ]
+  },
+  {
+    "marca": "Miura",
+    "modelos": [
+      {
+        "nome": "Picape Bg-Truck",
+        "codigoReferencia": 1780
+      }
+    ]
+  },
+  {
+    "marca": "Neta",
+    "modelos": [
+      {
+        "nome": "Aya",
+        "codigoReferencia": 11336
+      },
+      {
+        "nome": "X 400",
+        "codigoReferencia": 11353
+      },
+      {
+        "nome": "X 500",
+        "codigoReferencia": 11354
+      }
+    ]
+  },
+  {
+    "marca": "Nissan",
+    "modelos": [
+      {
+        "nome": "350z",
+        "codigoReferencia": 1781
+      },
+      {
+        "nome": "Altima",
+        "codigoReferencia": 6644
+      },
+      {
+        "nome": "Ax",
+        "codigoReferencia": 1784
+      },
+      {
+        "nome": "D-21",
+        "codigoReferencia": 1785
+      },
+      {
+        "nome": "Frontier Attac",
+        "codigoReferencia": 8551
+      },
+      {
+        "nome": "Frontier",
+        "codigoReferencia": 1787
+      },
+      {
+        "nome": "Frontier Plati",
+        "codigoReferencia": 9832
+      },
+      {
+        "nome": "Frontier X-Gear",
+        "codigoReferencia": 9632
+      },
+      {
+        "nome": "GT-R",
+        "codigoReferencia": 7805
+      },
+      {
+        "nome": "Infinit",
+        "codigoReferencia": 1797
+      },
+      {
+        "nome": "Kicks",
+        "codigoReferencia": 10139
+      },
+      {
+        "nome": "Kicks Special",
+        "codigoReferencia": 8867
+      },
+      {
+        "nome": "Kicks Xplay",
+        "codigoReferencia": 9633
+      },
+      {
+        "nome": "Kait",
+        "codigoReferencia": 11795
+      },
+      {
+        "nome": "King-Cab",
+        "codigoReferencia": 1798
+      },
+      {
+        "nome": "Leaf",
+        "codigoReferencia": 8754
+      },
+      {
+        "nome": "Livina",
+        "codigoReferencia": 4864
+      },
+      {
+        "nome": "Livina Grand",
+        "codigoReferencia": 4982
+      },
+      {
+        "nome": "Livina Night&day",
+        "codigoReferencia": 5474
+      },
+      {
+        "nome": "Livina X-Gear",
+        "codigoReferencia": 5036
+      },
+      {
+        "nome": "March",
+        "codigoReferencia": 7266
+      },
+      {
+        "nome": "Murano",
+        "codigoReferencia": 4193
+      },
+      {
+        "nome": "Maxima 30g",
+        "codigoReferencia": 1799
+      },
+      {
+        "nome": "Maxima 30gv",
+        "codigoReferencia": 1800
+      },
+      {
+        "nome": "Maxima 30gv 30gv Aero",
+        "codigoReferencia": 1801
+      },
+      {
+        "nome": "Maxima 30j",
+        "codigoReferencia": 1802
+      },
+      {
+        "nome": "Maxima",
+        "codigoReferencia": 1803
+      },
+      {
+        "nome": "Micra",
+        "codigoReferencia": 1805
+      },
+      {
+        "nome": "Nx 2000",
+        "codigoReferencia": 1806
+      },
+      {
+        "nome": "Nx 2000 Targa",
+        "codigoReferencia": 1807
+      },
+      {
+        "nome": "Pathfinder",
+        "codigoReferencia": 1808
+      },
+      {
+        "nome": "Pick-Up",
+        "codigoReferencia": 1817
+      },
+      {
+        "nome": "Pick-Up King",
+        "codigoReferencia": 1819
+      },
+      {
+        "nome": "Primera",
+        "codigoReferencia": 1820
+      },
+      {
+        "nome": "Quest",
+        "codigoReferencia": 1821
+      },
+      {
+        "nome": "Sx 240",
+        "codigoReferencia": 1827
+      },
+      {
+        "nome": "Sentra",
+        "codigoReferencia": 4294
+      },
+      {
+        "nome": "Sentra Exclu",
+        "codigoReferencia": 10571
+      },
+      {
+        "nome": "Sentra Unique",
+        "codigoReferencia": 5647
+      },
+      {
+        "nome": "Stanza",
+        "codigoReferencia": 1826
+      },
+      {
+        "nome": "Tiida",
+        "codigoReferencia": 4404
+      },
+      {
+        "nome": "Terrano",
+        "codigoReferencia": 1828
+      },
+      {
+        "nome": "Versa",
+        "codigoReferencia": 7166
+      },
+      {
+        "nome": "Versa Special",
+        "codigoReferencia": 9060
+      },
+      {
+        "nome": "Versa Unique",
+        "codigoReferencia": 7168
+      },
+      {
+        "nome": "Versa V-Drive",
+        "codigoReferencia": 9168
+      },
+      {
+        "nome": "Versa V-Drive Premium",
+        "codigoReferencia": 9172
+      },
+      {
+        "nome": "X-Trail",
+        "codigoReferencia": 1832
+      },
+      {
+        "nome": "Xterra Ecotrip",
+        "codigoReferencia": 4120
+      },
+      {
+        "nome": "Xterra",
+        "codigoReferencia": 1830
+      },
+      {
+        "nome": "Zx 300",
+        "codigoReferencia": 1833
+      }
+    ]
+  },
+  {
+    "marca": "Omoda",
+    "modelos": [
+      {
+        "nome": "5",
+        "codigoReferencia": 11747
+      },
+      {
+        "nome": "7",
+        "codigoReferencia": 11749
+      },
+      {
+        "nome": "E5",
+        "codigoReferencia": 11756
+      }
+    ]
+  },
+  {
+    "marca": "Peugeot",
+    "modelos": [
+      {
+        "nome": "106",
+        "codigoReferencia": 1834
+      },
+      {
+        "nome": "106 Passion",
+        "codigoReferencia": 1835
+      },
+      {
+        "nome": "106 Quiksilver",
+        "codigoReferencia": 1837
+      },
+      {
+        "nome": "106 Selection",
+        "codigoReferencia": 1838
+      },
+      {
+        "nome": "106 Soleil",
+        "codigoReferencia": 1840
+      },
+      {
+        "nome": "2008",
+        "codigoReferencia": 11116
+      },
+      {
+        "nome": "2008 Crossway",
+        "codigoReferencia": 7743
+      },
+      {
+        "nome": "2008 Roadtrip",
+        "codigoReferencia": 10362
+      },
+      {
+        "nome": "2008 Skywalker",
+        "codigoReferencia": 9441
+      },
+      {
+        "nome": "205",
+        "codigoReferencia": 1844
+      },
+      {
+        "nome": "206",
+        "codigoReferencia": 4336
+      },
+      {
+        "nome": "206 Automatic",
+        "codigoReferencia": 4338
+      },
+      {
+        "nome": "206 Holiday",
+        "codigoReferencia": 1850
+      },
+      {
+        "nome": "206 Moonlight",
+        "codigoReferencia": 4307
+      },
+      {
+        "nome": "206 Passion",
+        "codigoReferencia": 1854
+      },
+      {
+        "nome": "206 Select",
+        "codigoReferencia": 1860
+      },
+      {
+        "nome": "206 Selection",
+        "codigoReferencia": 1861
+      },
+      {
+        "nome": "206 Selection Sensation",
+        "codigoReferencia": 1862
+      },
+      {
+        "nome": "206 Sensation",
+        "codigoReferencia": 3900
+      },
+      {
+        "nome": "206 Soleil",
+        "codigoReferencia": 1864
+      },
+      {
+        "nome": "206 Soleil Quiksilver",
+        "codigoReferencia": 1868
+      },
+      {
+        "nome": "206 Techno",
+        "codigoReferencia": 1873
+      },
+      {
+        "nome": "207",
+        "codigoReferencia": 6545
+      },
+      {
+        "nome": "207 Quiksilver",
+        "codigoReferencia": 5159
+      },
+      {
+        "nome": "208",
+        "codigoReferencia": 11212
+      },
+      {
+        "nome": "208 Inconcert",
+        "codigoReferencia": 8348
+      },
+      {
+        "nome": "208 Roadtrip",
+        "codigoReferencia": 10363
+      },
+      {
+        "nome": "3008",
+        "codigoReferencia": 5427
+      },
+      {
+        "nome": "3008 Roland Garros",
+        "codigoReferencia": 6546
+      },
+      {
+        "nome": "306 Break Passion",
+        "codigoReferencia": 1875
+      },
+      {
+        "nome": "306",
+        "codigoReferencia": 1876
+      },
+      {
+        "nome": "306 Passion",
+        "codigoReferencia": 1879
+      },
+      {
+        "nome": "306 Selection",
+        "codigoReferencia": 1883
+      },
+      {
+        "nome": "306 Soleil",
+        "codigoReferencia": 1886
+      },
+      {
+        "nome": "306 Soleil Break",
+        "codigoReferencia": 1888
+      },
+      {
+        "nome": "307",
+        "codigoReferencia": 1896
+      },
+      {
+        "nome": "307 Passion",
+        "codigoReferencia": 1899
+      },
+      {
+        "nome": "307 Soleil",
+        "codigoReferencia": 1903
+      },
+      {
+        "nome": "308",
+        "codigoReferencia": 5901
+      },
+      {
+        "nome": "308 Business",
+        "codigoReferencia": 8062
+      },
+      {
+        "nome": "308 Quiksilver",
+        "codigoReferencia": 7104
+      },
+      {
+        "nome": "308 Roland Garros",
+        "codigoReferencia": 7984
+      },
+      {
+        "nome": "405",
+        "codigoReferencia": 1906
+      },
+      {
+        "nome": "406 Break",
+        "codigoReferencia": 1913
+      },
+      {
+        "nome": "406 Cupê",
+        "codigoReferencia": 1916
+      },
+      {
+        "nome": "406 Familiale",
+        "codigoReferencia": 1918
+      },
+      {
+        "nome": "406",
+        "codigoReferencia": 1923
+      },
+      {
+        "nome": "407",
+        "codigoReferencia": 1930
+      },
+      {
+        "nome": "408",
+        "codigoReferencia": 9583
+      },
+      {
+        "nome": "5008",
+        "codigoReferencia": 8244
+      },
+      {
+        "nome": "504",
+        "codigoReferencia": 1932
+      },
+      {
+        "nome": "505",
+        "codigoReferencia": 1934
+      },
+      {
+        "nome": "508",
+        "codigoReferencia": 6072
+      },
+      {
+        "nome": "605",
+        "codigoReferencia": 1935
+      },
+      {
+        "nome": "605 Sv-3",
+        "codigoReferencia": 1938
+      },
+      {
+        "nome": "607",
+        "codigoReferencia": 1939
+      },
+      {
+        "nome": "806",
+        "codigoReferencia": 1940
+      },
+      {
+        "nome": "807",
+        "codigoReferencia": 1942
+      },
+      {
+        "nome": "Boxer",
+        "codigoReferencia": 5076
+      },
+      {
+        "nome": "Boxer Business",
+        "codigoReferencia": 8527
+      },
+      {
+        "nome": "Boxer Cargo",
+        "codigoReferencia": 9755
+      },
+      {
+        "nome": "Boxer Vidrado",
+        "codigoReferencia": 11456
+      },
+      {
+        "nome": "E-Expert Cargo",
+        "codigoReferencia": 9758
+      },
+      {
+        "nome": "Expert Business",
+        "codigoReferencia": 8105
+      },
+      {
+        "nome": "Expert Cargo",
+        "codigoReferencia": 9760
+      },
+      {
+        "nome": "Expert",
+        "codigoReferencia": 8505
+      },
+      {
+        "nome": "Expert Vitré",
+        "codigoReferencia": 9761
+      },
+      {
+        "nome": "Hoggar",
+        "codigoReferencia": 6645
+      },
+      {
+        "nome": "Hoggar Escapade",
+        "codigoReferencia": 5258
+      },
+      {
+        "nome": "Partner",
+        "codigoReferencia": 5282
+      },
+      {
+        "nome": "Partner Rapid Busin",
+        "codigoReferencia": 11381
+      },
+      {
+        "nome": "Rcz",
+        "codigoReferencia": 5669
+      },
+      {
+        "nome": "E-2008",
+        "codigoReferencia": 11126
+      },
+      {
+        "nome": "E-208",
+        "codigoReferencia": 9631
+      }
+    ]
+  },
+  {
+    "marca": "Plymouth",
+    "modelos": [
+      {
+        "nome": "Gran Voyager",
+        "codigoReferencia": 1950
+      },
+      {
+        "nome": "Sundance",
+        "codigoReferencia": 1951
+      }
+    ]
+  },
+  {
+    "marca": "Pontiac",
+    "modelos": [
+      {
+        "nome": "Trans-Am",
+        "codigoReferencia": 1952
+      },
+      {
+        "nome": "Trans-Sport",
+        "codigoReferencia": 1953
+      }
+    ]
+  },
+  {
+    "marca": "Porsche",
+    "modelos": [
+      {
+        "nome": "718 Boxster",
+        "codigoReferencia": 7517
+      },
+      {
+        "nome": "718 Boxster 25anos",
+        "codigoReferencia": 9443
+      },
+      {
+        "nome": "718 Cayman",
+        "codigoReferencia": 7806
+      },
+      {
+        "nome": "718",
+        "codigoReferencia": 10193
+      },
+      {
+        "nome": "911 4",
+        "codigoReferencia": 7987
+      },
+      {
+        "nome": "911 Carrera",
+        "codigoReferencia": 7597
+      },
+      {
+        "nome": "911 Carrera 4s",
+        "codigoReferencia": 7599
+      },
+      {
+        "nome": "911 Carrera 4s Cabriolet-4",
+        "codigoReferencia": 1954
+      },
+      {
+        "nome": "911 Carrera 4s Coupe-4",
+        "codigoReferencia": 1955
+      },
+      {
+        "nome": "911 Carrera Cabriolet-4",
+        "codigoReferencia": 1958
+      },
+      {
+        "nome": "911 Carrera Coupe-4",
+        "codigoReferencia": 1962
+      },
+      {
+        "nome": "911 Dakar Coupe-4",
+        "codigoReferencia": 10905
+      },
+      {
+        "nome": "911",
+        "codigoReferencia": 8421
+      },
+      {
+        "nome": "911 Speedster",
+        "codigoReferencia": 9024
+      },
+      {
+        "nome": "911 Targa",
+        "codigoReferencia": 1971
+      },
+      {
+        "nome": "911 Targa 4s",
+        "codigoReferencia": 4299
+      },
+      {
+        "nome": "928",
+        "codigoReferencia": 1976
+      },
+      {
+        "nome": "968",
+        "codigoReferencia": 1977
+      },
+      {
+        "nome": "Boxster",
+        "codigoReferencia": 5039
+      },
+      {
+        "nome": "Cayene",
+        "codigoReferencia": 11838
+      },
+      {
+        "nome": "Cayenne",
+        "codigoReferencia": 12013
+      },
+      {
+        "nome": "Cayman",
+        "codigoReferencia": 4247
+      },
+      {
+        "nome": "Macan",
+        "codigoReferencia": 11460
+      },
+      {
+        "nome": "Macan 4",
+        "codigoReferencia": 11133
+      },
+      {
+        "nome": "Macan 4s",
+        "codigoReferencia": 11296
+      },
+      {
+        "nome": "Panamera",
+        "codigoReferencia": 7911
+      },
+      {
+        "nome": "Panamera 4",
+        "codigoReferencia": 11378
+      },
+      {
+        "nome": "Panamera 4s",
+        "codigoReferencia": 7888
+      },
+      {
+        "nome": "Panamera GT-S",
+        "codigoReferencia": 6275
+      },
+      {
+        "nome": "Taycan",
+        "codigoReferencia": 9490
+      },
+      {
+        "nome": "Taycan 4",
+        "codigoReferencia": 9491
+      },
+      {
+        "nome": "Taycan 4s",
+        "codigoReferencia": 9293
+      }
+    ]
+  },
+  {
+    "marca": "Ram",
+    "modelos": [
+      {
+        "nome": "1500 Laram",
+        "codigoReferencia": 11290
+      },
+      {
+        "nome": "1500 Laramie",
+        "codigoReferencia": 11291
+      },
+      {
+        "nome": "1500",
+        "codigoReferencia": 10650
+      },
+      {
+        "nome": "1500 Rebel",
+        "codigoReferencia": 9287
+      },
+      {
+        "nome": "2500 Laram",
+        "codigoReferencia": 9685
+      },
+      {
+        "nome": "2500 Laramie",
+        "codigoReferencia": 6305
+      },
+      {
+        "nome": "2500 Laramie Tropiv",
+        "codigoReferencia": 6306
+      },
+      {
+        "nome": "3500 Laram",
+        "codigoReferencia": 9958
+      },
+      {
+        "nome": "3500 Laramie",
+        "codigoReferencia": 9784
+      },
+      {
+        "nome": "3500",
+        "codigoReferencia": 9890
+      },
+      {
+        "nome": "3500 Yellowstone",
+        "codigoReferencia": 10391
+      },
+      {
+        "nome": "Classic Laramie",
+        "codigoReferencia": 10135
+      },
+      {
+        "nome": "Classic",
+        "codigoReferencia": 11100
+      },
+      {
+        "nome": "Dakota Laramie",
+        "codigoReferencia": 11875
+      },
+      {
+        "nome": "Dakota Warlock",
+        "codigoReferencia": 11876
+      },
+      {
+        "nome": "Rampage",
+        "codigoReferencia": 11327
+      },
+      {
+        "nome": "Rampage Laramie",
+        "codigoReferencia": 10737
+      },
+      {
+        "nome": "Rampage Rebel",
+        "codigoReferencia": 10739
+      },
+      {
+        "nome": "Rampage Rebel Hurr",
+        "codigoReferencia": 10740
+      },
+      {
+        "nome": "Rampage Rebel Ignit",
+        "codigoReferencia": 11274
+      }
+    ]
+  },
+  {
+    "marca": "Rely",
+    "modelos": [
+      {
+        "nome": "Link",
+        "codigoReferencia": 6596
+      },
+      {
+        "nome": "Pick-Up",
+        "codigoReferencia": 6307
+      },
+      {
+        "nome": "Van",
+        "codigoReferencia": 6469
+      }
+    ]
+  },
+  {
+    "marca": "Renault",
+    "modelos": [
+      {
+        "nome": "19 16s",
+        "codigoReferencia": 1986
+      },
+      {
+        "nome": "19",
+        "codigoReferencia": 1987
+      },
+      {
+        "nome": "21",
+        "codigoReferencia": 1990
+      },
+      {
+        "nome": "21 Nevada",
+        "codigoReferencia": 1991
+      },
+      {
+        "nome": "Boreal",
+        "codigoReferencia": 11708
+      },
+      {
+        "nome": "Boreal Techno",
+        "codigoReferencia": 11710
+      },
+      {
+        "nome": "Captur",
+        "codigoReferencia": 9545
+      },
+      {
+        "nome": "Clio Auth",
+        "codigoReferencia": 1997
+      },
+      {
+        "nome": "Clio",
+        "codigoReferencia": 1994
+      },
+      {
+        "nome": "Clio Campus Hi-Flex",
+        "codigoReferencia": 4643
+      },
+      {
+        "nome": "Clio Getup Hi-Flex",
+        "codigoReferencia": 3993
+      },
+      {
+        "nome": "Clio Hi-Flex",
+        "codigoReferencia": 5312
+      },
+      {
+        "nome": "Clio Hi-Flex Expres Hi-Flex",
+        "codigoReferencia": 9658
+      },
+      {
+        "nome": "Duster",
+        "codigoReferencia": 5671
+      },
+      {
+        "nome": "Duster Authent",
+        "codigoReferencia": 9592
+      },
+      {
+        "nome": "Duster Dakar",
+        "codigoReferencia": 7403
+      },
+      {
+        "nome": "Duster Gopro",
+        "codigoReferencia": 8785
+      },
+      {
+        "nome": "Duster Oroch Dyna",
+        "codigoReferencia": 7377
+      },
+      {
+        "nome": "Duster Oroch",
+        "codigoReferencia": 8580
+      },
+      {
+        "nome": "Duster Outdoor",
+        "codigoReferencia": 6970
+      },
+      {
+        "nome": "Duster Techroad",
+        "codigoReferencia": 6213
+      },
+      {
+        "nome": "Express",
+        "codigoReferencia": 2030
+      },
+      {
+        "nome": "Fluence",
+        "codigoReferencia": 7105
+      },
+      {
+        "nome": "Kwid E-Tech Techno",
+        "codigoReferencia": 11774
+      },
+      {
+        "nome": "Kwid",
+        "codigoReferencia": 11407
+      },
+      {
+        "nome": "Kwid Outsider",
+        "codigoReferencia": 8701
+      },
+      {
+        "nome": "Kangoo Advanced",
+        "codigoReferencia": 11077
+      },
+      {
+        "nome": "Kangoo",
+        "codigoReferencia": 2031
+      },
+      {
+        "nome": "Kangoo E-Tech",
+        "codigoReferencia": 10974
+      },
+      {
+        "nome": "Kangoo Expres Sportway",
+        "codigoReferencia": 4098
+      },
+      {
+        "nome": "Kardian Authentic",
+        "codigoReferencia": 11648
+      },
+      {
+        "nome": "Kardian Evolut",
+        "codigoReferencia": 10990
+      },
+      {
+        "nome": "Kardian",
+        "codigoReferencia": 11649
+      },
+      {
+        "nome": "Kardian Prem",
+        "codigoReferencia": 10991
+      },
+      {
+        "nome": "Kardian Techno",
+        "codigoReferencia": 10992
+      },
+      {
+        "nome": "Koleos E-Tech",
+        "codigoReferencia": 11950
+      },
+      {
+        "nome": "Kwid Connectv",
+        "codigoReferencia": 8714
+      },
+      {
+        "nome": "Logan",
+        "codigoReferencia": 7808
+      },
+      {
+        "nome": "Logan Avantage Hi-Flex",
+        "codigoReferencia": 5648
+      },
+      {
+        "nome": "Logan Dyna Easyr Hi-Flex",
+        "codigoReferencia": 6971
+      },
+      {
+        "nome": "Logan Expres Avantage",
+        "codigoReferencia": 8024
+      },
+      {
+        "nome": "Logan Expres Easyr Hi-Flex",
+        "codigoReferencia": 6972
+      },
+      {
+        "nome": "Logan Expres",
+        "codigoReferencia": 7634
+      },
+      {
+        "nome": "Laguna Grand Tour",
+        "codigoReferencia": 2042
+      },
+      {
+        "nome": "Laguna Nevada",
+        "codigoReferencia": 2043
+      },
+      {
+        "nome": "Laguna",
+        "codigoReferencia": 2044
+      },
+      {
+        "nome": "Master",
+        "codigoReferencia": 6400
+      },
+      {
+        "nome": "Megane",
+        "codigoReferencia": 4579
+      },
+      {
+        "nome": "Megane E-Tech",
+        "codigoReferencia": 10867
+      },
+      {
+        "nome": "Megane Grand Tour",
+        "codigoReferencia": 4203
+      },
+      {
+        "nome": "Megane Grand Tour Expres Hi-Flex",
+        "codigoReferencia": 4728
+      },
+      {
+        "nome": "Oroch",
+        "codigoReferencia": 11023
+      },
+      {
+        "nome": "Oroch Outsider",
+        "codigoReferencia": 10405
+      },
+      {
+        "nome": "Sandero Auth",
+        "codigoReferencia": 7289
+      },
+      {
+        "nome": "Sandero",
+        "codigoReferencia": 7810
+      },
+      {
+        "nome": "Sandero Dyna Easyr Hi-Flex",
+        "codigoReferencia": 6973
+      },
+      {
+        "nome": "Sandero Expres Easyr Hi-Flex",
+        "codigoReferencia": 6974
+      },
+      {
+        "nome": "Sandero Expres",
+        "codigoReferencia": 7635
+      },
+      {
+        "nome": "Sandero Nokia Hi-Flex",
+        "codigoReferencia": 4666
+      },
+      {
+        "nome": "Sandero Step Easy",
+        "codigoReferencia": 8247
+      },
+      {
+        "nome": "Sandero Step",
+        "codigoReferencia": 7435
+      },
+      {
+        "nome": "Sandero Stepway Dynamiq",
+        "codigoReferencia": 8248
+      },
+      {
+        "nome": "Sandero Stepway",
+        "codigoReferencia": 8065
+      },
+      {
+        "nome": "Sandero Stepway Easy",
+        "codigoReferencia": 7850
+      },
+      {
+        "nome": "Sandero Stepway Hi-F",
+        "codigoReferencia": 5938
+      },
+      {
+        "nome": "Sandero Stepway Hi-Flex",
+        "codigoReferencia": 4780
+      },
+      {
+        "nome": "Sandero Stepway Hi-Power",
+        "codigoReferencia": 6193
+      },
+      {
+        "nome": "Sandero Stepway Tweed Hflex",
+        "codigoReferencia": 6757
+      },
+      {
+        "nome": "Sandero Techrun Hi-Flex",
+        "codigoReferencia": 6617
+      },
+      {
+        "nome": "Sandero Vibe",
+        "codigoReferencia": 7812
+      },
+      {
+        "nome": "Sandero Vibe Hi-Flex",
+        "codigoReferencia": 4988
+      },
+      {
+        "nome": "Stepway",
+        "codigoReferencia": 8755
+      },
+      {
+        "nome": "Symbol Connection Hi-Flex",
+        "codigoReferencia": 5402
+      },
+      {
+        "nome": "Symbol",
+        "codigoReferencia": 4868
+      },
+      {
+        "nome": "Safrane",
+        "codigoReferencia": 2067
+      },
+      {
+        "nome": "Scénic Alizé",
+        "codigoReferencia": 2068
+      },
+      {
+        "nome": "Scénic",
+        "codigoReferencia": 2070
+      },
+      {
+        "nome": "Scénic Grand",
+        "codigoReferencia": 4580
+      },
+      {
+        "nome": "Scénic Hi-Flex",
+        "codigoReferencia": 2071
+      },
+      {
+        "nome": "Scénic Privillège",
+        "codigoReferencia": 2073
+      },
+      {
+        "nome": "Scénic Sportway Hi-Flex",
+        "codigoReferencia": 3997
+      },
+      {
+        "nome": "Trafic",
+        "codigoReferencia": 2084
+      },
+      {
+        "nome": "Twingo",
+        "codigoReferencia": 2088
+      },
+      {
+        "nome": "Twingo Easy",
+        "codigoReferencia": 2090
+      },
+      {
+        "nome": "Zoe",
+        "codigoReferencia": 9497
+      }
+    ]
+  },
+  {
+    "marca": "Rolls-Royce",
+    "modelos": [
+      {
+        "nome": "Cullinan",
+        "codigoReferencia": 9464
+      },
+      {
+        "nome": "Dawn",
+        "codigoReferencia": 8108
+      },
+      {
+        "nome": "Ghost",
+        "codigoReferencia": 6597
+      },
+      {
+        "nome": "Phantom",
+        "codigoReferencia": 6930
+      },
+      {
+        "nome": "Wraith",
+        "codigoReferencia": 7209
+      }
+    ]
+  },
+  {
+    "marca": "Rover",
+    "modelos": [
+      {
+        "nome": "Mini Cooper",
+        "codigoReferencia": 2094
+      }
+    ]
+  },
+  {
+    "marca": "Seres",
+    "modelos": [
+      {
+        "nome": "3",
+        "codigoReferencia": 10929
+      },
+      {
+        "nome": "5",
+        "codigoReferencia": 10930
+      }
+    ]
+  },
+  {
+    "marca": "Shineray",
+    "modelos": [
+      {
+        "nome": "Sy1020",
+        "codigoReferencia": 6308
+      },
+      {
+        "nome": "Sy6370",
+        "codigoReferencia": 6714
+      },
+      {
+        "nome": "Sy6390",
+        "codigoReferencia": 5981
+      },
+      {
+        "nome": "Tlux",
+        "codigoReferencia": 11238
+      },
+      {
+        "nome": "X30",
+        "codigoReferencia": 6975
+      }
+    ]
+  },
+  {
+    "marca": "Ssangyong",
+    "modelos": [
+      {
+        "nome": "Actyon",
+        "codigoReferencia": 4535
+      },
+      {
+        "nome": "Actyon Sports",
+        "codigoReferencia": 4536
+      },
+      {
+        "nome": "Chairman",
+        "codigoReferencia": 4099
+      },
+      {
+        "nome": "Istana",
+        "codigoReferencia": 4100
+      },
+      {
+        "nome": "Korando",
+        "codigoReferencia": 5649
+      },
+      {
+        "nome": "Korando Canvas",
+        "codigoReferencia": 4101
+      },
+      {
+        "nome": "Kyron",
+        "codigoReferencia": 4927
+      },
+      {
+        "nome": "Musso",
+        "codigoReferencia": 4106
+      },
+      {
+        "nome": "Rexton",
+        "codigoReferencia": 4263
+      },
+      {
+        "nome": "Tivoli",
+        "codigoReferencia": 8295
+      },
+      {
+        "nome": "Xlv",
+        "codigoReferencia": 8297
+      }
+    ]
+  },
+  {
+    "marca": "Saab",
+    "modelos": [
+      {
+        "nome": "9000",
+        "codigoReferencia": 2095
+      }
+    ]
+  },
+  {
+    "marca": "Saturn",
+    "modelos": [
+      {
+        "nome": "Sl-2",
+        "codigoReferencia": 2096
+      }
+    ]
+  },
+  {
+    "marca": "Seat",
+    "modelos": [
+      {
+        "nome": "Cordoba",
+        "codigoReferencia": 2097
+      },
+      {
+        "nome": "Cordoba Vario",
+        "codigoReferencia": 2099
+      },
+      {
+        "nome": "Ibiza",
+        "codigoReferencia": 2100
+      },
+      {
+        "nome": "Inca",
+        "codigoReferencia": 2104
+      }
+    ]
+  },
+  {
+    "marca": "Subaru",
+    "modelos": [
+      {
+        "nome": "Forester",
+        "codigoReferencia": 10005
+      },
+      {
+        "nome": "Impreza",
+        "codigoReferencia": 4645
+      },
+      {
+        "nome": "Legacy",
+        "codigoReferencia": 5215
+      },
+      {
+        "nome": "Outback",
+        "codigoReferencia": 2159
+      },
+      {
+        "nome": "Svx Cupê",
+        "codigoReferencia": 2162
+      },
+      {
+        "nome": "Tribeca",
+        "codigoReferencia": 4688
+      },
+      {
+        "nome": "Vivio",
+        "codigoReferencia": 2163
+      },
+      {
+        "nome": "Xv",
+        "codigoReferencia": 8357
+      }
+    ]
+  },
+  {
+    "marca": "Suzuki",
+    "modelos": [
+      {
+        "nome": "Baleno",
+        "codigoReferencia": 2164
+      },
+      {
+        "nome": "Grand Vitara",
+        "codigoReferencia": 2167
+      },
+      {
+        "nome": "Grand Vitara 4sport",
+        "codigoReferencia": 7404
+      },
+      {
+        "nome": "Ignis",
+        "codigoReferencia": 2183
+      },
+      {
+        "nome": "Jimny 4s",
+        "codigoReferencia": 6073
+      },
+      {
+        "nome": "Jimny 4sport Desert",
+        "codigoReferencia": 8424
+      },
+      {
+        "nome": "Jimny 4sport Forest",
+        "codigoReferencia": 9025
+      },
+      {
+        "nome": "Jimny 4sport 4work",
+        "codigoReferencia": 6074
+      },
+      {
+        "nome": "Jimny 4street",
+        "codigoReferencia": 6075
+      },
+      {
+        "nome": "Jimny 4sun",
+        "codigoReferencia": 6244
+      },
+      {
+        "nome": "Jimny 4work",
+        "codigoReferencia": 7636
+      },
+      {
+        "nome": "Jimny Canvas 4all",
+        "codigoReferencia": 7877
+      },
+      {
+        "nome": "Jimny Canvas 4sport",
+        "codigoReferencia": 7878
+      },
+      {
+        "nome": "Jimny Sierra 4expedition Allgrip",
+        "codigoReferencia": 10732
+      },
+      {
+        "nome": "Jimny Sierra 4sport Allgrip",
+        "codigoReferencia": 10021
+      },
+      {
+        "nome": "Jimny Sierra 4style Allgrip",
+        "codigoReferencia": 8872
+      },
+      {
+        "nome": "Jimny Sierra 4you Allgrip",
+        "codigoReferencia": 8873
+      },
+      {
+        "nome": "Jimny Sierra 4you+ Allgrip",
+        "codigoReferencia": 11076
+      },
+      {
+        "nome": "Jimny Wide Jimny 4all",
+        "codigoReferencia": 2186
+      },
+      {
+        "nome": "S-Cross 4style",
+        "codigoReferencia": 7813
+      },
+      {
+        "nome": "S-Cross 4style Allgrip",
+        "codigoReferencia": 7814
+      },
+      {
+        "nome": "S-Cross 4style-S Allgrip",
+        "codigoReferencia": 8425
+      },
+      {
+        "nome": "S-Cross 4you",
+        "codigoReferencia": 7815
+      },
+      {
+        "nome": "Sx4",
+        "codigoReferencia": 5005
+      },
+      {
+        "nome": "Sx4 S-Cross Allgrip",
+        "codigoReferencia": 7211
+      },
+      {
+        "nome": "Sx4 S-Cross",
+        "codigoReferencia": 7212
+      },
+      {
+        "nome": "Samurai",
+        "codigoReferencia": 2187
+      },
+      {
+        "nome": "Sidekick Canvas",
+        "codigoReferencia": 2189
+      },
+      {
+        "nome": "Sidekick Metal",
+        "codigoReferencia": 2190
+      },
+      {
+        "nome": "Super Carry",
+        "codigoReferencia": 2191
+      },
+      {
+        "nome": "Swift",
+        "codigoReferencia": 2192
+      },
+      {
+        "nome": "Vitara 4all",
+        "codigoReferencia": 7771
+      },
+      {
+        "nome": "Vitara 4sport",
+        "codigoReferencia": 7773
+      },
+      {
+        "nome": "Vitara 4sport Allgrip",
+        "codigoReferencia": 7774
+      },
+      {
+        "nome": "Vitara 4style Allgrip",
+        "codigoReferencia": 8529
+      },
+      {
+        "nome": "Vitara 4you",
+        "codigoReferencia": 7775
+      },
+      {
+        "nome": "Vitara 4you Allgrip",
+        "codigoReferencia": 7776
+      },
+      {
+        "nome": "Vitara",
+        "codigoReferencia": 2198
+      },
+      {
+        "nome": "Wagon R+",
+        "codigoReferencia": 2203
+      }
+    ]
+  },
+  {
+    "marca": "Tac",
+    "modelos": [
+      {
+        "nome": "Stark",
+        "codigoReferencia": 5192
+      }
+    ]
+  },
+  {
+    "marca": "Toyota",
+    "modelos": [
+      {
+        "nome": "Avalon",
+        "codigoReferencia": 2204
+      },
+      {
+        "nome": "Band Jipe",
+        "codigoReferencia": 2205
+      },
+      {
+        "nome": "Band Jipe Capota",
+        "codigoReferencia": 2208
+      },
+      {
+        "nome": "Band Picape",
+        "codigoReferencia": 2209
+      },
+      {
+        "nome": "Camry",
+        "codigoReferencia": 2213
+      },
+      {
+        "nome": "Celica",
+        "codigoReferencia": 2217
+      },
+      {
+        "nome": "Corolla",
+        "codigoReferencia": 9300
+      },
+      {
+        "nome": "Corolla Fielder",
+        "codigoReferencia": 2221
+      },
+      {
+        "nome": "Corona",
+        "codigoReferencia": 2235
+      },
+      {
+        "nome": "Etios",
+        "codigoReferencia": 6245
+      },
+      {
+        "nome": "Hiace",
+        "codigoReferencia": 11849
+      },
+      {
+        "nome": "Hilux",
+        "codigoReferencia": 2238
+      },
+      {
+        "nome": "Land Cruiser",
+        "codigoReferencia": 2278
+      },
+      {
+        "nome": "Land Cruiser Prado",
+        "codigoReferencia": 2279
+      },
+      {
+        "nome": "Mr-2",
+        "codigoReferencia": 2281
+      },
+      {
+        "nome": "Prius",
+        "codigoReferencia": 10044
+      },
+      {
+        "nome": "Paseo",
+        "codigoReferencia": 2282
+      },
+      {
+        "nome": "Previa",
+        "codigoReferencia": 2283
+      },
+      {
+        "nome": "Rav4",
+        "codigoReferencia": 6470
+      },
+      {
+        "nome": "Supra",
+        "codigoReferencia": 2287
+      },
+      {
+        "nome": "T-100",
+        "codigoReferencia": 2288
+      },
+      {
+        "nome": "Yaris",
+        "codigoReferencia": 11888
+      }
+    ]
+  },
+  {
+    "marca": "Troller",
+    "modelos": [
+      {
+        "nome": "Pantanal",
+        "codigoReferencia": 3978
+      },
+      {
+        "nome": "Rf Esport",
+        "codigoReferencia": 2289
+      },
+      {
+        "nome": "T-4",
+        "codigoReferencia": 2292
+      },
+      {
+        "nome": "T-4 Bold",
+        "codigoReferencia": 7816
+      },
+      {
+        "nome": "T-4 Desert",
+        "codigoReferencia": 5652
+      }
+    ]
+  },
+  {
+    "marca": "Volkswagen",
+    "modelos": [
+      {
+        "nome": "Amarok",
+        "codigoReferencia": 5585
+      },
+      {
+        "nome": "Apolo",
+        "codigoReferencia": 2359
+      },
+      {
+        "nome": "Bora",
+        "codigoReferencia": 2362
+      },
+      {
+        "nome": "Crossfox",
+        "codigoReferencia": 7077
+      },
+      {
+        "nome": "Caravelle",
+        "codigoReferencia": 2365
+      },
+      {
+        "nome": "Corrado",
+        "codigoReferencia": 2366
+      },
+      {
+        "nome": "Delivery",
+        "codigoReferencia": 10368
+      },
+      {
+        "nome": "Eos",
+        "codigoReferencia": 4857
+      },
+      {
+        "nome": "Eurovan",
+        "codigoReferencia": 2369
+      },
+      {
+        "nome": "Fox",
+        "codigoReferencia": 5082
+      },
+      {
+        "nome": "Fusca",
+        "codigoReferencia": 2380
+      },
+      {
+        "nome": "Gol (novo)",
+        "codigoReferencia": 6280
+      },
+      {
+        "nome": "Gol",
+        "codigoReferencia": 8323
+      },
+      {
+        "nome": "Gol 1000 (modelo Antigo)",
+        "codigoReferencia": 2399
+      },
+      {
+        "nome": "Gol 1000",
+        "codigoReferencia": 2400
+      },
+      {
+        "nome": "Gol 1000i",
+        "codigoReferencia": 2408
+      },
+      {
+        "nome": "Gol Copa",
+        "codigoReferencia": 3958
+      },
+      {
+        "nome": "Gol Ecomotion",
+        "codigoReferencia": 5218
+      },
+      {
+        "nome": "Gol Last",
+        "codigoReferencia": 10166
+      },
+      {
+        "nome": "Gol Special",
+        "codigoReferencia": 2432
+      },
+      {
+        "nome": "Gol Special Special",
+        "codigoReferencia": 2434
+      },
+      {
+        "nome": "Golf",
+        "codigoReferencia": 5115
+      },
+      {
+        "nome": "Golf Flash",
+        "codigoReferencia": 3914
+      },
+      {
+        "nome": "Golf Variant",
+        "codigoReferencia": 8372
+      },
+      {
+        "nome": "Grand Saveiro",
+        "codigoReferencia": 2456
+      },
+      {
+        "nome": "Jetta",
+        "codigoReferencia": 2457
+      },
+      {
+        "nome": "Jetta 250",
+        "codigoReferencia": 8581
+      },
+      {
+        "nome": "Jetta R-Line",
+        "codigoReferencia": 8488
+      },
+      {
+        "nome": "Jetta Variant",
+        "codigoReferencia": 4649
+      },
+      {
+        "nome": "Kombi Carat",
+        "codigoReferencia": 2458
+      },
+      {
+        "nome": "Kombi",
+        "codigoReferencia": 2459
+      },
+      {
+        "nome": "Kombi Last",
+        "codigoReferencia": 6618
+      },
+      {
+        "nome": "Kombi Lotação",
+        "codigoReferencia": 3981
+      },
+      {
+        "nome": "Kombi Standard",
+        "codigoReferencia": 3916
+      },
+      {
+        "nome": "Kombi Standard Luxo Série Prata",
+        "codigoReferencia": 2465
+      },
+      {
+        "nome": "Logus",
+        "codigoReferencia": 2466
+      },
+      {
+        "nome": "Logus Glsi",
+        "codigoReferencia": 2470
+      },
+      {
+        "nome": "Logus Wolfsburg",
+        "codigoReferencia": 2471
+      },
+      {
+        "nome": "New Beetle",
+        "codigoReferencia": 2472
+      },
+      {
+        "nome": "Nivus",
+        "codigoReferencia": 9150
+      },
+      {
+        "nome": "Nivus Launching",
+        "codigoReferencia": 9152
+      },
+      {
+        "nome": "Parati",
+        "codigoReferencia": 2473
+      },
+      {
+        "nome": "Parati 1000",
+        "codigoReferencia": 2484
+      },
+      {
+        "nome": "Parati Crossover",
+        "codigoReferencia": 2492
+      },
+      {
+        "nome": "Parati Evidence",
+        "codigoReferencia": 2493
+      },
+      {
+        "nome": "Parati Glsi",
+        "codigoReferencia": 2498
+      },
+      {
+        "nome": "Parati Surf",
+        "codigoReferencia": 4521
+      },
+      {
+        "nome": "Parati Titan",
+        "codigoReferencia": 4908
+      },
+      {
+        "nome": "Parati Utility",
+        "codigoReferencia": 2502
+      },
+      {
+        "nome": "Passat",
+        "codigoReferencia": 2503
+      },
+      {
+        "nome": "Passat Pointer",
+        "codigoReferencia": 2511
+      },
+      {
+        "nome": "Passat R-Line",
+        "codigoReferencia": 7051
+      },
+      {
+        "nome": "Passat Variant",
+        "codigoReferencia": 3917
+      },
+      {
+        "nome": "Passat Variant R-Line",
+        "codigoReferencia": 7320
+      },
+      {
+        "nome": "Pointer",
+        "codigoReferencia": 2523
+      },
+      {
+        "nome": "Polo",
+        "codigoReferencia": 8070
+      },
+      {
+        "nome": "Polo Classic",
+        "codigoReferencia": 2531
+      },
+      {
+        "nome": "Polo Classic Special",
+        "codigoReferencia": 2532
+      },
+      {
+        "nome": "Polo Next",
+        "codigoReferencia": 2533
+      },
+      {
+        "nome": "Polo Robust",
+        "codigoReferencia": 11778
+      },
+      {
+        "nome": "Quantum",
+        "codigoReferencia": 2538
+      },
+      {
+        "nome": "Quantum Evidence",
+        "codigoReferencia": 2541
+      },
+      {
+        "nome": "Quantum Glsi",
+        "codigoReferencia": 2544
+      },
+      {
+        "nome": "Spacefox",
+        "codigoReferencia": 4729
+      },
+      {
+        "nome": "Santana",
+        "codigoReferencia": 2545
+      },
+      {
+        "nome": "Santana Evidenc",
+        "codigoReferencia": 2549
+      },
+      {
+        "nome": "Santana Exclusiv",
+        "codigoReferencia": 2550
+      },
+      {
+        "nome": "Santana Glsi",
+        "codigoReferencia": 2552
+      },
+      {
+        "nome": "Saveiro",
+        "codigoReferencia": 5009
+      },
+      {
+        "nome": "Saveiro Crossover",
+        "codigoReferencia": 3962
+      },
+      {
+        "nome": "Saveiro Robust",
+        "codigoReferencia": 10141
+      },
+      {
+        "nome": "Saveiro Surf",
+        "codigoReferencia": 4523
+      },
+      {
+        "nome": "Saveiro Startline",
+        "codigoReferencia": 6802
+      },
+      {
+        "nome": "Saveiro Titan",
+        "codigoReferencia": 4451
+      },
+      {
+        "nome": "Saveiro Trooper",
+        "codigoReferencia": 5010
+      },
+      {
+        "nome": "Spacecross",
+        "codigoReferencia": 7235
+      },
+      {
+        "nome": "T-Cross",
+        "codigoReferencia": 8642
+      },
+      {
+        "nome": "T-Cross 200",
+        "codigoReferencia": 10373
+      },
+      {
+        "nome": "Taos",
+        "codigoReferencia": 9529
+      },
+      {
+        "nome": "Taos Launching",
+        "codigoReferencia": 9531
+      },
+      {
+        "nome": "Tiguan",
+        "codigoReferencia": 7860
+      },
+      {
+        "nome": "Tiguan Allspac",
+        "codigoReferencia": 8300
+      },
+      {
+        "nome": "Tiguan Allspac R-Line",
+        "codigoReferencia": 10892
+      },
+      {
+        "nome": "Tiguan R-Line",
+        "codigoReferencia": 12004
+      },
+      {
+        "nome": "Touareg",
+        "codigoReferencia": 3835
+      },
+      {
+        "nome": "Touareg R-Line",
+        "codigoReferencia": 7218
+      },
+      {
+        "nome": "Tera",
+        "codigoReferencia": 11466
+      },
+      {
+        "nome": "Virtus",
+        "codigoReferencia": 8427
+      },
+      {
+        "nome": "Voyage",
+        "codigoReferencia": 6808
+      },
+      {
+        "nome": "Voyage Evidence",
+        "codigoReferencia": 6811
+      },
+      {
+        "nome": "Van",
+        "codigoReferencia": 2570
+      },
+      {
+        "nome": "Up!",
+        "codigoReferencia": 8702
+      },
+      {
+        "nome": "Up! Speed",
+        "codigoReferencia": 7327
+      },
+      {
+        "nome": "Up! Move",
+        "codigoReferencia": 6805
+      },
+      {
+        "nome": "Up! Take",
+        "codigoReferencia": 6807
+      }
+    ]
+  },
+  {
+    "marca": "Volvo",
+    "modelos": [
+      {
+        "nome": "440",
+        "codigoReferencia": 2296
+      },
+      {
+        "nome": "460",
+        "codigoReferencia": 2297
+      },
+      {
+        "nome": "850",
+        "codigoReferencia": 2298
+      },
+      {
+        "nome": "940",
+        "codigoReferencia": 2306
+      },
+      {
+        "nome": "960",
+        "codigoReferencia": 2307
+      },
+      {
+        "nome": "C30",
+        "codigoReferencia": 4319
+      },
+      {
+        "nome": "C40",
+        "codigoReferencia": 9968
+      },
+      {
+        "nome": "C70",
+        "codigoReferencia": 2308
+      },
+      {
+        "nome": "C70 Cupê",
+        "codigoReferencia": 2309
+      },
+      {
+        "nome": "Ec40",
+        "codigoReferencia": 11712
+      },
+      {
+        "nome": "Ex30",
+        "codigoReferencia": 11044
+      },
+      {
+        "nome": "Ex40",
+        "codigoReferencia": 11715
+      },
+      {
+        "nome": "Ex90",
+        "codigoReferencia": 11375
+      },
+      {
+        "nome": "S40",
+        "codigoReferencia": 2310
+      },
+      {
+        "nome": "S60",
+        "codigoReferencia": 2321
+      },
+      {
+        "nome": "S70",
+        "codigoReferencia": 2326
+      },
+      {
+        "nome": "S80",
+        "codigoReferencia": 2331
+      },
+      {
+        "nome": "S90",
+        "codigoReferencia": 9918
+      },
+      {
+        "nome": "V40",
+        "codigoReferencia": 2337
+      },
+      {
+        "nome": "V50",
+        "codigoReferencia": 4628
+      },
+      {
+        "nome": "V60",
+        "codigoReferencia": 7852
+      },
+      {
+        "nome": "V70",
+        "codigoReferencia": 2347
+      },
+      {
+        "nome": "XC 40",
+        "codigoReferencia": 10080
+      },
+      {
+        "nome": "XC 60",
+        "codigoReferencia": 5561
+      },
+      {
+        "nome": "XC 90",
+        "codigoReferencia": 2356
+      }
+    ]
+  },
+  {
+    "marca": "Wake",
+    "modelos": [
+      {
+        "nome": "Cross",
+        "codigoReferencia": 9680
+      },
+      {
+        "nome": "Street",
+        "codigoReferencia": 10066
+      },
+      {
+        "nome": "Way",
+        "codigoReferencia": 5088
+      }
+    ]
+  },
+  {
+    "marca": "Walk",
+    "modelos": [
+      {
+        "nome": "Buggy Walk",
+        "codigoReferencia": 3998
+      }
+    ]
+  },
+  {
+    "marca": "Zeekr",
+    "modelos": [
+      {
+        "nome": "001 Flagship",
+        "codigoReferencia": 11624
+      },
+      {
+        "nome": "001 Premium",
+        "codigoReferencia": 11625
+      },
+      {
+        "nome": "7x Flagship",
+        "codigoReferencia": 11630
+      },
+      {
+        "nome": "X Flagship",
+        "codigoReferencia": 11656
+      },
+      {
+        "nome": "X Premium",
+        "codigoReferencia": 11472
+      }
+    ]
+  },
+  {
+    "marca": "Smart",
+    "modelos": [
+      {
+        "nome": "Fortwo Brabus",
+        "codigoReferencia": 5147
+      },
+      {
+        "nome": "Fortwo",
+        "codigoReferencia": 5284
+      },
+      {
+        "nome": "Fortwo Passion",
+        "codigoReferencia": 4902
+      }
+    ]
+  }
+]
