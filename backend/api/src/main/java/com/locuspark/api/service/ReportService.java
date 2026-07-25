@@ -1,20 +1,20 @@
 package com.locuspark.api.service;
 
 import com.locuspark.api.dto.response.ReportResponse;
-import com.locuspark.api.entity.Ticket;
-import com.locuspark.api.enums.PaymentMethod;
-import com.locuspark.api.enums.TicketStatus;
-import com.locuspark.api.repository.TicketRepository;
+import com.locuspark.api.dto.response.report.*;
+import com.locuspark.api.entity.Company;
+import com.locuspark.api.exception.ResourceNotFoundException;
+import com.locuspark.api.mapper.ReportCompanyMapper;
+import com.locuspark.api.repository.CompanyRepository;
+import com.locuspark.api.service.report.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
-import java.time.Duration;
-import java.util.EnumMap;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 import java.util.UUID;
 
 @Service
@@ -22,37 +22,51 @@ import java.util.UUID;
 @Transactional(readOnly = true)
 public class ReportService {
 
-    private final TicketRepository ticketRepository;
+    private final CompanyRepository companyRepository;
+    private final TicketWindowLoader ticketWindowLoader;
+    private final ReportCompanyMapper reportCompanyMapper;
+    private final TicketRowMapper ticketRowMapper;
+    private final RevenueSummaryCalculator revenueSummaryCalculator;
+    private final StaySummaryCalculator staySummaryCalculator;
+    private final OccupancySummaryCalculator occupancySummaryCalculator;
+    private final PaymentMethodSummaryCalculator paymentMethodSummaryCalculator;
+    private final VehicleTypeSummaryCalculator vehicleTypeSummaryCalculator;
+    private final DailySummaryCalculator dailySummaryCalculator;
+    private final HourlySummaryCalculator hourlySummaryCalculator;
+    private final PartnershipSummaryCalculator partnershipSummaryCalculator;
+    private final ClientSummaryCalculator clientSummaryCalculator;
 
-    public ReportResponse getCompanyReport(UUID companyId) {
-        List<Ticket> tickets = ticketRepository.findAllByCompanyIdAndStatus(companyId, TicketStatus.PAID);
+    public ReportResponse getCompanyReport(UUID companyId, LocalDate from, LocalDate to, ReportDetailLimit detailLimit) {
+        Company company = companyRepository.findById(companyId)
+                .orElseThrow(() -> new ResourceNotFoundException("Empresa não encontrada."));
 
-        BigDecimal totalRevenue = tickets.stream()
-                .map(Ticket::getTotalAmount)
-                .filter(Objects::nonNull)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        LocalDateTime fromInclusive = from.atStartOfDay();
+        LocalDateTime toExclusive = to.plusDays(1).atStartOfDay();
+        TicketWindow window = ticketWindowLoader.load(companyId, fromInclusive, toExclusive);
 
-        long totalServices = tickets.size();
+        RevenueSummaryResponse revenue = revenueSummaryCalculator.calculate(window);
+        StaySummaryResponse stay = staySummaryCalculator.calculate(window);
+        OccupancySummaryResponse occupancy = occupancySummaryCalculator.calculate(window, company.getTotalSpots(), fromInclusive, toExclusive);
 
-        double averageStayMinutes = tickets.stream()
-                .filter(t -> t.getEnteredAt() != null && t.getExitedAt() != null)
-                .mapToLong(t -> Duration.between(t.getEnteredAt(), t.getExitedAt()).toMinutes())
-                .average()
-                .orElse(0.0);
+        List<TicketRowResponse> rows = ticketRowMapper.map(window.all(), detailLimit);
+        boolean truncated = detailLimit.exceededBy(window.all().size());
+        long days = ChronoUnit.DAYS.between(from, to) + 1;
 
-        Map<PaymentMethod, BigDecimal> revenueByPaymentMethod = new EnumMap<>(PaymentMethod.class);
-        for (PaymentMethod method : PaymentMethod.values()) {
-            revenueByPaymentMethod.put(method, BigDecimal.ZERO);
-        }
-
-        tickets.stream()
-                .filter(t -> t.getPaymentMethod() != null && t.getTotalAmount() != null)
-                .forEach(t -> {
-                    PaymentMethod method = t.getPaymentMethod();
-                    BigDecimal amount = t.getTotalAmount();
-                    revenueByPaymentMethod.put(method, revenueByPaymentMethod.get(method).add(amount));
-                });
-
-        return new ReportResponse(totalRevenue, totalServices, averageStayMinutes, revenueByPaymentMethod);
+        return new ReportResponse(
+                new ReportPeriodResponse(from, to, days),
+                reportCompanyMapper.toResponse(company),
+                new ReportSummaryResponse(revenue, stay, occupancy),
+                paymentMethodSummaryCalculator.calculate(window),
+                vehicleTypeSummaryCalculator.calculate(window),
+                dailySummaryCalculator.calculate(window, from, to),
+                hourlySummaryCalculator.calculate(window),
+                partnershipSummaryCalculator.calculate(window),
+                clientSummaryCalculator.calculate(window),
+                rows,
+                window.all().size(),
+                truncated,
+                revenue.netRevenue(),
+                revenue.paidTicketCount(),
+                stay.averageMinutes());
     }
 }
