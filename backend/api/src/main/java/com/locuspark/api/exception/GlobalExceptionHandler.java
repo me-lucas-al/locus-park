@@ -7,8 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -43,6 +45,11 @@ public class GlobalExceptionHandler {
                 .map(error -> error.getField() + ": " + error.getDefaultMessage())
                 .collect(Collectors.joining(", "));
         return buildResponseEntity(HttpStatus.BAD_REQUEST, "Erro de validação: " + message, request.getRequestURI());
+    }
+
+    @ExceptionHandler({MethodArgumentTypeMismatchException.class, MissingServletRequestParameterException.class})
+    public ResponseEntity<ErrorResponse> handleBadRequestParameter(Exception ex, HttpServletRequest request) {
+        return buildResponseEntity(HttpStatus.BAD_REQUEST, "Parâmetro de requisição inválido: " + ex.getMessage(), request.getRequestURI());
     }
 
     @ExceptionHandler(DataIntegrityViolationException.class)
