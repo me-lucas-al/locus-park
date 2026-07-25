@@ -23,6 +23,7 @@ Globals:
     Environment:
       Variables:
         SPRING_PROFILES_ACTIVE: prod
+        TZ: America/Sao_Paulo
         DB_URL: !Ref DbUrlParam
         DB_USER: !Ref DbUserParam
         DB_PASS: !Ref DbPassParam
