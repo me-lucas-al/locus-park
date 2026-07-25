@@ -90,8 +90,7 @@ public class TicketService {
     // Adicione estes métodos dentro da classe TicketService
 
     public List<TicketResponse> listAllTicketsByCompany(UUID companyId) {
-        return ticketRepository.findAll().stream()
-                .filter(t -> t.getCompany().getId().equals(companyId))
+        return ticketRepository.findAllByCompanyId(companyId).stream()
                 .map(ticketMapper::toResponse)
                 .toList();
     }
