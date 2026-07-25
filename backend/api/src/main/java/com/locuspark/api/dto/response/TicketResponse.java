@@ -15,5 +15,7 @@ public record TicketResponse(
         LocalDateTime exitedAt,
         TicketStatus status,
         BigDecimal totalAmount,
+        BigDecimal grossAmount,
+        BigDecimal discountAmount,
         PaymentMethod paymentMethod
 ) {}

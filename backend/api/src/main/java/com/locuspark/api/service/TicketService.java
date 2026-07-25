@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
@@ -78,9 +77,11 @@ public class TicketService {
         PricingConfiguration pricing = pricingRepository.findByCompanyId(companyId)
                 .orElseThrow(() -> new ResourceNotFoundException("Configuração de preços/planos não encontrada para esta empresa."));
 
-        BigDecimal total = paymentService.calculateStayAmount(ticket, exitTime, tariff, pricing);
+        var charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
 
-        ticket.setTotalAmount(total);
+        ticket.setGrossAmount(charge.gross());
+        ticket.setDiscountAmount(charge.discount());
+        ticket.setTotalAmount(charge.net());
         ticket.setStatus(TicketStatus.PAID);
         ticket.setPaymentMethod(paymentMethod);
 
