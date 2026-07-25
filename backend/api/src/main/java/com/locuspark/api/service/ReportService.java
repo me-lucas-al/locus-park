@@ -1,5 +1,6 @@
 package com.locuspark.api.service;
 
+import com.locuspark.api.dto.request.ReportFilter;
 import com.locuspark.api.dto.response.ReportResponse;
 import com.locuspark.api.dto.response.report.*;
 import com.locuspark.api.entity.Company;
@@ -11,9 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.UUID;
 
@@ -36,12 +35,12 @@ public class ReportService {
     private final PartnershipSummaryCalculator partnershipSummaryCalculator;
     private final ClientSummaryCalculator clientSummaryCalculator;
 
-    public ReportResponse getCompanyReport(UUID companyId, LocalDate from, LocalDate to, ReportDetailLimit detailLimit) {
+    public ReportResponse getCompanyReport(UUID companyId, ReportFilter filter, ReportDetailLimit detailLimit) {
         Company company = companyRepository.findById(companyId)
                 .orElseThrow(() -> new ResourceNotFoundException("Empresa não encontrada."));
 
-        LocalDateTime fromInclusive = from.atStartOfDay();
-        LocalDateTime toExclusive = to.plusDays(1).atStartOfDay();
+        LocalDateTime fromInclusive = filter.fromInclusive();
+        LocalDateTime toExclusive = filter.toExclusive();
         TicketWindow window = ticketWindowLoader.load(companyId, fromInclusive, toExclusive);
 
         RevenueSummaryResponse revenue = revenueSummaryCalculator.calculate(window);
@@ -50,15 +49,14 @@ public class ReportService {
 
         List<TicketRowResponse> rows = ticketRowMapper.map(window.all(), detailLimit);
         boolean truncated = detailLimit.exceededBy(window.all().size());
-        long days = ChronoUnit.DAYS.between(from, to) + 1;
 
         return new ReportResponse(
-                new ReportPeriodResponse(from, to, days),
+                new ReportPeriodResponse(filter.from(), filter.to(), filter.days()),
                 reportCompanyMapper.toResponse(company),
                 new ReportSummaryResponse(revenue, stay, occupancy),
                 paymentMethodSummaryCalculator.calculate(window),
                 vehicleTypeSummaryCalculator.calculate(window),
-                dailySummaryCalculator.calculate(window, from, to),
+                dailySummaryCalculator.calculate(window, filter.from(), filter.to()),
                 hourlySummaryCalculator.calculate(window),
                 partnershipSummaryCalculator.calculate(window),
                 clientSummaryCalculator.calculate(window),

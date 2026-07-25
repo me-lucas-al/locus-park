@@ -1,5 +1,6 @@
 package com.locuspark.api.service;
 
+import com.locuspark.api.dto.request.ReportFilter;
 import com.locuspark.api.dto.response.ReportResponse;
 import com.locuspark.api.dto.response.report.*;
 import com.locuspark.api.entity.Company;
@@ -59,8 +60,9 @@ class ReportServiceTest {
     @DisplayName("Deve lançar ResourceNotFoundException quando a empresa não existir")
     void throwsWhenCompanyNotFound() {
         when(companyRepository.findById(companyId)).thenReturn(Optional.empty());
+        ReportFilter filter = new ReportFilter(LocalDate.now(), LocalDate.now());
 
-        assertThatThrownBy(() -> reportService.getCompanyReport(companyId, LocalDate.now(), LocalDate.now(), ReportDetailLimit.JSON))
+        assertThatThrownBy(() -> reportService.getCompanyReport(companyId, filter, ReportDetailLimit.JSON))
                 .isInstanceOf(ResourceNotFoundException.class);
     }
 
@@ -87,7 +89,7 @@ class ReportServiceTest {
         when(clientSummaryCalculator.calculate(window)).thenReturn(List.of());
         when(ticketRowMapper.map(eq(window.all()), eq(new ReportDetailLimit(0)))).thenReturn(List.of());
 
-        ReportResponse response = reportService.getCompanyReport(companyId, from, to, new ReportDetailLimit(0));
+        ReportResponse response = reportService.getCompanyReport(companyId, new ReportFilter(from, to), new ReportDetailLimit(0));
 
         assertThat(response.period().days()).isEqualTo(1);
         assertThat(response.ticketsTruncated()).isTrue();
