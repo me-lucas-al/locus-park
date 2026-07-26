@@ -16,7 +16,7 @@ Globals:
   Function:
     Runtime: java21
     Architectures: [x86_64]
-    MemorySize: 512
+    MemorySize: 1536
     Timeout: 30
     SnapStart:
       ApplyOn: PublishedVersions
@@ -24,6 +24,7 @@ Globals:
       Variables:
         SPRING_PROFILES_ACTIVE: prod
         TZ: America/Sao_Paulo
+        JAVA_TOOL_OPTIONS: -Djava.awt.headless=true
         DB_URL: !Ref DbUrlParam
         DB_USER: !Ref DbUserParam
         DB_PASS: !Ref DbPassParam
