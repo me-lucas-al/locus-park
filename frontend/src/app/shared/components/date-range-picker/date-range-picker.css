@@ -1,0 +1,52 @@
+.date-range-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.preset-chips {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.chip {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  color: var(--lp-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: var(--lp-blue);
+  border-color: var(--lp-blue);
+  color: #fff;
+}
+
+.custom-inputs {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.custom-inputs label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  color: var(--lp-muted);
+  gap: 0.2rem;
+}
+
+.custom-inputs input {
+  border: 1px solid var(--lp-border);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.range-error {
+  font-size: 0.75rem;
+  color: var(--lp-red);
+}

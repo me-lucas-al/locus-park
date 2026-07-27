@@ -1,0 +1,24 @@
+.inline-notice {
+  padding: 0.75rem 1rem;
+  border-radius: var(--lp-radius);
+  font-size: 0.85rem;
+  border: 1px solid transparent;
+}
+
+.variant-info {
+  color: var(--lp-blue);
+  background: color-mix(in srgb, var(--lp-blue) 10%, transparent);
+  border-color: color-mix(in srgb, var(--lp-blue) 25%, transparent);
+}
+
+.variant-warning {
+  color: var(--lp-amber);
+  background: color-mix(in srgb, var(--lp-amber) 10%, transparent);
+  border-color: color-mix(in srgb, var(--lp-amber) 25%, transparent);
+}
+
+.variant-error {
+  color: var(--lp-red);
+  background: color-mix(in srgb, var(--lp-red) 10%, transparent);
+  border-color: color-mix(in srgb, var(--lp-red) 25%, transparent);
+}

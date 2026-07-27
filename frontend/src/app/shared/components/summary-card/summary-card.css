@@ -1,0 +1,68 @@
+.summary-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius);
+  box-shadow: var(--lp-shadow);
+}
+
+.summary-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+  color: var(--lp-slate);
+  background: color-mix(in srgb, var(--lp-slate) 12%, transparent);
+}
+
+.tone-green .summary-card-icon {
+  color: var(--lp-green);
+  background: color-mix(in srgb, var(--lp-green) 12%, transparent);
+}
+
+.tone-red .summary-card-icon {
+  color: var(--lp-red);
+  background: color-mix(in srgb, var(--lp-red) 12%, transparent);
+}
+
+.tone-blue .summary-card-icon {
+  color: var(--lp-blue);
+  background: color-mix(in srgb, var(--lp-blue) 12%, transparent);
+}
+
+.tone-purple .summary-card-icon {
+  color: var(--lp-purple);
+  background: color-mix(in srgb, var(--lp-purple) 12%, transparent);
+}
+
+.tone-amber .summary-card-icon {
+  color: var(--lp-amber);
+  background: color-mix(in srgb, var(--lp-amber) 12%, transparent);
+}
+
+.summary-card-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.summary-card-label {
+  font-size: 0.75rem;
+  color: var(--lp-muted);
+}
+
+.summary-card-value {
+  font-size: 1.25rem;
+  color: var(--lp-text);
+}
+
+.summary-card-hint {
+  font-size: 0.7rem;
+  color: var(--lp-muted);
+}

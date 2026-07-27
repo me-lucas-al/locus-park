@@ -1,0 +1,29 @@
+<div class="date-range-picker">
+  <div class="preset-chips">
+    @for (option of presetOptions; track option.value) {
+      <button
+        type="button"
+        class="chip"
+        [class.active]="selection() === option.value"
+        (click)="selectPreset(option.value)"
+      >
+        {{ option.label }}
+      </button>
+    }
+  </div>
+
+  <div class="custom-inputs">
+    <label>
+      De
+      <input type="date" [value]="range().from" [max]="today" (change)="updateFrom($event)" />
+    </label>
+    <label>
+      Até
+      <input type="date" [value]="range().to" [max]="today" (change)="updateTo($event)" />
+    </label>
+  </div>
+
+  @if (errorMessage()) {
+    <span class="range-error">{{ errorMessage() }}</span>
+  }
+</div>
