@@ -38,8 +38,8 @@
 }
 
 .tab-btn.active {
-  color: var(--lp-blue);
-  border-bottom-color: var(--lp-blue);
+  color: var(--lp-text);
+  border-bottom-color: var(--lp-text);
 }
 
 .subtab-nav {
@@ -64,9 +64,9 @@
 }
 
 .subtab-btn.active {
-  color: #fff;
-  background: var(--lp-blue);
-  border-color: var(--lp-blue);
+  color: var(--lp-surface);
+  background: var(--lp-text);
+  border-color: var(--lp-text);
 }
 
 .section-card {
