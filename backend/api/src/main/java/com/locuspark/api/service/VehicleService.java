@@ -5,11 +5,13 @@ import com.locuspark.api.dto.response.VehicleResponse;
 import com.locuspark.api.entity.Client;
 import com.locuspark.api.entity.Company;
 import com.locuspark.api.entity.Vehicle;
+import com.locuspark.api.enums.TicketStatus;
 import com.locuspark.api.exception.BusinessException;
 import com.locuspark.api.mapper.VehicleMapper;
 import com.locuspark.api.repository.ClientRepository;
 import com.locuspark.api.repository.CompanyRepository;
 import com.locuspark.api.repository.TariffConfigurationRepository;
+import com.locuspark.api.repository.TicketRepository;
 import com.locuspark.api.repository.VehicleRepository;
 import com.locuspark.api.types.Plate;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -28,6 +31,7 @@ public class VehicleService {
     private final CompanyRepository companyRepository;
     private final ClientRepository clientRepository;
     private final TariffConfigurationRepository tariffConfigurationRepository;
+    private final TicketRepository ticketRepository;
     private final VehicleMapper vehicleMapper;
 
     @Transactional
@@ -42,14 +46,32 @@ public class VehicleService {
         }
 
         Plate plate = new Plate(request.plate());
-        if (vehicleRepository.existsByPlateAndCompanyId(plate, companyId)) {
-            throw new BusinessException("Já existe um veículo cadastrado com esta placa nesta empresa.");
+        Optional<Vehicle> existingVehicle = vehicleRepository.findByPlateAndCompanyId(plate, companyId);
+        if (existingVehicle.isPresent()) {
+            boolean hasActiveTicket = ticketRepository.existsByVehiclePlateAndCompanyIdAndStatus(
+                    plate, companyId, TicketStatus.ACTIVE);
+            if (hasActiveTicket) {
+                throw new BusinessException("Já existe um veículo cadastrado com esta placa nesta empresa e ele está no estacionamento.");
+            }
         }
 
         Client client = null;
         if (request.clientId() != null) {
             client = clientRepository.findByIdAndCompanyId(request.clientId(), companyId)
                     .orElseThrow(() -> new BusinessException("Cliente não encontrado ou não pertence a esta empresa."));
+        }
+
+        // Se o veículo já esteve cadastrado antes mas já saiu do pátio, reaproveita o registro
+        // em vez de tentar inserir outro (evita violar a constraint única de placa+empresa).
+        if (existingVehicle.isPresent()) {
+            Vehicle vehicle = existingVehicle.get();
+            vehicle.setModel(request.model());
+            vehicle.setColor(request.color());
+            vehicle.setType(request.type());
+            vehicle.setClient(client);
+
+            Vehicle updatedVehicle = vehicleRepository.save(vehicle);
+            return vehicleMapper.toResponse(updatedVehicle);
         }
 
         Vehicle vehicle = vehicleMapper.toEntity(request);

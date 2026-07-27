@@ -9,9 +9,11 @@ import com.locuspark.api.entity.Vehicle;
 import com.locuspark.api.enums.VehicleType;
 import com.locuspark.api.exception.BusinessException;
 import com.locuspark.api.mapper.VehicleMapper;
+import com.locuspark.api.enums.TicketStatus;
 import com.locuspark.api.repository.ClientRepository;
 import com.locuspark.api.repository.CompanyRepository;
 import com.locuspark.api.repository.TariffConfigurationRepository;
+import com.locuspark.api.repository.TicketRepository;
 import com.locuspark.api.repository.VehicleRepository;
 import com.locuspark.api.types.Plate;
 import org.junit.jupiter.api.BeforeEach;
@@ -47,6 +49,9 @@ class VehicleServiceTest {
 
     @Mock
     private TariffConfigurationRepository tariffConfigurationRepository;
+
+    @Mock
+    private TicketRepository ticketRepository;
 
     @Mock
     private VehicleMapper vehicleMapper;
@@ -134,7 +139,7 @@ class VehicleServiceTest {
             // Arrange
             when(companyRepository.findById(companyId)).thenReturn(Optional.of(company));
             when(tariffConfigurationRepository.findByCompanyId(companyId)).thenReturn(Optional.of(new TariffConfiguration()));
-            when(vehicleRepository.existsByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(false);
+            when(vehicleRepository.findByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(Optional.empty());
             when(vehicleMapper.toEntity(requestRotativo)).thenReturn(vehicleRotativo);
             when(vehicleRepository.save(any(Vehicle.class))).thenReturn(vehicleRotativo);
             when(vehicleMapper.toResponse(vehicleRotativo)).thenReturn(responseRotativo);
@@ -146,10 +151,10 @@ class VehicleServiceTest {
             assertNotNull(result);
             assertNull(result.clientId());
             assertEquals(companyId, result.companyId());
-            
+
             verify(companyRepository).findById(companyId);
             verify(tariffConfigurationRepository).findByCompanyId(companyId);
-            verify(vehicleRepository).existsByPlateAndCompanyId(any(Plate.class), eq(companyId));
+            verify(vehicleRepository).findByPlateAndCompanyId(any(Plate.class), eq(companyId));
             verify(vehicleRepository).save(any(Vehicle.class));
         }
 
@@ -160,7 +165,7 @@ class VehicleServiceTest {
             when(companyRepository.findById(companyId)).thenReturn(Optional.of(company));
             when(tariffConfigurationRepository.findByCompanyId(companyId)).thenReturn(Optional.of(new TariffConfiguration()));
             when(clientRepository.findByIdAndCompanyId(clientId, companyId)).thenReturn(Optional.of(client));
-            when(vehicleRepository.existsByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(false);
+            when(vehicleRepository.findByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(Optional.empty());
             when(vehicleMapper.toEntity(requestMensalista)).thenReturn(vehicleMensalista);
             when(vehicleRepository.save(any(Vehicle.class))).thenReturn(vehicleMensalista);
             when(vehicleMapper.toResponse(vehicleMensalista)).thenReturn(responseMensalista);
@@ -176,28 +181,53 @@ class VehicleServiceTest {
             verify(companyRepository).findById(companyId);
             verify(tariffConfigurationRepository).findByCompanyId(companyId);
             verify(clientRepository).findByIdAndCompanyId(clientId, companyId);
-            verify(vehicleRepository).existsByPlateAndCompanyId(any(Plate.class), eq(companyId));
+            verify(vehicleRepository).findByPlateAndCompanyId(any(Plate.class), eq(companyId));
             verify(vehicleRepository).save(any(Vehicle.class));
         }
 
         @Test
-        @DisplayName("Deve lançar BusinessException se a placa já existir na mesma empresa")
-        void createVehicleFailPlateAlreadyExists() {
+        @DisplayName("Deve lançar BusinessException se a placa já existir na mesma empresa e o veículo estiver no estacionamento")
+        void createVehicleFailPlateAlreadyExistsAndActiveTicket() {
             // Arrange
             when(companyRepository.findById(companyId)).thenReturn(Optional.of(company));
             when(tariffConfigurationRepository.findByCompanyId(companyId)).thenReturn(Optional.of(new TariffConfiguration()));
-            when(vehicleRepository.existsByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(true);
+            when(vehicleRepository.findByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(Optional.of(vehicleRotativo));
+            when(ticketRepository.existsByVehiclePlateAndCompanyIdAndStatus(any(Plate.class), eq(companyId), eq(TicketStatus.ACTIVE)))
+                    .thenReturn(true);
 
             // Act & Assert
             BusinessException exception = assertThrows(BusinessException.class, () ->
                     vehicleService.createVehicle(companyId, requestRotativo)
             );
 
-            assertEquals("Já existe um veículo cadastrado com esta placa nesta empresa.", exception.getMessage());
+            assertEquals("Já existe um veículo cadastrado com esta placa nesta empresa e ele está no estacionamento.", exception.getMessage());
             verify(companyRepository).findById(companyId);
             verify(tariffConfigurationRepository).findByCompanyId(companyId);
-            verify(vehicleRepository).existsByPlateAndCompanyId(any(Plate.class), eq(companyId));
+            verify(vehicleRepository).findByPlateAndCompanyId(any(Plate.class), eq(companyId));
             verify(vehicleRepository, never()).save(any(Vehicle.class));
+        }
+
+        @Test
+        @DisplayName("Deve reaproveitar o cadastro do veículo se a placa já existir mas ele já tiver saído do pátio")
+        void createVehicleReusesExistingVehicleWhenNotOnPremises() {
+            // Arrange
+            when(companyRepository.findById(companyId)).thenReturn(Optional.of(company));
+            when(tariffConfigurationRepository.findByCompanyId(companyId)).thenReturn(Optional.of(new TariffConfiguration()));
+            when(vehicleRepository.findByPlateAndCompanyId(any(Plate.class), eq(companyId))).thenReturn(Optional.of(vehicleRotativo));
+            when(ticketRepository.existsByVehiclePlateAndCompanyIdAndStatus(any(Plate.class), eq(companyId), eq(TicketStatus.ACTIVE)))
+                    .thenReturn(false);
+            when(vehicleRepository.save(any(Vehicle.class))).thenReturn(vehicleRotativo);
+            when(vehicleMapper.toResponse(vehicleRotativo)).thenReturn(responseRotativo);
+
+            // Act
+            VehicleResponse result = vehicleService.createVehicle(companyId, requestRotativo);
+
+            // Assert
+            assertNotNull(result);
+            verify(vehicleRepository).findByPlateAndCompanyId(any(Plate.class), eq(companyId));
+            verify(ticketRepository).existsByVehiclePlateAndCompanyIdAndStatus(any(Plate.class), eq(companyId), eq(TicketStatus.ACTIVE));
+            verify(vehicleRepository).save(vehicleRotativo);
+            verify(vehicleMapper, never()).toEntity(any(VehicleRequest.class));
         }
 
         @Test
@@ -215,7 +245,7 @@ class VehicleServiceTest {
             assertEquals("Não é possível registrar veículos porque os preços do estacionamento ainda não foram configurados. Por favor, configure as tarifas de preços primeiro.", exception.getMessage());
             verify(companyRepository).findById(companyId);
             verify(tariffConfigurationRepository).findByCompanyId(companyId);
-            verify(vehicleRepository, never()).existsByPlateAndCompanyId(any(Plate.class), eq(companyId));
+            verify(vehicleRepository, never()).findByPlateAndCompanyId(any(Plate.class), eq(companyId));
             verify(vehicleRepository, never()).save(any(Vehicle.class));
         }
     }

@@ -12,6 +12,7 @@ import java.util.UUID;
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicle, UUID> {
     boolean existsByPlateAndCompanyId(Plate plate, UUID companyId);
+    Optional<Vehicle> findByPlateAndCompanyId(Plate plate, UUID companyId);
     List<Vehicle> findByCompanyId(UUID companyId);
     Optional<Vehicle> findByIdAndCompanyId(UUID id, UUID companyId);
 }
