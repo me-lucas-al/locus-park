@@ -6,12 +6,7 @@ import { useCheckOutMutation, useApplyPartnershipMutation } from '../../../core/
 import { usePartnershipsQuery } from '../../../core/domains/partnership/partnership.hooks';
 import { ToastService } from '../../services/toast.service';
 import { SpotAssignmentService } from '../../services/spot-assignment.service';
-
-interface PaymentMethodOption {
-  value: PaymentMethod;
-  label: string;
-}
-
+import { paymentMethodLabel } from '../../utils/payment-method-label';
 import { LoadingDirective } from '../../directives/loading.directive';
 
 @Component({
@@ -58,12 +53,8 @@ export class ModalExit implements OnChanges {
     return Math.max(0, base - discount);
   });
 
-  readonly paymentMethods: PaymentMethodOption[] = [
-    { value: 'DINHEIRO', label: 'Dinheiro' },
-    { value: 'PIX', label: 'PIX' },
-    { value: 'CARD_CREDIT', label: 'Cartão de Crédito' },
-    { value: 'CARD_DEBIT', label: 'Cartão de Débito' },
-  ];
+  protected readonly paymentMethodLabel = paymentMethodLabel;
+  readonly paymentMethods: readonly PaymentMethod[] = ['DINHEIRO', 'PIX', 'CARD_CREDIT', 'CARD_DEBIT'];
 
   ngOnChanges(): void {
     if (this.ticket) {
