@@ -21,9 +21,9 @@
 }
 
 .chip.active {
-  background: var(--lp-blue);
-  border-color: var(--lp-blue);
-  color: #fff;
+  background: var(--lp-text);
+  border-color: var(--lp-text);
+  color: var(--lp-surface);
 }
 
 .custom-inputs {
