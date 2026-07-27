@@ -81,11 +81,11 @@
               </tr>
             </thead>
             <tbody>
-              @for (item of report.paymentMethodSummaries; track item.paymentMethod) {
+              @for (item of report.paymentMethodSummaries; track item.method) {
                 <tr>
-                  <td class="text-bold">{{ formatPaymentMethod(item.paymentMethod) }}</td>
-                  <td>{{ item.count }}</td>
-                  <td class="text-right text-bold">R$ {{ item.revenue | number: '1.2-2' }}</td>
+                  <td class="text-bold">{{ formatPaymentMethod(item.method) }}</td>
+                  <td>{{ item.ticketCount }}</td>
+                  <td class="text-right text-bold">{{ item.revenue | currency }}</td>
                 </tr>
               }
             </tbody>

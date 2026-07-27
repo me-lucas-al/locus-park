@@ -41,7 +41,7 @@ export class Reports {
     csvContent += 'Metodo de Pagamento,Faturamento (R$),Atendimentos\n';
 
     data.paymentMethodSummaries.forEach((summary) => {
-      csvContent += `${summary.paymentMethod},${summary.revenue.toFixed(2)},${summary.count}\n`;
+      csvContent += `${summary.method},${summary.revenue.toFixed(2)},${summary.ticketCount}\n`;
     });
 
     // Adicionar totais

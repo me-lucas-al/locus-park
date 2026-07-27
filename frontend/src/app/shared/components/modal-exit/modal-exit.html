@@ -45,13 +45,13 @@
       <div class="section-label">COMPOSIÇÃO DA COBRANÇA</div>
       <div class="cobranca-item">
         <span>Permanência de {{ elapsedTime() }}</span>
-        <strong>R$ {{ baseRate() | number: '1.2-2' }}</strong>
+        <strong>{{ baseRate() | currency }}</strong>
       </div>
 
       @if (discountValue() > 0) {
         <div class="cobranca-item discount">
           <span>Desconto Convênio</span>
-          <strong>- R$ {{ discountValue() | number: '1.2-2' }}</strong>
+          <strong>- {{ discountValue() | currency }}</strong>
         </div>
       }
 
@@ -76,7 +76,7 @@
       <!-- Total -->
       <div class="total-row">
         <span>Valor Total a Pagar</span>
-        <strong class="total-value">R$ {{ finalRate() | number: '1.2-2' }}</strong>
+        <strong class="total-value">{{ finalRate() | currency }}</strong>
       </div>
 
       <!-- Forma de pagamento -->

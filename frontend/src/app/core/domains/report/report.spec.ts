@@ -9,15 +9,49 @@ import { environment } from '@environments/environment';
 const BASE = `${environment.apiUrl}reports`;
 
 const mockReportResponse: ReportResponse = {
+  period: { from: '2026-07-01', to: '2026-07-25', days: 25 },
+  company: { id: 'c-1', name: 'Estacionamento Central', cnpj: '12.345.678/0001-90', totalSpots: 120 },
+  summary: {
+    revenue: {
+      grossRevenue: 1500.5,
+      discountGranted: 0,
+      netRevenue: 1500.5,
+      averageTicketValue: 12.5,
+      highestTicketValue: 60,
+      lowestTicketValue: 0,
+      paidTicketCount: 120,
+      freeExitCount: 0,
+    },
+    stay: { averageMinutes: 45, minimumMinutes: 5, maximumMinutes: 300, totalMinutes: 5400, openStayCount: 0 },
+    occupancy: {
+      totalSpots: 120,
+      entryCount: 120,
+      exitCount: 120,
+      activeCount: 0,
+      peakConcurrentVehicles: 80,
+      peakAt: '2026-07-10T12:00:00',
+      peakOccupancyRate: 0.66,
+      averageOccupancyRate: 0.3,
+      turnoverPerSpot: 1,
+    },
+  },
+  paymentMethodSummaries: [
+    { method: 'DINHEIRO', ticketCount: 40, revenue: 500, sharePercent: 33.3 },
+    { method: 'PIX', ticketCount: 50, revenue: 600, sharePercent: 40 },
+    { method: 'CARD_CREDIT', ticketCount: 20, revenue: 300, sharePercent: 20 },
+    { method: 'CARD_DEBIT', ticketCount: 10, revenue: 100.5, sharePercent: 6.7 },
+  ],
+  vehicleTypeSummaries: [],
+  dailySummaries: [],
+  hourlySummaries: [],
+  partnershipSummaries: [],
+  clientSummaries: [],
+  tickets: [],
+  ticketCount: 120,
+  ticketsTruncated: false,
   totalRevenue: 1500.5,
   totalServices: 120,
   averageStayMinutes: 45,
-  paymentMethodSummaries: [
-    { paymentMethod: 'DINHEIRO', revenue: 500, count: 40 },
-    { paymentMethod: 'PIX', revenue: 600, count: 50 },
-    { paymentMethod: 'CARD_CREDIT', revenue: 300, count: 20 },
-    { paymentMethod: 'CARD_DEBIT', revenue: 100.5, count: 10 },
-  ],
 };
 
 describe('ReportService', () => {
