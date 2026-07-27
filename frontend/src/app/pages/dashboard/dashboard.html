@@ -88,7 +88,7 @@
   </section>
 
   <app-occupied-list
-    [tickets]="ticketsQuery.data() || []"
+    [tickets]="activeTickets()"
     (releaseClick)="openCheckoutModal($event)"
   />
 </div>

@@ -35,17 +35,19 @@ export class Dashboard {
   readonly modalSaidaAberto = signal(false);
   readonly veiculoSelecionado = signal<TicketResponse | null>(null);
 
-  protected readonly occupiedSpotsCount = computed(() => {
+  protected readonly activeTickets = computed(() => {
     const tickets = this.ticketsQuery.data() || [];
-    return tickets.filter((t) => !t.exitedAt).length;
+    return tickets.filter((t) => !t.exitedAt);
   });
+
+  protected readonly occupiedSpotsCount = computed(() => this.activeTickets().length);
 
   protected readonly freeSpotsCount = computed(() => {
     return Math.max(0, this.totalSpots() - this.occupiedSpotsCount());
   });
 
   protected readonly gridSpots = computed(() => {
-    const activeTickets = this.ticketsQuery.data() || [];
+    const activeTickets = this.activeTickets();
     this.spotAssignmentService.cleanInactiveTickets(activeTickets);
 
     const ticketMap = new Map<number, TicketResponse>();
