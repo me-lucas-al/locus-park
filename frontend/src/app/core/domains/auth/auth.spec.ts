@@ -8,11 +8,13 @@ import { environment } from '@environments/environment';
 
 const BASE = `${environment.apiUrl}auth`;
 
-const loginRequest: LoginRequest = { email: 'admin@park.com', password: 'senha123' };
+const loginRequest: LoginRequest = { username: 'admin@park.com', password: 'senha123' };
 const registerRequest: RegisterRequest = {
-  name: 'Admin', email: 'admin@park.com', password: 'senha123', companyName: 'Estacionamento Central',
+  name: 'Admin', username: 'admin@park.com', password: 'senha123', companyName: 'Estacionamento Central',
 };
-const authResponse: AuthResponse = { token: 'jwt.mock.token', companyId: 'c-1' };
+const authResponse: AuthResponse = {
+  token: 'jwt.mock.token', id: 'u-1', username: 'admin@park.com', role: 'ADMIN', companyId: 'c-1',
+};
 
 describe('AuthService', () => {
   let service: AuthService;
