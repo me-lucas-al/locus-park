@@ -1,7 +1,7 @@
-import { Component, inject, computed } from '@angular/core';
+import { Component, inject, computed, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { useReportQuery } from '../../core/domains/report/report.hooks';
-import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
+import { buildRange, DEFAULT_RANGE_PRESET } from '../../core/utils/date-range.factory';
 import { ToastService } from '../../shared/services/toast.service';
 
 @Component({
@@ -14,12 +14,9 @@ import { ToastService } from '../../shared/services/toast.service';
 export class Reports {
   private readonly toastService = inject(ToastService);
 
-  // Queries
-  protected readonly profileQuery = useUserProfileQuery();
-
   // Signals
-  protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || null);
-  protected readonly reportQuery = useReportQuery(this.companyId);
+  protected readonly range = signal(buildRange(DEFAULT_RANGE_PRESET, new Date()));
+  protected readonly reportQuery = useReportQuery(this.range);
 
   // Formatação do tempo médio
   protected readonly averageStayFormatted = computed(() => {

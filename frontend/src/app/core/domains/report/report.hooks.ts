@@ -1,13 +1,21 @@
 import { inject, Signal } from '@angular/core';
-import { injectQuery } from '@tanstack/angular-query-experimental';
+import { injectQuery, keepPreviousData } from '@tanstack/angular-query-experimental';
 import { lastValueFrom } from 'rxjs';
 import { ReportService } from './report.service';
+import { DateRange } from '../../types/date-range.types';
 
-export function useReportQuery(companyId: Signal<string | null>) {
+export function isReportRangeEnabled(range: DateRange): boolean {
+  if (!range.from || !range.to) return false;
+  return range.from <= range.to;
+}
+
+export function useReportQuery(range: Signal<DateRange>, options?: { enabled?: boolean }) {
   const service = inject(ReportService);
   return injectQuery(() => ({
-    queryKey: ['reports', companyId()] as const,
-    queryFn: () => lastValueFrom(service.getMetrics(companyId()!)),
-    enabled: !!companyId() && companyId() !== 'null' && companyId() !== 'undefined',
+    queryKey: ['reports', 'summary', range().from, range().to] as const,
+    queryFn: () => lastValueFrom(service.getReport(range())),
+    enabled: (options?.enabled ?? true) && isReportRangeEnabled(range()),
+    staleTime: 60_000,
+    placeholderData: keepPreviousData,
   }));
 }

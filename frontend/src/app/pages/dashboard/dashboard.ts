@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { useTicketsQuery } from '../../core/domains/ticket/ticket.hooks';
 import { useReportQuery } from '../../core/domains/report/report.hooks';
-import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
 import { TicketResponse } from '../../core/domains/ticket/ticket.types';
 import { ModalExit } from '../../shared/components/modal-exit/modal-exit.component';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
+import { buildRange } from '../../core/utils/date-range.factory';
+import { isAdmin } from '../../core/utils/jwt';
 
 interface GridSpot {
   number: number;
@@ -34,13 +35,14 @@ export class Dashboard {
   private readonly router = inject(Router);
   private readonly spotAssignmentService = inject(SpotAssignmentService);
 
+  protected readonly isAdmin = isAdmin;
+
   // Queries
   protected readonly ticketsQuery = useTicketsQuery();
-  protected readonly profileQuery = useUserProfileQuery();
 
   // Signals
-  protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || null);
-  protected readonly reportQuery = useReportQuery(this.companyId);
+  protected readonly todayRange = signal(buildRange('TODAY', new Date()));
+  protected readonly reportQuery = useReportQuery(this.todayRange, { enabled: isAdmin() });
 
   // Configuração de Vagas Totais (reativo)
   readonly totalSpots = signal<number>(120);
@@ -207,8 +209,5 @@ export class Dashboard {
 
   protected handleCheckoutConfirmed(): void {
     this.ticketsQuery.refetch();
-    if (this.companyId() && this.companyId() !== 'null' && this.companyId() !== 'undefined') {
-      this.reportQuery.refetch();
-    }
   }
 }

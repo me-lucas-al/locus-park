@@ -38,7 +38,10 @@ export function useCheckOutMutation() {
   const queryClient = inject(QueryClient);
   return injectMutation(() => ({
     mutationFn: (params: CheckOutParams) => lastValueFrom(service.checkOut(params.id, params.paymentMethod)),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['tickets'] }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tickets'] });
+      queryClient.invalidateQueries({ queryKey: ['reports'] });
+    },
   }));
 }
 
