@@ -21,6 +21,14 @@ import { PARTNERSHIP_COLUMNS, toPartnershipRows } from './tables/partnership.tab
 import { CLIENT_COLUMNS, toClientRows } from './tables/client.table';
 import { TICKET_COLUMNS, toTicketRows } from './tables/ticket.table';
 
+type ReportTab = 'overview' | 'tables' | 'tickets';
+type SummaryTableKey = 'payment' | 'vehicle' | 'daily' | 'hourly' | 'partnership' | 'client';
+
+interface SummaryTableOption {
+  readonly key: SummaryTableKey;
+  readonly label: string;
+}
+
 @Component({
   selector: 'app-reports',
   imports: [
@@ -36,6 +44,18 @@ export class Reports {
   protected readonly range = signal<DateRange>(buildRange(DEFAULT_RANGE_PRESET, new Date()));
   protected readonly reportQuery = useReportQuery(this.range);
   protected readonly exportMutation = useReportExportMutation();
+
+  protected readonly activeTab = signal<ReportTab>('overview');
+  protected readonly activeTable = signal<SummaryTableKey>('payment');
+
+  protected readonly summaryTableOptions: readonly SummaryTableOption[] = [
+    { key: 'payment', label: 'Formas de pagamento' },
+    { key: 'vehicle', label: 'Tipos de veículo' },
+    { key: 'daily', label: 'Resumo diário' },
+    { key: 'hourly', label: 'Resumo por hora' },
+    { key: 'partnership', label: 'Convênios' },
+    { key: 'client', label: 'Clientes' },
+  ];
 
   protected readonly exportingFormat = computed<ReportExportFormat | null>(() =>
     this.exportMutation.isPending() ? (this.exportMutation.variables()?.format ?? null) : null,
@@ -66,6 +86,14 @@ export class Reports {
 
   protected onRangeChange(range: DateRange): void {
     this.range.set(range);
+  }
+
+  protected selectTab(tab: ReportTab): void {
+    this.activeTab.set(tab);
+  }
+
+  protected selectTable(table: SummaryTableKey): void {
+    this.activeTable.set(table);
   }
 
   protected onExportRequested(format: ReportExportFormat): void {

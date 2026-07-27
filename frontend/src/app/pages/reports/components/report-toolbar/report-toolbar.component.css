@@ -7,9 +7,8 @@
   margin-bottom: 1.5rem;
 }
 
-.export-group {
-  display: flex;
-  gap: 0.5rem;
+.export-menu {
+  position: relative;
 }
 
 .export-btn {
@@ -29,6 +28,45 @@
 .export-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.chevron {
+  font-size: 0.7rem;
+  transition: transform 0.15s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+.export-dropdown {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  min-width: 8rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  border-radius: 8px;
+  box-shadow: var(--lp-shadow);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.export-option {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--lp-text);
+  cursor: pointer;
+}
+
+.export-option:hover {
+  background: var(--lp-bg);
 }
 
 .spinner {

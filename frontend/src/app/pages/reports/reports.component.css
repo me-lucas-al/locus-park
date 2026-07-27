@@ -14,6 +14,61 @@
   color: var(--lp-text);
 }
 
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--lp-border);
+}
+
+.tab-btn {
+  border: none;
+  background: transparent;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--lp-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tab-btn:hover {
+  color: var(--lp-text);
+}
+
+.tab-btn.active {
+  color: var(--lp-blue);
+  border-bottom-color: var(--lp-blue);
+}
+
+.subtab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.subtab-btn {
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--lp-muted);
+  cursor: pointer;
+}
+
+.subtab-btn:hover {
+  color: var(--lp-text);
+}
+
+.subtab-btn.active {
+  color: #fff;
+  background: var(--lp-blue);
+  border-color: var(--lp-blue);
+}
+
 .section-card {
   background: var(--lp-surface);
   border-radius: var(--lp-radius);

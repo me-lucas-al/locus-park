@@ -16,65 +16,95 @@
   } @else {
     @let report = reportQuery.data()!;
 
-    <section class="kpi-section">
-      <app-report-kpis-revenue [revenue]="report.summary.revenue" />
-    </section>
-    <section class="kpi-section">
-      <app-report-kpis-stay [stay]="report.summary.stay" />
-    </section>
-    <section class="kpi-section">
-      <app-report-kpis-occupancy [occupancy]="report.summary.occupancy" />
-    </section>
+    <nav class="tab-nav">
+      <button type="button" class="tab-btn" [class.active]="activeTab() === 'overview'" (click)="selectTab('overview')">
+        Visão geral
+      </button>
+      <button type="button" class="tab-btn" [class.active]="activeTab() === 'tables'" (click)="selectTab('tables')">
+        Tabelas
+      </button>
+      <button type="button" class="tab-btn" [class.active]="activeTab() === 'tickets'" (click)="selectTab('tickets')">
+        Tickets do período
+      </button>
+    </nav>
 
-    <section class="section-card">
-      <h2>Movimentação diária</h2>
-      <p class="section-subtitle">
-        Valores financeiros são apurados pela data de saída/pagamento. Contagens de entrada, ocupação e horários de
-        pico usam a data de entrada. Horários em America/Sao_Paulo.
-      </p>
-      <app-report-bar-chart title="Faturamento por dia — data de pagamento (saída)" [points]="revenueChartPoints()" />
-      <app-report-bar-chart title="Entradas por dia — data de entrada" [points]="entriesChartPoints()" />
-    </section>
+    @if (activeTab() === 'overview') {
+      <section class="kpi-section">
+        <app-report-kpis-revenue [revenue]="report.summary.revenue" />
+      </section>
+      <section class="kpi-section">
+        <app-report-kpis-stay [stay]="report.summary.stay" />
+      </section>
+      <section class="kpi-section">
+        <app-report-kpis-occupancy [occupancy]="report.summary.occupancy" />
+      </section>
 
-    <section class="section-card">
-      <h2>Formas de pagamento</h2>
-      <app-report-table [columns]="paymentMethodColumns" [rows]="paymentMethodRows()" />
-    </section>
+      <section class="section-card">
+        <h2>Movimentação diária</h2>
+        <p class="section-subtitle">
+          Valores financeiros são apurados pela data de saída/pagamento. Contagens de entrada, ocupação e horários de
+          pico usam a data de entrada. Horários em America/Sao_Paulo.
+        </p>
+        <app-report-bar-chart title="Faturamento por dia — data de pagamento (saída)" [points]="revenueChartPoints()" />
+        <app-report-bar-chart title="Entradas por dia — data de entrada" [points]="entriesChartPoints()" />
+      </section>
+    }
 
-    <section class="section-card">
-      <h2>Tipos de veículo</h2>
-      <app-report-table [columns]="vehicleTypeColumns" [rows]="vehicleTypeRows()" />
-    </section>
+    @if (activeTab() === 'tables') {
+      <nav class="subtab-nav">
+        @for (option of summaryTableOptions; track option.key) {
+          <button
+            type="button"
+            class="subtab-btn"
+            [class.active]="activeTable() === option.key"
+            (click)="selectTable(option.key)"
+          >
+            {{ option.label }}
+          </button>
+        }
+      </nav>
 
-    <section class="section-card">
-      <h2>Resumo diário</h2>
-      <app-report-table [columns]="dailyColumns" [rows]="dailyRows()" />
-    </section>
+      <section class="section-card">
+        @switch (activeTable()) {
+          @case ('payment') {
+            <h2>Formas de pagamento</h2>
+            <app-report-table [columns]="paymentMethodColumns" [rows]="paymentMethodRows()" />
+          }
+          @case ('vehicle') {
+            <h2>Tipos de veículo</h2>
+            <app-report-table [columns]="vehicleTypeColumns" [rows]="vehicleTypeRows()" />
+          }
+          @case ('daily') {
+            <h2>Resumo diário</h2>
+            <app-report-table [columns]="dailyColumns" [rows]="dailyRows()" />
+          }
+          @case ('hourly') {
+            <h2>Resumo por hora</h2>
+            <app-report-table [columns]="hourlyColumns" [rows]="hourlyRows()" />
+          }
+          @case ('partnership') {
+            <h2>Convênios</h2>
+            <app-report-table [columns]="partnershipColumns" [rows]="partnershipRows()" />
+          }
+          @case ('client') {
+            <h2>Clientes</h2>
+            <app-report-table [columns]="clientColumns" [rows]="clientRows()" />
+          }
+        }
+      </section>
+    }
 
-    <section class="section-card">
-      <h2>Resumo por hora</h2>
-      <app-report-table [columns]="hourlyColumns" [rows]="hourlyRows()" />
-    </section>
-
-    <section class="section-card">
-      <h2>Convênios</h2>
-      <app-report-table [columns]="partnershipColumns" [rows]="partnershipRows()" />
-    </section>
-
-    <section class="section-card">
-      <h2>Clientes</h2>
-      <app-report-table [columns]="clientColumns" [rows]="clientRows()" />
-    </section>
-
-    <section class="section-card">
-      <h2>Tickets do período</h2>
-      @if (report.ticketsTruncated) {
-        <app-inline-notice
-          variant="warning"
-          message="Exibindo apenas os primeiros 20.000 registros. Os indicadores acima consideram todos os registros. Use a exportação para a lista completa."
-        />
-      }
-      <app-report-table [columns]="ticketColumns" [rows]="ticketRows()" [pageSize]="50" />
-    </section>
+    @if (activeTab() === 'tickets') {
+      <section class="section-card">
+        <h2>Tickets do período</h2>
+        @if (report.ticketsTruncated) {
+          <app-inline-notice
+            variant="warning"
+            message="Exibindo apenas os primeiros 20.000 registros. Os indicadores acima consideram todos os registros. Use a exportação para a lista completa."
+          />
+        }
+        <app-report-table [columns]="ticketColumns" [rows]="ticketRows()" [pageSize]="50" />
+      </section>
+    }
   }
 </div>
