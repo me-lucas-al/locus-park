@@ -1,0 +1,36 @@
+@if (rows().length === 0) {
+  <app-empty-state />
+} @else {
+  <div class="table-wrapper">
+    <table class="report-table">
+      <thead>
+        <tr>
+          @for (col of columns(); track col.key) {
+            <th [class.text-right]="col.align === 'right'">{{ col.label }}</th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of pageRows(); track $index) {
+          <tr>
+            @for (col of columns(); track col.key) {
+              <td [class.text-right]="col.align === 'right'">
+                <app-report-cell [format]="col.format" [value]="cellValue(row, col.key)" />
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (rows().length > pageSize()) {
+    <div class="table-pagination">
+      <span>{{ rangeLabel() }}</span>
+      <div class="pagination-buttons">
+        <button type="button" (click)="previous()" [disabled]="page() === 0">Anterior</button>
+        <button type="button" (click)="next()" [disabled]="page() >= totalPages() - 1">Próxima</button>
+      </div>
+    </div>
+  }
+}

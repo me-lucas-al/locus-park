@@ -1,67 +1,82 @@
-import { Component, inject, computed, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, computed, inject, signal } from '@angular/core';
 import { useReportQuery } from '../../core/domains/report/report.hooks';
-import { buildRange, DEFAULT_RANGE_PRESET } from '../../core/utils/date-range.factory';
+import { useReportExportMutation } from '../../core/domains/report/report-export.hooks';
+import { DEFAULT_RANGE_PRESET, buildRange } from '../../core/utils/date-range.factory';
+import { DateRange } from '../../core/types/date-range.types';
+import { ReportExportFormat } from '../../core/domains/report/report.types';
 import { ToastService } from '../../shared/services/toast.service';
+import { readBlobErrorMessage } from '../../shared/utils/blob-error';
+import { ReportToolbar } from './components/report-toolbar/report-toolbar.component';
+import { ReportKpisRevenue } from './components/report-kpis-revenue/report-kpis-revenue.component';
+import { ReportKpisStay } from './components/report-kpis-stay/report-kpis-stay.component';
+import { ReportKpisOccupancy } from './components/report-kpis-occupancy/report-kpis-occupancy.component';
+import { ReportBarChart } from './components/report-bar-chart/report-bar-chart.component';
+import { ReportTable } from './components/report-table/report-table.component';
+import { InlineNotice } from '../../shared/components/inline-notice/inline-notice';
+import { PAYMENT_METHOD_COLUMNS, toPaymentMethodRows } from './tables/payment-method.table';
+import { VEHICLE_TYPE_COLUMNS, toVehicleTypeRows } from './tables/vehicle-type.table';
+import { DAILY_COLUMNS, toDailyRows } from './tables/daily.table';
+import { HOURLY_COLUMNS, toHourlyRows } from './tables/hourly.table';
+import { PARTNERSHIP_COLUMNS, toPartnershipRows } from './tables/partnership.table';
+import { CLIENT_COLUMNS, toClientRows } from './tables/client.table';
+import { TICKET_COLUMNS, toTicketRows } from './tables/ticket.table';
 
 @Component({
   selector: 'app-reports',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [
+    ReportToolbar, ReportKpisRevenue, ReportKpisStay, ReportKpisOccupancy,
+    ReportBarChart, ReportTable, InlineNotice,
+  ],
   templateUrl: './reports.component.html',
   styleUrl: './reports.component.css',
 })
 export class Reports {
   private readonly toastService = inject(ToastService);
 
-  // Signals
-  protected readonly range = signal(buildRange(DEFAULT_RANGE_PRESET, new Date()));
+  protected readonly range = signal<DateRange>(buildRange(DEFAULT_RANGE_PRESET, new Date()));
   protected readonly reportQuery = useReportQuery(this.range);
+  protected readonly exportMutation = useReportExportMutation();
 
-  // Formatação do tempo médio
-  protected readonly averageStayFormatted = computed(() => {
-    const minutes = this.reportQuery.data()?.averageStayMinutes || 0;
-    const h = Math.floor(minutes / 60);
-    const m = Math.round(minutes % 60);
-    return `${h}h ${m}m`;
-  });
+  protected readonly exportingFormat = computed<ReportExportFormat | null>(() =>
+    this.exportMutation.isPending() ? (this.exportMutation.variables()?.format ?? null) : null,
+  );
 
-  protected exportCSV(): void {
-    const data = this.reportQuery.data();
-    if (!data || data.paymentMethodSummaries.length === 0) {
-      this.toastService.error('Não há dados disponíveis para exportação.');
-      return;
-    }
+  protected readonly paymentMethodColumns = PAYMENT_METHOD_COLUMNS;
+  protected readonly vehicleTypeColumns = VEHICLE_TYPE_COLUMNS;
+  protected readonly dailyColumns = DAILY_COLUMNS;
+  protected readonly hourlyColumns = HOURLY_COLUMNS;
+  protected readonly partnershipColumns = PARTNERSHIP_COLUMNS;
+  protected readonly clientColumns = CLIENT_COLUMNS;
+  protected readonly ticketColumns = TICKET_COLUMNS;
 
-    // Criar conteúdo CSV
-    let csvContent = 'data:text/csv;charset=utf-8,';
-    csvContent += 'Metodo de Pagamento,Faturamento (R$),Atendimentos\n';
+  protected readonly paymentMethodRows = computed(() => toPaymentMethodRows(this.reportQuery.data()?.paymentMethodSummaries ?? []));
+  protected readonly vehicleTypeRows = computed(() => toVehicleTypeRows(this.reportQuery.data()?.vehicleTypeSummaries ?? []));
+  protected readonly dailyRows = computed(() => toDailyRows(this.reportQuery.data()?.dailySummaries ?? []));
+  protected readonly hourlyRows = computed(() => toHourlyRows(this.reportQuery.data()?.hourlySummaries ?? []));
+  protected readonly partnershipRows = computed(() => toPartnershipRows(this.reportQuery.data()?.partnershipSummaries ?? []));
+  protected readonly clientRows = computed(() => toClientRows(this.reportQuery.data()?.clientSummaries ?? []));
+  protected readonly ticketRows = computed(() => toTicketRows(this.reportQuery.data()?.tickets ?? []));
 
-    data.paymentMethodSummaries.forEach((summary) => {
-      csvContent += `${summary.method},${summary.revenue.toFixed(2)},${summary.ticketCount}\n`;
-    });
+  protected readonly revenueChartPoints = computed(() =>
+    (this.reportQuery.data()?.dailySummaries ?? []).map((d) => ({ label: d.date.slice(8, 10), value: d.revenue })),
+  );
+  protected readonly entriesChartPoints = computed(() =>
+    (this.reportQuery.data()?.dailySummaries ?? []).map((d) => ({ label: d.date.slice(8, 10), value: d.entryCount })),
+  );
 
-    // Adicionar totais
-    csvContent += `Total Geral,${data.totalRevenue.toFixed(2)},${data.totalServices}\n`;
-
-    const encodedUri = encodeURI(csvContent);
-    const link = document.createElement('a');
-    link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `relatorio_faturamento_${new Date().toISOString().split('T')[0]}.csv`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    this.toastService.success('CSV exportado com sucesso!');
+  protected onRangeChange(range: DateRange): void {
+    this.range.set(range);
   }
 
-  protected formatPaymentMethod(method: string): string {
-    switch (method) {
-      case 'DINHEIRO': return 'Dinheiro';
-      case 'PIX': return 'PIX';
-      case 'CARD_CREDIT': return 'Cartão de Crédito';
-      case 'CARD_DEBIT': return 'Cartão de Débito';
-      default: return method;
-    }
+  protected onExportRequested(format: ReportExportFormat): void {
+    this.exportMutation.mutate(
+      { format, range: this.range() },
+      {
+        onError: async (error: unknown) => {
+          const message = await readBlobErrorMessage(error, 'Não foi possível exportar o relatório.');
+          this.toastService.error(message);
+        },
+      },
+    );
   }
 }

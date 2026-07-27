@@ -1,0 +1,66 @@
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--lp-border);
+  border-radius: 8px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.report-table th {
+  background: var(--lp-bg);
+  color: var(--lp-muted);
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--lp-border);
+  white-space: nowrap;
+}
+
+.report-table td {
+  padding: 10px 14px;
+  color: var(--lp-text);
+  border-bottom: 1px solid var(--lp-border);
+  white-space: nowrap;
+}
+
+.report-table tr:last-child td {
+  border-bottom: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.table-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.2rem;
+  font-size: 0.8rem;
+  color: var(--lp-muted);
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination-buttons button {
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  border-radius: 8px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

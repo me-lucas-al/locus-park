@@ -1,0 +1,26 @@
+@switch (format()) {
+  @case ('currency') {
+    {{ isEmpty() ? '—' : (numberValue() | currency) }}
+  }
+  @case ('percent') {
+    {{ percentText() }}
+  }
+  @case ('integer') {
+    {{ isEmpty() ? '—' : (numberValue() | number: '1.0-0') }}
+  }
+  @case ('decimal') {
+    {{ isEmpty() ? '—' : (numberValue() | number: '1.2-2') }}
+  }
+  @case ('duration') {
+    {{ durationText() }}
+  }
+  @case ('date') {
+    {{ isEmpty() ? '—' : (dateValue() | date: 'dd/MM/yyyy') }}
+  }
+  @case ('datetime') {
+    {{ isEmpty() ? '—' : (dateValue() | date: 'dd/MM/yyyy HH:mm') }}
+  }
+  @default {
+    {{ textValue() }}
+  }
+}

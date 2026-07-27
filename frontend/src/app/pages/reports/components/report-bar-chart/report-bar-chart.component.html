@@ -1,0 +1,15 @@
+<div class="bar-chart">
+  <h4>{{ title() }}</h4>
+  @if (points().length === 0) {
+    <app-empty-state message="Sem dados para o período." />
+  } @else {
+    <div class="bars">
+      @for (point of points(); track point.label) {
+        <div class="bar-column">
+          <div class="bar" [style.height.%]="(point.value / maxValue()) * 100"></div>
+          <span class="bar-label">{{ point.label }}</span>
+        </div>
+      }
+    </div>
+  }
+</div>

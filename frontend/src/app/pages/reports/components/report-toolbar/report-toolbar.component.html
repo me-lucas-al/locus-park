@@ -1,0 +1,14 @@
+<div class="report-toolbar">
+  <app-date-range-picker (rangeChange)="onRangeChange($event)" />
+
+  <div class="export-group">
+    @for (format of formats; track format) {
+      <button type="button" class="export-btn" [disabled]="isDisabled()" (click)="requestExport(format)">
+        @if (isPending(format)) {
+          <span class="spinner"></span>
+        }
+        {{ format | uppercase }}
+      </button>
+    }
+  </div>
+</div>

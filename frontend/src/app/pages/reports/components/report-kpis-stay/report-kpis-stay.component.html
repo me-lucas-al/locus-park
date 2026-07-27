@@ -1,0 +1,7 @@
+<div class="kpi-grid">
+  <app-summary-card label="Permanência Média" [value]="averageLabel()" tone="blue" />
+  <app-summary-card label="Permanência Mínima" [value]="minimumLabel()" tone="slate" />
+  <app-summary-card label="Permanência Máxima" [value]="maximumLabel()" tone="slate" />
+  <app-summary-card label="Permanência Total" [value]="totalLabel()" tone="slate" />
+  <app-summary-card label="Estadias em Aberto" [value]="stay().openStayCount | number" tone="amber" />
+</div>

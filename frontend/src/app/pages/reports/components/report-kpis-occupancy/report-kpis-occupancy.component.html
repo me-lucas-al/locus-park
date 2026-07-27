@@ -1,0 +1,10 @@
+<div class="kpi-grid">
+  <app-summary-card label="Vagas Totais" [value]="occupancy().totalSpots | number" tone="slate" />
+  <app-summary-card label="Entradas (entrada)" [value]="occupancy().entryCount | number" tone="blue" />
+  <app-summary-card label="Saídas (saída)" [value]="occupancy().exitCount | number" tone="blue" />
+  <app-summary-card label="Ativos ao Fim do Período" [value]="occupancy().activeCount | number" tone="red" />
+  <app-summary-card label="Pico de Ocupação" [value]="occupancy().peakConcurrentVehicles | number" [hint]="peakHint()" tone="purple" />
+  <app-summary-card label="Taxa de Pico" [value]="peakRateLabel()" tone="purple" />
+  <app-summary-card label="Taxa Média de Ocupação" [value]="averageRateLabel()" tone="slate" />
+  <app-summary-card label="Giro por Vaga" [value]="turnoverLabel()" tone="slate" />
+</div>

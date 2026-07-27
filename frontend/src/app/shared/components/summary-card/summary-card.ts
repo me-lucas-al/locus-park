@@ -10,7 +10,7 @@ export type SummaryCardTone = 'slate' | 'green' | 'red' | 'blue' | 'purple' | 'a
 })
 export class SummaryCard {
   readonly label = input.required<string>();
-  readonly value = input.required<string>();
+  readonly value = input.required<string | null>();
   readonly hint = input('');
   readonly tone = input<SummaryCardTone>('slate');
 }

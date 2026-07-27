@@ -1,0 +1,10 @@
+<div class="kpi-grid">
+  <app-summary-card label="Faturamento Bruto" [value]="revenue().grossRevenue | currency" tone="blue" />
+  <app-summary-card label="Desconto Concedido" [value]="revenue().discountGranted | currency" tone="amber" />
+  <app-summary-card label="Faturamento Líquido" [value]="revenue().netRevenue | currency" tone="green" />
+  <app-summary-card label="Ticket Médio" [value]="revenue().averageTicketValue | currency" tone="slate" />
+  <app-summary-card label="Maior Ticket" [value]="revenue().highestTicketValue | currency" tone="slate" />
+  <app-summary-card label="Menor Ticket" [value]="revenue().lowestTicketValue | currency" tone="slate" />
+  <app-summary-card label="Atendimentos Pagos" [value]="revenue().paidTicketCount | number" tone="purple" />
+  <app-summary-card label="Saídas Gratuitas" [value]="revenue().freeExitCount | number" tone="slate" />
+</div>

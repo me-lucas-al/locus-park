@@ -4,7 +4,7 @@
   </div>
   <div class="summary-card-body">
     <span class="summary-card-label">{{ label() }}</span>
-    <strong class="summary-card-value">{{ value() }}</strong>
+    <strong class="summary-card-value">{{ value() ?? '—' }}</strong>
     @if (hint()) {
       <span class="summary-card-hint">{{ hint() }}</span>
     }
