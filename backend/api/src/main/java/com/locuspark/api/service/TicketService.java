@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.List;
 import java.util.UUID;
 
@@ -52,7 +52,7 @@ public class TicketService {
         Ticket ticket = Ticket.builder()
                 .company(company)
                 .vehicle(vehicle)
-                .enteredAt(LocalDateTime.now())
+                .enteredAt(Instant.now())
                 .status(TicketStatus.ACTIVE)
                 .build();
 
@@ -68,7 +68,7 @@ public class TicketService {
             throw new BusinessException("Este ticket já foi encerrado e pago.");
         }
 
-        LocalDateTime exitTime = LocalDateTime.now();
+        Instant exitTime = Instant.now();
         ticket.setExitedAt(exitTime);
 
         TariffConfiguration tariff = tariffConfigurationRepository.findByCompanyId(companyId)

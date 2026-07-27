@@ -1,0 +1,28 @@
+<div class="vehicle-select-container">
+
+  <div class="vehicle-select-field-group">
+    <label class="vehicle-select-label">Marca</label>
+    <app-searchable-select
+      #brandSelect
+      placeholder="Digite para filtrar as marcas..."
+      [options]="brandsQuery.data() ?? []"
+      [isLoading]="brandsQuery.isPending()"
+      [errorMessage]="brandsError()"
+      (optionSelected)="onBrandSelected($event)"
+    />
+  </div>
+
+  <div class="vehicle-select-field-group">
+    <label class="vehicle-select-label">Modelo</label>
+    <app-searchable-select
+      #modelSelect
+      placeholder="Selecione uma marca primeiro..."
+      [options]="modelOptions()"
+      [isLoading]="modelsQuery.isFetching()"
+      [disabled]="isModelSelectDisabled()"
+      [errorMessage]="modelsError()"
+      (optionSelected)="onModelSelected($event)"
+    />
+  </div>
+
+</div>

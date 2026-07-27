@@ -9,15 +9,17 @@ import com.locuspark.api.types.Plate;
 
 import java.math.BigDecimal;
 import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.OptionalLong;
 import java.util.UUID;
 
 public record TicketRecord(
         UUID ticketId,
         TicketStatus status,
-        LocalDateTime enteredAt,
-        LocalDateTime exitedAt,
+        Instant enteredAt,
+        Instant exitedAt,
         BigDecimal totalAmount,
         BigDecimal grossAmount,
         BigDecimal discountAmount,
@@ -34,6 +36,16 @@ public record TicketRecord(
         DiscountType partnershipDiscountType,
         BigDecimal partnershipValue
 ) {
+
+    public static final ZoneId PATIO_ZONE = ZoneId.of("America/Sao_Paulo");
+
+    public LocalDateTime enteredAtLocal() {
+        return enteredAt.atZone(PATIO_ZONE).toLocalDateTime();
+    }
+
+    public LocalDateTime exitedAtLocal() {
+        return exitedAt == null ? null : exitedAt.atZone(PATIO_ZONE).toLocalDateTime();
+    }
 
     public BigDecimal net() {
         return totalAmount != null ? totalAmount : BigDecimal.ZERO;

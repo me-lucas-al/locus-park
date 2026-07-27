@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -21,10 +21,10 @@ public interface TicketRepository extends JpaRepository<Ticket, UUID>{
     List<Ticket> findAllByCompanyId(UUID companyId);
 
     @Query(TicketRecordQuery.EXIT_WINDOW)
-    List<TicketRecord> findPaidRecordsByExitWindow(@Param("companyId") UUID companyId, @Param("from") LocalDateTime from, @Param("to") LocalDateTime to);
+    List<TicketRecord> findPaidRecordsByExitWindow(@Param("companyId") UUID companyId, @Param("from") Instant from, @Param("to") Instant to);
 
     @Query(TicketRecordQuery.ENTRY_WINDOW)
-    List<TicketRecord> findRecordsByEntryWindow(@Param("companyId") UUID companyId, @Param("from") LocalDateTime from, @Param("to") LocalDateTime to);
+    List<TicketRecord> findRecordsByEntryWindow(@Param("companyId") UUID companyId, @Param("from") Instant from, @Param("to") Instant to);
 
     @Query("""
             SELECT COUNT(t) FROM Ticket t
@@ -32,5 +32,5 @@ public interface TicketRepository extends JpaRepository<Ticket, UUID>{
               AND t.enteredAt < :from
               AND (t.exitedAt IS NULL OR t.exitedAt >= :from)
             """)
-    long countPresentAt(@Param("companyId") UUID companyId, @Param("from") LocalDateTime from);
+    long countPresentAt(@Param("companyId") UUID companyId, @Param("from") Instant from);
 }

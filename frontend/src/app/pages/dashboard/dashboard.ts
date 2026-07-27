@@ -5,29 +5,16 @@ import { useTicketsQuery } from '../../core/domains/ticket/ticket.hooks';
 import { useReportQuery } from '../../core/domains/report/report.hooks';
 import { TicketResponse } from '../../core/domains/ticket/ticket.types';
 import { ModalExit } from '../../shared/components/modal-exit/modal-exit.component';
+import { ParkingMap } from '../parking-spots/components/parking-map/parking-map.component';
+import { OccupiedListComponent } from './components/occupied-list/occupied-list.component';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
 import { buildRange } from '../../core/utils/date-range.factory';
 import { isAdmin } from '../../core/utils/jwt';
 
-interface GridSpot {
-  number: number;
-  ticket: TicketResponse | null;
-  status: 'Livre' | 'Ocupada';
-}
-
-interface LayoutItem {
-  type: 'spot' | 'corridor' | 'empty';
-  spot?: GridSpot;
-  corridorIndex?: number;
-  direction?: 'left' | 'right';
-  spotRowIndex?: number;
-  orientation?: 'top-open' | 'bottom-open';
-}
-
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, ModalExit],
+  imports: [CommonModule, ModalExit, ParkingMap, OccupiedListComponent],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
@@ -44,34 +31,20 @@ export class Dashboard {
   protected readonly todayRange = signal(buildRange('TODAY', new Date()));
   protected readonly reportQuery = useReportQuery(this.todayRange, { enabled: isAdmin() });
 
-  // Configuração de Vagas Totais (reativo)
   readonly totalSpots = signal<number>(120);
-
-  // Modal checkout
   readonly modalSaidaAberto = signal(false);
   readonly veiculoSelecionado = signal<TicketResponse | null>(null);
 
-  // Vagas ocupadas atualmente
   protected readonly occupiedSpotsCount = computed(() => {
-    return this.ticketsQuery.data()?.length || 0;
+    const tickets = this.ticketsQuery.data() || [];
+    return tickets.filter((t) => !t.exitedAt).length;
   });
 
-  // Vagas livres atualmente
   protected readonly freeSpotsCount = computed(() => {
     return Math.max(0, this.totalSpots() - this.occupiedSpotsCount());
   });
 
-  // Número de vagas por fileira, calculado dinamicamente com base no total de vagas
-  protected readonly spotsPerRow = computed<number>(() => {
-    const total = this.totalSpots();
-    if (total <= 15) return 5;
-    if (total <= 40) return 8;
-    if (total <= 80) return 10;
-    return 12;
-  });
-
-  // Mapeamento dinâmico das vagas de 1 a totalSpots para o mapa visual
-  protected readonly gridSpots = computed<GridSpot[]>(() => {
+  protected readonly gridSpots = computed(() => {
     const activeTickets = this.ticketsQuery.data() || [];
     this.spotAssignmentService.cleanInactiveTickets(activeTickets);
 
@@ -83,7 +56,7 @@ export class Dashboard {
       }
     });
 
-    const spots: GridSpot[] = [];
+    const spots: { number: number; ticket: TicketResponse | null; status: 'Livre' | 'Ocupada' }[] = [];
     const total = this.totalSpots();
     for (let i = 1; i <= total; i++) {
       const ticket = ticketMap.get(i) || null;
@@ -96,74 +69,12 @@ export class Dashboard {
     return spots;
   });
 
-  // Organiza as vagas e insere corredores de circulação e asfalto de forma reativa
-  protected readonly layoutItems = computed<LayoutItem[]>(() => {
-    const spots = this.gridSpots();
-    const spotsPerRow = this.spotsPerRow();
-    const items: LayoutItem[] = [];
-
-    // Adiciona o primeiro corredor
-    items.push({
-      type: 'corridor',
-      direction: 'right',
-      corridorIndex: 0,
-    });
-
-    let i = 0;
-    let fileiraCountInSet = 0;
-    let spotRowIndex = 0;
-
-    while (i < spots.length) {
-      const rowSpots = spots.slice(i, i + spotsPerRow);
-      i += spotsPerRow;
-      spotRowIndex++;
-
-      const orientation = spotRowIndex % 2 !== 0 ? 'top-open' : 'bottom-open';
-
-      rowSpots.forEach((spot) => {
-        items.push({
-          type: 'spot',
-          spot,
-          spotRowIndex,
-          orientation,
-        });
-      });
-
-      if (rowSpots.length < spotsPerRow) {
-        const emptyCount = spotsPerRow - rowSpots.length;
-        for (let e = 0; e < emptyCount; e++) {
-          items.push({
-            type: 'empty',
-          });
-        }
-      }
-
-      fileiraCountInSet++;
-
-      if (fileiraCountInSet === 2 && i < spots.length) {
-        const corridorsCount = items.filter((item) => item.type === 'corridor').length;
-        items.push({
-          type: 'corridor',
-          direction: corridorsCount % 2 === 0 ? 'right' : 'left',
-          corridorIndex: corridorsCount,
-        });
-        fileiraCountInSet = 0;
-      }
+  protected handleSpotClick(spot: { number: number; ticket: TicketResponse | null; status: 'Livre' | 'Ocupada' }): void {
+    if (spot.status === 'Ocupada' && spot.ticket) {
+      this.openCheckoutModal(spot.ticket);
     }
+  }
 
-    if (items.length > 0 && items[items.length - 1].type !== 'corridor') {
-      const corridorsCount = items.filter((item) => item.type === 'corridor').length;
-      items.push({
-        type: 'corridor',
-        direction: corridorsCount % 2 === 0 ? 'right' : 'left',
-        corridorIndex: corridorsCount,
-      });
-    }
-
-    return items;
-  });
-
-  // Atualiza a quantidade total de vagas
   protected updateTotalSpots(event: Event): void {
     const input = event.target as HTMLInputElement;
     const value = parseInt(input.value, 10);
@@ -172,20 +83,9 @@ export class Dashboard {
     }
   }
 
-  // Detalhes das vagas ocupadas (apenas os tickets ativos)
-  protected readonly occupiedTickets = computed(() => {
-    return this.ticketsQuery.data() || [];
-  });
-
-  protected getSpotNumber(ticket: TicketResponse): number {
-    return this.spotAssignmentService.getSpot(ticket);
-  }
-
-
-
-  protected formatarDataAtual(): string {
-    const data = new Date();
-    return data.toLocaleDateString('pt-BR', {
+  protected formatCurrentDate(): string {
+    const date = new Date();
+    return date.toLocaleDateString('pt-BR', {
       weekday: 'long',
       day: '2-digit',
       month: 'long',
@@ -193,16 +93,16 @@ export class Dashboard {
     });
   }
 
-  protected irParaEntrada(): void {
+  protected navigateToEntry(): void {
     this.router.navigate(['/entry']);
   }
 
-  protected abrirModalSaida(ticket: TicketResponse): void {
+  protected openCheckoutModal(ticket: TicketResponse): void {
     this.veiculoSelecionado.set(ticket);
     this.modalSaidaAberto.set(true);
   }
 
-  protected fecharModalSaida(): void {
+  protected closeCheckoutModal(): void {
     this.modalSaidaAberto.set(false);
     this.veiculoSelecionado.set(null);
   }

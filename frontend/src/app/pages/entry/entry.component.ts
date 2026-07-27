@@ -1,79 +1,82 @@
-import { Component, OnInit, OnDestroy, inject, signal, computed, effect } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject, signal, computed, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { useTicketsQuery, useCheckInMutation } from '../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
+import { useTariffQuery } from '../../core/domains/tariff/tariff.hooks';
+import { RouterModule } from '@angular/router';
 import { ToastService } from '../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
-
-interface VagaOption {
-  numero: number;
-  label: string;
-}
-
 import { LoadingDirective } from '../../shared/directives/loading.directive';
+import { ColorSelectComponent } from '../../shared/components/color-select/color-select.component';
+import { VehicleBrandModelSelectComponent } from '../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
+import { SelectOption } from '../../core/domains/vehicle-catalog/vehicle-catalog.types';
+import { SpotOption } from './entry.types';
 
 @Component({
   selector: 'app-entry',
   standalone: true,
-  imports: [CommonModule, FormsModule, LoadingDirective],
+  imports: [CommonModule, FormsModule, LoadingDirective, ColorSelectComponent, VehicleBrandModelSelectComponent, RouterModule],
   templateUrl: './entry.component.html',
   styleUrl: './entry.component.css',
 })
 export class Entry implements OnInit, OnDestroy {
   private readonly toastService = inject(ToastService);
   private readonly spotAssignmentService = inject(SpotAssignmentService);
+  private readonly colorSelectRef = viewChild(ColorSelectComponent);
+  private readonly vehicleBrandModelSelectRef = viewChild(VehicleBrandModelSelectComponent);
 
-  // Queries
   protected readonly ticketsQuery = useTicketsQuery();
   protected readonly profileQuery = useUserProfileQuery();
-
-  // Signals
   protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
-
-  // Mutações
   protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
+  protected readonly tariffQuery = useTariffQuery();
 
-  protected readonly isConfirming = computed(() => 
-    this.createVehicleMutation.isPending() || this.checkInMutation.isPending()
+  protected readonly isTariffConfigured = computed(() => {
+    return !this.tariffQuery.isError() && !!this.tariffQuery.data();
+  });
+
+  protected readonly isEntryBlocked = computed(() => {
+    return !this.tariffQuery.isLoading() && !this.isTariffConfigured();
+  });
+
+  protected readonly isConfirming = computed(
+    () => this.createVehicleMutation.isPending() || this.checkInMutation.isPending(),
   );
 
-  // Estados locais do relógio
   readonly timeString = signal('');
   readonly dateString = signal('');
   private clockInterval: ReturnType<typeof setInterval> | null = null;
-
-  // Total de vagas do pátio
   readonly totalSpots = 120;
 
-  // Formulário
   readonly plate = signal('');
   readonly modelName = signal('');
-  readonly vehicleType = signal('Carro');
+  readonly vehicleType = signal<'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK'>('CAR');
   readonly selectedSpot = signal(0);
   readonly isMonthly = signal(false);
+  readonly vehicleColor = signal('branco');
+  readonly vehicleCustomColor = signal('');
 
-  // Vagas ocupadas atualmente
+
   protected readonly occupiedSpotsCount = computed(() => {
-    return this.ticketsQuery.data()?.length || 0;
+    const tickets = this.ticketsQuery.data() || [];
+    return tickets.filter((t) => !t.exitedAt).length;
   });
+  protected readonly freeSpotsCount = computed(() =>
+    Math.max(0, this.totalSpots - this.occupiedSpotsCount()),
+  );
 
-  // Vagas livres atualmente
-  protected readonly freeSpotsCount = computed(() => {
-    return Math.max(0, this.totalSpots - this.occupiedSpotsCount());
-  });
-
-  // Lista de vagas disponíveis para o select (1 a 120 filtrando as ocupadas)
-  protected readonly availableSpots = computed<VagaOption[]>(() => {
+  protected readonly availableSpots = computed<SpotOption[]>(() => {
     const activeTickets = this.ticketsQuery.data() || [];
-    const occupiedNumbers = new Set(activeTickets.map(t => this.spotAssignmentService.getSpot(t)));
-    
-    const options: VagaOption[] = [];
+    const occupiedNumbers = new Set(
+      activeTickets.map((t) => this.spotAssignmentService.getSpot(t)),
+    );
+    const options: SpotOption[] = [];
     for (let i = 1; i <= this.totalSpots; i++) {
       if (!occupiedNumbers.has(i)) {
-        options.push({ numero: i, label: `Vaga ${i}` });
+        options.push({ number: i, label: `Vaga ${i}` });
       }
     }
     return options;
@@ -85,87 +88,70 @@ export class Entry implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    if (this.clockInterval) {
-      clearInterval(this.clockInterval);
-    }
+    if (this.clockInterval) clearInterval(this.clockInterval);
   }
 
   private updateClock(): void {
     const now = new Date();
     this.timeString.set(
-      now.toLocaleTimeString('pt-BR', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-      })
+      now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
     );
-    
-    const formattedDate = now.toLocaleDateString('pt-BR', {
+    const date = now.toLocaleDateString('pt-BR', {
       weekday: 'long',
       day: '2-digit',
       month: 'long',
     });
-    // Capitalizar a primeira letra
-    this.dateString.set(formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1));
+    this.dateString.set(date.charAt(0).toUpperCase() + date.slice(1));
   }
 
   protected confirmEntry(): void {
+    if (this.isEntryBlocked()) {
+      this.toastService.error('Não é possível registrar entrada. Configure os preços do estacionamento primeiro.');
+      return;
+    }
+
     const rawPlate = this.plate().toUpperCase().trim();
     const model = this.modelName().trim();
     const spot = this.selectedSpot();
 
-    if (!rawPlate) {
-      this.toastService.error('Placa do veículo é obrigatória.');
-      return;
-    }
+    if (!rawPlate) return this.toastService.error('Placa do veículo é obrigatória.');
+    if (!model) return this.toastService.error('Modelo/Marca do veículo é obrigatório.');
+    if (spot <= 0) return this.toastService.error('Selecione uma vaga disponível.');
 
-    if (!model) {
-      this.toastService.error('Modelo/Marca do veículo é obrigatório.');
-      return;
-    }
-
-    if (spot <= 0) {
-      this.toastService.error('Selecione uma vaga disponível.');
-      return;
-    }
-
-    // Para fazer o check-in na API do backend:
-    // Primeiro cadastramos o veículo na empresa usando a mutação do vehicle
+    const colorValue =
+      this.vehicleColor() === 'outro' ? this.vehicleCustomColor().trim() : this.vehicleColor();
     this.createVehicleMutation.mutate(
+      { plate: rawPlate, model, color: colorValue || 'outro', type: this.vehicleType() },
       {
-        plate: rawPlate,
-        model: model,
-        color: 'N/A', // Cor padrão
-      },
-      {
-        onSuccess: (vehicleResponse) => {
-          // Após cadastrar o veículo, fazemos o check-in (usando o id do veículo)
-          this.checkInMutation.mutate(vehicleResponse.id, {
-            onSuccess: (ticketResponse) => {
-              this.spotAssignmentService.assignSpot(ticketResponse.id, spot);
-              this.toastService.success(`Entrada do veículo ${rawPlate} registrada com sucesso na Vaga ${spot}!`);
+        onSuccess: (res) => {
+          this.checkInMutation.mutate(res.id, {
+            onSuccess: (ticket) => {
+              this.spotAssignmentService.assignSpot(ticket.id, spot);
+              this.toastService.success(`Entrada registrada na Vaga ${spot}!`);
               this.resetForm();
             },
-            onError: () => {
-              this.toastService.error('Erro ao registrar entrada (check-in) do veículo.');
-            }
+            onError: () => this.toastService.error('Erro ao registrar entrada do veículo.'),
           });
         },
-        onError: () => {
-          // Caso falhe por já existir o veículo ou erro de cadastro, tentamos fazer o check-in diretamente se for possível.
-          // Como em muitos sistemas o veículo pode já estar cadastrado, listamos os veículos para achar o id,
-          // mas para simplificar, tratamos o fluxo de erro avisando o operador.
-          this.toastService.error('Erro ao cadastrar veículo. Verifique se a placa já está no sistema.');
-        }
-      }
+        onError: () =>
+          this.toastService.error(
+            'Erro ao cadastrar veículo. Verifique se a placa já está no sistema.',
+          ),
+      },
     );
+  }
+
+  protected onVehicleModelSelected(model: SelectOption): void {
+    this.modelName.set(model.label);
   }
 
   private resetForm(): void {
     this.plate.set('');
     this.modelName.set('');
-    this.vehicleType.set('Carro');
+    this.vehicleType.set('CAR');
     this.selectedSpot.set(0);
     this.isMonthly.set(false);
+    this.colorSelectRef()?.reset();
+    this.vehicleBrandModelSelectRef()?.reset();
   }
 }

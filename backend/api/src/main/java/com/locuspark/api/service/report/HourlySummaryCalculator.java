@@ -18,11 +18,11 @@ public class HourlySummaryCalculator {
         }
 
         for (TicketRecord record : window.entered()) {
-            entryCounts[record.enteredAt().getHour()]++;
+            entryCounts[record.enteredAtLocal().getHour()]++;
         }
 
         for (TicketRecord record : window.paid()) {
-            int hour = record.exitedAt().getHour();
+            int hour = record.exitedAtLocal().getHour();
             exitCounts[hour]++;
             revenue[hour] = revenue[hour].add(record.net());
         }

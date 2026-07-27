@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -39,13 +38,12 @@ public class ReportService {
         Company company = companyRepository.findById(companyId)
                 .orElseThrow(() -> new ResourceNotFoundException("Empresa não encontrada."));
 
-        LocalDateTime fromInclusive = filter.fromInclusive();
-        LocalDateTime toExclusive = filter.toExclusive();
-        TicketWindow window = ticketWindowLoader.load(companyId, fromInclusive, toExclusive);
+        TicketWindow window = ticketWindowLoader.load(companyId, filter.fromInstant(), filter.toInstant());
 
         RevenueSummaryResponse revenue = revenueSummaryCalculator.calculate(window);
         StaySummaryResponse stay = staySummaryCalculator.calculate(window);
-        OccupancySummaryResponse occupancy = occupancySummaryCalculator.calculate(window, company.getTotalSpots(), fromInclusive, toExclusive);
+        OccupancySummaryResponse occupancy = occupancySummaryCalculator.calculate(
+                window, company.getTotalSpots(), filter.fromInclusive(), filter.toExclusive());
 
         List<TicketRowResponse> rows = ticketRowMapper.map(window.all(), detailLimit);
         boolean truncated = detailLimit.exceededBy(window.all().size());

@@ -9,9 +9,9 @@ import { environment } from '@environments/environment';
 const COMPANY_ID = 'c-1';
 const BASE = `${environment.apiUrl}companies/${COMPANY_ID}/vehicles`;
 
-const mockRequest: VehicleRequest = { plate: 'ABC1234', model: 'Gol', color: 'Branco' };
+const mockRequest: VehicleRequest = { plate: 'ABC1234', model: 'Gol', color: 'Branco', type: 'CAR' };
 const mockResponse: VehicleResponse = {
-  id: 'v-1', plate: 'ABC1234', model: 'Gol', color: 'Branco', companyId: COMPANY_ID,
+  id: 'v-1', plate: 'ABC1234', model: 'Gol', color: 'Branco', type: 'CAR', companyId: COMPANY_ID,
 };
 
 describe('VehicleService', () => {

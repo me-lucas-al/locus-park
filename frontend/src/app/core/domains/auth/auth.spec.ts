@@ -21,6 +21,7 @@ describe('AuthService', () => {
   let httpMock: HttpTestingController;
 
   beforeEach(() => {
+    localStorage.clear();
     TestBed.configureTestingModule({
       providers: [AuthService, provideHttpClient(), provideHttpClientTesting()],
     });
@@ -57,8 +58,8 @@ describe('AuthService', () => {
     const req = httpMock.expectOne(`${BASE}/register`);
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual(registerRequest);
-    req.flush(authResponse);
-    expect(await promise).toEqual(authResponse);
+    req.flush('', { status: 201, statusText: 'Created' });
+    expect(await promise).toBe('');
   });
 
   it('deve limpar Signals ao realizar logout', () => {

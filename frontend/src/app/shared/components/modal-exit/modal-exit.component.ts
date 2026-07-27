@@ -108,7 +108,7 @@ export class ModalExit implements OnChanges {
     const selected = partnerships.find((p) => p.id === partnershipId);
     
     if (selected) {
-      if (selected.discountType === 'percentage') {
+      if (selected.discountType && selected.discountType.toUpperCase() === 'PERCENTAGE') {
         const disc = (this.baseRate() * selected.value) / 100;
         this.discountValue.set(disc);
       } else {

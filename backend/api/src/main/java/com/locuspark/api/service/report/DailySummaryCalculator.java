@@ -24,12 +24,12 @@ public class DailySummaryCalculator {
         }
 
         for (TicketRecord record : window.entered()) {
-            LocalDate day = record.enteredAt().toLocalDate();
+            LocalDate day = record.enteredAtLocal().toLocalDate();
             buckets.computeIfPresent(day, (d, bucket) -> new Bucket(bucket.entryCount() + 1, bucket.exitCount(), bucket.revenue(), bucket.discount()));
         }
 
         for (TicketRecord record : window.paid()) {
-            LocalDate day = record.exitedAt().toLocalDate();
+            LocalDate day = record.exitedAtLocal().toLocalDate();
             buckets.computeIfPresent(day, (d, bucket) -> new Bucket(
                     bucket.entryCount(), bucket.exitCount() + 1,
                     bucket.revenue().add(record.net()), bucket.discount().add(record.discount())));

@@ -1,24 +1,29 @@
-import { Component, inject, signal, computed, input, output } from '@angular/core';
+import { Component, inject, signal, computed, input, output, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ColorSelect } from '../color-select/color-select.component';
+import { VehicleBrandModelSelectComponent } from '../../../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
+import { SelectOption } from '../../../../core/domains/vehicle-catalog/vehicle-catalog.types';
 import { useCheckInMutation } from '../../../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../../../core/domains/user/user.hooks';
+import { useTariffQuery } from '../../../../core/domains/tariff/tariff.hooks';
+import { RouterModule } from '@angular/router';
 import { ToastService } from '../../../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../../../shared/services/spot-assignment.service';
 
 @Component({
   selector: 'app-parking-spot-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ColorSelect],
+  imports: [CommonModule, FormsModule, ColorSelect, VehicleBrandModelSelectComponent, RouterModule],
   templateUrl: './parking-spot-form.component.html',
-  styleUrl: './parking-spot-form.component.css'
+  styleUrl: './parking-spot-form.component.css',
 })
 export class ParkingSpotForm {
   private readonly toastService = inject(ToastService);
   private readonly spotAssignmentService = inject(SpotAssignmentService);
   private readonly profileQuery = useUserProfileQuery();
+  private readonly vehicleBrandModelSelectRef = viewChild(VehicleBrandModelSelectComponent);
 
   readonly spotNumber = input<number>(0);
   readonly confirmed = output<void>();
@@ -28,13 +33,23 @@ export class ParkingSpotForm {
 
   protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
+  protected readonly tariffQuery = useTariffQuery();
 
-  protected readonly isPending = computed(() => 
-    this.createVehicleMutation.isPending() || this.checkInMutation.isPending()
+  protected readonly isTariffConfigured = computed(() => {
+    return !this.tariffQuery.isError() && !!this.tariffQuery.data();
+  });
+
+  protected readonly isEntryBlocked = computed(() => {
+    return !this.tariffQuery.isLoading() && !this.isTariffConfigured();
+  });
+
+  protected readonly isPending = computed(
+    () => this.createVehicleMutation.isPending() || this.checkInMutation.isPending(),
   );
 
   protected readonly plate = signal('');
   protected readonly modelName = signal('');
+  protected readonly vehicleType = signal<'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK'>('CAR');
   protected readonly selectedColor = signal('branco');
   protected readonly customColorName = signal('');
 
@@ -42,10 +57,20 @@ export class ParkingSpotForm {
     this.selectedColor.set(color);
   }
 
+  protected onVehicleModelSelected(model: SelectOption): void {
+    this.modelName.set(model.label);
+  }
+
   protected submitForm(): void {
+    if (this.isEntryBlocked()) {
+      this.toastService.error('Não é possível registrar entrada. Configure os preços do estacionamento primeiro.');
+      return;
+    }
+
     const rawPlate = this.plate().toUpperCase().trim();
     const model = this.modelName().trim();
-    const color = this.selectedColor() === 'outro' ? this.customColorName().trim() : this.selectedColor();
+    const color =
+      this.selectedColor() === 'outro' ? this.customColorName().trim() : this.selectedColor();
 
     if (!rawPlate) {
       this.toastService.error('Placa do veículo é obrigatória.');
@@ -61,20 +86,23 @@ export class ParkingSpotForm {
     }
 
     this.createVehicleMutation.mutate(
-      { plate: rawPlate, model, color },
+      { plate: rawPlate, model, color, type: this.vehicleType() },
       {
         onSuccess: (vehicleResponse) => {
           this.checkInMutation.mutate(vehicleResponse.id, {
             onSuccess: (ticketResponse) => {
               this.spotAssignmentService.assignSpot(ticketResponse.id, this.spotNumber());
-              this.toastService.success(`Entrada registrada com sucesso na vaga ${this.spotNumber()}!`);
+              this.toastService.success(
+                `Entrada registrada com sucesso na vaga ${this.spotNumber()}!`,
+              );
+              this.vehicleBrandModelSelectRef()?.reset();
               this.confirmed.emit();
             },
-            onError: () => this.toastService.error('Erro ao realizar check-in do veículo.')
+            onError: () => this.toastService.error('Erro ao realizar check-in do veículo.'),
           });
         },
-        onError: () => this.toastService.error('Erro ao cadastrar veículo.')
-      }
+        onError: () => this.toastService.error('Erro ao cadastrar veículo.'),
+      },
     );
   }
 }

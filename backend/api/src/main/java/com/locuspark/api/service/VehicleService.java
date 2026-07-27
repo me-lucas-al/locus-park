@@ -9,6 +9,7 @@ import com.locuspark.api.exception.BusinessException;
 import com.locuspark.api.mapper.VehicleMapper;
 import com.locuspark.api.repository.ClientRepository;
 import com.locuspark.api.repository.CompanyRepository;
+import com.locuspark.api.repository.TariffConfigurationRepository;
 import com.locuspark.api.repository.VehicleRepository;
 import com.locuspark.api.types.Plate;
 import lombok.RequiredArgsConstructor;
@@ -26,12 +27,19 @@ public class VehicleService {
     private final VehicleRepository vehicleRepository;
     private final CompanyRepository companyRepository;
     private final ClientRepository clientRepository;
+    private final TariffConfigurationRepository tariffConfigurationRepository;
     private final VehicleMapper vehicleMapper;
 
     @Transactional
     public VehicleResponse createVehicle(UUID companyId, VehicleRequest request) {
         Company company = companyRepository.findById(companyId)
                 .orElseThrow(() -> new BusinessException("Empresa não encontrada."));
+
+        // Verifica se a tarifa está configurada para a empresa
+        boolean tariffConfigured = tariffConfigurationRepository.findByCompanyId(companyId).isPresent();
+        if (!tariffConfigured) {
+            throw new BusinessException("Não é possível registrar veículos porque os preços do estacionamento ainda não foram configurados. Por favor, configure as tarifas de preços primeiro.");
+        }
 
         Plate plate = new Plate(request.plate());
         if (vehicleRepository.existsByPlateAndCompanyId(plate, companyId)) {

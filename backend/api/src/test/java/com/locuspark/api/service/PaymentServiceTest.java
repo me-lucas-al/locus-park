@@ -16,13 +16,21 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @DisplayName("Testes de Serviço de Pagamento - PaymentService")
 class PaymentServiceTest {
+
+    private static final ZoneId PATIO_ZONE = ZoneId.of("America/Sao_Paulo");
+
+    private static Instant at(LocalDateTime local) {
+        return local.atZone(PATIO_ZONE).toInstant();
+    }
 
     private PaymentService paymentService;
     private TariffConfiguration tariff;
@@ -53,10 +61,10 @@ class PaymentServiceTest {
         void toleranceShortCircuitsBeforeDiscount() {
             Partnership partnership = Partnership.builder().discountType(DiscountType.FREE_HOURS).value(BigDecimal.valueOf(1)).build();
             Ticket ticket = Ticket.builder()
-                    .enteredAt(LocalDateTime.of(2026, 1, 1, 10, 0))
+                    .enteredAt(at(LocalDateTime.of(2026, 1, 1, 10, 0)))
                     .partnership(partnership)
                     .build();
-            LocalDateTime exitTime = LocalDateTime.of(2026, 1, 1, 10, 5);
+            Instant exitTime = at(LocalDateTime.of(2026, 1, 1, 10, 5));
 
             StayCharge charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
 
@@ -71,8 +79,8 @@ class PaymentServiceTest {
         @Test
         @DisplayName("Deve calcular bruto igual ao líquido quando não há parceria")
         void grossEqualsNetWithoutPartnership() {
-            Ticket ticket = Ticket.builder().enteredAt(LocalDateTime.of(2026, 1, 1, 10, 0)).build();
-            LocalDateTime exitTime = LocalDateTime.of(2026, 1, 1, 13, 0);
+            Ticket ticket = Ticket.builder().enteredAt(at(LocalDateTime.of(2026, 1, 1, 10, 0))).build();
+            Instant exitTime = at(LocalDateTime.of(2026, 1, 1, 13, 0));
 
             StayCharge charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
 
@@ -85,10 +93,10 @@ class PaymentServiceTest {
         void grossEqualsNetPlusDiscountWithPartnership() {
             Partnership partnership = Partnership.builder().discountType(DiscountType.PERCENTAGE).value(BigDecimal.valueOf(20)).build();
             Ticket ticket = Ticket.builder()
-                    .enteredAt(LocalDateTime.of(2026, 1, 1, 10, 0))
+                    .enteredAt(at(LocalDateTime.of(2026, 1, 1, 10, 0)))
                     .partnership(partnership)
                     .build();
-            LocalDateTime exitTime = LocalDateTime.of(2026, 1, 1, 13, 0);
+            Instant exitTime = at(LocalDateTime.of(2026, 1, 1, 13, 0));
 
             StayCharge charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
 
@@ -98,8 +106,8 @@ class PaymentServiceTest {
         @Test
         @DisplayName("Deve lançar IllegalArgumentException quando a saída é anterior à entrada")
         void throwsWhenExitBeforeEntry() {
-            Ticket ticket = Ticket.builder().enteredAt(LocalDateTime.of(2026, 1, 1, 10, 0)).build();
-            LocalDateTime exitTime = LocalDateTime.of(2026, 1, 1, 9, 0);
+            Ticket ticket = Ticket.builder().enteredAt(at(LocalDateTime.of(2026, 1, 1, 10, 0))).build();
+            Instant exitTime = at(LocalDateTime.of(2026, 1, 1, 9, 0));
 
             assertThatThrownBy(() -> paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing))
                     .isInstanceOf(IllegalArgumentException.class);

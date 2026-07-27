@@ -1,0 +1,56 @@
+<div class="searchable-select-wrapper">
+
+  @if (isLoading()) {
+    <div class="searchable-select-field searchable-select-field--loading">
+      <span class="loading-spinner"></span>
+      <span class="loading-text">Carregando...</span>
+    </div>
+  } @else if (errorMessage()) {
+    <div class="searchable-select-field searchable-select-field--error">
+      <svg class="error-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-8-5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 10 5Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+      </svg>
+      <span class="error-text">{{ errorMessage() }}</span>
+    </div>
+  } @else {
+    <div class="searchable-select-field" [class.searchable-select-field--disabled]="disabled()">
+      <input
+        type="text"
+        class="searchable-select-input"
+        [placeholder]="displayLabel() ? displayLabel() : placeholder()"
+        [value]="displayValue()"
+        [disabled]="disabled()"
+        (focus)="openDropdown()"
+        (blur)="closeDropdown()"
+        (input)="onSearchInput($event)"
+      />
+      <svg class="chevron-icon" [class.chevron-icon--open]="isDropdownOpen()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+
+    @if (isDropdownOpen()) {
+      <div class="searchable-select-dropdown">
+        @for (option of filteredOptions(); track option.code) {
+          <div class="dropdown-option" (mousedown)="selectOption(option)">
+            {{ option.label }}
+          </div>
+        }
+        @if (filteredOptions().length === 0) {
+          <div class="dropdown-no-results">Nenhum resultado encontrado</div>
+        }
+      </div>
+    }
+
+    @if (isOtherOptionSelected()) {
+      <input
+        type="text"
+        class="custom-other-input"
+        placeholder="Digite o nome..."
+        [value]="customOtherText()"
+        (input)="onCustomOtherInput($event)"
+      />
+    }
+  }
+
+</div>

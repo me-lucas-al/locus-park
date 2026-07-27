@@ -34,7 +34,8 @@ class RevenueSummaryCalculatorTest {
     @DisplayName("Deve contar saidas gratuitas quando o liquido pago for zero")
     void countsFreeExitsWhenNetIsZero() {
         TicketRecord freeExit = new TicketRecord(java.util.UUID.randomUUID(), com.locuspark.api.enums.TicketStatus.PAID,
-                LocalDateTime.of(2026, 1, 1, 8, 0), LocalDateTime.of(2026, 1, 1, 8, 5),
+                LocalDateTime.of(2026, 1, 1, 8, 0).atZone(java.time.ZoneId.of("America/Sao_Paulo")).toInstant(),
+                LocalDateTime.of(2026, 1, 1, 8, 5).atZone(java.time.ZoneId.of("America/Sao_Paulo")).toInstant(),
                 BigDecimal.ZERO, BigDecimal.ZERO, BigDecimal.ZERO, com.locuspark.api.enums.PaymentMethod.PIX,
                 new com.locuspark.api.types.Plate("FRE0001"), "Gol", "Prata", com.locuspark.api.enums.VehicleType.CAR,
                 null, null, null, null, null, null, null);

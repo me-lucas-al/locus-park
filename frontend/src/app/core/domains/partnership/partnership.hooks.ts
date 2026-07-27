@@ -9,6 +9,7 @@ export function usePartnershipsQuery() {
   return injectQuery(() => ({
     queryKey: ['partnerships'] as const,
     queryFn: () => lastValueFrom(service.listAll()),
+    staleTime: Infinity,
   }));
 }
 
@@ -18,6 +19,7 @@ export function usePartnershipByIdQuery(id: Signal<string>) {
     queryKey: ['partnerships', id()] as const,
     queryFn: () => lastValueFrom(service.getById(id())),
     enabled: !!id(),
+    staleTime: Infinity,
   }));
 }
 

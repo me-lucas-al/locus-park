@@ -65,7 +65,7 @@
           <option value="">Sem convênio</option>
           @for (p of partnershipsQuery.data(); track p.id) {
             <option [value]="p.id">
-              {{ p.name }} ({{ p.discountType === 'percentage' ? p.value + '%' : 'R$ ' + p.value }})
+              {{ p.name }} ({{ p.discountType.toUpperCase() === 'PERCENTAGE' ? p.value + '%' : 'R$ ' + p.value }})
             </option>
           }
         </select>

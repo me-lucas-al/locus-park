@@ -18,7 +18,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -26,6 +28,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DataJpaTest
 @DisplayName("Testes de Projeção de Tickets - TicketRepository")
 class TicketRecordProjectionTest {
+
+    private static final ZoneId PATIO_ZONE = ZoneId.of("America/Sao_Paulo");
+
+    private static Instant at(LocalDateTime local) {
+        return local.atZone(PATIO_ZONE).toInstant();
+    }
 
     @Autowired
     private TestEntityManager entityManager;
@@ -60,8 +68,8 @@ class TicketRecordProjectionTest {
                 .company(company)
                 .vehicle(vehicle)
                 .status(status)
-                .enteredAt(enteredAt)
-                .exitedAt(exitedAt)
+                .enteredAt(at(enteredAt))
+                .exitedAt(exitedAt != null ? at(exitedAt) : null)
                 .totalAmount(exitedAt != null ? java.math.BigDecimal.valueOf(50) : null)
                 .build();
         return entityManager.persistAndFlush(ticket);
@@ -78,7 +86,7 @@ class TicketRecordProjectionTest {
                 LocalDateTime.of(2026, 1, 10, 8, 0), LocalDateTime.of(2026, 1, 10, 9, 0));
 
         List<TicketRecord> result = ticketRepository.findPaidRecordsByExitWindow(company.getId(),
-                LocalDateTime.of(2026, 1, 1, 0, 0), LocalDateTime.of(2026, 2, 1, 0, 0));
+                at(LocalDateTime.of(2026, 1, 1, 0, 0)), at(LocalDateTime.of(2026, 2, 1, 0, 0)));
 
         assertThat(result).hasSize(1);
         assertThat(result.get(0).plate()).isEqualTo(new Plate("ABC1234"));
@@ -94,7 +102,7 @@ class TicketRecordProjectionTest {
                 LocalDateTime.of(2026, 1, 10, 8, 0), LocalDateTime.of(2026, 1, 10, 9, 0));
 
         List<TicketRecord> result = ticketRepository.findPaidRecordsByExitWindow(company.getId(),
-                LocalDateTime.of(2026, 1, 1, 0, 0), LocalDateTime.of(2026, 2, 1, 0, 0));
+                at(LocalDateTime.of(2026, 1, 1, 0, 0)), at(LocalDateTime.of(2026, 2, 1, 0, 0)));
 
         assertThat(result).hasSize(1);
         assertThat(result.get(0).clientId()).isNull();
@@ -112,7 +120,7 @@ class TicketRecordProjectionTest {
         persistTicket(companyB, vehicleB, TicketStatus.PAID, LocalDateTime.of(2026, 1, 10, 8, 0), LocalDateTime.of(2026, 1, 10, 9, 0));
 
         List<TicketRecord> result = ticketRepository.findPaidRecordsByExitWindow(companyA.getId(),
-                LocalDateTime.of(2026, 1, 1, 0, 0), LocalDateTime.of(2026, 2, 1, 0, 0));
+                at(LocalDateTime.of(2026, 1, 1, 0, 0)), at(LocalDateTime.of(2026, 2, 1, 0, 0)));
 
         assertThat(result).hasSize(1);
         assertThat(result.get(0).plate()).isEqualTo(new Plate("AAA1111"));
@@ -129,7 +137,7 @@ class TicketRecordProjectionTest {
                 LocalDateTime.of(2026, 1, 31, 0, 0), LocalDateTime.of(2026, 2, 1, 0, 0));
 
         List<TicketRecord> result = ticketRepository.findPaidRecordsByExitWindow(company.getId(),
-                LocalDateTime.of(2026, 1, 1, 0, 0), LocalDateTime.of(2026, 2, 1, 0, 0));
+                at(LocalDateTime.of(2026, 1, 1, 0, 0)), at(LocalDateTime.of(2026, 2, 1, 0, 0)));
 
         assertThat(result).hasSize(1);
     }
@@ -141,7 +149,7 @@ class TicketRecordProjectionTest {
         Vehicle vehicle = persistVehicle(company, "CRO0001", null);
         persistTicket(company, vehicle, TicketStatus.ACTIVE, LocalDateTime.of(2025, 12, 1, 0, 0), null);
 
-        long presentAtStart = ticketRepository.countPresentAt(company.getId(), LocalDateTime.of(2026, 1, 1, 0, 0));
+        long presentAtStart = ticketRepository.countPresentAt(company.getId(), at(LocalDateTime.of(2026, 1, 1, 0, 0)));
 
         assertThat(presentAtStart).isEqualTo(1);
     }
@@ -154,7 +162,7 @@ class TicketRecordProjectionTest {
         persistTicket(company, vehicle, TicketStatus.ACTIVE, LocalDateTime.of(2026, 1, 15, 8, 0), null);
 
         List<TicketRecord> result = ticketRepository.findRecordsByEntryWindow(company.getId(),
-                LocalDateTime.of(2026, 1, 1, 0, 0), LocalDateTime.of(2026, 2, 1, 0, 0));
+                at(LocalDateTime.of(2026, 1, 1, 0, 0)), at(LocalDateTime.of(2026, 2, 1, 0, 0)));
 
         assertThat(result).hasSize(1);
         assertThat(result.get(0).status()).isEqualTo(TicketStatus.ACTIVE);

@@ -5,7 +5,7 @@ import com.locuspark.api.enums.TicketStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.UUID;
 
 @Entity
@@ -35,10 +35,10 @@ public class Ticket {
     private Partnership partnership;
 
     @Column(name = "entered_at", nullable = false)
-    private LocalDateTime enteredAt;
+    private Instant enteredAt;
 
     @Column(name = "exited_at")
-    private LocalDateTime exitedAt;
+    private Instant exitedAt;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)

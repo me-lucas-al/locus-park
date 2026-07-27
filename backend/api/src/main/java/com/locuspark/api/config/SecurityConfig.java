@@ -41,9 +41,11 @@ public class SecurityConfig {
                         // Dentro de HttpSecurity.authorizeHttpRequests:
                         .requestMatchers(HttpMethod.POST, "/users/company/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
 
-                        .requestMatchers("/v3/api-docs/**").permitAll()
-                        .requestMatchers("/swagger-ui/**").permitAll()
+                        .requestMatchers("/v3/api-docs", "/v3/api-docs/**").permitAll()
+                        .requestMatchers("/swagger-ui", "/swagger-ui/**").permitAll()
                         .requestMatchers("/swagger-ui.html").permitAll()
+                        .requestMatchers("/swagger-resources", "/swagger-resources/**").permitAll()
+                        .requestMatchers("/webjars/**").permitAll()
                         // --- REGRAS PARA COMPANIES ---
                         // Criar, Deletar e Listar todas as empresas é restrito ao dono do SaaS
                         .requestMatchers(HttpMethod.POST, "/companies").hasRole("SUPER_ADMIN")

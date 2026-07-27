@@ -153,4 +153,31 @@ class UserServiceTest {
             verify(userRepository, never()).save(any());
         }
     }
+
+    @Nested
+    @DisplayName("List All Users By Company")
+    class ListAllByCompanyTests {
+
+        @Test
+        @DisplayName("Deve retornar lista de usuários da empresa correspondente")
+        void shouldReturnUsersOfCompany() {
+            UUID companyId = UUID.randomUUID();
+            Company targetCompany = Company.builder().id(companyId).name("Target Company").build();
+            User user1 = User.builder().id(UUID.randomUUID()).username("user1").role(UserRole.EMPLOYEE).company(targetCompany).build();
+            User user2 = User.builder().id(UUID.randomUUID()).username("user2").role(UserRole.EMPLOYEE).company(targetCompany).build();
+            
+            java.util.List<User> mockUsers = java.util.List.of(user1, user2);
+            when(userRepository.findByCompanyId(companyId)).thenReturn(mockUsers);
+            when(userMapper.toResponse(user1)).thenReturn(new UserResponse(user1.getId(), "user1", UserRole.EMPLOYEE, companyId));
+            when(userMapper.toResponse(user2)).thenReturn(new UserResponse(user2.getId(), "user2", UserRole.EMPLOYEE, companyId));
+
+            java.util.List<UserResponse> responses = userService.listAllByCompany(companyId);
+
+            assertNotNull(responses);
+            assertEquals(2, responses.size());
+            verify(userRepository).findByCompanyId(companyId);
+            verify(userMapper).toResponse(user1);
+            verify(userMapper).toResponse(user2);
+        }
+    }
 }

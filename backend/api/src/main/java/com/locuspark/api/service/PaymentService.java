@@ -11,18 +11,22 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
-import java.time.LocalDateTime;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 
 @Service
 @RequiredArgsConstructor
 public class PaymentService {
 
+    private static final ZoneId PATIO_ZONE = ZoneId.of("America/Sao_Paulo");
+
     private final TolerancePolicy tolerancePolicy;
     private final GrossStayChargeCalculator grossStayChargeCalculator;
     private final PartnershipDiscountCalculator partnershipDiscountCalculator;
 
-    public StayCharge calculateStayCharge(Ticket ticket, LocalDateTime exitTime, TariffConfiguration tariff, PricingConfiguration pricing) {
-        LocalDateTime entryTime = ticket.getEnteredAt();
+    public StayCharge calculateStayCharge(Ticket ticket, Instant exitTime, TariffConfiguration tariff, PricingConfiguration pricing) {
+        Instant entryTime = ticket.getEnteredAt();
 
         if (exitTime.isBefore(entryTime)) {
             throw new IllegalArgumentException("A data de saída não pode ser menor que a data de entrada.");
@@ -34,7 +38,9 @@ public class PaymentService {
             return StayCharge.free();
         }
 
-        boolean crossedDate = entryTime.toLocalDate().isBefore(exitTime.toLocalDate());
+        LocalDate entryDate = entryTime.atZone(PATIO_ZONE).toLocalDate();
+        LocalDate exitDate = exitTime.atZone(PATIO_ZONE).toLocalDate();
+        boolean crossedDate = entryDate.isBefore(exitDate);
         var gross = grossStayChargeCalculator.grossAmount(stayMinutes, crossedDate, tariff, pricing);
 
         var net = ticket.getPartnership() != null

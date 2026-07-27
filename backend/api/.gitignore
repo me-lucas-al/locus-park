@@ -34,3 +34,6 @@ build/
 
 ### Environment ###
 application-local.properties
+
+### Local H2 dev database ###
+/data/

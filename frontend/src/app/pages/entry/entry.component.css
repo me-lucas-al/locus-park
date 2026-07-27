@@ -14,7 +14,6 @@
   }
 }
 
-/* Coluna Formulário */
 .entry-form-col {
   display: flex;
   flex-direction: column;
@@ -100,7 +99,6 @@
   box-shadow: 0 0 0 1px #0f172a;
 }
 
-/* Toggle mensalista */
 .toggle-field {
   display: flex;
   justify-content: space-between;
@@ -181,7 +179,6 @@
   background-color: #000000;
 }
 
-/* Coluna Lateral Info Cards */
 .entry-info-col {
   display: flex;
   flex-direction: column;
@@ -256,4 +253,58 @@
   background-color: #10b981;
   border-radius: 999px;
   transition: width 0.3s ease;
+}
+
+.btn-confirmar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-confirmar:disabled:hover {
+  background-color: #0f172a;
+}
+
+.tariff-warning-alert {
+  background-color: #fff7ed;
+  border: 1px solid #ffedd5;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.tariff-warning-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.alert-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tariff-warning-content h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #c2410c;
+  margin: 0 0 4px 0;
+}
+
+.tariff-warning-content p {
+  font-size: 0.85rem;
+  color: #ea580c;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tariff-warning-content a {
+  color: #c2410c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.tariff-warning-content a:hover {
+  color: #9a3412;
 }

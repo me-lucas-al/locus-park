@@ -4,6 +4,20 @@
     <button class="close-btn" (click)="cancel.emit()">&times;</button>
   </div>
 
+  @if (isEntryBlocked()) {
+    <div class="tariff-warning-alert fade-in">
+      <div class="tariff-warning-content">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#ea580c" class="alert-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+        </svg>
+        <div>
+          <h3>Preços não configurados</h3>
+          <p>Configure os preços do estacionamento. <a routerLink="/settings-price" (click)="cancel.emit()">Configurar tarifas agora</a>.</p>
+        </div>
+      </div>
+    </div>
+  }
+
   <form (submit)="$event.preventDefault(); submitForm()">
     <div class="form-field">
       <label for="plate">Placa <span class="required">*</span></label>
@@ -19,14 +33,22 @@
     </div>
 
     <div class="form-field">
-      <label for="model">Modelo / Marca <span class="required">*</span></label>
-      <input
-        id="model"
-        type="text"
-        [value]="modelName()"
-        (input)="modelName.set($any($event.target).value)"
-        placeholder="Ex: Honda Civic, Toyota Corolla..."
-        required
+      <label for="vehicleType">Tipo de Veículo</label>
+      <select
+        id="vehicleType"
+        [value]="vehicleType()"
+        (change)="vehicleType.set($any($event.target).value)"
+      >
+        <option value="CAR">Carro</option>
+        <option value="MOTORCYCLE">Moto</option>
+        <option value="VAN">Van</option>
+        <option value="TRUCK">Caminhão</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <app-vehicle-brand-model-select
+        (modelSelected)="onVehicleModelSelected($event)"
       />
     </div>
 
@@ -56,7 +78,7 @@
       <button type="button" class="btn-cancel" (click)="cancel.emit()">
         Cancelar
       </button>
-      <button type="submit" class="btn-submit" [disabled]="isPending()">
+      <button type="submit" class="btn-submit" [disabled]="isPending() || isEntryBlocked()">
         {{ isPending() ? 'Salvando...' : 'Confirmar' }}
       </button>
     </div>

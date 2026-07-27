@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.UUID;
 
@@ -18,13 +19,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DisplayName("Testes de OccupancySummaryCalculator")
 class OccupancySummaryCalculatorTest {
 
+    private static final ZoneId PATIO_ZONE = ZoneId.of("America/Sao_Paulo");
+
     private final OccupancySummaryCalculator calculator = new OccupancySummaryCalculator();
     private final LocalDateTime from = LocalDateTime.of(2026, 1, 1, 0, 0);
     private final LocalDateTime to = LocalDateTime.of(2026, 1, 2, 0, 0);
 
     private TicketRecord ticket(LocalDateTime enteredAt, LocalDateTime exitedAt) {
         return new TicketRecord(UUID.randomUUID(), exitedAt != null ? TicketStatus.PAID : TicketStatus.ACTIVE,
-                enteredAt, exitedAt, BigDecimal.TEN, BigDecimal.TEN, BigDecimal.ZERO, PaymentMethod.PIX,
+                enteredAt.atZone(PATIO_ZONE).toInstant(), exitedAt != null ? exitedAt.atZone(PATIO_ZONE).toInstant() : null,
+                BigDecimal.TEN, BigDecimal.TEN, BigDecimal.ZERO, PaymentMethod.PIX,
                 new Plate("ABC1234"), "Gol", "Prata", VehicleType.CAR, null, null, null, null, null, null, null);
     }
 

@@ -19,11 +19,11 @@ public class OccupancySummaryCalculator {
     public OccupancySummaryResponse calculate(TicketWindow window, Integer totalSpots, LocalDateTime fromInclusive, LocalDateTime toExclusive) {
         List<Event> events = new ArrayList<>();
         for (TicketRecord record : window.all()) {
-            if (!record.enteredAt().isBefore(fromInclusive)) {
-                events.add(new Event(record.enteredAt(), 1));
+            if (!record.enteredAtLocal().isBefore(fromInclusive)) {
+                events.add(new Event(record.enteredAtLocal(), 1));
             }
-            if (record.exitedAt() != null && !record.exitedAt().isBefore(fromInclusive) && record.exitedAt().isBefore(toExclusive)) {
-                events.add(new Event(record.exitedAt(), -1));
+            if (record.exitedAtLocal() != null && !record.exitedAtLocal().isBefore(fromInclusive) && record.exitedAtLocal().isBefore(toExclusive)) {
+                events.add(new Event(record.exitedAtLocal(), -1));
             }
         }
         events.sort(Comparator.comparing(Event::at).thenComparingInt(Event::delta));

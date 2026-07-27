@@ -4,7 +4,7 @@ import com.locuspark.api.repository.TicketRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.UUID;
 
 @Component
@@ -13,7 +13,7 @@ public class TicketWindowLoader {
 
     private final TicketRepository ticketRepository;
 
-    public TicketWindow load(UUID companyId, LocalDateTime fromInclusive, LocalDateTime toExclusive) {
+    public TicketWindow load(UUID companyId, Instant fromInclusive, Instant toExclusive) {
         var paid = ticketRepository.findPaidRecordsByExitWindow(companyId, fromInclusive, toExclusive);
         var entered = ticketRepository.findRecordsByEntryWindow(companyId, fromInclusive, toExclusive);
         long presentAtStart = ticketRepository.countPresentAt(companyId, fromInclusive);

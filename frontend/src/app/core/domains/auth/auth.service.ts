@@ -27,6 +27,13 @@ export class AuthService {
       tap((response) => {
         this.token.set(response.token);
         localStorage.setItem('token', response.token);
+        if (response.role) {
+          localStorage.setItem('role', response.role);
+        }
+        if (response.companyId) {
+          this.companyId.set(response.companyId);
+          localStorage.setItem('companyId', response.companyId);
+        }
       })
     );
   }
@@ -40,5 +47,6 @@ export class AuthService {
     this.companyId.set(null);
     localStorage.removeItem('token');
     localStorage.removeItem('companyId');
+    localStorage.removeItem('role');
   }
 }

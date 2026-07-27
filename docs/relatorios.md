@@ -23,6 +23,10 @@ Mapa de navegação para não precisar ler os ~90 arquivos do módulo. Para o *p
 
 **Faturamento, desconto e formas de pagamento são apurados pela data de SAÍDA** (quando o dinheiro entrou). **Carros, ocupação e picos de horário são apurados pela data de ENTRADA.** Cada bloco da UI e cada consulta (`findPaidRecordsByExitWindow` vs `findRecordsByEntryWindow`) rotula qual eixo está usando — nunca sobrepor os dois num mesmo gráfico.
 
+## Fuso horário
+
+`Ticket.enteredAt`/`exitedAt` são `Instant` (UTC, tipo inequívoco — correção trazida pelo merge com `origin/master`, que resolveu uma ambiguidade real entre front e back). O relatório continua precisando de hora de parede em `America/Sao_Paulo` para bucket diário/horário, pico de ocupação e exibição. Ponto único de conversão: `TicketRecord.enteredAtLocal()`/`.exitedAtLocal()` (mesmo padrão dos acessores derivados `net()/gross()/discount()`). Todo calculador, formatter e exportador consome os acessores `*Local()`, nunca `enteredAt()`/`exitedAt()` cru — isso mantém a garantia original do design (§1.7 do plano): o resto do módulo opera sobre `LocalDateTime` já convertido, sem `ZoneId` espalhado pelo código. `ReportFilter` espelha o mesmo par: `fromInclusive()/toExclusive()` (`LocalDateTime`, para calculadoras) e `fromInstant()/toInstant()` (`Instant`, para os limites de consulta no banco).
+
 ## Fallback de linhas legadas
 
 Tickets pagos antes da migration V4 têm `gross_amount`/`discount_amount` `NULL`. `TicketRecord.gross()`/`.discount()` são os **únicos** pontos que leem esses campos — todo agregador consome os acessores derivados, nunca a coluna crua. Não replicar o `null`-check em nenhum outro lugar.

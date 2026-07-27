@@ -1,6 +1,6 @@
 <div class="settings-page">
   <div class="settings-header">
-    <h1>Configuracoes</h1>
+    <h1>Configurações</h1>
   </div>
 
   <div class="settings-card">
@@ -190,8 +190,8 @@
                 [value]="newPartnershipDiscountType()"
                 (change)="newPartnershipDiscountType.set($any($event.target).value)"
               >
-                <option value="percentage">Porcentagem (%)</option>
-                <option value="fixed">Valor Fixo (R$)</option>
+                <option value="PERCENTAGE">Porcentagem (%)</option>
+                <option value="FIXED_VALUE">Valor Fixo (R$)</option>
               </select>
             </div>
             <div class="form-field">
@@ -236,18 +236,70 @@
                 </thead>
                 <tbody>
                   @for (p of partnershipsQuery.data(); track p.id) {
-                    <tr>
-                      <td class="text-bold">{{ p.name }}</td>
-                      <td>{{ p.discountType === 'percentage' ? 'Porcentagem' : 'Valor Fixo' }}</td>
-                      <td>{{ p.discountType === 'percentage' ? p.value + '%' : 'R$ ' + p.value }}</td>
-                      <td class="text-right">
-                        <button class="btn-delete" (click)="deletePartnership(p.id)" title="Excluir Convênio">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.34 6.6m-3.6 0-.34-6.6M9.25 5.05h4.83m-6.47-.23 10.14-.002M9.25 5.05A1.75 1.75 0 0 0 7.5 6.79v11.851a1.75 1.75 0 0 0 1.75 1.75h6.5a1.75 1.75 0 0 0 1.75-1.75V6.8a1.75 1.75 0 0 0-1.75-1.75M9.25 5.05h4.83" />
-                          </svg>
-                        </button>
-                      </td>
-                    </tr>
+                    @if (editingPartnershipId() === p.id) {
+                      <tr class="editing-row">
+                        <td>
+                          <input
+                            type="text"
+                            [value]="editingPartnershipName()"
+                            (input)="editingPartnershipName.set($any($event.target).value)"
+                            class="edit-input"
+                            required
+                          />
+                        </td>
+                        <td>
+                          <select
+                            [value]="editingPartnershipDiscountType()"
+                            (change)="editingPartnershipDiscountType.set($any($event.target).value)"
+                            class="edit-input"
+                          >
+                            <option value="PERCENTAGE">Porcentagem (%)</option>
+                            <option value="FIXED_VALUE">Valor Fixo (R$)</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="number"
+                            step="0.01"
+                            [value]="editingPartnershipValue()"
+                            (input)="editingPartnershipValue.set(+$any($event.target).value)"
+                            class="edit-input"
+                            style="max-width: 100px;"
+                            required
+                          />
+                        </td>
+                        <td class="text-right">
+                          <button class="btn-save" (click)="saveEdit(p.id)" [disabled]="isAddingPartnership()" title="Salvar Alterações">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="16" height="16">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                          </button>
+                          <button class="btn-cancel" (click)="cancelEdit()" [disabled]="isAddingPartnership()" title="Cancelar Edição">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="16" height="16">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+                    } @else {
+                      <tr>
+                        <td class="text-bold">{{ p.name }}</td>
+                        <td>{{ p.discountType.toUpperCase() === 'PERCENTAGE' ? 'Porcentagem' : 'Valor Fixo' }}</td>
+                        <td>{{ p.discountType.toUpperCase() === 'PERCENTAGE' ? p.value + '%' : 'R$ ' + p.value }}</td>
+                        <td class="text-right">
+                          <button class="btn-edit" (click)="startEdit(p)" title="Editar Convênio" [disabled]="editingPartnershipId() !== null">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.83 21.75a4.5 4.5 0 0 1-2.031 1.243l-2.722.816a.438.438 0 0 1-.516-.516l.816-2.722a4.5 4.5 0 0 1 1.242-2.033L16.862 4.487Zm0 0L19.5 7.125" />
+                            </svg>
+                          </button>
+                          <button class="btn-delete" (click)="deletePartnership(p.id)" title="Excluir Convênio" [disabled]="editingPartnershipId() !== null">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.34 6.6m-3.6 0-.34-6.6M9.25 5.05h4.83m-6.47-.23 10.14-.002M9.25 5.05A1.75 1.75 0 0 0 7.5 6.79v11.851a1.75 1.75 0 0 0 1.75 1.75h6.5a1.75 1.75 0 0 0 1.75-1.75V6.8a1.75 1.75 0 0 0-1.75-1.75M9.25 5.05h4.83" />
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   }
                 </tbody>
               </table>
@@ -259,7 +311,7 @@
 
     <!-- Aba: Regras & Extras -->
     @if (activeTab() === 'rules') {
-      <div class="tab-content rules-tab">
+      <form class="tab-content rules-tab" (submit)="$event.preventDefault(); saveExtraSettings()">
         <div class="info-alert">
           <svg class="info-alert-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
@@ -272,20 +324,34 @@
 
         <div class="form-row">
           <div class="form-field">
-            <label>Taxa de Perda de Ticket (R$)</label>
-            <input type="number" value="30.00" disabled />
+            <label for="lostTicketRate">Taxa de Perda de Ticket (R$)</label>
+            <input
+              id="lostTicketRate"
+              type="number"
+              step="0.01"
+              [value]="lostTicketRate()"
+              (input)="lostTicketRate.set(+$any($event.target).value)"
+              required
+            />
           </div>
 
           <div class="form-field">
-            <label>Cobrança de Pernoite Início</label>
-            <input type="text" value="22:00" disabled />
+            <label for="overnightStartHours">Cobrança de Pernoite Início</label>
+            <input
+              id="overnightStartHours"
+              type="text"
+              [value]="overnightStartHours()"
+              (input)="overnightStartHours.set($any($event.target).value)"
+              placeholder="Ex: 22:00"
+              required
+            />
           </div>
         </div>
 
         <div class="form-actions">
-          <button type="button" class="btn-action" disabled>Salvar Configurações Extra</button>
+          <button type="submit" class="btn-action" [appLoading]="isSavingExtra()" loadingText="Salvando...">Salvar Configurações Extra</button>
         </div>
-      </div>
+      </form>
     }
   </div>
 </div>
