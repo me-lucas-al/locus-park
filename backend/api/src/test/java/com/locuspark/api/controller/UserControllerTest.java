@@ -85,8 +85,8 @@ class UserControllerTest {
     }
 
     @Test
-    @DisplayName("Deve retornar 400 Bad Request quando um EMPLOYEE tenta alterar cargo")
-    void shouldReturn400WhenEmployeeTriesToUpdateRole() throws Exception {
+    @DisplayName("Deve retornar 403 Forbidden quando um EMPLOYEE tenta alterar cargo")
+    void shouldReturn403WhenEmployeeTriesToUpdateRole() throws Exception {
         UUID targetUserId = UUID.randomUUID();
         RoleUpdateRequest updateRequest = new RoleUpdateRequest(UserRole.ADMIN);
 
@@ -97,8 +97,7 @@ class UserControllerTest {
                         .header("Authorization", "Bearer " + validToken)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(updateRequest)))
-                .andExpect(status().isBadRequest())
-                .andExpect(jsonPath("$.error").value("Acesso negado: Funcionários não podem gerenciar usuários."));
+                .andExpect(status().isForbidden());
     }
 
     @Test

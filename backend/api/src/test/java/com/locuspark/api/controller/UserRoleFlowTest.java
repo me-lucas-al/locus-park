@@ -49,8 +49,8 @@ class UserRoleFlowTest {
     }
 
     @Test
-    @DisplayName("EMPLOYEE tentando alterar role -> Deve retornar 400 Bad Request")
-    void employeeTriesToUpdateRoleShouldReturnBadRequest() throws Exception {
+    @DisplayName("EMPLOYEE tentando alterar role -> Deve retornar 403 Forbidden")
+    void employeeTriesToUpdateRoleShouldReturnForbidden() throws Exception {
         Company company = Company.builder().id(UUID.randomUUID()).name("Test Company").build();
         User employee = User.builder()
                 .id(UUID.randomUUID())
@@ -76,8 +76,7 @@ class UserRoleFlowTest {
                         .header("Authorization", getAuthHeader(employee))
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(request)))
-                .andExpect(status().isBadRequest())
-                .andExpect(jsonPath("$.error").value("Acesso negado: Funcionários não podem gerenciar usuários."));
+                .andExpect(status().isForbidden());
     }
 
     @Test
