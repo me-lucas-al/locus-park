@@ -32,11 +32,12 @@ export class Exit {
   // Filtro de tickets ativos por placa ou modelo
   protected readonly filteredTickets = computed(() => {
     const term = this.searchTerm().trim().toLowerCase();
-    const tickets = this.ticketsQuery.data() || [];
+    const rawTickets = this.ticketsQuery.data() || [];
+    const activeTickets = rawTickets.filter((t) => !t.exitedAt && t.status === 'ACTIVE');
 
     if (!term) return [];
 
-    return tickets.filter(
+    return activeTickets.filter(
       (t) =>
         t.vehicle.plate.toLowerCase().includes(term) ||
         t.vehicle.model.toLowerCase().includes(term)

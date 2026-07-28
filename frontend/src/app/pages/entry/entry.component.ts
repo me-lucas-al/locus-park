@@ -69,7 +69,8 @@ export class Entry implements OnInit, OnDestroy {
   );
 
   protected readonly availableSpots = computed<SpotOption[]>(() => {
-    const activeTickets = this.ticketsQuery.data() || [];
+    const rawTickets = this.ticketsQuery.data() || [];
+    const activeTickets = rawTickets.filter((t) => !t.exitedAt && t.status === 'ACTIVE');
     const occupiedNumbers = new Set(
       activeTickets.map((t) => this.spotAssignmentService.getSpot(t)),
     );
@@ -133,9 +134,11 @@ export class Entry implements OnInit, OnDestroy {
             onError: () => this.toastService.error('Erro ao registrar entrada do veículo.'),
           });
         },
-        onError: () =>
+        onError: (err: any) =>
           this.toastService.error(
-            'Erro ao cadastrar veículo. Verifique se a placa já está no sistema.',
+            err?.error?.message ||
+              err?.message ||
+              'Erro ao cadastrar veículo. Verifique se os dados estão corretos.',
           ),
       },
     );

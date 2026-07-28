@@ -20,16 +20,16 @@ export class SpotAssignmentService {
   }
 
   getSpot(ticket: TicketResponse): number {
+    // Se o ticket já tiver exitedAt (finalizado) ou não estiver ATIVO, não possui vaga ativa
+    if (ticket.exitedAt || ticket.status === 'PAID') {
+      return 0;
+    }
+
     const assignments = this.getAssignments();
     
     // Se já tiver vaga atribuída no storage, retorna
     if (assignments[ticket.id]) {
       return assignments[ticket.id];
-    }
-
-    // Se o ticket já tiver exitedAt (finalizado), não precisamos de vaga ativa
-    if (ticket.exitedAt) {
-      return 0;
     }
 
     // Achar uma vaga disponível de 1 a 120
@@ -63,7 +63,9 @@ export class SpotAssignmentService {
 
   cleanInactiveTickets(activeTickets: TicketResponse[]): void {
     const assignments = this.getAssignments();
-    const activeIds = new Set(activeTickets.map((t) => t.id));
+    const activeIds = new Set(
+      activeTickets.filter((t) => !t.exitedAt && t.status === 'ACTIVE').map((t) => t.id),
+    );
     
     let changed = false;
     Object.keys(assignments).forEach((id) => {

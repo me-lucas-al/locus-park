@@ -101,7 +101,10 @@ export class ParkingSpotForm {
             onError: () => this.toastService.error('Erro ao realizar check-in do veículo.'),
           });
         },
-        onError: () => this.toastService.error('Erro ao cadastrar veículo.'),
+        onError: (err: any) =>
+          this.toastService.error(
+            err?.error?.message || err?.message || 'Erro ao cadastrar veículo.',
+          ),
       },
     );
   }

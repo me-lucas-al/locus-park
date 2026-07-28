@@ -31,7 +31,8 @@ export class ParkingSpots {
   readonly selectedSpotForRegister = signal<number | null>(null);
 
   protected readonly gridSpots = computed<GridSpot[]>(() => {
-    const activeTickets = this.ticketsQuery.data() || [];
+    const rawTickets = this.ticketsQuery.data() || [];
+    const activeTickets = rawTickets.filter((t) => !t.exitedAt && t.status === 'ACTIVE');
     this.spotAssignmentService.cleanInactiveTickets(activeTickets);
 
     const ticketMap = new Map<number, TicketResponse>();
