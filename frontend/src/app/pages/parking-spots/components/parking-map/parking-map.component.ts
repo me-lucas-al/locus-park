@@ -28,8 +28,8 @@ export class ParkingMap {
   protected readonly streets = computed<Street[]>(() => {
     const list = this.spots();
     const result: Street[] = [];
-    const chunkSize = 24;
-    const maxRowSpots = 12;
+    const chunkSize = 28;
+    const maxRowSpots = 14;
 
     for (let i = 0; i < list.length; i += chunkSize) {
       const chunk = list.slice(i, i + chunkSize);
