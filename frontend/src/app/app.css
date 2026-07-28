@@ -92,3 +92,13 @@ body {
     display: block;
   }
 }
+
+/* Acessibilidade & Foco Visível para navegação por teclado */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+}

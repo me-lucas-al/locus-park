@@ -25,11 +25,11 @@ export function getBackendErrorMessage(err: unknown, fallbackMessage: string): s
     if (errorBody) {
       // Cenário 1: O corpo do erro já é um objeto parseado (Content-Type: JSON)
       if (typeof errorBody === 'object') {
-        if ('error' in errorBody && typeof errorBody.error === 'string') {
-          return errorBody.error;
-        }
-        if ('message' in errorBody && typeof errorBody.message === 'string') {
+        if ('message' in errorBody && typeof errorBody.message === 'string' && errorBody.message.trim()) {
           return errorBody.message;
+        }
+        if ('error' in errorBody && typeof errorBody.error === 'string' && errorBody.error.trim()) {
+          return errorBody.error;
         }
       }
 
@@ -38,11 +38,11 @@ export function getBackendErrorMessage(err: unknown, fallbackMessage: string): s
         try {
           const parsed = JSON.parse(errorBody);
           if (parsed && typeof parsed === 'object') {
-            if ('error' in parsed && typeof parsed.error === 'string') {
-              return parsed.error;
-            }
-            if ('message' in parsed && typeof parsed.message === 'string') {
+            if ('message' in parsed && typeof parsed.message === 'string' && parsed.message.trim()) {
               return parsed.message;
+            }
+            if ('error' in parsed && typeof parsed.error === 'string' && parsed.error.trim()) {
+              return parsed.error;
             }
           }
         } catch {

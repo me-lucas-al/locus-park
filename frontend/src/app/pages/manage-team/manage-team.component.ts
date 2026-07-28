@@ -9,6 +9,7 @@ import {
   useUpdateUserRoleMutation
 } from '../../core/domains/user/user.hooks';
 import { ToastService } from '../../shared/services/toast.service';
+import { getApiErrorMessage } from '../../shared/utils/error-message';
 
 import { LoadingDirective } from '../../shared/directives/loading.directive';
 
@@ -124,8 +125,8 @@ export class ManageTeam {
             this.closeModal();
           }
         },
-        onError: () => {
-          this.toastService.error('Erro ao cadastrar novo colaborador.');
+        onError: (err: unknown) => {
+          this.toastService.error(getApiErrorMessage(err, 'Erro ao cadastrar novo colaborador.'));
         }
       }
     );
@@ -144,8 +145,8 @@ export class ManageTeam {
         onSuccess: () => {
           this.toastService.success(`Colaborador @${name} removido com sucesso!`);
         },
-        onError: () => {
-          this.toastService.error('Erro ao remover colaborador.');
+        onError: (err: unknown) => {
+          this.toastService.error(getApiErrorMessage(err, 'Erro ao remover colaborador.'));
         }
       });
     }

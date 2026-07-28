@@ -1,4 +1,4 @@
-import { extractErrorMessage } from './error-message';
+import { extractErrorMessage, getApiErrorMessage } from './error-message';
 
 describe('extractErrorMessage', () => {
   it('deve extrair o campo message do corpo JSON', () => {
@@ -21,3 +21,21 @@ describe('extractErrorMessage', () => {
     expect(extractErrorMessage('{"foo":"bar"}', 'fallback')).toBe('fallback');
   });
 });
+
+describe('getApiErrorMessage', () => {
+  it('deve extrair a mensagem de um HttpErrorResponse com objeto no body', () => {
+    const err = { error: { message: 'Já existe um veículo cadastrado com esta placa.' } };
+    expect(getApiErrorMessage(err, 'fallback')).toBe('Já existe um veículo cadastrado com esta placa.');
+  });
+
+  it('deve extrair a mensagem de um HttpErrorResponse com JSON string no body', () => {
+    const err = { error: '{"message":"Placa duplicada"}' };
+    expect(getApiErrorMessage(err, 'fallback')).toBe('Placa duplicada');
+  });
+
+  it('deve ignorar mensagem nativa Http failure response e usar o fallback', () => {
+    const err = { message: 'Http failure response for http://localhost:8080/vehicles: 400 Bad Request' };
+    expect(getApiErrorMessage(err, 'Erro ao cadastrar')).toBe('Erro ao cadastrar');
+  });
+});
+

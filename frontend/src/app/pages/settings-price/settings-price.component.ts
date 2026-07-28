@@ -14,6 +14,7 @@ import {
   useDeletePartnershipMutation
 } from '../../core/domains/partnership/partnership.hooks';
 import { ToastService } from '../../shared/services/toast.service';
+import { getApiErrorMessage } from '../../shared/utils/error-message';
 import { getBackendErrorMessage } from '../../core/utils/error-handler.util';
 
 import { LoadingDirective } from '../../shared/directives/loading.directive';

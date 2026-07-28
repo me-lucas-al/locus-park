@@ -11,6 +11,7 @@ import { useTariffQuery } from '../../../../core/domains/tariff/tariff.hooks';
 import { RouterModule } from '@angular/router';
 import { ToastService } from '../../../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../../../shared/services/spot-assignment.service';
+import { getApiErrorMessage } from '../../../../shared/utils/error-message';
 
 @Component({
   selector: 'app-parking-spot-form',
@@ -101,9 +102,9 @@ export class ParkingSpotForm {
             onError: () => this.toastService.error('Erro ao realizar check-in do veículo.'),
           });
         },
-        onError: (err: any) =>
+        onError: (err: unknown) =>
           this.toastService.error(
-            err?.error?.message || err?.message || 'Erro ao cadastrar veículo.',
+            getApiErrorMessage(err, 'Erro ao cadastrar veículo.'),
           ),
       },
     );

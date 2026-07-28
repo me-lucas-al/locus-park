@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { ToastService } from '../../shared/services/toast.service';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
 import { LoadingDirective } from '../../shared/directives/loading.directive';
+import { getApiErrorMessage } from '../../shared/utils/error-message';
 import { ColorSelectComponent } from '../../shared/components/color-select/color-select.component';
 import { VehicleBrandModelSelectComponent } from '../../shared/components/vehicle-brand-model-select/vehicle-brand-model-select.component';
 import { SelectOption } from '../../core/domains/vehicle-catalog/vehicle-catalog.types';
@@ -136,11 +137,9 @@ export class Entry implements OnInit, OnDestroy {
             onError: () => this.toastService.error('Erro ao registrar entrada do veículo.'),
           });
         },
-        onError: (err: any) =>
+        onError: (err: unknown) =>
           this.toastService.error(
-            err?.error?.message ||
-              err?.message ||
-              'Erro ao cadastrar veículo. Verifique se os dados estão corretos.',
+            getApiErrorMessage(err, 'Erro ao cadastrar veículo. Verifique se os dados estão corretos.'),
           ),
       },
     );

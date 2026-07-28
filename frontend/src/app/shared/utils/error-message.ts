@@ -1,3 +1,5 @@
+import { getBackendErrorMessage } from '../../core/utils/error-handler.util';
+
 export function extractErrorMessage(body: string, fallback: string): string {
   try {
     const parsed = JSON.parse(body);
@@ -7,3 +9,9 @@ export function extractErrorMessage(body: string, fallback: string): string {
     return fallback;
   }
 }
+
+export function getApiErrorMessage(err: unknown, fallback: string): string {
+  return getBackendErrorMessage(err, fallback);
+}
+
+
