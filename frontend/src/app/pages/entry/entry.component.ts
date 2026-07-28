@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { useTicketsQuery, useCheckInMutation } from '../../core/domains/ticket/ticket.hooks';
 import { useCreateVehicleMutation } from '../../core/domains/vehicle/vehicle.hooks';
 import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
+import { useCompanyQuery } from '../../core/domains/company/company.hooks';
 import { useTariffQuery } from '../../core/domains/tariff/tariff.hooks';
 import { RouterModule } from '@angular/router';
 import { ToastService } from '../../shared/services/toast.service';
@@ -30,8 +31,9 @@ export class Entry implements OnInit, OnDestroy {
   protected readonly ticketsQuery = useTicketsQuery();
   protected readonly profileQuery = useUserProfileQuery();
   protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
-  protected readonly checkInMutation = useCheckInMutation();
   protected readonly createVehicleMutation = useCreateVehicleMutation(this.companyId);
+  protected readonly companyQuery = useCompanyQuery(this.companyId);
+  protected readonly checkInMutation = useCheckInMutation();
   protected readonly tariffQuery = useTariffQuery();
 
   protected readonly isTariffConfigured = computed(() => {
@@ -49,7 +51,7 @@ export class Entry implements OnInit, OnDestroy {
   readonly timeString = signal('');
   readonly dateString = signal('');
   private clockInterval: ReturnType<typeof setInterval> | null = null;
-  readonly totalSpots = 120;
+  readonly totalSpots = computed(() => this.companyQuery.data()?.totalSpots ?? 0);
 
   readonly plate = signal('');
   readonly modelName = signal('');
@@ -65,7 +67,7 @@ export class Entry implements OnInit, OnDestroy {
     return tickets.filter((t) => !t.exitedAt).length;
   });
   protected readonly freeSpotsCount = computed(() =>
-    Math.max(0, this.totalSpots - this.occupiedSpotsCount()),
+    Math.max(0, this.totalSpots() - this.occupiedSpotsCount()),
   );
 
   protected readonly availableSpots = computed<SpotOption[]>(() => {
@@ -75,7 +77,7 @@ export class Entry implements OnInit, OnDestroy {
       activeTickets.map((t) => this.spotAssignmentService.getSpot(t)),
     );
     const options: SpotOption[] = [];
-    for (let i = 1; i <= this.totalSpots; i++) {
+    for (let i = 1; i <= this.totalSpots(); i++) {
       if (!occupiedNumbers.has(i)) {
         options.push({ number: i, label: `Vaga ${i}` });
       }

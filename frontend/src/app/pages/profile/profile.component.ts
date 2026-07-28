@@ -1,7 +1,8 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { useUserProfileQuery, useUpdateUserMutation } from '../../core/domains/user/user.hooks';
+import { useCompanyQuery } from '../../core/domains/company/company.hooks';
 import { ToastService } from '../../shared/services/toast.service';
 import { LoadingDirective } from '../../shared/directives/loading.directive';
 
@@ -16,6 +17,9 @@ export class Profile {
   protected readonly profileQuery = useUserProfileQuery();
   protected readonly updateUserMutation = useUpdateUserMutation();
   private readonly toastService = inject(ToastService);
+
+  protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
+  protected readonly companyQuery = useCompanyQuery(this.companyId);
 
   readonly currentPassword = signal('');
   readonly newPassword = signal('');

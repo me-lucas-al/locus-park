@@ -1,6 +1,8 @@
 import { Component, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { useTicketsQuery } from '../../core/domains/ticket/ticket.hooks';
+import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
+import { useCompanyQuery } from '../../core/domains/company/company.hooks';
 import { TicketResponse } from '../../core/domains/ticket/ticket.types';
 import { ModalExit } from '../../shared/components/modal-exit/modal-exit.component';
 import { SpotAssignmentService } from '../../shared/services/spot-assignment.service';
@@ -24,8 +26,12 @@ export class ParkingSpots {
   private readonly spotAssignmentService = inject(SpotAssignmentService);
 
   protected readonly ticketsQuery = useTicketsQuery();
+  protected readonly profileQuery = useUserProfileQuery();
 
-  readonly totalSpots = 120;
+  protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
+  protected readonly companyQuery = useCompanyQuery(this.companyId);
+
+  readonly totalSpots = computed(() => this.companyQuery.data()?.totalSpots ?? 0);
   readonly modalOpen = signal(false);
   readonly selectedTicket = signal<TicketResponse | null>(null);
   readonly selectedSpotForRegister = signal<number | null>(null);
@@ -44,7 +50,7 @@ export class ParkingSpots {
     });
 
     const spots: GridSpot[] = [];
-    for (let i = 1; i <= this.totalSpots; i++) {
+    for (let i = 1; i <= this.totalSpots(); i++) {
       const ticket = ticketMap.get(i) || null;
       spots.push({
         number: i,

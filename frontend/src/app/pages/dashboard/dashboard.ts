@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { useTicketsQuery } from '../../core/domains/ticket/ticket.hooks';
 import { useReportQuery } from '../../core/domains/report/report.hooks';
+import { useUserProfileQuery } from '../../core/domains/user/user.hooks';
+import { useCompanyQuery } from '../../core/domains/company/company.hooks';
 import { TicketResponse } from '../../core/domains/ticket/ticket.types';
 import { ModalExit } from '../../shared/components/modal-exit/modal-exit.component';
 import { ParkingMap } from '../parking-spots/components/parking-map/parking-map.component';
@@ -26,12 +28,16 @@ export class Dashboard {
 
   // Queries
   protected readonly ticketsQuery = useTicketsQuery();
+  protected readonly profileQuery = useUserProfileQuery();
 
   // Signals
   protected readonly todayRange = signal(buildRange('TODAY', new Date()));
   protected readonly reportQuery = useReportQuery(this.todayRange, { enabled: isAdmin() });
 
-  readonly totalSpots = signal<number>(120);
+  protected readonly companyId = computed(() => this.profileQuery.data()?.companyId || '');
+  protected readonly companyQuery = useCompanyQuery(this.companyId);
+
+  readonly totalSpots = computed(() => this.companyQuery.data()?.totalSpots ?? 0);
   readonly modalSaidaAberto = signal(false);
   readonly veiculoSelecionado = signal<TicketResponse | null>(null);
 
@@ -77,13 +83,7 @@ export class Dashboard {
     }
   }
 
-  protected updateTotalSpots(event: Event): void {
-    const input = event.target as HTMLInputElement;
-    const value = parseInt(input.value, 10);
-    if (!isNaN(value) && value > 0) {
-      this.totalSpots.set(value);
-    }
-  }
+
 
   protected formatCurrentDate(): string {
     const date = new Date();

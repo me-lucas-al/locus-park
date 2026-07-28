@@ -50,16 +50,7 @@
       <div class="header-title-area">
         <h2>Mapa de Vagas</h2>
         <div class="spots-config">
-          <label for="total-spots-input">Vagas Totais:</label>
-          <input
-            id="total-spots-input"
-            type="number"
-            min="10"
-            max="300"
-            [value]="totalSpots()"
-            (change)="updateTotalSpots($event)"
-            class="spots-input"
-          />
+          <span class="spots-total-badge">{{ totalSpots() }} vagas cadastradas</span>
         </div>
       </div>
       <div class="parking-legend">

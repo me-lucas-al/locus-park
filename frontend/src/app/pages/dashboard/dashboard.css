@@ -144,34 +144,14 @@
   gap: 16px;
 }
 
-.spots-config {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.spots-config label {
+.spots-total-badge {
   font-size: 13px;
   font-weight: 600;
-  color: #64748b;
-}
-
-.spots-input {
-  width: 70px;
-  height: 32px;
+  color: #0f172a;
+  background: #f1f5f9;
   border: 1.5px solid #e2e8f0;
   border-radius: 8px;
-  padding: 0 8px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #0f172a;
-  outline: none;
-  transition: border-color 0.15s;
-  text-align: center;
-}
-
-.spots-input:focus {
-  border-color: #0f172a;
+  padding: 4px 12px;
 }
 
 .btn-primary {

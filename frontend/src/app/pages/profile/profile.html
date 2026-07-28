@@ -38,15 +38,15 @@
         <div class="parking-info">
           <div class="info-group">
             <span class="info-label">NOME</span>
-            <span class="info-value">LocusPark Bragança Central</span>
+            <span class="info-value">{{ companyQuery.data()?.name || '—' }}</span>
           </div>
           <div class="info-group">
             <span class="info-label">CNPJ</span>
-            <span class="info-value">12.345.678/0001-99</span>
+            <span class="info-value">{{ companyQuery.data()?.cnpj || '—' }}</span>
           </div>
           <div class="info-group">
             <span class="info-label">VAGAS TOTAIS</span>
-            <span class="info-value text-bold">120 vagas</span>
+            <span class="info-value text-bold">{{ companyQuery.data()?.totalSpots ?? '—' }} vagas</span>
           </div>
         </div>
       </div>
