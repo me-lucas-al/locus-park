@@ -29,13 +29,13 @@ export class ParkingMap {
     const list = this.spots();
     const result: Street[] = [];
     const chunkSize = 24;
+    const maxRowSpots = 12;
 
     for (let i = 0; i < list.length; i += chunkSize) {
       const chunk = list.slice(i, i + chunkSize);
-      const mid = Math.ceil(chunk.length / 2);
       result.push({
-        topSpots: chunk.slice(0, mid),
-        bottomSpots: chunk.slice(mid)
+        topSpots: chunk.slice(0, maxRowSpots),
+        bottomSpots: chunk.slice(maxRowSpots)
       });
     }
 

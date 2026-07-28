@@ -22,21 +22,23 @@
           <div class="dashed-line"></div>
         </div>
 
-        <div class="parking-row bottom-row">
-          @for (spot of street.bottomSpots; track spot.number) {
-            <div
-              class="spot-box bottom-spot"
-              [class.free]="spot.status === 'Livre'"
-              [class.occupied]="spot.status === 'Ocupada'"
-              (click)="spotClick.emit(spot)"
-            >
-              <span class="spot-label">{{ spot.number }}</span>
-              @if (spot.status === 'Ocupada' && spot.ticket) {
-                <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
-              }
-            </div>
-          }
-        </div>
+        @if (street.bottomSpots.length > 0) {
+          <div class="parking-row bottom-row">
+            @for (spot of street.bottomSpots; track spot.number) {
+              <div
+                class="spot-box bottom-spot"
+                [class.free]="spot.status === 'Livre'"
+                [class.occupied]="spot.status === 'Ocupada'"
+                (click)="spotClick.emit(spot)"
+              >
+                <span class="spot-label">{{ spot.number }}</span>
+                @if (spot.status === 'Ocupada' && spot.ticket) {
+                  <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+                }
+              </div>
+            }
+          </div>
+        }
       </div>
     }
   </div>
