@@ -2,11 +2,27 @@
   width: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 8px -1px rgba(0, 0, 0, 0.03);
   border: 1px solid #f1f5f9;
   padding: 24px;
+}
+
+.parking-lot-map::-webkit-scrollbar {
+  height: 6px;
+}
+
+.parking-lot-map::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.parking-lot-map::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
 }
 
 .map-container {
@@ -113,4 +129,120 @@
   height: 2px;
   border-bottom: 2px dashed #eab308;
   opacity: 0.85;
+}
+
+.scroll-hint {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  padding: 0 0 12px;
+  letter-spacing: 0.03em;
+}
+
+.scroll-hint-icon {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .scroll-hint {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .parking-lot-map {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .map-container {
+    gap: 20px;
+    min-width: 800px;
+  }
+
+  .parking-street {
+    padding: 10px 12px;
+    gap: 6px;
+    border-radius: 10px;
+  }
+
+  .parking-row {
+    gap: 5px;
+  }
+
+  .spot-box {
+    height: 90px;
+    padding-bottom: 5px;
+  }
+
+  .top-spot {
+    border-width: 1.5px;
+  }
+
+  .bottom-spot {
+    border-width: 1.5px;
+    padding-top: 5px;
+  }
+
+  .spot-label {
+    font-size: 0.6rem;
+  }
+
+  .top-spot .spot-label {
+    top: 4px;
+  }
+
+  .bottom-spot .spot-label {
+    bottom: 4px;
+  }
+
+  .street-corridor {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parking-lot-map {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .map-container {
+    gap: 16px;
+    min-width: 700px;
+  }
+
+  .parking-street {
+    padding: 8px 10px;
+    gap: 5px;
+    border-radius: 8px;
+  }
+
+  .parking-row {
+    gap: 4px;
+  }
+
+  .spot-box {
+    height: 78px;
+    padding-bottom: 4px;
+  }
+
+  .bottom-spot {
+    padding-top: 4px;
+  }
+
+  .spot-label {
+    font-size: 0.55rem;
+  }
+
+  .street-corridor {
+    height: 32px;
+  }
 }
