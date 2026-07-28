@@ -63,12 +63,11 @@ public class ClientController {
             @PathVariable UUID id,
             @AuthenticationPrincipal User user) {
         validateUserAndCompany(user);
-        
-        // Apenas ADMINs da empresa têm permissão para deletar clientes do estacionamento
-        if (user.getRole() != UserRole.ADMIN) {
+
+        if (user.getRole() != UserRole.ADMIN && user.getRole() != UserRole.SUPER_ADMIN) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-        
+
         clientService.deleteClient(id, user.getCompany().getId());
         return ResponseEntity.noContent().build();
     }

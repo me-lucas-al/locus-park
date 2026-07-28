@@ -26,8 +26,8 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/reports/reports.component').then((m) => m.Reports),
     canActivate: [authGuard, adminGuard],
   },
-  { path: 'manage-team', component: ManageTeam, canActivate: [authGuard] },
-  { path: 'settings-price', component: SettingsPrice, canActivate: [authGuard] },
+  { path: 'manage-team', component: ManageTeam, canActivate: [authGuard, adminGuard] },
+  { path: 'settings-price', component: SettingsPrice, canActivate: [authGuard, adminGuard] },
   { path: 'profile', component: Profile, canActivate: [authGuard] },
   { path: '**', redirectTo: 'login' }
 ];

@@ -8,6 +8,8 @@ import com.locuspark.api.exception.ResourceNotFoundException;
 import com.locuspark.api.mapper.PartnershipMapper;
 import com.locuspark.api.repository.CompanyRepository;
 import com.locuspark.api.repository.PartnershipRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,6 +32,7 @@ public class PartnershipService {
         this.partnershipMapper = partnershipMapper;
     }
 
+    @Cacheable(value = "partnerships", key = "#companyId")
     @Transactional(readOnly = true)
     public List<PartnershipResponse> findAllByCompany(UUID companyId) {
         return partnershipRepository.findByCompanyId(companyId)
@@ -48,6 +51,7 @@ public class PartnershipService {
     }
 
     // 2. Método faltante: Criação de convênio associado à empresa logada
+    @CacheEvict(value = "partnerships", key = "#companyId")
     @Transactional
     public PartnershipResponse createPartnership(UUID companyId, PartnershipRequest request) {
         Company company = companyRepository.findById(companyId)
@@ -60,6 +64,7 @@ public class PartnershipService {
     }
 
     // 3. Método faltante: Atualização de convênio existente com proteção multi-tenant
+    @CacheEvict(value = "partnerships", key = "#companyId")
     @Transactional
     public PartnershipResponse updatePartnership(UUID id, UUID companyId, PartnershipRequest request) {
         Partnership partnership = partnershipRepository.findById(id)
@@ -71,6 +76,7 @@ public class PartnershipService {
     }
 
     // 4. Método faltante: Exclusão física/lógica do convênio do pátio
+    @CacheEvict(value = "partnerships", key = "#companyId")
     @Transactional
     public void deletePartnership(UUID id, UUID companyId) {
         Partnership partnership = partnershipRepository.findById(id)

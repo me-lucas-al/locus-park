@@ -90,9 +90,16 @@ public class UserService {
     }
 
     @Transactional
-    public UserResponse updateUser(UUID id, UserUpdateRequest request) {
+    public UserResponse updateUser(UUID id, UserUpdateRequest request, User currentUser) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new BusinessException("Usuário não encontrado."));
+
+        if (currentUser.getRole() != UserRole.SUPER_ADMIN
+                && (currentUser.getCompany() == null
+                        || user.getCompany() == null
+                        || !user.getCompany().getId().equals(currentUser.getCompany().getId()))) {
+            throw new BusinessException("Acesso negado: Este usuário pertence a outro pátio.");
+        }
 
         userMapper.updateUserFromDto(request, user);
 
@@ -105,9 +112,17 @@ public class UserService {
     }
 
     @Transactional
-    public void deleteUser(UUID id) {
+    public void deleteUser(UUID id, User currentUser) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new BusinessException("Usuário não encontrado."));
+
+        if (currentUser.getRole() != UserRole.SUPER_ADMIN
+                && (currentUser.getCompany() == null
+                        || user.getCompany() == null
+                        || !user.getCompany().getId().equals(currentUser.getCompany().getId()))) {
+            throw new BusinessException("Acesso negado: Este usuário pertence a outro pátio.");
+        }
+
         userRepository.delete(user);
     }
 

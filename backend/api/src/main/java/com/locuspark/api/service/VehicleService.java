@@ -126,9 +126,13 @@ public class VehicleService {
 
     @Transactional
     public void deleteVehicle(UUID id, UUID companyId) {
-        // Garante o isolamento: só deleta se for da empresa correta
         Vehicle vehicle = vehicleRepository.findByIdAndCompanyId(id, companyId)
                 .orElseThrow(() -> new BusinessException("Veículo não encontrado ou não pertence a esta empresa."));
+
+        boolean hasTickets = ticketRepository.existsByVehiclePlateAndCompanyId(vehicle.getPlate(), companyId);
+        if (hasTickets) {
+            throw new BusinessException("Não é possível remover este veículo pois ele possui histórico de tickets. Remova os tickets vinculados antes de prosseguir.");
+        }
 
         vehicleRepository.delete(vehicle);
     }

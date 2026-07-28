@@ -15,6 +15,7 @@ import java.util.UUID;
 
 public interface TicketRepository extends JpaRepository<Ticket, UUID>{
     boolean existsByVehiclePlateAndCompanyIdAndStatus(Plate plate, UUID companyId, TicketStatus status);
+    boolean existsByVehiclePlateAndCompanyId(Plate plate, UUID companyId);
     long countByCompanyIdAndStatus(UUID companyId, TicketStatus status);
     Optional<Ticket> findByIdAndCompanyId(UUID id, UUID companyId);
     List<Ticket> findAllByCompanyIdAndStatus(UUID companyId, TicketStatus status);

@@ -8,6 +8,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -22,6 +23,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
 
@@ -38,26 +40,40 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/hello").permitAll()
-                        // Dentro de HttpSecurity.authorizeHttpRequests:
-                        .requestMatchers(HttpMethod.POST, "/users/company/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
 
                         .requestMatchers("/v3/api-docs", "/v3/api-docs/**").permitAll()
                         .requestMatchers("/swagger-ui", "/swagger-ui/**").permitAll()
                         .requestMatchers("/swagger-ui.html").permitAll()
                         .requestMatchers("/swagger-resources", "/swagger-resources/**").permitAll()
                         .requestMatchers("/webjars/**").permitAll()
-                        // --- REGRAS PARA COMPANIES ---
-                        // Criar, Deletar e Listar todas as empresas é restrito ao dono do SaaS
+
+                        // --- COMPANIES ---
                         .requestMatchers(HttpMethod.POST, "/companies").hasRole("SUPER_ADMIN")
                         .requestMatchers(HttpMethod.GET, "/companies").hasRole("SUPER_ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/companies/**").hasRole("SUPER_ADMIN")
-
-                        // Buscar por ID e Atualizar pode ser liberado para ADMIN da própria empresa
                         .requestMatchers(HttpMethod.GET, "/companies/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/companies/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
 
-                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        // --- USERS ---
+                        .requestMatchers(HttpMethod.POST, "/users/company/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/users/company/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/users/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/users/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.PATCH, "/users/*/role").hasAnyRole("SUPER_ADMIN", "ADMIN")
+
+                        // --- CONFIGURATIONS (tariff + pricing) ---
+                        .requestMatchers(HttpMethod.PUT, "/configurations/**").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/configurations/**").hasAnyRole("SUPER_ADMIN", "ADMIN")
+
+                        // --- PARTNERSHIPS ---
+                        .requestMatchers(HttpMethod.POST, "/partnerships").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/partnerships/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/partnerships/*").hasAnyRole("SUPER_ADMIN", "ADMIN")
+
+                        // --- REPORTS ---
                         .requestMatchers(HttpMethod.GET, "/reports", "/reports/export").hasAnyRole("ADMIN", "SUPER_ADMIN")
+
+                        .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);

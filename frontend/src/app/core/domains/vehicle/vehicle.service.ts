@@ -7,29 +7,25 @@ import { VehicleRequest, VehicleResponse } from './vehicle.types';
 @Injectable({ providedIn: 'root' })
 export class VehicleService {
   private readonly http = inject(HttpClient);
-  private readonly apiUrl = environment.apiUrl;
+  private readonly baseUrl = `${environment.apiUrl}vehicles`;
 
-  private buildUrl(companyId: string): string {
-    return `${this.apiUrl}companies/${companyId}/vehicles`;
+  create(request: VehicleRequest): Observable<VehicleResponse> {
+    return this.http.post<VehicleResponse>(this.baseUrl, request);
   }
 
-  create(companyId: string, request: VehicleRequest): Observable<VehicleResponse> {
-    return this.http.post<VehicleResponse>(this.buildUrl(companyId), request);
+  listAll(): Observable<VehicleResponse[]> {
+    return this.http.get<VehicleResponse[]>(this.baseUrl);
   }
 
-  listAll(companyId: string): Observable<VehicleResponse[]> {
-    return this.http.get<VehicleResponse[]>(this.buildUrl(companyId));
+  getById(id: string): Observable<VehicleResponse> {
+    return this.http.get<VehicleResponse>(`${this.baseUrl}/${id}`);
   }
 
-  getById(companyId: string, id: string): Observable<VehicleResponse> {
-    return this.http.get<VehicleResponse>(`${this.buildUrl(companyId)}/${id}`);
+  update(id: string, request: VehicleRequest): Observable<VehicleResponse> {
+    return this.http.put<VehicleResponse>(`${this.baseUrl}/${id}`, request);
   }
 
-  update(companyId: string, id: string, request: VehicleRequest): Observable<VehicleResponse> {
-    return this.http.put<VehicleResponse>(`${this.buildUrl(companyId)}/${id}`, request);
-  }
-
-  delete(companyId: string, id: string): Observable<void> {
-    return this.http.delete<void>(`${this.buildUrl(companyId)}/${id}`);
+  delete(id: string): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }
 }

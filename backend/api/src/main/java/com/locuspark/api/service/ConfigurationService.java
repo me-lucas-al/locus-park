@@ -13,6 +13,8 @@ import com.locuspark.api.mapper.TariffConfigurationMapper;
 import com.locuspark.api.repository.CompanyRepository;
 import com.locuspark.api.repository.PricingConfigurationRepository;
 import com.locuspark.api.repository.TariffConfigurationRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -39,6 +41,7 @@ public class ConfigurationService {
         this.companyRepository = companyRepository;
     }
 
+    @Cacheable(value = "tariffs", key = "#companyId")
     @Transactional(readOnly = true)
     public TariffConfigurationResponse getTariffByCompany(UUID companyId) {
         return tariffRepository.findByCompanyId(companyId)
@@ -46,6 +49,7 @@ public class ConfigurationService {
                 .orElseThrow(() -> new ResourceNotFoundException("Configuração tarifária não encontrada para esta empresa."));
     }
 
+    @Cacheable(value = "pricing", key = "#companyId")
     @Transactional(readOnly = true)
     public PricingConfigurationResponse getPricingByCompany(UUID companyId) {
         return pricingRepository.findByCompanyId(companyId)
@@ -55,6 +59,7 @@ public class ConfigurationService {
 
     // Adicione estes métodos dentro da classe ConfigurationService
 
+    @CacheEvict(value = "tariffs", key = "#companyId")
     @Transactional
     public TariffConfigurationResponse saveOrUpdateTariff(UUID companyId, TariffConfigurationRequest request) {
         Company company = companyRepository.findById(companyId)
@@ -73,6 +78,7 @@ public class ConfigurationService {
         return tariffMapper.toResponse(tariffRepository.save(tariff));
     }
 
+    @CacheEvict(value = "pricing", key = "#companyId")
     @Transactional
     public PricingConfigurationResponse saveOrUpdatePricing(UUID companyId, PricingConfigurationRequest request) {
         Company company = companyRepository.findById(companyId)
@@ -89,6 +95,7 @@ public class ConfigurationService {
         return pricingMapper.toResponse(pricingRepository.save(pricing));
     }
 
+    @CacheEvict(value = "tariffs", key = "#companyId")
     @Transactional
     public void deleteTariff(UUID companyId) {
         TariffConfiguration tariff = tariffRepository.findByCompanyId(companyId)
@@ -96,6 +103,7 @@ public class ConfigurationService {
         tariffRepository.delete(tariff);
     }
 
+    @CacheEvict(value = "pricing", key = "#companyId")
     @Transactional
     public void deletePricing(UUID companyId) {
         PricingConfiguration pricing = pricingRepository.findByCompanyId(companyId)
