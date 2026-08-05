@@ -2,7 +2,10 @@
   <div class="map-container">
     @for (street of streets(); track $index) {
       <div class="parking-street">
-        <div class="parking-row top-row">
+        <div
+          class="parking-row top-row"
+          [style.grid-template-columns]="'repeat(' + street.topSpots.length + ', var(--spot-size))'"
+        >
           @for (spot of street.topSpots; track spot.number) {
             <div
               class="spot-box top-spot"
@@ -23,7 +26,10 @@
         </div>
 
         @if (street.bottomSpots.length > 0) {
-          <div class="parking-row bottom-row">
+          <div
+            class="parking-row bottom-row"
+            [style.grid-template-columns]="'repeat(' + street.bottomSpots.length + ', var(--spot-size))'"
+          >
             @for (spot of street.bottomSpots; track spot.number) {
               <div
                 class="spot-box bottom-spot"

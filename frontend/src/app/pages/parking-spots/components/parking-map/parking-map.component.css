@@ -1,4 +1,5 @@
 .parking-lot-map {
+  --spot-size: 76px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 16px;
@@ -22,20 +23,20 @@
   box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   gap: 12px;
 }
 
 .parking-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--spot-size));
+  justify-content: start;
+  align-self: flex-start;
   gap: 10px;
 }
 
 .spot-box {
-  flex: 1 1 64px;
-  max-width: 76px;
-  min-width: 54px;
+  width: 100%;
   height: 115px;
   position: relative;
   display: flex;
@@ -121,6 +122,7 @@
 
 @media (max-width: 768px) {
   .parking-lot-map {
+    --spot-size: 62px;
     padding: 16px;
     border-radius: 12px;
   }
@@ -139,9 +141,7 @@
   }
 
   .spot-box {
-    flex: 1 1 48px;
-    max-width: 62px;
-    min-width: 42px;
+    width: 100%;
     height: 96px;
     padding-bottom: 6px;
   }
@@ -169,6 +169,7 @@
 
 @media (max-width: 480px) {
   .parking-lot-map {
+    --spot-size: 52px;
     padding: 10px;
     border-radius: 10px;
   }
@@ -187,9 +188,7 @@
   }
 
   .spot-box {
-    flex: 1 1 38px;
-    max-width: 52px;
-    min-width: 34px;
+    width: 100%;
     height: 82px;
     padding-bottom: 4px;
   }
