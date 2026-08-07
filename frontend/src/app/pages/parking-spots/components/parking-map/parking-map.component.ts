@@ -1,8 +1,8 @@
 import {
+  AfterViewInit,
   Component,
   ElementRef,
   OnDestroy,
-  OnInit,
   computed,
   inject,
   input,
@@ -24,13 +24,16 @@ interface Street {
   bottomSpots: GridSpot[];
 }
 
-const BREAKPOINTS = [
-  { minWidth: 1440, spotsPerRow: 14 },
-  { minWidth: 1024, spotsPerRow: 10 },
-  { minWidth: 768, spotsPerRow: 7 },
-  { minWidth: 480, spotsPerRow: 5 },
-  { minWidth: 0, spotsPerRow: 4 },
-] as const;
+const SPOT_TARGET_WIDTH_PX = 72;
+const SPOT_GAP_PX = 10;
+const MIN_SPOTS_PER_ROW = 3;
+const MAX_SPOTS_PER_ROW = 14;
+
+function computeSpotsPerRow(containerWidth: number): number {
+  if (containerWidth <= 0) return MAX_SPOTS_PER_ROW;
+  const raw = Math.floor((containerWidth + SPOT_GAP_PX) / (SPOT_TARGET_WIDTH_PX + SPOT_GAP_PX));
+  return Math.max(MIN_SPOTS_PER_ROW, Math.min(MAX_SPOTS_PER_ROW, raw));
+}
 
 @Component({
   selector: 'app-parking-map',
@@ -38,23 +41,20 @@ const BREAKPOINTS = [
   imports: [CommonModule, ParkingSpotCar],
   templateUrl: './parking-map.component.html',
   styleUrl: './parking-map.component.css',
+  host: { style: 'display: block; width: 100%;' },
 })
-export class ParkingMap implements OnInit, OnDestroy {
+export class ParkingMap implements AfterViewInit, OnDestroy {
   private readonly el = inject(ElementRef);
   private resizeObserver?: ResizeObserver;
 
   readonly spots = input<GridSpot[]>([]);
   readonly spotClick = output<GridSpot>();
 
-  protected readonly containerWidth = signal<number>(1440);
+  protected readonly containerWidth = signal<number>(0);
 
-  protected readonly maxRowSpots = computed<number>(() => {
-    const width = this.containerWidth();
-    for (const bp of BREAKPOINTS) {
-      if (width >= bp.minWidth) return bp.spotsPerRow;
-    }
-    return 4;
-  });
+  protected readonly maxRowSpots = computed<number>(() =>
+    computeSpotsPerRow(this.containerWidth())
+  );
 
   protected readonly streets = computed<Street[]>(() => {
     const list = this.spots();
@@ -73,11 +73,15 @@ export class ParkingMap implements OnInit, OnDestroy {
     return result;
   });
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
+    const initialWidth = this.el.nativeElement.offsetWidth;
+    this.containerWidth.set(initialWidth);
+
     this.resizeObserver = new ResizeObserver((entries) => {
-      const width = entries[0]?.contentRect.width ?? this.el.nativeElement.offsetWidth;
-      this.containerWidth.set(width);
+      const width = entries[0]?.contentRect.width ?? 0;
+      if (width > 0) this.containerWidth.set(width);
     });
+
     this.resizeObserver.observe(this.el.nativeElement);
   }
 

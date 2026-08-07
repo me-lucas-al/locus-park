@@ -1,3 +1,8 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
 .parking-lot-map {
   width: 100%;
   overflow: hidden;
@@ -37,9 +42,7 @@
 
 .spot-box {
   width: 100%;
-  aspect-ratio: 2 / 3;
-  min-height: 72px;
-  max-height: 130px;
+  height: 115px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -49,6 +52,7 @@
   border-radius: 6px;
   transition: all 0.2s ease;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .top-spot {
@@ -92,11 +96,12 @@
 }
 
 .spot-label {
-  font-size: clamp(0.5rem, 1.2cqi, 0.75rem);
+  font-size: 0.725rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.4);
   position: absolute;
   pointer-events: none;
+  user-select: none;
 }
 
 .top-spot .spot-label {
@@ -142,6 +147,10 @@
     gap: 8px;
   }
 
+  .spot-box {
+    height: 96px;
+  }
+
   .street-corridor {
     height: 32px;
   }
@@ -161,6 +170,22 @@
 
   .parking-row {
     gap: 6px;
+  }
+
+  .spot-box {
+    height: 82px;
+  }
+
+  .spot-label {
+    font-size: 0.625rem;
+  }
+
+  .top-spot .spot-label {
+    top: 4px;
+  }
+
+  .bottom-spot .spot-label {
+    bottom: 4px;
   }
 
   .street-corridor {
@@ -186,16 +211,12 @@
   }
 
   .spot-box {
-    min-height: 56px;
+    height: 70px;
     border-radius: 4px;
   }
 
-  .top-spot .spot-label {
-    top: 4px;
-  }
-
-  .bottom-spot .spot-label {
-    bottom: 4px;
+  .spot-label {
+    font-size: 0.55rem;
   }
 
   .street-corridor {
