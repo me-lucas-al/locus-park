@@ -4,7 +4,7 @@
       <div class="parking-street">
         <div
           class="parking-row top-row"
-          [style.grid-template-columns]="'repeat(' + street.topSpots.length + ', var(--spot-size))'"
+          [style.grid-template-columns]="'repeat(' + maxRowSpots() + ', 1fr)'"
         >
           @for (spot of street.topSpots; track spot.number) {
             <div
@@ -28,7 +28,7 @@
         @if (street.bottomSpots.length > 0) {
           <div
             class="parking-row bottom-row"
-            [style.grid-template-columns]="'repeat(' + street.bottomSpots.length + ', var(--spot-size))'"
+            [style.grid-template-columns]="'repeat(' + maxRowSpots() + ', 1fr)'"
           >
             @for (spot of street.bottomSpots; track spot.number) {
               <div
