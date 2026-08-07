@@ -24,7 +24,7 @@ Globals:
       Variables:
         SPRING_PROFILES_ACTIVE: prod
         TZ: America/Sao_Paulo
-        JAVA_TOOL_OPTIONS: -Djava.awt.headless=true
+        JAVA_TOOL_OPTIONS: -Djava.awt.headless=true -Dsun.net.inetaddr.ttl=0 -Dsun.net.inetaddr.negative.ttl=0
         DB_URL: !Ref DbUrlParam
         DB_USER: !Ref DbUserParam
         DB_PASS: !Ref DbPassParam
