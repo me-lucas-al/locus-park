@@ -23,7 +23,7 @@
                     <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
                   }
                   @case ('TRUCK') {
-                    <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
+                    <app-parking-spot-truck [color]="spot.ticket.vehicle.color" />
                   }
                   @default {
                     <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
@@ -60,7 +60,7 @@
                       <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
                     }
                     @case ('TRUCK') {
-                      <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
+                      <app-parking-spot-truck [color]="spot.ticket.vehicle.color" />
                     }
                     @default {
                       <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
