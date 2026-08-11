@@ -3,7 +3,7 @@
     "marca": "Agrale",
     "modelos": [
       {
-        "nome": "10000 10000 S",
+        "nome": "10000 10000",
         "codigoReferencia": 5986
       },
       {
@@ -15,11 +15,7 @@
         "codigoReferencia": 4448
       },
       {
-        "nome": "13000 Turbo 3-Eixos",
-        "codigoReferencia": 4513
-      },
-      {
-        "nome": "14000 14000 S",
+        "nome": "14000 14000",
         "codigoReferencia": 5987
       },
       {
@@ -59,15 +55,11 @@
         "codigoReferencia": 3117
       },
       {
-        "nome": "6000 D Cd",
+        "nome": "6000 D",
         "codigoReferencia": 3118
       },
       {
-        "nome": "6000 D Cs",
-        "codigoReferencia": 3119
-      },
-      {
-        "nome": "6000 Furgovan 2.8",
+        "nome": "6000 Furgovan",
         "codigoReferencia": 3120
       },
       {
@@ -75,7 +67,7 @@
         "codigoReferencia": 3121
       },
       {
-        "nome": "7000 D-Rd Cd",
+        "nome": "7000 D-Rd",
         "codigoReferencia": 3122
       },
       {
@@ -91,11 +83,11 @@
         "codigoReferencia": 3125
       },
       {
-        "nome": "8000 Furgovan 4.3",
+        "nome": "8000 Furgovan",
         "codigoReferencia": 3126
       },
       {
-        "nome": "8500 E-Tronic Ce",
+        "nome": "8500 E-Tronic",
         "codigoReferencia": 4084
       },
       {
@@ -103,11 +95,7 @@
         "codigoReferencia": 3128
       },
       {
-        "nome": "8500 Turbo Cd",
-        "codigoReferencia": 4757
-      },
-      {
-        "nome": "8700 8700 S",
+        "nome": "8700 8700",
         "codigoReferencia": 5989
       },
       {
@@ -143,7 +131,7 @@
         "codigoReferencia": 7533
       },
       {
-        "nome": "Marruá Am 300",
+        "nome": "Marruá Am",
         "codigoReferencia": 6704
       }
     ]
@@ -152,7 +140,7 @@
     "marca": "Arrow",
     "modelos": [
       {
-        "nome": "One Work (elétrico)",
+        "nome": "One Work",
         "codigoReferencia": 11589
       }
     ]
@@ -161,24 +149,20 @@
     "marca": "Bepobus",
     "modelos": [
       {
-        "nome": "Nàscere Fretamento (diesel)(e5)",
+        "nome": "Nàscere Fretamento",
         "codigoReferencia": 8192
       },
       {
-        "nome": "Nàscere Rodoviário (diesel)(e5)",
+        "nome": "Nàscere Rodoviário",
         "codigoReferencia": 8193
       },
       {
-        "nome": "Nàscere Rodoviario (diesel)(e6)",
+        "nome": "Nàscere Rodoviario",
         "codigoReferencia": 11091
       },
       {
-        "nome": "Nàscere Urbano (diesel)(e5)",
+        "nome": "Nàscere Urbano",
         "codigoReferencia": 8194
-      },
-      {
-        "nome": "Nàscere Urbano (diesel)(e6)",
-        "codigoReferencia": 11092
       }
     ]
   },
@@ -212,10 +196,6 @@
       {
         "nome": "14000 Turbo",
         "codigoReferencia": 3136
-      },
-      {
-        "nome": "14000 Turbo 3-Eixos",
-        "codigoReferencia": 3137
       },
       {
         "nome": "19000",
@@ -259,28 +239,12 @@
     "marca": "Ciccobus",
     "modelos": [
       {
-        "nome": "Alleanza Gran Escolar",
+        "nome": "Alleanza Gran",
         "codigoReferencia": 3999
       },
       {
-        "nome": "Alleanza Gran Exe.",
-        "codigoReferencia": 4000
-      },
-      {
-        "nome": "Alleanza Gran Urbano",
-        "codigoReferencia": 4001
-      },
-      {
-        "nome": "Alleanza Mini Escolar",
+        "nome": "Alleanza Mini",
         "codigoReferencia": 4002
-      },
-      {
-        "nome": "Alleanza Mini Exe.",
-        "codigoReferencia": 4003
-      },
-      {
-        "nome": "Alleanza Mini Urbano",
-        "codigoReferencia": 4004
       }
     ]
   },
@@ -288,152 +252,12 @@
     "marca": "Daf",
     "modelos": [
       {
-        "nome": "Cf 85 Ft",
+        "nome": "CF",
         "codigoReferencia": 7498
       },
       {
-        "nome": "Cf 85 Fts",
-        "codigoReferencia": 7500
-      },
-      {
-        "nome": "Cf 85 Ftt",
-        "codigoReferencia": 8195
-      },
-      {
-        "nome": "Cf Fac 300",
-        "codigoReferencia": 9802
-      },
-      {
-        "nome": "Cf Fac 310",
-        "codigoReferencia": 10441
-      },
-      {
-        "nome": "Cf Fac 340",
-        "codigoReferencia": 10445
-      },
-      {
-        "nome": "Cf Fac 360",
-        "codigoReferencia": 12081
-      },
-      {
-        "nome": "Cf Fac 370",
-        "codigoReferencia": 10447
-      },
-      {
-        "nome": "Cf Fac 410",
-        "codigoReferencia": 10449
-      },
-      {
-        "nome": "Cf Fad 480",
-        "codigoReferencia": 11872
-      },
-      {
-        "nome": "Cf Fas 260",
-        "codigoReferencia": 10451
-      },
-      {
-        "nome": "Cf Fas 280",
-        "codigoReferencia": 9807
-      },
-      {
-        "nome": "Cf Fas 290",
-        "codigoReferencia": 10457
-      },
-      {
-        "nome": "Cf Fas 300",
-        "codigoReferencia": 9813
-      },
-      {
-        "nome": "Cf Fas 310",
-        "codigoReferencia": 10463
-      },
-      {
-        "nome": "Cf Fas 340",
-        "codigoReferencia": 12084
-      },
-      {
-        "nome": "Cf Fat 310",
-        "codigoReferencia": 11314
-      },
-      {
-        "nome": "Cf Fat 480",
-        "codigoReferencia": 11941
-      },
-      {
-        "nome": "Cf Ft 370",
-        "codigoReferencia": 10469
-      },
-      {
-        "nome": "Cf Ft 380",
-        "codigoReferencia": 12087
-      },
-      {
-        "nome": "Cf Ft 410",
-        "codigoReferencia": 10471
-      },
-      {
-        "nome": "Cf Ft 430",
-        "codigoReferencia": 11311
-      },
-      {
-        "nome": "Cf Ft 450",
-        "codigoReferencia": 10473
-      },
-      {
-        "nome": "Cf Fts 380",
-        "codigoReferencia": 12088
-      },
-      {
-        "nome": "Cf Fts 410",
-        "codigoReferencia": 10475
-      },
-      {
-        "nome": "Cf Fts 430",
-        "codigoReferencia": 11254
-      },
-      {
-        "nome": "Cf Fts 450",
-        "codigoReferencia": 10477
-      },
-      {
-        "nome": "Cf Ftt 480",
-        "codigoReferencia": 10479
-      },
-      {
-        "nome": "Xf 105 Ft",
+        "nome": "XF",
         "codigoReferencia": 8196
-      },
-      {
-        "nome": "Xf 105 Fts",
-        "codigoReferencia": 6705
-      },
-      {
-        "nome": "Xf 105 Ftt",
-        "codigoReferencia": 6707
-      },
-      {
-        "nome": "Xf Ft480",
-        "codigoReferencia": 9173
-      },
-      {
-        "nome": "Xf Ft530",
-        "codigoReferencia": 10548
-      },
-      {
-        "nome": "Xf Fts480",
-        "codigoReferencia": 9177
-      },
-      {
-        "nome": "Xf Fts530",
-        "codigoReferencia": 9179
-      },
-      {
-        "nome": "Xf Ftt480",
-        "codigoReferencia": 9181
-      },
-      {
-        "nome": "Xf Ftt530",
-        "codigoReferencia": 9183
       }
     ]
   },
@@ -441,7 +265,7 @@
     "marca": "Effa-Jmc",
     "modelos": [
       {
-        "nome": "Jbc 3.2 Turbo",
+        "nome": "Jbc 3.2",
         "codigoReferencia": 5682
       },
       {
@@ -479,456 +303,44 @@
     "marca": "Ford",
     "modelos": [
       {
-        "nome": "Cargo 1113",
+        "nome": "1113",
         "codigoReferencia": 3151
       },
       {
-        "nome": "Cargo 1113 3-Eixos",
-        "codigoReferencia": 3152
-      },
-      {
-        "nome": "Cargo 1114",
+        "nome": "Cargo",
         "codigoReferencia": 3153
       },
       {
-        "nome": "Cargo 1114 3-Eixos",
-        "codigoReferencia": 3154
-      },
-      {
-        "nome": "Cargo 1117 T",
-        "codigoReferencia": 3155
-      },
-      {
-        "nome": "Cargo 1117 Turbo",
-        "codigoReferencia": 3156
-      },
-      {
-        "nome": "Cargo 1119 Turbo",
-        "codigoReferencia": 6679
-      },
-      {
-        "nome": "Cargo 1215",
-        "codigoReferencia": 3157
-      },
-      {
-        "nome": "Cargo 1215 3-Eixos",
-        "codigoReferencia": 3158
-      },
-      {
-        "nome": "Cargo 1217",
-        "codigoReferencia": 3159
-      },
-      {
-        "nome": "Cargo 1217 3-Eixos",
-        "codigoReferencia": 3160
-      },
-      {
-        "nome": "Cargo 1218 T",
+        "nome": "1218",
         "codigoReferencia": 3161
       },
       {
-        "nome": "Cargo 1218 Turbo",
-        "codigoReferencia": 3162
-      },
-      {
-        "nome": "Cargo 1313",
+        "nome": "1313",
         "codigoReferencia": 3163
       },
       {
-        "nome": "Cargo 1313 3-Eixos",
-        "codigoReferencia": 3164
-      },
-      {
-        "nome": "Cargo 1314",
-        "codigoReferencia": 3165
-      },
-      {
-        "nome": "Cargo 1314 3-Eixos",
-        "codigoReferencia": 3166
-      },
-      {
-        "nome": "Cargo 1317 1317",
-        "codigoReferencia": 3167
-      },
-      {
-        "nome": "Cargo 1319 E",
-        "codigoReferencia": 5972
-      },
-      {
-        "nome": "Cargo 1415",
-        "codigoReferencia": 3169
-      },
-      {
-        "nome": "Cargo 1415 3-Eixos",
-        "codigoReferencia": 3170
-      },
-      {
-        "nome": "Cargo 1417",
-        "codigoReferencia": 3171
-      },
-      {
-        "nome": "Cargo 1417 3-Eixos",
-        "codigoReferencia": 3172
-      },
-      {
-        "nome": "Cargo 1418",
+        "nome": "1418",
         "codigoReferencia": 3173
       },
       {
-        "nome": "Cargo 1418 3-Eixos",
-        "codigoReferencia": 3174
-      },
-      {
-        "nome": "Cargo 1419 T",
-        "codigoReferencia": 3175
-      },
-      {
-        "nome": "Cargo 1419 Turbo",
-        "codigoReferencia": 3176
-      },
-      {
-        "nome": "Cargo 1421",
-        "codigoReferencia": 3177
-      },
-      {
-        "nome": "Cargo 1421 3-Eixos",
-        "codigoReferencia": 4085
-      },
-      {
-        "nome": "Cargo 1422",
-        "codigoReferencia": 3178
-      },
-      {
-        "nome": "Cargo 1422 3-Eixos",
-        "codigoReferencia": 3179
-      },
-      {
-        "nome": "Cargo 1517 T",
-        "codigoReferencia": 3180
-      },
-      {
-        "nome": "Cargo 1517 Turbo",
-        "codigoReferencia": 3181
-      },
-      {
-        "nome": "Cargo 1519 E",
-        "codigoReferencia": 5973
-      },
-      {
-        "nome": "Cargo 1519 T",
-        "codigoReferencia": 3872
-      },
-      {
-        "nome": "Cargo 1519 Turbo",
-        "codigoReferencia": 3873
-      },
-      {
-        "nome": "Cargo 1521 T",
-        "codigoReferencia": 3182
-      },
-      {
-        "nome": "Cargo 1521 Turbo",
-        "codigoReferencia": 3183
-      },
-      {
-        "nome": "Cargo 1615",
-        "codigoReferencia": 3184
-      },
-      {
-        "nome": "Cargo 1615 3-Eixos",
-        "codigoReferencia": 3185
-      },
-      {
-        "nome": "Cargo 1617",
-        "codigoReferencia": 3186
-      },
-      {
-        "nome": "Cargo 1617 3-Eixos",
-        "codigoReferencia": 3187
-      },
-      {
-        "nome": "Cargo 1618 T",
+        "nome": "1618",
         "codigoReferencia": 3188
       },
       {
-        "nome": "Cargo 1618 Turbo",
-        "codigoReferencia": 3189
-      },
-      {
-        "nome": "Cargo 1619 T",
-        "codigoReferencia": 3190
-      },
-      {
-        "nome": "Cargo 1619 Turbo",
-        "codigoReferencia": 3191
-      },
-      {
-        "nome": "Cargo 1621",
-        "codigoReferencia": 3192
-      },
-      {
-        "nome": "Cargo 1621 3-Eixos",
-        "codigoReferencia": 3193
-      },
-      {
-        "nome": "Cargo 1622 T",
-        "codigoReferencia": 3194
-      },
-      {
-        "nome": "Cargo 1622 Turbo",
-        "codigoReferencia": 3195
-      },
-      {
-        "nome": "Cargo 1624 Turbo",
-        "codigoReferencia": 4594
-      },
-      {
-        "nome": "Cargo 1630 T",
-        "codigoReferencia": 3196
-      },
-      {
-        "nome": "Cargo 1630 Turbo",
-        "codigoReferencia": 3197
-      },
-      {
-        "nome": "Cargo 1717 3-Eixos",
-        "codigoReferencia": 6314
-      },
-      {
-        "nome": "Cargo 1717 1717",
-        "codigoReferencia": 3198
-      },
-      {
-        "nome": "Cargo 1719 Turbo",
-        "codigoReferencia": 5965
-      },
-      {
-        "nome": "Cargo 1721 T",
-        "codigoReferencia": 3199
-      },
-      {
-        "nome": "Cargo 1721 Turbo",
-        "codigoReferencia": 3200
-      },
-      {
-        "nome": "Cargo 1722 1722",
-        "codigoReferencia": 3201
-      },
-      {
-        "nome": "Cargo 1723 E",
-        "codigoReferencia": 5966
-      },
-      {
-        "nome": "Cargo 1729 E",
-        "codigoReferencia": 6730
-      },
-      {
-        "nome": "Cargo 1731 R",
-        "codigoReferencia": 8262
-      },
-      {
-        "nome": "Cargo 1731 T",
-        "codigoReferencia": 3203
-      },
-      {
-        "nome": "Cargo 1731 Tractor",
-        "codigoReferencia": 8263
-      },
-      {
-        "nome": "Cargo 1731 Turbo",
-        "codigoReferencia": 3204
-      },
-      {
-        "nome": "Cargo 1832 E",
-        "codigoReferencia": 5139
-      },
-      {
-        "nome": "Cargo 1932 E",
-        "codigoReferencia": 5568
-      },
-      {
-        "nome": "Cargo 1933 E",
-        "codigoReferencia": 5967
-      },
-      {
-        "nome": "Cargo 2042 E",
-        "codigoReferencia": 6554
-      },
-      {
-        "nome": "Cargo 2217 3-Eixos",
-        "codigoReferencia": 3874
-      },
-      {
-        "nome": "Cargo 2218 3-Eixos",
-        "codigoReferencia": 3205
-      },
-      {
-        "nome": "Cargo 2319 T",
-        "codigoReferencia": 3206
-      },
-      {
-        "nome": "Cargo 2322 T",
-        "codigoReferencia": 3207
-      },
-      {
-        "nome": "Cargo 2324 3-Eixos",
-        "codigoReferencia": 3208
-      },
-      {
-        "nome": "Cargo 2421 T",
-        "codigoReferencia": 3209
-      },
-      {
-        "nome": "Cargo 2422 2422",
-        "codigoReferencia": 3210
-      },
-      {
-        "nome": "Cargo 2423 E",
+        "nome": "2423",
         "codigoReferencia": 5968
       },
       {
-        "nome": "Cargo 2425 3-Eixos",
+        "nome": "2425",
         "codigoReferencia": 3211
       },
       {
-        "nome": "Cargo 2428 E",
+        "nome": "2428",
         "codigoReferencia": 3985
       },
       {
-        "nome": "Cargo 2429 E",
-        "codigoReferencia": 5969
-      },
-      {
-        "nome": "Cargo 2431 E",
-        "codigoReferencia": 8264
-      },
-      {
-        "nome": "Cargo 2622 2622",
-        "codigoReferencia": 3212
-      },
-      {
-        "nome": "Cargo 2623 E",
-        "codigoReferencia": 5970
-      },
-      {
-        "nome": "Cargo 2626",
-        "codigoReferencia": 3213
-      },
-      {
-        "nome": "Cargo 2628 E",
-        "codigoReferencia": 3986
-      },
-      {
-        "nome": "Cargo 2629 E",
-        "codigoReferencia": 5963
-      },
-      {
-        "nome": "Cargo 2630",
-        "codigoReferencia": 3214
-      },
-      {
-        "nome": "Cargo 2631",
-        "codigoReferencia": 3215
-      },
-      {
-        "nome": "Cargo 2631 E",
-        "codigoReferencia": 8265
-      },
-      {
-        "nome": "Cargo 2632 E",
-        "codigoReferencia": 3987
-      },
-      {
-        "nome": "Cargo 2831",
-        "codigoReferencia": 3810
-      },
-      {
-        "nome": "Cargo 2842 E",
-        "codigoReferencia": 6555
-      },
-      {
-        "nome": "Cargo 2932 E",
-        "codigoReferencia": 3988
-      },
-      {
-        "nome": "Cargo 3031 E",
-        "codigoReferencia": 8266
-      },
-      {
-        "nome": "Cargo 3129",
-        "codigoReferencia": 7610
-      },
-      {
-        "nome": "Cargo 3131 E",
-        "codigoReferencia": 8267
-      },
-      {
-        "nome": "Cargo 3132 E",
-        "codigoReferencia": 5569
-      },
-      {
-        "nome": "Cargo 3133 E",
-        "codigoReferencia": 5964
-      },
-      {
-        "nome": "Cargo 3222 Turbo",
-        "codigoReferencia": 3216
-      },
-      {
-        "nome": "Cargo 3224",
-        "codigoReferencia": 3217
-      },
-      {
-        "nome": "Cargo 3530 Turbo",
-        "codigoReferencia": 3218
-      },
-      {
-        "nome": "Cargo 4030",
-        "codigoReferencia": 3219
-      },
-      {
-        "nome": "Cargo 4031 Turbo",
-        "codigoReferencia": 3220
-      },
-      {
-        "nome": "Cargo 4331 4331s",
-        "codigoReferencia": 3221
-      },
-      {
-        "nome": "Cargo 4432 E",
-        "codigoReferencia": 3989
-      },
-      {
-        "nome": "Cargo 4532 E",
-        "codigoReferencia": 4356
-      },
-      {
-        "nome": "Cargo 5031",
-        "codigoReferencia": 3222
-      },
-      {
-        "nome": "Cargo 5032 E",
-        "codigoReferencia": 3990
-      },
-      {
-        "nome": "Cargo 6332 E",
-        "codigoReferencia": 4636
-      },
-      {
-        "nome": "Cargo 712 E",
+        "nome": "712",
         "codigoReferencia": 4391
-      },
-      {
-        "nome": "Cargo 814 Turbo",
-        "codigoReferencia": 3223
-      },
-      {
-        "nome": "Cargo 815 815",
-        "codigoReferencia": 3224
-      },
-      {
-        "nome": "Cargo 816 E",
-        "codigoReferencia": 5971
       },
       {
         "nome": "F-11000",
@@ -943,10 +355,6 @@
         "codigoReferencia": 3227
       },
       {
-        "nome": "F-12000 3-Eixos",
-        "codigoReferencia": 3228
-      },
-      {
         "nome": "F-13000",
         "codigoReferencia": 3229
       },
@@ -957,18 +365,6 @@
       {
         "nome": "F-14000",
         "codigoReferencia": 3231
-      },
-      {
-        "nome": "F-14000 3-Eixos",
-        "codigoReferencia": 3232
-      },
-      {
-        "nome": "F-14000 Hd",
-        "codigoReferencia": 3233
-      },
-      {
-        "nome": "F-14000 Hd 3-Eixos",
-        "codigoReferencia": 3234
       },
       {
         "nome": "F-16000",
@@ -1003,19 +399,7 @@
         "codigoReferencia": 3242
       },
       {
-        "nome": "F-350 7.3 V-8",
-        "codigoReferencia": 3243
-      },
-      {
-        "nome": "F-350 Cd",
-        "codigoReferencia": 3244
-      },
-      {
-        "nome": "F-350 Tropicampo Cd",
-        "codigoReferencia": 6980
-      },
-      {
-        "nome": "F-4 Milha Cd",
+        "nome": "F-4 Milha",
         "codigoReferencia": 7250
       },
       {
@@ -1023,44 +407,20 @@
         "codigoReferencia": 6948
       },
       {
-        "nome": "F-4000 Trop. Multi",
-        "codigoReferencia": 8034
-      },
-      {
-        "nome": "F-4000 Trop.multi Cd",
-        "codigoReferencia": 7252
-      },
-      {
-        "nome": "F-4000 Tropicampo Cd",
-        "codigoReferencia": 6982
-      },
-      {
-        "nome": "F-4000 Turbo Cummins",
-        "codigoReferencia": 3245
-      },
-      {
-        "nome": "F-4000 Turbo Mwm",
-        "codigoReferencia": 3246
-      },
-      {
         "nome": "F-7000",
         "codigoReferencia": 3247
       },
       {
-        "nome": "F-Maxx 1723 E",
+        "nome": "F-Maxx 1723",
         "codigoReferencia": 9159
       },
       {
-        "nome": "F-Maxx 815e 4.0",
+        "nome": "F-Maxx 815e",
         "codigoReferencia": 5157
       },
       {
-        "nome": "F-Maxx 816e 162cv",
+        "nome": "F-Maxx 816e",
         "codigoReferencia": 6456
-      },
-      {
-        "nome": "F-Maxx F-12000 5.9",
-        "codigoReferencia": 5443
       }
     ]
   },
@@ -1072,60 +432,40 @@
         "codigoReferencia": 6904
       },
       {
-        "nome": "Auman D 1722",
+        "nome": "Auman D",
         "codigoReferencia": 11479
       },
       {
-        "nome": "Auman D 1722l",
-        "codigoReferencia": 11480
-      },
-      {
-        "nome": "Aumark 6.50ak 3.8",
+        "nome": "Aumark 6.50ak",
         "codigoReferencia": 6369
       },
       {
-        "nome": "Aumark 8.60ak 3.8",
+        "nome": "Aumark 8.60ak",
         "codigoReferencia": 6370
       },
       {
-        "nome": "Aumark S 1217a",
+        "nome": "Aumark S",
         "codigoReferencia": 10957
       },
       {
-        "nome": "Aumark S 1217b",
-        "codigoReferencia": 10958
-      },
-      {
-        "nome": "Aumark S 715",
-        "codigoReferencia": 10959
-      },
-      {
-        "nome": "Aumark S 916",
-        "codigoReferencia": 10960
-      },
-      {
-        "nome": "Citytruck 10-16dt 3.8",
+        "nome": "Citytruck 10-16dt",
         "codigoReferencia": 7939
       },
       {
-        "nome": "Citytruck 11-16 3.8",
+        "nome": "Citytruck 11-16",
         "codigoReferencia": 9273
       },
       {
-        "nome": "Citytruck 6.5-15 2.8",
+        "nome": "Citytruck 6.5-15",
         "codigoReferencia": 9271
       },
       {
-        "nome": "Citytruck 9-16 3.8",
+        "nome": "Citytruck 9-16",
         "codigoReferencia": 10482
       },
       {
         "nome": "Eaumark 12t",
         "codigoReferencia": 12090
-      },
-      {
-        "nome": "Eaumark 12t L",
-        "codigoReferencia": 12091
       },
       {
         "nome": "Eaumark 6t",
@@ -1134,10 +474,6 @@
       {
         "nome": "Eaumark 9t",
         "codigoReferencia": 12093
-      },
-      {
-        "nome": "Eaumark 9t L",
-        "codigoReferencia": 12094
       },
       {
         "nome": "Iblue Ev-6t",
@@ -1149,7 +485,7 @@
     "marca": "Gmc",
     "modelos": [
       {
-        "nome": "12-170 T 3-Eixos",
+        "nome": "12-170 T",
         "codigoReferencia": 3248
       },
       {
@@ -1157,7 +493,7 @@
         "codigoReferencia": 3249
       },
       {
-        "nome": "14-190 T 3-Eixos",
+        "nome": "14-190 T",
         "codigoReferencia": 3250
       },
       {
@@ -1165,7 +501,7 @@
         "codigoReferencia": 3251
       },
       {
-        "nome": "15-190 T 3-Eixos",
+        "nome": "15-190 T",
         "codigoReferencia": 3252
       },
       {
@@ -1173,7 +509,7 @@
         "codigoReferencia": 3253
       },
       {
-        "nome": "16-220 T 3-Eixos",
+        "nome": "16-220 T",
         "codigoReferencia": 3254
       },
       {
@@ -1181,7 +517,7 @@
         "codigoReferencia": 3255
       },
       {
-        "nome": "3500 Hd Turbo",
+        "nome": "3500 Hd",
         "codigoReferencia": 3256
       },
       {
@@ -1206,11 +542,11 @@
     "marca": "Hyundai",
     "modelos": [
       {
-        "nome": "Hd78 3.0 16v",
+        "nome": "Hd78 3.0",
         "codigoReferencia": 5681
       },
       {
-        "nome": "Hd80 3.0 16v",
+        "nome": "Hd80 3.0",
         "codigoReferencia": 8198
       }
     ]
@@ -1219,568 +555,68 @@
     "marca": "Iveco",
     "modelos": [
       {
-        "nome": "Cityclass Escolar (diesel)(e5)",
+        "nome": "Cityclass Escolar",
         "codigoReferencia": 6731
       },
       {
-        "nome": "Cityclass Executivo Turismo",
+        "nome": "Cityclass Executivo",
         "codigoReferencia": 6732
       },
       {
-        "nome": "Cityclass Fretamento (diesel)(e5)",
+        "nome": "Cityclass Fretamento",
         "codigoReferencia": 6733
       },
       {
-        "nome": "Cityclass Urbano Escolar",
+        "nome": "Cityclass Urbano",
         "codigoReferencia": 4013
       },
       {
-        "nome": "Cursor 450e 33",
+        "nome": "Cursor",
         "codigoReferencia": 5202
       },
       {
-        "nome": "Daily Chas. 70c16hd",
+        "nome": "Daily",
         "codigoReferencia": 5409
       },
       {
-        "nome": "Daily Chassi 59.12",
-        "codigoReferencia": 4015
-      },
-      {
-        "nome": "Daily Chassi 35.10",
-        "codigoReferencia": 4016
-      },
-      {
-        "nome": "Daily Chassi 35s14",
-        "codigoReferencia": 5991
-      },
-      {
-        "nome": "Daily Chassi 40s14",
-        "codigoReferencia": 7682
-      },
-      {
-        "nome": "Daily Chassi 45s14",
-        "codigoReferencia": 4664
-      },
-      {
-        "nome": "Daily Chassi 45s17",
-        "codigoReferencia": 5992
-      },
-      {
-        "nome": "Daily Chassi 49.10",
-        "codigoReferencia": 4018
-      },
-      {
-        "nome": "Daily Chassi 49.12",
-        "codigoReferencia": 4019
-      },
-      {
-        "nome": "Daily Chassi 50.13",
-        "codigoReferencia": 4020
-      },
-      {
-        "nome": "Daily Chassi 55c16",
-        "codigoReferencia": 4464
-      },
-      {
-        "nome": "Daily Chassi 55c17",
-        "codigoReferencia": 5994
-      },
-      {
-        "nome": "Daily Chassi 70.12",
-        "codigoReferencia": 4021
-      },
-      {
-        "nome": "Daily Chassi 70.13",
-        "codigoReferencia": 4022
-      },
-      {
-        "nome": "Daily Chassi 70c16",
-        "codigoReferencia": 4672
-      },
-      {
-        "nome": "Daily Furg City",
-        "codigoReferencia": 4023
-      },
-      {
-        "nome": "Daily Furgao 49.10",
-        "codigoReferencia": 4024
-      },
-      {
-        "nome": "Daily Furgao 49.12",
-        "codigoReferencia": 4025
-      },
-      {
-        "nome": "Daily Furgão City",
-        "codigoReferencia": 4026
-      },
-      {
-        "nome": "Daily Furgone 35s14",
-        "codigoReferencia": 4465
-      },
-      {
-        "nome": "Daily Gran Furgone",
-        "codigoReferencia": 5996
-      },
-      {
-        "nome": "Daily Max Van",
-        "codigoReferencia": 4027
-      },
-      {
-        "nome": "Daily Maxi Furgone",
-        "codigoReferencia": 4468
-      },
-      {
-        "nome": "Daily Minibus Exe",
-        "codigoReferencia": 6734
-      },
-      {
-        "nome": "Daily Minibus Fretam.",
-        "codigoReferencia": 6735
-      },
-      {
-        "nome": "Daily Minibusturismo 50c17",
-        "codigoReferencia": 7253
-      },
-      {
-        "nome": "Daily Truck Chas.",
-        "codigoReferencia": 5999
-      },
-      {
-        "nome": "Daily Vetrato 45s17",
-        "codigoReferencia": 6254
-      },
-      {
-        "nome": "Daily Vetrato 50c17",
-        "codigoReferencia": 9005
-      },
-      {
-        "nome": "Daily Vetrato 55c16",
-        "codigoReferencia": 4469
-      },
-      {
-        "nome": "Daily Vetrato 55c17",
-        "codigoReferencia": 6255
-      },
-      {
-        "nome": "Eurocargo 120-E15",
+        "nome": "Eurocargo",
         "codigoReferencia": 4029
       },
       {
-        "nome": "Eurocargo 120-E15 3-Eixos",
-        "codigoReferencia": 4030
-      },
-      {
-        "nome": "Eurocargo 150-E18",
-        "codigoReferencia": 4031
-      },
-      {
-        "nome": "Eurocargo 150-E18 3-Eixos",
-        "codigoReferencia": 4032
-      },
-      {
-        "nome": "Eurocargo 160-E21",
-        "codigoReferencia": 4033
-      },
-      {
-        "nome": "Eurocargo 160-E21 3-Eixos",
-        "codigoReferencia": 4034
-      },
-      {
-        "nome": "Eurocargo 170-E21",
-        "codigoReferencia": 4035
-      },
-      {
-        "nome": "Eurocargo 170-E21 3-Eixos",
-        "codigoReferencia": 4036
-      },
-      {
-        "nome": "Eurocargo 170-E22 3-Eixos",
-        "codigoReferencia": 4038
-      },
-      {
-        "nome": "Eurocargo 230-E22 3-Eixos",
-        "codigoReferencia": 4039
-      },
-      {
-        "nome": "Eurocargo 260-E25",
-        "codigoReferencia": 4964
-      },
-      {
-        "nome": "Eurocargo Cavallino 450-E32",
-        "codigoReferencia": 4181
-      },
-      {
-        "nome": "Eurocargo Attack 170-E22",
-        "codigoReferencia": 4037
-      },
-      {
-        "nome": "Eurocargo Attack 230-E24",
-        "codigoReferencia": 4180
-      },
-      {
-        "nome": "Eurotech Mp 450-E37",
+        "nome": "Eurotech Mp",
         "codigoReferencia": 4040
       },
       {
-        "nome": "Eurotech Tz 740-E42",
+        "nome": "Eurotech Tz",
         "codigoReferencia": 4041
       },
       {
-        "nome": "Eurotrakker 380-E38 H",
+        "nome": "Eurotrakker 380-E38",
         "codigoReferencia": 4042
       },
       {
-        "nome": "Eurotrakker 720-E42 Ht",
+        "nome": "Eurotrakker 720-E42",
         "codigoReferencia": 4043
       },
       {
-        "nome": "Eurotrakker Mp 450-E37",
+        "nome": "Eurotrakker Mp",
         "codigoReferencia": 4044
       },
       {
-        "nome": "Powerstar 450 E37",
+        "nome": "Powerstar 450",
         "codigoReferencia": 4045
       },
       {
-        "nome": "Stralis 450-S33t Ta",
+        "nome": "Stralis",
         "codigoReferencia": 6286
       },
       {
-        "nome": "Stralis 450-S33t Tb",
-        "codigoReferencia": 6287
-      },
-      {
-        "nome": "Stralis 460-S36t Ta",
-        "codigoReferencia": 6001
-      },
-      {
-        "nome": "Stralis 460-S36t Tb",
-        "codigoReferencia": 6002
-      },
-      {
-        "nome": "Stralis 490-S40t Ta",
-        "codigoReferencia": 6003
-      },
-      {
-        "nome": "Stralis 490-S40t Tb",
-        "codigoReferencia": 6005
-      },
-      {
-        "nome": "Stralis 490-S44t Ta",
-        "codigoReferencia": 6007
-      },
-      {
-        "nome": "Stralis 490-S44t Tb",
-        "codigoReferencia": 6009
-      },
-      {
-        "nome": "Stralis 500-S33t Ta",
-        "codigoReferencia": 6288
-      },
-      {
-        "nome": "Stralis 500-S33t Tb",
-        "codigoReferencia": 6289
-      },
-      {
-        "nome": "Stralis 530-S36t Ta",
-        "codigoReferencia": 6010
-      },
-      {
-        "nome": "Stralis 530-S36t Tb",
-        "codigoReferencia": 6011
-      },
-      {
-        "nome": "Stralis 600-S40t Ta",
-        "codigoReferencia": 6012
-      },
-      {
-        "nome": "Stralis 600-S40t Tb",
-        "codigoReferencia": 6014
-      },
-      {
-        "nome": "Stralis 600-S44t Ta",
-        "codigoReferencia": 6016
-      },
-      {
-        "nome": "Stralis 600-S44t Tb",
-        "codigoReferencia": 6018
-      },
-      {
-        "nome": "Stralis 800-S44t Ta",
-        "codigoReferencia": 6020
-      },
-      {
-        "nome": "Stralis 800-S44t Tb",
-        "codigoReferencia": 6022
-      },
-      {
-        "nome": "Stralis 800-S48t Ta",
-        "codigoReferencia": 6198
-      },
-      {
-        "nome": "Stralis Hd 450-S38t",
-        "codigoReferencia": 4046
-      },
-      {
-        "nome": "Stralis Hd 450-S42t",
-        "codigoReferencia": 4047
-      },
-      {
-        "nome": "Stralis Hd 490-S42t",
-        "codigoReferencia": 4471
-      },
-      {
-        "nome": "Stralis Hd 570-S42t",
-        "codigoReferencia": 4049
-      },
-      {
-        "nome": "Stralis Hd 740-S42tz",
-        "codigoReferencia": 4050
-      },
-      {
-        "nome": "Stralis Hd 740-S46tz",
-        "codigoReferencia": 5229
-      },
-      {
-        "nome": "Stralis Hd Nr",
-        "codigoReferencia": 4470
-      },
-      {
-        "nome": "Stralis Hi-Road 460s36t",
-        "codigoReferencia": 8678
-      },
-      {
-        "nome": "Stralis Hi-Road 490s40t",
-        "codigoReferencia": 8679
-      },
-      {
-        "nome": "Stralis Hi-Road 490s44t",
-        "codigoReferencia": 8680
-      },
-      {
-        "nome": "Stralis Hi-Road 600s40t",
-        "codigoReferencia": 8681
-      },
-      {
-        "nome": "Stralis Hi-Road 600s44t",
-        "codigoReferencia": 8682
-      },
-      {
-        "nome": "Stralis Hi-Road 800-S44tz",
-        "codigoReferencia": 9506
-      },
-      {
-        "nome": "Stralis Hi-Way 490-S44t",
-        "codigoReferencia": 6621
-      },
-      {
-        "nome": "Stralis Hi-Way 490-S48t",
-        "codigoReferencia": 6622
-      },
-      {
-        "nome": "Stralis Hi-Way 600-S44t",
-        "codigoReferencia": 6623
-      },
-      {
-        "nome": "Stralis Hi-Way 600-S48t",
-        "codigoReferencia": 6624
-      },
-      {
-        "nome": "Stralis Hi-Way 600-S56t",
-        "codigoReferencia": 6882
-      },
-      {
-        "nome": "Stralis Hi-Way 800-S48tz",
-        "codigoReferencia": 6625
-      },
-      {
-        "nome": "Stralis Hi-Way 800-S56tz",
-        "codigoReferencia": 6626
-      },
-      {
-        "nome": "Stralis Nr 490-S41t",
-        "codigoReferencia": 5203
-      },
-      {
-        "nome": "Stralis Nr 490-S46t",
-        "codigoReferencia": 5227
-      },
-      {
-        "nome": "Stralis Nr 570-S41t",
-        "codigoReferencia": 5204
-      },
-      {
-        "nome": "Stralis Nr 570-S46t",
-        "codigoReferencia": 5228
-      },
-      {
-        "nome": "Stralis Nr 740-S41t",
-        "codigoReferencia": 5205
-      },
-      {
-        "nome": "S-Way 480",
+        "nome": "S-Way",
         "codigoReferencia": 11067
       },
       {
-        "nome": "S-Way 480 Grand",
-        "codigoReferencia": 11162
-      },
-      {
-        "nome": "S-Way 480 Mega",
-        "codigoReferencia": 11164
-      },
-      {
-        "nome": "S-Way 540",
-        "codigoReferencia": 10237
-      },
-      {
-        "nome": "S-Way 540 Grand",
-        "codigoReferencia": 11166
-      },
-      {
-        "nome": "S-Way 540 Mega",
-        "codigoReferencia": 11167
-      },
-      {
-        "nome": "Tector 11-190",
+        "nome": "Tector",
         "codigoReferencia": 8761
-      },
-      {
-        "nome": "Tector 150e21 Attack",
-        "codigoReferencia": 7113
-      },
-      {
-        "nome": "Tector 15-210",
-        "codigoReferencia": 10238
-      },
-      {
-        "nome": "Tector 170e21 Attack",
-        "codigoReferencia": 7650
-      },
-      {
-        "nome": "Tector 170e22 Attack",
-        "codigoReferencia": 6024
-      },
-      {
-        "nome": "Tector 170e25",
-        "codigoReferencia": 4882
-      },
-      {
-        "nome": "Tector 170e28",
-        "codigoReferencia": 6025
-      },
-      {
-        "nome": "Tector 170e28 Attack",
-        "codigoReferencia": 9581
-      },
-      {
-        "nome": "Tector 170e30",
-        "codigoReferencia": 8268
-      },
-      {
-        "nome": "Tector 17-210",
-        "codigoReferencia": 10239
-      },
-      {
-        "nome": "Tector 17-280",
-        "codigoReferencia": 10773
-      },
-      {
-        "nome": "Tector 17-300",
-        "codigoReferencia": 8808
-      },
-      {
-        "nome": "Tector 17-300t",
-        "codigoReferencia": 8809
-      },
-      {
-        "nome": "Tector 17-320",
-        "codigoReferencia": 11592
-      },
-      {
-        "nome": "Tector 240e22 Attack",
-        "codigoReferencia": 6026
-      },
-      {
-        "nome": "Tector 240e25",
-        "codigoReferencia": 4883
-      },
-      {
-        "nome": "Tector 240e25 S",
-        "codigoReferencia": 5943
-      },
-      {
-        "nome": "Tector 240e28",
-        "codigoReferencia": 6027
-      },
-      {
-        "nome": "Tector 240e28 Attack",
-        "codigoReferencia": 6881
-      },
-      {
-        "nome": "Tector 240e28s Stradale",
-        "codigoReferencia": 6028
-      },
-      {
-        "nome": "Tector 240e30s",
-        "codigoReferencia": 7726
-      },
-      {
-        "nome": "Tector 24-280",
-        "codigoReferencia": 8810
-      },
-      {
-        "nome": "Tector 24-300",
-        "codigoReferencia": 8811
-      },
-      {
-        "nome": "Tector 24-320",
-        "codigoReferencia": 11593
-      },
-      {
-        "nome": "Tector 260e25",
-        "codigoReferencia": 5444
-      },
-      {
-        "nome": "Tector 260e28",
-        "codigoReferencia": 6029
-      },
-      {
-        "nome": "Tector 260e30",
-        "codigoReferencia": 7862
-      },
-      {
-        "nome": "Tector 27-320",
-        "codigoReferencia": 10242
-      },
-      {
-        "nome": "Tector 310e28",
-        "codigoReferencia": 8144
-      },
-      {
-        "nome": "Tector 310e30",
-        "codigoReferencia": 8145
-      },
-      {
-        "nome": "Tector 31-280",
-        "codigoReferencia": 9307
-      },
-      {
-        "nome": "Tector 31-300",
-        "codigoReferencia": 8812
-      },
-      {
-        "nome": "Tector 31-320",
-        "codigoReferencia": 11594
-      },
-      {
-        "nome": "Tector 9-190",
-        "codigoReferencia": 8762
-      },
-      {
-        "nome": "Tector Stradale 240e25s",
-        "codigoReferencia": 5634
       },
       {
         "nome": "Trakker 380-T38",
@@ -1791,7 +627,7 @@
         "codigoReferencia": 4933
       },
       {
-        "nome": "Trakker 410-T48 Eurot.",
+        "nome": "Trakker 410-T48",
         "codigoReferencia": 7081
       },
       {
@@ -1799,24 +635,12 @@
         "codigoReferencia": 4934
       },
       {
-        "nome": "Trakker 740-T48 Eurot.",
+        "nome": "Trakker 740-T48",
         "codigoReferencia": 7114
       },
       {
-        "nome": "Vertis 130v18",
+        "nome": "Vertis",
         "codigoReferencia": 5570
-      },
-      {
-        "nome": "Vertis 130v19",
-        "codigoReferencia": 6339
-      },
-      {
-        "nome": "Vertis 90v16",
-        "codigoReferencia": 5571
-      },
-      {
-        "nome": "Vertis 90v18",
-        "codigoReferencia": 6290
       }
     ]
   },
@@ -1824,28 +648,20 @@
     "marca": "Jac",
     "modelos": [
       {
-        "nome": "E-Jt 12,5 (elétrico)",
+        "nome": "E-Jt 12,5",
         "codigoReferencia": 10152
       },
       {
-        "nome": "E-Jt 18 (elétrico)",
+        "nome": "E-Jt 18",
         "codigoReferencia": 11211
       },
       {
-        "nome": "E-Jt 9,5 (elétrico)",
+        "nome": "E-Jt 9,5",
         "codigoReferencia": 10902
       },
       {
-        "nome": "Iev 1200t (elétrico)",
+        "nome": "Iev 1200t",
         "codigoReferencia": 6315
-      },
-      {
-        "nome": "Iev 1200t Plus",
-        "codigoReferencia": 9728
-      },
-      {
-        "nome": "Iev 1200t R",
-        "codigoReferencia": 9730
       },
       {
         "nome": "N 13.210",
@@ -1878,252 +694,60 @@
     "marca": "Marcopolo",
     "modelos": [
       {
-        "nome": "Volare Att. 8",
+        "nome": "Volare Att.",
         "codigoReferencia": 10692
       },
       {
-        "nome": "Volare Attack 10",
+        "nome": "Volare Attack",
         "codigoReferencia": 12098
       },
       {
-        "nome": "Volare Attack 8",
-        "codigoReferencia": 10701
-      },
-      {
-        "nome": "Volare Attack 9",
-        "codigoReferencia": 10714
-      },
-      {
-        "nome": "Volare Cinco Escolar",
+        "nome": "Volare Cinco",
         "codigoReferencia": 7651
       },
       {
-        "nome": "Volare Cinco Executivo",
-        "codigoReferencia": 7652
-      },
-      {
-        "nome": "Volare Esc. Lot.",
+        "nome": "Volare Esc.",
         "codigoReferencia": 5915
       },
       {
-        "nome": "Volare Escolar V6l",
+        "nome": "Volare Escolar",
         "codigoReferencia": 6983
-      },
-      {
-        "nome": "Volare Escolar V8l",
-        "codigoReferencia": 6984
-      },
-      {
-        "nome": "Volare Escolar V9l",
-        "codigoReferencia": 7915
-      },
-      {
-        "nome": "Volare Escolar W6",
-        "codigoReferencia": 6988
-      },
-      {
-        "nome": "Volare Escolar W7",
-        "codigoReferencia": 6989
-      },
-      {
-        "nome": "Volare Escolar W8",
-        "codigoReferencia": 6990
-      },
-      {
-        "nome": "Volare Escolar W9",
-        "codigoReferencia": 6991
-      },
-      {
-        "nome": "Volare Escolar W-L",
-        "codigoReferencia": 6992
-      },
-      {
-        "nome": "Volare Escolar Lot.",
-        "codigoReferencia": 6607
       },
       {
         "nome": "Volare Escolarbus",
         "codigoReferencia": 6570
       },
       {
-        "nome": "Volare Escolarbus Lotação",
-        "codigoReferencia": 5918
-      },
-      {
-        "nome": "Volare Escolarbus Lotaçâo",
-        "codigoReferencia": 5912
-      },
-      {
-        "nome": "Volare Executive V5",
+        "nome": "Volare Executive",
         "codigoReferencia": 5916
       },
       {
-        "nome": "Volare Executive V6",
-        "codigoReferencia": 5917
-      },
-      {
-        "nome": "Volare Executive V8",
-        "codigoReferencia": 5908
-      },
-      {
-        "nome": "Volare Executive W6",
-        "codigoReferencia": 6608
-      },
-      {
-        "nome": "Volare Executive W7",
-        "codigoReferencia": 6459
-      },
-      {
-        "nome": "Volare Executive W8",
-        "codigoReferencia": 5909
-      },
-      {
-        "nome": "Volare Executive W9",
-        "codigoReferencia": 5910
-      },
-      {
-        "nome": "Volare Executive Wl",
-        "codigoReferencia": 6506
-      },
-      {
-        "nome": "Volare Executivo A5",
+        "nome": "Volare Executivo",
         "codigoReferencia": 3294
       },
       {
-        "nome": "Volare Executivo A6",
-        "codigoReferencia": 3295
-      },
-      {
-        "nome": "Volare Executivo A8",
-        "codigoReferencia": 3296
-      },
-      {
-        "nome": "Volare Executivo Dw9",
-        "codigoReferencia": 5572
-      },
-      {
-        "nome": "Volare Executivo V6l",
-        "codigoReferencia": 6993
-      },
-      {
-        "nome": "Volare Executivo V8l",
-        "codigoReferencia": 6994
-      },
-      {
-        "nome": "Volare Executivo V9l",
-        "codigoReferencia": 7913
-      },
-      {
-        "nome": "Volare Executivo W6",
-        "codigoReferencia": 6996
-      },
-      {
-        "nome": "Volare Executivo W7",
-        "codigoReferencia": 6997
-      },
-      {
-        "nome": "Volare Executivo W8",
-        "codigoReferencia": 3297
-      },
-      {
-        "nome": "Volare Executivo W9",
-        "codigoReferencia": 4087
-      },
-      {
-        "nome": "Volare Executivo W-L",
-        "codigoReferencia": 7000
-      },
-      {
-        "nome": "Volare Fly 10",
+        "nome": "Volare Fly",
         "codigoReferencia": 10718
       },
       {
-        "nome": "Volare Fly 12",
-        "codigoReferencia": 12044
-      },
-      {
-        "nome": "Volare Fly 9",
-        "codigoReferencia": 10722
-      },
-      {
-        "nome": "Volare Fretamento Rural",
+        "nome": "Volare Fretamento",
         "codigoReferencia": 7001
       },
       {
-        "nome": "Volare Fretamento V6l",
-        "codigoReferencia": 7002
-      },
-      {
-        "nome": "Volare Fretamento V8l",
-        "codigoReferencia": 7003
-      },
-      {
-        "nome": "Volare Fretamento V9l",
-        "codigoReferencia": 7916
-      },
-      {
-        "nome": "Volare Fretamento W6",
-        "codigoReferencia": 7007
-      },
-      {
-        "nome": "Volare Fretamento W7",
-        "codigoReferencia": 7008
-      },
-      {
-        "nome": "Volare Fretamento W8",
-        "codigoReferencia": 7009
-      },
-      {
-        "nome": "Volare Fretamento W9",
-        "codigoReferencia": 7010
-      },
-      {
-        "nome": "Volare Fretamento W-L",
-        "codigoReferencia": 7011
-      },
-      {
-        "nome": "Volare Furgão V6l",
+        "nome": "Volare Furgão",
         "codigoReferencia": 7012
       },
       {
-        "nome": "Volare Furgão V8l",
-        "codigoReferencia": 7013
-      },
-      {
-        "nome": "Volare Limousine W9",
+        "nome": "Volare Limousine",
         "codigoReferencia": 7016
       },
       {
-        "nome": "Volare Limousine W-L",
-        "codigoReferencia": 7017
-      },
-      {
-        "nome": "Volare Limousine Wl",
-        "codigoReferencia": 6507
-      },
-      {
-        "nome": "Volare Lotação E",
+        "nome": "Volare Lotação",
         "codigoReferencia": 3298
       },
       {
-        "nome": "Volare Urbano V9l",
+        "nome": "Volare Urbano",
         "codigoReferencia": 7914
-      },
-      {
-        "nome": "Volare Urbano W6",
-        "codigoReferencia": 7018
-      },
-      {
-        "nome": "Volare Urbano W7",
-        "codigoReferencia": 7019
-      },
-      {
-        "nome": "Volare Urbano W9",
-        "codigoReferencia": 7020
-      },
-      {
-        "nome": "Volare Urbano W-L",
-        "codigoReferencia": 7021
       }
     ]
   },
@@ -2131,20 +755,12 @@
     "marca": "Mascarello",
     "modelos": [
       {
-        "nome": "Gran Micro Rodoviário",
+        "nome": "Gran Micro",
         "codigoReferencia": 6680
       },
       {
-        "nome": "Gran Micro Urbano",
-        "codigoReferencia": 6681
-      },
-      {
-        "nome": "Gran Mini Rodoviário",
+        "nome": "Gran Mini",
         "codigoReferencia": 6682
-      },
-      {
-        "nome": "Gran Mini Urbano",
-        "codigoReferencia": 6683
       }
     ]
   },
@@ -2152,15 +768,15 @@
     "marca": "Maxibus",
     "modelos": [
       {
-        "nome": "Astor Escolar (diesel)(e5)",
+        "nome": "Astor Escolar",
         "codigoReferencia": 6556
       },
       {
-        "nome": "Astor Turismo (diesel)(e5)",
+        "nome": "Astor Turismo",
         "codigoReferencia": 6557
       },
       {
-        "nome": "Astor Urbano (diesel)(e5)",
+        "nome": "Astor Urbano",
         "codigoReferencia": 6558
       }
     ]
@@ -2177,28 +793,12 @@
         "codigoReferencia": 3303
       },
       {
-        "nome": "1214 3-Eixos",
-        "codigoReferencia": 3304
-      },
-      {
-        "nome": "1214 C",
-        "codigoReferencia": 3305
-      },
-      {
         "nome": "1215 C",
         "codigoReferencia": 3306
       },
       {
-        "nome": "1215 C 3-Eixos",
-        "codigoReferencia": 3307
-      },
-      {
         "nome": "1218",
         "codigoReferencia": 3308
-      },
-      {
-        "nome": "1218 3-Eixos",
-        "codigoReferencia": 3309
       },
       {
         "nome": "1318",
@@ -2221,10 +821,6 @@
         "codigoReferencia": 3314
       },
       {
-        "nome": "1418 3-Eixos",
-        "codigoReferencia": 3315
-      },
-      {
         "nome": "1420",
         "codigoReferencia": 3316
       },
@@ -2245,30 +841,6 @@
         "codigoReferencia": 3320
       },
       {
-        "nome": "1718 3-Eixos",
-        "codigoReferencia": 3321
-      },
-      {
-        "nome": "1718-A",
-        "codigoReferencia": 3322
-      },
-      {
-        "nome": "1718-K",
-        "codigoReferencia": 3323
-      },
-      {
-        "nome": "1718-K 3-Eixos",
-        "codigoReferencia": 3324
-      },
-      {
-        "nome": "1718-M",
-        "codigoReferencia": 3325
-      },
-      {
-        "nome": "1718-M 3-Eixos",
-        "codigoReferencia": 3326
-      },
-      {
         "nome": "1720",
         "codigoReferencia": 3327
       },
@@ -2285,7 +857,7 @@
         "codigoReferencia": 3330
       },
       {
-        "nome": "1721 1721 S",
+        "nome": "1721 1721",
         "codigoReferencia": 3331
       },
       {
@@ -2309,12 +881,8 @@
         "codigoReferencia": 3337
       },
       {
-        "nome": "1938-S",
+        "nome": "1938",
         "codigoReferencia": 3338
-      },
-      {
-        "nome": "1938-S 3-Eixos",
-        "codigoReferencia": 3339
       },
       {
         "nome": "1944-S",
@@ -2325,7 +893,7 @@
         "codigoReferencia": 3341
       },
       {
-        "nome": "2038 S 3-Eixos",
+        "nome": "2038 S",
         "codigoReferencia": 3342
       },
       {
@@ -2345,7 +913,7 @@
         "codigoReferencia": 3346
       },
       {
-        "nome": "2638 S 3-Eixos",
+        "nome": "2638",
         "codigoReferencia": 3347
       },
       {
@@ -2365,7 +933,7 @@
         "codigoReferencia": 3350
       },
       {
-        "nome": "710 710 Plus",
+        "nome": "710",
         "codigoReferencia": 3351
       },
       {
@@ -2381,136 +949,12 @@
         "codigoReferencia": 3354
       },
       {
-        "nome": "914-C",
-        "codigoReferencia": 3355
-      },
-      {
-        "nome": "Accelo 1016",
+        "nome": "Accelo",
         "codigoReferencia": 5784
       },
       {
-        "nome": "Accelo 1017",
-        "codigoReferencia": 10259
-      },
-      {
-        "nome": "Accelo 1117",
-        "codigoReferencia": 11364
-      },
-      {
-        "nome": "Accelo 1316",
-        "codigoReferencia": 7414
-      },
-      {
-        "nome": "Accelo 1317",
-        "codigoReferencia": 10260
-      },
-      {
-        "nome": "Accelo 1417",
-        "codigoReferencia": 11394
-      },
-      {
-        "nome": "Accelo 715c",
-        "codigoReferencia": 3356
-      },
-      {
-        "nome": "Accelo 815",
-        "codigoReferencia": 5783
-      },
-      {
-        "nome": "Accelo 817",
-        "codigoReferencia": 10261
-      },
-      {
-        "nome": "Accelo 915c",
-        "codigoReferencia": 3357
-      },
-      {
-        "nome": "Accelo 917",
-        "codigoReferencia": 11395
-      },
-      {
-        "nome": "Actros 2045 Ls",
+        "nome": "Actros",
         "codigoReferencia": 10432
-      },
-      {
-        "nome": "Actros 2045 Mp5",
-        "codigoReferencia": 9126
-      },
-      {
-        "nome": "Actros 2045 S",
-        "codigoReferencia": 11396
-      },
-      {
-        "nome": "Actros 2546 Ls",
-        "codigoReferencia": 5395
-      },
-      {
-        "nome": "Actros 2548 Ls",
-        "codigoReferencia": 10433
-      },
-      {
-        "nome": "Actros 2548 Mp5",
-        "codigoReferencia": 9127
-      },
-      {
-        "nome": "Actros 2548 S",
-        "codigoReferencia": 11397
-      },
-      {
-        "nome": "Actros 2553 Ls",
-        "codigoReferencia": 10434
-      },
-      {
-        "nome": "Actros 2553 Mp5",
-        "codigoReferencia": 9128
-      },
-      {
-        "nome": "Actros 2553 S",
-        "codigoReferencia": 11310
-      },
-      {
-        "nome": "Actros 2646 Ls",
-        "codigoReferencia": 5289
-      },
-      {
-        "nome": "Actros 2646 S",
-        "codigoReferencia": 5763
-      },
-      {
-        "nome": "Actros 2648 Mp5",
-        "codigoReferencia": 9129
-      },
-      {
-        "nome": "Actros 2651 Ls",
-        "codigoReferencia": 10435
-      },
-      {
-        "nome": "Actros 2651 Mp5",
-        "codigoReferencia": 9130
-      },
-      {
-        "nome": "Actros 2651 S",
-        "codigoReferencia": 7576
-      },
-      {
-        "nome": "Actros 2653 Ls",
-        "codigoReferencia": 10437
-      },
-      {
-        "nome": "Actros 2653 Mp5",
-        "codigoReferencia": 9132
-      },
-      {
-        "nome": "Actros 2653 S",
-        "codigoReferencia": 10438
-      },
-      {
-        "nome": "Actros 2655 Ls",
-        "codigoReferencia": 6571
-      },
-      {
-        "nome": "Actros 4844 K",
-        "codigoReferencia": 4965
       },
       {
         "nome": "Arocs 3351",
@@ -2541,336 +985,20 @@
         "codigoReferencia": 10440
       },
       {
-        "nome": "Arocs 4851 K",
-        "codigoReferencia": 9674
-      },
-      {
-        "nome": "Atego 1315",
+        "nome": "Atego",
         "codigoReferencia": 3358
       },
       {
-        "nome": "Atego 1315 3-Eixos",
-        "codigoReferencia": 3359
-      },
-      {
-        "nome": "Atego 1418",
-        "codigoReferencia": 3360
-      },
-      {
-        "nome": "Atego 1418 3-Eixos",
-        "codigoReferencia": 3361
-      },
-      {
-        "nome": "Atego 1419",
-        "codigoReferencia": 5785
-      },
-      {
-        "nome": "Atego 1518",
-        "codigoReferencia": 3362
-      },
-      {
-        "nome": "Atego 1518 3-Eixos",
-        "codigoReferencia": 3363
-      },
-      {
-        "nome": "Atego 1718",
-        "codigoReferencia": 3364
-      },
-      {
-        "nome": "Atego 1718 3-Eixos",
-        "codigoReferencia": 3365
-      },
-      {
-        "nome": "Atego 1719",
-        "codigoReferencia": 5786
-      },
-      {
-        "nome": "Atego 1725",
-        "codigoReferencia": 3366
-      },
-      {
-        "nome": "Atego 1725 3-Eixos",
-        "codigoReferencia": 3367
-      },
-      {
-        "nome": "Atego 1726",
-        "codigoReferencia": 5787
-      },
-      {
-        "nome": "Atego 1728 S",
-        "codigoReferencia": 4472
-      },
-      {
-        "nome": "Atego 1729",
-        "codigoReferencia": 6833
-      },
-      {
-        "nome": "Atego 1729 S",
-        "codigoReferencia": 5776
-      },
-      {
-        "nome": "Atego 1730",
-        "codigoReferencia": 9315
-      },
-      {
-        "nome": "Atego 1730 S",
-        "codigoReferencia": 7415
-      },
-      {
-        "nome": "Atego 1733",
-        "codigoReferencia": 10850
-      },
-      {
-        "nome": "Atego 1933 Ls",
-        "codigoReferencia": 11160
-      },
-      {
-        "nome": "Atego 2425 3-Eixos",
-        "codigoReferencia": 3368
-      },
-      {
-        "nome": "Atego 2426",
-        "codigoReferencia": 5777
-      },
-      {
-        "nome": "Atego 2428 3-Eixos",
-        "codigoReferencia": 4562
-      },
-      {
-        "nome": "Atego 2429",
-        "codigoReferencia": 5778
-      },
-      {
-        "nome": "Atego 2430",
-        "codigoReferencia": 6834
-      },
-      {
-        "nome": "Atego 2433",
-        "codigoReferencia": 10269
-      },
-      {
-        "nome": "Atego 2730",
-        "codigoReferencia": 7534
-      },
-      {
-        "nome": "Atego 2730b",
-        "codigoReferencia": 7535
-      },
-      {
-        "nome": "Atego 2730k",
-        "codigoReferencia": 7536
-      },
-      {
-        "nome": "Atego 3026",
-        "codigoReferencia": 7654
-      },
-      {
-        "nome": "Atego 3030",
-        "codigoReferencia": 7655
-      },
-      {
-        "nome": "Atego 3033",
-        "codigoReferencia": 10273
-      },
-      {
-        "nome": "Atego 3133",
-        "codigoReferencia": 11161
-      },
-      {
-        "nome": "Atego 3330",
-        "codigoReferencia": 10116
-      },
-      {
-        "nome": "Atego 3330 B",
-        "codigoReferencia": 10117
-      },
-      {
-        "nome": "Atego 3330 K",
-        "codigoReferencia": 10118
-      },
-      {
-        "nome": "Atego 3330b",
-        "codigoReferencia": 10275
-      },
-      {
-        "nome": "Atego 3330k",
-        "codigoReferencia": 10276
-      },
-      {
-        "nome": "Atilis 712 E",
-        "codigoReferencia": 4427
-      },
-      {
-        "nome": "Atron 1319",
+        "nome": "Atron",
         "codigoReferencia": 5781
       },
       {
-        "nome": "Atron 1635 S",
-        "codigoReferencia": 5779
-      },
-      {
-        "nome": "Atron 1719",
-        "codigoReferencia": 6478
-      },
-      {
-        "nome": "Atron 2324",
-        "codigoReferencia": 5780
-      },
-      {
-        "nome": "Atron 2729",
-        "codigoReferencia": 5772
-      },
-      {
-        "nome": "Atron 2729 B",
-        "codigoReferencia": 5771
-      },
-      {
-        "nome": "Atron 2729 K",
-        "codigoReferencia": 5770
-      },
-      {
-        "nome": "Axor 1933 S",
+        "nome": "Axor",
         "codigoReferencia": 3369
       },
       {
-        "nome": "Axor 2035 S",
-        "codigoReferencia": 3370
-      },
-      {
-        "nome": "Axor 2036 S",
-        "codigoReferencia": 5773
-      },
-      {
-        "nome": "Axor 2038 S",
-        "codigoReferencia": 11590
-      },
-      {
-        "nome": "Axor 2040 S",
-        "codigoReferencia": 3371
-      },
-      {
-        "nome": "Axor 2041 S",
-        "codigoReferencia": 5774
-      },
-      {
-        "nome": "Axor 2044 S",
-        "codigoReferencia": 3372
-      },
-      {
-        "nome": "Axor 2533",
-        "codigoReferencia": 3373
-      },
-      {
-        "nome": "Axor 2535 S",
-        "codigoReferencia": 5122
-      },
-      {
-        "nome": "Axor 2536 S",
-        "codigoReferencia": 5775
-      },
-      {
-        "nome": "Axor 2538 S",
-        "codigoReferencia": 11665
-      },
-      {
-        "nome": "Axor 2540 S",
-        "codigoReferencia": 3374
-      },
-      {
-        "nome": "Axor 2541 S",
-        "codigoReferencia": 5764
-      },
-      {
-        "nome": "Axor 2544 S",
-        "codigoReferencia": 3375
-      },
-      {
-        "nome": "Axor 2545 S",
-        "codigoReferencia": 11591
-      },
-      {
-        "nome": "Axor 2640 S",
-        "codigoReferencia": 3376
-      },
-      {
-        "nome": "Axor 2641 S",
-        "codigoReferencia": 5765
-      },
-      {
-        "nome": "Axor 2644 S",
-        "codigoReferencia": 3377
-      },
-      {
-        "nome": "Axor 2826",
-        "codigoReferencia": 4088
-      },
-      {
-        "nome": "Axor 2831",
-        "codigoReferencia": 4089
-      },
-      {
-        "nome": "Axor 2831 K",
-        "codigoReferencia": 5766
-      },
-      {
-        "nome": "Axor 3131",
-        "codigoReferencia": 6708
-      },
-      {
-        "nome": "Axor 3131 B",
-        "codigoReferencia": 10771
-      },
-      {
-        "nome": "Axor 3131 K",
-        "codigoReferencia": 6880
-      },
-      {
-        "nome": "Axor 3340 S",
-        "codigoReferencia": 3378
-      },
-      {
-        "nome": "Axor 3340 3340",
-        "codigoReferencia": 3379
-      },
-      {
-        "nome": "Axor 3341",
-        "codigoReferencia": 5767
-      },
-      {
-        "nome": "Axor 3341 K",
-        "codigoReferencia": 5769
-      },
-      {
-        "nome": "Axor 3341 S",
-        "codigoReferencia": 5768
-      },
-      {
-        "nome": "Axor 3344 S",
-        "codigoReferencia": 3380
-      },
-      {
-        "nome": "Axor 3344 3344",
-        "codigoReferencia": 3381
-      },
-      {
-        "nome": "Axor 4140 K",
-        "codigoReferencia": 4051
-      },
-      {
-        "nome": "Axor 4141 K",
-        "codigoReferencia": 5762
-      },
-      {
-        "nome": "Axor 4144 K",
-        "codigoReferencia": 4052
-      },
-      {
-        "nome": "L-1113",
+        "nome": "1113",
         "codigoReferencia": 3382
-      },
-      {
-        "nome": "L-1113 3-Eixos",
-        "codigoReferencia": 3383
       },
       {
         "nome": "L-1114",
@@ -2897,28 +1025,8 @@
         "codigoReferencia": 3389
       },
       {
-        "nome": "L-1214",
-        "codigoReferencia": 3390
-      },
-      {
-        "nome": "L-1214 3-Eixos",
-        "codigoReferencia": 3391
-      },
-      {
-        "nome": "L-1218",
-        "codigoReferencia": 3392
-      },
-      {
-        "nome": "L-1218 3-Eixos",
-        "codigoReferencia": 3393
-      },
-      {
-        "nome": "L-1313",
+        "nome": "1313",
         "codigoReferencia": 3394
-      },
-      {
-        "nome": "L-1313 3-Eixos",
-        "codigoReferencia": 3395
       },
       {
         "nome": "L-1314",
@@ -2969,20 +1077,8 @@
         "codigoReferencia": 3407
       },
       {
-        "nome": "L-1418",
-        "codigoReferencia": 3408
-      },
-      {
-        "nome": "L-1418 3-Eixos",
-        "codigoReferencia": 3409
-      },
-      {
-        "nome": "L-1513",
+        "nome": "1513",
         "codigoReferencia": 3410
-      },
-      {
-        "nome": "L-1513 3-Eixos",
-        "codigoReferencia": 3411
       },
       {
         "nome": "L-1514",
@@ -3009,12 +1105,8 @@
         "codigoReferencia": 3417
       },
       {
-        "nome": "L-1518",
+        "nome": "1518",
         "codigoReferencia": 3418
-      },
-      {
-        "nome": "L-1518 3-Eixos",
-        "codigoReferencia": 3419
       },
       {
         "nome": "L-1519",
@@ -3041,20 +1133,12 @@
         "codigoReferencia": 3425
       },
       {
-        "nome": "L-1618",
+        "nome": "1618",
         "codigoReferencia": 3426
       },
       {
-        "nome": "L-1618 3-Eixos",
-        "codigoReferencia": 3427
-      },
-      {
-        "nome": "L-1620",
+        "nome": "1620",
         "codigoReferencia": 3428
-      },
-      {
-        "nome": "L-1620 3-Eixos",
-        "codigoReferencia": 3429
       },
       {
         "nome": "L-1621",
@@ -3153,32 +1237,8 @@
         "codigoReferencia": 3453
       },
       {
-        "nome": "L-2638",
-        "codigoReferencia": 3454
-      },
-      {
-        "nome": "Lk-1618 3-Eixos",
-        "codigoReferencia": 3455
-      },
-      {
-        "nome": "Lk-1620",
-        "codigoReferencia": 3456
-      },
-      {
-        "nome": "Lk-1620 3-Eixos",
-        "codigoReferencia": 3457
-      },
-      {
         "nome": "Lk-2635",
         "codigoReferencia": 3458
-      },
-      {
-        "nome": "Lk-2638",
-        "codigoReferencia": 3459
-      },
-      {
-        "nome": "Ls-1313",
-        "codigoReferencia": 3460
       },
       {
         "nome": "Ls-1519",
@@ -3241,20 +1301,8 @@
         "codigoReferencia": 3474
       },
       {
-        "nome": "Ls-1935",
+        "nome": "1935",
         "codigoReferencia": 3475
-      },
-      {
-        "nome": "Ls-1935 3-Eixos",
-        "codigoReferencia": 3476
-      },
-      {
-        "nome": "Ls-1938",
-        "codigoReferencia": 3477
-      },
-      {
-        "nome": "Ls-1938 3-Eixos",
-        "codigoReferencia": 3478
       },
       {
         "nome": "Ls-1941",
@@ -3267,10 +1315,6 @@
       {
         "nome": "Ls-2635",
         "codigoReferencia": 3481
-      },
-      {
-        "nome": "Ls-2638",
-        "codigoReferencia": 3482
       }
     ]
   },
@@ -3286,10 +1330,6 @@
         "codigoReferencia": 3486
       },
       {
-        "nome": "International 4700 3-Eixos",
-        "codigoReferencia": 3487
-      },
-      {
         "nome": "International 4900",
         "codigoReferencia": 3488
       },
@@ -3302,10 +1342,6 @@
         "codigoReferencia": 3484
       },
       {
-        "nome": "International 9800 9800i",
-        "codigoReferencia": 5524
-      },
-      {
         "nome": "International 9800i",
         "codigoReferencia": 6374
       }
@@ -3315,39 +1351,27 @@
     "marca": "Neobus",
     "modelos": [
       {
-        "nome": "T.boy Way Lot.",
+        "nome": "T.boy Way",
         "codigoReferencia": 3494
       },
       {
-        "nome": "Thunder + Executivo",
+        "nome": "Thunder +",
         "codigoReferencia": 6221
       },
       {
-        "nome": "Thunder + Lot.",
-        "codigoReferencia": 6222
-      },
-      {
-        "nome": "Thunder + Neostar",
-        "codigoReferencia": 6223
-      },
-      {
-        "nome": "Thunder Boy Way",
+        "nome": "Thunder Boy",
         "codigoReferencia": 3493
       },
       {
-        "nome": "Thunder Plus Executivo",
+        "nome": "Thunder Plus",
         "codigoReferencia": 6224
       },
       {
-        "nome": "Thunder Way Executivo",
+        "nome": "Thunder Way",
         "codigoReferencia": 6225
       },
       {
-        "nome": "Thunder Way Lot.",
-        "codigoReferencia": 6226
-      },
-      {
-        "nome": "Thunder+ Neostar Urbano",
+        "nome": "Thunder+ Neostar",
         "codigoReferencia": 6227
       }
     ]
@@ -3360,28 +1384,16 @@
         "codigoReferencia": 3495
       },
       {
-        "nome": "7900 Cb Turbo",
-        "codigoReferencia": 3496
-      },
-      {
         "nome": "7900 Cd",
         "codigoReferencia": 3497
-      },
-      {
-        "nome": "7900 Cd Turbo",
-        "codigoReferencia": 3498
       },
       {
         "nome": "9000",
         "codigoReferencia": 3499
       },
       {
-        "nome": "914 Cd",
+        "nome": "914",
         "codigoReferencia": 3500
-      },
-      {
-        "nome": "914 Cs",
-        "codigoReferencia": 3501
       }
     ]
   },
@@ -3389,104 +1401,12 @@
     "marca": "Saab-Scania",
     "modelos": [
       {
-        "nome": "R-112 E 320",
+        "nome": "112",
         "codigoReferencia": 3502
       },
       {
-        "nome": "R-112 Ew 320",
-        "codigoReferencia": 3503
-      },
-      {
-        "nome": "R-112 H 320",
-        "codigoReferencia": 3504
-      },
-      {
-        "nome": "R-112 Hs 320",
-        "codigoReferencia": 3505
-      },
-      {
-        "nome": "R-112 Hw 320",
-        "codigoReferencia": 3506
-      },
-      {
-        "nome": "R-112 Hw 360",
-        "codigoReferencia": 4584
-      },
-      {
-        "nome": "R-142 E 450",
+        "nome": "142",
         "codigoReferencia": 3507
-      },
-      {
-        "nome": "R-142 Ew 450",
-        "codigoReferencia": 3508
-      },
-      {
-        "nome": "R-142 H 450",
-        "codigoReferencia": 3509
-      },
-      {
-        "nome": "R-142 Hs 450",
-        "codigoReferencia": 3510
-      },
-      {
-        "nome": "R-142 Hw 450",
-        "codigoReferencia": 3511
-      },
-      {
-        "nome": "T-112 E 320",
-        "codigoReferencia": 3512
-      },
-      {
-        "nome": "T-112 Es 320",
-        "codigoReferencia": 3513
-      },
-      {
-        "nome": "T-112 Ew 320",
-        "codigoReferencia": 3514
-      },
-      {
-        "nome": "T-112 H 320",
-        "codigoReferencia": 3515
-      },
-      {
-        "nome": "T-112 Hs 320",
-        "codigoReferencia": 3517
-      },
-      {
-        "nome": "T-112 Hw 310",
-        "codigoReferencia": 3944
-      },
-      {
-        "nome": "T-112 Hw 320",
-        "codigoReferencia": 3518
-      },
-      {
-        "nome": "T-112 Hw 360",
-        "codigoReferencia": 3520
-      },
-      {
-        "nome": "T-142 E 450",
-        "codigoReferencia": 3521
-      },
-      {
-        "nome": "T-142 Es 450",
-        "codigoReferencia": 3522
-      },
-      {
-        "nome": "T-142 Ew 450",
-        "codigoReferencia": 3523
-      },
-      {
-        "nome": "T-142 H 450",
-        "codigoReferencia": 3524
-      },
-      {
-        "nome": "T-142 Hs 450",
-        "codigoReferencia": 3525
-      },
-      {
-        "nome": "T-142 Hw 450",
-        "codigoReferencia": 3526
       }
     ]
   },
@@ -3510,7 +1430,7 @@
         "codigoReferencia": 10981
       },
       {
-        "nome": "G-380 A",
+        "nome": "Série G",
         "codigoReferencia": 4596
       },
       {
@@ -3530,22 +1450,6 @@
         "codigoReferencia": 8725
       },
       {
-        "nome": "G-420 A",
-        "codigoReferencia": 4598
-      },
-      {
-        "nome": "G-420 B",
-        "codigoReferencia": 4918
-      },
-      {
-        "nome": "G-440 A",
-        "codigoReferencia": 4601
-      },
-      {
-        "nome": "G-440 B",
-        "codigoReferencia": 5805
-      },
-      {
         "nome": "G-450 A",
         "codigoReferencia": 8627
       },
@@ -3560,14 +1464,6 @@
       {
         "nome": "G-460 B",
         "codigoReferencia": 10288
-      },
-      {
-        "nome": "G-470 A",
-        "codigoReferencia": 4604
-      },
-      {
-        "nome": "G-470 B",
-        "codigoReferencia": 4957
       },
       {
         "nome": "G-480 A",
@@ -3610,92 +1506,12 @@
         "codigoReferencia": 3528
       },
       {
-        "nome": "P-114 Ca 360",
+        "nome": "Série P",
         "codigoReferencia": 3529
-      },
-      {
-        "nome": "P-114 Cb 330",
-        "codigoReferencia": 3530
-      },
-      {
-        "nome": "P-114 Cb 360",
-        "codigoReferencia": 3531
-      },
-      {
-        "nome": "P-114 Ga 320",
-        "codigoReferencia": 3532
-      },
-      {
-        "nome": "P-114 Ga 330",
-        "codigoReferencia": 3533
-      },
-      {
-        "nome": "P-114 Ga 340",
-        "codigoReferencia": 3922
-      },
-      {
-        "nome": "P-114 Ga 360",
-        "codigoReferencia": 4607
-      },
-      {
-        "nome": "P-114 Gb 330",
-        "codigoReferencia": 3534
-      },
-      {
-        "nome": "P-114 La 340",
-        "codigoReferencia": 3923
-      },
-      {
-        "nome": "P-124 Ca 360",
-        "codigoReferencia": 3535
-      },
-      {
-        "nome": "P-124 Ca 400",
-        "codigoReferencia": 3536
-      },
-      {
-        "nome": "P-124 Ca 420",
-        "codigoReferencia": 3537
-      },
-      {
-        "nome": "P-124 Cb 360",
-        "codigoReferencia": 3538
-      },
-      {
-        "nome": "P-124 Cb 400",
-        "codigoReferencia": 3540
-      },
-      {
-        "nome": "P-124 Cb 420",
-        "codigoReferencia": 3542
-      },
-      {
-        "nome": "P-124 Ga 360",
-        "codigoReferencia": 3543
-      },
-      {
-        "nome": "P-124 Ga 420",
-        "codigoReferencia": 5606
-      },
-      {
-        "nome": "P-124 La 360",
-        "codigoReferencia": 6228
-      },
-      {
-        "nome": "P-124 La 420",
-        "codigoReferencia": 4153
       },
       {
         "nome": "P-230 B",
         "codigoReferencia": 4884
-      },
-      {
-        "nome": "P-250 A",
-        "codigoReferencia": 8610
-      },
-      {
-        "nome": "P-250 B",
-        "codigoReferencia": 5799
       },
       {
         "nome": "P-270 A",
@@ -3714,36 +1530,12 @@
         "codigoReferencia": 8612
       },
       {
-        "nome": "P-310 A",
-        "codigoReferencia": 4609
-      },
-      {
-        "nome": "P-310 B",
-        "codigoReferencia": 6572
-      },
-      {
         "nome": "P-320 A",
         "codigoReferencia": 8614
       },
       {
         "nome": "P-320 B",
         "codigoReferencia": 8615
-      },
-      {
-        "nome": "P-340 A",
-        "codigoReferencia": 4612
-      },
-      {
-        "nome": "P-340 B",
-        "codigoReferencia": 5573
-      },
-      {
-        "nome": "P-360 A",
-        "codigoReferencia": 5830
-      },
-      {
-        "nome": "P-360 B",
-        "codigoReferencia": 9677
       },
       {
         "nome": "P-370 A",
@@ -3774,171 +1566,47 @@
         "codigoReferencia": 10328
       },
       {
-        "nome": "P-93 H 250",
+        "nome": "P-93 H",
         "codigoReferencia": 3544
       },
       {
-        "nome": "P-94 Cb 260",
-        "codigoReferencia": 3545
-      },
-      {
-        "nome": "P-94 Cb 270",
-        "codigoReferencia": 3546
-      },
-      {
-        "nome": "P-94 Cb 310",
-        "codigoReferencia": 3547
-      },
-      {
-        "nome": "P-94 Db 220",
-        "codigoReferencia": 3548
-      },
-      {
-        "nome": "P-94 Db 230",
-        "codigoReferencia": 3549
-      },
-      {
-        "nome": "P-94 Db 260",
-        "codigoReferencia": 3550
-      },
-      {
-        "nome": "P-94 Db 270",
-        "codigoReferencia": 3552
-      },
-      {
-        "nome": "P-94 Ga 260",
-        "codigoReferencia": 3554
-      },
-      {
-        "nome": "P-94 Ga 270",
-        "codigoReferencia": 3925
-      },
-      {
-        "nome": "P-94 Ga 300",
-        "codigoReferencia": 3555
-      },
-      {
-        "nome": "P-94 Ga 310",
-        "codigoReferencia": 3556
-      },
-      {
-        "nome": "P-94 Gb 230",
-        "codigoReferencia": 4254
-      },
-      {
-        "nome": "R-113 E 310",
+        "nome": "113",
         "codigoReferencia": 3557
       },
       {
-        "nome": "R-113 E 320",
-        "codigoReferencia": 3558
-      },
-      {
-        "nome": "R-113 E 360",
-        "codigoReferencia": 3559
-      },
-      {
-        "nome": "R-113 H 320",
-        "codigoReferencia": 3560
-      },
-      {
-        "nome": "R-113 H 360",
-        "codigoReferencia": 3561
-      },
-      {
-        "nome": "R-114 Ga 320",
+        "nome": "R-114 Ga",
         "codigoReferencia": 3563
       },
       {
-        "nome": "R-114 Ga 330",
-        "codigoReferencia": 3564
-      },
-      {
-        "nome": "R-114 Ga 360",
-        "codigoReferencia": 3565
-      },
-      {
-        "nome": "R-114 Ga 380",
-        "codigoReferencia": 3566
-      },
-      {
-        "nome": "R-114 Gb 320",
+        "nome": "R-114 Gb",
         "codigoReferencia": 3568
       },
       {
-        "nome": "R-114 Gb 330",
-        "codigoReferencia": 3569
-      },
-      {
-        "nome": "R-114 Gb 360",
-        "codigoReferencia": 3570
-      },
-      {
-        "nome": "R-114 La 380",
+        "nome": "R-114 La",
         "codigoReferencia": 4269
       },
       {
-        "nome": "R-124 Ga 360",
+        "nome": "124",
         "codigoReferencia": 3572
       },
       {
-        "nome": "R-124 Ga 400",
-        "codigoReferencia": 3574
-      },
-      {
-        "nome": "R-124 Ga 420",
-        "codigoReferencia": 3576
-      },
-      {
-        "nome": "R-124 Ga 470",
-        "codigoReferencia": 4449
-      },
-      {
-        "nome": "R-124 Gb 360",
-        "codigoReferencia": 3578
-      },
-      {
-        "nome": "R-124 Gb 400",
-        "codigoReferencia": 3580
-      },
-      {
-        "nome": "R-124 Gb 420",
-        "codigoReferencia": 3581
-      },
-      {
-        "nome": "R-124 La 360",
-        "codigoReferencia": 3582
-      },
-      {
-        "nome": "R-124 La 400",
-        "codigoReferencia": 3584
-      },
-      {
-        "nome": "R-124 La 420",
-        "codigoReferencia": 3586
-      },
-      {
-        "nome": "R-143 E 450",
+        "nome": "143",
         "codigoReferencia": 3589
       },
       {
-        "nome": "R-143 H 450",
-        "codigoReferencia": 3590
-      },
-      {
-        "nome": "R-164 Ca 480",
+        "nome": "R-164 Ca",
         "codigoReferencia": 3591
       },
       {
-        "nome": "R-164 Ga 480",
+        "nome": "R-164 Ga",
         "codigoReferencia": 3592
       },
       {
-        "nome": "R-164 La 480",
+        "nome": "R-164 La",
         "codigoReferencia": 3594
       },
       {
-        "nome": "R-380 A",
+        "nome": "Série R",
         "codigoReferencia": 5206
       },
       {
@@ -3948,34 +1616,6 @@
       {
         "nome": "R-410 A",
         "codigoReferencia": 8618
-      },
-      {
-        "nome": "R-420 A",
-        "codigoReferencia": 5290
-      },
-      {
-        "nome": "R-420 La",
-        "codigoReferencia": 4488
-      },
-      {
-        "nome": "R-440 A",
-        "codigoReferencia": 5325
-      },
-      {
-        "nome": "R-440 B",
-        "codigoReferencia": 8310
-      },
-      {
-        "nome": "R-440 La",
-        "codigoReferencia": 4492
-      },
-      {
-        "nome": "R-450 A",
-        "codigoReferencia": 8620
-      },
-      {
-        "nome": "R-450 B",
-        "codigoReferencia": 8729
       },
       {
         "nome": "R-460 A",
@@ -3994,32 +1634,8 @@
         "codigoReferencia": 4493
       },
       {
-        "nome": "R-480 A",
-        "codigoReferencia": 5827
-      },
-      {
-        "nome": "R-500 A",
-        "codigoReferencia": 8730
-      },
-      {
-        "nome": "R-500 B",
-        "codigoReferencia": 9102
-      },
-      {
-        "nome": "R-500 La",
-        "codigoReferencia": 4497
-      },
-      {
         "nome": "R-510 A",
         "codigoReferencia": 8335
-      },
-      {
-        "nome": "R-540 A",
-        "codigoReferencia": 9373
-      },
-      {
-        "nome": "R-540 B",
-        "codigoReferencia": 9627
       },
       {
         "nome": "R-560 A",
@@ -4062,12 +1678,8 @@
         "codigoReferencia": 10352
       },
       {
-        "nome": "S-500 A",
+        "nome": "Série S",
         "codigoReferencia": 8982
-      },
-      {
-        "nome": "S-540 A",
-        "codigoReferencia": 8686
       },
       {
         "nome": "S-560 A",
@@ -4086,96 +1698,16 @@
         "codigoReferencia": 10360
       },
       {
-        "nome": "T-112 Ma 320",
+        "nome": "112",
         "codigoReferencia": 3595
       },
       {
-        "nome": "T-113 E 310",
-        "codigoReferencia": 3596
-      },
-      {
-        "nome": "T-113 E 320",
-        "codigoReferencia": 3597
-      },
-      {
-        "nome": "T-113 E 360",
-        "codigoReferencia": 3598
-      },
-      {
-        "nome": "T-113 H 310",
-        "codigoReferencia": 3599
-      },
-      {
-        "nome": "T-113 H 320",
-        "codigoReferencia": 3600
-      },
-      {
-        "nome": "T-113 H 360",
-        "codigoReferencia": 3603
-      },
-      {
-        "nome": "T-114 Ga 320",
+        "nome": "T-114 Ga",
         "codigoReferencia": 3607
       },
       {
-        "nome": "T-114 Ga 330",
-        "codigoReferencia": 3608
-      },
-      {
-        "nome": "T-114 Ga 360",
-        "codigoReferencia": 3609
-      },
-      {
-        "nome": "T-114 Gb 320",
+        "nome": "T-114 Gb",
         "codigoReferencia": 3610
-      },
-      {
-        "nome": "T-114 Gb 330",
-        "codigoReferencia": 3611
-      },
-      {
-        "nome": "T-114 Gb 360",
-        "codigoReferencia": 3612
-      },
-      {
-        "nome": "T-124 Ga 360",
-        "codigoReferencia": 3613
-      },
-      {
-        "nome": "T-124 Ga 400",
-        "codigoReferencia": 3615
-      },
-      {
-        "nome": "T-124 Ga 420",
-        "codigoReferencia": 3618
-      },
-      {
-        "nome": "T-124 Gb 400",
-        "codigoReferencia": 3620
-      },
-      {
-        "nome": "T-124 Gb 420",
-        "codigoReferencia": 3621
-      },
-      {
-        "nome": "T-124 La 360",
-        "codigoReferencia": 3622
-      },
-      {
-        "nome": "T-124 La 400",
-        "codigoReferencia": 3624
-      },
-      {
-        "nome": "T-124 La 420",
-        "codigoReferencia": 3626
-      },
-      {
-        "nome": "T-143 E 450",
-        "codigoReferencia": 3628
-      },
-      {
-        "nome": "T-143 H 450",
-        "codigoReferencia": 3629
       }
     ]
   },
@@ -4208,15 +1740,11 @@
         "codigoReferencia": 5232
       },
       {
-        "nome": "Howo 380 A7",
-        "codigoReferencia": 6630
-      },
-      {
-        "nome": "Howo 420 A7",
+        "nome": "Howo 420",
         "codigoReferencia": 6628
       },
       {
-        "nome": "Howo 460 A7",
+        "nome": "Howo 460",
         "codigoReferencia": 6629
       }
     ]
@@ -4225,7 +1753,7 @@
     "marca": "Volkswagen",
     "modelos": [
       {
-        "nome": "10-160 E Delivery",
+        "nome": "Delivery",
         "codigoReferencia": 6291
       },
       {
@@ -4245,11 +1773,7 @@
         "codigoReferencia": 3633
       },
       {
-        "nome": "11-180 Delivery",
-        "codigoReferencia": 8146
-      },
-      {
-        "nome": "11-410 E-Delivery",
+        "nome": "e-Delivery",
         "codigoReferencia": 10431
       },
       {
@@ -4269,16 +1793,8 @@
         "codigoReferencia": 3637
       },
       {
-        "nome": "12-140 Turbo 3-Eixos",
-        "codigoReferencia": 3638
-      },
-      {
         "nome": "12-170 Bt",
         "codigoReferencia": 3639
-      },
-      {
-        "nome": "12-170 Bt 3-Eixos",
-        "codigoReferencia": 3640
       },
       {
         "nome": "12-180",
@@ -4301,24 +1817,12 @@
         "codigoReferencia": 3645
       },
       {
-        "nome": "13-160 E Delivery",
-        "codigoReferencia": 7683
-      },
-      {
-        "nome": "13-170 13-170 E",
+        "nome": "Worker",
         "codigoReferencia": 3646
       },
       {
-        "nome": "13-180 Delivery",
-        "codigoReferencia": 8733
-      },
-      {
-        "nome": "13-180 E Constellation",
+        "nome": "Constellation",
         "codigoReferencia": 4197
-      },
-      {
-        "nome": "13-180 13-180 E",
-        "codigoReferencia": 3648
       },
       {
         "nome": "13-190",
@@ -4327,14 +1831,6 @@
       {
         "nome": "13-190 3-Eixos",
         "codigoReferencia": 3651
-      },
-      {
-        "nome": "13-190 E Constellation",
-        "codigoReferencia": 5962
-      },
-      {
-        "nome": "13-190 E Worker",
-        "codigoReferencia": 6256
       },
       {
         "nome": "14-140",
@@ -4357,10 +1853,6 @@
         "codigoReferencia": 3656
       },
       {
-        "nome": "14-170 Bt 3-Eixos",
-        "codigoReferencia": 3657
-      },
-      {
         "nome": "14-180",
         "codigoReferencia": 3658
       },
@@ -4369,15 +1861,7 @@
         "codigoReferencia": 3659
       },
       {
-        "nome": "14-180 Delivery",
-        "codigoReferencia": 11907
-      },
-      {
-        "nome": "14-190 Constellation",
-        "codigoReferencia": 9035
-      },
-      {
-        "nome": "14-200 T 3-Eixos",
+        "nome": "14-200 T",
         "codigoReferencia": 3660
       },
       {
@@ -4385,11 +1869,7 @@
         "codigoReferencia": 3661
       },
       {
-        "nome": "14-210 Constellation",
-        "codigoReferencia": 10244
-      },
-      {
-        "nome": "14-210 T 3-Eixos",
+        "nome": "14-210 T",
         "codigoReferencia": 3662
       },
       {
@@ -4405,36 +1885,12 @@
         "codigoReferencia": 3665
       },
       {
-        "nome": "14-410 E-Delivery",
-        "codigoReferencia": 10088
-      },
-      {
-        "nome": "15-170 15-170 E",
-        "codigoReferencia": 3666
-      },
-      {
-        "nome": "15-180 E Constellation",
-        "codigoReferencia": 4198
-      },
-      {
-        "nome": "15-180 15-180 E",
-        "codigoReferencia": 3668
-      },
-      {
         "nome": "15-190",
         "codigoReferencia": 3670
       },
       {
         "nome": "15-190 3-Eixos",
         "codigoReferencia": 3671
-      },
-      {
-        "nome": "15-190 E Constellation",
-        "codigoReferencia": 5953
-      },
-      {
-        "nome": "15-190 E Worker",
-        "codigoReferencia": 6292
       },
       {
         "nome": "16-170",
@@ -4447,10 +1903,6 @@
       {
         "nome": "16-170 Bt",
         "codigoReferencia": 3674
-      },
-      {
-        "nome": "16-170 Bt 3-Eixos",
-        "codigoReferencia": 3675
       },
       {
         "nome": "16-200",
@@ -4473,11 +1925,7 @@
         "codigoReferencia": 3680
       },
       {
-        "nome": "16-210 H 3-Eixos",
-        "codigoReferencia": 3992
-      },
-      {
-        "nome": "16-220 T 3-Eixos",
+        "nome": "16-220 T",
         "codigoReferencia": 3681
       },
       {
@@ -4485,28 +1933,12 @@
         "codigoReferencia": 3682
       },
       {
-        "nome": "16-300 T 3-Eixos",
+        "nome": "16-300 T",
         "codigoReferencia": 3683
       },
       {
         "nome": "16-300 Turbo",
         "codigoReferencia": 3684
-      },
-      {
-        "nome": "17-180 Worker",
-        "codigoReferencia": 3945
-      },
-      {
-        "nome": "17-180 Worker 3-Eixos",
-        "codigoReferencia": 3946
-      },
-      {
-        "nome": "17-190 E Constellation",
-        "codigoReferencia": 5954
-      },
-      {
-        "nome": "17-190 E Worker",
-        "codigoReferencia": 6257
       },
       {
         "nome": "17-210",
@@ -4517,40 +1949,12 @@
         "codigoReferencia": 3686
       },
       {
-        "nome": "17-210 Constellation",
-        "codigoReferencia": 10245
-      },
-      {
-        "nome": "17-220 17-220 Worker",
-        "codigoReferencia": 3687
-      },
-      {
-        "nome": "17-230 E Constellation",
-        "codigoReferencia": 7390
-      },
-      {
-        "nome": "17-230 Worker",
-        "codigoReferencia": 6863
-      },
-      {
-        "nome": "17-250 E Constel.",
+        "nome": "17-250 E",
         "codigoReferencia": 5686
       },
       {
-        "nome": "17-250 E Constellation",
-        "codigoReferencia": 3947
-      },
-      {
-        "nome": "17-250 E Worker",
-        "codigoReferencia": 3689
-      },
-      {
-        "nome": "17-260 E Constel.",
+        "nome": "17-260 E",
         "codigoReferencia": 8766
-      },
-      {
-        "nome": "17-280 E Constellation",
-        "codigoReferencia": 5955
       },
       {
         "nome": "17-300",
@@ -4569,22 +1973,6 @@
         "codigoReferencia": 3694
       },
       {
-        "nome": "17-320 E Constellation",
-        "codigoReferencia": 5123
-      },
-      {
-        "nome": "17-330 E Constellation",
-        "codigoReferencia": 5956
-      },
-      {
-        "nome": "18-210 Constellation",
-        "codigoReferencia": 10246
-      },
-      {
-        "nome": "18-260 Constellation",
-        "codigoReferencia": 10247
-      },
-      {
         "nome": "18-310",
         "codigoReferencia": 3695
       },
@@ -4593,40 +1981,12 @@
         "codigoReferencia": 3696
       },
       {
-        "nome": "18-320 Constellation",
-        "codigoReferencia": 10248
-      },
-      {
-        "nome": "19-320 E Constellation",
-        "codigoReferencia": 3948
-      },
-      {
-        "nome": "19-330 E Constellation",
-        "codigoReferencia": 5957
-      },
-      {
-        "nome": "19-360 Constellat. Tractor",
+        "nome": "19-360 Constellat.",
         "codigoReferencia": 7445
       },
       {
-        "nome": "19-370 E Constel.",
+        "nome": "19-370 E",
         "codigoReferencia": 4428
-      },
-      {
-        "nome": "19-380 Constellation",
-        "codigoReferencia": 10848
-      },
-      {
-        "nome": "19-390 E Constellation",
-        "codigoReferencia": 5958
-      },
-      {
-        "nome": "19-420 E Constellation",
-        "codigoReferencia": 6709
-      },
-      {
-        "nome": "20-480 Constellation",
-        "codigoReferencia": 11313
       },
       {
         "nome": "22-140 3-Eixos",
@@ -4637,7 +1997,7 @@
         "codigoReferencia": 3698
       },
       {
-        "nome": "22-210 H 3-Eixos",
+        "nome": "22-210 H",
         "codigoReferencia": 3699
       },
       {
@@ -4649,12 +2009,8 @@
         "codigoReferencia": 3701
       },
       {
-        "nome": "23-230 Constellat. 3-Eixos",
+        "nome": "23-230 Constellat.",
         "codigoReferencia": 7446
-      },
-      {
-        "nome": "23-230 Worker 3-Eixos",
-        "codigoReferencia": 6864
       },
       {
         "nome": "23-250 E",
@@ -4665,60 +2021,32 @@
         "codigoReferencia": 3703
       },
       {
-        "nome": "24-220 24-220 Worker",
-        "codigoReferencia": 3704
-      },
-      {
-        "nome": "24-250 E Constellation",
-        "codigoReferencia": 3949
-      },
-      {
-        "nome": "24-250 24-250 E",
+        "nome": "24-250 24-250",
         "codigoReferencia": 3705
       },
       {
-        "nome": "24-260 E Constel.",
+        "nome": "24-260 E",
         "codigoReferencia": 8767
       },
       {
-        "nome": "24-280 E Constel.",
+        "nome": "24-280 E",
         "codigoReferencia": 5948
       },
       {
-        "nome": "24-320 E Constellation",
-        "codigoReferencia": 5124
-      },
-      {
-        "nome": "24-330 E Constel.",
+        "nome": "24-330 E",
         "codigoReferencia": 5947
-      },
-      {
-        "nome": "25.480 Constellation",
-        "codigoReferencia": 10249
-      },
-      {
-        "nome": "25-320 E Constellation",
-        "codigoReferencia": 4682
       },
       {
         "nome": "25-360 Constel.",
         "codigoReferencia": 7874
       },
       {
-        "nome": "25-370 E Constel.",
+        "nome": "25-370 E",
         "codigoReferencia": 4429
       },
       {
-        "nome": "25-380 Constellation",
-        "codigoReferencia": 10849
-      },
-      {
-        "nome": "25-390 E Constel.",
+        "nome": "25-390 E",
         "codigoReferencia": 5949
-      },
-      {
-        "nome": "25-420 Constellation",
-        "codigoReferencia": 6684
       },
       {
         "nome": "25-460 Constel.",
@@ -4733,19 +2061,15 @@
         "codigoReferencia": 3708
       },
       {
-        "nome": "26-260 Constellation",
-        "codigoReferencia": 10250
-      },
-      {
-        "nome": "26-260 E Constel.",
+        "nome": "26-260 E",
         "codigoReferencia": 10901
       },
       {
-        "nome": "26-260 26-260 Work.",
+        "nome": "26-260 26-260",
         "codigoReferencia": 3707
       },
       {
-        "nome": "26-280 E Constel.",
+        "nome": "26-280 E",
         "codigoReferencia": 5950
       },
       {
@@ -4761,51 +2085,23 @@
         "codigoReferencia": 3711
       },
       {
-        "nome": "26-320 Constellation",
-        "codigoReferencia": 10251
-      },
-      {
-        "nome": "26-370 E Constellation",
-        "codigoReferencia": 5479
-      },
-      {
-        "nome": "26-390 E Constel.",
+        "nome": "26-390 E",
         "codigoReferencia": 5951
       },
       {
-        "nome": "26-420 E Constel.",
+        "nome": "26-420 E",
         "codigoReferencia": 6767
       },
       {
-        "nome": "27-260 Constellation",
-        "codigoReferencia": 10252
-      },
-      {
-        "nome": "27-320 Constellation",
-        "codigoReferencia": 11940
-      },
-      {
-        "nome": "30.320 Constellation",
-        "codigoReferencia": 10253
-      },
-      {
-        "nome": "30-280 Constellation",
-        "codigoReferencia": 8626
-      },
-      {
-        "nome": "30-330 Constellation",
-        "codigoReferencia": 7822
-      },
-      {
-        "nome": "31-260 E Constel.",
+        "nome": "31-260 E",
         "codigoReferencia": 4760
       },
       {
-        "nome": "31-260 31-260 Work.",
+        "nome": "31-260 31-260",
         "codigoReferencia": 3712
       },
       {
-        "nome": "31-280 E Constel.",
+        "nome": "31-280 E",
         "codigoReferencia": 5952
       },
       {
@@ -4813,44 +2109,16 @@
         "codigoReferencia": 3713
       },
       {
-        "nome": "31-320 Constellation",
-        "codigoReferencia": 10254
-      },
-      {
-        "nome": "31-320 E Constel.",
+        "nome": "31-320 E",
         "codigoReferencia": 4285
       },
       {
-        "nome": "31-330 E Constel.",
+        "nome": "31-330 E",
         "codigoReferencia": 5945
       },
       {
-        "nome": "31-370 E Constellation",
-        "codigoReferencia": 4430
-      },
-      {
-        "nome": "31-390 E Constel.",
+        "nome": "31-390 E",
         "codigoReferencia": 5946
-      },
-      {
-        "nome": "32.380 Constellation",
-        "codigoReferencia": 10255
-      },
-      {
-        "nome": "32-360 Constellation",
-        "codigoReferencia": 8542
-      },
-      {
-        "nome": "33.260 Constellation",
-        "codigoReferencia": 11478
-      },
-      {
-        "nome": "33.460 Constellation",
-        "codigoReferencia": 9244
-      },
-      {
-        "nome": "33.480 Constellation",
-        "codigoReferencia": 10256
       },
       {
         "nome": "35-300",
@@ -4859,30 +2127,6 @@
       {
         "nome": "40-300",
         "codigoReferencia": 3715
-      },
-      {
-        "nome": "4-150 Delivery",
-        "codigoReferencia": 8509
-      },
-      {
-        "nome": "4-160 Delivery",
-        "codigoReferencia": 9160
-      },
-      {
-        "nome": "5-140 E Delivery",
-        "codigoReferencia": 3875
-      },
-      {
-        "nome": "5-150 E Delivery",
-        "codigoReferencia": 5959
-      },
-      {
-        "nome": "6-160 Delivery",
-        "codigoReferencia": 8226
-      },
-      {
-        "nome": "6-170 Delivery",
-        "codigoReferencia": 10257
       },
       {
         "nome": "6-80",
@@ -4913,68 +2157,16 @@
         "codigoReferencia": 3722
       },
       {
-        "nome": "8-120 8-120",
-        "codigoReferencia": 3723
-      },
-      {
         "nome": "8-140",
         "codigoReferencia": 3724
-      },
-      {
-        "nome": "8-150 E Delivery",
-        "codigoReferencia": 3876
-      },
-      {
-        "nome": "8-150 8-150 E",
-        "codigoReferencia": 3725
-      },
-      {
-        "nome": "8-160 E Delivery",
-        "codigoReferencia": 5961
-      },
-      {
-        "nome": "9-150 E Delivery",
-        "codigoReferencia": 5334
-      },
-      {
-        "nome": "9-150 E Worker",
-        "codigoReferencia": 3877
-      },
-      {
-        "nome": "9-160 E Delivery",
-        "codigoReferencia": 5960
-      },
-      {
-        "nome": "9-170 Delivery",
-        "codigoReferencia": 8147
-      },
-      {
-        "nome": "9-180 Delivery",
-        "codigoReferencia": 10258
-      },
-      {
-        "nome": "Delivery Express",
-        "codigoReferencia": 8337
       },
       {
         "nome": "L-80",
         "codigoReferencia": 3726
       },
       {
-        "nome": "Meteor 28.460",
+        "nome": "Meteor",
         "codigoReferencia": 9245
-      },
-      {
-        "nome": "Meteor 28.480",
-        "codigoReferencia": 10302
-      },
-      {
-        "nome": "Meteor 29.520",
-        "codigoReferencia": 9246
-      },
-      {
-        "nome": "Meteor 29.530",
-        "codigoReferencia": 10303
       }
     ]
   },
@@ -4982,332 +2174,36 @@
     "marca": "Volvo",
     "modelos": [
       {
-        "nome": "Fh 400",
+        "nome": "FH",
         "codigoReferencia": 4212
       },
       {
-        "nome": "Fh 400 Globetrotter",
-        "codigoReferencia": 4215
-      },
-      {
-        "nome": "Fh 440",
-        "codigoReferencia": 4218
-      },
-      {
-        "nome": "Fh 440 Globetrotter",
-        "codigoReferencia": 4221
-      },
-      {
-        "nome": "Fh 480",
-        "codigoReferencia": 4224
-      },
-      {
-        "nome": "Fh 480 Globetrotter",
-        "codigoReferencia": 4227
-      },
-      {
-        "nome": "Fh 520",
-        "codigoReferencia": 4230
-      },
-      {
-        "nome": "Fh 520 Globetrotter",
-        "codigoReferencia": 4233
-      },
-      {
-        "nome": "Fh-12 380",
-        "codigoReferencia": 3727
-      },
-      {
-        "nome": "Fh-12 380 Globetrotter",
-        "codigoReferencia": 3730
-      },
-      {
-        "nome": "Fh-12 420",
-        "codigoReferencia": 3732
-      },
-      {
-        "nome": "Fh-12 420 Globetrotter",
-        "codigoReferencia": 3735
-      },
-      {
-        "nome": "Fh-12 460",
-        "codigoReferencia": 3738
-      },
-      {
-        "nome": "Fh-16 750 Globetrotter",
-        "codigoReferencia": 6905
-      },
-      {
-        "nome": "Fh-420",
-        "codigoReferencia": 5846
-      },
-      {
-        "nome": "Fh-420 Globetrotter",
-        "codigoReferencia": 5847
-      },
-      {
-        "nome": "Fh-420 Globetrotter Xl",
-        "codigoReferencia": 10491
-      },
-      {
-        "nome": "Fh-460",
-        "codigoReferencia": 5848
-      },
-      {
-        "nome": "Fh-460 Globetrotter",
-        "codigoReferencia": 5837
-      },
-      {
-        "nome": "Fh-460 Globetrotter Xl",
-        "codigoReferencia": 10503
-      },
-      {
-        "nome": "Fh-500",
-        "codigoReferencia": 5838
-      },
-      {
-        "nome": "Fh-500 Globetrotter",
-        "codigoReferencia": 5839
-      },
-      {
-        "nome": "Fh-500 Globetrotter Xl",
-        "codigoReferencia": 10515
-      },
-      {
-        "nome": "Fh-540",
-        "codigoReferencia": 5840
-      },
-      {
-        "nome": "Fh-540 Globetrotter",
-        "codigoReferencia": 5841
-      },
-      {
-        "nome": "Fh-540 Globetrotter Xl",
-        "codigoReferencia": 10529
-      },
-      {
-        "nome": "Fm 370",
+        "nome": "FM",
         "codigoReferencia": 4821
       },
       {
-        "nome": "Fm 380",
-        "codigoReferencia": 10598
-      },
-      {
-        "nome": "Fm 400",
-        "codigoReferencia": 4236
-      },
-      {
-        "nome": "Fm 440",
-        "codigoReferencia": 4238
-      },
-      {
-        "nome": "Fm 460",
-        "codigoReferencia": 6376
-      },
-      {
-        "nome": "Fm 480",
-        "codigoReferencia": 4239
-      },
-      {
-        "nome": "Fm-10 320",
-        "codigoReferencia": 3741
-      },
-      {
-        "nome": "Fm-12 340",
-        "codigoReferencia": 3742
-      },
-      {
-        "nome": "Fm-12 380",
-        "codigoReferencia": 3744
-      },
-      {
-        "nome": "Fm-12 420",
-        "codigoReferencia": 3745
-      },
-      {
-        "nome": "Fmx 370",
+        "nome": "FMX",
         "codigoReferencia": 5527
       },
       {
-        "nome": "Fmx 380",
-        "codigoReferencia": 10600
-      },
-      {
-        "nome": "Fmx 400",
-        "codigoReferencia": 5528
-      },
-      {
-        "nome": "Fmx 420",
-        "codigoReferencia": 5867
-      },
-      {
-        "nome": "Fmx 440",
-        "codigoReferencia": 5530
-      },
-      {
-        "nome": "Fmx 460",
-        "codigoReferencia": 5868
-      },
-      {
-        "nome": "Fmx 480",
-        "codigoReferencia": 5532
-      },
-      {
-        "nome": "Fmx 500",
-        "codigoReferencia": 5869
-      },
-      {
-        "nome": "Fmx 540",
-        "codigoReferencia": 10605
-      },
-      {
-        "nome": "N-10 280",
+        "nome": "N10",
         "codigoReferencia": 3746
       },
       {
-        "nome": "N-10 280 H",
-        "codigoReferencia": 3747
-      },
-      {
-        "nome": "N-10 280 Turbo-Ii",
-        "codigoReferencia": 3748
-      },
-      {
-        "nome": "N-10 280 Xh",
-        "codigoReferencia": 3749
-      },
-      {
-        "nome": "N-10 300 Xh",
-        "codigoReferencia": 3750
-      },
-      {
-        "nome": "N-10 340 Xht",
-        "codigoReferencia": 3751
-      },
-      {
-        "nome": "N-12 360",
+        "nome": "N12",
         "codigoReferencia": 3752
       },
       {
-        "nome": "N-12 360 Xh",
-        "codigoReferencia": 3753
-      },
-      {
-        "nome": "N-12 360 Xht",
-        "codigoReferencia": 3754
-      },
-      {
-        "nome": "Nh-12 340",
+        "nome": "NH",
         "codigoReferencia": 3878
       },
       {
-        "nome": "Nh-12 380",
-        "codigoReferencia": 3755
-      },
-      {
-        "nome": "Nh-12 380 Globetrotter",
-        "codigoReferencia": 3758
-      },
-      {
-        "nome": "Nh-12 420",
-        "codigoReferencia": 3761
-      },
-      {
-        "nome": "Nh-12 420 Globetrotter",
-        "codigoReferencia": 3764
-      },
-      {
-        "nome": "Nh-12 460",
-        "codigoReferencia": 3766
-      },
-      {
-        "nome": "Nl-10 280",
+        "nome": "NL",
         "codigoReferencia": 3769
       },
       {
-        "nome": "Nl-10 310",
-        "codigoReferencia": 3772
-      },
-      {
-        "nome": "Nl-10 320 Edc",
-        "codigoReferencia": 3774
-      },
-      {
-        "nome": "Nl-10 340",
-        "codigoReferencia": 3778
-      },
-      {
-        "nome": "Nl-12 360",
-        "codigoReferencia": 3781
-      },
-      {
-        "nome": "Nl-12 360 Edc",
-        "codigoReferencia": 3782
-      },
-      {
-        "nome": "Nl-12 400",
-        "codigoReferencia": 3788
-      },
-      {
-        "nome": "Nl-12 410",
-        "codigoReferencia": 3791
-      },
-      {
-        "nome": "Nl-12 410 Edc",
-        "codigoReferencia": 3792
-      },
-      {
-        "nome": "Vm 220",
+        "nome": "VM",
         "codigoReferencia": 5864
-      },
-      {
-        "nome": "Vm 260",
-        "codigoReferencia": 3950
-      },
-      {
-        "nome": "Vm 270",
-        "codigoReferencia": 5836
-      },
-      {
-        "nome": "Vm 270 Athor",
-        "codigoReferencia": 5855
-      },
-      {
-        "nome": "Vm 270 City",
-        "codigoReferencia": 9185
-      },
-      {
-        "nome": "Vm 290",
-        "codigoReferencia": 10538
-      },
-      {
-        "nome": "Vm 310",
-        "codigoReferencia": 3953
-      },
-      {
-        "nome": "Vm 330",
-        "codigoReferencia": 5865
-      },
-      {
-        "nome": "Vm 360",
-        "codigoReferencia": 10543
-      },
-      {
-        "nome": "Vm-17 210",
-        "codigoReferencia": 3798
-      },
-      {
-        "nome": "Vm-17 240",
-        "codigoReferencia": 3799
-      },
-      {
-        "nome": "Vm-23 210 Vm",
-        "codigoReferencia": 3800
-      },
-      {
-        "nome": "Vm-23 240",
-        "codigoReferencia": 3801
       }
     ]
   },
@@ -5315,16 +2211,8 @@
     "marca": "Walkbus",
     "modelos": [
       {
-        "nome": "Phanter Special Escolar",
+        "nome": "Phanter Special",
         "codigoReferencia": 4572
-      },
-      {
-        "nome": "Phanter Special Exec.",
-        "codigoReferencia": 4573
-      },
-      {
-        "nome": "Phanter Special Urbano",
-        "codigoReferencia": 4574
       }
     ]
   }

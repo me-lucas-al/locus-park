@@ -59,6 +59,13 @@ export class VehicleBrandModelSelectComponent {
   }
 
   protected onBrandSelected(brand: SelectOption): void {
+    if (!brand || !brand.code) {
+      this.selectedBrandCode.set('');
+      this.modelSelectRef()?.reset();
+      this.brandSelected.emit({ code: '', label: '' });
+      this.modelSelected.emit({ code: '', label: '' });
+      return;
+    }
     const isSameBrand = this.selectedBrandCode() === brand.code;
     this.selectedBrandCode.set(brand.code);
     if (!isSameBrand) this.modelSelectRef()?.reset();

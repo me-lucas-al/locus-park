@@ -37,20 +37,12 @@ export class SearchableSelectComponent {
     () => this.selectedOption()?.code === OTHER_OPTION_CODE
   );
 
-  protected readonly displayLabel = computed(() => {
-    const option = this.selectedOption();
-    if (!option) return '';
-    if (option.code === OTHER_OPTION_CODE) return this.customOtherText() || option.label;
-    return option.label;
-  });
-
-  protected readonly displayValue = computed(
-    () => this.searchQuery() || this.displayLabel()
-  );
-
   protected readonly filteredOptions = computed(() => {
     const query = this.searchQuery().toLowerCase().trim();
-    if (!query) return this.options();
+    const selected = this.selectedOption();
+    if (!query || (selected && selected.label.toLowerCase() === query)) {
+      return this.options();
+    }
     return this.options().filter(option =>
       option.label.toLowerCase().includes(query)
     );
@@ -59,19 +51,35 @@ export class SearchableSelectComponent {
   protected openDropdown(): void {
     if (this.disabled() || this.isLoading()) return;
     this.isDropdownOpen.set(true);
-    this.searchQuery.set('');
   }
 
   protected closeDropdown(): void {
     setTimeout(() => {
       this.isDropdownOpen.set(false);
-      this.searchQuery.set(this.displayLabel());
+      const selected = this.selectedOption();
+      if (selected) {
+        if (selected.code === OTHER_OPTION_CODE) {
+          this.searchQuery.set(this.customOtherText() || selected.label);
+        } else {
+          this.searchQuery.set(selected.label);
+        }
+      } else {
+        this.searchQuery.set('');
+      }
     }, 200);
   }
 
   protected onSearchInput(event: Event): void {
-    const input = event.target as HTMLInputElement;
-    this.searchQuery.set(input.value);
+    const inputEl = event.target as HTMLInputElement;
+    const value = inputEl.value;
+    this.searchQuery.set(value);
+    this.isDropdownOpen.set(true);
+
+    if (!value.trim()) {
+      this.selectedOption.set(null);
+      this.customOtherText.set('');
+      this.optionSelected.emit({ code: '', label: '' });
+    }
   }
 
   protected selectOption(option: SelectOption): void {

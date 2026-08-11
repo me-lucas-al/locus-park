@@ -4,76 +4,336 @@ const path = require('path');
 const inputPath = path.join(__dirname, '..', 'catalogo-fipe.json');
 const outputPath = path.join(__dirname, '..', 'catalogo-fipe-limpo.json');
 
-// Stop words that indicate versions, engines, body styles, or specs
-const STOP_WORDS = new Set([
-  // Transmission / Engine Specs
-  '16V', '8V', '24V', '12V', '20V', 'V6', 'V8', 'V12', 'L4', 'L6', 'W12',
-  'AUT', 'MEC', 'MANUAL', 'AUTOMATICO', 'AUTOMÁTICO', 'MECANICO', 'MECÂNICO',
-  'TIPTRONIC', 'DSG', 'CVT', 'S-TRONIC', 'TIPT', 'TIP', 'TRONIC', 'MOTION', 'IMOTION', 'I-MOTION',
-  'POWERSHIFT', 'DUALOGIC', 'E-TORQ', 'ETORQ', 'MULTIJET', 'FLEXPOWER', 'MULTIPOWER', 'TRIFUEL', 'TETRAFUEL',
-  'TURBO', 'BITURBO', 'BI-TURBO', 'SUPERCHARGER', 'COMPRESSOR', 'TDI', 'TSI', 'TFSI', 'FSI', 'MPI', 'GDI', 'TGDI', 'VTEC', 'MIVEC',
-  'MSI', 'SDRIVE', 'XDRIVE', 'E-DRIVE', 'EDRIVE', 'FSIe', 'TGDI',
-  
-  // Fuel / Traction
-  'FLEX', 'GASOLINA', 'DIESEL', 'GASOL', 'DIES', 'D', 'G', 'F', 'HIBRIDO', 'HÍBRIDO', 'HYBRID', 'ELETRICO', 'ELÉTRICO', 'ELECTRIC',
-  'EV', 'PHEV', 'MHEV', 'BIOFLEX', '4X4', '4X2', 'AWD', 'FWD', 'RWD', '4WD', 'QUATTRO', 'QUATRO', '2WD', 'SYNCRO',
+const KNOWN_CAR_FAMILIES = [
+  // Volkswagen
+  { match: /\bCROSS\s*FOX\b|\bCROSSFOX\b/i, name: 'CrossFox' },
+  { match: /\bSPACE\s*CROSS\b/i, name: 'Space Cross' },
+  { match: /\bSPACE\s*FOX\b|\bSPACEFOX\b/i, name: 'SpaceFox' },
+  { match: /\bPOLO\s*SEDAN\b/i, name: 'Polo Sedan' },
+  { match: /\bPOLO\s*TRACK\b/i, name: 'Polo Track' },
+  { match: /\bPOLO\b/i, name: 'Polo' },
+  { match: /\bNEW\s*BEETLE\b/i, name: 'New Beetle' },
+  { match: /\bFUSCA\b/i, name: 'Fusca' },
+  { match: /\bKOMBI\b/i, name: 'Kombi' },
+  { match: /\bPARATI\b/i, name: 'Parati' },
+  { match: /\bSANTANA\s*QUANTUM\b|\bQUANTUM\b/i, name: 'Quantum' },
+  { match: /\bSANTANA\b/i, name: 'Santana' },
+  { match: /\bSAVEIRO\b/i, name: 'Saveiro' },
+  { match: /\bVOYAGE\b/i, name: 'Voyage' },
+  { match: /\bGOLF\s*VARIANT\b/i, name: 'Golf Variant' },
+  { match: /\bGOLF\b/i, name: 'Golf' },
+  { match: /\bJETTA\s*VARIANT\b/i, name: 'Jetta Variant' },
+  { match: /\bJETTA\b/i, name: 'Jetta' },
+  { match: /\bPASSAT\s*VARIANT\b/i, name: 'Passat Variant' },
+  { match: /\bPASSAT\b/i, name: 'Passat' },
+  { match: /\bT-?CROSS\b/i, name: 'T-Cross' },
+  { match: /\bTAOS\b/i, name: 'Taos' },
+  { match: /\bTIGUAN\b/i, name: 'Tiguan' },
+  { match: /\bTOUAREG\b/i, name: 'Touareg' },
+  { match: /\bNIVUS\b/i, name: 'Nivus' },
+  { match: /\bVIRTUS\b/i, name: 'Virtus' },
+  { match: /\bAMAROK\b/i, name: 'Amarok' },
+  { match: /\bUP\b|\bUP!\b/i, name: 'Up!' },
+  { match: /\bFOX\b/i, name: 'Fox' },
+  { match: /\bGOL\b/i, name: 'Gol' },
 
-  // Body Styles / Doors
-  'HATCH', 'SEDAN', 'SED', 'WAGON', 'COUPE', 'COUPÉ', 'CONVERSIVEL', 'CONVERSÍVEL', 'CABRIO', 'CABRIOLET', 'SPYDER', 'ROADSTER',
-  'AVANT', 'SW', 'SPORTBACK', 'TOURING', 'FURGÃO', 'FURGAO', 'VAN', 'MINIBUS', 'BUS', 'PICK-UP', 'PICKUP', 'CHASSI',
-  'CS', 'CD', 'CE', 'CABINE', 'DUPLA', 'SIMPLES', 'ESTENDIDA', 'DOUBLE', 'SINGLE', 'CREW',
-  '2P', '4P', '3P', '5P', 'PORTAS', 'DOORS',
+  // Chevrolet / GM
+  { match: /\bONIX\s*PLUS\b/i, name: 'Onix Plus' },
+  { match: /\bONIX\b/i, name: 'Onix' },
+  { match: /\bPRISMA\b/i, name: 'Prisma' },
+  { match: /\bCORSA\s*SEDAN\b/i, name: 'Corsa Sedan' },
+  { match: /\bCORSA\s*WAGON\b/i, name: 'Corsa Wagon' },
+  { match: /\bCORSA\s*PICK\s*UP\b|\bCORSA\s*PICKUP\b/i, name: 'Corsa Pick-Up' },
+  { match: /\bCORSA\b/i, name: 'Corsa' },
+  { match: /\bCLASSIC\b/i, name: 'Classic' },
+  { match: /\bCELTA\b/i, name: 'Celta' },
+  { match: /\bCOBALT\b/i, name: 'Cobalt' },
+  { match: /\bCRUZE\s*SPORT6\b/i, name: 'Cruze Sport6' },
+  { match: /\bCRUZE\b/i, name: 'Cruze' },
+  { match: /\bSPIN\b/i, name: 'Spin' },
+  { match: /\bTRACKER\b/i, name: 'Tracker' },
+  { match: /\bEQUINOX\b/i, name: 'Equinox' },
+  { match: /\bTRAILBLAZER\b/i, name: 'Trailblazer' },
+  { match: /\bBLAZER\b/i, name: 'Blazer' },
+  { match: /\bS-?10\b|\bS10\b/i, name: 'S10' },
+  { match: /\bMONTANA\b/i, name: 'Montana' },
+  { match: /\bASTRA\s*SEDAN\b/i, name: 'Astra Sedan' },
+  { match: /\bASTRA\b/i, name: 'Astra' },
+  { match: /\bVECTRA\s*GT\b/i, name: 'Vectra GT' },
+  { match: /\bVECTRA\s*SEDAN\b|\bVECTRA\b/i, name: 'Vectra' },
+  { match: /\bZAFIRA\b/i, name: 'Zafira' },
+  { match: /\bMERIVA\b/i, name: 'Meriva' },
+  { match: /\bAGILE\b/i, name: 'Agile' },
+  { match: /\bSONIC\b/i, name: 'Sonic' },
+  { match: /\bCAPTIVA\b/i, name: 'Captiva' },
+  { match: /\bCAMARO\b/i, name: 'Camaro' },
+  { match: /\bCORVETTE\b/i, name: 'Corvette' },
+  { match: /\bOPALA\b/i, name: 'Opala' },
+  { match: /\bCARAVAN\b/i, name: 'Caravan' },
+  { match: /\bCHEVETTE\b/i, name: 'Chevette' },
+  { match: /\bKADETT\b/i, name: 'Kadett' },
+  { match: /\bIPANEMA\b/i, name: 'Ipanema' },
+  { match: /\bMONZA\b/i, name: 'Monza' },
+  { match: /\bOMEGA\b/i, name: 'Omega' },
+  { match: /\bSUPREMA\b/i, name: 'Suprema' },
 
-  // Common Trim Levels / Versions / FIPE Typos
-  'ADVANT', 'ADVANTAGE', 'ADVAN', 'ADV', 'ELEG', 'ELEGANCE', 'ELITE', 'GSI', 'GTS', 'GTI', 'GLD', 'GLI', 'CLD', 'CLI',
-  'LS', 'LT', 'LTZ', 'PREMIER', 'RS', 'SS', 'RX', 'RXS', 'RXT', 'RTS', 'RT', 'LX', 'LXS', 'EX', 'EXL', 'EXS', 'DX', 'ELX', 'HLX',
-  'SI', 'S', 'SE', 'SEL', 'XLT', 'XLS', 'XL', 'STORM', 'ALLURE', 'GRIFFE', 'ACTIVE', 'FELINE', 'PRESENCE', 'PACK', 'PRESTIGE',
-  'STYLE', 'EVOLUTION', 'VISION', 'SENSE', 'LIKE', 'DRIVE', 'WAY', 'TREKKING', 'ADVENTURE', 'SPORTING', 'X-LINE', 'ADVANCE',
-  'AMBITION', 'ATTRACTION', 'AMBIENTE', 'L', 'GL', 'GLS', 'GS', 'SL', 'SLE', 'SLX', 'SV', 'SXT', 'R/T', 'SRT', 'SRT8',
-  'OVERLAND', 'LATITUDE', 'LONGITUDE', 'TRAILHAWK', 'RUBICON', 'SAHARA', 'SPORT', 'LIMITED', 'EXCLUSIVE', 'EXCELENCE',
-  'SIGNATURE', 'LUXURY', 'EXECUTIVE', 'EXEC', 'EXECUTIVA', 'CUSTOM', 'STD', 'SUPER', 'CLUB', 'CITY', 'PLUS', 'TECH',
-  'POWER', 'RALLYE', 'OURO', 'BLACK', 'GREY', 'SILVER', 'GOLD', 'PLATINUM', 'WHITE', 'RED', 'BLUE', 'GREEN', 'YELLOW', 'ORANGE',
-  'DARK', 'SHADOW', 'NIGHT', 'DYNAMIC', 'DYNAMIQUE', 'DYNAM', 'DYN', 'EXPRESSION', 'AUTHENTIQUE', 'PRIVILÈGE', 'PRIVILEGE',
-  'INITIALE', 'BOSE', 'ZEN', 'INTENSE', 'ICONIC', 'LIFE', 'PLAY', 'CONNECT', 'CONNECTED', 'FREEDOM', 'VOLCANO', 'RANCH',
-  'ULTRA', 'ENDURANCE', 'WORKING', 'HARD', 'OPENING', 'LAUNCH', 'FOUNDER', 'FOUNDER\'S', 'FIRST', 'HIGH', 'HIGHLINE',
-  'TREND', 'TRENDLINE', 'COMFORT', 'COMFORTLINE', 'SPORTLINE', 'TRACK', 'FIELD', 'CROSS', 'OFFROAD', 'TRAIL', 'X-ROAD',
-  'LOCKER', 'RUN', 'ATTRACTIVE', 'ESSENCE', 'ABSOLUTE', 'T-JET', 'HGT', 'ABARTH', 'AM', 'ESC', 'ESCOLAR', 'MICROBUS',
-  'DE', 'LUXE', 'MIDNIGHT', 'FIFTY', 'GRAPHITE', 'TOURING', 'BLUEMOTION', 'PEPPER', 'PRIME', 'ROCK', 'ROUTE', 'SELEÇÃO', 'SELECAO',
-  'CLASS', 'CLASSE', 'PRO', 'PLUS', 'MINI', 'EXPRESS', 'EXPRESS+', 'CARAVELLE', 'INTERMEDIATE', 'GP', 'COMF', 'HIGHLI',
-  'ALTIS', 'READY', 'X-WAY', 'XWAY', 'SE-G', 'SEG', 'GR-SPORT', 'GRSPORT',
-  'COMPETITION', 'GHIA', 'PURE', 'RECHARGE', 'INSCRIPTION', 'INSCRIPT', 'INSC', 'MOMENTUM', 'MOMENT', 'R-DESIGN', 'RDESIGN',
-  'POLESTAR', 'ULTIMATE', 'ULTIM', 'ULTRA', 'KINETIC', 'FIRST',
-  'OUTBOUND', 'R-', 'DYN', 'DYNAMIC', 'R-DYNAMIC', 'RDYNAMIC', 'X-DY', 'XDY', 'R-DYN', 'RDYN', 'METROP', 'METROPOLITAN',
-  'EDITION', 'EDIT', 'ED', 'AUTO', 'AUTOB', 'AUTOBIO', 'AUTOBIOGRAPHY', 'SUP', 'SUPERC', 'SUPERCHAR', 'SUPERCHARG', 'SUPERCHARGED',
-  'L', 'SE', 'HSE', 'S', 'BASE', 'TROPHY', 'SVAUTOBIOGRAPHY', 'PRESTIGETECH', 'ZANZIBAR', 'LONDON',
-  'SUNRISE', 'XTREME', 'EXTREME', 'COMFOR', 'HGHI', 'HIGLI', 'SOUND', 'SPIRIT', 'JUNIOR', 'COMODORO', 'DIPLOMATA', 'OPALA',
-  'BEV', '4M', '4MATIC', 'AMG', 'LINE', 'EDT', 'PLAT', 'PLATINUM', 'TWIN', 'SKIN', 'PROGRESSIVE',
-  'CGI', 'HIG', 'EXT', 'SPORTB', 'SPB', 'SB', 'PERFORMANCE', 'PERF', 'AMBIT', 'PREST', 'PRES'
-]);
+  // Fiat
+  { match: /\bPALIO\s*WEEKEND\b|\bWEEKEND\b/i, name: 'Palio Weekend' },
+  { match: /\bPALIO\b/i, name: 'Palio' },
+  { match: /\bGRAND\s*SIENA\b/i, name: 'Grand Siena' },
+  { match: /\bSIENA\b/i, name: 'Siena' },
+  { match: /\bUNO\s*MILLE\b|\bMILLE\b/i, name: 'Uno Mille' },
+  { match: /\bUNO\b/i, name: 'Uno' },
+  { match: /\bSTRADA\b/i, name: 'Strada' },
+  { match: /\bTORO\b/i, name: 'Toro' },
+  { match: /\bMOBI\b/i, name: 'Mobi' },
+  { match: /\bARGO\b/i, name: 'Argo' },
+  { match: /\bCRONOS\b/i, name: 'Cronos' },
+  { match: /\bPULSE\b/i, name: 'Pulse' },
+  { match: /\bFASTBACK\b/i, name: 'Fastback' },
+  { match: /\bFIORINO\b/i, name: 'Fiorino' },
+  { match: /\bDUCATO\b/i, name: 'Ducato' },
+  { match: /\bSCUDO\b/i, name: 'Scudo' },
+  { match: /\bDOBLO\b|\bDOBLÒ\b/i, name: 'Doblò' },
+  { match: /\bIDEA\b/i, name: 'Idea' },
+  { match: /\bLINEA\b/i, name: 'Linea' },
+  { match: /\bPUNTO\b/i, name: 'Punto' },
+  { match: /\bSTILO\b/i, name: 'Stilo' },
+  { match: /\bMAREA\s*WEEKEND\b/i, name: 'Marea Weekend' },
+  { match: /\bMAREA\b/i, name: 'Marea' },
+  { match: /\bBRAVO\b/i, name: 'Bravo' },
+  { match: /\bBRAVA\b/i, name: 'Brava' },
+  { match: /\bTEMPRA\b/i, name: 'Tempra' },
+  { match: /\bTIPO\b/i, name: 'Tipo' },
+  { match: /\bFREEMONT\b/i, name: 'Freemont' },
+  { match: /\b500\b/i, name: '500' },
+  { match: /\bTITANO\b/i, name: 'Titano' },
 
-// Patterns for regex-based checks
-const STOP_REGEX_PATTERNS = [
-  /\d\.\d/,          // matches any motor designation like 1.0, 2.0, CS2.0, CD2.0, Highline1.6
-  /\d+V/i,           // matches valves like 16V, 8V, 12V, 24V
-  /\d+CV/i,          // e.g. 115cv, 420cv
-  /\d+HP/i,          // e.g. 150hp, 300hp
-  /^\d+P$/i,         // e.g. 2p, 4p
-  /^\d+L$/i,         // e.g. 17L, 16L
-  /^\(E\d\)$/i,      // e.g. (E6), (E5)
-  /^[A-Z]-\d+$/i,    // matches engine / version suffixes like G-60, Z-28, SS-10
-  /^[A-Z]+\d+[A-Z]*$/i // matches engine / power codes like I6, D300, D350, T8, T5, T6, TD4, TD6, P400e
+  // Ford
+  { match: /\bECOSPORT\b/i, name: 'EcoSport' },
+  { match: /\bFIESTA\s*SEDAN\b/i, name: 'Fiesta Sedan' },
+  { match: /\bFIESTA\b/i, name: 'Fiesta' },
+  { match: /\bKA\s*SEDAN\b|\bKA\+\b/i, name: 'Ka Sedan' },
+  { match: /\bKA\b/i, name: 'Ka' },
+  { match: /\bFOCUS\s*SEDAN\b/i, name: 'Focus Sedan' },
+  { match: /\bFOCUS\b/i, name: 'Focus' },
+  { match: /\bFUSION\b/i, name: 'Fusion' },
+  { match: /\bRANGER\b/i, name: 'Ranger' },
+  { match: /\bMAVERICK\b/i, name: 'Maverick' },
+  { match: /\bBRONCO\s*SPORT\b|\bBRONCO\b/i, name: 'Bronco' },
+  { match: /\bTERRITORY\b/i, name: 'Territory' },
+  { match: /\bMUSTANG\b/i, name: 'Mustang' },
+  { match: /\bEDGE\b/i, name: 'Edge' },
+  { match: /\bTRANSIT\b/i, name: 'Transit' },
+  { match: /\bESCORT\b/i, name: 'Escort' },
+  { match: /\bVERONA\b/i, name: 'Verona' },
+  { match: /\bDEL\s*REY\b/i, name: 'Del Rey' },
+  { match: /\bCORCEL\b/i, name: 'Corcel' },
+  { match: /\bPAMPA\b/i, name: 'Pampa' },
+  { match: /\bF-?1000\b/i, name: 'F-1000' },
+  { match: /\bF-?250\b/i, name: 'F-250' },
+
+  // Toyota
+  { match: /\bCOROLLA\s*CROSS\b/i, name: 'Corolla Cross' },
+  { match: /\bCOROLLA\b/i, name: 'Corolla' },
+  { match: /\bYARIS\s*CROSS\b/i, name: 'Yaris Cross' },
+  { match: /\bYARIS\s*SEDAN\b/i, name: 'Yaris Sedan' },
+  { match: /\bYARIS\b/i, name: 'Yaris' },
+  { match: /\bETIOS\s*SEDAN\b/i, name: 'Etios Sedan' },
+  { match: /\bETIOS\b/i, name: 'Etios' },
+  { match: /\bSW4\b|\bHILUX\s*SW4\b/i, name: 'SW4' },
+  { match: /\bHILUX\b/i, name: 'Hilux' },
+  { match: /\bRAV4\b|\bRAV\s*4\b/i, name: 'RAV4' },
+  { match: /\bCAMRY\b/i, name: 'Camry' },
+  { match: /\bPRIUS\b/i, name: 'Prius' },
+  { match: /\bCOROLLA\s*GR\b|\bGR\s*COROLLA\b/i, name: 'GR Corolla' },
+  { match: /\bBANDEIRANTE\b/i, name: 'Bandeirante' },
+
+  // Honda
+  { match: /\bCIVIC\b/i, name: 'Civic' },
+  { match: /\bCITY\s*SEDAN\b/i, name: 'City Sedan' },
+  { match: /\bCITY\s*HATCH\b/i, name: 'City Hatch' },
+  { match: /\bCITY\b/i, name: 'City' },
+  { match: /\bFIT\b/i, name: 'Fit' },
+  { match: /\bHR-?V\b|\bHRV\b/i, name: 'HR-V' },
+  { match: /\bCR-?V\b|\bCRV\b/i, name: 'CR-V' },
+  { match: /\bWR-?V\b|\bWRV\b/i, name: 'WR-V' },
+  { match: /\bZR-?V\b|\bZRV\b/i, name: 'ZR-V' },
+  { match: /\bACCORD\b/i, name: 'Accord' },
+
+  // Hyundai
+  { match: /\bHB20S\b/i, name: 'HB20S' },
+  { match: /\bHB20X\b/i, name: 'HB20X' },
+  { match: /\bHB20\b/i, name: 'HB20' },
+  { match: /\bCRETA\b/i, name: 'Creta' },
+  { match: /\bTUCSON\b/i, name: 'Tucson' },
+  { match: /\bIX35\b|\bIX-?35\b/i, name: 'ix35' },
+  { match: /\bSANTA\s*FE\b|\bSANTA\s*FÉ\b/i, name: 'Santa Fe' },
+  { match: /\bVERACRUZ\b/i, name: 'Veracruz' },
+  { match: /\bELANTRA\b/i, name: 'Elantra' },
+  { match: /\bAZERA\b/i, name: 'Azera' },
+  { match: /\bSONATA\b/i, name: 'Sonata' },
+  { match: /\bI30\b|\bI-?30\b/i, name: 'i30' },
+  { match: /\bVELOSTER\b/i, name: 'Veloster' },
+  { match: /\bHR\b/i, name: 'HR' },
+
+  // Renault
+  { match: /\bKWID\b/i, name: 'Kwid' },
+  { match: /\bSTEPWAY\b|\bSANDERO\s*STEPWAY\b/i, name: 'Stepway' },
+  { match: /\bSANDERO\b/i, name: 'Sandero' },
+  { match: /\bLOGAN\b/i, name: 'Logan' },
+  { match: /\bOROCH\b|\bDUSTER\s*OROCH\b/i, name: 'Oroch' },
+  { match: /\bDUSTER\b/i, name: 'Duster' },
+  { match: /\bCAPTUR\b/i, name: 'Captur' },
+  { match: /\bKARDIAN\b/i, name: 'Kardian' },
+  { match: /\bMEGANE\s*GRAND\s*TOUR\b|\bGRAND\s*TOUR\b/i, name: 'Megane Grand Tour' },
+  { match: /\bMEGANE\b/i, name: 'Megane' },
+  { match: /\bFLUENCE\b/i, name: 'Fluence' },
+  { match: /\bCLIO\s*SEDAN\b/i, name: 'Clio Sedan' },
+  { match: /\bCLIO\b/i, name: 'Clio' },
+  { match: /\bSCENIC\b|\bSCÉNIC\b/i, name: 'Scenic' },
+  { match: /\bSYMBOL\b/i, name: 'Symbol' },
+  { match: /\bMASTER\b/i, name: 'Master' },
+  { match: /\bKANGOO\b/i, name: 'Kangoo' },
+
+  // Nissan
+  { match: /\bKICKS\b/i, name: 'Kicks' },
+  { match: /\bVERSA\b/i, name: 'Versa' },
+  { match: /\bSENTRA\b/i, name: 'Sentra' },
+  { match: /\bMARCH\b/i, name: 'March' },
+  { match: /\bFRONTIER\b/i, name: 'Frontier' },
+  { match: /\bTIIDA\s*SEDAN\b/i, name: 'Tiida Sedan' },
+  { match: /\bTIIDA\b/i, name: 'Tiida' },
+  { match: /\bLIVINA\s*GRAND\b|\bGRAND\s*LIVINA\b/i, name: 'Grand Livina' },
+  { match: /\bLIVINA\b/i, name: 'Livina' },
+
+  // Jeep
+  { match: /\bRENEGADE\b/i, name: 'Renegade' },
+  { match: /\bCOMPASS\b/i, name: 'Compass' },
+  { match: /\bCOMMANDER\b/i, name: 'Commander' },
+  { match: /\bWRANGLER\b/i, name: 'Wrangler' },
+  { match: /\bGRAND\s*CHEROKEE\b/i, name: 'Grand Cherokee' },
+  { match: /\bCHEROKEE\b/i, name: 'Cherokee' },
+  { match: /\bGLADIATOR\b/i, name: 'Gladiator' },
+
+  // Peugeot
+  { match: /\b208\b/i, name: '208' },
+  { match: /\b2008\b/i, name: '2008' },
+  { match: /\b3008\b/i, name: '3008' },
+  { match: /\b5008\b/i, name: '5008' },
+  { match: /\b207\s*SEDAN\b|\b207\s*PASSION\b/i, name: '207 Passion' },
+  { match: /\b207\s*SW\b/i, name: '207 SW' },
+  { match: /\b207\b/i, name: '207' },
+  { match: /\b206\s*SW\b/i, name: '206 SW' },
+  { match: /\b206\b/i, name: '206' },
+  { match: /\b307\s*SEDAN\b/i, name: '307 Sedan' },
+  { match: /\b307\b/i, name: '307' },
+  { match: /\b308\b/i, name: '308' },
+  { match: /\b408\b/i, name: '408' },
+  { match: /\bPARTNER\b/i, name: 'Partner' },
+  { match: /\bEXPERT\b/i, name: 'Expert' },
+  { match: /\bBOXER\b/i, name: 'Boxer' },
+
+  // Citroën
+  { match: /\bC3\s*AIRCROSS\b/i, name: 'C3 Aircross' },
+  { match: /\bC3\b/i, name: 'C3' },
+  { match: /\bC4\s*CACTUS\b/i, name: 'C4 Cactus' },
+  { match: /\bC4\s*LOUNGE\b/i, name: 'C4 Lounge' },
+  { match: /\bC4\s*PALLAS\b/i, name: 'C4 Pallas' },
+  { match: /\bGRAND\s*C4\s*PICASSO\b/i, name: 'Grand C4 Picasso' },
+  { match: /\bC4\s*PICASSO\b/i, name: 'C4 Picasso' },
+  { match: /\bC4\b/i, name: 'C4' },
+  { match: /\bC5\b/i, name: 'C5' },
+  { match: /\bAIRCROSS\b/i, name: 'Aircross' },
+  { match: /\bXSARA\s*PICASSO\b/i, name: 'Xsara Picasso' },
+  { match: /\bXSARA\b/i, name: 'Xsara' },
+  { match: /\bBERLINGO\b/i, name: 'Berlingo' },
+  { match: /\bJUMPY\b/i, name: 'Jumpy' },
+  { match: /\bJUMPER\b/i, name: 'Jumper' },
+
+  // BYD
+  { match: /\bDOLPHIN\s*MINI\b/i, name: 'Dolphin Mini' },
+  { match: /\bDOLPHIN\b/i, name: 'Dolphin' },
+  { match: /\bSEALION\s*7\b|\bSEALION\b/i, name: 'Sealion 7' },
+  { match: /\bSEAL\b/i, name: 'Seal' },
+  { match: /\bSONG\s*PLUS\b/i, name: 'Song Plus' },
+  { match: /\bSONG\s*PRO\b/i, name: 'Song Pro' },
+  { match: /\bYUAN\s*PLUS\b/i, name: 'Yuan Plus' },
+  { match: /\bYUAN\s*PRO\b/i, name: 'Yuan Pro' },
+  { match: /\bKING\b/i, name: 'King' },
+  { match: /\bSHARK\b/i, name: 'Shark' },
+  { match: /\bTAN\b/i, name: 'Tan' },
+  { match: /\bHAN\b/i, name: 'Han' },
+
+  // GWM
+  { match: /\bHAVAL\s*H6\b|\bH6\b/i, name: 'Haval H6' },
+  { match: /\bORA\s*03\b|\bORA\b/i, name: 'Ora 03' },
+  { match: /\bTANK\s*300\b|\bTANK\b/i, name: 'Tank 300' },
+  { match: /\bPOER\b/i, name: 'Poer' },
+
+  // Caoa Chery
+  { match: /\bTIGGO\s*5X\b|\bTIGGO\s*5\b/i, name: 'Tiggo 5X' },
+  { match: /\bTIGGO\s*7\b/i, name: 'Tiggo 7' },
+  { match: /\bTIGGO\s*8\b/i, name: 'Tiggo 8' },
+  { match: /\bTIGGO\s*2\b/i, name: 'Tiggo 2' },
+  { match: /\bTIGGO\s*3X\b/i, name: 'Tiggo 3X' },
+  { match: /\bARRIZO\s*6\b/i, name: 'Arrizo 6' },
+  { match: /\bARRIZO\s*5\b/i, name: 'Arrizo 5' },
+  { match: /\bICAR\b/i, name: 'iCar' },
+  { match: /\bQQ\b/i, name: 'QQ' },
+
+  // Land Rover
+  { match: /\bDISCOVERY\s*SPORT\b/i, name: 'Discovery Sport' },
+  { match: /\bDISCOVERY\b/i, name: 'Discovery' },
+  { match: /\bRANGE\s*ROVER\s*EVOQUE\b|\bEVOQUE\b/i, name: 'Range Rover Evoque' },
+  { match: /\bRANGE\s*ROVER\s*VELAR\b|\bVELAR\b/i, name: 'Range Rover Velar' },
+  { match: /\bRANGE\s*ROVER\s*SPORT\b/i, name: 'Range Rover Sport' },
+  { match: /\bRANGE\s*ROVER\b/i, name: 'Range Rover' },
+  { match: /\bDEFENDER\b/i, name: 'Defender' },
+  { match: /\bFREELANDER\b/i, name: 'Freelander' },
+
+  // Volvo
+  { match: /\bEX30\b/i, name: 'EX30' },
+  { match: /\bEX90\b/i, name: 'EX90' },
+  { match: /\bXC40\b/i, name: 'XC40' },
+  { match: /\bXC60\b/i, name: 'XC60' },
+  { match: /\bXC90\b/i, name: 'XC90' },
+  { match: /\bC40\b/i, name: 'C40' },
+  { match: /\bC30\b/i, name: 'C30' },
+  { match: /\bV40\b/i, name: 'V40' },
+  { match: /\bV60\b/i, name: 'V60' },
+  { match: /\bS60\b/i, name: 'S60' },
+  { match: /\bS90\b/i, name: 'S90' },
+
+  // Mitsubishi
+  { match: /\bL200\s*TRITON\b|\bTRITON\b/i, name: 'L200 Triton' },
+  { match: /\bL200\b/i, name: 'L200' },
+  { match: /\bPAJERO\s*FULL\b/i, name: 'Pajero Full' },
+  { match: /\bPAJERO\s*SPORT\b/i, name: 'Pajero Sport' },
+  { match: /\bPAJERO\s*DAKAR\b/i, name: 'Pajero Dakar' },
+  { match: /\bPAJERO\s*TR4\b|\bTR4\b/i, name: 'Pajero TR4' },
+  { match: /\bPAJERO\s*IO\b/i, name: 'Pajero iO' },
+  { match: /\bPAJERO\b/i, name: 'Pajero' },
+  { match: /\bECLIPSE\s*CROSS\b/i, name: 'Eclipse Cross' },
+  { match: /\bECLIPSE\b/i, name: 'Eclipse' },
+  { match: /\bASX\b/i, name: 'ASX' },
+  { match: /\bOUTLANDER\b/i, name: 'Outlander' },
+  { match: /\bLANCER\b/i, name: 'Lancer' }
 ];
 
-const COMPOUND_KNOWN_MODELS = new Set([
-  'GRAND SIENA', 'CROSS FOX', 'PALIO WEEKEND', 'UNO MILLE', 'MILLE FIRE',
-  'NOVO UNO', 'NOVO GOL', 'NOVO PALIO', 'NOVA SAVEIRO', 'NOVA STRADA',
-  'NOVO FIESTA', 'NOVO VOYAGE', 'GRAND VITARA', 'LAND ROVER',
-  'RANGE ROVER', 'PORSCHE 911', 'PEUGEOT 208', 'PEUGEOT 308',
-  'PEUGEOT 2008', 'PEUGEOT 3008', 'PEUGEOT 5008', 'TOYOTA HILUX',
-  'CHEVROLET S10', 'DEL REY', 'TOWN & COUNTRY', 'DISCOVERY SPORT',
-  'RANGE ROVER EVOQUE', 'RANGE ROVER VELAR', 'RANGE ROVER SPORT',
-  'HAVAL H6', 'HAVAL H9', 'POER P30',
-  'E-CO CARGO', 'E-CO DELIVERY', 'E-CO TRUCK', 'E-CO TECH'
+const CAR_STOP_WORDS = new Set([
+  '16V', '8V', '24V', '12V', '20V', 'V6', 'V8', 'V12',
+  'AUT', 'AUT.', 'MEC', 'MEC.', 'MANUAL', 'AUTOMATICO', 'AUTOMÁTICO',
+  'FLEX', 'GASOLINA', 'DIESEL', 'HIBRIDO', 'HÍBRIDO', 'HYBRID', 'ELETRICO', 'ELÉTRICO',
+  'TURBO', 'TSI', 'TDI', 'TFSI', 'FSI', 'MPI', 'MSI', 'THP', 'GDI', 'TGDI',
+  '4X4', '4X2', 'AWD', 'FWD', 'RWD', '2P', '4P', '3P', '5P',
+  'SEDAN', 'HATCH', 'WAGON', 'SW', 'COUPE', 'COUPÉ', 'CABRIOLET',
+  'LT', 'LTZ', 'PREMIER', 'RS', 'GTI', 'GTS', 'GLI', 'PLUS', 'SPECIAL',
+  'HIGHLINE', 'COMFORTLINE', 'TRENDLINE', 'TRACK', 'DRIVE', 'TREKKING', 'ADVENTURE',
+  'ATTRACTIVE', 'ESSENCE', 'SPORTING', 'WAY', 'VOLCANO', 'FREEDOM', 'RANCH', 'ULTRA',
+  'LIMITED', 'SPORT', 'LONGITUDE', 'LATITUDE', 'TRAILHAWK', 'OVERLAND',
+  'ALLURE', 'GRIFFE', 'FEEL', 'SHINE', 'LIVE', 'INTENSE', 'ZEN', 'ICONIC',
+  'EX', 'EXL', 'LX', 'LXS', 'TOURING', 'ALTIS', 'XEI', 'GLI', 'GR-SPORT'
 ]);
 
 function toTitleCase(str) {
@@ -91,244 +351,94 @@ function cleanBrandName(brandName) {
   return toTitleCase(name.trim());
 }
 
-function postProcessCapitalization(str) {
-  return str
-    .replace(/\bRs\b/g, 'RS')
-    .replace(/\bGt\b/g, 'GT')
-    .replace(/\bGti\b/g, 'GTI')
-    .replace(/\bGts\b/g, 'GTS')
-    .replace(/\bGli\b/g, 'GLI')
-    .replace(/\bC3\b/g, 'C3')
-    .replace(/\bC4\b/g, 'C4')
-    .replace(/\bC5\b/g, 'C5')
-    .replace(/\bM2\b/g, 'M2')
-    .replace(/\bM3\b/g, 'M3')
-    .replace(/\bM4\b/g, 'M4')
-    .replace(/\bM5\b/g, 'M5')
-    .replace(/\bM6\b/g, 'M6')
-    .replace(/\bBmw\b/g, 'BMW')
-    .replace(/\bByd\b/g, 'BYD')
-    .replace(/\bVw\b/g, 'VW')
-    .replace(/\bGc\b/g, 'GC')
-    .replace(/\bGp\b/g, 'GP')
-    .replace(/\bXc\b/g, 'XC')
-    .replace(/\bFipe\b/g, 'FIPE');
-}
+function cleanCarModelName(brandName, rawName) {
+  let clean = rawName.replace(/\//g, ' ').replace(/\s+/g, ' ').trim();
+  clean = clean.replace(/\(novo\)|\(nova\)|\(new\)|\(todas as versões\)|\(modelo antigo\)|\(antigo\)/gi, '').trim();
 
-function cleanModelName(brandName, rawName) {
-  let cleanRaw = rawName;
-  
-  // Normalize e.co variations (like e.co Cargo, e.coCargo, e.co Delivery)
-  cleanRaw = cleanRaw.replace(/\be\.co\s*cargo/gi, 'e-co Cargo');
-  cleanRaw = cleanRaw.replace(/\be\.co\s*delivery/gi, 'e-co Delivery');
-  cleanRaw = cleanRaw.replace(/\be\.co\s*truck/gi, 'e-co Truck');
-  cleanRaw = cleanRaw.replace(/\be\.co\s*tech/gi, 'e-co Tech');
-  cleanRaw = cleanRaw.replace(/\be\.co/gi, 'e-co');
+  // Check known family rules first
+  for (const family of KNOWN_CAR_FAMILIES) {
+    if (family.match.test(clean)) {
+      return { finalName: family.name, original: rawName };
+    }
+  }
 
-  const brandLower = brandName.toLowerCase();
   const brandClean = cleanBrandName(brandName);
+  const brandLower = brandClean.toLowerCase();
+
+  // Handle Mercedes-Benz classes: Classe A, Classe C, CLA, GLA, GLC, GLE, GLS, Sprinter
+  if (brandLower.includes('mercedes')) {
+    const mbMatch = clean.match(/\b(CLASSE\s+[A-Z]|CLA|GLA|GLB|GLC|GLE|GLS|SLC|SLK|SL|CLS|SPRINTER|VITO|ACTROS|AXOR|ATEGO|ACCELO)\b/i);
+    if (mbMatch) {
+      return { finalName: toTitleCase(mbMatch[0]), original: rawName };
+    }
+    const cMatch = clean.match(/\b([A-Z]\s*\d{3})\b/i);
+    if (cMatch) {
+      return { finalName: cMatch[0].toUpperCase().replace(/\s+/g, ' '), original: rawName };
+    }
+  }
+
+  // Handle BMW: Série 1, Série 3, Série 5, X1, X3, X5, X6, M3, M5, Z4, iX, i3, i4
+  if (brandLower.includes('bmw')) {
+    const xMatch = clean.match(/\b(X\d|M\d|Z\d|I\d|IX\d?)\b/i);
+    if (xMatch) {
+      return { finalName: xMatch[0].toUpperCase(), original: rawName };
+    }
+    const numMatch = clean.match(/\b(\d{3}[a-z]?)\b/i);
+    if (numMatch) {
+      return { finalName: numMatch[0], original: rawName };
+    }
+  }
+
+  // Handle Audi: A1, A3, A4, A5, A6, A7, A8, Q3, Q5, Q7, Q8, TT, R8, e-tron
+  if (brandLower.includes('audi')) {
+    const audiMatch = clean.match(/\b(RS\s*Q?\d|A\d|Q\d|TT|R8|E-TRON)\b/i);
+    if (audiMatch) {
+      return { finalName: audiMatch[0].toUpperCase().replace(/\s+/g, ' '), original: rawName };
+    }
+  }
+
+  // Strip brand name from start if present
   const brandWords = brandClean.toUpperCase().split(' ');
-  
-  // Remove brand words from the beginning of rawName if present
   while (true) {
-    const firstWordOfModel = cleanRaw.trim().split(' ')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
-    if (firstWordOfModel && brandWords.includes(firstWordOfModel)) {
-      cleanRaw = cleanRaw.trim().substring(cleanRaw.trim().indexOf(' ') + 1).trim();
+    const firstWord = clean.trim().split(' ')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
+    if (firstWord && brandWords.includes(firstWord)) {
+      clean = clean.trim().substring(clean.trim().indexOf(' ') + 1).trim();
     } else {
       break;
     }
   }
-  
-  if (brandLower.includes('land rover')) {
-    // 1. Discovery Sport (first, to prevent matching Disc/Discov alone)
-    cleanRaw = cleanRaw.replace(/\bDisc(ov)?(ery)?[ .]*Sp\b\.?/gi, 'Discovery Sport ');
-    
-    // 2. Discovery (remaining Disc/Discov)
-    cleanRaw = cleanRaw.replace(/\bDisc(ov)?\b\.?/gi, 'Discovery ');
-    
-    // 3. Range Rover
-    cleanRaw = cleanRaw.replace(/\bRange[ .]*R\b\.?/gi, 'Range Rover ');
-    
-    // 4. Evoque
-    cleanRaw = cleanRaw.replace(/\bEVOQ\b\.?/gi, 'Evoque ');
-    
-    // 5. Defender
-    cleanRaw = cleanRaw.replace(/\bDef(e)?\b\.?/gi, 'Defender ');
-    
-    // 6. Velar
-    cleanRaw = cleanRaw.replace(/\bVEL\b\.?/gi, 'Velar ');
-    
-    // 7. Sport
-    cleanRaw = cleanRaw.replace(/\bSP\b\.?/gi, 'Sport ');
+
+  const words = clean.split(' ').filter(w => w.length > 0);
+  if (words.length === 0) return { finalName: '' };
+
+  const firstUpper = words[0].toUpperCase();
+  if (firstUpper === 'NOVO' || firstUpper === 'NOVA' || firstUpper === 'NEW') {
+    words.shift();
   }
 
-  // Normalize string: replace slashes and non-decimal dots with spaces
-  cleanRaw = cleanRaw.replace(/\//g, ' ');
-  cleanRaw = cleanRaw.replace(/(?<!\d)\.|\.(?!\d)/g, ' ');
-  cleanRaw = cleanRaw.replace(/\s+/g, ' ').trim();
-  
-  const words = cleanRaw.split(' ');
-  if (words.length === 0) return { finalName: '', isAmbiguous: false, cutReason: '', original: rawName };
+  if (words.length === 0) return { finalName: '' };
 
-  const firstWord = words[0].toUpperCase();
   const baseWords = [words[0]];
-  let isAmbiguous = false;
-  let cutReason = '';
-
-
-  
-  // Mercedes-Benz/Other Classe A, B, R override
-  if (firstWord === 'CLASSE' && words.length > 1) {
-    baseWords.push(words[1]);
-  }
-  // GAC / AION Y, AION V, AION S override
-  else if (firstWord === 'AION' && words.length > 1) {
-    baseWords.push(words[1]);
-  }
-  // Chery / Caoa Chery Tiggo/Arrizo rule
-  else if ((brandLower.includes('chery') || brandLower.includes('caoa')) && (firstWord === 'TIGGO' || firstWord === 'ARRIZO')) {
-    if (words.length > 1) {
-      const secondWord = words[1].toUpperCase();
-      if (/^\d+[X]?$/.test(secondWord)) {
-        baseWords.push(words[1]); // e.g. "Tiggo 5X", "Arrizo 6"
-      }
-    }
-  } 
-  // Mercedes-Benz class rule: C 180, A 200, GLA 200
-  else if (brandLower.includes('mercedes')) {
-    const mercedesClasses = new Set([
-      'A', 'B', 'C', 'CL', 'CLA', 'CLK', 'CLS', 'E', 'G', 'GLA', 'GLB', 'GLC', 'GLE', 'GLS',
-      'S', 'SL', 'SLC', 'SLK', 'SLS', 'ML', 'V', 'X', 'EQA', 'EQB', 'EQC', 'EQE', 'EQS', 'AMG'
-    ]);
-    if (mercedesClasses.has(firstWord) && words.length > 1) {
-      const secondWord = words[1].toUpperCase();
-      if (/^\d+$/.test(secondWord) || secondWord === 'CLASS' || secondWord === 'CLASSE') {
-        baseWords.push(words[1]); // e.g. "A 200", "C 180"
-      }
-    }
-  }
-  // Citroën C3/C4/C5 models
-  else if (brandLower.includes('citro') || brandLower.includes('ds')) {
-    if ((firstWord === 'C3' || firstWord === 'C4' || firstWord === 'C5') && words.length > 1) {
-      const secondWord = words[1].toUpperCase();
-      const citroenCompounds = new Set(['PICASSO', 'LOUNGE', 'CACTUS', 'PALLAS', 'AIRCROSS']);
-      if (citroenCompounds.has(secondWord)) {
-        baseWords.push(words[1]);
-      }
-    }
-  }
-  // Land Rover Range Rover
-  else if (brandLower.includes('land') && firstWord === 'RANGE' && words.length > 1 && words[1].toUpperCase() === 'ROVER') {
-    baseWords.push(words[1]); // Keep "Range Rover"
-    if (words.length > 2) {
-      const thirdWord = words[2].toUpperCase();
-      const landRoverCompounds = new Set(['EVOQUE', 'VELAR', 'SPORT', 'VOGUE']);
-      if (landRoverCompounds.has(thirdWord)) {
-        baseWords.push(words[2]); // Keep "Range Rover Evoque", etc.
-      }
-    }
-  }
-  // BMW iX/i3/i4/i7 e.g. iX 1, iX 2, iX 3
-  else if (brandLower.includes('bmw') && (firstWord === 'IX' || firstWord === 'I3' || firstWord === 'I4' || firstWord === 'I7') && words.length > 1) {
-    const secondWord = words[1].toUpperCase();
-    if (/^\d+$/.test(secondWord)) {
-      baseWords.push(words[1]); // Keep "iX 1", "iX 2"
-    }
-  }
-  // BYD Sealion 7 / Song Pro / Shark GS / King GS
-  else if (brandLower.includes('byd')) {
-    const bydModels = new Set(['SEALION', 'ATTO', 'SONG', 'SHARK', 'KING', 'DOLPHIN', 'SEAL']);
-    if (bydModels.has(firstWord) && words.length > 1) {
-      const secondWord = words[1].toUpperCase();
-      if (/^\d+$/.test(secondWord) || secondWord === 'PRO' || secondWord === 'PLUS' || secondWord === 'MINI') {
-        baseWords.push(words[1]);
-      }
-    }
-  }
-
-  // If we already added words using specific overrides, we can skip processing those indexes
-  const startIndex = baseWords.length;
-
-  for (let i = startIndex; i < words.length; i++) {
+  for (let i = 1; i < words.length; i++) {
     const word = words[i];
-    
-    // Normalize unicode to remove accents (diacritics) e.g. Seleção -> Selecao
-    const normalizedWord = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    
-    // Keep dots for regex checking
-    const wordUpperWithDot = normalizedWord.toUpperCase().replace(/[^A-Z0-9-+\.]/g, ''); 
-    // Strip dots for direct word checking
-    const wordUpperClean = wordUpperWithDot.replace(/\./g, '');
+    const upper = word.toUpperCase().replace(/[^A-Z0-9-]/g, '');
 
-    // Check if the current combination matches a known compound model
-    const currentCombination = baseWords.concat(word).join(' ').toUpperCase();
-    if (COMPOUND_KNOWN_MODELS.has(currentCombination)) {
-      baseWords.push(word);
-      continue;
-    }
-
-    // Check static stop words
-    if (STOP_WORDS.has(wordUpperClean)) {
-      break;
-    }
-
-    // Check stop patterns
-    let matchStop = false;
-    for (const pattern of STOP_REGEX_PATTERNS) {
-      if (pattern.test(wordUpperWithDot)) {
-        matchStop = true;
-        cutReason = `matched pattern ${pattern.toString()}`;
-        break;
-      }
-    }
-
-    if (matchStop) {
-      break;
-    }
-
-    // Heuristics: if it's a number, it's usually engine/version (e.g. Gol 1000, Gol 1.0, Uno 1.6, Haval H6 19)
-    if (/^\d+$/.test(wordUpperClean)) {
-      if (i === 1) {
-        baseWords.push(word);
-        continue;
-      } else {
-        isAmbiguous = true;
-        cutReason = `number at index > 1: ${word}`;
-        break;
-      }
-    }
-
-    // BMW "M" override for X5 M / X6 M
-    if (wordUpperClean === 'M') {
-      const prevWord = baseWords[baseWords.length - 1].toUpperCase();
-      if (prevWord === 'X5' || prevWord === 'X6') {
-        baseWords.push(word);
-        continue;
-      }
-    }
-
-    // If it's a short alphabetic word (1 to 3 letters) and all uppercase, it might be a version (like SX, EX, S, SL, LT, etc.)
-    if (/^[A-Z]{1,3}$/.test(wordUpperClean)) {
-      isAmbiguous = true;
-      cutReason = `short uppercase: ${word}`;
+    if (CAR_STOP_WORDS.has(upper) || /\d\.\d/.test(word) || /^\d+V$/i.test(word)) {
       break;
     }
 
     baseWords.push(word);
+
+    if (baseWords.length >= 2) {
+      break;
+    }
   }
 
-  const titleCased = toTitleCase(baseWords.join(' '));
-  const finalName = postProcessCapitalization(titleCased);
-  return {
-    finalName,
-    isAmbiguous,
-    cutReason,
-    original: rawName
-  };
+  const finalName = toTitleCase(baseWords.join(' '));
+  return { finalName, original: rawName };
 }
 
 function run() {
-  console.log('Iniciando processamento com preservação de pontos para regex...');
   if (!fs.existsSync(inputPath)) {
     console.error(`Arquivo não encontrado em: ${inputPath}`);
     process.exit(1);
@@ -336,54 +446,37 @@ function run() {
 
   const rawData = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
   const outputData = [];
-  const ambiguities = [];
 
   for (const brandData of rawData) {
     const brandName = cleanBrandName(brandData.nomeMarca);
     const modelsMap = new Map();
 
-    for (const model of brandData.modelos) {
-      const { finalName, isAmbiguous, cutReason, original } = cleanModelName(brandName, model.nomeModelo);
-      
-      if (!modelsMap.has(finalName)) {
+    for (const model of (brandData.modelos || [])) {
+      const { finalName } = cleanCarModelName(brandName, model.nomeModelo);
+      if (finalName && finalName.length >= 2 && !modelsMap.has(finalName)) {
         modelsMap.set(finalName, {
           nome: finalName,
           codigoReferencia: model.codigoModelo
         });
       }
-
-      if (isAmbiguous) {
-        ambiguities.push({
-          marca: brandName,
-          original,
-          limpo: finalName,
-          motivo: cutReason
-        });
-      }
     }
 
-    outputData.push({
-      marca: brandName,
-      modelos: Array.from(modelsMap.values())
-    });
+    if (modelsMap.size > 0) {
+      outputData.push({
+        marca: brandName,
+        modelos: Array.from(modelsMap.values())
+      });
+    }
   }
 
   fs.writeFileSync(outputPath, JSON.stringify(outputData, null, 2), 'utf8');
-  console.log(`Processamento concluído! Catálogo limpo salvo em: ${outputPath}`);
-  console.log(`Total de ambiguidades registradas: ${ambiguities.length}`);
-
-  // Save ambiguities to a separate review file
-  const reviewPath = path.join(__dirname, '..', 'ambiguidades-revisao.json');
-  fs.writeFileSync(reviewPath, JSON.stringify(ambiguities, null, 2), 'utf8');
-  console.log(`Ambiguidades salvas em: ${reviewPath}`);
+  console.log(`Catálogo limpo de carros salvo em: ${outputPath}`);
+  console.log(`Total de marcas: ${outputData.length}`);
+  console.log(`Total de modelos: ${outputData.reduce((acc, m) => acc + m.modelos.length, 0)}`);
 }
 
 if (require.main === module) {
   run();
 }
 
-module.exports = {
-  cleanModelName,
-  cleanBrandName
-};
-
+module.exports = { cleanCarModelName, cleanBrandName };

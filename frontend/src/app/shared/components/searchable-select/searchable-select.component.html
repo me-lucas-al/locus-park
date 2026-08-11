@@ -17,8 +17,8 @@
       <input
         type="text"
         class="searchable-select-input"
-        [placeholder]="displayLabel() ? displayLabel() : placeholder()"
-        [value]="displayValue()"
+        [placeholder]="placeholder()"
+        [value]="searchQuery()"
         [disabled]="disabled()"
         (focus)="openDropdown()"
         (blur)="closeDropdown()"

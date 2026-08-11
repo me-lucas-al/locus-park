@@ -3,7 +3,7 @@
     "marca": "Adly",
     "modelos": [
       {
-        "nome": "Atv 100",
+        "nome": "Atv",
         "codigoReferencia": 2576
       },
       {
@@ -11,12 +11,8 @@
         "codigoReferencia": 2577
       },
       {
-        "nome": "Jaguar Jt 100",
+        "nome": "Jaguar Jt",
         "codigoReferencia": 2578
-      },
-      {
-        "nome": "Jaguar Jt 50",
-        "codigoReferencia": 2579
       },
       {
         "nome": "Rt 50",
@@ -36,7 +32,7 @@
         "codigoReferencia": 2582
       },
       {
-        "nome": "Dakar 30.0 190cc",
+        "nome": "Dakar",
         "codigoReferencia": 2583
       },
       {
@@ -44,11 +40,11 @@
         "codigoReferencia": 2584
       },
       {
-        "nome": "Elefant 16.5 125cc",
+        "nome": "Elefant 16.5",
         "codigoReferencia": 2585
       },
       {
-        "nome": "Elefant 27.5 190cc",
+        "nome": "Elefant 27.5",
         "codigoReferencia": 2586
       },
       {
@@ -56,7 +52,7 @@
         "codigoReferencia": 2587
       },
       {
-        "nome": "Elefantre 30.0",
+        "nome": "Elefantre",
         "codigoReferencia": 2588
       },
       {
@@ -72,24 +68,16 @@
         "codigoReferencia": 2591
       },
       {
-        "nome": "Sst 13.5 125cc",
+        "nome": "Sst 13.5",
         "codigoReferencia": 2592
       },
       {
-        "nome": "Super City 125",
+        "nome": "Super City",
         "codigoReferencia": 2593
-      },
-      {
-        "nome": "Super City 150",
-        "codigoReferencia": 2594
       },
       {
         "nome": "Sxt 27.5",
         "codigoReferencia": 2595
-      },
-      {
-        "nome": "Sxt 27.5 Ex",
-        "codigoReferencia": 2596
       },
       {
         "nome": "Tchau 50",
@@ -105,7 +93,7 @@
         "codigoReferencia": 4360
       },
       {
-        "nome": "Ame-150 Tc Sc",
+        "nome": "Ame-150 Tc",
         "codigoReferencia": 4361
       },
       {
@@ -113,7 +101,7 @@
         "codigoReferencia": 4362
       },
       {
-        "nome": "Ame-Lx 125 26",
+        "nome": "Ame-Lx",
         "codigoReferencia": 4363
       }
     ]
@@ -154,7 +142,7 @@
         "codigoReferencia": 2605
       },
       {
-        "nome": "Rsv Mille 1000cc",
+        "nome": "Rsv Mille",
         "codigoReferencia": 2606
       },
       {
@@ -162,16 +150,12 @@
         "codigoReferencia": 2607
       },
       {
-        "nome": "Scarabeo Brigth 50cc",
+        "nome": "Scarabeo Brigth",
         "codigoReferencia": 2608
       },
       {
-        "nome": "Scarabeo Classic 50cc",
+        "nome": "Scarabeo",
         "codigoReferencia": 2609
-      },
-      {
-        "nome": "Scarabeo Deluxe 50cc",
-        "codigoReferencia": 2610
       },
       {
         "nome": "Sonic 50cc",
@@ -182,15 +166,15 @@
         "codigoReferencia": 8303
       },
       {
-        "nome": "Sr Race 150cc",
+        "nome": "Sr Race",
         "codigoReferencia": 8304
       },
       {
-        "nome": "Sr Racing 50cc",
+        "nome": "Sr Racing",
         "codigoReferencia": 2612
       },
       {
-        "nome": "Sr Www 50cc",
+        "nome": "Sr Www",
         "codigoReferencia": 2613
       },
       {
@@ -220,16 +204,12 @@
     "marca": "Avelloz",
     "modelos": [
       {
-        "nome": "Az 01 50cc",
+        "nome": "Az 01",
         "codigoReferencia": 9409
       },
       {
-        "nome": "Az 125 Alfa",
+        "nome": "Az",
         "codigoReferencia": 11306
-      },
-      {
-        "nome": "Az 160 Xtreme",
-        "codigoReferencia": 11329
       }
     ]
   },
@@ -237,7 +217,7 @@
     "marca": "Bajaj",
     "modelos": [
       {
-        "nome": "Champion 45 100cc",
+        "nome": "Champion 45",
         "codigoReferencia": 2617
       },
       {
@@ -245,20 +225,8 @@
         "codigoReferencia": 2618
       },
       {
-        "nome": "Dominar 160",
+        "nome": "Dominar",
         "codigoReferencia": 10380
-      },
-      {
-        "nome": "Dominar 200",
-        "codigoReferencia": 10381
-      },
-      {
-        "nome": "Dominar 250",
-        "codigoReferencia": 11144
-      },
-      {
-        "nome": "Dominar 400",
-        "codigoReferencia": 10382
       },
       {
         "nome": "Dominar Ns160",
@@ -315,7 +283,7 @@
         "codigoReferencia": 5044
       },
       {
-        "nome": "Tnt Café 1130",
+        "nome": "Tnt Café",
         "codigoReferencia": 5045
       },
       {
@@ -332,11 +300,11 @@
     "marca": "Beta",
     "modelos": [
       {
-        "nome": "Mx-50 Cross 50cc",
+        "nome": "Mx-50 Cross",
         "codigoReferencia": 2619
       },
       {
-        "nome": "Mx-50 Enduro 50cc",
+        "nome": "Mx-50 Enduro",
         "codigoReferencia": 2620
       }
     ]
@@ -353,11 +321,11 @@
         "codigoReferencia": 4781
       },
       {
-        "nome": "Db6 Delirio 1078cc",
+        "nome": "Db6 Delirio",
         "codigoReferencia": 4782
       },
       {
-        "nome": "Db6r Delirio 1078cc",
+        "nome": "Db6r Delirio",
         "codigoReferencia": 4783
       },
       {
@@ -373,7 +341,7 @@
         "codigoReferencia": 2623
       },
       {
-        "nome": "Tesi 3d 1100cc",
+        "nome": "Tesi 3d",
         "codigoReferencia": 5285
       }
     ]
@@ -382,223 +350,103 @@
     "marca": "Bmw",
     "modelos": [
       {
-        "nome": "C 400 X",
+        "nome": "C",
         "codigoReferencia": 10895
       },
       {
-        "nome": "C 600",
-        "codigoReferencia": 6760
-      },
-      {
-        "nome": "C 650",
-        "codigoReferencia": 7219
-      },
-      {
-        "nome": "F 650",
+        "nome": "F",
         "codigoReferencia": 2624
       },
       {
-        "nome": "F 650 Cs",
-        "codigoReferencia": 2625
-      },
-      {
-        "nome": "F 650 Gs",
-        "codigoReferencia": 2626
-      },
-      {
-        "nome": "F 700 Gs",
+        "nome": "F 700",
         "codigoReferencia": 7819
       },
       {
-        "nome": "F 750 Gs",
+        "nome": "F 750 GS",
         "codigoReferencia": 8533
       },
       {
-        "nome": "F 800 Gs",
+        "nome": "F 800 GS",
         "codigoReferencia": 4805
       },
       {
-        "nome": "F 800",
-        "codigoReferencia": 5048
-      },
-      {
-        "nome": "F 850 Gs",
+        "nome": "F 850 GS",
         "codigoReferencia": 8646
       },
       {
-        "nome": "F 900 Gs",
-        "codigoReferencia": 11147
-      },
-      {
-        "nome": "F 900",
+        "nome": "F 900 R",
         "codigoReferencia": 11865
       },
       {
-        "nome": "G 310 Gs",
+        "nome": "G 310 GS",
         "codigoReferencia": 8221
       },
       {
-        "nome": "G 310",
+        "nome": "G 310 R",
         "codigoReferencia": 8029
       },
       {
-        "nome": "G 450 X",
+        "nome": "G 450",
         "codigoReferencia": 4817
       },
       {
-        "nome": "G 650 Gs",
+        "nome": "G",
         "codigoReferencia": 5196
       },
       {
-        "nome": "G 650 X",
-        "codigoReferencia": 4443
-      },
-      {
-        "nome": "K 1100 Lt",
+        "nome": "K",
         "codigoReferencia": 2627
       },
       {
-        "nome": "K 1100 Rs",
-        "codigoReferencia": 2628
-      },
-      {
-        "nome": "K 1200",
-        "codigoReferencia": 2629
-      },
-      {
-        "nome": "K 1200 Lt",
-        "codigoReferencia": 2630
-      },
-      {
-        "nome": "K 1200 Rs",
-        "codigoReferencia": 2631
-      },
-      {
-        "nome": "K 1300",
-        "codigoReferencia": 4870
-      },
-      {
-        "nome": "K 1600 Bagger",
+        "nome": "K 1600",
         "codigoReferencia": 8187
       },
       {
-        "nome": "K 1600",
-        "codigoReferencia": 5631
-      },
-      {
-        "nome": "K 1600 Gtl",
-        "codigoReferencia": 5630
-      },
-      {
-        "nome": "R 1100 Gs",
+        "nome": "R",
         "codigoReferencia": 2633
       },
       {
-        "nome": "R 1100 Gs-75",
-        "codigoReferencia": 2634
-      },
-      {
-        "nome": "R 1100",
-        "codigoReferencia": 2635
-      },
-      {
-        "nome": "R 1100 Rs",
-        "codigoReferencia": 2636
-      },
-      {
-        "nome": "R 1100 Rt",
-        "codigoReferencia": 2637
-      },
-      {
-        "nome": "R 1150 Gs",
-        "codigoReferencia": 2639
-      },
-      {
         "nome": "R 1150",
-        "codigoReferencia": 2641
-      },
-      {
-        "nome": "R 1150 Rs",
-        "codigoReferencia": 2642
-      },
-      {
-        "nome": "R 1150 Rt",
-        "codigoReferencia": 2643
+        "codigoReferencia": 2639
       },
       {
         "nome": "R 12",
         "codigoReferencia": 11204
       },
       {
-        "nome": "R 12 719",
-        "codigoReferencia": 11205
-      },
-      {
-        "nome": "R 12 Cruiser",
-        "codigoReferencia": 11206
-      },
-      {
-        "nome": "R 12 Gs",
-        "codigoReferencia": 11896
-      },
-      {
-        "nome": "R 1200 C",
-        "codigoReferencia": 2644
-      },
-      {
-        "nome": "R 1200 Cl",
-        "codigoReferencia": 2647
-      },
-      {
-        "nome": "R 1200 Gs",
+        "nome": "R 1200 GS",
         "codigoReferencia": 2648
       },
       {
-        "nome": "R 1200 Nine",
+        "nome": "R nineT",
         "codigoReferencia": 6848
       },
       {
-        "nome": "R 1200",
-        "codigoReferencia": 5712
-      },
-      {
-        "nome": "R 1200 Rt",
-        "codigoReferencia": 2649
-      },
-      {
-        "nome": "R 1250 Gs",
+        "nome": "ADV",
         "codigoReferencia": 9750
       },
       {
-        "nome": "R 1250 Rt",
-        "codigoReferencia": 9217
+        "nome": "R 1250 GS",
+        "codigoReferencia": 8718
       },
       {
-        "nome": "R 1300 Gs",
+        "nome": "R 1300 GS",
         "codigoReferencia": 11026
-      },
-      {
-        "nome": "R 1300 Rt",
-        "codigoReferencia": 11742
       },
       {
         "nome": "R 18",
         "codigoReferencia": 10185
       },
       {
-        "nome": "R 18 100",
-        "codigoReferencia": 10843
-      },
-      {
-        "nome": "S 1000",
+        "nome": "S 1000 R",
         "codigoReferencia": 6874
       },
       {
-        "nome": "S 1000 Rr-M",
-        "codigoReferencia": 9202
+        "nome": "S 1000 RR",
+        "codigoReferencia": 5286
       },
       {
-        "nome": "S 1000 Xr",
+        "nome": "S 1000 XR",
         "codigoReferencia": 7411
       }
     ]
@@ -611,7 +459,7 @@
         "codigoReferencia": 2650
       },
       {
-        "nome": "Fosti 125",
+        "nome": "Fosti",
         "codigoReferencia": 2651
       },
       {
@@ -623,7 +471,7 @@
         "codigoReferencia": 2653
       },
       {
-        "nome": "Zanella New Fire",
+        "nome": "Zanella New",
         "codigoReferencia": 2654
       }
     ]
@@ -632,7 +480,7 @@
     "marca": "Brava",
     "modelos": [
       {
-        "nome": "Yb 150t-15 150cc",
+        "nome": "Yb 150t-15",
         "codigoReferencia": 4359
       }
     ]
@@ -641,108 +489,40 @@
     "marca": "Brp",
     "modelos": [
       {
-        "nome": "Can-Am Commander Max",
+        "nome": "Can-Am Commander",
         "codigoReferencia": 10789
       },
       {
-        "nome": "Can-Am Defen. 976",
+        "nome": "Can-Am Defen.",
         "codigoReferencia": 11142
       },
       {
-        "nome": "Can-Am Defender 650",
+        "nome": "Can-Am Defender",
         "codigoReferencia": 10768
       },
       {
-        "nome": "Can-Am Defender 800",
-        "codigoReferencia": 8758
-      },
-      {
-        "nome": "Can-Am Defender 976",
-        "codigoReferencia": 10418
-      },
-      {
-        "nome": "Can-Am Defender 999",
-        "codigoReferencia": 11890
-      },
-      {
-        "nome": "Can-Am Ds 250",
+        "nome": "Can-Am Ds",
         "codigoReferencia": 5262
       },
       {
-        "nome": "Can-Am Ds 90",
-        "codigoReferencia": 8429
-      },
-      {
-        "nome": "Can-Am Maver. X3",
+        "nome": "Can-Am Maver.",
         "codigoReferencia": 9308
       },
       {
-        "nome": "Can-Am Maverick Max",
+        "nome": "Can-Am Maverick",
         "codigoReferencia": 9069
       },
       {
-        "nome": "Can-Am Maverick",
-        "codigoReferencia": 11968
-      },
-      {
-        "nome": "Can-Am Maverick Trail",
-        "codigoReferencia": 8676
-      },
-      {
-        "nome": "Can-Am Maverick X3",
-        "codigoReferencia": 9309
-      },
-      {
-        "nome": "Can-Am Oultland. Max",
+        "nome": "Can-Am Oultland.",
         "codigoReferencia": 9566
       },
       {
-        "nome": "Can-Am Outlander 400",
+        "nome": "Can-Am Outlander",
         "codigoReferencia": 6849
       },
       {
-        "nome": "Can-Am Outlander 450",
-        "codigoReferencia": 9365
-      },
-      {
-        "nome": "Can-Am Outlander 570",
-        "codigoReferencia": 8430
-      },
-      {
-        "nome": "Can-Am Outlander L",
-        "codigoReferencia": 7273
-      },
-      {
-        "nome": "Can-Am Outlander Max",
-        "codigoReferencia": 7644
-      },
-      {
-        "nome": "Can-Am Outlander X",
-        "codigoReferencia": 10082
-      },
-      {
-        "nome": "Can-Am Outlander Xt",
-        "codigoReferencia": 7279
-      },
-      {
-        "nome": "Can-Am Outlander Xt-P",
-        "codigoReferencia": 6858
-      },
-      {
-        "nome": "Can-Am Outlander Xt-P1000",
-        "codigoReferencia": 7280
-      },
-      {
-        "nome": "Can-Am Spyder 1330",
+        "nome": "Can-Am Spyder",
         "codigoReferencia": 7328
-      },
-      {
-        "nome": "Can-Am Spyder 990",
-        "codigoReferencia": 4698
-      },
-      {
-        "nome": "Can-Am Spyder Daytona",
-        "codigoReferencia": 7820
       }
     ]
   },
@@ -762,7 +542,7 @@
         "codigoReferencia": 4206
       },
       {
-        "nome": "Lightning City Cross",
+        "nome": "Lightning City",
         "codigoReferencia": 3837
       },
       {
@@ -816,27 +596,27 @@
         "codigoReferencia": 9411
       },
       {
-        "nome": "Café Racer B31",
+        "nome": "Café Racer",
         "codigoReferencia": 9412
       },
       {
-        "nome": "Ciclo City Veloce",
+        "nome": "Ciclo City",
         "codigoReferencia": 9413
       },
       {
-        "nome": "Eko City 1200w",
+        "nome": "Eko City",
         "codigoReferencia": 9414
       },
       {
-        "nome": "Eko Hunter 2000w",
+        "nome": "Hunter 350",
         "codigoReferencia": 9415
       },
       {
-        "nome": "Eko Sport 1200w",
+        "nome": "Eko",
         "codigoReferencia": 9416
       },
       {
-        "nome": "Gtr 250",
+        "nome": "Gtr",
         "codigoReferencia": 9419
       },
       {
@@ -844,7 +624,7 @@
         "codigoReferencia": 9420
       },
       {
-        "nome": "Krc F5-Lx 50",
+        "nome": "Krc F5-Lx",
         "codigoReferencia": 9421
       },
       {
@@ -856,11 +636,11 @@
         "codigoReferencia": 9423
       },
       {
-        "nome": "Now 125",
+        "nome": "Now",
         "codigoReferencia": 9424
       },
       {
-        "nome": "Spirit Se 50",
+        "nome": "Spirit",
         "codigoReferencia": 9425
       }
     ]
@@ -869,12 +649,8 @@
     "marca": "Bycristo",
     "modelos": [
       {
-        "nome": "Triciclo Star I",
+        "nome": "Triciclo Star",
         "codigoReferencia": 2655
-      },
-      {
-        "nome": "Triciclo Star Ii",
-        "codigoReferencia": 2656
       }
     ]
   },
@@ -882,31 +658,27 @@
     "marca": "Cagiva",
     "modelos": [
       {
-        "nome": "Canyon 500",
+        "nome": "Canyon",
         "codigoReferencia": 2658
       },
       {
-        "nome": "Elefant 750",
+        "nome": "Elefant",
         "codigoReferencia": 2659
       },
       {
-        "nome": "Elefant 900",
-        "codigoReferencia": 2660
-      },
-      {
-        "nome": "Gran Canyon 900",
+        "nome": "Gran Canyon",
         "codigoReferencia": 2661
       },
       {
-        "nome": "Mito 125",
+        "nome": "Mito",
         "codigoReferencia": 2662
       },
       {
-        "nome": "Navigator 1000",
+        "nome": "Navigator",
         "codigoReferencia": 2663
       },
       {
-        "nome": "Planet 125",
+        "nome": "Planet",
         "codigoReferencia": 2664
       },
       {
@@ -914,7 +686,7 @@
         "codigoReferencia": 2665
       },
       {
-        "nome": "V-Raptor 1000",
+        "nome": "V-Raptor",
         "codigoReferencia": 2666
       },
       {
@@ -940,12 +712,8 @@
     "marca": "Cfmoto",
     "modelos": [
       {
-        "nome": "Cl- C 450",
+        "nome": "Cl- C",
         "codigoReferencia": 12045
-      },
-      {
-        "nome": "Cl- C Bobber",
-        "codigoReferencia": 12046
       },
       {
         "nome": "Ibex 450",
@@ -969,23 +737,23 @@
         "codigoReferencia": 2671
       },
       {
-        "nome": "Vc 125 Advanced",
+        "nome": "Vc",
         "codigoReferencia": 2672
       },
       {
-        "nome": "Vf 125 D",
+        "nome": "Vf",
         "codigoReferencia": 2673
       },
       {
-        "nome": "Vs 125",
+        "nome": "Vs",
         "codigoReferencia": 2674
       },
       {
-        "nome": "Vt 125",
+        "nome": "Vt",
         "codigoReferencia": 2675
       },
       {
-        "nome": "Vx 125",
+        "nome": "Vx",
         "codigoReferencia": 2676
       }
     ]
@@ -1002,7 +770,7 @@
         "codigoReferencia": 5200
       },
       {
-        "nome": "Apache Rtr 200cc",
+        "nome": "Apache Rtr",
         "codigoReferencia": 8677
       },
       {
@@ -1014,51 +782,39 @@
         "codigoReferencia": 5382
       },
       {
-        "nome": "Citycom Hd 300i",
+        "nome": "Citycom Hd",
         "codigoReferencia": 9070
       },
       {
-        "nome": "Citycom S 300i",
+        "nome": "Citycom",
         "codigoReferencia": 7496
       },
       {
-        "nome": "Cruisym 150",
+        "nome": "Cruisym",
         "codigoReferencia": 9568
       },
       {
-        "nome": "Cruisym 300",
-        "codigoReferencia": 10229
-      },
-      {
-        "nome": "Fiddle Iii 125",
+        "nome": "Fiddle Iii",
         "codigoReferencia": 7675
       },
       {
-        "nome": "Horizon 150",
+        "nome": "Horizon",
         "codigoReferencia": 7381
       },
       {
-        "nome": "Horizon 250",
-        "codigoReferencia": 6494
-      },
-      {
-        "nome": "Joyride 300",
+        "nome": "Joyride",
         "codigoReferencia": 11387
       },
       {
-        "nome": "Kansas 150",
+        "nome": "Kansas",
         "codigoReferencia": 4588
       },
       {
-        "nome": "Kansas 250",
-        "codigoReferencia": 4910
-      },
-      {
-        "nome": "Laser 150",
+        "nome": "Laser",
         "codigoReferencia": 4589
       },
       {
-        "nome": "Maxsym 400",
+        "nome": "Maxsym",
         "codigoReferencia": 11567
       },
       {
@@ -1074,15 +830,11 @@
         "codigoReferencia": 8375
       },
       {
-        "nome": "Nh 190",
+        "nome": "Nh",
         "codigoReferencia": 8973
       },
       {
-        "nome": "Nh 300",
-        "codigoReferencia": 10643
-      },
-      {
-        "nome": "Nhx 190",
+        "nome": "Nhx",
         "codigoReferencia": 11308
       },
       {
@@ -1090,7 +842,7 @@
         "codigoReferencia": 5753
       },
       {
-        "nome": "Riva Cargo 150cc",
+        "nome": "Riva",
         "codigoReferencia": 6364
       },
       {
@@ -1102,15 +854,11 @@
         "codigoReferencia": 5119
       },
       {
-        "nome": "Speed Cargo 150",
+        "nome": "Speed",
         "codigoReferencia": 9155
       },
       {
-        "nome": "Speed 150",
-        "codigoReferencia": 4590
-      },
-      {
-        "nome": "Super 100",
+        "nome": "Super",
         "codigoReferencia": 4591
       },
       {
@@ -1118,12 +866,8 @@
         "codigoReferencia": 5383
       },
       {
-        "nome": "Zig 100",
+        "nome": "Zig",
         "codigoReferencia": 5120
-      },
-      {
-        "nome": "Zig 100+",
-        "codigoReferencia": 5587
       },
       {
         "nome": "Zig 50",
@@ -1175,7 +919,7 @@
         "codigoReferencia": 6817
       },
       {
-        "nome": "Dy150-58 Eagle Copa",
+        "nome": "Dy150-58 Eagle",
         "codigoReferencia": 6132
       },
       {
@@ -1240,11 +984,11 @@
         "codigoReferencia": 4542
       },
       {
-        "nome": "Dy150zh (triciclo Carga)",
+        "nome": "Dy150zh (triciclo",
         "codigoReferencia": 4543
       },
       {
-        "nome": "Dy200zh (triciclo Carga)",
+        "nome": "Dy200zh (triciclo",
         "codigoReferencia": 5152
       },
       {
@@ -1261,19 +1005,19 @@
         "codigoReferencia": 2677
       },
       {
-        "nome": "Gpr 50r 49cc",
+        "nome": "Gpr 50r",
         "codigoReferencia": 2678
       },
       {
-        "nome": "Predator Ar 49cc",
+        "nome": "Predator Ar",
         "codigoReferencia": 2679
       },
       {
-        "nome": "Predator Lc 49cc",
+        "nome": "Predator Lc",
         "codigoReferencia": 2680
       },
       {
-        "nome": "Red Bullet 49cc",
+        "nome": "Red Bullet",
         "codigoReferencia": 2681
       },
       {
@@ -1281,11 +1025,11 @@
         "codigoReferencia": 2682
       },
       {
-        "nome": "Senda R 49cc",
+        "nome": "Senda",
         "codigoReferencia": 2683
       },
       {
-        "nome": "Senda Sm 49cc",
+        "nome": "Senda Sm",
         "codigoReferencia": 2684
       }
     ]
@@ -1310,16 +1054,12 @@
         "codigoReferencia": 5093
       },
       {
-        "nome": "1199 Panigale",
+        "nome": "Panigale",
         "codigoReferencia": 6495
       },
       {
         "nome": "1199 Superleggera",
         "codigoReferencia": 7052
-      },
-      {
-        "nome": "1299 Panigale",
-        "codigoReferencia": 7567
       },
       {
         "nome": "749",
@@ -1334,10 +1074,6 @@
         "codigoReferencia": 5540
       },
       {
-        "nome": "959 Panigale",
-        "codigoReferencia": 7861
-      },
-      {
         "nome": "996",
         "codigoReferencia": 2686
       },
@@ -1350,7 +1086,7 @@
         "codigoReferencia": 2689
       },
       {
-        "nome": "999r Xerox 999cc",
+        "nome": "999r Xerox",
         "codigoReferencia": 4171
       },
       {
@@ -1358,183 +1094,39 @@
         "codigoReferencia": 10769
       },
       {
-        "nome": "Desmosedici 16rr 200cv",
+        "nome": "Desmosedici 16rr",
         "codigoReferencia": 5013
       },
       {
-        "nome": "Diavel 1198",
+        "nome": "Diavel",
         "codigoReferencia": 5541
       },
       {
-        "nome": "Diavel 1198 Cromo",
-        "codigoReferencia": 6499
-      },
-      {
-        "nome": "Diavel 1260",
-        "codigoReferencia": 8974
-      },
-      {
-        "nome": "Diavel V4 1158",
-        "codigoReferencia": 11113
-      },
-      {
-        "nome": "Hypermotard 1100 Evo",
+        "nome": "Hypermotard",
         "codigoReferencia": 5542
-      },
-      {
-        "nome": "Hypermotard 698 Rev",
-        "codigoReferencia": 11439
-      },
-      {
-        "nome": "Hypermotard 796",
-        "codigoReferencia": 5222
-      },
-      {
-        "nome": "Hypermotard 821",
-        "codigoReferencia": 6818
       },
       {
         "nome": "Hyperstrada 821",
         "codigoReferencia": 6899
       },
       {
-        "nome": "Monster 1100",
+        "nome": "Monster",
         "codigoReferencia": 5544
       },
       {
-        "nome": "Monster 1100cc",
-        "codigoReferencia": 5121
-      },
-      {
-        "nome": "Monster 1200",
-        "codigoReferencia": 7240
-      },
-      {
-        "nome": "Monster 600cc",
-        "codigoReferencia": 2690
-      },
-      {
-        "nome": "Monster 620cc",
-        "codigoReferencia": 2691
-      },
-      {
-        "nome": "Monster 695cc",
-        "codigoReferencia": 4128
-      },
-      {
-        "nome": "Monster 696cc",
-        "codigoReferencia": 5094
-      },
-      {
-        "nome": "Monster 796",
-        "codigoReferencia": 6500
-      },
-      {
-        "nome": "Monster 797",
-        "codigoReferencia": 8376
-      },
-      {
-        "nome": "Monster 821",
-        "codigoReferencia": 7281
-      },
-      {
-        "nome": "Monster 900cc",
-        "codigoReferencia": 2692
-      },
-      {
-        "nome": "Monster 937cc",
-        "codigoReferencia": 10086
-      },
-      {
-        "nome": "Monster S2-R 1000",
-        "codigoReferencia": 4172
-      },
-      {
-        "nome": "Monster S4 916",
-        "codigoReferencia": 2693
-      },
-      {
-        "nome": "Monster S4-R 996",
-        "codigoReferencia": 2694
-      },
-      {
-        "nome": "Monster S4-Rs Testastretta",
-        "codigoReferencia": 4173
-      },
-      {
-        "nome": "Multistrada 1000 992cc",
+        "nome": "Multistrada",
         "codigoReferencia": 2695
       },
       {
-        "nome": "Multistrada 1100 1078cc",
-        "codigoReferencia": 4547
-      },
-      {
-        "nome": "Multistrada 1160 V4",
-        "codigoReferencia": 11054
-      },
-      {
-        "nome": "Multistrada 1160 V4s",
-        "codigoReferencia": 9779
-      },
-      {
-        "nome": "Multistrada 1200 1198cc",
-        "codigoReferencia": 5460
-      },
-      {
-        "nome": "Multistrada 1200 Enduro",
-        "codigoReferencia": 7783
-      },
-      {
-        "nome": "Multistrada 1200",
-        "codigoReferencia": 5545
-      },
-      {
-        "nome": "Multistrada 1260",
-        "codigoReferencia": 8537
-      },
-      {
-        "nome": "Multistrada 620 618cc",
-        "codigoReferencia": 4174
-      },
-      {
-        "nome": "Multistrada 950",
-        "codigoReferencia": 8156
-      },
-      {
-        "nome": "Multistrada V2s",
-        "codigoReferencia": 10617
-      },
-      {
-        "nome": "Panigale V4",
-        "codigoReferencia": 11740
-      },
-      {
-        "nome": "Scrambler Classic 800cc",
+        "nome": "Scrambler",
         "codigoReferencia": 7570
       },
       {
-        "nome": "Scrambler Custom 800cc",
-        "codigoReferencia": 8259
-      },
-      {
-        "nome": "Scrambler Full Throttler",
-        "codigoReferencia": 7571
-      },
-      {
-        "nome": "Scrambler Icon 800cc",
-        "codigoReferencia": 7382
-      },
-      {
-        "nome": "Scrambler Urban Enduro",
-        "codigoReferencia": 7572
-      },
-      {
-        "nome": "Sportclassic Paulsmart 1000le",
+        "nome": "Sportclassic Paulsmart",
         "codigoReferencia": 4175
       },
       {
-        "nome": "Sportclassic Sport 1000",
+        "nome": "Sportclassic",
         "codigoReferencia": 4176
       },
       {
@@ -1542,27 +1134,19 @@
         "codigoReferencia": 2696
       },
       {
-        "nome": "St-2 900 944cc",
+        "nome": "St-2",
         "codigoReferencia": 2697
       },
       {
-        "nome": "St-4 900 996cc",
+        "nome": "St-4",
         "codigoReferencia": 2698
       },
       {
-        "nome": "Streetfighter 1098cc",
+        "nome": "Streetfighter",
         "codigoReferencia": 5161
       },
       {
-        "nome": "Streetfighter 848",
-        "codigoReferencia": 6502
-      },
-      {
-        "nome": "Streetfighter V4",
-        "codigoReferencia": 9673
-      },
-      {
-        "nome": "Super Sport",
+        "nome": "Super",
         "codigoReferencia": 8489
       },
       {
@@ -1570,12 +1154,8 @@
         "codigoReferencia": 7784
       },
       {
-        "nome": "Xdiavel Dark 1262",
+        "nome": "Xdiavel",
         "codigoReferencia": 8305
-      },
-      {
-        "nome": "Xdiavel S 1262",
-        "codigoReferencia": 7785
       }
     ]
   },
@@ -1591,7 +1171,7 @@
         "codigoReferencia": 2700
       },
       {
-        "nome": "One Racing 50cc",
+        "nome": "One Racing",
         "codigoReferencia": 2701
       }
     ]
@@ -1600,27 +1180,27 @@
     "marca": "Fever",
     "modelos": [
       {
-        "nome": "Fr110 Box (elétrica)",
+        "nome": "Fr110 Box",
         "codigoReferencia": 11285
       },
       {
-        "nome": "Fr150 Frigo (elétrica)",
+        "nome": "Fr150 Frigo",
         "codigoReferencia": 10976
       },
       {
-        "nome": "Fr250 Box (elétrica)",
+        "nome": "Fr250 Box",
         "codigoReferencia": 10977
       },
       {
-        "nome": "Fr250 Cage (elétrica)",
+        "nome": "Fr250 Cage",
         "codigoReferencia": 10978
       },
       {
-        "nome": "Fr250 Pet (elétrica)",
+        "nome": "Fr250 Pet",
         "codigoReferencia": 10979
       },
       {
-        "nome": "Fr250 Pick-Up (elétrica)",
+        "nome": "Fr250 Pick-Up",
         "codigoReferencia": 10980
       }
     ]
@@ -1633,7 +1213,7 @@
         "codigoReferencia": 4364
       },
       {
-        "nome": "250t-10 Elite",
+        "nome": "Elite",
         "codigoReferencia": 4365
       }
     ]
@@ -1642,35 +1222,27 @@
     "marca": "Fusco Motosegura",
     "modelos": [
       {
-        "nome": "Carga Baú 125cc",
+        "nome": "Carga Baú",
         "codigoReferencia": 8377
       },
       {
-        "nome": "Carga Baú 160cc",
-        "codigoReferencia": 8378
-      },
-      {
-        "nome": "Carga Caçamba 125cc",
+        "nome": "Carga Caçamba",
         "codigoReferencia": 8379
       },
       {
-        "nome": "Carga Caçamba 160cc",
-        "codigoReferencia": 8380
-      },
-      {
-        "nome": "Carga Gás 160cc",
+        "nome": "Carga Gás",
         "codigoReferencia": 8381
       },
       {
-        "nome": "Wit Baú 4500w",
+        "nome": "Wit Baú",
         "codigoReferencia": 10845
       },
       {
-        "nome": "Wit Caçamba 4500w",
+        "nome": "Wit Caçamba",
         "codigoReferencia": 10846
       },
       {
-        "nome": "Wit Gás 4500w",
+        "nome": "Wit Gás",
         "codigoReferencia": 10847
       }
     ]
@@ -1687,7 +1259,7 @@
         "codigoReferencia": 4279
       },
       {
-        "nome": "Fy125-20 Sachs 125cc",
+        "nome": "Fy125-20 Sachs",
         "codigoReferencia": 4280
       },
       {
@@ -1765,39 +1337,23 @@
     "marca": "Gas Gas",
     "modelos": [
       {
-        "nome": "Ec 125 Enducross",
+        "nome": "Ec",
         "codigoReferencia": 2702
       },
       {
-        "nome": "Ec 200 Enducross",
-        "codigoReferencia": 2703
-      },
-      {
-        "nome": "Ec 250 Enducross",
-        "codigoReferencia": 2704
-      },
-      {
-        "nome": "Ec 300 Enducross",
-        "codigoReferencia": 2705
-      },
-      {
-        "nome": "Ec 400 Fse",
-        "codigoReferencia": 2706
-      },
-      {
-        "nome": "Ec 450 Fse",
+        "nome": "Ec 450",
         "codigoReferencia": 4151
       },
       {
-        "nome": "Ec 50 Rookie",
+        "nome": "Ec 50",
         "codigoReferencia": 2707
       },
       {
-        "nome": "Ec Boy 50",
+        "nome": "Ec Boy",
         "codigoReferencia": 2708
       },
       {
-        "nome": "Mc 250",
+        "nome": "Mc",
         "codigoReferencia": 2709
       },
       {
@@ -1809,23 +1365,23 @@
         "codigoReferencia": 2711
       },
       {
-        "nome": "Tx Boy 50",
+        "nome": "Tx Boy",
         "codigoReferencia": 2712
       },
       {
-        "nome": "Txt 200 Contact",
+        "nome": "Txt",
         "codigoReferencia": 2713
       },
       {
-        "nome": "Txt 280 Contact",
+        "nome": "Txt 280",
         "codigoReferencia": 2714
       },
       {
-        "nome": "Txt 321 Contact",
+        "nome": "Txt 321",
         "codigoReferencia": 2715
       },
       {
-        "nome": "Txt 50 Rookie",
+        "nome": "Txt 50",
         "codigoReferencia": 2716
       }
     ]
@@ -1871,7 +1427,7 @@
         "codigoReferencia": 4756
       },
       {
-        "nome": "Hb150-T R5 Fearfulspeed",
+        "nome": "Hb150-T R5",
         "codigoReferencia": 4456
       }
     ]
@@ -1880,39 +1436,39 @@
     "marca": "Haojue",
     "modelos": [
       {
-        "nome": "Burgman Adx 125",
+        "nome": "Burgman",
         "codigoReferencia": 12062
       },
       {
-        "nome": "Chopper Road 150",
+        "nome": "Chopper Road",
         "codigoReferencia": 7929
       },
       {
-        "nome": "Dk 150",
+        "nome": "DK 150",
         "codigoReferencia": 8188
       },
       {
-        "nome": "Dk 160",
+        "nome": "Dk",
         "codigoReferencia": 10147
       },
       {
-        "nome": "Dl 160",
+        "nome": "Dl",
         "codigoReferencia": 11474
       },
       {
-        "nome": "Dr 160",
+        "nome": "DR 160",
         "codigoReferencia": 9071
       },
       {
-        "nome": "Lindy 125",
+        "nome": "Lindy",
         "codigoReferencia": 7930
       },
       {
-        "nome": "Master Ride 150",
+        "nome": "Master Ride",
         "codigoReferencia": 9626
       },
       {
-        "nome": "Nex 110",
+        "nome": "Nex",
         "codigoReferencia": 7931
       },
       {
@@ -1920,15 +1476,15 @@
         "codigoReferencia": 8975
       },
       {
-        "nome": "Nk 150",
+        "nome": "NK 150",
         "codigoReferencia": 9780
       },
       {
-        "nome": "Nk 160",
+        "nome": "Nk",
         "codigoReferencia": 12068
       },
       {
-        "nome": "Vr 150",
+        "nome": "Vr",
         "codigoReferencia": 9029
       }
     ]
@@ -1941,23 +1497,15 @@
         "codigoReferencia": 5758
       },
       {
-        "nome": "Breakout Fxbr",
+        "nome": "Breakout",
         "codigoReferencia": 11383
       },
       {
-        "nome": "Cvo Breakout Fxsbse",
-        "codigoReferencia": 6900
-      },
-      {
-        "nome": "Cvo Limited 115th",
+        "nome": "Cvo",
         "codigoReferencia": 8157
       },
       {
-        "nome": "Cvo Limited Flhtkse",
-        "codigoReferencia": 6901
-      },
-      {
-        "nome": "Cvo Road Glide",
+        "nome": "Road Glide",
         "codigoReferencia": 10611
       },
       {
@@ -1965,11 +1513,11 @@
         "codigoReferencia": 9841
       },
       {
-        "nome": "Cvo Street Glide",
+        "nome": "Street Glide",
         "codigoReferencia": 7053
       },
       {
-        "nome": "Cvo Ultra Clas.",
+        "nome": "Cvo Ultra",
         "codigoReferencia": 5755
       },
       {
@@ -1981,19 +1529,19 @@
         "codigoReferencia": 2718
       },
       {
-        "nome": "Dyna Low Rider",
+        "nome": "Low Rider",
         "codigoReferencia": 2719
       },
       {
-        "nome": "Dyna Super Glide",
+        "nome": "Dyna Super",
         "codigoReferencia": 2721
       },
       {
-        "nome": "Dyna Wide Glide",
+        "nome": "Dyna Wide",
         "codigoReferencia": 2722
       },
       {
-        "nome": "Eg Road King",
+        "nome": "Road King",
         "codigoReferencia": 2723
       },
       {
@@ -2001,67 +1549,15 @@
         "codigoReferencia": 2724
       },
       {
-        "nome": "Electra Glide Flht",
-        "codigoReferencia": 2725
-      },
-      {
-        "nome": "Electra Glide Screaming",
-        "codigoReferencia": 2726
-      },
-      {
-        "nome": "Electra Glide Ultra",
-        "codigoReferencia": 4555
-      },
-      {
-        "nome": "Fat Bob Fxdf",
+        "nome": "Fat Bob",
         "codigoReferencia": 5756
       },
       {
-        "nome": "Fat Bob Fxfb",
-        "codigoReferencia": 8136
-      },
-      {
-        "nome": "Fat Bob Fxfbs",
-        "codigoReferencia": 8137
-      },
-      {
-        "nome": "Fat Boy 115th",
+        "nome": "Fat Boy",
         "codigoReferencia": 8158
       },
       {
-        "nome": "Fat Boy 120th",
-        "codigoReferencia": 10613
-      },
-      {
-        "nome": "Fat Boy Flfb",
-        "codigoReferencia": 8159
-      },
-      {
-        "nome": "Fat Boy Flfbs",
-        "codigoReferencia": 8138
-      },
-      {
-        "nome": "Fat Boy Flstf",
-        "codigoReferencia": 2730
-      },
-      {
-        "nome": "Fat Boy Icon",
-        "codigoReferencia": 11556
-      },
-      {
-        "nome": "Fat Boy Low",
-        "codigoReferencia": 5288
-      },
-      {
-        "nome": "Fat Boy Screaming",
-        "codigoReferencia": 2731
-      },
-      {
-        "nome": "Fat Boy",
-        "codigoReferencia": 6410
-      },
-      {
-        "nome": "Flhtcu Ultra Glide",
+        "nome": "Flhtcu Ultra",
         "codigoReferencia": 2732
       },
       {
@@ -2069,36 +1565,8 @@
         "codigoReferencia": 2733
       },
       {
-        "nome": "Heritage Classic 120th",
+        "nome": "Heritage Classic",
         "codigoReferencia": 10614
-      },
-      {
-        "nome": "Heritage Classic Flhc",
-        "codigoReferencia": 8160
-      },
-      {
-        "nome": "Heritage Custom 1450",
-        "codigoReferencia": 3940
-      },
-      {
-        "nome": "Heritage Softail",
-        "codigoReferencia": 6411
-      },
-      {
-        "nome": "Heritage Springer",
-        "codigoReferencia": 2735
-      },
-      {
-        "nome": "Low Rider Fxdl",
-        "codigoReferencia": 7054
-      },
-      {
-        "nome": "Low Rider",
-        "codigoReferencia": 10615
-      },
-      {
-        "nome": "Low Rider St",
-        "codigoReferencia": 10616
       },
       {
         "nome": "Night Rod",
@@ -2109,131 +1577,47 @@
         "codigoReferencia": 2736
       },
       {
-        "nome": "Nightster Special",
+        "nome": "Nightster",
         "codigoReferencia": 10618
       },
       {
-        "nome": "Pan America 1250",
+        "nome": "Pan America",
         "codigoReferencia": 9843
       },
       {
-        "nome": "Road Glide Fltrx",
-        "codigoReferencia": 11056
-      },
-      {
-        "nome": "Road Glide",
-        "codigoReferencia": 8879
-      },
-      {
-        "nome": "Road Glide Ultra",
-        "codigoReferencia": 8140
-      },
-      {
-        "nome": "Road King",
-        "codigoReferencia": 2737
-      },
-      {
-        "nome": "Road King Screaming",
-        "codigoReferencia": 4557
-      },
-      {
-        "nome": "Softail Breakout 115th",
-        "codigoReferencia": 8162
-      },
-      {
-        "nome": "Softail Breakout Fxbrs",
-        "codigoReferencia": 8141
-      },
-      {
-        "nome": "Softail Breakout Fxsb",
-        "codigoReferencia": 7055
-      },
-      {
-        "nome": "Softail Classic",
+        "nome": "Softail",
         "codigoReferencia": 2739
-      },
-      {
-        "nome": "Softail Custom",
-        "codigoReferencia": 2740
-      },
-      {
-        "nome": "Softail Deluxe Flstn",
-        "codigoReferencia": 2741
-      },
-      {
-        "nome": "Softail Deluxe Flde",
-        "codigoReferencia": 8163
       },
       {
         "nome": "Softail Fxdr",
         "codigoReferencia": 8555
       },
       {
-        "nome": "Softail Low Rider",
-        "codigoReferencia": 8880
-      },
-      {
-        "nome": "Softail Rocker Rocker",
+        "nome": "Softail Rocker",
         "codigoReferencia": 4692
       },
       {
-        "nome": "Softail Slim Flsl",
+        "nome": "Softail Slim",
         "codigoReferencia": 8164
-      },
-      {
-        "nome": "Softail Special",
-        "codigoReferencia": 2742
-      },
-      {
-        "nome": "Softail Sport Glide",
-        "codigoReferencia": 8539
       },
       {
         "nome": "Softail Springer",
         "codigoReferencia": 2743
       },
       {
-        "nome": "Softail Std Fx",
-        "codigoReferencia": 2744
-      },
-      {
-        "nome": "Sportster 1200",
+        "nome": "Sportster",
         "codigoReferencia": 2745
       },
       {
-        "nome": "Sportster S",
-        "codigoReferencia": 10621
-      },
-      {
-        "nome": "Springer Screaming Eagle",
+        "nome": "Springer Screaming",
         "codigoReferencia": 4558
       },
       {
-        "nome": "Street Bob Fxbb",
+        "nome": "Street Bob",
         "codigoReferencia": 8166
       },
       {
-        "nome": "Street Bob Fxdb",
-        "codigoReferencia": 7056
-      },
-      {
-        "nome": "Street Glide Flhx",
-        "codigoReferencia": 5760
-      },
-      {
-        "nome": "Street Glide",
-        "codigoReferencia": 11870
-      },
-      {
-        "nome": "Street Glide Spec.",
-        "codigoReferencia": 8142
-      },
-      {
-        "nome": "Street Glide Ultra",
-        "codigoReferencia": 11391
-      },
-      {
-        "nome": "Street Rod 1130cc",
+        "nome": "Street Rod",
         "codigoReferencia": 2746
       },
       {
@@ -2241,19 +1625,11 @@
         "codigoReferencia": 5757
       },
       {
-        "nome": "Ultra Limited 115th",
+        "nome": "Ultra",
         "codigoReferencia": 8167
       },
       {
-        "nome": "Ultra Limited 120th",
-        "codigoReferencia": 10623
-      },
-      {
-        "nome": "Ultra Limited Flhtk",
-        "codigoReferencia": 8508
-      },
-      {
-        "nome": "V-Rod 10th Anniversary",
+        "nome": "V-Rod 10th",
         "codigoReferencia": 5759
       },
       {
@@ -2261,60 +1637,28 @@
         "codigoReferencia": 2747
       },
       {
-        "nome": "V-Rod 1130cc Vrsca",
-        "codigoReferencia": 2748
-      },
-      {
-        "nome": "V-Rod 1250cc Muscle",
+        "nome": "V-Rod 1250cc",
         "codigoReferencia": 4938
       },
       {
-        "nome": "V-Rod Screaming Eagle",
+        "nome": "V-Rod Screaming",
         "codigoReferencia": 2749
       },
       {
-        "nome": "Xl 1200",
+        "nome": "Xl",
         "codigoReferencia": 2750
       },
       {
-        "nome": "Xl 1200 C-Sportster",
-        "codigoReferencia": 2751
-      },
-      {
-        "nome": "Xl 1200 Cx",
-        "codigoReferencia": 7863
-      },
-      {
-        "nome": "Xl 1200n Sportster",
-        "codigoReferencia": 4912
-      },
-      {
-        "nome": "Xl 1200ns Sportster",
+        "nome": "Iron 883",
         "codigoReferencia": 8556
       },
       {
-        "nome": "Xl 1200x Forty",
+        "nome": "Xl 1200x",
         "codigoReferencia": 8168
       },
       {
         "nome": "Xl 883",
         "codigoReferencia": 2754
-      },
-      {
-        "nome": "Xl 883 Hugger",
-        "codigoReferencia": 2755
-      },
-      {
-        "nome": "Xl 883n Iron",
-        "codigoReferencia": 5223
-      },
-      {
-        "nome": "Xr 1200 Sportster",
-        "codigoReferencia": 4993
-      },
-      {
-        "nome": "Xr 1200x Sportster",
-        "codigoReferencia": 5316
       }
     ]
   },
@@ -2322,7 +1666,7 @@
     "marca": "Hartford",
     "modelos": [
       {
-        "nome": "Legion 125",
+        "nome": "Legion",
         "codigoReferencia": 2758
       }
     ]
@@ -2352,44 +1696,20 @@
     "marca": "Hisun",
     "modelos": [
       {
-        "nome": "Forge 400i 4wd",
+        "nome": "Forge 400i",
         "codigoReferencia": 11809
       },
       {
-        "nome": "Forge 400i Camo",
-        "codigoReferencia": 11810
-      },
-      {
-        "nome": "Forge 400i Dlx",
-        "codigoReferencia": 11811
-      },
-      {
-        "nome": "Forge 400i Standard",
-        "codigoReferencia": 11813
-      },
-      {
-        "nome": "Tactic 400i 4wd",
+        "nome": "Tactic 400i",
         "codigoReferencia": 11815
       },
       {
-        "nome": "Tactic 400i Camo",
-        "codigoReferencia": 11816
-      },
-      {
-        "nome": "Tactic 550 4wd",
+        "nome": "Tactic 550",
         "codigoReferencia": 11817
       },
       {
-        "nome": "Tactic 550 Camo",
-        "codigoReferencia": 11818
-      },
-      {
-        "nome": "Tactic 750 4wd",
+        "nome": "Tactic",
         "codigoReferencia": 11819
-      },
-      {
-        "nome": "Tactic 750 Camo",
-        "codigoReferencia": 11820
       }
     ]
   },
@@ -2397,51 +1717,19 @@
     "marca": "Honda",
     "modelos": [
       {
-        "nome": "Adv 150",
+        "nome": "ADV",
         "codigoReferencia": 9265
       },
       {
-        "nome": "Adv 160",
-        "codigoReferencia": 11305
-      },
-      {
-        "nome": "America Classic 1600",
+        "nome": "America",
         "codigoReferencia": 2763
       },
       {
-        "nome": "Biz 110i",
+        "nome": "Biz",
         "codigoReferencia": 7467
       },
       {
-        "nome": "Biz 125",
-        "codigoReferencia": 11239
-      },
-      {
-        "nome": "Biz 125 Ex",
-        "codigoReferencia": 5515
-      },
-      {
-        "nome": "Biz 125 125i",
-        "codigoReferencia": 7468
-      },
-      {
-        "nome": "Biz 125+",
-        "codigoReferencia": 3963
-      },
-      {
-        "nome": "C 100 Biz",
-        "codigoReferencia": 2764
-      },
-      {
-        "nome": "C 100 Biz+",
-        "codigoReferencia": 2765
-      },
-      {
-        "nome": "C 100 Biz-Es",
-        "codigoReferencia": 2766
-      },
-      {
-        "nome": "C 100 Dream",
+        "nome": "C",
         "codigoReferencia": 2767
       },
       {
@@ -2449,15 +1737,11 @@
         "codigoReferencia": 9776
       },
       {
-        "nome": "Cb 250 Twister",
+        "nome": "Twister",
         "codigoReferencia": 11087
       },
       {
-        "nome": "Cb 300f Twister",
-        "codigoReferencia": 10378
-      },
-      {
-        "nome": "Cb 300r 300r",
+        "nome": "Cb 300r",
         "codigoReferencia": 4939
       },
       {
@@ -2465,11 +1749,11 @@
         "codigoReferencia": 2768
       },
       {
-        "nome": "Cb 500",
+        "nome": "CB 500",
         "codigoReferencia": 2769
       },
       {
-        "nome": "Cb 500 Hornet",
+        "nome": "Hornet",
         "codigoReferencia": 11550
       },
       {
@@ -2481,10 +1765,6 @@
         "codigoReferencia": 6821
       },
       {
-        "nome": "Cb 600f Hornet",
-        "codigoReferencia": 2770
-      },
-      {
         "nome": "Cb 650f",
         "codigoReferencia": 7058
       },
@@ -2493,31 +1773,15 @@
         "codigoReferencia": 9030
       },
       {
-        "nome": "Cb 650r E-Clutch",
-        "codigoReferencia": 11596
-      },
-      {
-        "nome": "Cb 750 Hornet",
-        "codigoReferencia": 11739
-      },
-      {
-        "nome": "Cb1300 Super Four",
+        "nome": "Cb1300 Super",
         "codigoReferencia": 4412
       },
       {
-        "nome": "Cbr 1000 F",
+        "nome": "CBR 1000RR",
         "codigoReferencia": 2771
       },
       {
-        "nome": "Cbr 1000",
-        "codigoReferencia": 2772
-      },
-      {
-        "nome": "Cbr 1000 Rr-R",
-        "codigoReferencia": 9636
-      },
-      {
-        "nome": "Cbr 1100 Xx",
+        "nome": "Cbr",
         "codigoReferencia": 2773
       },
       {
@@ -2529,23 +1793,15 @@
         "codigoReferencia": 2774
       },
       {
-        "nome": "Cbr 450 Sr",
-        "codigoReferencia": 2775
-      },
-      {
         "nome": "Cbr 500r",
         "codigoReferencia": 6676
       },
       {
-        "nome": "Cbr 600 F",
+        "nome": "CBR 600RR",
         "codigoReferencia": 2776
       },
       {
-        "nome": "Cbr 600",
-        "codigoReferencia": 2777
-      },
-      {
-        "nome": "Cbr 650",
+        "nome": "CBR 650R",
         "codigoReferencia": 9072
       },
       {
@@ -2553,155 +1809,43 @@
         "codigoReferencia": 7059
       },
       {
-        "nome": "Cbr 900",
-        "codigoReferencia": 2778
-      },
-      {
-        "nome": "Cbx 150 Aero",
+        "nome": "Cbx",
         "codigoReferencia": 2779
       },
       {
-        "nome": "Cbx 200 Strada",
-        "codigoReferencia": 2780
-      },
-      {
-        "nome": "Cbx 250 Twister",
-        "codigoReferencia": 2781
-      },
-      {
-        "nome": "Cbx 750 Four",
-        "codigoReferencia": 2782
-      },
-      {
-        "nome": "Cbx 750",
-        "codigoReferencia": 2784
-      },
-      {
-        "nome": "Cg 125",
+        "nome": "CG",
         "codigoReferencia": 2785
       },
       {
-        "nome": "Cg 125 Titan-Es",
-        "codigoReferencia": 2789
-      },
-      {
-        "nome": "Cg 125 Titan-Ks",
-        "codigoReferencia": 2790
-      },
-      {
-        "nome": "Cg 125 Titan-Kse",
-        "codigoReferencia": 2791
-      },
-      {
-        "nome": "Cg 125 Today",
-        "codigoReferencia": 2792
-      },
-      {
-        "nome": "Cg 150",
-        "codigoReferencia": 6876
-      },
-      {
-        "nome": "Cg 150 Titan-Es",
-        "codigoReferencia": 2794
-      },
-      {
-        "nome": "Cg 150 Titan-Esd",
-        "codigoReferencia": 4915
-      },
-      {
-        "nome": "Cg 150 Titan-Ex",
-        "codigoReferencia": 5051
-      },
-      {
-        "nome": "Cg 150 Titan-Ks",
-        "codigoReferencia": 4916
-      },
-      {
-        "nome": "Cg 160",
-        "codigoReferencia": 10840
-      },
-      {
-        "nome": "Ch 125-R Spacy",
+        "nome": "Ch 125-R",
         "codigoReferencia": 2797
       },
       {
-        "nome": "Cr 125",
+        "nome": "Cr",
         "codigoReferencia": 2798
-      },
-      {
-        "nome": "Cr 250",
-        "codigoReferencia": 2799
       },
       {
         "nome": "Cr 80",
         "codigoReferencia": 2800
       },
       {
-        "nome": "Crf 1000l Africa",
+        "nome": "Africa Twin",
         "codigoReferencia": 7855
       },
       {
-        "nome": "Crf 1100l Africa",
-        "codigoReferencia": 9508
-      },
-      {
-        "nome": "Crf 110f",
+        "nome": "CRF",
         "codigoReferencia": 6859
-      },
-      {
-        "nome": "Crf 150f",
-        "codigoReferencia": 6195
-      },
-      {
-        "nome": "Crf 230 F",
-        "codigoReferencia": 4446
-      },
-      {
-        "nome": "Crf 250 F",
-        "codigoReferencia": 8540
-      },
-      {
-        "nome": "Crf 250",
-        "codigoReferencia": 10379
-      },
-      {
-        "nome": "Crf 250 Rx",
-        "codigoReferencia": 11473
-      },
-      {
-        "nome": "Crf 250 X",
-        "codigoReferencia": 4917
-      },
-      {
-        "nome": "Crf 250l",
-        "codigoReferencia": 6455
-      },
-      {
-        "nome": "Crf 300f",
-        "codigoReferencia": 11657
-      },
-      {
-        "nome": "Crf 450",
-        "codigoReferencia": 9100
-      },
-      {
-        "nome": "Crf 450 Rx",
-        "codigoReferencia": 9101
-      },
-      {
-        "nome": "Crf 450 X",
-        "codigoReferencia": 8705
       },
       {
         "nome": "Ctx 700n",
         "codigoReferencia": 6877
       },
       {
-        "nome": "Dominator 650",
+        "nome": "Dominator",
         "codigoReferencia": 2801
       },
       {
-        "nome": "Elite 125",
+        "nome": "Elite",
         "codigoReferencia": 8557
       },
       {
@@ -2709,95 +1853,51 @@
         "codigoReferencia": 10125
       },
       {
-        "nome": "Gold Wing 1500",
+        "nome": "Gold Wing",
         "codigoReferencia": 2802
       },
       {
-        "nome": "Gold Wing",
-        "codigoReferencia": 8649
-      },
-      {
-        "nome": "Lead 110",
+        "nome": "Lead",
         "codigoReferencia": 4994
       },
       {
-        "nome": "Magna 750",
+        "nome": "Magna",
         "codigoReferencia": 2803
       },
       {
-        "nome": "Nc 700 X",
+        "nome": "Nc 700",
         "codigoReferencia": 6135
       },
       {
-        "nome": "Nc 750x Nc",
+        "nome": "Nc 750x",
         "codigoReferencia": 7174
       },
       {
-        "nome": "Nx 150",
+        "nome": "Nx",
         "codigoReferencia": 2804
       },
       {
-        "nome": "Nx 200",
-        "codigoReferencia": 2805
-      },
-      {
-        "nome": "Nx 350 Sahara",
+        "nome": "Sahara",
         "codigoReferencia": 2806
       },
       {
-        "nome": "Nx 400i Falcon",
+        "nome": "Falcon",
         "codigoReferencia": 6252
       },
       {
-        "nome": "Nx 500",
-        "codigoReferencia": 11569
-      },
-      {
-        "nome": "Nx-4 Falcon 400",
-        "codigoReferencia": 2807
-      },
-      {
-        "nome": "Nxr 125 Bros",
+        "nome": "Bros",
         "codigoReferencia": 2808
       },
       {
-        "nome": "Nxr 150 Bros",
-        "codigoReferencia": 3843
-      },
-      {
-        "nome": "Nxr 160 Bros",
-        "codigoReferencia": 7438
-      },
-      {
-        "nome": "Pcx 150",
+        "nome": "PCX",
         "codigoReferencia": 8169
       },
       {
-        "nome": "Pcx 150 Dlx",
-        "codigoReferencia": 6473
-      },
-      {
-        "nome": "Pcx 160",
-        "codigoReferencia": 10149
-      },
-      {
-        "nome": "Pcx 160 Dlx",
-        "codigoReferencia": 10150
-      },
-      {
-        "nome": "Pop 100 97cc",
+        "nome": "Pop",
         "codigoReferencia": 4264
       },
       {
-        "nome": "Pop 110i",
-        "codigoReferencia": 7331
-      },
-      {
-        "nome": "Sahara 300",
-        "codigoReferencia": 10954
-      },
-      {
-        "nome": "Sh 150i Dlx",
+        "nome": "Sh 150i",
         "codigoReferencia": 7932
       },
       {
@@ -2805,31 +1905,19 @@
         "codigoReferencia": 7526
       },
       {
-        "nome": "Shadow 1100 Ac",
+        "nome": "Shadow",
         "codigoReferencia": 2811
       },
       {
-        "nome": "Shadow 1100 Ouro",
-        "codigoReferencia": 2812
-      },
-      {
-        "nome": "Shadow Am 750",
-        "codigoReferencia": 2813
-      },
-      {
-        "nome": "Shadow Vt 1100",
-        "codigoReferencia": 2814
-      },
-      {
-        "nome": "Super Hawk 1000",
+        "nome": "Super Hawk",
         "codigoReferencia": 2815
       },
       {
-        "nome": "Trx 350 Fourtrax",
+        "nome": "Trx 350",
         "codigoReferencia": 2816
       },
       {
-        "nome": "Trx 420 Fourtrax",
+        "nome": "Trx 420",
         "codigoReferencia": 4709
       },
       {
@@ -2841,51 +1929,31 @@
         "codigoReferencia": 5562
       },
       {
-        "nome": "Vfr 1200x Crosstourer",
+        "nome": "Vfr 1200x",
         "codigoReferencia": 6311
       },
       {
-        "nome": "Vt 600 C",
-        "codigoReferencia": 2819
-      },
-      {
-        "nome": "Vt 750 Shadow",
-        "codigoReferencia": 3918
-      },
-      {
-        "nome": "Vtx 1800r 1800s",
+        "nome": "Vtx 1800r",
         "codigoReferencia": 2820
       },
       {
-        "nome": "X-Adv 745cc",
-        "codigoReferencia": 8307
-      },
-      {
-        "nome": "Xl 1000v Varadero",
+        "nome": "Xl 1000v",
         "codigoReferencia": 4447
       },
       {
-        "nome": "Xl 125 Duty",
+        "nome": "Xl",
         "codigoReferencia": 2821
       },
       {
-        "nome": "Xl 125",
-        "codigoReferencia": 2822
-      },
-      {
-        "nome": "Xl 700v Transalp",
+        "nome": "Transalp",
         "codigoReferencia": 5546
       },
       {
-        "nome": "Xl 750 Transalp",
-        "codigoReferencia": 11821
-      },
-      {
-        "nome": "Xlr 125",
+        "nome": "Xlr",
         "codigoReferencia": 2823
       },
       {
-        "nome": "Xlx 250",
+        "nome": "Xlx",
         "codigoReferencia": 2825
       },
       {
@@ -2893,32 +1961,16 @@
         "codigoReferencia": 2826
       },
       {
-        "nome": "Xr 200",
+        "nome": "Xr",
         "codigoReferencia": 2827
       },
       {
-        "nome": "Xr 250 Tornado",
+        "nome": "Tornado",
         "codigoReferencia": 2828
       },
       {
-        "nome": "Xr 300l Tornado",
-        "codigoReferencia": 11157
-      },
-      {
-        "nome": "Xr 650",
-        "codigoReferencia": 2829
-      },
-      {
-        "nome": "Xre 190",
+        "nome": "XRE",
         "codigoReferencia": 9031
-      },
-      {
-        "nome": "Xre 300",
-        "codigoReferencia": 7912
-      },
-      {
-        "nome": "Xre 300 300",
-        "codigoReferencia": 4940
       }
     ]
   },
@@ -2926,11 +1978,11 @@
     "marca": "Husaberg",
     "modelos": [
       {
-        "nome": "Fe 400 400cc",
+        "nome": "Fe",
         "codigoReferencia": 2830
       },
       {
-        "nome": "Fe 501 500cc",
+        "nome": "Fe 501",
         "codigoReferencia": 2831
       },
       {
@@ -2951,15 +2003,11 @@
         "codigoReferencia": 8330
       },
       {
-        "nome": "Cr 125",
+        "nome": "Cr",
         "codigoReferencia": 2832
       },
       {
-        "nome": "Cr 250",
-        "codigoReferencia": 2833
-      },
-      {
-        "nome": "Fc 250",
+        "nome": "Fc",
         "codigoReferencia": 12065
       },
       {
@@ -2975,7 +2023,7 @@
         "codigoReferencia": 11558
       },
       {
-        "nome": "Fe 350 Heritage",
+        "nome": "Heritage Classic",
         "codigoReferencia": 11559
       },
       {
@@ -2983,24 +2031,12 @@
         "codigoReferencia": 11807
       },
       {
-        "nome": "Fe 501 Heritage",
-        "codigoReferencia": 11808
-      },
-      {
-        "nome": "Husqy Boy J",
-        "codigoReferencia": 2834
-      },
-      {
         "nome": "Husqy Boy",
-        "codigoReferencia": 2835
+        "codigoReferencia": 2834
       },
       {
         "nome": "Norden 901",
         "codigoReferencia": 9842
-      },
-      {
-        "nome": "Norden 901 Expedition",
-        "codigoReferencia": 11599
       },
       {
         "nome": "Sm 610",
@@ -3019,12 +2055,8 @@
         "codigoReferencia": 11814
       },
       {
-        "nome": "Tc 125",
+        "nome": "Tc",
         "codigoReferencia": 12078
-      },
-      {
-        "nome": "Tc 150",
-        "codigoReferencia": 11899
       },
       {
         "nome": "Tc 50",
@@ -3043,28 +2075,12 @@
         "codigoReferencia": 11578
       },
       {
-        "nome": "Te 150",
+        "nome": "Te",
         "codigoReferencia": 11579
       },
       {
-        "nome": "Te 250 Heritage",
-        "codigoReferencia": 11580
-      },
-      {
-        "nome": "Te 300",
-        "codigoReferencia": 11063
-      },
-      {
-        "nome": "Te 300 Pro",
-        "codigoReferencia": 11581
-      },
-      {
-        "nome": "Te 300i Edição",
+        "nome": "Te 300i",
         "codigoReferencia": 9847
-      },
-      {
-        "nome": "Te 400",
-        "codigoReferencia": 2839
       },
       {
         "nome": "Te 410",
@@ -3091,7 +2107,7 @@
         "codigoReferencia": 8434
       },
       {
-        "nome": "Wr 250",
+        "nome": "Wr",
         "codigoReferencia": 2846
       },
       {
@@ -3099,7 +2115,7 @@
         "codigoReferencia": 2847
       },
       {
-        "nome": "Wre 125",
+        "nome": "Wre",
         "codigoReferencia": 2848
       }
     ]
@@ -3112,14 +2128,6 @@
         "codigoReferencia": 8465
       },
       {
-        "nome": "Chief Classic",
-        "codigoReferencia": 7439
-      },
-      {
-        "nome": "Chief Dark Horse",
-        "codigoReferencia": 8170
-      },
-      {
         "nome": "Chief Springfield",
         "codigoReferencia": 7821
       },
@@ -3130,10 +2138,6 @@
       {
         "nome": "Chieftain",
         "codigoReferencia": 7573
-      },
-      {
-        "nome": "Chieftain Dark Horse",
-        "codigoReferencia": 8171
       },
       {
         "nome": "Roadmaster",
@@ -3153,55 +2157,43 @@
     "marca": "Iros",
     "modelos": [
       {
-        "nome": "Action 100",
+        "nome": "Action",
         "codigoReferencia": 4941
       },
       {
-        "nome": "Action 100 Esa",
-        "codigoReferencia": 4942
-      },
-      {
-        "nome": "Brave 150 Quadriciclo",
+        "nome": "Brave",
         "codigoReferencia": 4943
       },
       {
-        "nome": "Brave 450 Quadriciclo",
+        "nome": "Brave 450",
         "codigoReferencia": 4944
       },
       {
-        "nome": "Brave 70 Quadriciclo",
+        "nome": "Brave 70",
         "codigoReferencia": 4945
       },
       {
-        "nome": "Matrix 150",
+        "nome": "Matrix",
         "codigoReferencia": 4946
       },
       {
-        "nome": "Moving 125",
+        "nome": "Moving",
         "codigoReferencia": 4947
       },
       {
-        "nome": "One 125",
+        "nome": "One",
         "codigoReferencia": 4949
       },
       {
-        "nome": "One 125 Ex",
-        "codigoReferencia": 4951
-      },
-      {
-        "nome": "Vintage 150",
+        "nome": "Vintage",
         "codigoReferencia": 4952
       },
       {
-        "nome": "Warrior 250 Quadriciclo",
+        "nome": "Warrior",
         "codigoReferencia": 4953
       },
       {
-        "nome": "Warrior 400 4x4",
-        "codigoReferencia": 4954
-      },
-      {
-        "nome": "Warrior 700 4x4",
+        "nome": "Warrior 700",
         "codigoReferencia": 4955
       }
     ]
@@ -3210,12 +2202,8 @@
     "marca": "Jiapeng Volcano",
     "modelos": [
       {
-        "nome": "Jp 110",
+        "nome": "Jp",
         "codigoReferencia": 4510
-      },
-      {
-        "nome": "Jp 150",
-        "codigoReferencia": 4511
       }
     ]
   },
@@ -3322,47 +2310,35 @@
     "marca": "Kasinski",
     "modelos": [
       {
-        "nome": "Comet 150",
+        "nome": "Comet",
         "codigoReferencia": 5224
       },
       {
-        "nome": "Comet 250cc Comet",
+        "nome": "Comet 250cc",
         "codigoReferencia": 3845
       },
       {
-        "nome": "Comet Gt 650",
-        "codigoReferencia": 5658
-      },
-      {
-        "nome": "Comet Gt 650r",
-        "codigoReferencia": 4076
-      },
-      {
-        "nome": "Comet Gt-R 250cc",
+        "nome": "Comet Gt-R",
         "codigoReferencia": 4457
       },
       {
-        "nome": "Cruise 125",
+        "nome": "Cruise",
         "codigoReferencia": 3846
       },
       {
-        "nome": "Cruise Ii 125",
+        "nome": "Cruise Ii",
         "codigoReferencia": 3847
       },
       {
-        "nome": "Crz 150",
+        "nome": "Crz",
         "codigoReferencia": 5317
       },
       {
-        "nome": "Crz 150 Super",
-        "codigoReferencia": 5318
-      },
-      {
-        "nome": "Ero Plus 125cc",
+        "nome": "Ero Plus",
         "codigoReferencia": 3848
       },
       {
-        "nome": "Flash K 150cc",
+        "nome": "Flash",
         "codigoReferencia": 3919
       },
       {
@@ -3370,11 +2346,11 @@
         "codigoReferencia": 3849
       },
       {
-        "nome": "Gf 125 Speed",
+        "nome": "Gf",
         "codigoReferencia": 3850
       },
       {
-        "nome": "Gv 250 Mirage",
+        "nome": "Gv",
         "codigoReferencia": 3851
       },
       {
@@ -3382,27 +2358,23 @@
         "codigoReferencia": 3852
       },
       {
-        "nome": "Midas Fx 110cc",
+        "nome": "Midas Fx",
         "codigoReferencia": 3853
       },
       {
-        "nome": "Mirage 150",
+        "nome": "Mirage",
         "codigoReferencia": 5162
       },
       {
-        "nome": "Mirage 650 V2power",
-        "codigoReferencia": 4094
-      },
-      {
-        "nome": "Motokar Furgão Pick-Up",
+        "nome": "Motokar Furgão",
         "codigoReferencia": 3854
       },
       {
-        "nome": "Motokar Taxi-Kar 174cc",
+        "nome": "Motokar Taxi-Kar",
         "codigoReferencia": 3855
       },
       {
-        "nome": "Prima 150",
+        "nome": "Prima",
         "codigoReferencia": 5516
       },
       {
@@ -3410,51 +2382,39 @@
         "codigoReferencia": 3856
       },
       {
-        "nome": "Prima Electra 2000w",
+        "nome": "Prima Electra",
         "codigoReferencia": 5384
       },
       {
-        "nome": "Prima Rally 50cc",
-        "codigoReferencia": 3857
-      },
-      {
-        "nome": "Rx 125",
+        "nome": "Rx",
         "codigoReferencia": 3858
       },
       {
-        "nome": "Seta 125",
+        "nome": "Seta",
         "codigoReferencia": 4253
-      },
-      {
-        "nome": "Seta 150",
-        "codigoReferencia": 4559
       },
       {
         "nome": "Soft 50cc",
         "codigoReferencia": 5494
       },
       {
-        "nome": "Super Cab 100cc",
+        "nome": "Super Cab",
         "codigoReferencia": 3859
       },
       {
-        "nome": "Super Cab 50cc",
-        "codigoReferencia": 3860
-      },
-      {
-        "nome": "Tn 125",
+        "nome": "Tn",
         "codigoReferencia": 3861
       },
       {
-        "nome": "Way 125",
+        "nome": "Way",
         "codigoReferencia": 4560
       },
       {
-        "nome": "Win 110",
+        "nome": "Win",
         "codigoReferencia": 4152
       },
       {
-        "nome": "Win Electra 1000w",
+        "nome": "Win Electra",
         "codigoReferencia": 7221
       }
     ]
@@ -3471,11 +2431,11 @@
         "codigoReferencia": 4632
       },
       {
-        "nome": "D-Tracker X 250cc",
+        "nome": "D-Tracker X",
         "codigoReferencia": 5153
       },
       {
-        "nome": "Eliminator 500",
+        "nome": "Eliminator",
         "codigoReferencia": 11114
       },
       {
@@ -3487,20 +2447,16 @@
         "codigoReferencia": 5154
       },
       {
-        "nome": "Klx 110",
+        "nome": "Klx",
         "codigoReferencia": 4876
       },
       {
-        "nome": "Klx 110 Monster",
+        "nome": "Monster",
         "codigoReferencia": 4877
       },
       {
         "nome": "Klx 110r",
         "codigoReferencia": 11828
-      },
-      {
-        "nome": "Klx 250",
-        "codigoReferencia": 2876
       },
       {
         "nome": "Klx 300r",
@@ -3511,295 +2467,59 @@
         "codigoReferencia": 7296
       },
       {
-        "nome": "Klx 650",
-        "codigoReferencia": 2877
-      },
-      {
         "nome": "Kx 112",
         "codigoReferencia": 11565
       },
       {
-        "nome": "Kx 125",
+        "nome": "Kx",
         "codigoReferencia": 2878
       },
       {
-        "nome": "Kx 250 X",
-        "codigoReferencia": 9536
-      },
-      {
-        "nome": "Kx 250 250",
-        "codigoReferencia": 2879
-      },
-      {
-        "nome": "Kx 450 F",
+        "nome": "Kx 450",
         "codigoReferencia": 4570
-      },
-      {
-        "nome": "Kx 450 X",
-        "codigoReferencia": 9312
       },
       {
         "nome": "Kx 65",
         "codigoReferencia": 4878
       },
       {
-        "nome": "Kx 65 Monster",
-        "codigoReferencia": 4879
-      },
-      {
-        "nome": "Kz 1000",
+        "nome": "Kz",
         "codigoReferencia": 2880
       },
       {
-        "nome": "Maxi Ii 100cc",
+        "nome": "Maxi Ii",
         "codigoReferencia": 2881
       },
       {
-        "nome": "Ninja 1000",
+        "nome": "Ninja",
         "codigoReferencia": 5680
       },
       {
-        "nome": "Ninja 1000 Tourer",
-        "codigoReferencia": 6860
-      },
-      {
-        "nome": "Ninja 250r",
-        "codigoReferencia": 4880
-      },
-      {
-        "nome": "Ninja 300",
-        "codigoReferencia": 6282
-      },
-      {
-        "nome": "Ninja 400",
-        "codigoReferencia": 8490
-      },
-      {
-        "nome": "Ninja 500",
-        "codigoReferencia": 11154
-      },
-      {
-        "nome": "Ninja 650r 649cc",
-        "codigoReferencia": 5462
-      },
-      {
-        "nome": "Ninja Ex 500cc",
-        "codigoReferencia": 2882
-      },
-      {
-        "nome": "Ninja H2 998cc",
-        "codigoReferencia": 7297
-      },
-      {
-        "nome": "Ninja H2",
-        "codigoReferencia": 8977
-      },
-      {
-        "nome": "Ninja Zx-10 Zx-10r",
-        "codigoReferencia": 2883
-      },
-      {
-        "nome": "Ninja Zx-10r",
-        "codigoReferencia": 8491
-      },
-      {
-        "nome": "Ninja Zx-10rr 998cc",
-        "codigoReferencia": 8030
-      },
-      {
-        "nome": "Ninja Zx-11 1100cc",
-        "codigoReferencia": 2884
-      },
-      {
-        "nome": "Ninja Zx-12 Zx-12r",
-        "codigoReferencia": 2885
-      },
-      {
-        "nome": "Ninja Zx-4r",
-        "codigoReferencia": 10937
-      },
-      {
-        "nome": "Ninja Zx-4rr",
-        "codigoReferencia": 11523
-      },
-      {
-        "nome": "Ninja Zx-6 600cc",
-        "codigoReferencia": 2886
-      },
-      {
-        "nome": "Ninja Zx-6r 600cc",
-        "codigoReferencia": 2887
-      },
-      {
-        "nome": "Ninja Zx-6r 636cc",
-        "codigoReferencia": 2888
-      },
-      {
-        "nome": "Ninja Zx-7 750cc",
-        "codigoReferencia": 2889
-      },
-      {
-        "nome": "Ninja Zx-9r 900cc",
-        "codigoReferencia": 2890
-      },
-      {
-        "nome": "Ninja Zz-R 1100cc",
-        "codigoReferencia": 2891
-      },
-      {
-        "nome": "Versys 1000",
+        "nome": "Versys",
         "codigoReferencia": 6140
-      },
-      {
-        "nome": "Versys 1000 Grand",
-        "codigoReferencia": 6253
-      },
-      {
-        "nome": "Versys 1100",
-        "codigoReferencia": 11527
-      },
-      {
-        "nome": "Versys 1100 Grand",
-        "codigoReferencia": 11528
-      },
-      {
-        "nome": "Versys 650cc",
-        "codigoReferencia": 5319
-      },
-      {
-        "nome": "Versys City 650",
-        "codigoReferencia": 6141
-      },
-      {
-        "nome": "Versys Tourer 650",
-        "codigoReferencia": 6142
-      },
-      {
-        "nome": "Versys-X 300",
-        "codigoReferencia": 8114
-      },
-      {
-        "nome": "Versys-X 300 Tourer",
-        "codigoReferencia": 8115
       },
       {
         "nome": "Voyager 1200cc",
         "codigoReferencia": 2892
       },
       {
-        "nome": "Vulcan 800",
+        "nome": "Vulcan",
         "codigoReferencia": 2893
       },
       {
-        "nome": "Vulcan 900",
-        "codigoReferencia": 5436
-      },
-      {
-        "nome": "Vulcan En 500",
-        "codigoReferencia": 2894
-      },
-      {
-        "nome": "Vulcan En 500cc",
-        "codigoReferencia": 2895
-      },
-      {
-        "nome": "Vulcan Ltd Class",
-        "codigoReferencia": 2896
-      },
-      {
-        "nome": "Vulcan Nomad 1500cc",
-        "codigoReferencia": 2897
-      },
-      {
-        "nome": "Vulcan S 650",
-        "codigoReferencia": 7282
-      },
-      {
-        "nome": "Vulcan Vn 1500",
-        "codigoReferencia": 2898
-      },
-      {
-        "nome": "Vulcan Vn 1500cc",
-        "codigoReferencia": 2899
-      },
-      {
-        "nome": "Vulcan Vn 1600",
-        "codigoReferencia": 2900
-      },
-      {
-        "nome": "Vulcan Vn 2000",
-        "codigoReferencia": 2901
-      },
-      {
-        "nome": "Vulcan Vn 750cc",
-        "codigoReferencia": 2902
-      },
-      {
-        "nome": "Vulcan Vn 800cc",
-        "codigoReferencia": 2903
-      },
-      {
-        "nome": "Vulcan Vn 900",
-        "codigoReferencia": 4633
-      },
-      {
-        "nome": "Z 1000",
+        "nome": "Z",
         "codigoReferencia": 2904
       },
       {
-        "nome": "Z 1000 H2",
-        "codigoReferencia": 11393
-      },
-      {
-        "nome": "Z 1100",
-        "codigoReferencia": 11904
-      },
-      {
-        "nome": "Z 300",
-        "codigoReferencia": 7298
-      },
-      {
-        "nome": "Z 400",
-        "codigoReferencia": 8802
-      },
-      {
-        "nome": "Z 500",
-        "codigoReferencia": 11158
-      },
-      {
-        "nome": "Z 650",
-        "codigoReferencia": 7961
-      },
-      {
-        "nome": "Z 650 Rs",
-        "codigoReferencia": 10429
-      },
-      {
-        "nome": "Z 750",
-        "codigoReferencia": 4458
-      },
-      {
-        "nome": "Z 900",
-        "codigoReferencia": 8116
-      },
-      {
-        "nome": "Z 900 50th",
-        "codigoReferencia": 9953
-      },
-      {
-        "nome": "Z 900 Rs",
-        "codigoReferencia": 10430
-      },
-      {
-        "nome": "Z-800",
+        "nome": "Z800",
         "codigoReferencia": 6365
       },
       {
-        "nome": "Zx-14 Zx 14r",
+        "nome": "Zx-14 Zx",
         "codigoReferencia": 4177
       },
       {
-        "nome": "Zzr 1200",
+        "nome": "Zzr",
         "codigoReferencia": 2905
       }
     ]
@@ -3812,7 +2532,7 @@
         "codigoReferencia": 5225
       },
       {
-        "nome": "690 Enduro Enduro",
+        "nome": "690 Enduro",
         "codigoReferencia": 5201
       },
       {
@@ -3832,7 +2552,7 @@
         "codigoReferencia": 7144
       },
       {
-        "nome": "Adventure 640 St",
+        "nome": "Adventure 640",
         "codigoReferencia": 2910
       },
       {
@@ -3848,11 +2568,11 @@
         "codigoReferencia": 4208
       },
       {
-        "nome": "Adventure R Dakar",
+        "nome": "Adventure",
         "codigoReferencia": 5518
       },
       {
-        "nome": "Duke 200",
+        "nome": "Duke",
         "codigoReferencia": 7332
       },
       {
@@ -3860,7 +2580,7 @@
         "codigoReferencia": 7333
       },
       {
-        "nome": "Duke 640 Duke",
+        "nome": "Duke 640",
         "codigoReferencia": 2912
       },
       {
@@ -3868,36 +2588,12 @@
         "codigoReferencia": 5351
       },
       {
-        "nome": "Exc 125",
+        "nome": "Exc",
         "codigoReferencia": 2913
-      },
-      {
-        "nome": "Exc 150",
-        "codigoReferencia": 11555
-      },
-      {
-        "nome": "Exc 200",
-        "codigoReferencia": 2914
-      },
-      {
-        "nome": "Exc 250",
-        "codigoReferencia": 2915
-      },
-      {
-        "nome": "Exc 300",
-        "codigoReferencia": 2916
-      },
-      {
-        "nome": "Exc 300 Six",
-        "codigoReferencia": 11892
       },
       {
         "nome": "Exc 380",
         "codigoReferencia": 2917
-      },
-      {
-        "nome": "Exc 400",
-        "codigoReferencia": 2918
       },
       {
         "nome": "Exc 450",
@@ -3912,35 +2608,19 @@
         "codigoReferencia": 4077
       },
       {
-        "nome": "Exc-F 250",
+        "nome": "Exc-F",
         "codigoReferencia": 7242
-      },
-      {
-        "nome": "Exc-F 250 Six",
-        "codigoReferencia": 7334
-      },
-      {
-        "nome": "Exc-F 300 Six",
-        "codigoReferencia": 7335
       },
       {
         "nome": "Exc-F 350",
         "codigoReferencia": 7243
       },
       {
-        "nome": "Exc-F 350 Six",
-        "codigoReferencia": 8493
-      },
-      {
         "nome": "Exc-F 450",
         "codigoReferencia": 12063
       },
       {
-        "nome": "Exc-F 500",
-        "codigoReferencia": 12064
-      },
-      {
-        "nome": "Lc4 640 Trail",
+        "nome": "Lc4 640",
         "codigoReferencia": 2920
       },
       {
@@ -3948,7 +2628,7 @@
         "codigoReferencia": 2921
       },
       {
-        "nome": "Super Adventure 1290",
+        "nome": "Super",
         "codigoReferencia": 7609
       },
       {
@@ -3968,23 +2648,11 @@
         "codigoReferencia": 5519
       },
       {
-        "nome": "Supermoto 990 T",
-        "codigoReferencia": 5263
-      },
-      {
-        "nome": "Sx 125",
+        "nome": "Sx",
         "codigoReferencia": 2922
       },
       {
-        "nome": "Sx 250",
-        "codigoReferencia": 2923
-      },
-      {
-        "nome": "Sx 300",
-        "codigoReferencia": 11898
-      },
-      {
-        "nome": "Sx 350 350",
+        "nome": "Sx 350",
         "codigoReferencia": 5520
       },
       {
@@ -4004,7 +2672,7 @@
         "codigoReferencia": 2927
       },
       {
-        "nome": "Sxc 520 540",
+        "nome": "Sxc 520",
         "codigoReferencia": 2928
       },
       {
@@ -4012,7 +2680,7 @@
         "codigoReferencia": 2929
       },
       {
-        "nome": "Sx-F 450 Factory",
+        "nome": "Sx-F 450",
         "codigoReferencia": 12077
       }
     ]
@@ -4021,7 +2689,7 @@
     "marca": "Kymco",
     "modelos": [
       {
-        "nome": "Agility 16+ 200i",
+        "nome": "Agility 16+",
         "codigoReferencia": 8706
       },
       {
@@ -4029,11 +2697,7 @@
         "codigoReferencia": 9220
       },
       {
-        "nome": "Ak 550i Premium",
-        "codigoReferencia": 11284
-      },
-      {
-        "nome": "Djw 50 50cc",
+        "nome": "Djw 50",
         "codigoReferencia": 7933
       },
       {
@@ -4053,11 +2717,11 @@
         "codigoReferencia": 7936
       },
       {
-        "nome": "People Gt 300i",
+        "nome": "People",
         "codigoReferencia": 7937
       },
       {
-        "nome": "Zing 150",
+        "nome": "Zing",
         "codigoReferencia": 7938
       }
     ]
@@ -4066,7 +2730,7 @@
     "marca": "Landum",
     "modelos": [
       {
-        "nome": "Moto Truck Ld",
+        "nome": "Moto Truck",
         "codigoReferencia": 5014
       }
     ]
@@ -4100,7 +2764,7 @@
     "marca": "Lavrale",
     "modelos": [
       {
-        "nome": "Quattor 30.0 190cc",
+        "nome": "Quattor",
         "codigoReferencia": 2935
       }
     ]
@@ -4109,11 +2773,11 @@
     "marca": "Lerivo",
     "modelos": [
       {
-        "nome": "Formigão Furgão 200cc",
+        "nome": "Formigão Furgão",
         "codigoReferencia": 4459
       },
       {
-        "nome": "Formigão Pick-Up 200cc",
+        "nome": "Formigão Pick-Up",
         "codigoReferencia": 4460
       }
     ]
@@ -4135,7 +2799,7 @@
     "marca": "Lifan",
     "modelos": [
       {
-        "nome": "Cargo 200 Zh",
+        "nome": "Cargo",
         "codigoReferencia": 5565
       }
     ]
@@ -4148,15 +2812,15 @@
         "codigoReferencia": 5226
       },
       {
-        "nome": "E Retrô 2000",
+        "nome": "E Retrô",
         "codigoReferencia": 5264
       },
       {
-        "nome": "Ly 125t -5",
+        "nome": "Ly 125t",
         "codigoReferencia": 5265
       },
       {
-        "nome": "Ly 150t-5 Retrô",
+        "nome": "Ly 150t-5",
         "codigoReferencia": 4653
       },
       {
@@ -4164,7 +2828,7 @@
         "codigoReferencia": 4654
       },
       {
-        "nome": "Ly 150t-7a Racer",
+        "nome": "Ly 150t-7a",
         "codigoReferencia": 4655
       }
     ]
@@ -4173,8 +2837,12 @@
     "marca": "Magrão Triciclos",
     "modelos": [
       {
-        "nome": "Mt7 Chopper 1.6",
+        "nome": "Pop",
         "codigoReferencia": 6218
+      },
+      {
+        "nome": "Mt7 Chopper",
+        "codigoReferencia": 5438
       }
     ]
   },
@@ -4182,11 +2850,11 @@
     "marca": "Malaguti",
     "modelos": [
       {
-        "nome": "Ciak Master 200",
+        "nome": "Ciak Master",
         "codigoReferencia": 4634
       },
       {
-        "nome": "Spider Maxgt 500",
+        "nome": "Spider Maxgt",
         "codigoReferencia": 4635
       }
     ]
@@ -4195,27 +2863,23 @@
     "marca": "Miza",
     "modelos": [
       {
-        "nome": "Drago Lj 150-7",
+        "nome": "Drago Lj",
         "codigoReferencia": 4353
       },
       {
-        "nome": "Easy Lj 110-10",
+        "nome": "Easy Lj",
         "codigoReferencia": 4178
       },
       {
-        "nome": "Easy Lj 125-10",
-        "codigoReferencia": 4426
-      },
-      {
-        "nome": "Fast Lj 150-2",
+        "nome": "Fast Lj",
         "codigoReferencia": 4354
       },
       {
-        "nome": "Skema Lj 125-6",
+        "nome": "Skema Lj",
         "codigoReferencia": 4265
       },
       {
-        "nome": "Vite Lj 150t-7",
+        "nome": "Vite Lj",
         "codigoReferencia": 4355
       }
     ]
@@ -4241,19 +2905,19 @@
         "codigoReferencia": 2936
       },
       {
-        "nome": "California Ev 1064cc",
+        "nome": "California",
         "codigoReferencia": 2937
       },
       {
-        "nome": "California Jackal 1064cc",
+        "nome": "California Jackal",
         "codigoReferencia": 2938
       },
       {
-        "nome": "California Stone 1064cc",
+        "nome": "California Stone",
         "codigoReferencia": 2939
       },
       {
-        "nome": "Quota 1100",
+        "nome": "Quota",
         "codigoReferencia": 2940
       },
       {
@@ -4291,32 +2955,28 @@
     "marca": "Motomorini",
     "modelos": [
       {
-        "nome": "Calibro Bagger 700",
+        "nome": "Calibro Bagger",
         "codigoReferencia": 11546
       },
       {
-        "nome": "Calibro Custom 700",
+        "nome": "Calibro",
         "codigoReferencia": 11547
       },
       {
-        "nome": "Seiemmezzo Scramble 650",
+        "nome": "Seiemmezzo Scramble",
         "codigoReferencia": 11573
       },
       {
-        "nome": "Seiemmezzo Street 650",
+        "nome": "Seiemmezzo Street",
         "codigoReferencia": 11574
       },
       {
-        "nome": "X-Cape Alloy 650",
+        "nome": "X-Cape Alloy",
         "codigoReferencia": 11584
       },
       {
-        "nome": "X-Cape Spoke 650",
+        "nome": "X-Cape Spoke",
         "codigoReferencia": 11585
-      },
-      {
-        "nome": "X-Cape Spoke Gold",
-        "codigoReferencia": 11586
       }
     ]
   },
@@ -4336,19 +2996,19 @@
         "codigoReferencia": 7994
       },
       {
-        "nome": "Cappuccino Absoluta 150cc",
+        "nome": "Cappuccino Absoluta",
         "codigoReferencia": 10935
       },
       {
-        "nome": "Cappuccino Elettrica 3000w",
+        "nome": "Cappuccino Elettrica",
         "codigoReferencia": 11806
       },
       {
-        "nome": "Cappuccino Ousada 150cc",
+        "nome": "Cappuccino Ousada",
         "codigoReferencia": 10936
       },
       {
-        "nome": "Cappuccino S 50cc",
+        "nome": "Cappuccino",
         "codigoReferencia": 8118
       },
       {
@@ -4360,7 +3020,7 @@
         "codigoReferencia": 6825
       },
       {
-        "nome": "Custom S 150cc",
+        "nome": "Custom",
         "codigoReferencia": 6826
       },
       {
@@ -4376,7 +3036,7 @@
         "codigoReferencia": 6828
       },
       {
-        "nome": "Star Automatic 125cc",
+        "nome": "Star Automatic",
         "codigoReferencia": 6829
       },
       {
@@ -4384,7 +3044,7 @@
         "codigoReferencia": 6830
       },
       {
-        "nome": "Velvet 150cc Lt",
+        "nome": "Velvet 150cc",
         "codigoReferencia": 6831
       },
       {
@@ -4392,7 +3052,7 @@
         "codigoReferencia": 8119
       },
       {
-        "nome": "Velvet Lt 125cc",
+        "nome": "Velvet Lt",
         "codigoReferencia": 8382
       },
       {
@@ -4430,7 +3090,7 @@
         "codigoReferencia": 5715
       },
       {
-        "nome": "Brutale 800",
+        "nome": "Brutale",
         "codigoReferencia": 6902
       },
       {
@@ -4446,19 +3106,19 @@
         "codigoReferencia": 5053
       },
       {
-        "nome": "F3 800",
+        "nome": "F3",
         "codigoReferencia": 6946
       },
       {
-        "nome": "F4 1078rr 312",
+        "nome": "F4 1078rr",
         "codigoReferencia": 5054
       },
       {
-        "nome": "F4 750 (ouro)",
+        "nome": "F4",
         "codigoReferencia": 2942
       },
       {
-        "nome": "F4 750s (prata)",
+        "nome": "F4 750s",
         "codigoReferencia": 2943
       },
       {
@@ -4470,7 +3130,7 @@
         "codigoReferencia": 5713
       },
       {
-        "nome": "Rivale 800",
+        "nome": "Rivale",
         "codigoReferencia": 7060
       }
     ]
@@ -4479,11 +3139,11 @@
     "marca": "Mvk",
     "modelos": [
       {
-        "nome": "Big Force 250",
+        "nome": "Big Force",
         "codigoReferencia": 5385
       },
       {
-        "nome": "Black Star 150",
+        "nome": "Black Star",
         "codigoReferencia": 4324
       },
       {
@@ -4491,31 +3151,31 @@
         "codigoReferencia": 5386
       },
       {
-        "nome": "Dual 200",
+        "nome": "Dual",
         "codigoReferencia": 4413
       },
       {
-        "nome": "Fenix Gold 240",
+        "nome": "Fenix Gold",
         "codigoReferencia": 4818
       },
       {
-        "nome": "Fox 110",
+        "nome": "Fox",
         "codigoReferencia": 4325
       },
       {
-        "nome": "Go 100",
+        "nome": "Go",
         "codigoReferencia": 3920
       },
       {
-        "nome": "Halley Fenix 200",
+        "nome": "Halley Fenix",
         "codigoReferencia": 4326
       },
       {
-        "nome": "Halley 150",
+        "nome": "Halley",
         "codigoReferencia": 3921
       },
       {
-        "nome": "Jurasic 300",
+        "nome": "Jurasic",
         "codigoReferencia": 5387
       },
       {
@@ -4527,35 +3187,35 @@
         "codigoReferencia": 2947
       },
       {
-        "nome": "Ma Black Star",
+        "nome": "Ma",
         "codigoReferencia": 2946
       },
       {
-        "nome": "Ma Foxx 100-3",
+        "nome": "Ma Foxx",
         "codigoReferencia": 2944
       },
       {
-        "nome": "Simba 50 Quadriciclo",
+        "nome": "Simba 50",
         "codigoReferencia": 5388
       },
       {
-        "nome": "Sport 150 Quadriciclo",
+        "nome": "Sport",
         "codigoReferencia": 5389
       },
       {
-        "nome": "Spyder 270 320",
+        "nome": "Spyder 270",
         "codigoReferencia": 4819
       },
       {
-        "nome": "Street 150 Street",
+        "nome": "Street",
         "codigoReferencia": 4327
       },
       {
-        "nome": "Super X 125",
+        "nome": "Super X",
         "codigoReferencia": 4414
       },
       {
-        "nome": "Xrt 110",
+        "nome": "Xrt",
         "codigoReferencia": 4415
       }
     ]
@@ -4564,15 +3224,15 @@
     "marca": "Niu",
     "modelos": [
       {
-        "nome": "Nqi Gts 3000w",
+        "nome": "Nqi Gts",
         "codigoReferencia": 10423
       },
       {
-        "nome": "Nqi Sport 1500w",
+        "nome": "Nqi",
         "codigoReferencia": 10424
       },
       {
-        "nome": "Uqi Gt 1200w",
+        "nome": "Uqi",
         "codigoReferencia": 10428
       }
     ]
@@ -4581,7 +3241,7 @@
     "marca": "Orca",
     "modelos": [
       {
-        "nome": "Ax 100",
+        "nome": "Ax",
         "codigoReferencia": 2948
       },
       {
@@ -4589,7 +3249,7 @@
         "codigoReferencia": 2949
       },
       {
-        "nome": "Jc 125",
+        "nome": "Jc",
         "codigoReferencia": 2950
       },
       {
@@ -4610,7 +3270,7 @@
     "marca": "Pegassi",
     "modelos": [
       {
-        "nome": "Br Iii 150cc",
+        "nome": "Br Iii",
         "codigoReferencia": 5155
       }
     ]
@@ -4623,7 +3283,7 @@
         "codigoReferencia": 2954
       },
       {
-        "nome": "Elyseo 125",
+        "nome": "Elyseo",
         "codigoReferencia": 2955
       },
       {
@@ -4635,7 +3295,7 @@
         "codigoReferencia": 2957
       },
       {
-        "nome": "Speedfight 100",
+        "nome": "Speedfight",
         "codigoReferencia": 2958
       },
       {
@@ -4651,7 +3311,7 @@
         "codigoReferencia": 2961
       },
       {
-        "nome": "Trekker 100",
+        "nome": "Trekker",
         "codigoReferencia": 2962
       },
       {
@@ -4668,32 +3328,20 @@
     "marca": "Piaggio",
     "modelos": [
       {
-        "nome": "Apé Cargo 300cc",
+        "nome": "Apé",
         "codigoReferencia": 10851
       },
       {
-        "nome": "Apé Passenger 230cc",
+        "nome": "Apé Passenger",
         "codigoReferencia": 10852
       },
       {
-        "nome": "Berverly Touring 300",
+        "nome": "Berverly",
         "codigoReferencia": 5156
       },
       {
-        "nome": "Beverly 250 224cc",
+        "nome": "Beverly",
         "codigoReferencia": 2965
-      },
-      {
-        "nome": "Beverly 500 460cc",
-        "codigoReferencia": 2966
-      },
-      {
-        "nome": "Beverly S 400",
-        "codigoReferencia": 11545
-      },
-      {
-        "nome": "Beverly Sport",
-        "codigoReferencia": 6474
       },
       {
         "nome": "E-Cargo (elétrico)",
@@ -4704,35 +3352,23 @@
         "codigoReferencia": 11554
       },
       {
-        "nome": "Liberty 200 200cc",
+        "nome": "Liberty",
         "codigoReferencia": 4656
-      },
-      {
-        "nome": "Liberty S 150",
-        "codigoReferencia": 8222
       },
       {
         "nome": "Liberty150",
         "codigoReferencia": 11566
       },
       {
-        "nome": "Mp3 300 278cc",
+        "nome": "Mp3",
         "codigoReferencia": 6604
       },
       {
-        "nome": "Mp3 400 398cc",
-        "codigoReferencia": 4561
-      },
-      {
-        "nome": "Mp3 500 493cc",
-        "codigoReferencia": 5016
-      },
-      {
-        "nome": "Mp3 530 Hpe",
+        "nome": "Mp3 530",
         "codigoReferencia": 11568
       },
       {
-        "nome": "Nrg Mc3 Dd",
+        "nome": "Nrg Mc3",
         "codigoReferencia": 2967
       },
       {
@@ -4740,75 +3376,51 @@
         "codigoReferencia": 2968
       },
       {
-        "nome": "Vespa 946 Emporio",
+        "nome": "Vespa 946",
         "codigoReferencia": 7864
       },
       {
-        "nome": "Vespa Classic Elegante",
+        "nome": "Vespa",
         "codigoReferencia": 8308
       },
       {
-        "nome": "Vespa Classic Sxl",
-        "codigoReferencia": 8309
-      },
-      {
-        "nome": "Vespa Classic Vxl",
-        "codigoReferencia": 8173
-      },
-      {
-        "nome": "Vespa Club 125",
+        "nome": "Vespa Club",
         "codigoReferencia": 9032
       },
       {
-        "nome": "Vespa Club Zx",
-        "codigoReferencia": 9578
-      },
-      {
-        "nome": "Vespa Gts 300",
+        "nome": "Vespa Gts",
         "codigoReferencia": 7865
       },
       {
-        "nome": "Vespa Gts Super",
-        "codigoReferencia": 4209
-      },
-      {
-        "nome": "Vespa Gtv Gts",
+        "nome": "Vespa Gtv",
         "codigoReferencia": 6475
       },
       {
-        "nome": "Vespa Lx 150",
+        "nome": "Vespa Lx",
         "codigoReferencia": 4210
       },
       {
-        "nome": "Vespa Lxv 150",
+        "nome": "Vespa Lxv",
         "codigoReferencia": 5017
       },
       {
-        "nome": "Vespa Notte 125",
+        "nome": "Vespa Notte",
         "codigoReferencia": 9579
       },
       {
-        "nome": "Vespa Primavera 125",
+        "nome": "Vespa Primavera",
         "codigoReferencia": 7869
       },
       {
-        "nome": "Vespa Primavera 150",
-        "codigoReferencia": 7870
-      },
-      {
-        "nome": "Vespa Px 150",
+        "nome": "Vespa Px",
         "codigoReferencia": 2969
       },
       {
-        "nome": "Vespa Px 200",
-        "codigoReferencia": 2970
-      },
-      {
-        "nome": "Vespa Sprint 150",
+        "nome": "Vespa Sprint",
         "codigoReferencia": 7871
       },
       {
-        "nome": "Vespa Zx Prime",
+        "nome": "Vespa Zx",
         "codigoReferencia": 9033
       },
       {
@@ -4821,47 +3433,23 @@
     "marca": "Polaris",
     "modelos": [
       {
-        "nome": "General 1000 Crew",
+        "nome": "General",
         "codigoReferencia": 8650
       },
       {
-        "nome": "General Xp 1000",
+        "nome": "General Xp",
         "codigoReferencia": 9778
       },
       {
-        "nome": "General Xp 4",
-        "codigoReferencia": 10744
-      },
-      {
-        "nome": "Ranger 1000 4x4",
+        "nome": "Ranger",
         "codigoReferencia": 9087
       },
       {
-        "nome": "Ranger 1000 Crew",
-        "codigoReferencia": 11972
-      },
-      {
-        "nome": "Ranger 1000 Eps",
-        "codigoReferencia": 11973
-      },
-      {
-        "nome": "Ranger 1000 Premium",
-        "codigoReferencia": 11974
-      },
-      {
-        "nome": "Ranger 500 4x4",
-        "codigoReferencia": 11975
-      },
-      {
-        "nome": "Ranger 570 4x4",
+        "nome": "Ranger 570",
         "codigoReferencia": 9844
       },
       {
-        "nome": "Ranger 570",
-        "codigoReferencia": 10426
-      },
-      {
-        "nome": "Ranger 570-4 Crew",
+        "nome": "Ranger 570-4",
         "codigoReferencia": 9845
       },
       {
@@ -4869,23 +3457,15 @@
         "codigoReferencia": 11976
       },
       {
-        "nome": "Rzr Pro Xp",
-        "codigoReferencia": 11978
-      },
-      {
-        "nome": "Rzr R 4",
+        "nome": "Rzr",
         "codigoReferencia": 10187
       },
       {
-        "nome": "Rzr S 900",
-        "codigoReferencia": 8653
-      },
-      {
-        "nome": "Rzr S1000 Eps",
+        "nome": "Rzr S1000",
         "codigoReferencia": 8652
       },
       {
-        "nome": "Rzr S4 1000",
+        "nome": "Rzr S4",
         "codigoReferencia": 9092
       },
       {
@@ -4893,32 +3473,24 @@
         "codigoReferencia": 9517
       },
       {
-        "nome": "Rzr Xp 1000",
+        "nome": "Rzr Xp",
         "codigoReferencia": 8654
       },
       {
-        "nome": "Rzr Xp 4",
-        "codigoReferencia": 8655
-      },
-      {
-        "nome": "Rzr Xp Turbo",
-        "codigoReferencia": 8656
-      },
-      {
-        "nome": "Sportsman 570 Le",
+        "nome": "Sportsman 570",
         "codigoReferencia": 9313
       },
       {
-        "nome": "Sportsman 570 Efi",
-        "codigoReferencia": 8383
-      },
-      {
-        "nome": "Sportsman Xp 1000",
+        "nome": "Sportsman Xp",
         "codigoReferencia": 8386
       },
       {
-        "nome": "Xvr Xpedition Xp",
+        "nome": "ADV",
         "codigoReferencia": 11983
+      },
+      {
+        "nome": "Xvr Xpedition",
+        "codigoReferencia": 11309
       }
     ]
   },
@@ -4926,15 +3498,15 @@
     "marca": "Regal Raptor",
     "modelos": [
       {
-        "nome": "Black Jack 320",
+        "nome": "Black Jack",
         "codigoReferencia": 5405
       },
       {
-        "nome": "Fenix Gold 240",
+        "nome": "Fenix Gold",
         "codigoReferencia": 5406
       },
       {
-        "nome": "Ghost 270 320",
+        "nome": "Ghost 270",
         "codigoReferencia": 5407
       },
       {
@@ -4947,36 +3519,28 @@
     "marca": "Riguete",
     "modelos": [
       {
-        "nome": "Trc-01 Gran Luxo",
+        "nome": "Trc-01 Gran",
         "codigoReferencia": 6721
       },
       {
-        "nome": "Trc-01 Junior 1.8",
+        "nome": "Trc-01 Junior",
         "codigoReferencia": 6722
       },
       {
-        "nome": "Trc-01 Junior",
-        "codigoReferencia": 6723
-      },
-      {
-        "nome": "Trc-01 Luxo 1.6",
+        "nome": "Trc-01 Luxo",
         "codigoReferencia": 6724
       },
       {
-        "nome": "Trc-01 Rgt-5 1.6",
+        "nome": "Trc-01 Rgt-5",
         "codigoReferencia": 7872
       },
       {
-        "nome": "Trc-01 Super Luxo",
+        "nome": "Trc-01 Super",
         "codigoReferencia": 6725
       },
       {
-        "nome": "Trc-01 Versão 1",
+        "nome": "Trc-01 Versão",
         "codigoReferencia": 6727
-      },
-      {
-        "nome": "Trc-01 Versão 2",
-        "codigoReferencia": 6728
       }
     ]
   },
@@ -4984,192 +3548,80 @@
     "marca": "Royal Enfield",
     "modelos": [
       {
-        "nome": "Bullet 500",
+        "nome": "Bullet",
         "codigoReferencia": 7942
       },
       {
-        "nome": "Classic 350 Chrome",
+        "nome": "Classic 350",
         "codigoReferencia": 11668
       },
       {
-        "nome": "Classic 350",
-        "codigoReferencia": 11669
-      },
-      {
-        "nome": "Classic 350 Halcyon",
-        "codigoReferencia": 11670
-      },
-      {
-        "nome": "Classic 350 Heritage",
-        "codigoReferencia": 11671
-      },
-      {
-        "nome": "Classic 350 Signals",
-        "codigoReferencia": 11672
-      },
-      {
-        "nome": "Classic 500 Efi",
+        "nome": "Classic",
         "codigoReferencia": 7943
       },
       {
-        "nome": "Classic 650 Base",
-        "codigoReferencia": 11936
-      },
-      {
-        "nome": "Classic 650 Mid",
-        "codigoReferencia": 11937
-      },
-      {
-        "nome": "Classic 650 Top",
-        "codigoReferencia": 11938
-      },
-      {
-        "nome": "Classic Battle Green",
+        "nome": "Classic Battle",
         "codigoReferencia": 7944
       },
       {
-        "nome": "Classic Chrome 500",
+        "nome": "Classic Chrome",
         "codigoReferencia": 7945
       },
       {
-        "nome": "Classic Desert Storm",
+        "nome": "Classic Desert",
         "codigoReferencia": 7946
       },
       {
-        "nome": "Classic Gun Metal",
+        "nome": "Classic Gun",
         "codigoReferencia": 8223
       },
       {
-        "nome": "Classic Pegasus 500",
+        "nome": "Classic Pegasus",
         "codigoReferencia": 8494
       },
       {
-        "nome": "Classic Redditch 500",
+        "nome": "Classic Redditch",
         "codigoReferencia": 8189
       },
       {
-        "nome": "Classic Squadron Blue",
+        "nome": "Classic Squadron",
         "codigoReferencia": 7947
-      },
-      {
-        "nome": "Classic Stealth",
-        "codigoReferencia": 8224
       },
       {
         "nome": "Classic Tribute",
         "codigoReferencia": 9507
       },
       {
-        "nome": "Classic Classic 500",
-        "codigoReferencia": 11673
-      },
-      {
-        "nome": "Continental 535 Efi",
+        "nome": "Continental GT",
         "codigoReferencia": 7948
       },
       {
-        "nome": "Continental Gt 120",
-        "codigoReferencia": 11674
-      },
-      {
-        "nome": "Continental Gt 650",
-        "codigoReferencia": 11675
-      },
-      {
-        "nome": "Guerrilla 450 Mid",
+        "nome": "Guerrilla 450",
         "codigoReferencia": 11679
       },
       {
-        "nome": "Guerrilla 450 Top",
-        "codigoReferencia": 11680
-      },
-      {
-        "nome": "Himalayan 411 Efi",
+        "nome": "Himalayan",
         "codigoReferencia": 8582
       },
       {
-        "nome": "Himalayan 450 Mid",
-        "codigoReferencia": 11681
-      },
-      {
-        "nome": "Himalayan 450 Premium",
-        "codigoReferencia": 11682
-      },
-      {
-        "nome": "Himalayan 450 Top",
-        "codigoReferencia": 11683
-      },
-      {
-        "nome": "Himalayan Sleet 411",
-        "codigoReferencia": 8978
-      },
-      {
-        "nome": "Hunter 350 Dapper",
+        "nome": "Hunter 350",
         "codigoReferencia": 11684
       },
       {
-        "nome": "Hunter 350 Mid",
-        "codigoReferencia": 11970
-      },
-      {
-        "nome": "Hunter 350 Premium",
-        "codigoReferencia": 12049
-      },
-      {
-        "nome": "Hunter 350 Rebel",
-        "codigoReferencia": 11685
-      },
-      {
-        "nome": "Hunter 350 Top",
-        "codigoReferencia": 11971
-      },
-      {
-        "nome": "Interceptor 120 Year",
+        "nome": "Interceptor 650",
         "codigoReferencia": 11686
       },
       {
-        "nome": "Interceptor 650",
-        "codigoReferencia": 11687
-      },
-      {
-        "nome": "Interceptor 650 Standard",
-        "codigoReferencia": 11689
-      },
-      {
-        "nome": "Interceptor Bear 650",
-        "codigoReferencia": 11893
-      },
-      {
-        "nome": "Meteor 350 Aurora",
+        "nome": "Meteor 350",
         "codigoReferencia": 11690
       },
       {
-        "nome": "Meteor 350 Fireball",
-        "codigoReferencia": 11691
-      },
-      {
-        "nome": "Meteor 350 Stellar",
-        "codigoReferencia": 11692
-      },
-      {
-        "nome": "Meteor 350 Supernova",
-        "codigoReferencia": 11693
-      },
-      {
-        "nome": "Scram 411 Efi",
+        "nome": "Scram 411",
         "codigoReferencia": 10688
       },
       {
-        "nome": "Shotgun 650 Base",
+        "nome": "Shotgun 650",
         "codigoReferencia": 11694
-      },
-      {
-        "nome": "Shotgun 650 Mid",
-        "codigoReferencia": 11695
-      },
-      {
-        "nome": "Shotgun 650 Top",
-        "codigoReferencia": 11696
       },
       {
         "nome": "Super Meteor 650",
@@ -5185,11 +3637,11 @@
         "codigoReferencia": 2972
       },
       {
-        "nome": "Husky 150",
+        "nome": "Husky",
         "codigoReferencia": 2973
       },
       {
-        "nome": "Passing 110",
+        "nome": "Passing",
         "codigoReferencia": 2974
       }
     ]
@@ -5230,23 +3682,23 @@
         "codigoReferencia": 11826
       },
       {
-        "nome": "Denver 250",
+        "nome": "Denver",
         "codigoReferencia": 12047
       },
       {
-        "nome": "Flash 250",
+        "nome": "Flash",
         "codigoReferencia": 12048
       },
       {
-        "nome": "Iron 250",
+        "nome": "Iron 883",
         "codigoReferencia": 12052
       },
       {
-        "nome": "Storm 200 Efi",
+        "nome": "Storm",
         "codigoReferencia": 12055
       },
       {
-        "nome": "Titanium 250",
+        "nome": "Titanium",
         "codigoReferencia": 12056
       }
     ]
@@ -5259,15 +3711,15 @@
         "codigoReferencia": 10145
       },
       {
-        "nome": "Bolt 250",
+        "nome": "Bolt",
         "codigoReferencia": 7299
       },
       {
-        "nome": "Free 150 Efi",
+        "nome": "Free",
         "codigoReferencia": 11089
       },
       {
-        "nome": "Iron 250 Efi",
+        "nome": "Iron 883",
         "codigoReferencia": 11386
       },
       {
@@ -5275,7 +3727,7 @@
         "codigoReferencia": 12053
       },
       {
-        "nome": "Pt-02 2000w (elétrica)",
+        "nome": "Pt-02 2000w",
         "codigoReferencia": 10233
       },
       {
@@ -5283,7 +3735,7 @@
         "codigoReferencia": 10234
       },
       {
-        "nome": "Pt-03 2000w (elétrica)",
+        "nome": "Pt-03 2000w",
         "codigoReferencia": 9671
       },
       {
@@ -5291,27 +3743,23 @@
         "codigoReferencia": 11360
       },
       {
-        "nome": "Pt-04 Pro 3000w",
+        "nome": "Pt-04 Pro",
         "codigoReferencia": 11388
       },
       {
-        "nome": "Pt-04 Pro",
-        "codigoReferencia": 11389
-      },
-      {
-        "nome": "Retro Ex 50",
+        "nome": "Retro",
         "codigoReferencia": 7721
       },
       {
-        "nome": "Se-1 2000w (elétrica)",
+        "nome": "Se-1 2000w",
         "codigoReferencia": 10386
       },
       {
-        "nome": "Se-2 2300w (elétrica)",
+        "nome": "Se-2 2300w",
         "codigoReferencia": 9684
       },
       {
-        "nome": "She-S 3000w (elétrica)",
+        "nome": "She-S 3000w",
         "codigoReferencia": 11003
       },
       {
@@ -5323,51 +3771,47 @@
         "codigoReferencia": 10188
       },
       {
-        "nome": "Shi 250",
+        "nome": "Shi",
         "codigoReferencia": 11477
       },
       {
-        "nome": "Sun 150",
+        "nome": "Sun",
         "codigoReferencia": 6861
       },
       {
-        "nome": "Super Smart 50",
+        "nome": "Super Smart",
         "codigoReferencia": 7722
       },
       {
-        "nome": "Titanium 250 Efi",
+        "nome": "Titanium",
         "codigoReferencia": 11331
       },
       {
-        "nome": "Urban 150 Efi",
+        "nome": "Urban",
         "codigoReferencia": 11064
       },
       {
-        "nome": "Urban Lite 150",
+        "nome": "Urban Lite",
         "codigoReferencia": 11939
       },
       {
-        "nome": "Worker 125",
+        "nome": "Worker",
         "codigoReferencia": 9640
       },
       {
-        "nome": "Worker 150",
-        "codigoReferencia": 10855
-      },
-      {
-        "nome": "Xy 110v Wave",
+        "nome": "Xy 110v",
         "codigoReferencia": 4370
       },
       {
-        "nome": "Xy 125 Jet",
+        "nome": "Jet",
         "codigoReferencia": 6703
       },
       {
-        "nome": "Xy 125 New",
+        "nome": "Xy",
         "codigoReferencia": 6078
       },
       {
-        "nome": "Xy 125 Rio",
+        "nome": "Rio",
         "codigoReferencia": 11005
       },
       {
@@ -5375,91 +3819,47 @@
         "codigoReferencia": 4371
       },
       {
-        "nome": "Xy 150 Zh",
-        "codigoReferencia": 4372
-      },
-      {
-        "nome": "Xy 150-5 Fire",
+        "nome": "Xy 150-5",
         "codigoReferencia": 6862
       },
       {
-        "nome": "Xy 150-5 Max",
-        "codigoReferencia": 5521
-      },
-      {
-        "nome": "Xy 150-5 Speed",
-        "codigoReferencia": 4373
-      },
-      {
-        "nome": "Xy 150-8 Jef",
+        "nome": "Xy 150-8",
         "codigoReferencia": 9073
       },
       {
-        "nome": "Xy 150-Gy Explorer",
+        "nome": "Xy 150-Gy",
         "codigoReferencia": 4807
       },
       {
-        "nome": "Xy 200 Storm",
-        "codigoReferencia": 11210
-      },
-      {
-        "nome": "Xy 200-5 A",
+        "nome": "Xy 200-5",
         "codigoReferencia": 5601
-      },
-      {
-        "nome": "Xy 200-5 Road",
-        "codigoReferencia": 5602
-      },
-      {
-        "nome": "Xy 200-5 Speed",
-        "codigoReferencia": 4374
       },
       {
         "nome": "Xy 200-Iii",
         "codigoReferencia": 4375
       },
       {
-        "nome": "Xy 250 Denver",
-        "codigoReferencia": 11332
-      },
-      {
-        "nome": "Xy 250 Flash",
-        "codigoReferencia": 11333
-      },
-      {
         "nome": "Xy 250-5",
         "codigoReferencia": 4461
       },
       {
-        "nome": "Xy 250-6b Discover",
+        "nome": "Xy 250-6b",
         "codigoReferencia": 6729
       },
       {
-        "nome": "Xy 50-Q",
+        "nome": "50cc",
         "codigoReferencia": 4376
       },
       {
-        "nome": "Xy 50-Q Cross",
-        "codigoReferencia": 6903
-      },
-      {
-        "nome": "Xy 50-Q Jet",
-        "codigoReferencia": 10942
-      },
-      {
-        "nome": "Xy 50-Q Phoenix",
+        "nome": "Phoenix",
         "codigoReferencia": 5547
       },
       {
-        "nome": "Xy 50q Vmv",
+        "nome": "Xy 50q",
         "codigoReferencia": 6366
       },
       {
-        "nome": "Xy 50-Q2 Retro",
-        "codigoReferencia": 6367
-      },
-      {
-        "nome": "Xy 50q-2 Venice",
+        "nome": "Xy 50q-2",
         "codigoReferencia": 7061
       }
     ]
@@ -5493,40 +3893,24 @@
         "codigoReferencia": 2979
       },
       {
-        "nome": "Future 125",
+        "nome": "Future",
         "codigoReferencia": 2980
       },
       {
-        "nome": "Hunter 100 95cc",
+        "nome": "Hunter 350",
         "codigoReferencia": 4525
       },
       {
-        "nome": "Hunter 125",
-        "codigoReferencia": 2981
-      },
-      {
-        "nome": "Hunter 90 86cc",
-        "codigoReferencia": 4095
-      },
-      {
-        "nome": "Max 125",
+        "nome": "Max",
         "codigoReferencia": 2982
-      },
-      {
-        "nome": "Max 125 Sed",
-        "codigoReferencia": 2983
       },
       {
         "nome": "Palio 50cc",
         "codigoReferencia": 2984
       },
       {
-        "nome": "Pgo Speed 50cc",
+        "nome": "Pgo Speed",
         "codigoReferencia": 2985
-      },
-      {
-        "nome": "Pgo Speed 90cc",
-        "codigoReferencia": 2986
       },
       {
         "nome": "Stx 125cc",
@@ -5537,15 +3921,11 @@
         "codigoReferencia": 4266
       },
       {
-        "nome": "Stx Motard 125cc",
+        "nome": "Stx Motard",
         "codigoReferencia": 5098
       },
       {
-        "nome": "Stx Motard 200cc",
-        "codigoReferencia": 4267
-      },
-      {
-        "nome": "Super Fifty 50cc",
+        "nome": "Super Fifty",
         "codigoReferencia": 2987
       },
       {
@@ -5557,7 +3937,7 @@
         "codigoReferencia": 2988
       },
       {
-        "nome": "Web Evo 97cc",
+        "nome": "Web Evo",
         "codigoReferencia": 4096
       }
     ]
@@ -5566,23 +3946,23 @@
     "marca": "Super Soco",
     "modelos": [
       {
-        "nome": "Change Urban 1200w",
+        "nome": "Change Urban",
         "codigoReferencia": 9884
       },
       {
-        "nome": "Cux 2788w (elétrica)",
+        "nome": "Cux 2788w",
         "codigoReferencia": 10790
       },
       {
-        "nome": "Tc 3000w (elétrica)",
+        "nome": "Tc 3000w",
         "codigoReferencia": 10794
       },
       {
-        "nome": "Tc Max 5000w",
+        "nome": "Tc Max",
         "codigoReferencia": 10795
       },
       {
-        "nome": "Tsx 3000w (elétrica)",
+        "nome": "Tsx 3000w",
         "codigoReferencia": 10796
       }
     ]
@@ -5591,143 +3971,51 @@
     "marca": "Suzuki",
     "modelos": [
       {
-        "nome": "Address Ae 50",
+        "nome": "Address Ae",
         "codigoReferencia": 2989
       },
       {
-        "nome": "Address Ag 100",
+        "nome": "Address Ag",
         "codigoReferencia": 2990
       },
       {
-        "nome": "An 125 Burgman",
+        "nome": "Burgman",
         "codigoReferencia": 2991
       },
       {
-        "nome": "Bandit 1200s",
+        "nome": "Bandit",
         "codigoReferencia": 3808
       },
       {
-        "nome": "Bandit 1250s",
-        "codigoReferencia": 4670
-      },
-      {
-        "nome": "Bandit 600s 650s",
-        "codigoReferencia": 3809
-      },
-      {
-        "nome": "Bandit N-1200",
-        "codigoReferencia": 2992
-      },
-      {
-        "nome": "Bandit N-1250",
-        "codigoReferencia": 4671
-      },
-      {
-        "nome": "Bandit N-600 650",
-        "codigoReferencia": 2993
-      },
-      {
-        "nome": "Boulevard C1500",
+        "nome": "Boulevard",
         "codigoReferencia": 2994
       },
       {
-        "nome": "Boulevard M1500",
-        "codigoReferencia": 5320
-      },
-      {
-        "nome": "Boulevard M1500r",
-        "codigoReferencia": 5942
-      },
-      {
-        "nome": "Boulevard M1800r",
-        "codigoReferencia": 7080
-      },
-      {
-        "nome": "Boulevard M1800r B.o.s.s.",
-        "codigoReferencia": 7062
-      },
-      {
-        "nome": "Boulevard M800",
-        "codigoReferencia": 3941
-      },
-      {
-        "nome": "Boulevard M800r",
-        "codigoReferencia": 5716
-      },
-      {
-        "nome": "Burgman 400",
-        "codigoReferencia": 2995
-      },
-      {
-        "nome": "Burgman 650 Executive",
-        "codigoReferencia": 4581
-      },
-      {
-        "nome": "Burgman I 125cc",
-        "codigoReferencia": 5522
-      },
-      {
-        "nome": "Dl 1000 V-Strom",
+        "nome": "V-Strom",
         "codigoReferencia": 9268
-      },
-      {
-        "nome": "Dl 1000 Xt",
-        "codigoReferencia": 8261
-      },
-      {
-        "nome": "Dl 1050 V-Strom",
-        "codigoReferencia": 10975
-      },
-      {
-        "nome": "Dl 1050 Xt",
-        "codigoReferencia": 9637
-      },
-      {
-        "nome": "Dl 650 V-Strom",
-        "codigoReferencia": 4858
-      },
-      {
-        "nome": "Dl 650 Xt",
-        "codigoReferencia": 10612
-      },
-      {
-        "nome": "Dl 800 De",
-        "codigoReferencia": 11551
-      },
-      {
-        "nome": "Dl 800 V-Strom",
-        "codigoReferencia": 11552
       },
       {
         "nome": "Dr 350",
         "codigoReferencia": 2997
       },
       {
-        "nome": "Dr 650 Re",
+        "nome": "Dr",
         "codigoReferencia": 2999
-      },
-      {
-        "nome": "Dr 650 Rse",
-        "codigoReferencia": 3000
-      },
-      {
-        "nome": "Dr 800",
-        "codigoReferencia": 3001
       },
       {
         "nome": "Dr-Z400e",
         "codigoReferencia": 3002
       },
       {
-        "nome": "En 125 Yes",
+        "nome": "Yes",
         "codigoReferencia": 3003
       },
       {
-        "nome": "Freewind Xf 650",
+        "nome": "Freewind Xf",
         "codigoReferencia": 3004
       },
       {
-        "nome": "Gladius 650",
+        "nome": "Gladius",
         "codigoReferencia": 6550
       },
       {
@@ -5739,7 +4027,7 @@
         "codigoReferencia": 3005
       },
       {
-        "nome": "Gsr 125",
+        "nome": "Gsr",
         "codigoReferencia": 6219
       },
       {
@@ -5751,32 +4039,16 @@
         "codigoReferencia": 5633
       },
       {
-        "nome": "Gsr 750",
-        "codigoReferencia": 6552
-      },
-      {
         "nome": "Gsx 650f",
         "codigoReferencia": 4808
       },
       {
-        "nome": "Gsx 1100 F",
+        "nome": "Gsx",
         "codigoReferencia": 3006
       },
       {
-        "nome": "Gsx 1250 F",
-        "codigoReferencia": 6553
-      },
-      {
-        "nome": "Gsx 1300 B-King",
-        "codigoReferencia": 4592
-      },
-      {
-        "nome": "Gsx 1300-R Hayabusa",
+        "nome": "Hayabusa",
         "codigoReferencia": 3007
-      },
-      {
-        "nome": "Gsx 750 F",
-        "codigoReferencia": 3008
       },
       {
         "nome": "Gsx-8r",
@@ -5787,107 +4059,63 @@
         "codigoReferencia": 11153
       },
       {
-        "nome": "Gsx-R 1000",
+        "nome": "GSX-R",
         "codigoReferencia": 3009
       },
       {
-        "nome": "Gsx-R 1100 W",
-        "codigoReferencia": 3010
-      },
-      {
-        "nome": "Gsx-R 750 W",
-        "codigoReferencia": 3011
-      },
-      {
-        "nome": "Gsx-S 1000",
+        "nome": "GSX-S",
         "codigoReferencia": 7384
       },
       {
-        "nome": "Gsx-S 1000 F",
-        "codigoReferencia": 7385
-      },
-      {
-        "nome": "Gsx-S 1000 Gx",
-        "codigoReferencia": 11522
-      },
-      {
-        "nome": "Gsx-S 750",
-        "codigoReferencia": 8120
-      },
-      {
-        "nome": "Inazuma 250cc",
+        "nome": "Inazuma",
         "codigoReferencia": 6878
       },
       {
-        "nome": "Intruder 125",
+        "nome": "Intruder",
         "codigoReferencia": 3013
       },
       {
-        "nome": "Intruder 250",
-        "codigoReferencia": 3014
-      },
-      {
-        "nome": "Intruder Lc 1500",
-        "codigoReferencia": 3015
-      },
-      {
-        "nome": "Intruder Vs 1400-Glp",
-        "codigoReferencia": 3016
-      },
-      {
-        "nome": "Intruder Vs 800-Glp",
-        "codigoReferencia": 3017
-      },
-      {
-        "nome": "Katana 125",
+        "nome": "Katana",
         "codigoReferencia": 3018
       },
       {
-        "nome": "Lets Ii 50cc",
+        "nome": "Lets Ii",
         "codigoReferencia": 3019
       },
       {
-        "nome": "Lt 50 Quadriciclo",
+        "nome": "Lt 50",
         "codigoReferencia": 3020
       },
       {
-        "nome": "Lt 80 Quadriciclo",
+        "nome": "Lt 80",
         "codigoReferencia": 3021
       },
       {
-        "nome": "Lt F160 Quadriciclo",
+        "nome": "Lt F160",
         "codigoReferencia": 3022
       },
       {
-        "nome": "Marauder 800",
+        "nome": "Marauder",
         "codigoReferencia": 3023
       },
       {
-        "nome": "Rf 600",
+        "nome": "Rf",
         "codigoReferencia": 3024
       },
       {
-        "nome": "Rf 900",
-        "codigoReferencia": 3025
-      },
-      {
-        "nome": "Rm 125",
+        "nome": "Rm",
         "codigoReferencia": 3026
-      },
-      {
-        "nome": "Rm 250",
-        "codigoReferencia": 3027
       },
       {
         "nome": "Rm 80",
         "codigoReferencia": 3028
       },
       {
-        "nome": "Rmx 250",
+        "nome": "Rmx",
         "codigoReferencia": 3029
       },
       {
-        "nome": "Savage Ls 650",
+        "nome": "Savage Ls",
         "codigoReferencia": 3030
       },
       {
@@ -5895,7 +4123,7 @@
         "codigoReferencia": 7880
       },
       {
-        "nome": "Tl 1000",
+        "nome": "Tl",
         "codigoReferencia": 3031
       },
       {
@@ -5908,7 +4136,7 @@
     "marca": "Swm",
     "modelos": [
       {
-        "nome": "Shi 400 Sc",
+        "nome": "Shi",
         "codigoReferencia": 12054
       }
     ]
@@ -5917,7 +4145,7 @@
     "marca": "Targos",
     "modelos": [
       {
-        "nome": "Trimoto 125cc Picape",
+        "nome": "Trimoto 125cc",
         "codigoReferencia": 5440
       }
     ]
@@ -5951,35 +4179,23 @@
         "codigoReferencia": 6368
       },
       {
-        "nome": "Jh 125 G",
+        "nome": "Jh",
         "codigoReferencia": 3864
       },
       {
-        "nome": "Jh 125 L",
-        "codigoReferencia": 3865
-      },
-      {
-        "nome": "Jh 125-35a Joto",
+        "nome": "Jh 125-35a",
         "codigoReferencia": 4657
       },
       {
-        "nome": "Jh 150 Fly",
-        "codigoReferencia": 7300
-      },
-      {
-        "nome": "Jh 150-7 Tss",
+        "nome": "Jh 150-7",
         "codigoReferencia": 7337
       },
       {
-        "nome": "Jh 250 Fly",
-        "codigoReferencia": 7111
-      },
-      {
-        "nome": "Jh 250-8 Tss",
+        "nome": "Jh 250-8",
         "codigoReferencia": 7249
       },
       {
-        "nome": "Jh 250e-5 Shark",
+        "nome": "Jh 250e-5",
         "codigoReferencia": 4881
       },
       {
@@ -5991,35 +4207,27 @@
         "codigoReferencia": 3867
       },
       {
-        "nome": "Jh 70 Iii",
-        "codigoReferencia": 3868
-      },
-      {
-        "nome": "Jl 110-11 Prince",
+        "nome": "Jl 110-11",
         "codigoReferencia": 4179
       },
       {
-        "nome": "Jl 110-3 110-8",
+        "nome": "Jl 110-3",
         "codigoReferencia": 3869
       },
       {
-        "nome": "Jl 125-9 Sky",
+        "nome": "Jl 125-9",
         "codigoReferencia": 5548
       },
       {
-        "nome": "Jl 135 Fly",
+        "nome": "Jl 135",
         "codigoReferencia": 6197
       },
       {
-        "nome": "Jl 50 Q-2",
+        "nome": "Jl 50",
         "codigoReferencia": 3870
       },
       {
-        "nome": "Jl 50 Q8",
-        "codigoReferencia": 6503
-      },
-      {
-        "nome": "Js 250 Atv-5",
+        "nome": "Js",
         "codigoReferencia": 7412
       },
       {
@@ -6027,11 +4235,7 @@
         "codigoReferencia": 6978
       },
       {
-        "nome": "Sky 50 Plus",
-        "codigoReferencia": 7386
-      },
-      {
-        "nome": "Work 125",
+        "nome": "Work",
         "codigoReferencia": 5266
       }
     ]
@@ -6040,47 +4244,15 @@
     "marca": "Triumph",
     "modelos": [
       {
-        "nome": "Adventurer 900",
+        "nome": "Adventurer",
         "codigoReferencia": 3033
       },
       {
-        "nome": "Bonneville 750cc 790cc",
+        "nome": "Bonneville",
         "codigoReferencia": 3034
       },
       {
-        "nome": "Bonneville Bobber 1200cc",
-        "codigoReferencia": 7995
-      },
-      {
-        "nome": "Bonneville Bobber",
-        "codigoReferencia": 8707
-      },
-      {
-        "nome": "Bonneville Bobber Chrome",
-        "codigoReferencia": 10934
-      },
-      {
-        "nome": "Bonneville Bobber Icon",
-        "codigoReferencia": 11827
-      },
-      {
-        "nome": "Bonneville Speedmaster 1200cc",
-        "codigoReferencia": 10146
-      },
-      {
-        "nome": "Bonneville T100",
-        "codigoReferencia": 11240
-      },
-      {
-        "nome": "Bonneville T120",
-        "codigoReferencia": 7676
-      },
-      {
-        "nome": "Bonneville T120 Ace",
-        "codigoReferencia": 8803
-      },
-      {
-        "nome": "Daytona 1200",
+        "nome": "Daytona",
         "codigoReferencia": 3036
       },
       {
@@ -6096,15 +4268,11 @@
         "codigoReferencia": 6504
       },
       {
-        "nome": "Daytona 900",
-        "codigoReferencia": 3037
-      },
-      {
         "nome": "Daytona 955i",
         "codigoReferencia": 3038
       },
       {
-        "nome": "Daytona Super Iii",
+        "nome": "Daytona Super",
         "codigoReferencia": 3039
       },
       {
@@ -6112,127 +4280,59 @@
         "codigoReferencia": 3040
       },
       {
-        "nome": "Legend 900",
+        "nome": "Legend",
         "codigoReferencia": 3041
       },
       {
-        "nome": "Rocket Iii 2300cc",
+        "nome": "Rocket 3",
         "codigoReferencia": 3042
       },
       {
-        "nome": "Rocket Iii",
-        "codigoReferencia": 4130
-      },
-      {
-        "nome": "Rocket Iii Roadster",
-        "codigoReferencia": 6338
-      },
-      {
-        "nome": "Rocket Iii Storm",
-        "codigoReferencia": 11247
-      },
-      {
-        "nome": "Scrambler 1200 X",
+        "nome": "Scrambler",
         "codigoReferencia": 11057
       },
       {
-        "nome": "Scrambler 1200 Xc",
-        "codigoReferencia": 8759
-      },
-      {
-        "nome": "Scrambler 1200 Xe",
-        "codigoReferencia": 8760
-      },
-      {
-        "nome": "Scrambler 400 X",
+        "nome": "Scrambler 400X",
         "codigoReferencia": 11831
-      },
-      {
-        "nome": "Scrambler 400 Xc",
-        "codigoReferencia": 11832
-      },
-      {
-        "nome": "Scrambler 900 Icon",
-        "codigoReferencia": 11833
-      },
-      {
-        "nome": "Scrambler 900cc",
-        "codigoReferencia": 4131
       },
       {
         "nome": "Speed 400",
         "codigoReferencia": 11004
       },
       {
-        "nome": "Speed Triple 1050i",
+        "nome": "Speed Triple",
         "codigoReferencia": 3942
       },
       {
-        "nome": "Speed Triple 1050r",
-        "codigoReferencia": 7647
-      },
-      {
-        "nome": "Speed Triple 900",
-        "codigoReferencia": 3043
-      },
-      {
-        "nome": "Speed Triple 955i",
-        "codigoReferencia": 3044
-      },
-      {
-        "nome": "Speed Triple T-509",
-        "codigoReferencia": 3045
-      },
-      {
-        "nome": "Speed Twin 1200cc",
+        "nome": "Speed Twin",
         "codigoReferencia": 8724
       },
       {
-        "nome": "Speed Twin 900cc",
-        "codigoReferencia": 10129
-      },
-      {
-        "nome": "Sprint 900",
+        "nome": "Sprint",
         "codigoReferencia": 3046
       },
       {
-        "nome": "Sprint Rs 955",
+        "nome": "Sprint Rs",
         "codigoReferencia": 3047
       },
       {
-        "nome": "Sprint St 1050i",
+        "nome": "Sprint St",
         "codigoReferencia": 3048
       },
       {
-        "nome": "Sprint St 955",
-        "codigoReferencia": 3049
-      },
-      {
-        "nome": "Street Twin 900cc",
+        "nome": "Street Twin",
         "codigoReferencia": 7497
       },
       {
-        "nome": "Street Cup 900cc",
+        "nome": "Street Cup",
         "codigoReferencia": 7901
       },
       {
-        "nome": "Street Scrambler 900cc",
-        "codigoReferencia": 7996
-      },
-      {
-        "nome": "Street Triple 675",
+        "nome": "Street Triple",
         "codigoReferencia": 5018
       },
       {
-        "nome": "Street Triple 675r",
-        "codigoReferencia": 6620
-      },
-      {
-        "nome": "Street Triple 765",
-        "codigoReferencia": 10897
-      },
-      {
-        "nome": "Thruxton 400",
+        "nome": "Thruxton",
         "codigoReferencia": 12079
       },
       {
@@ -6240,115 +4340,35 @@
         "codigoReferencia": 4132
       },
       {
-        "nome": "Thruxton R 1200cc",
-        "codigoReferencia": 7678
-      },
-      {
-        "nome": "Thunderbird 1700 Commander",
+        "nome": "Thunderbird 1700",
         "codigoReferencia": 6879
       },
       {
-        "nome": "Thunderbird 1700 Storm",
-        "codigoReferencia": 6283
-      },
-      {
-        "nome": "Thunderbird 900",
+        "nome": "Thunderbird",
         "codigoReferencia": 3050
       },
       {
-        "nome": "Tiger 1050",
+        "nome": "Tiger",
         "codigoReferencia": 4741
       },
       {
-        "nome": "Tiger 1200 Alpine",
+        "nome": "Tiger 1200",
         "codigoReferencia": 9238
       },
       {
-        "nome": "Tiger 1200 Desert",
-        "codigoReferencia": 9239
-      },
-      {
-        "nome": "Tiger 1200 Explorer",
-        "codigoReferencia": 6284
-      },
-      {
-        "nome": "Tiger 1200",
-        "codigoReferencia": 9848
-      },
-      {
-        "nome": "Tiger 1200 Xc",
-        "codigoReferencia": 6657
-      },
-      {
-        "nome": "Tiger 1200 Xca",
-        "codigoReferencia": 8332
-      },
-      {
-        "nome": "Tiger 1200 Xcx",
-        "codigoReferencia": 8333
-      },
-      {
-        "nome": "Tiger 1200 Xr",
-        "codigoReferencia": 8334
-      },
-      {
-        "nome": "Tiger 660",
+        "nome": "Tiger Sport 660",
         "codigoReferencia": 9800
-      },
-      {
-        "nome": "Tiger 750",
-        "codigoReferencia": 3052
       },
       {
         "nome": "Tiger 800",
         "codigoReferencia": 6658
       },
       {
-        "nome": "Tiger 800 Xc",
-        "codigoReferencia": 6285
-      },
-      {
-        "nome": "Tiger 800 Xca",
-        "codigoReferencia": 7413
-      },
-      {
-        "nome": "Tiger 800 Xcx",
-        "codigoReferencia": 7175
-      },
-      {
-        "nome": "Tiger 800 Xr",
-        "codigoReferencia": 7368
-      },
-      {
-        "nome": "Tiger 800 Xrt",
-        "codigoReferencia": 8437
-      },
-      {
-        "nome": "Tiger 800 Xrx",
-        "codigoReferencia": 7176
-      },
-      {
-        "nome": "Tiger 800 Xrxl",
-        "codigoReferencia": 7469
-      },
-      {
         "nome": "Tiger 900",
         "codigoReferencia": 3053
       },
       {
-        "nome": "Tiger 900 Alpine",
-        "codigoReferencia": 11902
-      },
-      {
-        "nome": "Tiger 900 Desert",
-        "codigoReferencia": 11903
-      },
-      {
-        "nome": "Tiger 955i",
-        "codigoReferencia": 3054
-      },
-      {
-        "nome": "Tracker 400",
+        "nome": "Tracker",
         "codigoReferencia": 12080
       },
       {
@@ -6356,35 +4376,15 @@
         "codigoReferencia": 9639
       },
       {
-        "nome": "Trident 660 Triple",
-        "codigoReferencia": 11208
-      },
-      {
-        "nome": "Trident 750",
+        "nome": "Trident",
         "codigoReferencia": 3055
       },
       {
-        "nome": "Trident 800",
-        "codigoReferencia": 11982
-      },
-      {
-        "nome": "Trident 900",
-        "codigoReferencia": 3056
-      },
-      {
-        "nome": "Trophy 1200",
+        "nome": "Trophy",
         "codigoReferencia": 3057
       },
       {
-        "nome": "Trophy 900",
-        "codigoReferencia": 3058
-      },
-      {
-        "nome": "Trophy Se 1200",
-        "codigoReferencia": 6659
-      },
-      {
-        "nome": "Tt 600",
+        "nome": "Tt",
         "codigoReferencia": 3059
       }
     ]
@@ -6393,19 +4393,19 @@
     "marca": "Ventane Motors",
     "modelos": [
       {
-        "nome": "Milano 3000w (elétrica)",
+        "nome": "Milano 3000w",
         "codigoReferencia": 10792
       },
       {
-        "nome": "Roma 3000w (elétrica)",
+        "nome": "Roma 3000w",
         "codigoReferencia": 10793
       },
       {
-        "nome": "Vtx 3000w (elétrica)",
+        "nome": "Vtx 3000w",
         "codigoReferencia": 10797
       },
       {
-        "nome": "Wind 2000w (elétrica)",
+        "nome": "Wind 2000w",
         "codigoReferencia": 10798
       }
     ]
@@ -6414,15 +4414,15 @@
     "marca": "Vento",
     "modelos": [
       {
-        "nome": "Rebellian 250",
+        "nome": "Rebellian",
         "codigoReferencia": 5603
       },
       {
-        "nome": "Triton Li 150",
+        "nome": "Triton Li",
         "codigoReferencia": 5604
       },
       {
-        "nome": "Vthunder 250",
+        "nome": "Vthunder",
         "codigoReferencia": 5605
       }
     ]
@@ -6431,59 +4431,43 @@
     "marca": "Vespa",
     "modelos": [
       {
-        "nome": "946 Edição Dragon",
+        "nome": "946 Edição",
         "codigoReferencia": 11544
       },
       {
-        "nome": "Gts 300",
+        "nome": "Gts",
         "codigoReferencia": 11560
       },
       {
-        "nome": "Gts Super 300",
+        "nome": "Gts Super",
         "codigoReferencia": 11561
       },
       {
-        "nome": "Gts Super",
-        "codigoReferencia": 11562
-      },
-      {
-        "nome": "Gts Super Tech",
-        "codigoReferencia": 11563
-      },
-      {
-        "nome": "Gtv 300",
+        "nome": "Gtv",
         "codigoReferencia": 11564
       },
       {
-        "nome": "Primavera 150",
+        "nome": "Primavera",
         "codigoReferencia": 11570
       },
       {
-        "nome": "Primavera Edição Mickey",
+        "nome": "Primavera Edição",
         "codigoReferencia": 11571
       },
       {
-        "nome": "Primavera Sport 150",
-        "codigoReferencia": 11572
-      },
-      {
-        "nome": "Sprint 150",
+        "nome": "Sprint",
         "codigoReferencia": 11575
       },
       {
-        "nome": "Sprint S 150",
-        "codigoReferencia": 11576
-      },
-      {
-        "nome": "Sxl 150",
+        "nome": "Sxl",
         "codigoReferencia": 11577
       },
       {
-        "nome": "Vxl 150",
+        "nome": "Vxl",
         "codigoReferencia": 11582
       },
       {
-        "nome": "Vxl Dual 150",
+        "nome": "Vxl Dual",
         "codigoReferencia": 11583
       }
     ]
@@ -6492,7 +4476,7 @@
     "marca": "Voltz",
     "modelos": [
       {
-        "nome": "Ev01 1800w (elétrica)",
+        "nome": "Ev01 1800w",
         "codigoReferencia": 9799
       },
       {
@@ -6500,7 +4484,7 @@
         "codigoReferencia": 9510
       },
       {
-        "nome": "Evs 3000w (elétrica)",
+        "nome": "Evs 3000w",
         "codigoReferencia": 9418
       }
     ]
@@ -6509,23 +4493,23 @@
     "marca": "Watts",
     "modelos": [
       {
-        "nome": "W125 3000w (elétrica)",
+        "nome": "W125 3000w",
         "codigoReferencia": 10647
       },
       {
-        "nome": "W160s 10000w (elétrica)",
+        "nome": "W160s 10000w",
         "codigoReferencia": 10940
       },
       {
-        "nome": "W2 2500w (elétrica)",
+        "nome": "W2 2500w",
         "codigoReferencia": 11287
       },
       {
-        "nome": "Ws120 3500w (elétrica)",
+        "nome": "Ws120 3500w",
         "codigoReferencia": 10941
       },
       {
-        "nome": "W-Trail 12000w (elétrica)",
+        "nome": "W-Trail 12000w",
         "codigoReferencia": 11361
       }
     ]
@@ -6534,7 +4518,7 @@
     "marca": "Wuyang",
     "modelos": [
       {
-        "nome": "Jet+ 50",
+        "nome": "Jet",
         "codigoReferencia": 7723
       },
       {
@@ -6546,23 +4530,19 @@
         "codigoReferencia": 4377
       },
       {
-        "nome": "Wy 125-Esd Plus",
-        "codigoReferencia": 4820
-      },
-      {
         "nome": "Wy 150-Ex",
         "codigoReferencia": 4462
       },
       {
-        "nome": "Wy 200 Zh",
+        "nome": "Wy",
         "codigoReferencia": 5495
       },
       {
-        "nome": "Wy 48q-2 Liberty",
+        "nome": "Wy 48q-2",
         "codigoReferencia": 7063
       },
       {
-        "nome": "Wy 48q-2 Phoenix",
+        "nome": "Phoenix",
         "codigoReferencia": 7724
       }
     ]
@@ -6571,7 +4551,7 @@
     "marca": "Yamaha",
     "modelos": [
       {
-        "nome": "750 Virago",
+        "nome": "Virago",
         "codigoReferencia": 3060
       },
       {
@@ -6583,67 +4563,47 @@
         "codigoReferencia": 3061
       },
       {
-        "nome": "Bw S 50",
+        "nome": "Bw",
         "codigoReferencia": 9950
       },
       {
-        "nome": "Crypton 100",
+        "nome": "Crypton",
         "codigoReferencia": 3063
       },
       {
-        "nome": "Dt 180-Z Trail",
+        "nome": "Dt 180-Z",
         "codigoReferencia": 3064
       },
       {
-        "nome": "Dt 200",
+        "nome": "Dt",
         "codigoReferencia": 3065
       },
       {
-        "nome": "Fazer 600 Fz6",
+        "nome": "Fazer",
         "codigoReferencia": 3067
       },
       {
-        "nome": "Fluo 125",
+        "nome": "Fluo",
         "codigoReferencia": 9777
-      },
-      {
-        "nome": "Fluo 125 Connected",
-        "codigoReferencia": 11969
-      },
-      {
-        "nome": "Fz15 150 Fazer",
-        "codigoReferencia": 11330
-      },
-      {
-        "nome": "Fz25 250 Fazer",
-        "codigoReferencia": 9240
-      },
-      {
-        "nome": "Fz25 Fazer Thor",
-        "codigoReferencia": 9951
       },
       {
         "nome": "Fz6 N",
         "codigoReferencia": 4571
       },
       {
-        "nome": "Fzr 1000",
+        "nome": "Fzr",
         "codigoReferencia": 3068
-      },
-      {
-        "nome": "Fzr 600",
-        "codigoReferencia": 3069
       },
       {
         "nome": "Jog 50",
         "codigoReferencia": 3070
       },
       {
-        "nome": "Jog Teen 50",
+        "nome": "Jog Teen",
         "codigoReferencia": 3071
       },
       {
-        "nome": "Majesty Yp 250",
+        "nome": "Majesty Yp",
         "codigoReferencia": 3072
       },
       {
@@ -6651,87 +4611,39 @@
         "codigoReferencia": 4211
       },
       {
-        "nome": "Mt-03 321",
+        "nome": "MT-03",
         "codigoReferencia": 9638
       },
       {
-        "nome": "Mt-03 660cc",
-        "codigoReferencia": 4593
-      },
-      {
-        "nome": "Mt-03 Connected 321cc",
-        "codigoReferencia": 11440
-      },
-      {
-        "nome": "Mt-07 Connected 689cc",
+        "nome": "MT-07",
         "codigoReferencia": 11441
       },
       {
-        "nome": "Mt-07 Mt-07",
-        "codigoReferencia": 7145
-      },
-      {
-        "nome": "Mt-09 850cc",
+        "nome": "MT-09",
         "codigoReferencia": 7064
       },
       {
-        "nome": "Mt-09 Tracer",
-        "codigoReferencia": 7470
-      },
-      {
-        "nome": "Mt-09 Tracer 900",
-        "codigoReferencia": 8804
-      },
-      {
-        "nome": "Neo At 115cc",
+        "nome": "Neo",
         "codigoReferencia": 3073
       },
       {
-        "nome": "Neo Automatic 115cc",
-        "codigoReferencia": 4378
-      },
-      {
-        "nome": "Neo Automatic 125cc",
-        "codigoReferencia": 7786
-      },
-      {
-        "nome": "Neos Connected (elétrica)",
+        "nome": "Neos Connected",
         "codigoReferencia": 11359
       },
       {
-        "nome": "Nmax 160",
+        "nome": "NMax",
         "codigoReferencia": 7528
-      },
-      {
-        "nome": "Nmax Connected 160",
-        "codigoReferencia": 10231
-      },
-      {
-        "nome": "Nmax Connected Mandalorian",
-        "codigoReferencia": 10619
-      },
-      {
-        "nome": "Nmax Connected",
-        "codigoReferencia": 10232
-      },
-      {
-        "nome": "Nmax Homem Aranha",
-        "codigoReferencia": 9670
-      },
-      {
-        "nome": "Nmax Star Wars",
-        "codigoReferencia": 9203
       },
       {
         "nome": "Rd 135",
         "codigoReferencia": 3074
       },
       {
-        "nome": "Rd 350 Lc",
+        "nome": "Rd 350",
         "codigoReferencia": 3075
       },
       {
-        "nome": "Rdz 125",
+        "nome": "Rdz",
         "codigoReferencia": 3076
       },
       {
@@ -6739,24 +4651,16 @@
         "codigoReferencia": 3077
       },
       {
-        "nome": "Royal Star 1300",
+        "nome": "Royal Star",
         "codigoReferencia": 3078
-      },
-      {
-        "nome": "T115 Crypton",
-        "codigoReferencia": 5163
       },
       {
         "nome": "Tdm 225",
         "codigoReferencia": 3079
       },
       {
-        "nome": "Tdm 850",
+        "nome": "Tdm",
         "codigoReferencia": 3080
-      },
-      {
-        "nome": "Tdm 900",
-        "codigoReferencia": 3081
       },
       {
         "nome": "Tdr 180",
@@ -6767,27 +4671,19 @@
         "codigoReferencia": 6677
       },
       {
-        "nome": "Trx 850",
+        "nome": "Trx",
         "codigoReferencia": 3083
       },
       {
-        "nome": "Tt-R 125",
+        "nome": "Tt-R",
         "codigoReferencia": 4483
-      },
-      {
-        "nome": "Tt-R 125 Le",
-        "codigoReferencia": 4484
-      },
-      {
-        "nome": "Tt-R 125 Lwe",
-        "codigoReferencia": 7177
       },
       {
         "nome": "Tt-R 230",
         "codigoReferencia": 4485
       },
       {
-        "nome": "V-Max 1200",
+        "nome": "V-Max",
         "codigoReferencia": 3084
       },
       {
@@ -6795,23 +4691,19 @@
         "codigoReferencia": 6678
       },
       {
-        "nome": "Wr 200",
+        "nome": "Wr",
         "codigoReferencia": 3085
       },
       {
-        "nome": "Wr 250 F",
-        "codigoReferencia": 11392
-      },
-      {
-        "nome": "Wr 426 F",
+        "nome": "Wr 426",
         "codigoReferencia": 3086
       },
       {
-        "nome": "Wr 450 F",
+        "nome": "Wr 450",
         "codigoReferencia": 9782
       },
       {
-        "nome": "Xj 600",
+        "nome": "Xj",
         "codigoReferencia": 3087
       },
       {
@@ -6823,23 +4715,15 @@
         "codigoReferencia": 6764
       },
       {
-        "nome": "Xjr 1200",
+        "nome": "Xjr",
         "codigoReferencia": 3088
       },
       {
-        "nome": "Xmax 250",
+        "nome": "XMax",
         "codigoReferencia": 9034
       },
       {
-        "nome": "Xmax 250 Connected",
-        "codigoReferencia": 11288
-      },
-      {
-        "nome": "Xmax 300 Connected",
-        "codigoReferencia": 11587
-      },
-      {
-        "nome": "Xt 1200 Z",
+        "nome": "Xt",
         "codigoReferencia": 5523
       },
       {
@@ -6847,191 +4731,115 @@
         "codigoReferencia": 3091
       },
       {
-        "nome": "Xt 600",
-        "codigoReferencia": 3092
-      },
-      {
-        "nome": "Xt 600 Z",
+        "nome": "Ténéré",
         "codigoReferencia": 3093
       },
       {
-        "nome": "Xt 660",
+        "nome": "XT 660",
         "codigoReferencia": 3094
       },
       {
-        "nome": "Xt 660z Ténéré",
+        "nome": "Xt 660z",
         "codigoReferencia": 5738
       },
       {
-        "nome": "Xtz 125",
+        "nome": "Xtz",
         "codigoReferencia": 3095
       },
       {
-        "nome": "Xtz 125 Xe",
-        "codigoReferencia": 4486
-      },
-      {
-        "nome": "Xtz 125 Xk",
-        "codigoReferencia": 4487
-      },
-      {
-        "nome": "Xtz 150 Crosser",
+        "nome": "Crosser",
         "codigoReferencia": 6765
       },
       {
-        "nome": "Xtz 250 Lander",
+        "nome": "Lander",
         "codigoReferencia": 4195
-      },
-      {
-        "nome": "Xtz 250 Tenere",
-        "codigoReferencia": 5442
       },
       {
         "nome": "Xtz 250x",
         "codigoReferencia": 4658
       },
       {
-        "nome": "Xtz 700 Ténéré",
+        "nome": "Xtz 700",
         "codigoReferencia": 11700
       },
       {
-        "nome": "Xtz 750",
-        "codigoReferencia": 3097
-      },
-      {
-        "nome": "Xv 1100 Virago",
-        "codigoReferencia": 3098
-      },
-      {
-        "nome": "Xv 250 Virago",
-        "codigoReferencia": 3099
-      },
-      {
-        "nome": "Xv 535",
-        "codigoReferencia": 3100
-      },
-      {
-        "nome": "Xvs 1100 Drag",
+        "nome": "Drag Star",
         "codigoReferencia": 3089
       },
       {
-        "nome": "Xvs 650 Drag",
-        "codigoReferencia": 3090
-      },
-      {
-        "nome": "Xvs 950 Midnight",
+        "nome": "Midnight Star",
         "codigoReferencia": 4956
       },
       {
-        "nome": "Ybr 125",
+        "nome": "Ybr",
         "codigoReferencia": 3101
       },
       {
-        "nome": "Ybr 125 Factor",
+        "nome": "Factor",
         "codigoReferencia": 4742
       },
       {
-        "nome": "Ybr 125i Factor",
-        "codigoReferencia": 7648
-      },
-      {
-        "nome": "Ybr 150 Factor",
-        "codigoReferencia": 11334
-      },
-      {
-        "nome": "Yfm 250 Bruin",
+        "nome": "Yfm",
         "codigoReferencia": 4080
       },
       {
-        "nome": "Yfm 350 Grizzly",
+        "nome": "Yfm 350",
         "codigoReferencia": 4196
       },
       {
-        "nome": "Yfm 660r 660cc",
+        "nome": "Yfm 660r",
         "codigoReferencia": 4081
       },
       {
-        "nome": "Yfm 700r 686cc",
+        "nome": "Yfm 700r",
         "codigoReferencia": 4582
       },
       {
-        "nome": "Yfm 80 79cc",
+        "nome": "Yfm 80",
         "codigoReferencia": 4082
       },
       {
-        "nome": "Yfs 200 Blaster",
+        "nome": "Yfs",
         "codigoReferencia": 4083
       },
       {
-        "nome": "Yfz 450 Yz",
+        "nome": "Yfz 450",
         "codigoReferencia": 4583
       },
       {
-        "nome": "Ys 150 Fazer",
-        "codigoReferencia": 6605
-      },
-      {
-        "nome": "Ys 250 Fazer",
-        "codigoReferencia": 3871
-      },
-      {
-        "nome": "Yz 125",
+        "nome": "Yz",
         "codigoReferencia": 3104
       },
       {
-        "nome": "Yz 250",
-        "codigoReferencia": 3105
-      },
-      {
-        "nome": "Yz 250 F",
-        "codigoReferencia": 8805
-      },
-      {
-        "nome": "Yz 85 Lw",
+        "nome": "Yz 85",
         "codigoReferencia": 8806
       },
       {
-        "nome": "Yzf 1000 Thunderace",
+        "nome": "Yzf",
         "codigoReferencia": 3106
       },
       {
-        "nome": "Yzf 600 Thundercat",
-        "codigoReferencia": 3107
-      },
-      {
-        "nome": "Yzf 750",
-        "codigoReferencia": 3108
-      },
-      {
-        "nome": "Yzf R-1 1000",
+        "nome": "Yzf R-1",
         "codigoReferencia": 3109
       },
       {
-        "nome": "Yzf R-15 155",
+        "nome": "Yzf R-15",
         "codigoReferencia": 10943
       },
       {
-        "nome": "Yzf R-1m 1000",
+        "nome": "Yzf R-1m",
         "codigoReferencia": 7681
       },
       {
-        "nome": "Yzf R-3 321",
+        "nome": "Yzf R-3",
         "codigoReferencia": 7338
       },
       {
-        "nome": "Yzf R-3 Connected",
-        "codigoReferencia": 12059
-      },
-      {
-        "nome": "Yzf R-3 World",
-        "codigoReferencia": 12061
-      },
-      {
-        "nome": "Yzf R-6 600",
+        "nome": "Yzf R-6",
         "codigoReferencia": 3943
       },
       {
-        "nome": "Zr 125 Connected",
+        "nome": "Zr",
         "codigoReferencia": 11984
       }
     ]
@@ -7070,10 +4878,6 @@
       {
         "nome": "T 350",
         "codigoReferencia": 11061
-      },
-      {
-        "nome": "T 350 X",
-        "codigoReferencia": 11062
       },
       {
         "nome": "V 310",
