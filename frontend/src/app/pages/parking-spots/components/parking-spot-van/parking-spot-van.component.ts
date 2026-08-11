@@ -1,4 +1,4 @@
-import { Component, Input, computed } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { getVehicleColorHex } from '../../utils/colors';
 
@@ -136,7 +136,7 @@ import { getVehicleColorHex } from '../../utils/colors';
   `]
 })
 export class ParkingSpotVan {
-  @Input() color: string = '';
+  readonly color = input<string>('');
 
-  protected readonly fillColor = computed(() => getVehicleColorHex(this.color));
+  protected readonly fillColor = computed(() => getVehicleColorHex(this.color()));
 }
