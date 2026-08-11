@@ -20,6 +20,13 @@
         Diária & Mensalistas
       </button>
 
+      <button class="tab-btn" [class.active]="activeTab() === 'vehicle-types'" (click)="changeTab('vehicle-types')">
+        <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.25V3.75m0 3.75H8.25m8.25 0h2.25" />
+        </svg>
+        Tipos de Veículo
+      </button>
+
       <button class="tab-btn" [class.active]="activeTab() === 'partnerships'" (click)="changeTab('partnerships')">
         <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 6 6m0-6L9 15m12-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -161,6 +168,191 @@
 
         <div class="form-actions">
           <button type="submit" class="btn-action" [appLoading]="isSavingTariffs()" loadingText="Salvando...">Salvar Configurações</button>
+        </div>
+      </form>
+    }
+
+    <!-- Aba: Preço por Tipo de Veículo -->
+    @if (activeTab() === 'vehicle-types') {
+      <form class="tab-content" (submit)="$event.preventDefault(); saveVehiclePricing()">
+        <div class="info-alert">
+          <svg class="info-alert-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+          </svg>
+          <div>
+            <h5>Precificação Diferenciada por Tipo de Veículo</h5>
+            <p>Defina a proporção de preço em relação à tarifa padrão de carros (100%). Por exemplo, 60% para motos aplica 40% de desconto sobre o valor padrão da estadia.</p>
+          </div>
+        </div>
+
+        <div class="vehicle-pricing-grid">
+          <!-- Moto -->
+          <div class="vehicle-price-card">
+            <div class="vehicle-card-header">
+              <div class="vehicle-icon-badge moto">🏍️</div>
+              <div>
+                <span class="vehicle-title">Motocicleta</span>
+                <span class="vehicle-subtitle">Motos, scooters e ciclomotores</span>
+              </div>
+            </div>
+            <div class="vehicle-card-body">
+              <div class="multiplier-input-row">
+                <label for="motoMulti">Multiplicador:</label>
+                <div class="input-with-suffix">
+                  <input
+                    id="motoMulti"
+                    type="number"
+                    step="0.05"
+                    min="0.1"
+                    max="5.0"
+                    [value]="motorcycleMultiplier()"
+                    (input)="motorcycleMultiplier.set(+$any($event.target).value)"
+                    required
+                  />
+                  <span class="suffix">x ({{ (motorcycleMultiplier() * 100).toFixed(0) }}%)</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                min="0.1"
+                max="3.0"
+                step="0.05"
+                [value]="motorcycleMultiplier()"
+                (input)="motorcycleMultiplier.set(+$any($event.target).value)"
+                class="price-slider"
+              />
+              <div class="example-preview">
+                Exemplo 1ª hora: <strong>R$ {{ motorcycleExampleFirstHour() }}</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carro -->
+          <div class="vehicle-price-card base">
+            <div class="vehicle-card-header">
+              <div class="vehicle-icon-badge car">🚗</div>
+              <div>
+                <span class="vehicle-title">Carro (Base Padrão)</span>
+                <span class="vehicle-subtitle">Sedans, hatches, SUVs e pickups</span>
+              </div>
+            </div>
+            <div class="vehicle-card-body">
+              <div class="multiplier-input-row">
+                <label for="carMulti">Multiplicador:</label>
+                <div class="input-with-suffix">
+                  <input
+                    id="carMulti"
+                    type="number"
+                    step="0.05"
+                    min="0.1"
+                    max="5.0"
+                    [value]="carMultiplier()"
+                    (input)="carMultiplier.set(+$any($event.target).value)"
+                    required
+                  />
+                  <span class="suffix">x ({{ (carMultiplier() * 100).toFixed(0) }}%)</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                min="0.1"
+                max="3.0"
+                step="0.05"
+                [value]="carMultiplier()"
+                (input)="carMultiplier.set(+$any($event.target).value)"
+                class="price-slider"
+              />
+              <div class="example-preview">
+                Exemplo 1ª hora: <strong>R$ {{ carExampleFirstHour() }}</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Van -->
+          <div class="vehicle-price-card">
+            <div class="vehicle-card-header">
+              <div class="vehicle-icon-badge van">🚐</div>
+              <div>
+                <span class="vehicle-title">Van / Utilitário</span>
+                <span class="vehicle-subtitle">Vans de carga e passageiros</span>
+              </div>
+            </div>
+            <div class="vehicle-card-body">
+              <div class="multiplier-input-row">
+                <label for="vanMulti">Multiplicador:</label>
+                <div class="input-with-suffix">
+                  <input
+                    id="vanMulti"
+                    type="number"
+                    step="0.05"
+                    min="0.1"
+                    max="5.0"
+                    [value]="vanMultiplier()"
+                    (input)="vanMultiplier.set(+$any($event.target).value)"
+                    required
+                  />
+                  <span class="suffix">x ({{ (vanMultiplier() * 100).toFixed(0) }}%)</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                min="0.1"
+                max="3.0"
+                step="0.05"
+                [value]="vanMultiplier()"
+                (input)="vanMultiplier.set(+$any($event.target).value)"
+                class="price-slider"
+              />
+              <div class="example-preview">
+                Exemplo 1ª hora: <strong>R$ {{ vanExampleFirstHour() }}</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Caminhão -->
+          <div class="vehicle-price-card">
+            <div class="vehicle-card-header">
+              <div class="vehicle-icon-badge truck">🚚</div>
+              <div>
+                <span class="vehicle-title">Caminhão / Pesado</span>
+                <span class="vehicle-subtitle">Caminhões e veículos de grande porte</span>
+              </div>
+            </div>
+            <div class="vehicle-card-body">
+              <div class="multiplier-input-row">
+                <label for="truckMulti">Multiplicador:</label>
+                <div class="input-with-suffix">
+                  <input
+                    id="truckMulti"
+                    type="number"
+                    step="0.05"
+                    min="0.1"
+                    max="5.0"
+                    [value]="truckMultiplier()"
+                    (input)="truckMultiplier.set(+$any($event.target).value)"
+                    required
+                  />
+                  <span class="suffix">x ({{ (truckMultiplier() * 100).toFixed(0) }}%)</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                min="0.1"
+                max="3.0"
+                step="0.05"
+                [value]="truckMultiplier()"
+                (input)="truckMultiplier.set(+$any($event.target).value)"
+                class="price-slider"
+              />
+              <div class="example-preview">
+                Exemplo 1ª hora: <strong>R$ {{ truckExampleFirstHour() }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-action" [appLoading]="isSavingVehiclePricing()" loadingText="Salvando...">Salvar Preços por Veículo</button>
         </div>
       </form>
     }

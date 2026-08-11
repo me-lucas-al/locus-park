@@ -5,18 +5,18 @@ import {
   useTariffQuery,
   useUpdateTariffMutation,
   usePricingQuery,
-  useUpdatePricingMutation
+  useUpdatePricingMutation,
+  useVehiclePricingQuery,
+  useUpdateVehiclePricingMutation,
 } from '../../core/domains/tariff/tariff.hooks';
 import {
   usePartnershipsQuery,
   useCreatePartnershipMutation,
   useUpdatePartnershipMutation,
-  useDeletePartnershipMutation
+  useDeletePartnershipMutation,
 } from '../../core/domains/partnership/partnership.hooks';
 import { ToastService } from '../../shared/services/toast.service';
-import { getApiErrorMessage } from '../../shared/utils/error-message';
 import { getBackendErrorMessage } from '../../core/utils/error-handler.util';
-
 import { LoadingDirective } from '../../shared/directives/loading.directive';
 
 @Component({
@@ -32,10 +32,12 @@ export class SettingsPrice {
   // Queries e Mutações
   protected readonly tariffQuery = useTariffQuery();
   protected readonly pricingQuery = usePricingQuery();
+  protected readonly vehiclePricingQuery = useVehiclePricingQuery();
   protected readonly partnershipsQuery = usePartnershipsQuery();
 
   protected readonly updateTariffMutation = useUpdateTariffMutation();
   protected readonly updatePricingMutation = useUpdatePricingMutation();
+  protected readonly updateVehiclePricingMutation = useUpdateVehiclePricingMutation();
   protected readonly createPartnershipMutation = useCreatePartnershipMutation();
   protected readonly updatePartnershipMutation = useUpdatePartnershipMutation();
   protected readonly deletePartnershipMutation = useDeletePartnershipMutation();
@@ -44,12 +46,16 @@ export class SettingsPrice {
     this.updateTariffMutation.isPending() || this.updatePricingMutation.isPending()
   );
 
+  protected readonly isSavingVehiclePricing = computed(() =>
+    this.updateVehiclePricingMutation.isPending()
+  );
+
   protected readonly isAddingPartnership = computed(() => 
     this.createPartnershipMutation.isPending() || this.updatePartnershipMutation.isPending()
   );
 
   // Controle de Abas
-  readonly activeTab = signal<'tariffs' | 'daily' | 'partnerships' | 'rules'>('tariffs');
+  readonly activeTab = signal<'tariffs' | 'daily' | 'vehicle-types' | 'partnerships' | 'rules'>('tariffs');
 
   // Formulário Tarifas
   readonly firstHourRate = signal(10.00);
@@ -62,6 +68,26 @@ export class SettingsPrice {
   readonly dailyValue = signal(40.00);
   readonly monthlyMemberFee = signal(250.00);
   readonly overnightStayFee = signal(20.00);
+
+  // Formulário Multiplicadores por Tipo de Veículo
+  readonly motorcycleMultiplier = signal(0.60);
+  readonly carMultiplier = signal(1.00);
+  readonly vanMultiplier = signal(1.30);
+  readonly truckMultiplier = signal(1.50);
+
+  // Exemplos de preço calculados dinamicamente
+  readonly motorcycleExampleFirstHour = computed(() =>
+    (this.firstHourRate() * this.motorcycleMultiplier()).toFixed(2)
+  );
+  readonly carExampleFirstHour = computed(() =>
+    (this.firstHourRate() * this.carMultiplier()).toFixed(2)
+  );
+  readonly vanExampleFirstHour = computed(() =>
+    (this.firstHourRate() * this.vanMultiplier()).toFixed(2)
+  );
+  readonly truckExampleFirstHour = computed(() =>
+    (this.firstHourRate() * this.truckMultiplier()).toFixed(2)
+  );
 
   // Formulário Convênios
   readonly newPartnershipName = signal('');
@@ -104,25 +130,41 @@ export class SettingsPrice {
         this.monthlyMemberFee.set(pricing.monthlyBaseValue);
       }
     });
+
+    // Efeito para carregar dados de multiplicadores por veículo
+    effect(() => {
+      const vehiclePricings = this.vehiclePricingQuery.data();
+      if (vehiclePricings && vehiclePricings.length > 0) {
+        for (const vp of vehiclePricings) {
+          if (vp.vehicleType === 'MOTORCYCLE') {
+            this.motorcycleMultiplier.set(vp.multiplier);
+          } else if (vp.vehicleType === 'CAR') {
+            this.carMultiplier.set(vp.multiplier);
+          } else if (vp.vehicleType === 'VAN') {
+            this.vanMultiplier.set(vp.multiplier);
+          } else if (vp.vehicleType === 'TRUCK') {
+            this.truckMultiplier.set(vp.multiplier);
+          }
+        }
+      }
+    });
   }
 
-  protected changeTab(tab: 'tariffs' | 'daily' | 'partnerships' | 'rules'): void {
+  protected changeTab(tab: 'tariffs' | 'daily' | 'vehicle-types' | 'partnerships' | 'rules'): void {
     this.activeTab.set(tab);
   }
 
   protected saveTariffs(): void {
-    // Mutar tarifas
     this.updateTariffMutation.mutate(
       {
         firstHourValue: this.firstHourRate(),
         additionalFractionValue: this.additionalHourRate(),
         toleranceMinutes: this.gracePeriodMinutes(),
         overnightFee: this.overnightStayFee(),
-        lostTicketFee: this.lostTicketRate(), // Usando o signal dinâmico
+        lostTicketFee: this.lostTicketRate(),
       },
       {
         onSuccess: () => {
-          // Mutar pricing
           this.updatePricingMutation.mutate(
             {
               dailyTriggerHours: this.dailyTriggerHours(),
@@ -141,6 +183,28 @@ export class SettingsPrice {
         },
         onError: () => {
           this.toastService.error('Erro ao atualizar configurações tarifárias principais.');
+        }
+      }
+    );
+  }
+
+  protected saveVehiclePricing(): void {
+    this.updateVehiclePricingMutation.mutate(
+      {
+        multipliers: [
+          { vehicleType: 'MOTORCYCLE', multiplier: this.motorcycleMultiplier() },
+          { vehicleType: 'CAR', multiplier: this.carMultiplier() },
+          { vehicleType: 'VAN', multiplier: this.vanMultiplier() },
+          { vehicleType: 'TRUCK', multiplier: this.truckMultiplier() },
+        ],
+      },
+      {
+        onSuccess: () => {
+          this.toastService.success('Preços por tipo de veículo salvos com sucesso!');
+        },
+        onError: (err: any) => {
+          const errMsg = getBackendErrorMessage(err, 'Erro ao atualizar preços por tipo de veículo.');
+          this.toastService.error(errMsg);
         }
       }
     );

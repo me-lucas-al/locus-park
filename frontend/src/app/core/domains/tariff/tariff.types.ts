@@ -1,3 +1,5 @@
+export type VehicleType = 'CAR' | 'MOTORCYCLE' | 'VAN' | 'TRUCK';
+
 export interface TariffConfigurationRequest {
   toleranceMinutes: number;
   firstHourValue: number;
@@ -28,4 +30,20 @@ export interface PricingConfigurationResponse {
   dailyTriggerHours: number;
   dailyValue: number;
   monthlyBaseValue: number;
+}
+
+export interface VehicleTypeMultiplierItemRequest {
+  vehicleType: VehicleType;
+  multiplier: number;
+}
+
+export interface VehicleTypePricingBatchRequest {
+  multipliers: VehicleTypeMultiplierItemRequest[];
+}
+
+export interface VehicleTypeMultiplierResponse {
+  id: string | null;
+  vehicleType: VehicleType;
+  multiplier: number;
+  label: string;
 }

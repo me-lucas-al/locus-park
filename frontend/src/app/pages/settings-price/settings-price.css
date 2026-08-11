@@ -398,3 +398,130 @@
   padding: 8px 16px !important;
   background-color: #fafafa;
 }
+
+/* Vehicle Pricing Grid */
+.vehicle-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.vehicle-price-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.2s ease;
+}
+
+.vehicle-price-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.vehicle-price-card.base {
+  border-color: #0f172a;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.vehicle-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vehicle-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  background-color: #f1f5f9;
+}
+
+.vehicle-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.vehicle-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.vehicle-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.multiplier-input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.multiplier-input-row label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.input-with-suffix {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.input-with-suffix input {
+  width: 70px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: right;
+  outline: none;
+}
+
+.input-with-suffix input:focus {
+  border-color: #0f172a;
+}
+
+.input-with-suffix .suffix {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0284c7;
+}
+
+.price-slider {
+  width: 100%;
+  accent-color: #0f172a;
+  cursor: pointer;
+}
+
+.example-preview {
+  background-color: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.8125rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.example-preview strong {
+  color: #0f172a;
+}
+

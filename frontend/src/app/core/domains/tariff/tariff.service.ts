@@ -7,6 +7,8 @@ import {
   TariffConfigurationResponse,
   PricingConfigurationRequest,
   PricingConfigurationResponse,
+  VehicleTypePricingBatchRequest,
+  VehicleTypeMultiplierResponse,
 } from './tariff.types';
 
 @Injectable({ providedIn: 'root' })
@@ -14,6 +16,7 @@ export class TariffService {
   private readonly http = inject(HttpClient);
   private readonly tariffUrl = `${environment.apiUrl}configurations/tariff`;
   private readonly pricingUrl = `${environment.apiUrl}configurations/pricing`;
+  private readonly vehiclePricingUrl = `${environment.apiUrl}configurations/vehicle-pricing`;
 
   getTariff(): Observable<TariffConfigurationResponse> {
     return this.http.get<TariffConfigurationResponse>(this.tariffUrl);
@@ -37,5 +40,13 @@ export class TariffService {
 
   deletePricing(): Observable<void> {
     return this.http.delete<void>(this.pricingUrl);
+  }
+
+  getVehiclePricing(): Observable<VehicleTypeMultiplierResponse[]> {
+    return this.http.get<VehicleTypeMultiplierResponse[]>(this.vehiclePricingUrl);
+  }
+
+  updateVehiclePricing(request: VehicleTypePricingBatchRequest): Observable<VehicleTypeMultiplierResponse[]> {
+    return this.http.put<VehicleTypeMultiplierResponse[]>(this.vehiclePricingUrl, request);
   }
 }

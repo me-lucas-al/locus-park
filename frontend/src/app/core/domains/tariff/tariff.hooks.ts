@@ -2,7 +2,11 @@ import { inject } from '@angular/core';
 import { injectQuery, injectMutation, QueryClient } from '@tanstack/angular-query-experimental';
 import { lastValueFrom } from 'rxjs';
 import { TariffService } from './tariff.service';
-import { TariffConfigurationRequest, PricingConfigurationRequest } from './tariff.types';
+import {
+  TariffConfigurationRequest,
+  PricingConfigurationRequest,
+  VehicleTypePricingBatchRequest,
+} from './tariff.types';
 
 export function useTariffQuery() {
   const service = inject(TariffService);
@@ -55,5 +59,23 @@ export function useDeletePricingMutation() {
   return injectMutation(() => ({
     mutationFn: () => lastValueFrom(service.deletePricing()),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['pricing'] }),
+  }));
+}
+
+export function useVehiclePricingQuery() {
+  const service = inject(TariffService);
+  return injectQuery(() => ({
+    queryKey: ['vehiclePricing'] as const,
+    queryFn: () => lastValueFrom(service.getVehiclePricing()),
+    staleTime: Infinity,
+  }));
+}
+
+export function useUpdateVehiclePricingMutation() {
+  const service = inject(TariffService);
+  const queryClient = inject(QueryClient);
+  return injectMutation(() => ({
+    mutationFn: (request: VehicleTypePricingBatchRequest) => lastValueFrom(service.updateVehiclePricing(request)),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['vehiclePricing'] }),
   }));
 }
