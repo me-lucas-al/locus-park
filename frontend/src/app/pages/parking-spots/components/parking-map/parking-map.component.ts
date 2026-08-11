@@ -12,6 +12,8 @@ import {
 import { CommonModule } from '@angular/common';
 import { TicketResponse } from '../../../../core/domains/ticket/ticket.types';
 import { ParkingSpotCar } from '../parking-spot-car/parking-spot-car.component';
+import { ParkingSpotMotorcycle } from '../parking-spot-motorcycle/parking-spot-motorcycle.component';
+import { ParkingSpotVan } from '../parking-spot-van/parking-spot-van.component';
 
 interface GridSpot {
   number: number;
@@ -38,7 +40,7 @@ function computeSpotsPerRow(containerWidth: number): number {
 @Component({
   selector: 'app-parking-map',
   standalone: true,
-  imports: [CommonModule, ParkingSpotCar],
+  imports: [CommonModule, ParkingSpotCar, ParkingSpotMotorcycle, ParkingSpotVan],
   templateUrl: './parking-map.component.html',
   styleUrl: './parking-map.component.css',
   host: { style: 'display: block; width: 100%;' },

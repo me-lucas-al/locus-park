@@ -15,7 +15,20 @@
             >
               <span class="spot-label">{{ spot.number }}</span>
               @if (spot.status === 'Ocupada' && spot.ticket) {
-                <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+                @switch (spot.ticket.vehicle.type) {
+                  @case ('MOTORCYCLE') {
+                    <app-parking-spot-motorcycle [color]="spot.ticket.vehicle.color" />
+                  }
+                  @case ('VAN') {
+                    <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
+                  }
+                  @case ('TRUCK') {
+                    <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
+                  }
+                  @default {
+                    <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+                  }
+                }
               }
             </div>
           }
@@ -39,7 +52,20 @@
               >
                 <span class="spot-label">{{ spot.number }}</span>
                 @if (spot.status === 'Ocupada' && spot.ticket) {
-                  <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+                  @switch (spot.ticket.vehicle.type) {
+                    @case ('MOTORCYCLE') {
+                      <app-parking-spot-motorcycle [color]="spot.ticket.vehicle.color" />
+                    }
+                    @case ('VAN') {
+                      <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
+                    }
+                    @case ('TRUCK') {
+                      <app-parking-spot-van [color]="spot.ticket.vehicle.color" />
+                    }
+                    @default {
+                      <app-parking-spot-car [color]="spot.ticket.vehicle.color" />
+                    }
+                  }
                 }
               </div>
             }
