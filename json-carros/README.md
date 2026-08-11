@@ -1,6 +1,6 @@
-# Catálogo FIPE (Carros e Motos)
+# Catálogo FIPE (Carros, Motos e Caminhões)
 
-Scripts Node.js para buscar e processar todas as marcas e modelos de carros e motos na API oficial da FIPE.
+Scripts Node.js para buscar e processar todas as marcas e modelos de carros, motos e caminhões na API oficial da FIPE.
 
 ## Arquivos Gerados
 
@@ -8,6 +8,8 @@ Scripts Node.js para buscar e processar todas as marcas e modelos de carros e mo
 - `catalogo-fipe-limpo.json`: Catálogo processado e simplificado de carros
 - `catalogo-fipe-motos.json`: Catálogo bruto de motos
 - `catalogo-fipe-motos-limpo.json`: Catálogo processado e simplificado de motos
+- `catalogo-fipe-caminhoes.json`: Catálogo bruto de caminhões
+- `catalogo-fipe-caminhoes-limpo.json`: Catálogo processado e simplificado de caminhões
 
 ## Como rodar
 
@@ -23,4 +25,10 @@ npm run processar    # Limpa e simplifica os nomes de modelos de carros
 ```bash
 npm run montar:motos    # Baixa marcas e modelos de motos da FIPE
 npm run processar:motos # Limpa e simplifica os nomes de modelos de motos
+```
+
+### Caminhões
+```bash
+npm run montar:caminhoes    # Baixa marcas e modelos de caminhões da FIPE
+npm run processar:caminhoes # Limpa e simplifica os nomes de modelos de caminhões
 ```

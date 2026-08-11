@@ -1,13 +1,15 @@
 {
   "name": "fipe-catalogo",
   "version": "1.0.0",
-  "description": "Monta um JSON local com todas as marcas e modelos de carros e motos da FIPE",
+  "description": "Monta um JSON local com todas as marcas e modelos de carros, motos e caminhões da FIPE",
   "main": "src/montarCatalogo.js",
   "scripts": {
     "montar": "node src/montarCatalogo.js",
     "processar": "node src/processarModelos.js",
     "montar:motos": "node src/montarCatalogoMotos.js",
-    "processar:motos": "node src/processarModelosMotos.js"
+    "processar:motos": "node src/processarModelosMotos.js",
+    "montar:caminhoes": "node src/montarCatalogoCaminhoes.js",
+    "processar:caminhoes": "node src/processarModelosCaminhoes.js"
   },
   "engines": {
     "node": ">=18"
