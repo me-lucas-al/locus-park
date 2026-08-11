@@ -51,12 +51,12 @@ import { getVehicleColorHex } from '../../utils/colors';
         <rect x="92" y="144" width="6" height="26" fill="#1e293b" opacity="0.3" />
 
         <!-- Corpo Principal da Van -->
-        <rect x="6" y="8" width="88" height="186" rx="18" [style.fill]="fillColor()" stroke="#090d16" stroke-width="2" />
+        <rect x="6" y="8" width="88" height="186" rx="6" [style.fill]="fillColor()" stroke="#090d16" stroke-width="2" />
         <!-- Camada de volume 3D -->
-        <rect x="6" y="8" width="88" height="186" rx="18" fill="url(#body3DGradientVan)" pointer-events="none" />
+        <rect x="6" y="8" width="88" height="186" rx="6" fill="url(#body3DGradientVan)" pointer-events="none" />
         
-        <!-- Detalhes do Capô (Curto) -->
-        <path d="M 18,8 L 22,26 C 28,30 72,30 78,26 L 82,8" fill="none" stroke="#090d16" stroke-width="1.5" opacity="0.3" />
+        <!-- Detalhes da Frente (Plana) -->
+        <rect x="12" y="10" width="76" height="4" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
 
         <!-- Retrovisores Laterais (Maiores) -->
         <!-- Esquerdo -->
@@ -65,28 +65,28 @@ import { getVehicleColorHex } from '../../utils/colors';
         <path d="M 94,48 C 102,48 104,52 104,60 C 104,66 98,68 94,64 Z" [style.fill]="fillColor()" stroke="#090d16" stroke-width="1.5" />
 
         <!-- Sombra projetada da Cabine para efeito 3D -->
-        <rect x="14" y="32" width="72" height="152" rx="12" fill="#000000" opacity="0.3" filter="blur(3px)" />
+        <rect x="10" y="24" width="80" height="164" rx="4" fill="#000000" opacity="0.35" filter="blur(3px)" />
 
         <!-- Teto / Área principal superior -->
-        <rect x="16" y="30" width="68" height="152" rx="10" fill="#111827" stroke="#090d16" stroke-width="2" />
+        <rect x="12" y="22" width="76" height="164" rx="4" fill="#111827" stroke="#090d16" stroke-width="2" />
         
-        <!-- Para-brisa Dianteiro (Grande) -->
-        <path d="M 18,34 C 26,26 74,26 82,34 L 78,54 C 68,48 32,48 22,54 Z" fill="url(#glassGradientVan)" />
-        <path d="M 18,34 C 26,26 74,26 82,34 L 78,54 C 68,48 32,48 22,54 Z" fill="url(#reflectGradientVan)" />
+        <!-- Para-brisa Dianteiro (Retangular) -->
+        <rect x="16" y="26" width="68" height="18" rx="2" fill="url(#glassGradientVan)" />
+        <rect x="16" y="26" width="68" height="18" rx="2" fill="url(#reflectGradientVan)" />
         
         <!-- Para-brisa Traseiro (Reto) -->
-        <rect x="22" y="170" width="56" height="8" rx="2" fill="url(#glassGradientVan)" />
-        <rect x="22" y="170" width="56" height="8" rx="2" fill="url(#reflectGradientVan)" />
+        <rect x="16" y="178" width="68" height="6" rx="1" fill="url(#glassGradientVan)" />
+        <rect x="16" y="178" width="68" height="6" rx="1" fill="url(#reflectGradientVan)" />
 
         <!-- Vidros Laterais (Múltiplos para van de passageiros ou painel longo) -->
         <!-- Lado Esquerdo -->
-        <rect x="18" y="58" width="5" height="30" fill="url(#glassGradientVan)" />
-        <rect x="18" y="92" width="5" height="36" fill="url(#glassGradientVan)" />
-        <rect x="18" y="132" width="5" height="34" fill="url(#glassGradientVan)" />
+        <rect x="14" y="48" width="4" height="36" fill="url(#glassGradientVan)" />
+        <rect x="14" y="88" width="4" height="42" fill="url(#glassGradientVan)" />
+        <rect x="14" y="134" width="4" height="40" fill="url(#glassGradientVan)" />
         <!-- Lado Direito -->
-        <rect x="77" y="58" width="5" height="30" fill="url(#glassGradientVan)" />
-        <rect x="77" y="92" width="5" height="36" fill="url(#glassGradientVan)" />
-        <rect x="77" y="132" width="5" height="34" fill="url(#glassGradientVan)" />
+        <rect x="82" y="48" width="4" height="36" fill="url(#glassGradientVan)" />
+        <rect x="82" y="88" width="4" height="42" fill="url(#glassGradientVan)" />
+        <rect x="82" y="134" width="4" height="40" fill="url(#glassGradientVan)" />
         
         <!-- Detalhes do Teto -->
         <rect x="30" y="60" width="40" height="100" rx="4" fill="#090d16" opacity="0.2" />
@@ -96,25 +96,21 @@ import { getVehicleColorHex } from '../../utils/colors';
         <line x1="60" y1="65" x2="60" y2="150" stroke="#ffffff" stroke-width="1.5" opacity="0.1" />
 
         <!-- Faróis Dianteiros -->
-        <rect x="12" y="10" width="16" height="10" rx="3" fill="url(#headlightGradientVan)" stroke="#f59e0b" stroke-width="0.5" />
-        <rect x="72" y="10" width="16" height="10" rx="3" fill="url(#headlightGradientVan)" stroke="#f59e0b" stroke-width="0.5" />
+        <rect x="8" y="8" width="18" height="6" rx="2" fill="url(#headlightGradientVan)" stroke="#f59e0b" stroke-width="0.5" />
+        <rect x="74" y="8" width="18" height="6" rx="2" fill="url(#headlightGradientVan)" stroke="#f59e0b" stroke-width="0.5" />
 
-        <!-- Grelha frontal (Grande) -->
-        <rect x="34" y="9" width="32" height="6" rx="1" fill="#090d16" />
-        <rect x="34" y="11" width="32" height="1" fill="#1e293b" />
-        <rect x="34" y="13" width="32" height="1" fill="#1e293b" />
-        <circle cx="50" cy="12" r="1.5" fill="#e2e8f0" opacity="0.9" />
+        <!-- Grelha frontal (Grade plana de van) -->
+        <rect x="30" y="8" width="40" height="4" rx="1" fill="#090d16" />
+        <circle cx="50" cy="10" r="1.5" fill="#e2e8f0" opacity="0.9" />
 
-        <!-- Lanternas Traseiras (Verticais) -->
-        <rect x="10" y="180" width="6" height="12" rx="2" fill="#ef4444" />
-        <rect x="11" y="182" width="4" height="4" fill="#ffffff" opacity="0.8" />
-        <rect x="84" y="180" width="6" height="12" rx="2" fill="#ef4444" />
-        <rect x="85" y="182" width="4" height="4" fill="#ffffff" opacity="0.8" />
+        <!-- Lanternas Traseiras (Bem nos cantos) -->
+        <rect x="6" y="188" width="10" height="6" rx="1" fill="#ef4444" />
+        <rect x="84" y="188" width="10" height="6" rx="1" fill="#ef4444" />
         
         <!-- Detalhes da Porta Traseira (Dupla) -->
-        <line x1="50" y1="182" x2="50" y2="194" stroke="#090d16" stroke-width="1.5" opacity="0.4" />
-        <rect x="46" y="186" width="3" height="4" rx="1" fill="#090d16" opacity="0.6" />
-        <rect x="51" y="186" width="3" height="4" rx="1" fill="#090d16" opacity="0.6" />
+        <line x1="50" y1="188" x2="50" y2="194" stroke="#090d16" stroke-width="1.5" opacity="0.6" />
+        <rect x="46" y="190" width="3" height="2" rx="0.5" fill="#090d16" opacity="0.8" />
+        <rect x="51" y="190" width="3" height="2" rx="0.5" fill="#090d16" opacity="0.8" />
       </svg>
     </div>
   `,

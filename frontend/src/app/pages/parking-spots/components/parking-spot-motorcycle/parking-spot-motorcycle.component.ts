@@ -80,9 +80,9 @@ import { getVehicleColorHex } from '../../utils/colors';
       padding: 4px;
     }
     .motorcycle-svg {
-      width: 60%;
-      height: 85%;
-      max-height: 90px;
+      width: 80%;
+      height: 95%;
+      max-height: 95px;
       transition: all 0.3s ease;
     }
   `]
