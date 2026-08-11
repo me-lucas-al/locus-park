@@ -5,23 +5,33 @@ import com.locuspark.api.entity.PricingConfiguration;
 import com.locuspark.api.entity.TariffConfiguration;
 import com.locuspark.api.entity.Ticket;
 import com.locuspark.api.enums.DiscountType;
+import com.locuspark.api.entity.Company;
+import com.locuspark.api.entity.Vehicle;
+import com.locuspark.api.enums.VehicleType;
+import com.locuspark.api.repository.VehicleTypePriceMultiplierRepository;
 import com.locuspark.api.service.payment.GrossStayChargeCalculator;
 import com.locuspark.api.service.payment.HourlyRateCalculator;
 import com.locuspark.api.service.payment.PartnershipDiscountCalculator;
 import com.locuspark.api.service.payment.StayCharge;
 import com.locuspark.api.service.payment.TolerancePolicy;
+import com.locuspark.api.service.payment.VehicleTypeMultiplierResolver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.Optional;
+import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
 
 @DisplayName("Testes de Serviço de Pagamento - PaymentService")
 class PaymentServiceTest {
@@ -33,16 +43,21 @@ class PaymentServiceTest {
     }
 
     private PaymentService paymentService;
+    private VehicleTypePriceMultiplierRepository multiplierRepository;
     private TariffConfiguration tariff;
     private PricingConfiguration pricing;
 
     @BeforeEach
     void setUp() {
         HourlyRateCalculator hourlyRateCalculator = new HourlyRateCalculator();
+        multiplierRepository = Mockito.mock(VehicleTypePriceMultiplierRepository.class);
+        VehicleTypeMultiplierResolver resolver = new VehicleTypeMultiplierResolver(multiplierRepository);
+
         paymentService = new PaymentService(
                 new TolerancePolicy(),
                 new GrossStayChargeCalculator(hourlyRateCalculator),
-                new PartnershipDiscountCalculator(hourlyRateCalculator)
+                new PartnershipDiscountCalculator(hourlyRateCalculator),
+                resolver
         );
         tariff = TariffConfiguration.builder()
                 .toleranceMinutes(10)
