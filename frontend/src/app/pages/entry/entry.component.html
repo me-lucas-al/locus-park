@@ -50,12 +50,14 @@
                 <option value="CAR">Carro</option>
                 <option value="MOTORCYCLE">Moto</option>
                 <option value="VAN">Van</option>
+                <option value="TRUCK">Caminhão</option>
               </select>
             </div>
           </div>
 
           <div class="form-field">
             <app-vehicle-brand-model-select
+              [vehicleType]="vehicleType()"
               (modelSelected)="onVehicleModelSelected($event)"
             />
           </div>

@@ -48,6 +48,7 @@
 
     <div class="form-field">
       <app-vehicle-brand-model-select
+        [vehicleType]="vehicleType()"
         (modelSelected)="onVehicleModelSelected($event)"
       />
     </div>

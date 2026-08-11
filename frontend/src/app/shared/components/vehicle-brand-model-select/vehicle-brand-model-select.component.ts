@@ -2,14 +2,17 @@ import {
   Component,
   signal,
   computed,
+  input,
   output,
   viewChild,
+  effect,
   ChangeDetectionStrategy,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchableSelectComponent } from '../searchable-select/searchable-select.component';
 import { useVehicleBrandsQuery, useVehicleModelsByBrandQuery } from '../../../core/domains/vehicle-catalog/vehicle-catalog.hooks';
 import { SelectOption, OUTRO_OPTION } from '../../../core/domains/vehicle-catalog/vehicle-catalog.types';
+import { VehicleType } from '../../../core/types/domain-enums.types';
 
 @Component({
   selector: 'app-vehicle-brand-model-select',
@@ -20,6 +23,8 @@ import { SelectOption, OUTRO_OPTION } from '../../../core/domains/vehicle-catalo
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VehicleBrandModelSelectComponent {
+  readonly vehicleType = input<VehicleType | string>('CAR');
+
   readonly brandSelected = output<SelectOption>();
   readonly modelSelected = output<SelectOption>();
 
@@ -28,8 +33,8 @@ export class VehicleBrandModelSelectComponent {
 
   protected readonly selectedBrandCode = signal('');
 
-  protected readonly brandsQuery = useVehicleBrandsQuery();
-  protected readonly modelsQuery = useVehicleModelsByBrandQuery(this.selectedBrandCode);
+  protected readonly brandsQuery = useVehicleBrandsQuery(this.vehicleType);
+  protected readonly modelsQuery = useVehicleModelsByBrandQuery(this.selectedBrandCode, this.vehicleType);
 
   protected readonly isModelSelectDisabled = computed(() => !this.selectedBrandCode());
 
@@ -45,6 +50,13 @@ export class VehicleBrandModelSelectComponent {
   protected readonly modelsError = computed(() =>
     this.modelsQuery.isError() ? 'Erro ao carregar modelos. Tente novamente.' : null
   );
+
+  constructor() {
+    effect(() => {
+      this.vehicleType();
+      this.reset();
+    });
+  }
 
   protected onBrandSelected(brand: SelectOption): void {
     const isSameBrand = this.selectedBrandCode() === brand.code;
