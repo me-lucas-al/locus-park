@@ -1,15 +1,22 @@
 package com.locuspark.api.service;
 
+import com.locuspark.api.dto.request.VehicleTypeMultiplierItemRequest;
+import com.locuspark.api.dto.request.VehicleTypePricingBatchRequest;
 import com.locuspark.api.dto.response.PricingConfigurationResponse;
 import com.locuspark.api.dto.response.TariffConfigurationResponse;
+import com.locuspark.api.dto.response.VehicleTypeMultiplierResponse;
 import com.locuspark.api.entity.Company;
 import com.locuspark.api.entity.PricingConfiguration;
 import com.locuspark.api.entity.TariffConfiguration;
+import com.locuspark.api.entity.VehicleTypePriceMultiplier;
+import com.locuspark.api.enums.VehicleType;
 import com.locuspark.api.exception.ResourceNotFoundException;
 import com.locuspark.api.mapper.PricingConfigurationMapper;
 import com.locuspark.api.mapper.TariffConfigurationMapper;
+import com.locuspark.api.repository.CompanyRepository;
 import com.locuspark.api.repository.PricingConfigurationRepository;
 import com.locuspark.api.repository.TariffConfigurationRepository;
+import com.locuspark.api.repository.VehicleTypePriceMultiplierRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -20,6 +27,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -36,6 +44,12 @@ class ConfigurationServiceTest {
 
     @Mock
     private PricingConfigurationRepository pricingRepository;
+
+    @Mock
+    private VehicleTypePriceMultiplierRepository vehicleTypePriceMultiplierRepository;
+
+    @Mock
+    private CompanyRepository companyRepository;
 
     @Mock
     private TariffConfigurationMapper tariffMapper;
@@ -174,6 +188,51 @@ class ConfigurationServiceTest {
 
             verify(pricingRepository).findByCompanyId(companyId);
             verifyNoInteractions(pricingMapper);
+        }
+    }
+
+    @Nested
+    @DisplayName("Cenários de Precificação por Tipo de Veículo")
+    class VehiclePricingScenarios {
+
+        @Test
+        @DisplayName("Deve retornar multiplicadores para todos os tipos de veículo com padrão 1.00 se não cadastrado")
+        void getVehiclePricingReturnsAllTypesWithDefaults() {
+            when(companyRepository.findById(companyId)).thenReturn(Optional.of(company));
+            when(vehicleTypePriceMultiplierRepository.findAllByCompanyId(companyId)).thenReturn(List.of(
+                    VehicleTypePriceMultiplier.builder()
+                            .id(UUID.randomUUID())
+                            .company(company)
+                            .vehicleType(VehicleType.MOTORCYCLE)
+                            .multiplier(BigDecimal.valueOf(0.60))
+                            .build()
+            ));
+
+            List<VehicleTypeMultiplierResponse> responses = configurationService.getVehicleTypePricingByCompany(companyId);
+
+            assertThat(responses).hasSize(VehicleType.values().length);
+            var motoResponse = responses.stream().filter(r -> r.vehicleType() == VehicleType.MOTORCYCLE).findFirst().orElseThrow();
+            assertThat(motoResponse.multiplier()).isEqualByComparingTo(BigDecimal.valueOf(0.60));
+
+            var carResponse = responses.stream().filter(r -> r.vehicleType() == VehicleType.CAR).findFirst().orElseThrow();
+            assertThat(carResponse.multiplier()).isEqualByComparingTo(BigDecimal.valueOf(1.00));
+        }
+
+        @Test
+        @DisplayName("Deve salvar ou atualizar multiplicadores em lote com sucesso")
+        void saveOrUpdateVehiclePricingBatch() {
+            when(companyRepository.findById(companyId)).thenReturn(Optional.of(company));
+            when(vehicleTypePriceMultiplierRepository.findByCompanyIdAndVehicleType(companyId, VehicleType.MOTORCYCLE))
+                    .thenReturn(Optional.empty());
+
+            VehicleTypePricingBatchRequest request = new VehicleTypePricingBatchRequest(List.of(
+                    new VehicleTypeMultiplierItemRequest(VehicleType.MOTORCYCLE, BigDecimal.valueOf(0.50))
+            ));
+
+            List<VehicleTypeMultiplierResponse> result = configurationService.saveOrUpdateVehicleTypePricing(companyId, request);
+
+            verify(vehicleTypePriceMultiplierRepository).save(any(VehicleTypePriceMultiplier.class));
+            assertThat(result).isNotNull();
         }
     }
 }
