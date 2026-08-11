@@ -1,0 +1,8662 @@
+[
+  {
+    "codigoMarca": "60",
+    "nomeMarca": "ADLY",
+    "modelos": [
+      {
+        "codigoModelo": 2576,
+        "nomeModelo": "ATV 100"
+      },
+      {
+        "codigoModelo": 2577,
+        "nomeModelo": "ATV 50"
+      },
+      {
+        "codigoModelo": 2578,
+        "nomeModelo": "JAGUAR JT 100"
+      },
+      {
+        "codigoModelo": 2579,
+        "nomeModelo": "JAGUAR JT 50"
+      },
+      {
+        "codigoModelo": 2580,
+        "nomeModelo": "RT 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "61",
+    "nomeMarca": "AGRALE",
+    "modelos": [
+      {
+        "codigoModelo": 2581,
+        "nomeModelo": "CITY 50"
+      },
+      {
+        "codigoModelo": 2582,
+        "nomeModelo": "CITY 90"
+      },
+      {
+        "codigoModelo": 2583,
+        "nomeModelo": "DAKAR 30.0 190cc"
+      },
+      {
+        "codigoModelo": 2584,
+        "nomeModelo": "DAKAR 50"
+      },
+      {
+        "codigoModelo": 2585,
+        "nomeModelo": "ELEFANT 16.5 125cc"
+      },
+      {
+        "codigoModelo": 2586,
+        "nomeModelo": "ELEFANT 27.5 190cc"
+      },
+      {
+        "codigoModelo": 2587,
+        "nomeModelo": "ELEFANTRE 16.5 ES 125cc"
+      },
+      {
+        "codigoModelo": 2588,
+        "nomeModelo": "ELEFANTRE 30.0 ES 190cc"
+      },
+      {
+        "codigoModelo": 2589,
+        "nomeModelo": "FORCE 50"
+      },
+      {
+        "codigoModelo": 2590,
+        "nomeModelo": "FORCE 90"
+      },
+      {
+        "codigoModelo": 2591,
+        "nomeModelo": "JUNIOR 50"
+      },
+      {
+        "codigoModelo": 2592,
+        "nomeModelo": "SST 13.5 125cc"
+      },
+      {
+        "codigoModelo": 2593,
+        "nomeModelo": "SUPER CITY 125"
+      },
+      {
+        "codigoModelo": 2594,
+        "nomeModelo": "SUPER CITY 150"
+      },
+      {
+        "codigoModelo": 2595,
+        "nomeModelo": "SXT 27.5 E 190cc"
+      },
+      {
+        "codigoModelo": 2596,
+        "nomeModelo": "SXT 27.5 EX 190cc"
+      },
+      {
+        "codigoModelo": 2597,
+        "nomeModelo": "TCHAU 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "131",
+    "nomeMarca": "AMAZONAS",
+    "modelos": [
+      {
+        "codigoModelo": 4360,
+        "nomeModelo": "AME-110 MIX"
+      },
+      {
+        "codigoModelo": 4361,
+        "nomeModelo": "AME-150 TC/ SC"
+      },
+      {
+        "codigoModelo": 4362,
+        "nomeModelo": "AME-250 C1"
+      },
+      {
+        "codigoModelo": 4363,
+        "nomeModelo": "AME-LX 125/26"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "62",
+    "nomeMarca": "APRILIA",
+    "modelos": [
+      {
+        "codigoModelo": 2598,
+        "nomeModelo": "AREA-51 50cc"
+      },
+      {
+        "codigoModelo": 2599,
+        "nomeModelo": "CLASSIC 50cc"
+      },
+      {
+        "codigoModelo": 2600,
+        "nomeModelo": "LEONARDO 150cc"
+      },
+      {
+        "codigoModelo": 2601,
+        "nomeModelo": "MOTO 650cc"
+      },
+      {
+        "codigoModelo": 2602,
+        "nomeModelo": "PEGASO 650cc"
+      },
+      {
+        "codigoModelo": 2603,
+        "nomeModelo": "RALLY 50cc"
+      },
+      {
+        "codigoModelo": 2604,
+        "nomeModelo": "RS 250cc"
+      },
+      {
+        "codigoModelo": 2605,
+        "nomeModelo": "RS 50cc"
+      },
+      {
+        "codigoModelo": 2606,
+        "nomeModelo": "RSV MILLE 1000cc"
+      },
+      {
+        "codigoModelo": 2607,
+        "nomeModelo": "RX 50cc"
+      },
+      {
+        "codigoModelo": 2608,
+        "nomeModelo": "SCARABEO BRIGTH 50cc"
+      },
+      {
+        "codigoModelo": 2609,
+        "nomeModelo": "SCARABEO CLASSIC 50cc"
+      },
+      {
+        "codigoModelo": 2610,
+        "nomeModelo": "SCARABEO DELUXE 50cc"
+      },
+      {
+        "codigoModelo": 2611,
+        "nomeModelo": "SONIC 50cc"
+      },
+      {
+        "codigoModelo": 8303,
+        "nomeModelo": "SR 150cc"
+      },
+      {
+        "codigoModelo": 8304,
+        "nomeModelo": "SR RACE 150cc"
+      },
+      {
+        "codigoModelo": 2612,
+        "nomeModelo": "SR RACING 50cc"
+      },
+      {
+        "codigoModelo": 2613,
+        "nomeModelo": "SR WWW 50cc"
+      },
+      {
+        "codigoModelo": 10130,
+        "nomeModelo": "SXR 160cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "63",
+    "nomeMarca": "ATALA",
+    "modelos": [
+      {
+        "codigoModelo": 2614,
+        "nomeModelo": "CALIFFONE 50cc"
+      },
+      {
+        "codigoModelo": 2615,
+        "nomeModelo": "MASTER 50cc"
+      },
+      {
+        "codigoModelo": 2616,
+        "nomeModelo": "SKEGIA 50cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "216",
+    "nomeMarca": "AVELLOZ",
+    "modelos": [
+      {
+        "codigoModelo": 9409,
+        "nomeModelo": "AZ 01 50cc"
+      },
+      {
+        "codigoModelo": 11306,
+        "nomeModelo": "AZ 125 ALFA"
+      },
+      {
+        "codigoModelo": 11329,
+        "nomeModelo": "AZ 160 XTREME"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "64",
+    "nomeMarca": "BAJAJ",
+    "modelos": [
+      {
+        "codigoModelo": 2617,
+        "nomeModelo": "CHAMPION 45 100cc"
+      },
+      {
+        "codigoModelo": 2618,
+        "nomeModelo": "CLASSIC 150cc"
+      },
+      {
+        "codigoModelo": 10380,
+        "nomeModelo": "DOMINAR 160"
+      },
+      {
+        "codigoModelo": 10381,
+        "nomeModelo": "DOMINAR 200"
+      },
+      {
+        "codigoModelo": 11144,
+        "nomeModelo": "DOMINAR 250"
+      },
+      {
+        "codigoModelo": 10382,
+        "nomeModelo": "DOMINAR 400 "
+      },
+      {
+        "codigoModelo": 11475,
+        "nomeModelo": "DOMINAR NS160"
+      },
+      {
+        "codigoModelo": 11476,
+        "nomeModelo": "DOMINAR NS200"
+      },
+      {
+        "codigoModelo": 11678,
+        "nomeModelo": "DOMINAR NS400Z"
+      },
+      {
+        "codigoModelo": 11524,
+        "nomeModelo": "PULSAR N150"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "205",
+    "nomeMarca": "BEE",
+    "modelos": [
+      {
+        "codigoModelo": 8153,
+        "nomeModelo": "BEE 125cc Monaco"
+      },
+      {
+        "codigoModelo": 8374,
+        "nomeModelo": "BEE 200cc GT"
+      },
+      {
+        "codigoModelo": 8154,
+        "nomeModelo": "BEE 200cc Royale"
+      },
+      {
+        "codigoModelo": 8155,
+        "nomeModelo": "BEE 50cc"
+      },
+      {
+        "codigoModelo": 8327,
+        "nomeModelo": "Monaco 150cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "162",
+    "nomeMarca": "Benelli",
+    "modelos": [
+      {
+        "codigoModelo": 5043,
+        "nomeModelo": "TNT 1130 Sport evo"
+      },
+      {
+        "codigoModelo": 5044,
+        "nomeModelo": "TNT 899"
+      },
+      {
+        "codigoModelo": 5045,
+        "nomeModelo": "TNT Café 1130 Racer"
+      },
+      {
+        "codigoModelo": 5046,
+        "nomeModelo": "TRE 1130 K"
+      },
+      {
+        "codigoModelo": 5047,
+        "nomeModelo": "TRE 1130 K Amazonas"
+      },
+      {
+        "codigoModelo": 6652,
+        "nomeModelo": "TRE 899 K"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "65",
+    "nomeMarca": "BETA",
+    "modelos": [
+      {
+        "codigoModelo": 2619,
+        "nomeModelo": "MX-50 CROSS 50cc"
+      },
+      {
+        "codigoModelo": 2620,
+        "nomeModelo": "MX-50 ENDURO 50cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "66",
+    "nomeMarca": "BIMOTA",
+    "modelos": [
+      {
+        "codigoModelo": 2621,
+        "nomeModelo": "DB4 904cc"
+      },
+      {
+        "codigoModelo": 4781,
+        "nomeModelo": "DB5R 1078cc"
+      },
+      {
+        "codigoModelo": 4782,
+        "nomeModelo": "DB6 Delirio 1078cc"
+      },
+      {
+        "codigoModelo": 4783,
+        "nomeModelo": "DB6R Delirio 1078cc"
+      },
+      {
+        "codigoModelo": 5090,
+        "nomeModelo": "DB7 1099cc"
+      },
+      {
+        "codigoModelo": 2622,
+        "nomeModelo": "MANTRA 904cc"
+      },
+      {
+        "codigoModelo": 2623,
+        "nomeModelo": "SBR8 SPECIAL 996cc"
+      },
+      {
+        "codigoModelo": 5285,
+        "nomeModelo": "Tesi 3D 1100cc ( Alumínio)"
+      },
+      {
+        "codigoModelo": 5091,
+        "nomeModelo": "Tesi 3D 1100cc ( Carbono )"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "67",
+    "nomeMarca": "BMW",
+    "modelos": [
+      {
+        "codigoModelo": 10895,
+        "nomeModelo": "C 400 X"
+      },
+      {
+        "codigoModelo": 10896,
+        "nomeModelo": "C 400 X Sport"
+      },
+      {
+        "codigoModelo": 6760,
+        "nomeModelo": "C 600 Sport"
+      },
+      {
+        "codigoModelo": 7219,
+        "nomeModelo": "C 650 GT"
+      },
+      {
+        "codigoModelo": 2624,
+        "nomeModelo": "F 650"
+      },
+      {
+        "codigoModelo": 2625,
+        "nomeModelo": "F 650 CS"
+      },
+      {
+        "codigoModelo": 2626,
+        "nomeModelo": "F 650 GS/Dakar"
+      },
+      {
+        "codigoModelo": 7819,
+        "nomeModelo": "F 700 GS"
+      },
+      {
+        "codigoModelo": 8533,
+        "nomeModelo": "F 750 GS Premium"
+      },
+      {
+        "codigoModelo": 9570,
+        "nomeModelo": "F 750 GS Premium 40 Anos"
+      },
+      {
+        "codigoModelo": 8534,
+        "nomeModelo": "F 750 GS Sport"
+      },
+      {
+        "codigoModelo": 4805,
+        "nomeModelo": "F 800 GS 798cc"
+      },
+      {
+        "codigoModelo": 11145,
+        "nomeModelo": "F 800 GS 895cc"
+      },
+      {
+        "codigoModelo": 6653,
+        "nomeModelo": "F 800 GS Adventure"
+      },
+      {
+        "codigoModelo": 11146,
+        "nomeModelo": "F 800 GS Plus 895cc"
+      },
+      {
+        "codigoModelo": 6362,
+        "nomeModelo": "F 800 GS Triple Black/trophy"
+      },
+      {
+        "codigoModelo": 5048,
+        "nomeModelo": "F 800 R"
+      },
+      {
+        "codigoModelo": 4252,
+        "nomeModelo": "F 800 S 798cc"
+      },
+      {
+        "codigoModelo": 8646,
+        "nomeModelo": "F 850 GS Adventure Premium"
+      },
+      {
+        "codigoModelo": 9571,
+        "nomeModelo": "F 850 GS Adventure Premium 40 anos"
+      },
+      {
+        "codigoModelo": 8647,
+        "nomeModelo": "F 850 GS Adventure Sport"
+      },
+      {
+        "codigoModelo": 8535,
+        "nomeModelo": "F 850 GS Premium"
+      },
+      {
+        "codigoModelo": 10124,
+        "nomeModelo": "F 850 GS Premium 40 anos"
+      },
+      {
+        "codigoModelo": 8536,
+        "nomeModelo": "F 850 GS Sport"
+      },
+      {
+        "codigoModelo": 11147,
+        "nomeModelo": "F 900 GS"
+      },
+      {
+        "codigoModelo": 11148,
+        "nomeModelo": "F 900 GS Adventure Plus"
+      },
+      {
+        "codigoModelo": 11149,
+        "nomeModelo": "F 900 GS Plus"
+      },
+      {
+        "codigoModelo": 11150,
+        "nomeModelo": "F 900 GS Trophy"
+      },
+      {
+        "codigoModelo": 11151,
+        "nomeModelo": "F 900 GS Trophy Pro"
+      },
+      {
+        "codigoModelo": 11865,
+        "nomeModelo": "F 900 R"
+      },
+      {
+        "codigoModelo": 11866,
+        "nomeModelo": "F 900 R Plus"
+      },
+      {
+        "codigoModelo": 11867,
+        "nomeModelo": "F 900 R Plus Racing Blue"
+      },
+      {
+        "codigoModelo": 11868,
+        "nomeModelo": "F 900 R Plus Triple Black"
+      },
+      {
+        "codigoModelo": 10383,
+        "nomeModelo": "F 900 R Sport "
+      },
+      {
+        "codigoModelo": 10384,
+        "nomeModelo": "F 900 R Sport Plus"
+      },
+      {
+        "codigoModelo": 8221,
+        "nomeModelo": "G 310 GS"
+      },
+      {
+        "codigoModelo": 8029,
+        "nomeModelo": "G 310 R"
+      },
+      {
+        "codigoModelo": 4817,
+        "nomeModelo": "G 450 X"
+      },
+      {
+        "codigoModelo": 5196,
+        "nomeModelo": "G 650 GS"
+      },
+      {
+        "codigoModelo": 5985,
+        "nomeModelo": "G 650 GS Sertão"
+      },
+      {
+        "codigoModelo": 4443,
+        "nomeModelo": "G 650 X Challenge"
+      },
+      {
+        "codigoModelo": 4650,
+        "nomeModelo": "G 650 X Country"
+      },
+      {
+        "codigoModelo": 4444,
+        "nomeModelo": "G 650 X Moto"
+      },
+      {
+        "codigoModelo": 2627,
+        "nomeModelo": "K 1100 LT"
+      },
+      {
+        "codigoModelo": 2628,
+        "nomeModelo": "K 1100 RS"
+      },
+      {
+        "codigoModelo": 2629,
+        "nomeModelo": "K 1200 GT"
+      },
+      {
+        "codigoModelo": 2630,
+        "nomeModelo": "K 1200 LT"
+      },
+      {
+        "codigoModelo": 3836,
+        "nomeModelo": "K 1200 R"
+      },
+      {
+        "codigoModelo": 2631,
+        "nomeModelo": "K 1200 RS"
+      },
+      {
+        "codigoModelo": 2632,
+        "nomeModelo": "K 1200 S"
+      },
+      {
+        "codigoModelo": 4870,
+        "nomeModelo": "K 1300 GT"
+      },
+      {
+        "codigoModelo": 4871,
+        "nomeModelo": "K 1300 R"
+      },
+      {
+        "codigoModelo": 4872,
+        "nomeModelo": "K 1300 S"
+      },
+      {
+        "codigoModelo": 8187,
+        "nomeModelo": "K 1600 BAGGER"
+      },
+      {
+        "codigoModelo": 5631,
+        "nomeModelo": "K 1600 GT"
+      },
+      {
+        "codigoModelo": 5630,
+        "nomeModelo": "K 1600 GTL"
+      },
+      {
+        "codigoModelo": 6847,
+        "nomeModelo": "K 1600 GTL Exclusive"
+      },
+      {
+        "codigoModelo": 2633,
+        "nomeModelo": "R 1100 GS"
+      },
+      {
+        "codigoModelo": 2634,
+        "nomeModelo": "R 1100 GS-75"
+      },
+      {
+        "codigoModelo": 2635,
+        "nomeModelo": "R 1100 R"
+      },
+      {
+        "codigoModelo": 2636,
+        "nomeModelo": "R 1100 RS"
+      },
+      {
+        "codigoModelo": 2637,
+        "nomeModelo": "R 1100 RT"
+      },
+      {
+        "codigoModelo": 2638,
+        "nomeModelo": "R 1100 S"
+      },
+      {
+        "codigoModelo": 2639,
+        "nomeModelo": "R 1150 GS"
+      },
+      {
+        "codigoModelo": 2640,
+        "nomeModelo": "R 1150 GS Adventure"
+      },
+      {
+        "codigoModelo": 2641,
+        "nomeModelo": "R 1150 R/ R 1150 R Rockster"
+      },
+      {
+        "codigoModelo": 2642,
+        "nomeModelo": "R 1150 RS"
+      },
+      {
+        "codigoModelo": 2643,
+        "nomeModelo": "R 1150 RT"
+      },
+      {
+        "codigoModelo": 11204,
+        "nomeModelo": "R 12"
+      },
+      {
+        "codigoModelo": 11205,
+        "nomeModelo": "R 12 719"
+      },
+      {
+        "codigoModelo": 11206,
+        "nomeModelo": "R 12 Cruiser"
+      },
+      {
+        "codigoModelo": 11896,
+        "nomeModelo": "R 12 GS"
+      },
+      {
+        "codigoModelo": 11897,
+        "nomeModelo": "R 12 GS 719"
+      },
+      {
+        "codigoModelo": 2644,
+        "nomeModelo": "R 1200 C AVANTGARD"
+      },
+      {
+        "codigoModelo": 2645,
+        "nomeModelo": "R 1200 C Classic"
+      },
+      {
+        "codigoModelo": 2646,
+        "nomeModelo": "R 1200 C Independent"
+      },
+      {
+        "codigoModelo": 2647,
+        "nomeModelo": "R 1200 CL"
+      },
+      {
+        "codigoModelo": 2648,
+        "nomeModelo": "R 1200 GS"
+      },
+      {
+        "codigoModelo": 4150,
+        "nomeModelo": "R 1200 GS Adventure"
+      },
+      {
+        "codigoModelo": 8328,
+        "nomeModelo": "R 1200 GS Adventure Exclusive"
+      },
+      {
+        "codigoModelo": 8257,
+        "nomeModelo": "R 1200 GS Adventure RALLYE"
+      },
+      {
+        "codigoModelo": 6333,
+        "nomeModelo": "R 1200 GS Adventure Triple Black"
+      },
+      {
+        "codigoModelo": 8428,
+        "nomeModelo": "R 1200 GS Exclusive"
+      },
+      {
+        "codigoModelo": 4069,
+        "nomeModelo": "R 1200 GS HP2"
+      },
+      {
+        "codigoModelo": 6334,
+        "nomeModelo": "R 1200 GS Rallye"
+      },
+      {
+        "codigoModelo": 6363,
+        "nomeModelo": "R 1200 GS Triple Black"
+      },
+      {
+        "codigoModelo": 6848,
+        "nomeModelo": "R 1200 Nine T"
+      },
+      {
+        "codigoModelo": 5712,
+        "nomeModelo": "R 1200 R/ R Classic"
+      },
+      {
+        "codigoModelo": 2649,
+        "nomeModelo": "R 1200 RT"
+      },
+      {
+        "codigoModelo": 9750,
+        "nomeModelo": "R 1250 GS Adv.Premium Triple Black 719"
+      },
+      {
+        "codigoModelo": 8718,
+        "nomeModelo": "R 1250 GS Adventure Premium"
+      },
+      {
+        "codigoModelo": 9511,
+        "nomeModelo": "R 1250 GS Adventure Premium 40 Anos"
+      },
+      {
+        "codigoModelo": 8719,
+        "nomeModelo": "R 1250 GS Adventure Premium Exclusive"
+      },
+      {
+        "codigoModelo": 8720,
+        "nomeModelo": "R 1250 GS Adventure Premium HP"
+      },
+      {
+        "codigoModelo": 9512,
+        "nomeModelo": "R 1250 GS Adventure Premium Rallye"
+      },
+      {
+        "codigoModelo": 9513,
+        "nomeModelo": "R 1250 GS Adventure Premium Triple Black"
+      },
+      {
+        "codigoModelo": 10385,
+        "nomeModelo": "R 1250 GS Adventure Premium Trophy"
+      },
+      {
+        "codigoModelo": 9781,
+        "nomeModelo": "R 1250 GS Ed. Especial"
+      },
+      {
+        "codigoModelo": 9514,
+        "nomeModelo": "R 1250 GS Premium 40 Anos"
+      },
+      {
+        "codigoModelo": 8721,
+        "nomeModelo": "R 1250 GS Premium Exclusive"
+      },
+      {
+        "codigoModelo": 8722,
+        "nomeModelo": "R 1250 GS Premium HP"
+      },
+      {
+        "codigoModelo": 9515,
+        "nomeModelo": "R 1250 GS Premium Rallye"
+      },
+      {
+        "codigoModelo": 9516,
+        "nomeModelo": "R 1250 GS Premium Triple Black"
+      },
+      {
+        "codigoModelo": 10087,
+        "nomeModelo": "R 1250 GS Premium Triple Black 719"
+      },
+      {
+        "codigoModelo": 10425,
+        "nomeModelo": "R 1250 GS Premium Trophy"
+      },
+      {
+        "codigoModelo": 8723,
+        "nomeModelo": "R 1250 GS Sport"
+      },
+      {
+        "codigoModelo": 9217,
+        "nomeModelo": "R 1250 RT Premium"
+      },
+      {
+        "codigoModelo": 9218,
+        "nomeModelo": "R 1250 RT Premium Spezial"
+      },
+      {
+        "codigoModelo": 11026,
+        "nomeModelo": "R 1300 GS "
+      },
+      {
+        "codigoModelo": 11027,
+        "nomeModelo": "R 1300 GS 719"
+      },
+      {
+        "codigoModelo": 11741,
+        "nomeModelo": "R 1300 GS 719 ASA"
+      },
+      {
+        "codigoModelo": 11442,
+        "nomeModelo": "R 1300 GS Adventure 719"
+      },
+      {
+        "codigoModelo": 11443,
+        "nomeModelo": "R 1300 GS Adventure 719 ASA"
+      },
+      {
+        "codigoModelo": 11444,
+        "nomeModelo": "R 1300 GS Adventure Plus"
+      },
+      {
+        "codigoModelo": 12069,
+        "nomeModelo": "R 1300 GS Adventure Premium 719 ASA"
+      },
+      {
+        "codigoModelo": 12070,
+        "nomeModelo": "R 1300 GS Adventure Premium Triple Black"
+      },
+      {
+        "codigoModelo": 12071,
+        "nomeModelo": "R 1300 GS Adventure Premium Triple Black ASA"
+      },
+      {
+        "codigoModelo": 11445,
+        "nomeModelo": "R 1300 GS Adventure Triple Black"
+      },
+      {
+        "codigoModelo": 11446,
+        "nomeModelo": "R 1300 GS Adventure Triple Black ASA"
+      },
+      {
+        "codigoModelo": 11447,
+        "nomeModelo": "R 1300 GS Adventure Trophy"
+      },
+      {
+        "codigoModelo": 11028,
+        "nomeModelo": "R 1300 GS Plus"
+      },
+      {
+        "codigoModelo": 12072,
+        "nomeModelo": "R 1300 GS Premium 719 ASA"
+      },
+      {
+        "codigoModelo": 12073,
+        "nomeModelo": "R 1300 GS Premium Triple Black"
+      },
+      {
+        "codigoModelo": 12074,
+        "nomeModelo": "R 1300 GS Premium Triple Black ASA"
+      },
+      {
+        "codigoModelo": 12075,
+        "nomeModelo": "R 1300 GS Premium Trophy"
+      },
+      {
+        "codigoModelo": 12076,
+        "nomeModelo": "R 1300 GS Sport"
+      },
+      {
+        "codigoModelo": 11029,
+        "nomeModelo": "R 1300 GS Triple Black"
+      },
+      {
+        "codigoModelo": 11030,
+        "nomeModelo": "R 1300 GS Trophy"
+      },
+      {
+        "codigoModelo": 11742,
+        "nomeModelo": "R 1300 RT 719"
+      },
+      {
+        "codigoModelo": 11743,
+        "nomeModelo": "R 1300 RT 719 ASA"
+      },
+      {
+        "codigoModelo": 11744,
+        "nomeModelo": "R 1300 RT Triple Black"
+      },
+      {
+        "codigoModelo": 11745,
+        "nomeModelo": "R 1300 RT Triple Black ASA"
+      },
+      {
+        "codigoModelo": 10185,
+        "nomeModelo": "R 18"
+      },
+      {
+        "codigoModelo": 10843,
+        "nomeModelo": "R 18 100 Anos"
+      },
+      {
+        "codigoModelo": 6874,
+        "nomeModelo": "S 1000 R"
+      },
+      {
+        "codigoModelo": 5286,
+        "nomeModelo": "S 1000 RR"
+      },
+      {
+        "codigoModelo": 11829,
+        "nomeModelo": "S 1000 RR HP4 Competition"
+      },
+      {
+        "codigoModelo": 11830,
+        "nomeModelo": "S 1000 RR HP4 Street"
+      },
+      {
+        "codigoModelo": 9202,
+        "nomeModelo": "S 1000 RR-M"
+      },
+      {
+        "codigoModelo": 9519,
+        "nomeModelo": "S 1000 RR-M Carbon"
+      },
+      {
+        "codigoModelo": 11525,
+        "nomeModelo": "S 1000 RR-M Package"
+      },
+      {
+        "codigoModelo": 7411,
+        "nomeModelo": "S 1000 XR"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "68",
+    "nomeMarca": "BRANDY",
+    "modelos": [
+      {
+        "codigoModelo": 2650,
+        "nomeModelo": "ELEGANT 50"
+      },
+      {
+        "codigoModelo": 2651,
+        "nomeModelo": "FOSTI 125"
+      },
+      {
+        "codigoModelo": 2652,
+        "nomeModelo": "PISTA 70"
+      },
+      {
+        "codigoModelo": 2653,
+        "nomeModelo": "TURBO PLUS"
+      },
+      {
+        "codigoModelo": 2654,
+        "nomeModelo": "ZANELLA NEW FIRE 50 FULL"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "130",
+    "nomeMarca": "BRAVA",
+    "modelos": [
+      {
+        "codigoModelo": 4359,
+        "nomeModelo": "YB 150T-15 150cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "150",
+    "nomeMarca": "BRP",
+    "modelos": [
+      {
+        "codigoModelo": 10789,
+        "nomeModelo": "can-am Commander MAX DPS 1000R"
+      },
+      {
+        "codigoModelo": 11142,
+        "nomeModelo": "can-am Defen. 976 MAX LTD HD10 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11548,
+        "nomeModelo": "can-am Defen. 976 PRO DPS H10 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 10768,
+        "nomeModelo": "can-am Defender 650 DPS HD7 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11549,
+        "nomeModelo": "can-am Defender 650 HD7 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 10417,
+        "nomeModelo": "can-am Defender 650 MAX HD7 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8758,
+        "nomeModelo": "can-am Defender 800 MAX DPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 10418,
+        "nomeModelo": "can-am Defender 976 MAX DPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 10419,
+        "nomeModelo": "can-am Defender 976 MAX HD9 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11890,
+        "nomeModelo": "can-am Defender 999 MAX LIMITED HD11 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 5262,
+        "nomeModelo": "can-am DS 250 EFI 4X2 Quadr."
+      },
+      {
+        "codigoModelo": 8429,
+        "nomeModelo": "can-am DS 90 4X2 Quadriciclo"
+      },
+      {
+        "codigoModelo": 9308,
+        "nomeModelo": "can-am Maver. X3 MAX XRS TB 900 RR (UTV)"
+      },
+      {
+        "codigoModelo": 9069,
+        "nomeModelo": "can-am Maverick MAX XRS 1000 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11968,
+        "nomeModelo": "can-am Maverick R X 999T DCT (UTV)"
+      },
+      {
+        "codigoModelo": 11143,
+        "nomeModelo": "can-am Maverick R XRS 999T DCT (UTV)"
+      },
+      {
+        "codigoModelo": 9099,
+        "nomeModelo": "can-am Maverick Sport DPS 1000 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8676,
+        "nomeModelo": "can-am Maverick Trail DPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9309,
+        "nomeModelo": "Can-am Maverick X3 MAX DS TB 900 R (UTV)"
+      },
+      {
+        "codigoModelo": 9363,
+        "nomeModelo": "can-am Maverick X3 MAX DS Turbo (UTV)"
+      },
+      {
+        "codigoModelo": 9364,
+        "nomeModelo": "can-am Maverick X3 RS Turbo R(UTV)"
+      },
+      {
+        "codigoModelo": 9236,
+        "nomeModelo": "can-am Maverick X3 XRC 900 TB RR  (UTV)"
+      },
+      {
+        "codigoModelo": 9310,
+        "nomeModelo": "can-am Maverick X3 XRS TB 900 RR (UTV)"
+      },
+      {
+        "codigoModelo": 9566,
+        "nomeModelo": "can-am Oultland. Max LTD 1000R 4x4 Quad."
+      },
+      {
+        "codigoModelo": 6849,
+        "nomeModelo": "can-am Outlander 400 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 9365,
+        "nomeModelo": "can-am Outlander 450 4X4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 8430,
+        "nomeModelo": "can-am Outlander 570 4X4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 7273,
+        "nomeModelo": "can-am Outlander L 450 4X4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 7274,
+        "nomeModelo": "can-am Outlander L 500 4X4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 7641,
+        "nomeModelo": "can-am Outlander L 570 4X4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 7275,
+        "nomeModelo": "can-am Outlander L DPS 500 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7642,
+        "nomeModelo": "can-am Outlander L DPS 570 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7276,
+        "nomeModelo": "can-am Outlander L MAX 450 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7277,
+        "nomeModelo": "can-am Outlander L MAX DPS 500 4X4 Quad."
+      },
+      {
+        "codigoModelo": 7643,
+        "nomeModelo": "can-am Outlander L X MR 570 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7644,
+        "nomeModelo": "can-am Outlander MAX  XT 850 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 6850,
+        "nomeModelo": "can-am Outlander MAX 400 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 8431,
+        "nomeModelo": "can-am Outlander MAX 570 4X4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 11891,
+        "nomeModelo": "can-am Outlander MAX DPS 500 4x4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 8134,
+        "nomeModelo": "can-am Outlander MAX DPS 570 4x4 Quadri."
+      },
+      {
+        "codigoModelo": 6851,
+        "nomeModelo": "can-am Outlander MAX L.1000 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 6852,
+        "nomeModelo": "can-am Outlander MAX XT 400 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 6853,
+        "nomeModelo": "can-am Outlander MAX XT 650 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 11051,
+        "nomeModelo": "can-am Outlander MAX XT 700 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7278,
+        "nomeModelo": "can-am Outlander MAX XT 800R 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7645,
+        "nomeModelo": "can-am Outlander MAX XT-P 1000 4X4 Quad."
+      },
+      {
+        "codigoModelo": 6854,
+        "nomeModelo": "can-am Outlander MAX XT-P 800 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 10082,
+        "nomeModelo": "can-am Outlander X MR 1000/1000R 4X4"
+      },
+      {
+        "codigoModelo": 8432,
+        "nomeModelo": "can-am Outlander X MR 570 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 6856,
+        "nomeModelo": "can-am Outlander X MR 650 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7279,
+        "nomeModelo": "can-am Outlander XT 1000 6X6"
+      },
+      {
+        "codigoModelo": 6857,
+        "nomeModelo": "can-am Outlander XT 650 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 6858,
+        "nomeModelo": "can-am Outlander XT-P 800 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7280,
+        "nomeModelo": "can-am Outlander XT-P1000 4X4 Quadr."
+      },
+      {
+        "codigoModelo": 7328,
+        "nomeModelo": "can-am Spyder 1330 F3-S"
+      },
+      {
+        "codigoModelo": 6944,
+        "nomeModelo": "can-am Spyder 1330 RT-Limited"
+      },
+      {
+        "codigoModelo": 7220,
+        "nomeModelo": "can-am Spyder 1330 RT-S"
+      },
+      {
+        "codigoModelo": 4698,
+        "nomeModelo": "can-am Spyder 990 RS"
+      },
+      {
+        "codigoModelo": 5197,
+        "nomeModelo": "can-am Spyder 990 RS-S"
+      },
+      {
+        "codigoModelo": 5198,
+        "nomeModelo": "can-am Spyder 990 RT Techno"
+      },
+      {
+        "codigoModelo": 5752,
+        "nomeModelo": "can-am Spyder 990 RT-Limited"
+      },
+      {
+        "codigoModelo": 5199,
+        "nomeModelo": "can-am Spyder 990 RT-S"
+      },
+      {
+        "codigoModelo": 6814,
+        "nomeModelo": "can-am Spyder 990 ST-S"
+      },
+      {
+        "codigoModelo": 7820,
+        "nomeModelo": "can-am Spyder Daytona 1330 F3-S"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "117",
+    "nomeMarca": "BUELL",
+    "modelos": [
+      {
+        "codigoModelo": 5012,
+        "nomeModelo": "1125CR"
+      },
+      {
+        "codigoModelo": 4678,
+        "nomeModelo": "1125R"
+      },
+      {
+        "codigoModelo": 4206,
+        "nomeModelo": "FIREBOLT XB12 R"
+      },
+      {
+        "codigoModelo": 3837,
+        "nomeModelo": "LIGHTNING CITY CROSS XB9SX"
+      },
+      {
+        "codigoModelo": 3838,
+        "nomeModelo": "LIGHTNING XB12S"
+      },
+      {
+        "codigoModelo": 4679,
+        "nomeModelo": "LIGHTNING XB12SCG"
+      },
+      {
+        "codigoModelo": 3839,
+        "nomeModelo": "LIGHTNING XB12SS"
+      },
+      {
+        "codigoModelo": 4680,
+        "nomeModelo": "LIGHTNING XB12STT"
+      },
+      {
+        "codigoModelo": 3840,
+        "nomeModelo": "ULYSSES XB12X"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "155",
+    "nomeMarca": "BUENO",
+    "modelos": [
+      {
+        "codigoModelo": 4873,
+        "nomeModelo": "JBr 125e"
+      },
+      {
+        "codigoModelo": 4874,
+        "nomeModelo": "JBr 150e"
+      },
+      {
+        "codigoModelo": 4875,
+        "nomeModelo": "JBr 250e"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "212",
+    "nomeMarca": "BULL",
+    "modelos": [
+      {
+        "codigoModelo": 9410,
+        "nomeModelo": "BM-S 180"
+      },
+      {
+        "codigoModelo": 9411,
+        "nomeModelo": "BM-T180"
+      },
+      {
+        "codigoModelo": 9412,
+        "nomeModelo": "Café Racer B31"
+      },
+      {
+        "codigoModelo": 9413,
+        "nomeModelo": "Ciclo City Veloce 1000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9414,
+        "nomeModelo": "Eko City 1200W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9415,
+        "nomeModelo": "Eko Hunter 2000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9416,
+        "nomeModelo": "Eko Sport 1200W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9419,
+        "nomeModelo": "GTR 250"
+      },
+      {
+        "codigoModelo": 9420,
+        "nomeModelo": "KHRISMA 50"
+      },
+      {
+        "codigoModelo": 9421,
+        "nomeModelo": "KRC F5-LX 50"
+      },
+      {
+        "codigoModelo": 9422,
+        "nomeModelo": "KRC LIV-50"
+      },
+      {
+        "codigoModelo": 9423,
+        "nomeModelo": "MAXX KRC50"
+      },
+      {
+        "codigoModelo": 9424,
+        "nomeModelo": "NOW 125"
+      },
+      {
+        "codigoModelo": 9425,
+        "nomeModelo": "Spirit SE 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "69",
+    "nomeMarca": "byCristo",
+    "modelos": [
+      {
+        "codigoModelo": 2655,
+        "nomeModelo": "Triciclo Star I / Sport"
+      },
+      {
+        "codigoModelo": 2656,
+        "nomeModelo": "Triciclo Star II / Top"
+      },
+      {
+        "codigoModelo": 10131,
+        "nomeModelo": "Triciclo Star II Top / Super Top/Flex"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "70",
+    "nomeMarca": "CAGIVA",
+    "modelos": [
+      {
+        "codigoModelo": 2658,
+        "nomeModelo": "CANYON 500"
+      },
+      {
+        "codigoModelo": 2659,
+        "nomeModelo": "ELEFANT 750"
+      },
+      {
+        "codigoModelo": 2660,
+        "nomeModelo": "ELEFANT 900"
+      },
+      {
+        "codigoModelo": 2661,
+        "nomeModelo": "GRAN CANYON 900"
+      },
+      {
+        "codigoModelo": 2662,
+        "nomeModelo": "MITO 125"
+      },
+      {
+        "codigoModelo": 2663,
+        "nomeModelo": "NAVIGATOR 1000"
+      },
+      {
+        "codigoModelo": 2664,
+        "nomeModelo": "PLANET 125"
+      },
+      {
+        "codigoModelo": 2665,
+        "nomeModelo": "ROADSTER 200cc"
+      },
+      {
+        "codigoModelo": 2666,
+        "nomeModelo": "V-RAPTOR 1000"
+      },
+      {
+        "codigoModelo": 2667,
+        "nomeModelo": "W-16 600cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "71",
+    "nomeMarca": "CALOI",
+    "modelos": [
+      {
+        "codigoModelo": 2668,
+        "nomeModelo": "MOBILETE 50cc"
+      },
+      {
+        "codigoModelo": 2669,
+        "nomeModelo": "MONDO 75cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "266",
+    "nomeMarca": "CFMOTO",
+    "modelos": [
+      {
+        "codigoModelo": 12045,
+        "nomeModelo": "CL- C 450"
+      },
+      {
+        "codigoModelo": 12046,
+        "nomeModelo": "CL- C BOBBER 450"
+      },
+      {
+        "codigoModelo": 12050,
+        "nomeModelo": "IBEX 450"
+      },
+      {
+        "codigoModelo": 12051,
+        "nomeModelo": "IBEX 700"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "72",
+    "nomeMarca": "DAELIM",
+    "modelos": [
+      {
+        "codigoModelo": 2670,
+        "nomeModelo": "ALTINO 100cc"
+      },
+      {
+        "codigoModelo": 2671,
+        "nomeModelo": "MESSAGE 50cc"
+      },
+      {
+        "codigoModelo": 2672,
+        "nomeModelo": "VC 125 ADVANCED"
+      },
+      {
+        "codigoModelo": 2673,
+        "nomeModelo": "VF 125 D"
+      },
+      {
+        "codigoModelo": 2674,
+        "nomeModelo": "VS 125 CUSTOM"
+      },
+      {
+        "codigoModelo": 2675,
+        "nomeModelo": "VT 125 CUSTOM  MAGMA"
+      },
+      {
+        "codigoModelo": 2676,
+        "nomeModelo": "VX 125"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "145",
+    "nomeMarca": "DAFRA",
+    "modelos": [
+      {
+        "codigoModelo": 11935,
+        "nomeModelo": "ADXTG 150cc"
+      },
+      {
+        "codigoModelo": 5200,
+        "nomeModelo": "APACHE 150cc"
+      },
+      {
+        "codigoModelo": 8677,
+        "nomeModelo": "APACHE RTR 200cc"
+      },
+      {
+        "codigoModelo": 7126,
+        "nomeModelo": "CITYCLASS 200i"
+      },
+      {
+        "codigoModelo": 5382,
+        "nomeModelo": "CITYCOM 300i"
+      },
+      {
+        "codigoModelo": 9070,
+        "nomeModelo": "CITYCOM HD 300i"
+      },
+      {
+        "codigoModelo": 7496,
+        "nomeModelo": "CITYCOM S 300i/300i ABS"
+      },
+      {
+        "codigoModelo": 9568,
+        "nomeModelo": "CRUISYM 150"
+      },
+      {
+        "codigoModelo": 10229,
+        "nomeModelo": "CRUISYM 300 "
+      },
+      {
+        "codigoModelo": 7675,
+        "nomeModelo": "FIDDLE III 125"
+      },
+      {
+        "codigoModelo": 7381,
+        "nomeModelo": "HORIZON 150"
+      },
+      {
+        "codigoModelo": 6494,
+        "nomeModelo": "HORIZON 250"
+      },
+      {
+        "codigoModelo": 11387,
+        "nomeModelo": "JOYRIDE 300 "
+      },
+      {
+        "codigoModelo": 4588,
+        "nomeModelo": "KANSAS 150"
+      },
+      {
+        "codigoModelo": 4910,
+        "nomeModelo": "KANSAS 250"
+      },
+      {
+        "codigoModelo": 4589,
+        "nomeModelo": "LASER 150"
+      },
+      {
+        "codigoModelo": 11567,
+        "nomeModelo": "MAXSYM 400 GT"
+      },
+      {
+        "codigoModelo": 6815,
+        "nomeModelo": "MAXSYM 400i"
+      },
+      {
+        "codigoModelo": 5984,
+        "nomeModelo": "NEXT 250cc"
+      },
+      {
+        "codigoModelo": 8375,
+        "nomeModelo": "NEXT 300cc"
+      },
+      {
+        "codigoModelo": 8973,
+        "nomeModelo": "NH 190"
+      },
+      {
+        "codigoModelo": 10643,
+        "nomeModelo": "NH 300"
+      },
+      {
+        "codigoModelo": 11308,
+        "nomeModelo": "NHX 190"
+      },
+      {
+        "codigoModelo": 5753,
+        "nomeModelo": "RIVA 150cc"
+      },
+      {
+        "codigoModelo": 6364,
+        "nomeModelo": "RIVA Cargo 150cc"
+      },
+      {
+        "codigoModelo": 5754,
+        "nomeModelo": "ROADWIN 250R"
+      },
+      {
+        "codigoModelo": 5119,
+        "nomeModelo": "SMART 125cc"
+      },
+      {
+        "codigoModelo": 9155,
+        "nomeModelo": "SPEED  Cargo 150"
+      },
+      {
+        "codigoModelo": 4590,
+        "nomeModelo": "SPEED 150"
+      },
+      {
+        "codigoModelo": 4591,
+        "nomeModelo": "SUPER 100"
+      },
+      {
+        "codigoModelo": 5383,
+        "nomeModelo": "SUPER 50"
+      },
+      {
+        "codigoModelo": 5120,
+        "nomeModelo": "ZIG 100"
+      },
+      {
+        "codigoModelo": 5587,
+        "nomeModelo": "ZIG 100+"
+      },
+      {
+        "codigoModelo": 5657,
+        "nomeModelo": "ZIG 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "137",
+    "nomeMarca": "DAYANG",
+    "modelos": [
+      {
+        "codigoModelo": 4784,
+        "nomeModelo": "DY100-31"
+      },
+      {
+        "codigoModelo": 4452,
+        "nomeModelo": "DY110-20"
+      },
+      {
+        "codigoModelo": 6816,
+        "nomeModelo": "DY125 SPRINT"
+      },
+      {
+        "codigoModelo": 4785,
+        "nomeModelo": "DY125-18"
+      },
+      {
+        "codigoModelo": 5049,
+        "nomeModelo": "DY125-36A"
+      },
+      {
+        "codigoModelo": 4707,
+        "nomeModelo": "DY125-37"
+      },
+      {
+        "codigoModelo": 5050,
+        "nomeModelo": "DY125-5"
+      },
+      {
+        "codigoModelo": 4786,
+        "nomeModelo": "DY125-52"
+      },
+      {
+        "codigoModelo": 4651,
+        "nomeModelo": "DY150-12"
+      },
+      {
+        "codigoModelo": 6817,
+        "nomeModelo": "DY150-28 THOR"
+      },
+      {
+        "codigoModelo": 6132,
+        "nomeModelo": "DY150-58 EAGLE/COPA"
+      },
+      {
+        "codigoModelo": 4453,
+        "nomeModelo": "DY200"
+      },
+      {
+        "codigoModelo": 6655,
+        "nomeModelo": "DY200 REV"
+      },
+      {
+        "codigoModelo": 6674,
+        "nomeModelo": "DY200 THOR"
+      },
+      {
+        "codigoModelo": 6656,
+        "nomeModelo": "DY250 REV"
+      },
+      {
+        "codigoModelo": 6675,
+        "nomeModelo": "DY250 THOR"
+      },
+      {
+        "codigoModelo": 6133,
+        "nomeModelo": "DY50 JOB"
+      },
+      {
+        "codigoModelo": 6134,
+        "nomeModelo": "DY50 WARRIOR"
+      },
+      {
+        "codigoModelo": 7239,
+        "nomeModelo": "THOR 230"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "142",
+    "nomeMarca": "DAYUN",
+    "modelos": [
+      {
+        "codigoModelo": 4537,
+        "nomeModelo": "DY110-6"
+      },
+      {
+        "codigoModelo": 4538,
+        "nomeModelo": "DY125-8"
+      },
+      {
+        "codigoModelo": 4539,
+        "nomeModelo": "DY125T-10"
+      },
+      {
+        "codigoModelo": 4540,
+        "nomeModelo": "DY150-7"
+      },
+      {
+        "codigoModelo": 4541,
+        "nomeModelo": "DY150-9"
+      },
+      {
+        "codigoModelo": 4542,
+        "nomeModelo": "DY150GY"
+      },
+      {
+        "codigoModelo": 4543,
+        "nomeModelo": "DY150ZH   (triciclo carga)"
+      },
+      {
+        "codigoModelo": 5152,
+        "nomeModelo": "DY200ZH  (triciclo carga)"
+      },
+      {
+        "codigoModelo": 4544,
+        "nomeModelo": "DY250-2"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "73",
+    "nomeMarca": "DERBI",
+    "modelos": [
+      {
+        "codigoModelo": 2677,
+        "nomeModelo": "ATLANTIS 49cc"
+      },
+      {
+        "codigoModelo": 2678,
+        "nomeModelo": "GPR 50R 49cc"
+      },
+      {
+        "codigoModelo": 2679,
+        "nomeModelo": "PREDATOR AR 49cc"
+      },
+      {
+        "codigoModelo": 2680,
+        "nomeModelo": "PREDATOR LC 49cc"
+      },
+      {
+        "codigoModelo": 2681,
+        "nomeModelo": "RED BULLET 49cc"
+      },
+      {
+        "codigoModelo": 2682,
+        "nomeModelo": "REPLICAS 49cc"
+      },
+      {
+        "codigoModelo": 2683,
+        "nomeModelo": "SENDA R 49cc"
+      },
+      {
+        "codigoModelo": 2684,
+        "nomeModelo": "SENDA SM 49cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "74",
+    "nomeMarca": "DUCATI",
+    "modelos": [
+      {
+        "codigoModelo": 4545,
+        "nomeModelo": "1098 1099cc"
+      },
+      {
+        "codigoModelo": 4546,
+        "nomeModelo": "1098 S 1099cc"
+      },
+      {
+        "codigoModelo": 5092,
+        "nomeModelo": "1198 1198cc"
+      },
+      {
+        "codigoModelo": 5093,
+        "nomeModelo": "1198 S 1198cc"
+      },
+      {
+        "codigoModelo": 5539,
+        "nomeModelo": "1198 SP 1198cc"
+      },
+      {
+        "codigoModelo": 6495,
+        "nomeModelo": "1199 Panigale"
+      },
+      {
+        "codigoModelo": 6496,
+        "nomeModelo": "1199 Panigale R"
+      },
+      {
+        "codigoModelo": 6497,
+        "nomeModelo": "1199 Panigale S"
+      },
+      {
+        "codigoModelo": 6945,
+        "nomeModelo": "1199 Panigale S Senna"
+      },
+      {
+        "codigoModelo": 6498,
+        "nomeModelo": "1199 Panigale S Tricolore"
+      },
+      {
+        "codigoModelo": 7052,
+        "nomeModelo": "1199 Superleggera"
+      },
+      {
+        "codigoModelo": 7567,
+        "nomeModelo": "1299 Panigale"
+      },
+      {
+        "codigoModelo": 7568,
+        "nomeModelo": "1299 Panigale S"
+      },
+      {
+        "codigoModelo": 2685,
+        "nomeModelo": "749"
+      },
+      {
+        "codigoModelo": 4170,
+        "nomeModelo": "749 Dark  748cc"
+      },
+      {
+        "codigoModelo": 4911,
+        "nomeModelo": "848"
+      },
+      {
+        "codigoModelo": 5540,
+        "nomeModelo": "848 Evo"
+      },
+      {
+        "codigoModelo": 7861,
+        "nomeModelo": "959 Panigale"
+      },
+      {
+        "codigoModelo": 2686,
+        "nomeModelo": "996"
+      },
+      {
+        "codigoModelo": 2687,
+        "nomeModelo": "996 S"
+      },
+      {
+        "codigoModelo": 2688,
+        "nomeModelo": "998 997cc"
+      },
+      {
+        "codigoModelo": 2689,
+        "nomeModelo": "999 998cc"
+      },
+      {
+        "codigoModelo": 4171,
+        "nomeModelo": "999R Xerox 999cc"
+      },
+      {
+        "codigoModelo": 10769,
+        "nomeModelo": "DESERT X"
+      },
+      {
+        "codigoModelo": 5013,
+        "nomeModelo": "DESMOSEDICI 16RR 200cv"
+      },
+      {
+        "codigoModelo": 5541,
+        "nomeModelo": "DIAVEL 1198"
+      },
+      {
+        "codigoModelo": 6897,
+        "nomeModelo": "DIAVEL 1198 Black"
+      },
+      {
+        "codigoModelo": 5632,
+        "nomeModelo": "DIAVEL 1198 Carbon"
+      },
+      {
+        "codigoModelo": 6499,
+        "nomeModelo": "DIAVEL 1198 Cromo"
+      },
+      {
+        "codigoModelo": 6898,
+        "nomeModelo": "DIAVEL 1198 Dark"
+      },
+      {
+        "codigoModelo": 8974,
+        "nomeModelo": "DIAVEL 1260 S"
+      },
+      {
+        "codigoModelo": 11113,
+        "nomeModelo": "DIAVEL V4 1158"
+      },
+      {
+        "codigoModelo": 5542,
+        "nomeModelo": "HYPERMOTARD 1100 EVO 1078cc"
+      },
+      {
+        "codigoModelo": 5543,
+        "nomeModelo": "HYPERMOTARD 1100 EVO SP 1078cc"
+      },
+      {
+        "codigoModelo": 11439,
+        "nomeModelo": "HYPERMOTARD 698 REV"
+      },
+      {
+        "codigoModelo": 5222,
+        "nomeModelo": "HYPERMOTARD 796"
+      },
+      {
+        "codigoModelo": 6818,
+        "nomeModelo": "HYPERMOTARD 821"
+      },
+      {
+        "codigoModelo": 6819,
+        "nomeModelo": "HYPERMOTARD 821 SP"
+      },
+      {
+        "codigoModelo": 6899,
+        "nomeModelo": "HYPERSTRADA 821"
+      },
+      {
+        "codigoModelo": 5544,
+        "nomeModelo": "MONSTER 1100 S 1078cc"
+      },
+      {
+        "codigoModelo": 5121,
+        "nomeModelo": "MONSTER 1100cc"
+      },
+      {
+        "codigoModelo": 7240,
+        "nomeModelo": "MONSTER 1200"
+      },
+      {
+        "codigoModelo": 7241,
+        "nomeModelo": "MONSTER 1200 S"
+      },
+      {
+        "codigoModelo": 2690,
+        "nomeModelo": "MONSTER 600cc"
+      },
+      {
+        "codigoModelo": 2691,
+        "nomeModelo": "MONSTER 620cc"
+      },
+      {
+        "codigoModelo": 4128,
+        "nomeModelo": "MONSTER 695cc"
+      },
+      {
+        "codigoModelo": 5094,
+        "nomeModelo": "MONSTER 696cc"
+      },
+      {
+        "codigoModelo": 6500,
+        "nomeModelo": "MONSTER 796"
+      },
+      {
+        "codigoModelo": 8376,
+        "nomeModelo": "MONSTER 797"
+      },
+      {
+        "codigoModelo": 7281,
+        "nomeModelo": "MONSTER 821"
+      },
+      {
+        "codigoModelo": 7569,
+        "nomeModelo": "MONSTER 821 Dark"
+      },
+      {
+        "codigoModelo": 2692,
+        "nomeModelo": "MONSTER 900cc"
+      },
+      {
+        "codigoModelo": 10086,
+        "nomeModelo": "MONSTER 937cc"
+      },
+      {
+        "codigoModelo": 4172,
+        "nomeModelo": "MONSTER S2-R 1000  992cc"
+      },
+      {
+        "codigoModelo": 2693,
+        "nomeModelo": "MONSTER S4 916"
+      },
+      {
+        "codigoModelo": 2694,
+        "nomeModelo": "MONSTER S4-R 996"
+      },
+      {
+        "codigoModelo": 4173,
+        "nomeModelo": "MONSTER S4-RS Testastretta 998cc"
+      },
+      {
+        "codigoModelo": 2695,
+        "nomeModelo": "MULTISTRADA 1000 992cc"
+      },
+      {
+        "codigoModelo": 4547,
+        "nomeModelo": "MULTISTRADA 1100 1078cc"
+      },
+      {
+        "codigoModelo": 11054,
+        "nomeModelo": "MULTISTRADA 1160 V4 Rally"
+      },
+      {
+        "codigoModelo": 9779,
+        "nomeModelo": "MULTISTRADA 1160 V4S"
+      },
+      {
+        "codigoModelo": 5460,
+        "nomeModelo": "MULTISTRADA 1200 1198cc"
+      },
+      {
+        "codigoModelo": 7783,
+        "nomeModelo": "MULTISTRADA 1200 Enduro"
+      },
+      {
+        "codigoModelo": 8258,
+        "nomeModelo": "MULTISTRADA 1200 Enduro Limited Edition"
+      },
+      {
+        "codigoModelo": 5545,
+        "nomeModelo": "MULTISTRADA 1200 S  Touring 1198cc"
+      },
+      {
+        "codigoModelo": 5461,
+        "nomeModelo": "MULTISTRADA 1200 S 1198cc"
+      },
+      {
+        "codigoModelo": 6501,
+        "nomeModelo": "MULTISTRADA 1200 S Pikes Peak"
+      },
+      {
+        "codigoModelo": 8537,
+        "nomeModelo": "MULTISTRADA 1260"
+      },
+      {
+        "codigoModelo": 8538,
+        "nomeModelo": "MULTISTRADA 1260 S"
+      },
+      {
+        "codigoModelo": 4174,
+        "nomeModelo": "MULTISTRADA 620  618cc"
+      },
+      {
+        "codigoModelo": 8156,
+        "nomeModelo": "MULTISTRADA 950"
+      },
+      {
+        "codigoModelo": 9219,
+        "nomeModelo": "MULTISTRADA 950 S"
+      },
+      {
+        "codigoModelo": 10617,
+        "nomeModelo": "MULTISTRADA V2S"
+      },
+      {
+        "codigoModelo": 11740,
+        "nomeModelo": "PANIGALE V4 "
+      },
+      {
+        "codigoModelo": 8998,
+        "nomeModelo": "PANIGALE V4 R"
+      },
+      {
+        "codigoModelo": 8878,
+        "nomeModelo": "PANIGALE V4 S"
+      },
+      {
+        "codigoModelo": 7570,
+        "nomeModelo": "SCRAMBLER CLASSIC 800cc"
+      },
+      {
+        "codigoModelo": 8259,
+        "nomeModelo": "SCRAMBLER CUSTOM 800cc"
+      },
+      {
+        "codigoModelo": 7571,
+        "nomeModelo": "SCRAMBLER FULL THROTTLER 800cc"
+      },
+      {
+        "codigoModelo": 7382,
+        "nomeModelo": "SCRAMBLER ICON 800cc"
+      },
+      {
+        "codigoModelo": 7572,
+        "nomeModelo": "SCRAMBLER URBAN ENDURO 800cc"
+      },
+      {
+        "codigoModelo": 4175,
+        "nomeModelo": "SPORTCLASSIC  PAULSMART 1000LE  992cc"
+      },
+      {
+        "codigoModelo": 4176,
+        "nomeModelo": "SPORTCLASSIC SPORT 1000  992cc"
+      },
+      {
+        "codigoModelo": 2696,
+        "nomeModelo": "SS 900cc"
+      },
+      {
+        "codigoModelo": 2697,
+        "nomeModelo": "ST-2 900/ 944cc"
+      },
+      {
+        "codigoModelo": 2698,
+        "nomeModelo": "ST-4 900/ 996cc"
+      },
+      {
+        "codigoModelo": 5161,
+        "nomeModelo": "STREETFIGHTER 1098cc"
+      },
+      {
+        "codigoModelo": 6502,
+        "nomeModelo": "STREETFIGHTER 848"
+      },
+      {
+        "codigoModelo": 9673,
+        "nomeModelo": "STREETFIGHTER V4 S 1103cc"
+      },
+      {
+        "codigoModelo": 8489,
+        "nomeModelo": "SUPER SPORT S 937cc"
+      },
+      {
+        "codigoModelo": 7784,
+        "nomeModelo": "XDIAVEL 1262"
+      },
+      {
+        "codigoModelo": 8305,
+        "nomeModelo": "XDIAVEL DARK 1262"
+      },
+      {
+        "codigoModelo": 7785,
+        "nomeModelo": "XDIAVEL S 1262"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "75",
+    "nomeMarca": "EMME",
+    "modelos": [
+      {
+        "codigoModelo": 2699,
+        "nomeModelo": "MIRAGE 50cc"
+      },
+      {
+        "codigoModelo": 2700,
+        "nomeModelo": "ONE 50cc"
+      },
+      {
+        "codigoModelo": 2701,
+        "nomeModelo": "ONE RACING 50cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "248",
+    "nomeMarca": "FEVER",
+    "modelos": [
+      {
+        "codigoModelo": 11285,
+        "nomeModelo": "FR110 BOX (Elétrica)"
+      },
+      {
+        "codigoModelo": 10976,
+        "nomeModelo": "FR150 FRIGO (Elétrica)"
+      },
+      {
+        "codigoModelo": 10977,
+        "nomeModelo": "FR250 BOX (Elétrica)"
+      },
+      {
+        "codigoModelo": 10978,
+        "nomeModelo": "FR250 CAGE (Elétrica)"
+      },
+      {
+        "codigoModelo": 10979,
+        "nomeModelo": "FR250 PET (Elétrica)"
+      },
+      {
+        "codigoModelo": 10980,
+        "nomeModelo": "FR250 PICK-UP (Elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "132",
+    "nomeMarca": "FOX",
+    "modelos": [
+      {
+        "codigoModelo": 4364,
+        "nomeModelo": "150T-3 Adventure"
+      },
+      {
+        "codigoModelo": 4365,
+        "nomeModelo": "250T-10 Elite"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "209",
+    "nomeMarca": "FUSCO MOTOSEGURA",
+    "modelos": [
+      {
+        "codigoModelo": 8377,
+        "nomeModelo": "CARGA Baú 125cc"
+      },
+      {
+        "codigoModelo": 8378,
+        "nomeModelo": "CARGA Baú 160cc"
+      },
+      {
+        "codigoModelo": 8379,
+        "nomeModelo": "CARGA Caçamba 125cc"
+      },
+      {
+        "codigoModelo": 8380,
+        "nomeModelo": "CARGA Caçamba 160cc"
+      },
+      {
+        "codigoModelo": 8381,
+        "nomeModelo": "CARGA Gás 160cc"
+      },
+      {
+        "codigoModelo": 10845,
+        "nomeModelo": "Wit Baú 4500W Convercional (Elétrico)"
+      },
+      {
+        "codigoModelo": 10846,
+        "nomeModelo": "Wit Caçamba 4500W (Elétrico)"
+      },
+      {
+        "codigoModelo": 10847,
+        "nomeModelo": "Wit Gás 4500W (Elétrico)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "128",
+    "nomeMarca": "FYM",
+    "modelos": [
+      {
+        "codigoModelo": 4278,
+        "nomeModelo": "FY100-10A 100cc"
+      },
+      {
+        "codigoModelo": 4279,
+        "nomeModelo": "FY125-19 125cc"
+      },
+      {
+        "codigoModelo": 4280,
+        "nomeModelo": "FY125-20 Sachs 125cc"
+      },
+      {
+        "codigoModelo": 4281,
+        "nomeModelo": "FY125EY-2 125cc"
+      },
+      {
+        "codigoModelo": 4282,
+        "nomeModelo": "FY125Y-3 125cc"
+      },
+      {
+        "codigoModelo": 4283,
+        "nomeModelo": "FY150-3 150cc"
+      },
+      {
+        "codigoModelo": 4445,
+        "nomeModelo": "FY150T-18 150cc"
+      },
+      {
+        "codigoModelo": 4284,
+        "nomeModelo": "FY250 250cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "143",
+    "nomeMarca": "GARINNI",
+    "modelos": [
+      {
+        "codigoModelo": 4548,
+        "nomeModelo": "GR08T4"
+      },
+      {
+        "codigoModelo": 5287,
+        "nomeModelo": "GR125S"
+      },
+      {
+        "codigoModelo": 4738,
+        "nomeModelo": "GR125ST"
+      },
+      {
+        "codigoModelo": 4549,
+        "nomeModelo": "GR125T3"
+      },
+      {
+        "codigoModelo": 4550,
+        "nomeModelo": "GR125U"
+      },
+      {
+        "codigoModelo": 4551,
+        "nomeModelo": "GR125Z"
+      },
+      {
+        "codigoModelo": 4552,
+        "nomeModelo": "GR150P/ GR150PI"
+      },
+      {
+        "codigoModelo": 4739,
+        "nomeModelo": "GR150ST"
+      },
+      {
+        "codigoModelo": 4553,
+        "nomeModelo": "GR150T3/ GR150TI"
+      },
+      {
+        "codigoModelo": 4554,
+        "nomeModelo": "GR150U"
+      },
+      {
+        "codigoModelo": 4787,
+        "nomeModelo": "GR250T3"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "76",
+    "nomeMarca": "GAS GAS",
+    "modelos": [
+      {
+        "codigoModelo": 2702,
+        "nomeModelo": "EC 125 ENDUCROSS"
+      },
+      {
+        "codigoModelo": 2703,
+        "nomeModelo": "EC 200 ENDUCROSS"
+      },
+      {
+        "codigoModelo": 2704,
+        "nomeModelo": "EC 250 ENDUCROSS"
+      },
+      {
+        "codigoModelo": 2705,
+        "nomeModelo": "EC 300 ENDUCROSS"
+      },
+      {
+        "codigoModelo": 2706,
+        "nomeModelo": "EC 400 FSE ENDUCROSS"
+      },
+      {
+        "codigoModelo": 4151,
+        "nomeModelo": "EC 450/ FSE/ FSR ENDUCROSS"
+      },
+      {
+        "codigoModelo": 2707,
+        "nomeModelo": "EC 50 ROOKIE  ENDURO"
+      },
+      {
+        "codigoModelo": 2708,
+        "nomeModelo": "EC BOY 50"
+      },
+      {
+        "codigoModelo": 2709,
+        "nomeModelo": "MC 250"
+      },
+      {
+        "codigoModelo": 2710,
+        "nomeModelo": "PAMPERA 125cc"
+      },
+      {
+        "codigoModelo": 2711,
+        "nomeModelo": "PAMPERA 250cc"
+      },
+      {
+        "codigoModelo": 2712,
+        "nomeModelo": "TX BOY 50"
+      },
+      {
+        "codigoModelo": 2713,
+        "nomeModelo": "TXT 200 CONTACT"
+      },
+      {
+        "codigoModelo": 2714,
+        "nomeModelo": "TXT 280 CONTACT"
+      },
+      {
+        "codigoModelo": 2715,
+        "nomeModelo": "TXT 321 CONTACT"
+      },
+      {
+        "codigoModelo": 2716,
+        "nomeModelo": "TXT 50 ROOKIE"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "133",
+    "nomeMarca": "GREEN",
+    "modelos": [
+      {
+        "codigoModelo": 4366,
+        "nomeModelo": "EASY 110cc"
+      },
+      {
+        "codigoModelo": 4367,
+        "nomeModelo": "RUNNER 125cc"
+      },
+      {
+        "codigoModelo": 4368,
+        "nomeModelo": "SAFARI 150cc"
+      },
+      {
+        "codigoModelo": 4369,
+        "nomeModelo": "SPORT 150cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "138",
+    "nomeMarca": "HAOBAO",
+    "modelos": [
+      {
+        "codigoModelo": 5588,
+        "nomeModelo": "HB 50Q"
+      },
+      {
+        "codigoModelo": 4454,
+        "nomeModelo": "HB110-3"
+      },
+      {
+        "codigoModelo": 4455,
+        "nomeModelo": "HB125-9 FEARFULSPEED"
+      },
+      {
+        "codigoModelo": 4756,
+        "nomeModelo": "HB150"
+      },
+      {
+        "codigoModelo": 4456,
+        "nomeModelo": "HB150-T R5 FEARFULSPEED"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "203",
+    "nomeMarca": "HAOJUE",
+    "modelos": [
+      {
+        "codigoModelo": 12062,
+        "nomeModelo": "BURGMAN ADX 125"
+      },
+      {
+        "codigoModelo": 7929,
+        "nomeModelo": "CHOPPER ROAD 150"
+      },
+      {
+        "codigoModelo": 8188,
+        "nomeModelo": "DK 150"
+      },
+      {
+        "codigoModelo": 8799,
+        "nomeModelo": "DK 150 S"
+      },
+      {
+        "codigoModelo": 10147,
+        "nomeModelo": "DK 160"
+      },
+      {
+        "codigoModelo": 11434,
+        "nomeModelo": "DK 160 S"
+      },
+      {
+        "codigoModelo": 11474,
+        "nomeModelo": "DL 160"
+      },
+      {
+        "codigoModelo": 9071,
+        "nomeModelo": "DR 160"
+      },
+      {
+        "codigoModelo": 11435,
+        "nomeModelo": "DR 160 S"
+      },
+      {
+        "codigoModelo": 7930,
+        "nomeModelo": "LINDY 125"
+      },
+      {
+        "codigoModelo": 9626,
+        "nomeModelo": "MASTER RIDE 150"
+      },
+      {
+        "codigoModelo": 7931,
+        "nomeModelo": "NEX 110"
+      },
+      {
+        "codigoModelo": 8975,
+        "nomeModelo": "NEX 115"
+      },
+      {
+        "codigoModelo": 9780,
+        "nomeModelo": "NK 150"
+      },
+      {
+        "codigoModelo": 12068,
+        "nomeModelo": "NK 160"
+      },
+      {
+        "codigoModelo": 9029,
+        "nomeModelo": "VR 150"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "77",
+    "nomeMarca": "HARLEY-DAVIDSON",
+    "modelos": [
+      {
+        "codigoModelo": 5758,
+        "nomeModelo": "BLACKLINE FXS"
+      },
+      {
+        "codigoModelo": 11383,
+        "nomeModelo": "BREAKOUT FXBR"
+      },
+      {
+        "codigoModelo": 6900,
+        "nomeModelo": "CVO BREAKOUT FXSBSE"
+      },
+      {
+        "codigoModelo": 8157,
+        "nomeModelo": "CVO LIMITED 115th ANNIVERSA. FLHTKSE ANV"
+      },
+      {
+        "codigoModelo": 6901,
+        "nomeModelo": "CVO LIMITED FLHTKSE"
+      },
+      {
+        "codigoModelo": 10611,
+        "nomeModelo": "CVO ROAD GLIDE 120th ANNIVERSARY FLTRXSE"
+      },
+      {
+        "codigoModelo": 8135,
+        "nomeModelo": "CVO ROAD GLIDE FLTRXSE"
+      },
+      {
+        "codigoModelo": 11384,
+        "nomeModelo": "CVO ROAD GLIDE ST FLTRXSTSE"
+      },
+      {
+        "codigoModelo": 9841,
+        "nomeModelo": "CVO ROAD LIMITED FLTRKSE"
+      },
+      {
+        "codigoModelo": 7053,
+        "nomeModelo": "CVO STREET GLIDE FLHXSE"
+      },
+      {
+        "codigoModelo": 11864,
+        "nomeModelo": "CVO STREET GLIDE LIMITED FLHXLSE"
+      },
+      {
+        "codigoModelo": 5755,
+        "nomeModelo": "CVO ULTRA CLAS. ELECTRA GLIDE FLHTCUSE7"
+      },
+      {
+        "codigoModelo": 2717,
+        "nomeModelo": "DEUCE"
+      },
+      {
+        "codigoModelo": 2718,
+        "nomeModelo": "DYNA CONVERTIBLE"
+      },
+      {
+        "codigoModelo": 2719,
+        "nomeModelo": "DYNA LOW RIDER"
+      },
+      {
+        "codigoModelo": 2720,
+        "nomeModelo": "DYNA LOW RIDER CONVERTIBLE"
+      },
+      {
+        "codigoModelo": 2721,
+        "nomeModelo": "DYNA SUPER GLIDE"
+      },
+      {
+        "codigoModelo": 4652,
+        "nomeModelo": "DYNA SUPER GLIDE CUSTOM"
+      },
+      {
+        "codigoModelo": 6408,
+        "nomeModelo": "DYNA SUPER GLIDE CUSTOM 110 th EDITION"
+      },
+      {
+        "codigoModelo": 2722,
+        "nomeModelo": "DYNA WIDE GLIDE"
+      },
+      {
+        "codigoModelo": 2723,
+        "nomeModelo": "EG ROAD KING FUEL INJECTION"
+      },
+      {
+        "codigoModelo": 2724,
+        "nomeModelo": "ELECTRA GLIDE CLASSIC FLHTC/ FLHTCI"
+      },
+      {
+        "codigoModelo": 2725,
+        "nomeModelo": "ELECTRA GLIDE FLHT"
+      },
+      {
+        "codigoModelo": 2726,
+        "nomeModelo": "ELECTRA GLIDE SCREAMING EAGLE"
+      },
+      {
+        "codigoModelo": 2727,
+        "nomeModelo": "ELECTRA GLIDE SPECIAL 1450cc"
+      },
+      {
+        "codigoModelo": 4555,
+        "nomeModelo": "ELECTRA GLIDE ULTRA CLAS. S.EAGLE FLHTCU"
+      },
+      {
+        "codigoModelo": 2729,
+        "nomeModelo": "ELECTRA GLIDE ULTRA CLASSIC"
+      },
+      {
+        "codigoModelo": 2728,
+        "nomeModelo": "ELECTRA GLIDE ULTRA FUEL INJECTION"
+      },
+      {
+        "codigoModelo": 6409,
+        "nomeModelo": "ELECTRA GLIDE ULTRA LIMIT. 110th EDITION"
+      },
+      {
+        "codigoModelo": 5761,
+        "nomeModelo": "ELECTRA GLIDE ULTRA LIMITED FLHTK"
+      },
+      {
+        "codigoModelo": 5756,
+        "nomeModelo": "FAT BOB FXDF"
+      },
+      {
+        "codigoModelo": 8136,
+        "nomeModelo": "FAT BOB FXFB"
+      },
+      {
+        "codigoModelo": 8137,
+        "nomeModelo": "FAT BOB FXFBS"
+      },
+      {
+        "codigoModelo": 8158,
+        "nomeModelo": "FAT BOY 115th ANNIVERSARY FLFBS"
+      },
+      {
+        "codigoModelo": 10613,
+        "nomeModelo": "FAT BOY 120th ANNIVERSARY FLFBS"
+      },
+      {
+        "codigoModelo": 8159,
+        "nomeModelo": "FAT BOY FLFB"
+      },
+      {
+        "codigoModelo": 8138,
+        "nomeModelo": "FAT BOY FLFBS"
+      },
+      {
+        "codigoModelo": 2730,
+        "nomeModelo": "FAT BOY FLSTF"
+      },
+      {
+        "codigoModelo": 11556,
+        "nomeModelo": "FAT BOY ICON FLSTFI"
+      },
+      {
+        "codigoModelo": 5288,
+        "nomeModelo": "FAT BOY LOW/ SPECIAL FLSTFB"
+      },
+      {
+        "codigoModelo": 2731,
+        "nomeModelo": "FAT BOY SCREAMING EAGLE"
+      },
+      {
+        "codigoModelo": 6410,
+        "nomeModelo": "FAT BOY SPECIAL 110th EDITION"
+      },
+      {
+        "codigoModelo": 2732,
+        "nomeModelo": "FLHTCU ULTRA GLIDE"
+      },
+      {
+        "codigoModelo": 2733,
+        "nomeModelo": "FLHTCUI ULTRA CLASSIC"
+      },
+      {
+        "codigoModelo": 10614,
+        "nomeModelo": "HERITAGE CLASSIC 120th ANNIVERSARY FLHCS"
+      },
+      {
+        "codigoModelo": 8160,
+        "nomeModelo": "HERITAGE CLASSIC FLHC/FLHCS"
+      },
+      {
+        "codigoModelo": 3940,
+        "nomeModelo": "HERITAGE CUSTOM 1450/ 1600cc"
+      },
+      {
+        "codigoModelo": 6411,
+        "nomeModelo": "HERITAGE SOFTAIL CLASSIC 110 th Edition"
+      },
+      {
+        "codigoModelo": 2734,
+        "nomeModelo": "HERITAGE SOFTAIL CLASSIC FLSTC"
+      },
+      {
+        "codigoModelo": 2735,
+        "nomeModelo": "HERITAGE SPRINGER"
+      },
+      {
+        "codigoModelo": 7054,
+        "nomeModelo": "LOW RIDER FXDL"
+      },
+      {
+        "codigoModelo": 10615,
+        "nomeModelo": "LOW RIDER S FXLRS"
+      },
+      {
+        "codigoModelo": 10616,
+        "nomeModelo": "LOW RIDER ST FXLRST"
+      },
+      {
+        "codigoModelo": 4556,
+        "nomeModelo": "NIGHT ROD SPECIAL 1250 VRSCDX"
+      },
+      {
+        "codigoModelo": 2736,
+        "nomeModelo": "NIGHT TRAIN"
+      },
+      {
+        "codigoModelo": 10618,
+        "nomeModelo": "NIGHTSTER SPECIAL"
+      },
+      {
+        "codigoModelo": 9843,
+        "nomeModelo": "PAN AMERICA 1250 SPECIAL"
+      },
+      {
+        "codigoModelo": 11056,
+        "nomeModelo": "ROAD GLIDE FLTRX"
+      },
+      {
+        "codigoModelo": 8879,
+        "nomeModelo": "ROAD GLIDE LIMITED FLTRK"
+      },
+      {
+        "codigoModelo": 11869,
+        "nomeModelo": "ROAD GLIDE LIMITED FLTRXL"
+      },
+      {
+        "codigoModelo": 10620,
+        "nomeModelo": "ROAD GLIDE SPECIAL 120th ANNIV FLTRXS"
+      },
+      {
+        "codigoModelo": 8139,
+        "nomeModelo": "ROAD GLIDE SPECIAL FLTRXS"
+      },
+      {
+        "codigoModelo": 8140,
+        "nomeModelo": "ROAD GLIDE ULTRA FLTRU"
+      },
+      {
+        "codigoModelo": 2737,
+        "nomeModelo": "ROAD KING"
+      },
+      {
+        "codigoModelo": 2738,
+        "nomeModelo": "ROAD KING CLASSIC  FLHRC/ CUSTOM FLHRSI"
+      },
+      {
+        "codigoModelo": 4557,
+        "nomeModelo": "ROAD KING SCREAMING EAGLE FLHR SE"
+      },
+      {
+        "codigoModelo": 8161,
+        "nomeModelo": "ROAD KING SPECIAL FLHRXS"
+      },
+      {
+        "codigoModelo": 8162,
+        "nomeModelo": "SOFTAIL BREAKOUT 115th ANNIV. FXBRS"
+      },
+      {
+        "codigoModelo": 8141,
+        "nomeModelo": "SOFTAIL BREAKOUT FXBRS"
+      },
+      {
+        "codigoModelo": 7055,
+        "nomeModelo": "SOFTAIL BREAKOUT FXSB"
+      },
+      {
+        "codigoModelo": 2739,
+        "nomeModelo": "SOFTAIL CLASSIC"
+      },
+      {
+        "codigoModelo": 2740,
+        "nomeModelo": "SOFTAIL CUSTOM"
+      },
+      {
+        "codigoModelo": 2741,
+        "nomeModelo": "SOFTAIL DELUXE  FLSTN"
+      },
+      {
+        "codigoModelo": 8163,
+        "nomeModelo": "SOFTAIL DELUXE FLDE"
+      },
+      {
+        "codigoModelo": 8555,
+        "nomeModelo": "SOFTAIL FXDR"
+      },
+      {
+        "codigoModelo": 8880,
+        "nomeModelo": "SOFTAIL LOW RIDER S FXLRS"
+      },
+      {
+        "codigoModelo": 4692,
+        "nomeModelo": "SOFTAIL ROCKER/ ROCKER C 1584cc"
+      },
+      {
+        "codigoModelo": 8164,
+        "nomeModelo": "SOFTAIL SLIM FLSL"
+      },
+      {
+        "codigoModelo": 2742,
+        "nomeModelo": "SOFTAIL SPECIAL"
+      },
+      {
+        "codigoModelo": 8539,
+        "nomeModelo": "SOFTAIL SPORT GLIDE FLSB"
+      },
+      {
+        "codigoModelo": 2743,
+        "nomeModelo": "SOFTAIL SPRINGER"
+      },
+      {
+        "codigoModelo": 2744,
+        "nomeModelo": "SOFTAIL STD/ FX"
+      },
+      {
+        "codigoModelo": 2745,
+        "nomeModelo": "SPORTSTER 1200"
+      },
+      {
+        "codigoModelo": 8165,
+        "nomeModelo": "SPORTSTER 1200 CUSTOM XL1200C"
+      },
+      {
+        "codigoModelo": 10621,
+        "nomeModelo": "SPORTSTER S"
+      },
+      {
+        "codigoModelo": 4558,
+        "nomeModelo": "SPRINGER SCREAMING EAGLE"
+      },
+      {
+        "codigoModelo": 8166,
+        "nomeModelo": "STREET BOB FXBB"
+      },
+      {
+        "codigoModelo": 7056,
+        "nomeModelo": "STREET BOB FXDB"
+      },
+      {
+        "codigoModelo": 5760,
+        "nomeModelo": "STREET GLIDE FLHX"
+      },
+      {
+        "codigoModelo": 11870,
+        "nomeModelo": "STREET GLIDE LIMITED FLHXL"
+      },
+      {
+        "codigoModelo": 8142,
+        "nomeModelo": "STREET GLIDE SPEC. 115th ANNIV FLHXS ANX"
+      },
+      {
+        "codigoModelo": 10622,
+        "nomeModelo": "STREET GLIDE SPEC. 120th ANNIV FLHXS"
+      },
+      {
+        "codigoModelo": 7057,
+        "nomeModelo": "STREET GLIDE SPECIAL FLHXS"
+      },
+      {
+        "codigoModelo": 11391,
+        "nomeModelo": "STREET GLIDE ULTRA FLHXU"
+      },
+      {
+        "codigoModelo": 2746,
+        "nomeModelo": "STREET ROD 1130cc"
+      },
+      {
+        "codigoModelo": 5757,
+        "nomeModelo": "SWITCHBACK FLD"
+      },
+      {
+        "codigoModelo": 8167,
+        "nomeModelo": "ULTRA LIMITED 115th ANNIVERSARY FLHTK"
+      },
+      {
+        "codigoModelo": 10623,
+        "nomeModelo": "ULTRA LIMITED 120th ANNIVERSARY FLHTK"
+      },
+      {
+        "codigoModelo": 8508,
+        "nomeModelo": "ULTRA LIMITED FLHTK"
+      },
+      {
+        "codigoModelo": 5759,
+        "nomeModelo": "V-ROD 10th ANNIVERSARY EDITION VRSCDX"
+      },
+      {
+        "codigoModelo": 2747,
+        "nomeModelo": "V-ROD 1130cc SPORT VRSCB"
+      },
+      {
+        "codigoModelo": 2748,
+        "nomeModelo": "V-ROD 1130cc VRSCA/ 1250 VRSCAW"
+      },
+      {
+        "codigoModelo": 4938,
+        "nomeModelo": "V-ROD 1250cc MUSCLE VRSCF"
+      },
+      {
+        "codigoModelo": 2749,
+        "nomeModelo": "V-ROD SCREAMING EAGLE"
+      },
+      {
+        "codigoModelo": 2750,
+        "nomeModelo": "XL 1200"
+      },
+      {
+        "codigoModelo": 2751,
+        "nomeModelo": "XL 1200 C-SPORTSTER CUSTOM"
+      },
+      {
+        "codigoModelo": 2752,
+        "nomeModelo": "XL 1200 CUSTOM"
+      },
+      {
+        "codigoModelo": 6820,
+        "nomeModelo": "XL 1200 CUSTOM LIMITED CA/CB"
+      },
+      {
+        "codigoModelo": 7863,
+        "nomeModelo": "XL 1200 CX ROADSTER"
+      },
+      {
+        "codigoModelo": 2753,
+        "nomeModelo": "XL 1200 SPORT"
+      },
+      {
+        "codigoModelo": 4912,
+        "nomeModelo": "XL 1200N SPORTSTER NIGHTSTER"
+      },
+      {
+        "codigoModelo": 8556,
+        "nomeModelo": "XL 1200NS SPORTSTER IRON"
+      },
+      {
+        "codigoModelo": 8168,
+        "nomeModelo": "XL 1200X FORTY EIGHT 115th ANNIVERSARY"
+      },
+      {
+        "codigoModelo": 6719,
+        "nomeModelo": "XL 1200X FORTY EIGHT SPORTSTER"
+      },
+      {
+        "codigoModelo": 2754,
+        "nomeModelo": "XL 883 CUSTOM"
+      },
+      {
+        "codigoModelo": 2755,
+        "nomeModelo": "XL 883 HUGGER"
+      },
+      {
+        "codigoModelo": 2756,
+        "nomeModelo": "XL 883 R"
+      },
+      {
+        "codigoModelo": 2757,
+        "nomeModelo": "XL 883 STD/ LOW"
+      },
+      {
+        "codigoModelo": 5223,
+        "nomeModelo": "XL 883N IRON"
+      },
+      {
+        "codigoModelo": 4993,
+        "nomeModelo": "XR 1200 SPORTSTER"
+      },
+      {
+        "codigoModelo": 5316,
+        "nomeModelo": "XR 1200X SPORTSTER"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "78",
+    "nomeMarca": "HARTFORD",
+    "modelos": [
+      {
+        "codigoModelo": 2758,
+        "nomeModelo": "LEGION 125"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "79",
+    "nomeMarca": "HERO",
+    "modelos": [
+      {
+        "codigoModelo": 2759,
+        "nomeModelo": "ANKUR 50"
+      },
+      {
+        "codigoModelo": 2760,
+        "nomeModelo": "PUCH 50"
+      },
+      {
+        "codigoModelo": 2761,
+        "nomeModelo": "PUCH 65"
+      },
+      {
+        "codigoModelo": 2762,
+        "nomeModelo": "STREAM 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "261",
+    "nomeMarca": "Hisun",
+    "modelos": [
+      {
+        "codigoModelo": 11809,
+        "nomeModelo": "Forge 400I 4WD"
+      },
+      {
+        "codigoModelo": 11810,
+        "nomeModelo": "Forge 400I Camo 4WD"
+      },
+      {
+        "codigoModelo": 11811,
+        "nomeModelo": "Forge 400I DLX 4WD"
+      },
+      {
+        "codigoModelo": 11812,
+        "nomeModelo": "Forge 400I DLX Camo 4WD"
+      },
+      {
+        "codigoModelo": 11813,
+        "nomeModelo": "Forge 400I Standard L 4WD"
+      },
+      {
+        "codigoModelo": 11815,
+        "nomeModelo": "Tactic 400i 4WD"
+      },
+      {
+        "codigoModelo": 11816,
+        "nomeModelo": "Tactic 400i Camo 4WD"
+      },
+      {
+        "codigoModelo": 11817,
+        "nomeModelo": "Tactic 550 4WD"
+      },
+      {
+        "codigoModelo": 11818,
+        "nomeModelo": "Tactic 550 Camo 4WD"
+      },
+      {
+        "codigoModelo": 11819,
+        "nomeModelo": "Tactic 750 4WD"
+      },
+      {
+        "codigoModelo": 11820,
+        "nomeModelo": "Tactic 750 Camo 4WD"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "80",
+    "nomeMarca": "HONDA",
+    "modelos": [
+      {
+        "codigoModelo": 9265,
+        "nomeModelo": "ADV 150"
+      },
+      {
+        "codigoModelo": 11305,
+        "nomeModelo": "ADV 160"
+      },
+      {
+        "codigoModelo": 2763,
+        "nomeModelo": "AMERICA CLASSIC 1600"
+      },
+      {
+        "codigoModelo": 7467,
+        "nomeModelo": "BIZ 110i"
+      },
+      {
+        "codigoModelo": 11239,
+        "nomeModelo": "BIZ 125 ES/ 125 ES FLEX"
+      },
+      {
+        "codigoModelo": 5515,
+        "nomeModelo": "BIZ 125 EX/ 125 EX FLEX"
+      },
+      {
+        "codigoModelo": 11201,
+        "nomeModelo": "BIZ 125 KS/ 125 KS FLEX"
+      },
+      {
+        "codigoModelo": 7468,
+        "nomeModelo": "BIZ 125/125i Flex"
+      },
+      {
+        "codigoModelo": 3963,
+        "nomeModelo": "BIZ 125+"
+      },
+      {
+        "codigoModelo": 2764,
+        "nomeModelo": "C 100 BIZ/ 100 BIZ KS"
+      },
+      {
+        "codigoModelo": 2765,
+        "nomeModelo": "C 100 BIZ+"
+      },
+      {
+        "codigoModelo": 2766,
+        "nomeModelo": "C 100 BIZ-ES"
+      },
+      {
+        "codigoModelo": 2767,
+        "nomeModelo": "C 100 DREAM"
+      },
+      {
+        "codigoModelo": 9776,
+        "nomeModelo": "CB 1000R Black Edition"
+      },
+      {
+        "codigoModelo": 5679,
+        "nomeModelo": "CB 1000R/ABS"
+      },
+      {
+        "codigoModelo": 11087,
+        "nomeModelo": "CB 250 TWISTER/FLEXONE"
+      },
+      {
+        "codigoModelo": 10378,
+        "nomeModelo": "CB 300F Twister Flex"
+      },
+      {
+        "codigoModelo": 4939,
+        "nomeModelo": "CB 300R/ 300R FLEX"
+      },
+      {
+        "codigoModelo": 2768,
+        "nomeModelo": "CB 450 DX"
+      },
+      {
+        "codigoModelo": 2769,
+        "nomeModelo": "CB 500"
+      },
+      {
+        "codigoModelo": 11550,
+        "nomeModelo": "CB 500 HORNET"
+      },
+      {
+        "codigoModelo": 6619,
+        "nomeModelo": "CB 500F"
+      },
+      {
+        "codigoModelo": 6821,
+        "nomeModelo": "CB 500X"
+      },
+      {
+        "codigoModelo": 2770,
+        "nomeModelo": "CB 600F HORNET"
+      },
+      {
+        "codigoModelo": 7058,
+        "nomeModelo": "CB 650F"
+      },
+      {
+        "codigoModelo": 9030,
+        "nomeModelo": "CB 650R"
+      },
+      {
+        "codigoModelo": 11596,
+        "nomeModelo": "CB 650R E-Clutch"
+      },
+      {
+        "codigoModelo": 11739,
+        "nomeModelo": "CB 750 HORNET"
+      },
+      {
+        "codigoModelo": 4412,
+        "nomeModelo": "CB1300 SUPER FOUR"
+      },
+      {
+        "codigoModelo": 2771,
+        "nomeModelo": "CBR 1000 F"
+      },
+      {
+        "codigoModelo": 2772,
+        "nomeModelo": "CBR 1000 RR Fireblade"
+      },
+      {
+        "codigoModelo": 8306,
+        "nomeModelo": "CBR 1000 RR Fireblade SP"
+      },
+      {
+        "codigoModelo": 9636,
+        "nomeModelo": "CBR 1000 RR-R Fireblade SP"
+      },
+      {
+        "codigoModelo": 10610,
+        "nomeModelo": "CBR 1000 RR-R Fireblade SP 30TH EDITION"
+      },
+      {
+        "codigoModelo": 2773,
+        "nomeModelo": "CBR 1100 XX SUPER BLACKBIRD"
+      },
+      {
+        "codigoModelo": 6041,
+        "nomeModelo": "CBR 250R"
+      },
+      {
+        "codigoModelo": 2774,
+        "nomeModelo": "CBR 450"
+      },
+      {
+        "codigoModelo": 2775,
+        "nomeModelo": "CBR 450 SR"
+      },
+      {
+        "codigoModelo": 6676,
+        "nomeModelo": "CBR 500R"
+      },
+      {
+        "codigoModelo": 2776,
+        "nomeModelo": "CBR 600 F"
+      },
+      {
+        "codigoModelo": 2777,
+        "nomeModelo": "CBR 600 RR"
+      },
+      {
+        "codigoModelo": 9072,
+        "nomeModelo": "CBR 650 R"
+      },
+      {
+        "codigoModelo": 7059,
+        "nomeModelo": "CBR 650F"
+      },
+      {
+        "codigoModelo": 2778,
+        "nomeModelo": "CBR 900 RR FIRE BLADE"
+      },
+      {
+        "codigoModelo": 2779,
+        "nomeModelo": "CBX 150 AERO"
+      },
+      {
+        "codigoModelo": 2780,
+        "nomeModelo": "CBX 200 STRADA"
+      },
+      {
+        "codigoModelo": 2781,
+        "nomeModelo": "CBX 250 TWISTER"
+      },
+      {
+        "codigoModelo": 2782,
+        "nomeModelo": "CBX 750 FOUR"
+      },
+      {
+        "codigoModelo": 2783,
+        "nomeModelo": "CBX 750 FOUR INDY"
+      },
+      {
+        "codigoModelo": 2784,
+        "nomeModelo": "CBX 750 R"
+      },
+      {
+        "codigoModelo": 2785,
+        "nomeModelo": "CG 125"
+      },
+      {
+        "codigoModelo": 4913,
+        "nomeModelo": "CG 125 CARGO ES"
+      },
+      {
+        "codigoModelo": 6875,
+        "nomeModelo": "CG 125 CARGO ESD"
+      },
+      {
+        "codigoModelo": 2786,
+        "nomeModelo": "CG 125 CARGO/ CARGO KS/125i CARGO"
+      },
+      {
+        "codigoModelo": 2787,
+        "nomeModelo": "CG 125 FAN / FAN KS / 125 i FAN"
+      },
+      {
+        "codigoModelo": 4842,
+        "nomeModelo": "CG 125 FAN ES"
+      },
+      {
+        "codigoModelo": 6567,
+        "nomeModelo": "CG 125 FAN ESD"
+      },
+      {
+        "codigoModelo": 2788,
+        "nomeModelo": "CG 125 TITAN"
+      },
+      {
+        "codigoModelo": 2789,
+        "nomeModelo": "CG 125 TITAN-ES"
+      },
+      {
+        "codigoModelo": 2790,
+        "nomeModelo": "CG 125 TITAN-KS"
+      },
+      {
+        "codigoModelo": 2791,
+        "nomeModelo": "CG 125 TITAN-KSE"
+      },
+      {
+        "codigoModelo": 2792,
+        "nomeModelo": "CG 125 TODAY"
+      },
+      {
+        "codigoModelo": 6876,
+        "nomeModelo": "CG 150 CARGO ESD FLEX"
+      },
+      {
+        "codigoModelo": 5432,
+        "nomeModelo": "CG 150 FAN ESDi/ 150 FAN ESDi FLEX"
+      },
+      {
+        "codigoModelo": 5095,
+        "nomeModelo": "CG 150 FAN ESi/ 150 FAN ESi FLEX"
+      },
+      {
+        "codigoModelo": 2793,
+        "nomeModelo": "CG 150 SPORT"
+      },
+      {
+        "codigoModelo": 7108,
+        "nomeModelo": "CG 150 START FLEXONE"
+      },
+      {
+        "codigoModelo": 2794,
+        "nomeModelo": "CG 150 TITAN-ES"
+      },
+      {
+        "codigoModelo": 4914,
+        "nomeModelo": "CG 150 TITAN-ES MIX"
+      },
+      {
+        "codigoModelo": 4915,
+        "nomeModelo": "CG 150 TITAN-ESD MIX/FLEX"
+      },
+      {
+        "codigoModelo": 2795,
+        "nomeModelo": "CG 150 TITAN-ESD/ TITAN SPECIAL EDITION"
+      },
+      {
+        "codigoModelo": 5051,
+        "nomeModelo": "CG 150 TITAN-EX MIX/FLEX"
+      },
+      {
+        "codigoModelo": 4916,
+        "nomeModelo": "CG 150 TITAN-KS MIX"
+      },
+      {
+        "codigoModelo": 2796,
+        "nomeModelo": "CG 150 TITAN-KS/ TITAN-JOB"
+      },
+      {
+        "codigoModelo": 10840,
+        "nomeModelo": "CG 160 CARGO Flex"
+      },
+      {
+        "codigoModelo": 7329,
+        "nomeModelo": "CG 160 FAN ESDi FLEXONE"
+      },
+      {
+        "codigoModelo": 8071,
+        "nomeModelo": "CG 160 FAN Flex"
+      },
+      {
+        "codigoModelo": 7525,
+        "nomeModelo": "CG 160 START"
+      },
+      {
+        "codigoModelo": 11667,
+        "nomeModelo": "CG 160 TITAN"
+      },
+      {
+        "codigoModelo": 8602,
+        "nomeModelo": "CG 160 TITAN 25TH ANNIVERSARY"
+      },
+      {
+        "codigoModelo": 11863,
+        "nomeModelo": "CG 160 TITAN 50 Anos"
+      },
+      {
+        "codigoModelo": 7330,
+        "nomeModelo": "CG 160 TITAN FLEXONE/Ed.Especial 40 Anos"
+      },
+      {
+        "codigoModelo": 8976,
+        "nomeModelo": "CG 160 TITAN S Flex"
+      },
+      {
+        "codigoModelo": 2797,
+        "nomeModelo": "CH 125-R SPACY"
+      },
+      {
+        "codigoModelo": 2798,
+        "nomeModelo": "CR 125"
+      },
+      {
+        "codigoModelo": 2799,
+        "nomeModelo": "CR 250"
+      },
+      {
+        "codigoModelo": 2800,
+        "nomeModelo": "CR 80"
+      },
+      {
+        "codigoModelo": 7855,
+        "nomeModelo": "CRF 1000L AFRICA TWIN"
+      },
+      {
+        "codigoModelo": 8800,
+        "nomeModelo": "CRF 1000L AFRICA TWIN ADV. SPORTS TE"
+      },
+      {
+        "codigoModelo": 8801,
+        "nomeModelo": "CRF 1000L AFRICA TWIN ADVENTURE SPORTS"
+      },
+      {
+        "codigoModelo": 7856,
+        "nomeModelo": "CRF 1000L AFRICA TWIN TE"
+      },
+      {
+        "codigoModelo": 9508,
+        "nomeModelo": "CRF 1100L AFRICA TWIN"
+      },
+      {
+        "codigoModelo": 9509,
+        "nomeModelo": "CRF 1100L AFRICA TWIN ADV. SPORTS ES"
+      },
+      {
+        "codigoModelo": 11243,
+        "nomeModelo": "CRF 1100L AFRICA TWIN ADV. SPORTS ES DCT"
+      },
+      {
+        "codigoModelo": 11244,
+        "nomeModelo": "CRF 1100L AFRICA TWIN DCT"
+      },
+      {
+        "codigoModelo": 6859,
+        "nomeModelo": "CRF 110F"
+      },
+      {
+        "codigoModelo": 6195,
+        "nomeModelo": "CRF 150F"
+      },
+      {
+        "codigoModelo": 4446,
+        "nomeModelo": "CRF 230 F"
+      },
+      {
+        "codigoModelo": 8540,
+        "nomeModelo": "CRF 250 F"
+      },
+      {
+        "codigoModelo": 10379,
+        "nomeModelo": "CRF 250 R"
+      },
+      {
+        "codigoModelo": 11473,
+        "nomeModelo": "CRF 250 RX"
+      },
+      {
+        "codigoModelo": 4917,
+        "nomeModelo": "CRF 250 X"
+      },
+      {
+        "codigoModelo": 6455,
+        "nomeModelo": "CRF 250L"
+      },
+      {
+        "codigoModelo": 11657,
+        "nomeModelo": "CRF 300F"
+      },
+      {
+        "codigoModelo": 9100,
+        "nomeModelo": "CRF 450 R"
+      },
+      {
+        "codigoModelo": 9101,
+        "nomeModelo": "CRF 450 RX"
+      },
+      {
+        "codigoModelo": 8705,
+        "nomeModelo": "CRF 450 X"
+      },
+      {
+        "codigoModelo": 6877,
+        "nomeModelo": "CTX 700N"
+      },
+      {
+        "codigoModelo": 2801,
+        "nomeModelo": "DOMINATOR 650"
+      },
+      {
+        "codigoModelo": 8557,
+        "nomeModelo": "ELITE 125"
+      },
+      {
+        "codigoModelo": 10125,
+        "nomeModelo": "Forza 350 "
+      },
+      {
+        "codigoModelo": 2802,
+        "nomeModelo": "GOLD WING 1500/ 1800"
+      },
+      {
+        "codigoModelo": 8649,
+        "nomeModelo": "GOLD WING TOUR 1800"
+      },
+      {
+        "codigoModelo": 4994,
+        "nomeModelo": "LEAD 110"
+      },
+      {
+        "codigoModelo": 2803,
+        "nomeModelo": "MAGNA 750"
+      },
+      {
+        "codigoModelo": 6135,
+        "nomeModelo": "NC 700 X/ 700X ABS"
+      },
+      {
+        "codigoModelo": 7174,
+        "nomeModelo": "NC 750X/NC 750X ABS"
+      },
+      {
+        "codigoModelo": 11246,
+        "nomeModelo": "NC 750X/NC 750X ABS DCT"
+      },
+      {
+        "codigoModelo": 2804,
+        "nomeModelo": "NX 150"
+      },
+      {
+        "codigoModelo": 2805,
+        "nomeModelo": "NX 200"
+      },
+      {
+        "codigoModelo": 2806,
+        "nomeModelo": "NX 350 SAHARA"
+      },
+      {
+        "codigoModelo": 6252,
+        "nomeModelo": "NX 400i FALCON"
+      },
+      {
+        "codigoModelo": 11569,
+        "nomeModelo": "NX 500"
+      },
+      {
+        "codigoModelo": 2807,
+        "nomeModelo": "NX-4 FALCON 400"
+      },
+      {
+        "codigoModelo": 2808,
+        "nomeModelo": "NXR 125 BROS ES"
+      },
+      {
+        "codigoModelo": 2809,
+        "nomeModelo": "NXR 125 BROS KS"
+      },
+      {
+        "codigoModelo": 3843,
+        "nomeModelo": "NXR 150 BROS ES"
+      },
+      {
+        "codigoModelo": 5136,
+        "nomeModelo": "NXR 150 BROS ES MIX/FLEX"
+      },
+      {
+        "codigoModelo": 2810,
+        "nomeModelo": "NXR 150 BROS ESD"
+      },
+      {
+        "codigoModelo": 5137,
+        "nomeModelo": "NXR 150 BROS ESD MIX/FLEX"
+      },
+      {
+        "codigoModelo": 3844,
+        "nomeModelo": "NXR 150 BROS KS"
+      },
+      {
+        "codigoModelo": 5138,
+        "nomeModelo": "NXR 150 BROS KS MIX/FLEX"
+      },
+      {
+        "codigoModelo": 7438,
+        "nomeModelo": "NXR 160 BROS"
+      },
+      {
+        "codigoModelo": 7109,
+        "nomeModelo": "NXR 160 BROS ESD FLEXONE"
+      },
+      {
+        "codigoModelo": 7110,
+        "nomeModelo": "NXR 160 BROS ESDD FLEXONE"
+      },
+      {
+        "codigoModelo": 11203,
+        "nomeModelo": "NXR 160 BROS FLEX"
+      },
+      {
+        "codigoModelo": 8169,
+        "nomeModelo": "PCX 150 SPORT"
+      },
+      {
+        "codigoModelo": 6473,
+        "nomeModelo": "PCX 150/DLX"
+      },
+      {
+        "codigoModelo": 10149,
+        "nomeModelo": "PCX 160 "
+      },
+      {
+        "codigoModelo": 10150,
+        "nomeModelo": "PCX 160 DLX"
+      },
+      {
+        "codigoModelo": 4264,
+        "nomeModelo": "POP 100 97cc"
+      },
+      {
+        "codigoModelo": 7331,
+        "nomeModelo": "POP 110i"
+      },
+      {
+        "codigoModelo": 11090,
+        "nomeModelo": "POP 110i ES"
+      },
+      {
+        "codigoModelo": 10954,
+        "nomeModelo": "SAHARA 300 ABS FLEX"
+      },
+      {
+        "codigoModelo": 10955,
+        "nomeModelo": "SAHARA 300 ADVENTURE ABS FLEX"
+      },
+      {
+        "codigoModelo": 10956,
+        "nomeModelo": "SAHARA 300 RALLY ABS FLEX"
+      },
+      {
+        "codigoModelo": 7932,
+        "nomeModelo": "SH 150i/DLX"
+      },
+      {
+        "codigoModelo": 7526,
+        "nomeModelo": "SH 300i"
+      },
+      {
+        "codigoModelo": 8541,
+        "nomeModelo": "SH 300i Sport"
+      },
+      {
+        "codigoModelo": 2811,
+        "nomeModelo": "SHADOW 1100 AC"
+      },
+      {
+        "codigoModelo": 2812,
+        "nomeModelo": "SHADOW 1100 OURO"
+      },
+      {
+        "codigoModelo": 2813,
+        "nomeModelo": "SHADOW AM 750"
+      },
+      {
+        "codigoModelo": 2814,
+        "nomeModelo": "SHADOW VT 1100"
+      },
+      {
+        "codigoModelo": 2815,
+        "nomeModelo": "SUPER HAWK 1000"
+      },
+      {
+        "codigoModelo": 2816,
+        "nomeModelo": "TRX 350 FOURTRAX  FM QUADRICICLO"
+      },
+      {
+        "codigoModelo": 2817,
+        "nomeModelo": "TRX 350 FOURTRAX  TM QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4709,
+        "nomeModelo": "TRX 420 FOURTRAX   TM 4x2 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4708,
+        "nomeModelo": "TRX 420 FOURTRAX  FM 4x4 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 2818,
+        "nomeModelo": "VALKYRIE 1500"
+      },
+      {
+        "codigoModelo": 5562,
+        "nomeModelo": "VFR 1200F"
+      },
+      {
+        "codigoModelo": 6311,
+        "nomeModelo": "VFR 1200X CROSSTOURER"
+      },
+      {
+        "codigoModelo": 2819,
+        "nomeModelo": "VT 600 C SHADOW"
+      },
+      {
+        "codigoModelo": 3918,
+        "nomeModelo": "VT 750 SHADOW"
+      },
+      {
+        "codigoModelo": 2820,
+        "nomeModelo": "VTX 1800R/ 1800S/ 1800C 1795cc"
+      },
+      {
+        "codigoModelo": 8307,
+        "nomeModelo": "X-ADV 745cc"
+      },
+      {
+        "codigoModelo": 4447,
+        "nomeModelo": "XL 1000V VARADERO"
+      },
+      {
+        "codigoModelo": 2821,
+        "nomeModelo": "XL 125 DUTY"
+      },
+      {
+        "codigoModelo": 2822,
+        "nomeModelo": "XL 125 S"
+      },
+      {
+        "codigoModelo": 5546,
+        "nomeModelo": "XL 700V TRANSALP"
+      },
+      {
+        "codigoModelo": 11821,
+        "nomeModelo": "XL 750 TRANSALP"
+      },
+      {
+        "codigoModelo": 2823,
+        "nomeModelo": "XLR 125"
+      },
+      {
+        "codigoModelo": 2824,
+        "nomeModelo": "XLR 125 ES"
+      },
+      {
+        "codigoModelo": 2825,
+        "nomeModelo": "XLX 250 R"
+      },
+      {
+        "codigoModelo": 2826,
+        "nomeModelo": "XLX 350 R"
+      },
+      {
+        "codigoModelo": 2827,
+        "nomeModelo": "XR 200 R"
+      },
+      {
+        "codigoModelo": 2828,
+        "nomeModelo": "XR 250 TORNADO"
+      },
+      {
+        "codigoModelo": 11157,
+        "nomeModelo": "XR 300L TORNADO FLEX"
+      },
+      {
+        "codigoModelo": 11871,
+        "nomeModelo": "XR 300L TORNADO Special Edition"
+      },
+      {
+        "codigoModelo": 2829,
+        "nomeModelo": "XR 650"
+      },
+      {
+        "codigoModelo": 9031,
+        "nomeModelo": "XRE 190 ADVENTURE FLEX"
+      },
+      {
+        "codigoModelo": 7607,
+        "nomeModelo": "XRE 190/ Flex"
+      },
+      {
+        "codigoModelo": 7912,
+        "nomeModelo": "XRE 300 ADVENTURE FLEX"
+      },
+      {
+        "codigoModelo": 6720,
+        "nomeModelo": "XRE 300 RALLY FLEX"
+      },
+      {
+        "codigoModelo": 4940,
+        "nomeModelo": "XRE 300/ 300 ABS/ FLEX"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "81",
+    "nomeMarca": "HUSABERG",
+    "modelos": [
+      {
+        "codigoModelo": 2830,
+        "nomeModelo": "FE 400 400cc"
+      },
+      {
+        "codigoModelo": 2831,
+        "nomeModelo": "FE 501 500cc"
+      },
+      {
+        "codigoModelo": 4075,
+        "nomeModelo": "FE 550 E"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "82",
+    "nomeMarca": "HUSQVARNA",
+    "modelos": [
+      {
+        "codigoModelo": 8329,
+        "nomeModelo": "701 ENDURO"
+      },
+      {
+        "codigoModelo": 8330,
+        "nomeModelo": "701 SUPERMOTO"
+      },
+      {
+        "codigoModelo": 2832,
+        "nomeModelo": "CR 125"
+      },
+      {
+        "codigoModelo": 2833,
+        "nomeModelo": "CR 250"
+      },
+      {
+        "codigoModelo": 12065,
+        "nomeModelo": "FC 250"
+      },
+      {
+        "codigoModelo": 11557,
+        "nomeModelo": "FC 350"
+      },
+      {
+        "codigoModelo": 12066,
+        "nomeModelo": "FC 450"
+      },
+      {
+        "codigoModelo": 11558,
+        "nomeModelo": "FE 350"
+      },
+      {
+        "codigoModelo": 11559,
+        "nomeModelo": "FE 350 Heritage"
+      },
+      {
+        "codigoModelo": 11807,
+        "nomeModelo": "FE 450"
+      },
+      {
+        "codigoModelo": 11808,
+        "nomeModelo": "FE 501 Heritage"
+      },
+      {
+        "codigoModelo": 2834,
+        "nomeModelo": "HUSQY BOY J"
+      },
+      {
+        "codigoModelo": 2835,
+        "nomeModelo": "HUSQY BOY R"
+      },
+      {
+        "codigoModelo": 2836,
+        "nomeModelo": "HUSQY BOY S"
+      },
+      {
+        "codigoModelo": 9842,
+        "nomeModelo": "NORDEN 901 "
+      },
+      {
+        "codigoModelo": 11599,
+        "nomeModelo": "NORDEN 901 Expedition"
+      },
+      {
+        "codigoModelo": 2837,
+        "nomeModelo": "SM 610"
+      },
+      {
+        "codigoModelo": 4419,
+        "nomeModelo": "SMR 510"
+      },
+      {
+        "codigoModelo": 8433,
+        "nomeModelo": "SVARTPILEN 401"
+      },
+      {
+        "codigoModelo": 11814,
+        "nomeModelo": "SVARTPILEN 801"
+      },
+      {
+        "codigoModelo": 12078,
+        "nomeModelo": "TC 125"
+      },
+      {
+        "codigoModelo": 11899,
+        "nomeModelo": "TC 150"
+      },
+      {
+        "codigoModelo": 11900,
+        "nomeModelo": "TC 50"
+      },
+      {
+        "codigoModelo": 2838,
+        "nomeModelo": "TC 570"
+      },
+      {
+        "codigoModelo": 11901,
+        "nomeModelo": "TC 65"
+      },
+      {
+        "codigoModelo": 11578,
+        "nomeModelo": "TC 85"
+      },
+      {
+        "codigoModelo": 11579,
+        "nomeModelo": "TE 150"
+      },
+      {
+        "codigoModelo": 11580,
+        "nomeModelo": "TE 250 Heritage"
+      },
+      {
+        "codigoModelo": 11063,
+        "nomeModelo": "TE 300"
+      },
+      {
+        "codigoModelo": 11581,
+        "nomeModelo": "TE 300 Pro"
+      },
+      {
+        "codigoModelo": 9847,
+        "nomeModelo": "TE 300i Edição Rockstar"
+      },
+      {
+        "codigoModelo": 2839,
+        "nomeModelo": "TE 400"
+      },
+      {
+        "codigoModelo": 2840,
+        "nomeModelo": "TE 410"
+      },
+      {
+        "codigoModelo": 2841,
+        "nomeModelo": "TE 410 E"
+      },
+      {
+        "codigoModelo": 2842,
+        "nomeModelo": "TE 450"
+      },
+      {
+        "codigoModelo": 4420,
+        "nomeModelo": "TE 510"
+      },
+      {
+        "codigoModelo": 2843,
+        "nomeModelo": "TE 570"
+      },
+      {
+        "codigoModelo": 2844,
+        "nomeModelo": "TE 610"
+      },
+      {
+        "codigoModelo": 2845,
+        "nomeModelo": "TE 610 E"
+      },
+      {
+        "codigoModelo": 8434,
+        "nomeModelo": "VITPILEN 701"
+      },
+      {
+        "codigoModelo": 2846,
+        "nomeModelo": "WR 250"
+      },
+      {
+        "codigoModelo": 2847,
+        "nomeModelo": "WR 360"
+      },
+      {
+        "codigoModelo": 2848,
+        "nomeModelo": "WRE 125"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "202",
+    "nomeMarca": "INDIAN",
+    "modelos": [
+      {
+        "codigoModelo": 8465,
+        "nomeModelo": "CHIEF"
+      },
+      {
+        "codigoModelo": 7439,
+        "nomeModelo": "CHIEF CLASSIC"
+      },
+      {
+        "codigoModelo": 8170,
+        "nomeModelo": "CHIEF DARK HORSE"
+      },
+      {
+        "codigoModelo": 7821,
+        "nomeModelo": "CHIEF SPRINGFIELD"
+      },
+      {
+        "codigoModelo": 7440,
+        "nomeModelo": "CHIEF VINTAGE"
+      },
+      {
+        "codigoModelo": 7573,
+        "nomeModelo": "CHIEFTAIN"
+      },
+      {
+        "codigoModelo": 8171,
+        "nomeModelo": "CHIEFTAIN DARK HORSE"
+      },
+      {
+        "codigoModelo": 7574,
+        "nomeModelo": "ROADMASTER"
+      },
+      {
+        "codigoModelo": 7441,
+        "nomeModelo": "SCOUT"
+      },
+      {
+        "codigoModelo": 8172,
+        "nomeModelo": "SCOUT BOBBER"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "158",
+    "nomeMarca": "IROS",
+    "modelos": [
+      {
+        "codigoModelo": 4941,
+        "nomeModelo": "ACTION 100 ES"
+      },
+      {
+        "codigoModelo": 4942,
+        "nomeModelo": "ACTION 100 ESA"
+      },
+      {
+        "codigoModelo": 4943,
+        "nomeModelo": "Brave 150 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4944,
+        "nomeModelo": "Brave 450 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4945,
+        "nomeModelo": "Brave 70  QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4946,
+        "nomeModelo": "MATRIX 150"
+      },
+      {
+        "codigoModelo": 4947,
+        "nomeModelo": "MOVING 125 ES"
+      },
+      {
+        "codigoModelo": 4948,
+        "nomeModelo": "MOVING 125 ESD"
+      },
+      {
+        "codigoModelo": 4949,
+        "nomeModelo": "ONE 125 ES"
+      },
+      {
+        "codigoModelo": 4950,
+        "nomeModelo": "ONE 125 ESD"
+      },
+      {
+        "codigoModelo": 4951,
+        "nomeModelo": "ONE 125 EX"
+      },
+      {
+        "codigoModelo": 4952,
+        "nomeModelo": "VINTAGE 150"
+      },
+      {
+        "codigoModelo": 4953,
+        "nomeModelo": "WARRIOR 250 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4954,
+        "nomeModelo": "WARRIOR 400 4x4 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4955,
+        "nomeModelo": "WARRIOR 700 4x4 QUADRICICLO"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "141",
+    "nomeMarca": "JIAPENG VOLCANO",
+    "modelos": [
+      {
+        "codigoModelo": 4510,
+        "nomeModelo": "JP 110"
+      },
+      {
+        "codigoModelo": 4511,
+        "nomeModelo": "JP 150"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "174",
+    "nomeMarca": "JOHNNYPAG",
+    "modelos": [
+      {
+        "codigoModelo": 5433,
+        "nomeModelo": "BARHOG 300cc"
+      },
+      {
+        "codigoModelo": 5434,
+        "nomeModelo": "PROSTREET 300cc"
+      },
+      {
+        "codigoModelo": 5435,
+        "nomeModelo": "SPYDER 300cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "151",
+    "nomeMarca": "JONNY",
+    "modelos": [
+      {
+        "codigoModelo": 4710,
+        "nomeModelo": "ATLANTIC 150cc"
+      },
+      {
+        "codigoModelo": 4711,
+        "nomeModelo": "ATLANTIC 250cc"
+      },
+      {
+        "codigoModelo": 4712,
+        "nomeModelo": "HYPE 110cc"
+      },
+      {
+        "codigoModelo": 6136,
+        "nomeModelo": "HYPE 125cc"
+      },
+      {
+        "codigoModelo": 5096,
+        "nomeModelo": "HYPE 50cc"
+      },
+      {
+        "codigoModelo": 4713,
+        "nomeModelo": "JONNY 50 49cc"
+      },
+      {
+        "codigoModelo": 6603,
+        "nomeModelo": "Meet 50cc"
+      },
+      {
+        "codigoModelo": 6137,
+        "nomeModelo": "Naked 150cc"
+      },
+      {
+        "codigoModelo": 4714,
+        "nomeModelo": "Orbit 150cc"
+      },
+      {
+        "codigoModelo": 4715,
+        "nomeModelo": "PEGASUS 150cc"
+      },
+      {
+        "codigoModelo": 5563,
+        "nomeModelo": "QUICK 150cc"
+      },
+      {
+        "codigoModelo": 6138,
+        "nomeModelo": "RACER 150cc"
+      },
+      {
+        "codigoModelo": 6139,
+        "nomeModelo": "TEXAS 150cc"
+      },
+      {
+        "codigoModelo": 4716,
+        "nomeModelo": "TR 150cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "129",
+    "nomeMarca": "KAHENA",
+    "modelos": [
+      {
+        "codigoModelo": 4747,
+        "nomeModelo": "125 K-TOP"
+      },
+      {
+        "codigoModelo": 4301,
+        "nomeModelo": "125 TOP"
+      },
+      {
+        "codigoModelo": 4837,
+        "nomeModelo": "250 DUAL"
+      },
+      {
+        "codigoModelo": 5564,
+        "nomeModelo": "250 DUAL-T"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "118",
+    "nomeMarca": "KASINSKI",
+    "modelos": [
+      {
+        "codigoModelo": 5224,
+        "nomeModelo": "COMET 150"
+      },
+      {
+        "codigoModelo": 3845,
+        "nomeModelo": "COMET 250cc / COMET GT 250cc"
+      },
+      {
+        "codigoModelo": 5658,
+        "nomeModelo": "COMET GT 650"
+      },
+      {
+        "codigoModelo": 4076,
+        "nomeModelo": "COMET GT 650R V2power"
+      },
+      {
+        "codigoModelo": 4457,
+        "nomeModelo": "COMET GT-R 250cc"
+      },
+      {
+        "codigoModelo": 3846,
+        "nomeModelo": "CRUISE 125"
+      },
+      {
+        "codigoModelo": 3847,
+        "nomeModelo": "CRUISE II 125"
+      },
+      {
+        "codigoModelo": 5317,
+        "nomeModelo": "CRZ 150"
+      },
+      {
+        "codigoModelo": 5318,
+        "nomeModelo": "CRZ 150 SUPER MOTO"
+      },
+      {
+        "codigoModelo": 3848,
+        "nomeModelo": "ERO PLUS 125cc"
+      },
+      {
+        "codigoModelo": 3919,
+        "nomeModelo": "FLASH K 150cc"
+      },
+      {
+        "codigoModelo": 3849,
+        "nomeModelo": "FÚRIA 250cc"
+      },
+      {
+        "codigoModelo": 3850,
+        "nomeModelo": "GF 125 SPEED"
+      },
+      {
+        "codigoModelo": 3851,
+        "nomeModelo": "GV 250 MIRAGE"
+      },
+      {
+        "codigoModelo": 3852,
+        "nomeModelo": "MAGIK 125cc"
+      },
+      {
+        "codigoModelo": 3853,
+        "nomeModelo": "MIDAS FX 110cc"
+      },
+      {
+        "codigoModelo": 5162,
+        "nomeModelo": "MIRAGE 150"
+      },
+      {
+        "codigoModelo": 4094,
+        "nomeModelo": "MIRAGE 650 V2power"
+      },
+      {
+        "codigoModelo": 3854,
+        "nomeModelo": "MOTOKAR FURGÃO/ PICK-UP 174cc (1 pessoa)"
+      },
+      {
+        "codigoModelo": 3855,
+        "nomeModelo": "MOTOKAR TAXI-KAR 174cc (4 pessoas)"
+      },
+      {
+        "codigoModelo": 5516,
+        "nomeModelo": "PRIMA 150"
+      },
+      {
+        "codigoModelo": 3856,
+        "nomeModelo": "PRIMA 50"
+      },
+      {
+        "codigoModelo": 5384,
+        "nomeModelo": "PRIMA ELECTRA 2000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 3857,
+        "nomeModelo": "PRIMA RALLY 50cc"
+      },
+      {
+        "codigoModelo": 3858,
+        "nomeModelo": "RX 125"
+      },
+      {
+        "codigoModelo": 4253,
+        "nomeModelo": "SETA 125"
+      },
+      {
+        "codigoModelo": 4559,
+        "nomeModelo": "SETA 150"
+      },
+      {
+        "codigoModelo": 5494,
+        "nomeModelo": "SOFT 50cc"
+      },
+      {
+        "codigoModelo": 3859,
+        "nomeModelo": "SUPER CAB 100cc"
+      },
+      {
+        "codigoModelo": 3860,
+        "nomeModelo": "SUPER CAB 50cc"
+      },
+      {
+        "codigoModelo": 3861,
+        "nomeModelo": "TN 125"
+      },
+      {
+        "codigoModelo": 4560,
+        "nomeModelo": "WAY 125"
+      },
+      {
+        "codigoModelo": 4152,
+        "nomeModelo": "WIN 110"
+      },
+      {
+        "codigoModelo": 7221,
+        "nomeModelo": "WIN ELECTRA 1000W (Elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "85",
+    "nomeMarca": "KAWASAKI",
+    "modelos": [
+      {
+        "codigoModelo": 2874,
+        "nomeModelo": "AVAJET 100cc/ CLASSIC 100cc"
+      },
+      {
+        "codigoModelo": 4632,
+        "nomeModelo": "CONCOURS14 1352cc"
+      },
+      {
+        "codigoModelo": 5153,
+        "nomeModelo": "D-TRACKER X 250cc"
+      },
+      {
+        "codigoModelo": 11114,
+        "nomeModelo": "ELIMINATOR 500"
+      },
+      {
+        "codigoModelo": 11115,
+        "nomeModelo": "ELIMINATOR 500 SE"
+      },
+      {
+        "codigoModelo": 2875,
+        "nomeModelo": "ER-5 500cc"
+      },
+      {
+        "codigoModelo": 5154,
+        "nomeModelo": "ER-6N 650cc"
+      },
+      {
+        "codigoModelo": 4876,
+        "nomeModelo": "KLX 110"
+      },
+      {
+        "codigoModelo": 4877,
+        "nomeModelo": "KLX 110  MONSTER"
+      },
+      {
+        "codigoModelo": 11828,
+        "nomeModelo": "KLX 110R"
+      },
+      {
+        "codigoModelo": 2876,
+        "nomeModelo": "KLX 250"
+      },
+      {
+        "codigoModelo": 11286,
+        "nomeModelo": "KLX 300R"
+      },
+      {
+        "codigoModelo": 7296,
+        "nomeModelo": "KLX 450R"
+      },
+      {
+        "codigoModelo": 2877,
+        "nomeModelo": "KLX 650"
+      },
+      {
+        "codigoModelo": 11565,
+        "nomeModelo": "KX 112"
+      },
+      {
+        "codigoModelo": 2878,
+        "nomeModelo": "KX 125"
+      },
+      {
+        "codigoModelo": 9536,
+        "nomeModelo": "KX 250 X"
+      },
+      {
+        "codigoModelo": 2879,
+        "nomeModelo": "KX 250/ 250 F"
+      },
+      {
+        "codigoModelo": 4570,
+        "nomeModelo": "KX 450 F"
+      },
+      {
+        "codigoModelo": 9312,
+        "nomeModelo": "KX 450 X"
+      },
+      {
+        "codigoModelo": 4878,
+        "nomeModelo": "KX 65"
+      },
+      {
+        "codigoModelo": 4879,
+        "nomeModelo": "KX 65 MONSTER"
+      },
+      {
+        "codigoModelo": 2880,
+        "nomeModelo": "KZ 1000 TOURING"
+      },
+      {
+        "codigoModelo": 2881,
+        "nomeModelo": "MAXI II 100cc"
+      },
+      {
+        "codigoModelo": 5680,
+        "nomeModelo": "NINJA 1000"
+      },
+      {
+        "codigoModelo": 6860,
+        "nomeModelo": "NINJA 1000 TOURER"
+      },
+      {
+        "codigoModelo": 4880,
+        "nomeModelo": "NINJA 250R"
+      },
+      {
+        "codigoModelo": 6282,
+        "nomeModelo": "NINJA 300"
+      },
+      {
+        "codigoModelo": 8490,
+        "nomeModelo": "NINJA 400"
+      },
+      {
+        "codigoModelo": 11154,
+        "nomeModelo": "NINJA 500"
+      },
+      {
+        "codigoModelo": 11155,
+        "nomeModelo": "NINJA 500 SE"
+      },
+      {
+        "codigoModelo": 5462,
+        "nomeModelo": "NINJA 650R 649cc"
+      },
+      {
+        "codigoModelo": 2882,
+        "nomeModelo": "NINJA EX 500cc"
+      },
+      {
+        "codigoModelo": 7297,
+        "nomeModelo": "NINJA H2 998cc"
+      },
+      {
+        "codigoModelo": 8977,
+        "nomeModelo": "NINJA H2 SX SE 998cc"
+      },
+      {
+        "codigoModelo": 2883,
+        "nomeModelo": "NINJA ZX-10/ ZX-10R 1000cc/30TH Aniv."
+      },
+      {
+        "codigoModelo": 8491,
+        "nomeModelo": "NINJA ZX-10R SE 1000cc"
+      },
+      {
+        "codigoModelo": 8030,
+        "nomeModelo": "NINJA ZX-10RR 998cc"
+      },
+      {
+        "codigoModelo": 2884,
+        "nomeModelo": "NINJA ZX-11 1100cc"
+      },
+      {
+        "codigoModelo": 2885,
+        "nomeModelo": "NINJA ZX-12/ ZX-12R 1200cc"
+      },
+      {
+        "codigoModelo": 10937,
+        "nomeModelo": "NINJA ZX-4R"
+      },
+      {
+        "codigoModelo": 11523,
+        "nomeModelo": "NINJA ZX-4RR"
+      },
+      {
+        "codigoModelo": 2886,
+        "nomeModelo": "NINJA ZX-6 600cc"
+      },
+      {
+        "codigoModelo": 2887,
+        "nomeModelo": "NINJA ZX-6R 600cc"
+      },
+      {
+        "codigoModelo": 2888,
+        "nomeModelo": "NINJA ZX-6R 636cc"
+      },
+      {
+        "codigoModelo": 2889,
+        "nomeModelo": "NINJA ZX-7 750cc"
+      },
+      {
+        "codigoModelo": 2890,
+        "nomeModelo": "NINJA ZX-9R 900cc"
+      },
+      {
+        "codigoModelo": 2891,
+        "nomeModelo": "NINJA ZZ-R 1100cc"
+      },
+      {
+        "codigoModelo": 6140,
+        "nomeModelo": "Versys 1000"
+      },
+      {
+        "codigoModelo": 6253,
+        "nomeModelo": "Versys 1000 GRAND TOURER"
+      },
+      {
+        "codigoModelo": 11527,
+        "nomeModelo": "Versys 1100"
+      },
+      {
+        "codigoModelo": 11528,
+        "nomeModelo": "Versys 1100 GRAND TOURER"
+      },
+      {
+        "codigoModelo": 5319,
+        "nomeModelo": "Versys 650cc"
+      },
+      {
+        "codigoModelo": 6141,
+        "nomeModelo": "Versys City 650"
+      },
+      {
+        "codigoModelo": 6142,
+        "nomeModelo": "Versys TOURER 650"
+      },
+      {
+        "codigoModelo": 8114,
+        "nomeModelo": "Versys-X 300"
+      },
+      {
+        "codigoModelo": 8115,
+        "nomeModelo": "Versys-X 300 TOURER"
+      },
+      {
+        "codigoModelo": 2892,
+        "nomeModelo": "VOYAGER 1200cc"
+      },
+      {
+        "codigoModelo": 2893,
+        "nomeModelo": "VULCAN 800 CLASSIC"
+      },
+      {
+        "codigoModelo": 5436,
+        "nomeModelo": "VULCAN 900 CLASSIC LT"
+      },
+      {
+        "codigoModelo": 5437,
+        "nomeModelo": "VULCAN 900 CUSTOM"
+      },
+      {
+        "codigoModelo": 2894,
+        "nomeModelo": "VULCAN EN 500 LTD"
+      },
+      {
+        "codigoModelo": 2895,
+        "nomeModelo": "VULCAN EN 500cc"
+      },
+      {
+        "codigoModelo": 2896,
+        "nomeModelo": "VULCAN LTD CLASS 500cc"
+      },
+      {
+        "codigoModelo": 2897,
+        "nomeModelo": "VULCAN NOMAD 1500cc"
+      },
+      {
+        "codigoModelo": 7282,
+        "nomeModelo": "VULCAN S 650"
+      },
+      {
+        "codigoModelo": 8031,
+        "nomeModelo": "VULCAN S 650 CAFÉ"
+      },
+      {
+        "codigoModelo": 8032,
+        "nomeModelo": "VULCAN S 650 SPECIAL EDITION"
+      },
+      {
+        "codigoModelo": 2898,
+        "nomeModelo": "VULCAN VN 1500 CLASSIC/ MEAN STREAK"
+      },
+      {
+        "codigoModelo": 2899,
+        "nomeModelo": "VULCAN VN 1500cc"
+      },
+      {
+        "codigoModelo": 2900,
+        "nomeModelo": "VULCAN VN 1600 MEAN STREAK"
+      },
+      {
+        "codigoModelo": 2901,
+        "nomeModelo": "VULCAN VN 2000"
+      },
+      {
+        "codigoModelo": 2902,
+        "nomeModelo": "VULCAN VN 750cc"
+      },
+      {
+        "codigoModelo": 2903,
+        "nomeModelo": "VULCAN VN 800cc"
+      },
+      {
+        "codigoModelo": 4633,
+        "nomeModelo": "VULCAN VN 900 CLASSIC"
+      },
+      {
+        "codigoModelo": 2904,
+        "nomeModelo": "Z 1000"
+      },
+      {
+        "codigoModelo": 11393,
+        "nomeModelo": "Z 1000 H2 "
+      },
+      {
+        "codigoModelo": 8033,
+        "nomeModelo": "Z 1000 R Edition"
+      },
+      {
+        "codigoModelo": 11904,
+        "nomeModelo": "Z 1100"
+      },
+      {
+        "codigoModelo": 11905,
+        "nomeModelo": "Z 1100 SE"
+      },
+      {
+        "codigoModelo": 7298,
+        "nomeModelo": "Z 300"
+      },
+      {
+        "codigoModelo": 8802,
+        "nomeModelo": "Z 400"
+      },
+      {
+        "codigoModelo": 10387,
+        "nomeModelo": "Z 400 SE"
+      },
+      {
+        "codigoModelo": 11158,
+        "nomeModelo": "Z 500"
+      },
+      {
+        "codigoModelo": 11159,
+        "nomeModelo": "Z 500 SE"
+      },
+      {
+        "codigoModelo": 7961,
+        "nomeModelo": "Z 650"
+      },
+      {
+        "codigoModelo": 10429,
+        "nomeModelo": "Z 650 RS"
+      },
+      {
+        "codigoModelo": 9237,
+        "nomeModelo": "Z 650 SE ABS"
+      },
+      {
+        "codigoModelo": 4458,
+        "nomeModelo": "Z 750"
+      },
+      {
+        "codigoModelo": 8116,
+        "nomeModelo": "Z 900"
+      },
+      {
+        "codigoModelo": 9953,
+        "nomeModelo": "Z 900 50TH Anniversary"
+      },
+      {
+        "codigoModelo": 10151,
+        "nomeModelo": "Z 900 R Edition"
+      },
+      {
+        "codigoModelo": 10430,
+        "nomeModelo": "Z 900 RS"
+      },
+      {
+        "codigoModelo": 8492,
+        "nomeModelo": "Z 900 RS CAFÉ"
+      },
+      {
+        "codigoModelo": 10189,
+        "nomeModelo": "Z 900 RS R Edition"
+      },
+      {
+        "codigoModelo": 11906,
+        "nomeModelo": "Z 900 SE"
+      },
+      {
+        "codigoModelo": 6365,
+        "nomeModelo": "Z-800"
+      },
+      {
+        "codigoModelo": 4177,
+        "nomeModelo": "ZX-14/ZX 14R 1352cc"
+      },
+      {
+        "codigoModelo": 2905,
+        "nomeModelo": "ZZR 1200"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "87",
+    "nomeMarca": "KTM",
+    "modelos": [
+      {
+        "codigoModelo": 5225,
+        "nomeModelo": "1190 RC8"
+      },
+      {
+        "codigoModelo": 5517,
+        "nomeModelo": "1190 RC8 R"
+      },
+      {
+        "codigoModelo": 5201,
+        "nomeModelo": "690 ENDURO /ENDURO R"
+      },
+      {
+        "codigoModelo": 11738,
+        "nomeModelo": "890 SMT"
+      },
+      {
+        "codigoModelo": 11861,
+        "nomeModelo": "990 DUKE"
+      },
+      {
+        "codigoModelo": 7608,
+        "nomeModelo": "ADVENTURE 1190 R"
+      },
+      {
+        "codigoModelo": 7144,
+        "nomeModelo": "ADVENTURE 1190cc"
+      },
+      {
+        "codigoModelo": 2910,
+        "nomeModelo": "ADVENTURE 640 ST"
+      },
+      {
+        "codigoModelo": 11595,
+        "nomeModelo": "ADVENTURE 890 R"
+      },
+      {
+        "codigoModelo": 2911,
+        "nomeModelo": "ADVENTURE 950cc"
+      },
+      {
+        "codigoModelo": 4208,
+        "nomeModelo": "ADVENTURE 990cc"
+      },
+      {
+        "codigoModelo": 5518,
+        "nomeModelo": "ADVENTURE R / DAKAR 990cc"
+      },
+      {
+        "codigoModelo": 7332,
+        "nomeModelo": "DUKE 200/ABS"
+      },
+      {
+        "codigoModelo": 7333,
+        "nomeModelo": "DUKE 390"
+      },
+      {
+        "codigoModelo": 2912,
+        "nomeModelo": "DUKE 640/ DUKE II 640"
+      },
+      {
+        "codigoModelo": 5351,
+        "nomeModelo": "DUKE 690"
+      },
+      {
+        "codigoModelo": 2913,
+        "nomeModelo": "EXC 125"
+      },
+      {
+        "codigoModelo": 11555,
+        "nomeModelo": "EXC 150"
+      },
+      {
+        "codigoModelo": 2914,
+        "nomeModelo": "EXC 200"
+      },
+      {
+        "codigoModelo": 2915,
+        "nomeModelo": "EXC 250"
+      },
+      {
+        "codigoModelo": 2916,
+        "nomeModelo": "EXC 300"
+      },
+      {
+        "codigoModelo": 11892,
+        "nomeModelo": "EXC 300 SIX DAYS"
+      },
+      {
+        "codigoModelo": 2917,
+        "nomeModelo": "EXC 380"
+      },
+      {
+        "codigoModelo": 2918,
+        "nomeModelo": "EXC 400"
+      },
+      {
+        "codigoModelo": 3862,
+        "nomeModelo": "EXC 450"
+      },
+      {
+        "codigoModelo": 2919,
+        "nomeModelo": "EXC 520"
+      },
+      {
+        "codigoModelo": 4077,
+        "nomeModelo": "EXC 525"
+      },
+      {
+        "codigoModelo": 7242,
+        "nomeModelo": "EXC-F 250"
+      },
+      {
+        "codigoModelo": 7334,
+        "nomeModelo": "EXC-F 250 SIX DAYS"
+      },
+      {
+        "codigoModelo": 7335,
+        "nomeModelo": "EXC-F 300 SIX DAYS"
+      },
+      {
+        "codigoModelo": 7243,
+        "nomeModelo": "EXC-F 350"
+      },
+      {
+        "codigoModelo": 8493,
+        "nomeModelo": "EXC-F 350 SIX DAYS"
+      },
+      {
+        "codigoModelo": 12063,
+        "nomeModelo": "EXC-F 450"
+      },
+      {
+        "codigoModelo": 12064,
+        "nomeModelo": "EXC-F 500"
+      },
+      {
+        "codigoModelo": 2920,
+        "nomeModelo": "LC4 640 TRAIL"
+      },
+      {
+        "codigoModelo": 2921,
+        "nomeModelo": "SC 620"
+      },
+      {
+        "codigoModelo": 7609,
+        "nomeModelo": "SUPER ADVENTURE 1290"
+      },
+      {
+        "codigoModelo": 8072,
+        "nomeModelo": "SUPER ADVENTURE 1290 R"
+      },
+      {
+        "codigoModelo": 8117,
+        "nomeModelo": "SUPER ADVENTURE 1290 S"
+      },
+      {
+        "codigoModelo": 8260,
+        "nomeModelo": "SUPERDUKE 1290 GT"
+      },
+      {
+        "codigoModelo": 7244,
+        "nomeModelo": "SUPERDUKE 1290 R"
+      },
+      {
+        "codigoModelo": 4078,
+        "nomeModelo": "SUPERDUKE 990"
+      },
+      {
+        "codigoModelo": 4512,
+        "nomeModelo": "SUPERMOTO 690"
+      },
+      {
+        "codigoModelo": 5519,
+        "nomeModelo": "SUPERMOTO 990 R"
+      },
+      {
+        "codigoModelo": 5263,
+        "nomeModelo": "SUPERMOTO 990 T"
+      },
+      {
+        "codigoModelo": 2922,
+        "nomeModelo": "SX 125"
+      },
+      {
+        "codigoModelo": 2923,
+        "nomeModelo": "SX 250/ SX 250 F"
+      },
+      {
+        "codigoModelo": 11898,
+        "nomeModelo": "SX 300"
+      },
+      {
+        "codigoModelo": 5520,
+        "nomeModelo": "SX 350 / 350 F"
+      },
+      {
+        "codigoModelo": 2924,
+        "nomeModelo": "SX 450/ SX 450F"
+      },
+      {
+        "codigoModelo": 2925,
+        "nomeModelo": "SX 50"
+      },
+      {
+        "codigoModelo": 2926,
+        "nomeModelo": "SX 65"
+      },
+      {
+        "codigoModelo": 2927,
+        "nomeModelo": "SX 85"
+      },
+      {
+        "codigoModelo": 2928,
+        "nomeModelo": "SXC 520/ 540"
+      },
+      {
+        "codigoModelo": 2929,
+        "nomeModelo": "SXC 625"
+      },
+      {
+        "codigoModelo": 12077,
+        "nomeModelo": "SX-F 450 FACTORY EDITION"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "204",
+    "nomeMarca": "KYMCO",
+    "modelos": [
+      {
+        "codigoModelo": 8706,
+        "nomeModelo": "AGILITY 16+ 200i ABS"
+      },
+      {
+        "codigoModelo": 9220,
+        "nomeModelo": "AK 550i ABS"
+      },
+      {
+        "codigoModelo": 11284,
+        "nomeModelo": "AK 550i PREMIUM "
+      },
+      {
+        "codigoModelo": 7933,
+        "nomeModelo": "DJW 50 50cc"
+      },
+      {
+        "codigoModelo": 7934,
+        "nomeModelo": "DOWNTOWN 300i"
+      },
+      {
+        "codigoModelo": 11307,
+        "nomeModelo": "DOWNTOWN 350i "
+      },
+      {
+        "codigoModelo": 7935,
+        "nomeModelo": "M´BOY 90cc"
+      },
+      {
+        "codigoModelo": 7936,
+        "nomeModelo": "PEOPLE 50"
+      },
+      {
+        "codigoModelo": 7937,
+        "nomeModelo": "PEOPLE GT 300i"
+      },
+      {
+        "codigoModelo": 7938,
+        "nomeModelo": "ZING 150"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "159",
+    "nomeMarca": "LANDUM",
+    "modelos": [
+      {
+        "codigoModelo": 5014,
+        "nomeModelo": "MOTO TRUCK LD 150 ZH"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "88",
+    "nomeMarca": "L'AQUILA",
+    "modelos": [
+      {
+        "codigoModelo": 2930,
+        "nomeModelo": "AKROS 50"
+      },
+      {
+        "codigoModelo": 2931,
+        "nomeModelo": "AKROS 90"
+      },
+      {
+        "codigoModelo": 2932,
+        "nomeModelo": "ERGON 50"
+      },
+      {
+        "codigoModelo": 2933,
+        "nomeModelo": "NIX 50"
+      },
+      {
+        "codigoModelo": 2934,
+        "nomeModelo": "PALIO 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "89",
+    "nomeMarca": "LAVRALE",
+    "modelos": [
+      {
+        "codigoModelo": 2935,
+        "nomeModelo": "QUATTOR 30.0 190cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "139",
+    "nomeMarca": "LERIVO",
+    "modelos": [
+      {
+        "codigoModelo": 4459,
+        "nomeModelo": "Formigão Furgão 200cc"
+      },
+      {
+        "codigoModelo": 4460,
+        "nomeModelo": "Formigão Pick-Up 200cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "258",
+    "nomeMarca": "LEVA",
+    "modelos": [
+      {
+        "codigoModelo": 11658,
+        "nomeModelo": "EG1 5000W"
+      },
+      {
+        "codigoModelo": 11659,
+        "nomeModelo": "ES1 5000W"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "178",
+    "nomeMarca": "LIFAN",
+    "modelos": [
+      {
+        "codigoModelo": 5565,
+        "nomeModelo": "CARGO 200 ZH (triciclo carga)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "148",
+    "nomeMarca": "Lon-V",
+    "modelos": [
+      {
+        "codigoModelo": 5226,
+        "nomeModelo": "DELUXE 152cc"
+      },
+      {
+        "codigoModelo": 5264,
+        "nomeModelo": "E RETRÔ 2000 Watts (Elétrica)"
+      },
+      {
+        "codigoModelo": 5265,
+        "nomeModelo": "LY 125T -5 RETRÔ"
+      },
+      {
+        "codigoModelo": 4653,
+        "nomeModelo": "LY 150T-5 RETRÔ"
+      },
+      {
+        "codigoModelo": 4654,
+        "nomeModelo": "LY 150T-6A CLASSIC"
+      },
+      {
+        "codigoModelo": 4655,
+        "nomeModelo": "LY 150T-7A RACER LIMITED EDITION"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "175",
+    "nomeMarca": "MAGRÃO TRICICLOS",
+    "modelos": [
+      {
+        "codigoModelo": 6218,
+        "nomeModelo": "MT7 CHOPPER 1.6 Pop"
+      },
+      {
+        "codigoModelo": 5438,
+        "nomeModelo": "MT7 CHOPPER 1.6 Std."
+      },
+      {
+        "codigoModelo": 5439,
+        "nomeModelo": "MT7 CHOPPER 1.6 Top."
+      }
+    ]
+  },
+  {
+    "codigoMarca": "146",
+    "nomeMarca": "Malaguti",
+    "modelos": [
+      {
+        "codigoModelo": 4634,
+        "nomeModelo": "CIAK MASTER 200"
+      },
+      {
+        "codigoModelo": 4635,
+        "nomeModelo": "SPIDER MAXGT 500"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "126",
+    "nomeMarca": "MIZA",
+    "modelos": [
+      {
+        "codigoModelo": 4353,
+        "nomeModelo": "DRAGO LJ 150-7"
+      },
+      {
+        "codigoModelo": 4178,
+        "nomeModelo": "EASY LJ 110-10"
+      },
+      {
+        "codigoModelo": 4426,
+        "nomeModelo": "EASY LJ 125-10"
+      },
+      {
+        "codigoModelo": 4354,
+        "nomeModelo": "FAST LJ 150-2"
+      },
+      {
+        "codigoModelo": 4265,
+        "nomeModelo": "Skema LJ 125-6"
+      },
+      {
+        "codigoModelo": 4355,
+        "nomeModelo": "VITE LJ 150T-7"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "259",
+    "nomeMarca": "Mobílli",
+    "modelos": [
+      {
+        "codigoModelo": 11660,
+        "nomeModelo": "GW12"
+      },
+      {
+        "codigoModelo": 11661,
+        "nomeModelo": "GW12B"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "90",
+    "nomeMarca": "MOTO GUZZI",
+    "modelos": [
+      {
+        "codigoModelo": 2936,
+        "nomeModelo": "CALIFORNIA Especial"
+      },
+      {
+        "codigoModelo": 2937,
+        "nomeModelo": "CALIFORNIA EV 1064cc"
+      },
+      {
+        "codigoModelo": 2938,
+        "nomeModelo": "CALIFORNIA Jackal 1064cc"
+      },
+      {
+        "codigoModelo": 2939,
+        "nomeModelo": "CALIFORNIA Stone 1064cc"
+      },
+      {
+        "codigoModelo": 2940,
+        "nomeModelo": "QUOTA 1100 ES"
+      },
+      {
+        "codigoModelo": 2941,
+        "nomeModelo": "V11 SPORT/ LE MANS 1064cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "201",
+    "nomeMarca": "MOTOCAR",
+    "modelos": [
+      {
+        "codigoModelo": 7245,
+        "nomeModelo": "MCA-200"
+      },
+      {
+        "codigoModelo": 8073,
+        "nomeModelo": "MCA-250"
+      },
+      {
+        "codigoModelo": 7246,
+        "nomeModelo": "MCF-200"
+      },
+      {
+        "codigoModelo": 8074,
+        "nomeModelo": "MCF-250"
+      },
+      {
+        "codigoModelo": 7247,
+        "nomeModelo": "MTX-150"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "255",
+    "nomeMarca": "MOTOMORINI",
+    "modelos": [
+      {
+        "codigoModelo": 11546,
+        "nomeModelo": "CALIBRO BAGGER 700"
+      },
+      {
+        "codigoModelo": 11547,
+        "nomeModelo": "CALIBRO CUSTOM 700"
+      },
+      {
+        "codigoModelo": 11573,
+        "nomeModelo": "SEIEMMEZZO SCRAMBLE 650"
+      },
+      {
+        "codigoModelo": 11574,
+        "nomeModelo": "SEIEMMEZZO STREET 650 "
+      },
+      {
+        "codigoModelo": 11584,
+        "nomeModelo": "X-CAPE ALLOY 650 "
+      },
+      {
+        "codigoModelo": 11585,
+        "nomeModelo": "X-CAPE SPOKE 650 "
+      },
+      {
+        "codigoModelo": 11586,
+        "nomeModelo": "X-CAPE SPOKE GOLD EDITION 650 "
+      }
+    ]
+  },
+  {
+    "codigoMarca": "200",
+    "nomeMarca": "MOTORINO",
+    "modelos": [
+      {
+        "codigoModelo": 6822,
+        "nomeModelo": "Bacio 125cc"
+      },
+      {
+        "codigoModelo": 6823,
+        "nomeModelo": "Bellavita 150cc"
+      },
+      {
+        "codigoModelo": 7994,
+        "nomeModelo": "Cappuccino 50cc"
+      },
+      {
+        "codigoModelo": 10935,
+        "nomeModelo": "Cappuccino Absoluta 150cc"
+      },
+      {
+        "codigoModelo": 11806,
+        "nomeModelo": "Cappuccino ELETTRICA 3000W"
+      },
+      {
+        "codigoModelo": 10936,
+        "nomeModelo": "Cappuccino Ousada 150cc"
+      },
+      {
+        "codigoModelo": 8118,
+        "nomeModelo": "Cappuccino S 50cc"
+      },
+      {
+        "codigoModelo": 6824,
+        "nomeModelo": "Cappuccino150cc"
+      },
+      {
+        "codigoModelo": 6825,
+        "nomeModelo": "Custom 150cc"
+      },
+      {
+        "codigoModelo": 6826,
+        "nomeModelo": "Custom S 150cc"
+      },
+      {
+        "codigoModelo": 8436,
+        "nomeModelo": "Lambreta V200 Special"
+      },
+      {
+        "codigoModelo": 6827,
+        "nomeModelo": "Star 150cc"
+      },
+      {
+        "codigoModelo": 6828,
+        "nomeModelo": "Star 200cc"
+      },
+      {
+        "codigoModelo": 6829,
+        "nomeModelo": "Star Automatic 125cc"
+      },
+      {
+        "codigoModelo": 6830,
+        "nomeModelo": "Velocette 150cc"
+      },
+      {
+        "codigoModelo": 6831,
+        "nomeModelo": "Velvet 150cc/LT"
+      },
+      {
+        "codigoModelo": 8119,
+        "nomeModelo": "Velvet 50cc"
+      },
+      {
+        "codigoModelo": 8382,
+        "nomeModelo": "Velvet LT 125cc"
+      },
+      {
+        "codigoModelo": 7248,
+        "nomeModelo": "Vitesse 150cc"
+      },
+      {
+        "codigoModelo": 6832,
+        "nomeModelo": "Volti 3000w"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "160",
+    "nomeMarca": "MRX",
+    "modelos": [
+      {
+        "codigoModelo": 5015,
+        "nomeModelo": "230R"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "91",
+    "nomeMarca": "MV AGUSTA",
+    "modelos": [
+      {
+        "codigoModelo": 5052,
+        "nomeModelo": "BRUTALE 1078RR"
+      },
+      {
+        "codigoModelo": 5714,
+        "nomeModelo": "BRUTALE 1090R"
+      },
+      {
+        "codigoModelo": 5715,
+        "nomeModelo": "BRUTALE 1090RR"
+      },
+      {
+        "codigoModelo": 6902,
+        "nomeModelo": "BRUTALE 800"
+      },
+      {
+        "codigoModelo": 4788,
+        "nomeModelo": "BRUTALE 910R"
+      },
+      {
+        "codigoModelo": 4681,
+        "nomeModelo": "BRUTALE 910S"
+      },
+      {
+        "codigoModelo": 5053,
+        "nomeModelo": "BRUTALE 989R"
+      },
+      {
+        "codigoModelo": 6946,
+        "nomeModelo": "F3 800"
+      },
+      {
+        "codigoModelo": 5054,
+        "nomeModelo": "F4 1078RR 312"
+      },
+      {
+        "codigoModelo": 2942,
+        "nomeModelo": "F4 750 (Ouro)"
+      },
+      {
+        "codigoModelo": 2943,
+        "nomeModelo": "F4 750s (Prata)"
+      },
+      {
+        "codigoModelo": 4806,
+        "nomeModelo": "F4- R312"
+      },
+      {
+        "codigoModelo": 5713,
+        "nomeModelo": "F4-1000"
+      },
+      {
+        "codigoModelo": 4740,
+        "nomeModelo": "F4-1000 RR"
+      },
+      {
+        "codigoModelo": 7060,
+        "nomeModelo": "RIVALE 800"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "92",
+    "nomeMarca": "MVK",
+    "modelos": [
+      {
+        "codigoModelo": 5385,
+        "nomeModelo": "BIG FORCE 250 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4324,
+        "nomeModelo": "BLACK STAR 150"
+      },
+      {
+        "codigoModelo": 5386,
+        "nomeModelo": "BRX 140"
+      },
+      {
+        "codigoModelo": 4413,
+        "nomeModelo": "DUAL 200"
+      },
+      {
+        "codigoModelo": 4818,
+        "nomeModelo": "FENIX GOLD 240"
+      },
+      {
+        "codigoModelo": 4325,
+        "nomeModelo": "FOX 110"
+      },
+      {
+        "codigoModelo": 3920,
+        "nomeModelo": "GO 100"
+      },
+      {
+        "codigoModelo": 4326,
+        "nomeModelo": "HALLEY / FENIX 200"
+      },
+      {
+        "codigoModelo": 3921,
+        "nomeModelo": "HALLEY 150"
+      },
+      {
+        "codigoModelo": 5387,
+        "nomeModelo": "JURASIC 300"
+      },
+      {
+        "codigoModelo": 2945,
+        "nomeModelo": "MA 100-3B"
+      },
+      {
+        "codigoModelo": 2947,
+        "nomeModelo": "MA 125-GY"
+      },
+      {
+        "codigoModelo": 2946,
+        "nomeModelo": "MA/ BLACK STAR 125-7"
+      },
+      {
+        "codigoModelo": 2944,
+        "nomeModelo": "MA/ FOXX 100-3"
+      },
+      {
+        "codigoModelo": 5388,
+        "nomeModelo": "SIMBA 50 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 5389,
+        "nomeModelo": "SPORT 150 QUADRICICLO"
+      },
+      {
+        "codigoModelo": 4819,
+        "nomeModelo": "SPYDER 270 / 320"
+      },
+      {
+        "codigoModelo": 4327,
+        "nomeModelo": "STREET 150/STREET LIMITED"
+      },
+      {
+        "codigoModelo": 4414,
+        "nomeModelo": "SUPER X 125 R"
+      },
+      {
+        "codigoModelo": 4415,
+        "nomeModelo": "XRT 110"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "239",
+    "nomeMarca": "NIU",
+    "modelos": [
+      {
+        "codigoModelo": 10423,
+        "nomeModelo": "NQI GTS 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10424,
+        "nomeModelo": "NQI Sport 1500W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10428,
+        "nomeModelo": "UQI GT 1200W (Elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "93",
+    "nomeMarca": "ORCA",
+    "modelos": [
+      {
+        "codigoModelo": 2948,
+        "nomeModelo": "AX 100"
+      },
+      {
+        "codigoModelo": 2949,
+        "nomeModelo": "AX 100-A"
+      },
+      {
+        "codigoModelo": 2950,
+        "nomeModelo": "JC 125"
+      },
+      {
+        "codigoModelo": 2951,
+        "nomeModelo": "JC 125-2"
+      },
+      {
+        "codigoModelo": 2952,
+        "nomeModelo": "JC 125-8"
+      },
+      {
+        "codigoModelo": 2953,
+        "nomeModelo": "QM 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "164",
+    "nomeMarca": "PEGASSI",
+    "modelos": [
+      {
+        "codigoModelo": 5155,
+        "nomeModelo": "BR III 150CC"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "94",
+    "nomeMarca": "PEUGEOT",
+    "modelos": [
+      {
+        "codigoModelo": 2954,
+        "nomeModelo": "BUXY 50"
+      },
+      {
+        "codigoModelo": 2955,
+        "nomeModelo": "ELYSEO 125"
+      },
+      {
+        "codigoModelo": 9952,
+        "nomeModelo": "SCOOT ELEC"
+      },
+      {
+        "codigoModelo": 2957,
+        "nomeModelo": "SPEEDAKE 50"
+      },
+      {
+        "codigoModelo": 2958,
+        "nomeModelo": "SPEEDFIGHT 100"
+      },
+      {
+        "codigoModelo": 2959,
+        "nomeModelo": "SPEEDFIGHT 50"
+      },
+      {
+        "codigoModelo": 2960,
+        "nomeModelo": "SPEEDFIGHT 50-LC"
+      },
+      {
+        "codigoModelo": 2961,
+        "nomeModelo": "SQUAB 50"
+      },
+      {
+        "codigoModelo": 2962,
+        "nomeModelo": "TREKKER 100"
+      },
+      {
+        "codigoModelo": 2963,
+        "nomeModelo": "VIVACITY 50"
+      },
+      {
+        "codigoModelo": 2964,
+        "nomeModelo": "ZENITH 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "95",
+    "nomeMarca": "PIAGGIO",
+    "modelos": [
+      {
+        "codigoModelo": 10851,
+        "nomeModelo": "Apé Cargo 300cc"
+      },
+      {
+        "codigoModelo": 10852,
+        "nomeModelo": "Apé Passenger 230cc"
+      },
+      {
+        "codigoModelo": 5156,
+        "nomeModelo": "BERVERLY  TOURING 300  i.e 278cc"
+      },
+      {
+        "codigoModelo": 2965,
+        "nomeModelo": "BEVERLY 250 224cc"
+      },
+      {
+        "codigoModelo": 2966,
+        "nomeModelo": "BEVERLY 500 460cc"
+      },
+      {
+        "codigoModelo": 11545,
+        "nomeModelo": "BEVERLY S 400 "
+      },
+      {
+        "codigoModelo": 6474,
+        "nomeModelo": "BEVERLY SPORT TOURING 350 i.e 330cc"
+      },
+      {
+        "codigoModelo": 11553,
+        "nomeModelo": "E-Cargo (Elétrico)"
+      },
+      {
+        "codigoModelo": 11554,
+        "nomeModelo": "E-Passenger (Elétrico)"
+      },
+      {
+        "codigoModelo": 4656,
+        "nomeModelo": "Liberty 200 200cc"
+      },
+      {
+        "codigoModelo": 8222,
+        "nomeModelo": "Liberty S 150 IGET"
+      },
+      {
+        "codigoModelo": 11566,
+        "nomeModelo": "Liberty150"
+      },
+      {
+        "codigoModelo": 6604,
+        "nomeModelo": "MP3 300 278cc"
+      },
+      {
+        "codigoModelo": 4561,
+        "nomeModelo": "MP3 400 398cc"
+      },
+      {
+        "codigoModelo": 5016,
+        "nomeModelo": "MP3 500 493cc"
+      },
+      {
+        "codigoModelo": 11568,
+        "nomeModelo": "MP3 530 HPE"
+      },
+      {
+        "codigoModelo": 2967,
+        "nomeModelo": "NRG MC3 DD 49.4cc"
+      },
+      {
+        "codigoModelo": 2968,
+        "nomeModelo": "RUNNER 50"
+      },
+      {
+        "codigoModelo": 7864,
+        "nomeModelo": "VESPA 946 EMPORIO ARMANI 150"
+      },
+      {
+        "codigoModelo": 8308,
+        "nomeModelo": "VESPA CLASSIC ELEGANTE 150"
+      },
+      {
+        "codigoModelo": 8309,
+        "nomeModelo": "VESPA CLASSIC SXL 150"
+      },
+      {
+        "codigoModelo": 8173,
+        "nomeModelo": "VESPA CLASSIC VXL 150"
+      },
+      {
+        "codigoModelo": 9032,
+        "nomeModelo": "VESPA CLUB 125"
+      },
+      {
+        "codigoModelo": 9578,
+        "nomeModelo": "VESPA CLUB ZX 125"
+      },
+      {
+        "codigoModelo": 7865,
+        "nomeModelo": "VESPA GTS 300 ABS"
+      },
+      {
+        "codigoModelo": 7866,
+        "nomeModelo": "VESPA GTS 300 SUPER ABS"
+      },
+      {
+        "codigoModelo": 7867,
+        "nomeModelo": "VESPA GTS 300 SUPER SPORT ABS"
+      },
+      {
+        "codigoModelo": 7868,
+        "nomeModelo": "VESPA GTS 300 TOURING ABS"
+      },
+      {
+        "codigoModelo": 4209,
+        "nomeModelo": "VESPA GTS/SUPER/SUPER SPORT 250 i.e"
+      },
+      {
+        "codigoModelo": 6475,
+        "nomeModelo": "VESPA GTV/GTS TOURING 300 i.e 278cc"
+      },
+      {
+        "codigoModelo": 4210,
+        "nomeModelo": "VESPA LX 150 151cc"
+      },
+      {
+        "codigoModelo": 5017,
+        "nomeModelo": "VESPA LXV 150 155cc"
+      },
+      {
+        "codigoModelo": 9579,
+        "nomeModelo": "VESPA NOTTE 125"
+      },
+      {
+        "codigoModelo": 7869,
+        "nomeModelo": "VESPA PRIMAVERA 125 IGET ABS"
+      },
+      {
+        "codigoModelo": 7870,
+        "nomeModelo": "VESPA PRIMAVERA 150 IGET ABS"
+      },
+      {
+        "codigoModelo": 2969,
+        "nomeModelo": "VESPA PX 150 ORIGINALE"
+      },
+      {
+        "codigoModelo": 2970,
+        "nomeModelo": "VESPA PX 200"
+      },
+      {
+        "codigoModelo": 7871,
+        "nomeModelo": "VESPA SPRINT 150 S IGET ABS"
+      },
+      {
+        "codigoModelo": 9033,
+        "nomeModelo": "VESPA ZX PRIME 125"
+      },
+      {
+        "codigoModelo": 2971,
+        "nomeModelo": "ZIP 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "210",
+    "nomeMarca": "POLARIS",
+    "modelos": [
+      {
+        "codigoModelo": 8650,
+        "nomeModelo": "General 1000 CREW 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9778,
+        "nomeModelo": "General XP 1000 DELUXE (UTV)"
+      },
+      {
+        "codigoModelo": 10744,
+        "nomeModelo": "General XP 4 1000 PREMIUM (UTV)"
+      },
+      {
+        "codigoModelo": 10745,
+        "nomeModelo": "General XP 4 1000 ULTIMATE (UTV)"
+      },
+      {
+        "codigoModelo": 9087,
+        "nomeModelo": "Ranger 1000 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11972,
+        "nomeModelo": "Ranger 1000 CREW Premium 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11973,
+        "nomeModelo": "Ranger 1000 EPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11974,
+        "nomeModelo": "Ranger 1000 Premium 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11975,
+        "nomeModelo": "Ranger 500 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9844,
+        "nomeModelo": "Ranger 570 4x4 (UTV)/SP"
+      },
+      {
+        "codigoModelo": 10426,
+        "nomeModelo": "Ranger 570 SP Premium 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9845,
+        "nomeModelo": "Ranger 570-4 CREW 4x4 (UTV)/SP"
+      },
+      {
+        "codigoModelo": 10427,
+        "nomeModelo": "Ranger 570-4 CREW SP Premium 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11976,
+        "nomeModelo": "RZR PRO R 4 ULTIMATE 4X4 (UTV)"
+      },
+      {
+        "codigoModelo": 11977,
+        "nomeModelo": "RZR PRO S ULTIMATE 4X4 (UTV)"
+      },
+      {
+        "codigoModelo": 11978,
+        "nomeModelo": "RZR PRO XP 4 ULTIMATE Turbo 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9089,
+        "nomeModelo": "RZR PRO XP PREMIUM Turbo 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9368,
+        "nomeModelo": "RZR PRO XP SPORT Turbo 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9090,
+        "nomeModelo": "RZR PRO XP ULTIMATE Turbo 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 10187,
+        "nomeModelo": "RZR R 4 ULTIMATE Turbo 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8653,
+        "nomeModelo": "RZR S 900 EPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8652,
+        "nomeModelo": "RZR S1000 EPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9092,
+        "nomeModelo": "RZR S4 1000 EPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9517,
+        "nomeModelo": "RZR TRAIL S 1000 Premium 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9518,
+        "nomeModelo": "RZR TRAIL S 900 Sport 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8654,
+        "nomeModelo": "RZR XP 1000 EPS 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8655,
+        "nomeModelo": "RZR XP 4 1000 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11979,
+        "nomeModelo": "RZR XP 4 ULTIMATE 4X4 (UTV)"
+      },
+      {
+        "codigoModelo": 8656,
+        "nomeModelo": "RZR XP TURBO 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 8657,
+        "nomeModelo": "RZR XP TURBO S 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 9313,
+        "nomeModelo": "Sportsman 570  LE 4x4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 8383,
+        "nomeModelo": "Sportsman 570 EFI 4x4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 10844,
+        "nomeModelo": "Sportsman 570 EFI 4x4 Quadriciclo EPS"
+      },
+      {
+        "codigoModelo": 8385,
+        "nomeModelo": "Sportsman 570 EFI Tour. 4x4 Quad. EPS/SP"
+      },
+      {
+        "codigoModelo": 8384,
+        "nomeModelo": "Sportsman 570 EFI Touri. 4x4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 8386,
+        "nomeModelo": "Sportsman XP 1000 4x4 Quadriciclo"
+      },
+      {
+        "codigoModelo": 11983,
+        "nomeModelo": "XVR XPEDITION XP 5 NORTHSTAR ADV 4x4 (UTV)"
+      },
+      {
+        "codigoModelo": 11309,
+        "nomeModelo": "XVR XPEDITION XP 5 Ultimate 4X4 (UTV)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "173",
+    "nomeMarca": "REGAL RAPTOR",
+    "modelos": [
+      {
+        "codigoModelo": 5405,
+        "nomeModelo": "BLACK JACK 320"
+      },
+      {
+        "codigoModelo": 5406,
+        "nomeModelo": "FENIX GOLD 240"
+      },
+      {
+        "codigoModelo": 5407,
+        "nomeModelo": "GHOST 270/320"
+      },
+      {
+        "codigoModelo": 5408,
+        "nomeModelo": "SPYDER 320"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "198",
+    "nomeMarca": "RIGUETE",
+    "modelos": [
+      {
+        "codigoModelo": 6721,
+        "nomeModelo": "TRC-01 GRAN LUXO 1.6"
+      },
+      {
+        "codigoModelo": 6761,
+        "nomeModelo": "TRC-01 GRAN LUXO 1.8"
+      },
+      {
+        "codigoModelo": 6722,
+        "nomeModelo": "TRC-01 JUNIOR 1.8"
+      },
+      {
+        "codigoModelo": 6723,
+        "nomeModelo": "TRC-01 JUNIOR SE 1.8"
+      },
+      {
+        "codigoModelo": 6724,
+        "nomeModelo": "TRC-01 LUXO 1.6"
+      },
+      {
+        "codigoModelo": 7872,
+        "nomeModelo": "TRC-01 RGT-5 1.6"
+      },
+      {
+        "codigoModelo": 6725,
+        "nomeModelo": "TRC-01 SUPER LUXO 1.6"
+      },
+      {
+        "codigoModelo": 6762,
+        "nomeModelo": "TRC-01 SUPER LUXO 1.8"
+      },
+      {
+        "codigoModelo": 6726,
+        "nomeModelo": "TRC-01 SUPER LUXO SE 1.6"
+      },
+      {
+        "codigoModelo": 6763,
+        "nomeModelo": "TRC-01 SUPER LUXO SE 1.8"
+      },
+      {
+        "codigoModelo": 6727,
+        "nomeModelo": "TRC-01 VERSÃO 1 1.8"
+      },
+      {
+        "codigoModelo": 6728,
+        "nomeModelo": "TRC-01 VERSÃO 2 1.8"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "192",
+    "nomeMarca": "Royal Enfield",
+    "modelos": [
+      {
+        "codigoModelo": 7942,
+        "nomeModelo": "Bullet 500"
+      },
+      {
+        "codigoModelo": 11668,
+        "nomeModelo": "Classic 350 Chrome "
+      },
+      {
+        "codigoModelo": 11669,
+        "nomeModelo": "Classic 350 Dark"
+      },
+      {
+        "codigoModelo": 11670,
+        "nomeModelo": "Classic 350 Halcyon "
+      },
+      {
+        "codigoModelo": 11671,
+        "nomeModelo": "Classic 350 Heritage"
+      },
+      {
+        "codigoModelo": 11672,
+        "nomeModelo": "Classic 350 Signals"
+      },
+      {
+        "codigoModelo": 7943,
+        "nomeModelo": "Classic 500 EFI"
+      },
+      {
+        "codigoModelo": 11936,
+        "nomeModelo": "Classic 650 Base"
+      },
+      {
+        "codigoModelo": 11937,
+        "nomeModelo": "Classic 650 Mid"
+      },
+      {
+        "codigoModelo": 11938,
+        "nomeModelo": "Classic 650 Top"
+      },
+      {
+        "codigoModelo": 7944,
+        "nomeModelo": "Classic Battle Green 500 EFI"
+      },
+      {
+        "codigoModelo": 7945,
+        "nomeModelo": "Classic Chrome 500 EFI"
+      },
+      {
+        "codigoModelo": 7946,
+        "nomeModelo": "Classic Desert Storm 500 EFI"
+      },
+      {
+        "codigoModelo": 8223,
+        "nomeModelo": "Classic Gun Metal Grey 500 EFI"
+      },
+      {
+        "codigoModelo": 8494,
+        "nomeModelo": "Classic Pegasus 500 EFI"
+      },
+      {
+        "codigoModelo": 8189,
+        "nomeModelo": "Classic Redditch 500 EFI"
+      },
+      {
+        "codigoModelo": 7947,
+        "nomeModelo": "Classic Squadron Blue 500 EFI"
+      },
+      {
+        "codigoModelo": 8224,
+        "nomeModelo": "Classic Stealth Black 500 EFI"
+      },
+      {
+        "codigoModelo": 9507,
+        "nomeModelo": "Classic Tribute Black 500 EFI"
+      },
+      {
+        "codigoModelo": 11673,
+        "nomeModelo": "Classic/Classic 500 Chrome "
+      },
+      {
+        "codigoModelo": 7948,
+        "nomeModelo": "Continental 535 EFI"
+      },
+      {
+        "codigoModelo": 11674,
+        "nomeModelo": "Continental GT 120 Year Edition 650"
+      },
+      {
+        "codigoModelo": 11675,
+        "nomeModelo": "Continental GT 650"
+      },
+      {
+        "codigoModelo": 11676,
+        "nomeModelo": "Continental GT 650 Custom "
+      },
+      {
+        "codigoModelo": 11677,
+        "nomeModelo": "Continental GT 650 Special Colorway "
+      },
+      {
+        "codigoModelo": 11679,
+        "nomeModelo": "Guerrilla 450 Mid"
+      },
+      {
+        "codigoModelo": 11680,
+        "nomeModelo": "Guerrilla 450 Top"
+      },
+      {
+        "codigoModelo": 8582,
+        "nomeModelo": "Himalayan 411 EFI"
+      },
+      {
+        "codigoModelo": 11681,
+        "nomeModelo": "Himalayan 450 Mid"
+      },
+      {
+        "codigoModelo": 11682,
+        "nomeModelo": "Himalayan 450 Premium"
+      },
+      {
+        "codigoModelo": 11683,
+        "nomeModelo": "Himalayan 450 Top"
+      },
+      {
+        "codigoModelo": 8978,
+        "nomeModelo": "Himalayan Sleet 411 EFI"
+      },
+      {
+        "codigoModelo": 11684,
+        "nomeModelo": "Hunter 350 Dapper"
+      },
+      {
+        "codigoModelo": 11970,
+        "nomeModelo": "Hunter 350 Mid"
+      },
+      {
+        "codigoModelo": 12049,
+        "nomeModelo": "Hunter 350 Premium"
+      },
+      {
+        "codigoModelo": 11685,
+        "nomeModelo": "Hunter 350 Rebel"
+      },
+      {
+        "codigoModelo": 11971,
+        "nomeModelo": "Hunter 350 Top"
+      },
+      {
+        "codigoModelo": 11686,
+        "nomeModelo": "Interceptor 120 Year Edition 650"
+      },
+      {
+        "codigoModelo": 11687,
+        "nomeModelo": "Interceptor 650 Custom "
+      },
+      {
+        "codigoModelo": 11688,
+        "nomeModelo": "Interceptor 650 Special Colorway "
+      },
+      {
+        "codigoModelo": 11689,
+        "nomeModelo": "Interceptor 650 Standard"
+      },
+      {
+        "codigoModelo": 11893,
+        "nomeModelo": "Interceptor Bear 650 Custom "
+      },
+      {
+        "codigoModelo": 11894,
+        "nomeModelo": "Interceptor Bear 650 Premium"
+      },
+      {
+        "codigoModelo": 11895,
+        "nomeModelo": "Interceptor Bear 650 Top"
+      },
+      {
+        "codigoModelo": 11690,
+        "nomeModelo": "Meteor 350 Aurora "
+      },
+      {
+        "codigoModelo": 11691,
+        "nomeModelo": "Meteor 350 Fireball "
+      },
+      {
+        "codigoModelo": 11692,
+        "nomeModelo": "Meteor 350 Stellar"
+      },
+      {
+        "codigoModelo": 11693,
+        "nomeModelo": "Meteor 350 Supernova "
+      },
+      {
+        "codigoModelo": 10688,
+        "nomeModelo": "Scram 411 EFI"
+      },
+      {
+        "codigoModelo": 11694,
+        "nomeModelo": "Shotgun 650 Base"
+      },
+      {
+        "codigoModelo": 11695,
+        "nomeModelo": "Shotgun 650 Mid"
+      },
+      {
+        "codigoModelo": 11696,
+        "nomeModelo": "Shotgun 650 Top"
+      },
+      {
+        "codigoModelo": 11697,
+        "nomeModelo": "Super Meteor 650 Astral "
+      },
+      {
+        "codigoModelo": 11698,
+        "nomeModelo": "Super Meteor 650 Celestial "
+      },
+      {
+        "codigoModelo": 11699,
+        "nomeModelo": "Super Meteor 650 Interstellar"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "96",
+    "nomeMarca": "SANYANG",
+    "modelos": [
+      {
+        "codigoModelo": 2972,
+        "nomeModelo": "ENJOY 50"
+      },
+      {
+        "codigoModelo": 2973,
+        "nomeModelo": "HUSKY 150"
+      },
+      {
+        "codigoModelo": 2974,
+        "nomeModelo": "PASSING 110"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "262",
+    "nomeMarca": "SBM",
+    "modelos": [
+      {
+        "codigoModelo": 11823,
+        "nomeModelo": "150 S - NEW JEF"
+      },
+      {
+        "codigoModelo": 11824,
+        "nomeModelo": "250 S"
+      },
+      {
+        "codigoModelo": 11967,
+        "nomeModelo": "250 T"
+      },
+      {
+        "codigoModelo": 11825,
+        "nomeModelo": "400 S"
+      },
+      {
+        "codigoModelo": 11859,
+        "nomeModelo": "400 SS"
+      },
+      {
+        "codigoModelo": 11860,
+        "nomeModelo": "600"
+      },
+      {
+        "codigoModelo": 11889,
+        "nomeModelo": "600 T"
+      },
+      {
+        "codigoModelo": 11826,
+        "nomeModelo": "600 V"
+      },
+      {
+        "codigoModelo": 12047,
+        "nomeModelo": "DENVER 250"
+      },
+      {
+        "codigoModelo": 12048,
+        "nomeModelo": "FLASH 250"
+      },
+      {
+        "codigoModelo": 12052,
+        "nomeModelo": "IRON 250 "
+      },
+      {
+        "codigoModelo": 12055,
+        "nomeModelo": "STORM 200 EFI"
+      },
+      {
+        "codigoModelo": 12056,
+        "nomeModelo": "TITANIUM 250 "
+      }
+    ]
+  },
+  {
+    "codigoMarca": "134",
+    "nomeMarca": "SHINERAY",
+    "modelos": [
+      {
+        "codigoModelo": 10145,
+        "nomeModelo": "50-Q RAY"
+      },
+      {
+        "codigoModelo": 7299,
+        "nomeModelo": "BOLT 250"
+      },
+      {
+        "codigoModelo": 11089,
+        "nomeModelo": "FREE 150 EFI"
+      },
+      {
+        "codigoModelo": 11386,
+        "nomeModelo": "IRON 250 EFI"
+      },
+      {
+        "codigoModelo": 12053,
+        "nomeModelo": "JEF 170"
+      },
+      {
+        "codigoModelo": 10233,
+        "nomeModelo": "PT-02 2000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10234,
+        "nomeModelo": "PT-02 S 2000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9671,
+        "nomeModelo": "PT-03 2000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11360,
+        "nomeModelo": "PT-03 S 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11388,
+        "nomeModelo": "PT-04 Pro 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11389,
+        "nomeModelo": "PT-04 Pro S 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 7721,
+        "nomeModelo": "RETRO EX 50"
+      },
+      {
+        "codigoModelo": 10386,
+        "nomeModelo": "SE-1 2000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9684,
+        "nomeModelo": "SE-2 2300W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11003,
+        "nomeModelo": "SHE-S 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11980,
+        "nomeModelo": "SHI 170"
+      },
+      {
+        "codigoModelo": 10188,
+        "nomeModelo": "SHI 175"
+      },
+      {
+        "codigoModelo": 11156,
+        "nomeModelo": "SHI 175 S EFI"
+      },
+      {
+        "codigoModelo": 11477,
+        "nomeModelo": "SHI 250"
+      },
+      {
+        "codigoModelo": 6861,
+        "nomeModelo": "SUN 150"
+      },
+      {
+        "codigoModelo": 7722,
+        "nomeModelo": "SUPER SMART 50"
+      },
+      {
+        "codigoModelo": 11331,
+        "nomeModelo": "TITANIUM 250 EFI"
+      },
+      {
+        "codigoModelo": 11064,
+        "nomeModelo": "URBAN 150 EFI"
+      },
+      {
+        "codigoModelo": 11939,
+        "nomeModelo": "URBAN LITE 150"
+      },
+      {
+        "codigoModelo": 9640,
+        "nomeModelo": "WORKER 125"
+      },
+      {
+        "codigoModelo": 10855,
+        "nomeModelo": "WORKER 150"
+      },
+      {
+        "codigoModelo": 4370,
+        "nomeModelo": "XY 110V WAVE"
+      },
+      {
+        "codigoModelo": 6703,
+        "nomeModelo": "XY 125 JET"
+      },
+      {
+        "codigoModelo": 10898,
+        "nomeModelo": "XY 125 JET SS"
+      },
+      {
+        "codigoModelo": 10899,
+        "nomeModelo": "XY 125 JET SS EFI"
+      },
+      {
+        "codigoModelo": 6078,
+        "nomeModelo": "XY 125 NEW WAVE"
+      },
+      {
+        "codigoModelo": 11005,
+        "nomeModelo": "XY 125 RIO EFI"
+      },
+      {
+        "codigoModelo": 4371,
+        "nomeModelo": "XY 125-14 ESD"
+      },
+      {
+        "codigoModelo": 4372,
+        "nomeModelo": "XY 150 ZH"
+      },
+      {
+        "codigoModelo": 6862,
+        "nomeModelo": "XY 150-5 Fire/Maxi Fire"
+      },
+      {
+        "codigoModelo": 5521,
+        "nomeModelo": "XY 150-5 MAX"
+      },
+      {
+        "codigoModelo": 4373,
+        "nomeModelo": "XY 150-5 SPEED"
+      },
+      {
+        "codigoModelo": 9073,
+        "nomeModelo": "XY 150-8 JEF"
+      },
+      {
+        "codigoModelo": 11209,
+        "nomeModelo": "XY 150-8 JEF S"
+      },
+      {
+        "codigoModelo": 11664,
+        "nomeModelo": "XY 150-8 JEF S EFI"
+      },
+      {
+        "codigoModelo": 4807,
+        "nomeModelo": "XY 150-GY/EXPLORER"
+      },
+      {
+        "codigoModelo": 11210,
+        "nomeModelo": "XY 200 STORM EFI"
+      },
+      {
+        "codigoModelo": 5601,
+        "nomeModelo": "XY 200-5 A RACING"
+      },
+      {
+        "codigoModelo": 5602,
+        "nomeModelo": "XY 200-5 ROAD WIND NAKED"
+      },
+      {
+        "codigoModelo": 4374,
+        "nomeModelo": "XY 200-5 SPEED/ XY 200-5"
+      },
+      {
+        "codigoModelo": 4375,
+        "nomeModelo": "XY 200-III"
+      },
+      {
+        "codigoModelo": 11332,
+        "nomeModelo": "XY 250 DENVER"
+      },
+      {
+        "codigoModelo": 11333,
+        "nomeModelo": "XY 250 FLASH EFI"
+      },
+      {
+        "codigoModelo": 4461,
+        "nomeModelo": "XY 250-5"
+      },
+      {
+        "codigoModelo": 6729,
+        "nomeModelo": "XY 250-6B DISCOVER"
+      },
+      {
+        "codigoModelo": 4376,
+        "nomeModelo": "XY 50-Q"
+      },
+      {
+        "codigoModelo": 6903,
+        "nomeModelo": "XY 50-Q CROSS"
+      },
+      {
+        "codigoModelo": 10942,
+        "nomeModelo": "XY 50-Q JET S"
+      },
+      {
+        "codigoModelo": 5547,
+        "nomeModelo": "XY 50-Q PHOENIX"
+      },
+      {
+        "codigoModelo": 11252,
+        "nomeModelo": "XY 50-Q PHOENIX S"
+      },
+      {
+        "codigoModelo": 11253,
+        "nomeModelo": "XY 50-Q PHOENIX S EFI"
+      },
+      {
+        "codigoModelo": 6366,
+        "nomeModelo": "XY 50Q VMV"
+      },
+      {
+        "codigoModelo": 6367,
+        "nomeModelo": "XY 50-Q2 RETRO/JET/BIKE"
+      },
+      {
+        "codigoModelo": 7061,
+        "nomeModelo": "XY 50Q-2 VENICE"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "97",
+    "nomeMarca": "SIAMOTO",
+    "modelos": [
+      {
+        "codigoModelo": 2975,
+        "nomeModelo": "SCROSS 50cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "98",
+    "nomeMarca": "SUNDOWN",
+    "modelos": [
+      {
+        "codigoModelo": 2976,
+        "nomeModelo": "AKROS 50cc"
+      },
+      {
+        "codigoModelo": 2977,
+        "nomeModelo": "AKROS 90cc"
+      },
+      {
+        "codigoModelo": 2978,
+        "nomeModelo": "ERGON 50cc"
+      },
+      {
+        "codigoModelo": 2979,
+        "nomeModelo": "FIFTY 50cc"
+      },
+      {
+        "codigoModelo": 2980,
+        "nomeModelo": "FUTURE 125"
+      },
+      {
+        "codigoModelo": 4525,
+        "nomeModelo": "HUNTER 100 95cc"
+      },
+      {
+        "codigoModelo": 2981,
+        "nomeModelo": "HUNTER 125 SE"
+      },
+      {
+        "codigoModelo": 4095,
+        "nomeModelo": "HUNTER 90  86cc"
+      },
+      {
+        "codigoModelo": 2982,
+        "nomeModelo": "MAX 125 SE"
+      },
+      {
+        "codigoModelo": 2983,
+        "nomeModelo": "MAX 125 SED"
+      },
+      {
+        "codigoModelo": 2984,
+        "nomeModelo": "PALIO 50cc"
+      },
+      {
+        "codigoModelo": 2985,
+        "nomeModelo": "PGO SPEED 50cc"
+      },
+      {
+        "codigoModelo": 2986,
+        "nomeModelo": "PGO SPEED 90cc"
+      },
+      {
+        "codigoModelo": 5097,
+        "nomeModelo": "STX 125cc"
+      },
+      {
+        "codigoModelo": 4266,
+        "nomeModelo": "STX 200cc"
+      },
+      {
+        "codigoModelo": 5098,
+        "nomeModelo": "STX MOTARD 125cc"
+      },
+      {
+        "codigoModelo": 4267,
+        "nomeModelo": "STX MOTARD 200cc"
+      },
+      {
+        "codigoModelo": 2987,
+        "nomeModelo": "SUPER FIFTY 50cc"
+      },
+      {
+        "codigoModelo": 4079,
+        "nomeModelo": "VBLADE 250cc"
+      },
+      {
+        "codigoModelo": 2988,
+        "nomeModelo": "WEB 97cc"
+      },
+      {
+        "codigoModelo": 4096,
+        "nomeModelo": "WEB EVO 97cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "237",
+    "nomeMarca": "SUPER SOCO",
+    "modelos": [
+      {
+        "codigoModelo": 9884,
+        "nomeModelo": "Change Urban 1200W (ELÉTRICA)"
+      },
+      {
+        "codigoModelo": 10790,
+        "nomeModelo": "CUX 2788W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10794,
+        "nomeModelo": "TC 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10795,
+        "nomeModelo": "TC Max 5000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10796,
+        "nomeModelo": "TSX 3000W (Elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "99",
+    "nomeMarca": "SUZUKI",
+    "modelos": [
+      {
+        "codigoModelo": 2989,
+        "nomeModelo": "ADDRESS/AE 50"
+      },
+      {
+        "codigoModelo": 2990,
+        "nomeModelo": "ADDRESS/AG 100"
+      },
+      {
+        "codigoModelo": 2991,
+        "nomeModelo": "AN 125 BURGMAN"
+      },
+      {
+        "codigoModelo": 3808,
+        "nomeModelo": "BANDIT 1200S"
+      },
+      {
+        "codigoModelo": 4670,
+        "nomeModelo": "BANDIT 1250S"
+      },
+      {
+        "codigoModelo": 3809,
+        "nomeModelo": "BANDIT 600S/ 650S"
+      },
+      {
+        "codigoModelo": 2992,
+        "nomeModelo": "BANDIT N-1200"
+      },
+      {
+        "codigoModelo": 4671,
+        "nomeModelo": "BANDIT N-1250"
+      },
+      {
+        "codigoModelo": 2993,
+        "nomeModelo": "BANDIT N-600/ 650"
+      },
+      {
+        "codigoModelo": 2994,
+        "nomeModelo": "BOULEVARD C1500"
+      },
+      {
+        "codigoModelo": 5320,
+        "nomeModelo": "BOULEVARD M1500"
+      },
+      {
+        "codigoModelo": 5942,
+        "nomeModelo": "BOULEVARD M1500R"
+      },
+      {
+        "codigoModelo": 7080,
+        "nomeModelo": "BOULEVARD M1800R"
+      },
+      {
+        "codigoModelo": 7062,
+        "nomeModelo": "BOULEVARD M1800R B.O.S.S."
+      },
+      {
+        "codigoModelo": 3941,
+        "nomeModelo": "BOULEVARD M800"
+      },
+      {
+        "codigoModelo": 5716,
+        "nomeModelo": "BOULEVARD M800R"
+      },
+      {
+        "codigoModelo": 2995,
+        "nomeModelo": "BURGMAN 400"
+      },
+      {
+        "codigoModelo": 4581,
+        "nomeModelo": "BURGMAN 650 EXECUTIVE/ 650"
+      },
+      {
+        "codigoModelo": 5522,
+        "nomeModelo": "BURGMAN i 125cc"
+      },
+      {
+        "codigoModelo": 9268,
+        "nomeModelo": "DL 1000  V-STROM ADVENTURE"
+      },
+      {
+        "codigoModelo": 2996,
+        "nomeModelo": "DL 1000 V-STROM"
+      },
+      {
+        "codigoModelo": 8261,
+        "nomeModelo": "DL 1000 XT V-STROM"
+      },
+      {
+        "codigoModelo": 10975,
+        "nomeModelo": "DL 1050 V-STROM "
+      },
+      {
+        "codigoModelo": 9637,
+        "nomeModelo": "DL 1050 XT V-STROM "
+      },
+      {
+        "codigoModelo": 4858,
+        "nomeModelo": "DL 650 V-STROM"
+      },
+      {
+        "codigoModelo": 9270,
+        "nomeModelo": "DL 650 V-STROM ADVENTURE"
+      },
+      {
+        "codigoModelo": 10612,
+        "nomeModelo": "DL 650 XT V-STROM"
+      },
+      {
+        "codigoModelo": 11551,
+        "nomeModelo": "DL 800 DE V-STROM"
+      },
+      {
+        "codigoModelo": 11552,
+        "nomeModelo": "DL 800 V-STROM"
+      },
+      {
+        "codigoModelo": 2997,
+        "nomeModelo": "DR 350"
+      },
+      {
+        "codigoModelo": 2998,
+        "nomeModelo": "DR 350 SE"
+      },
+      {
+        "codigoModelo": 2999,
+        "nomeModelo": "DR 650 RE"
+      },
+      {
+        "codigoModelo": 3000,
+        "nomeModelo": "DR 650 RSE"
+      },
+      {
+        "codigoModelo": 3001,
+        "nomeModelo": "DR 800 S"
+      },
+      {
+        "codigoModelo": 3002,
+        "nomeModelo": "DR-Z400E"
+      },
+      {
+        "codigoModelo": 3003,
+        "nomeModelo": "EN 125 YES"
+      },
+      {
+        "codigoModelo": 6196,
+        "nomeModelo": "EN 125 YES CARGO"
+      },
+      {
+        "codigoModelo": 5477,
+        "nomeModelo": "EN 125 YES SE"
+      },
+      {
+        "codigoModelo": 3004,
+        "nomeModelo": "FREEWIND XF 650"
+      },
+      {
+        "codigoModelo": 6550,
+        "nomeModelo": "GLADIUS 650"
+      },
+      {
+        "codigoModelo": 6551,
+        "nomeModelo": "GS 120"
+      },
+      {
+        "codigoModelo": 3005,
+        "nomeModelo": "GS 500-E"
+      },
+      {
+        "codigoModelo": 6219,
+        "nomeModelo": "GSR 125"
+      },
+      {
+        "codigoModelo": 6220,
+        "nomeModelo": "GSR 125S"
+      },
+      {
+        "codigoModelo": 5633,
+        "nomeModelo": "GSR 150i"
+      },
+      {
+        "codigoModelo": 6552,
+        "nomeModelo": "GSR 750"
+      },
+      {
+        "codigoModelo": 4808,
+        "nomeModelo": "GSX  650F"
+      },
+      {
+        "codigoModelo": 3006,
+        "nomeModelo": "GSX 1100 F"
+      },
+      {
+        "codigoModelo": 6553,
+        "nomeModelo": "GSX 1250 F"
+      },
+      {
+        "codigoModelo": 4592,
+        "nomeModelo": "GSX 1300 B-KING"
+      },
+      {
+        "codigoModelo": 3007,
+        "nomeModelo": "GSX 1300-R HAYABUSA"
+      },
+      {
+        "codigoModelo": 11152,
+        "nomeModelo": "GSX 1300-R HAYABUSA Ed. Especial 25 Anos"
+      },
+      {
+        "codigoModelo": 3008,
+        "nomeModelo": "GSX 750 F"
+      },
+      {
+        "codigoModelo": 11385,
+        "nomeModelo": "GSX-8R"
+      },
+      {
+        "codigoModelo": 11153,
+        "nomeModelo": "GSX-8S"
+      },
+      {
+        "codigoModelo": 3009,
+        "nomeModelo": "GSX-R 1000"
+      },
+      {
+        "codigoModelo": 8331,
+        "nomeModelo": "GSX-R 1000 R"
+      },
+      {
+        "codigoModelo": 3010,
+        "nomeModelo": "GSX-R 1100 W"
+      },
+      {
+        "codigoModelo": 3011,
+        "nomeModelo": "GSX-R 750 W"
+      },
+      {
+        "codigoModelo": 3012,
+        "nomeModelo": "GSX-R 750 W SRAD"
+      },
+      {
+        "codigoModelo": 7384,
+        "nomeModelo": "GSX-S 1000"
+      },
+      {
+        "codigoModelo": 7385,
+        "nomeModelo": "GSX-S 1000 F"
+      },
+      {
+        "codigoModelo": 10791,
+        "nomeModelo": "GSX-S 1000 GT"
+      },
+      {
+        "codigoModelo": 11522,
+        "nomeModelo": "GSX-S 1000 GX"
+      },
+      {
+        "codigoModelo": 8120,
+        "nomeModelo": "GSX-S 750"
+      },
+      {
+        "codigoModelo": 6878,
+        "nomeModelo": "INAZUMA 250cc"
+      },
+      {
+        "codigoModelo": 3013,
+        "nomeModelo": "INTRUDER 125"
+      },
+      {
+        "codigoModelo": 3014,
+        "nomeModelo": "INTRUDER 250"
+      },
+      {
+        "codigoModelo": 3015,
+        "nomeModelo": "INTRUDER LC 1500"
+      },
+      {
+        "codigoModelo": 3016,
+        "nomeModelo": "INTRUDER VS 1400-GLP"
+      },
+      {
+        "codigoModelo": 3017,
+        "nomeModelo": "INTRUDER VS 800-GLP/ 800-GL"
+      },
+      {
+        "codigoModelo": 3018,
+        "nomeModelo": "KATANA 125"
+      },
+      {
+        "codigoModelo": 3019,
+        "nomeModelo": "Lets II 50cc"
+      },
+      {
+        "codigoModelo": 3020,
+        "nomeModelo": "LT 50 Quadriciclo"
+      },
+      {
+        "codigoModelo": 3021,
+        "nomeModelo": "LT 80 Quadriciclo"
+      },
+      {
+        "codigoModelo": 3022,
+        "nomeModelo": "LT F160 Quadriciclo"
+      },
+      {
+        "codigoModelo": 3023,
+        "nomeModelo": "MARAUDER 800"
+      },
+      {
+        "codigoModelo": 3024,
+        "nomeModelo": "RF 600 R"
+      },
+      {
+        "codigoModelo": 3025,
+        "nomeModelo": "RF 900 R"
+      },
+      {
+        "codigoModelo": 3026,
+        "nomeModelo": "RM 125"
+      },
+      {
+        "codigoModelo": 3027,
+        "nomeModelo": "RM 250"
+      },
+      {
+        "codigoModelo": 3028,
+        "nomeModelo": "RM 80"
+      },
+      {
+        "codigoModelo": 3029,
+        "nomeModelo": "RMX 250"
+      },
+      {
+        "codigoModelo": 3030,
+        "nomeModelo": "SAVAGE LS 650"
+      },
+      {
+        "codigoModelo": 7880,
+        "nomeModelo": "SV650"
+      },
+      {
+        "codigoModelo": 3031,
+        "nomeModelo": "TL 1000 S"
+      },
+      {
+        "codigoModelo": 3032,
+        "nomeModelo": "VX 800cc"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "267",
+    "nomeMarca": "SWM",
+    "modelos": [
+      {
+        "codigoModelo": 12054,
+        "nomeModelo": "SHI 400 SC"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "176",
+    "nomeMarca": "TARGOS",
+    "modelos": [
+      {
+        "codigoModelo": 5440,
+        "nomeModelo": "TRIMOTO 125cc Picape"
+      },
+      {
+        "codigoModelo": 5441,
+        "nomeModelo": "TRIMOTO 125cc Picape Baú"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "187",
+    "nomeMarca": "TIGER",
+    "modelos": [
+      {
+        "codigoModelo": 6336,
+        "nomeModelo": "Trciclo TC Cargo Chassi"
+      },
+      {
+        "codigoModelo": 6337,
+        "nomeModelo": "Triciclo TB Cargo Bau"
+      },
+      {
+        "codigoModelo": 6312,
+        "nomeModelo": "Triciclo TC Cargo Carroceria"
+      },
+      {
+        "codigoModelo": 6313,
+        "nomeModelo": "Triciclo TC Cargo Plataforma"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "119",
+    "nomeMarca": "TRAXX",
+    "modelos": [
+      {
+        "codigoModelo": 3863,
+        "nomeModelo": "CJ 50-F"
+      },
+      {
+        "codigoModelo": 6368,
+        "nomeModelo": "DUNNA 600cc"
+      },
+      {
+        "codigoModelo": 3864,
+        "nomeModelo": "JH 125 G/ BEST"
+      },
+      {
+        "codigoModelo": 3865,
+        "nomeModelo": "JH 125 L/ FLY"
+      },
+      {
+        "codigoModelo": 4657,
+        "nomeModelo": "JH 125-35A  JOTO / JH 135-35A JOTO"
+      },
+      {
+        "codigoModelo": 7300,
+        "nomeModelo": "JH 150 FLY"
+      },
+      {
+        "codigoModelo": 7337,
+        "nomeModelo": "JH 150-7 TSS 150"
+      },
+      {
+        "codigoModelo": 7111,
+        "nomeModelo": "JH 250 FLY"
+      },
+      {
+        "codigoModelo": 7249,
+        "nomeModelo": "JH 250-8 TSS 250"
+      },
+      {
+        "codigoModelo": 4881,
+        "nomeModelo": "JH 250E-5 SHARK"
+      },
+      {
+        "codigoModelo": 3866,
+        "nomeModelo": "JH 50"
+      },
+      {
+        "codigoModelo": 3867,
+        "nomeModelo": "JH 70"
+      },
+      {
+        "codigoModelo": 3868,
+        "nomeModelo": "JH 70 III"
+      },
+      {
+        "codigoModelo": 4179,
+        "nomeModelo": "JL 110-11 PRINCE"
+      },
+      {
+        "codigoModelo": 3869,
+        "nomeModelo": "JL 110-3/ 110-8/ SKY"
+      },
+      {
+        "codigoModelo": 5548,
+        "nomeModelo": "JL 125-9 SKY"
+      },
+      {
+        "codigoModelo": 6197,
+        "nomeModelo": "JL 135 FLY"
+      },
+      {
+        "codigoModelo": 3870,
+        "nomeModelo": "JL 50 Q-2/ STAR"
+      },
+      {
+        "codigoModelo": 6503,
+        "nomeModelo": "JL 50 Q8/MOBY 50"
+      },
+      {
+        "codigoModelo": 7412,
+        "nomeModelo": "JS 250 ATV-5 MONTEZ 250"
+      },
+      {
+        "codigoModelo": 6978,
+        "nomeModelo": "SKY 50"
+      },
+      {
+        "codigoModelo": 7386,
+        "nomeModelo": "SKY 50 PLUS"
+      },
+      {
+        "codigoModelo": 5266,
+        "nomeModelo": "WORK 125"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "100",
+    "nomeMarca": "TRIUMPH",
+    "modelos": [
+      {
+        "codigoModelo": 3033,
+        "nomeModelo": "ADVENTURER 900"
+      },
+      {
+        "codigoModelo": 3034,
+        "nomeModelo": "BONNEVILLE 750cc/ 790cc / 865cc"
+      },
+      {
+        "codigoModelo": 7995,
+        "nomeModelo": "BONNEVILLE BOBBER 1200cc"
+      },
+      {
+        "codigoModelo": 8707,
+        "nomeModelo": "BONNEVILLE BOBBER BLACK 1200cc"
+      },
+      {
+        "codigoModelo": 10934,
+        "nomeModelo": "BONNEVILLE BOBBER CHROME EDITION 1200cc"
+      },
+      {
+        "codigoModelo": 11827,
+        "nomeModelo": "BONNEVILLE BOBBER ICON EDITION 1200cc"
+      },
+      {
+        "codigoModelo": 10146,
+        "nomeModelo": "BONNEVILLE SPEEDMASTER 1200cc"
+      },
+      {
+        "codigoModelo": 11240,
+        "nomeModelo": "BONNEVILLE T100 "
+      },
+      {
+        "codigoModelo": 8387,
+        "nomeModelo": "BONNEVILLE T100 BLACK"
+      },
+      {
+        "codigoModelo": 11241,
+        "nomeModelo": "BONNEVILLE T100 STEALTH EDITION"
+      },
+      {
+        "codigoModelo": 7676,
+        "nomeModelo": "BONNEVILLE T120"
+      },
+      {
+        "codigoModelo": 8803,
+        "nomeModelo": "BONNEVILLE T120 ACE"
+      },
+      {
+        "codigoModelo": 7677,
+        "nomeModelo": "BONNEVILLE T120 BLACK"
+      },
+      {
+        "codigoModelo": 11242,
+        "nomeModelo": "BONNEVILLE T120 BLACK STEALTH EDITION"
+      },
+      {
+        "codigoModelo": 3036,
+        "nomeModelo": "DAYTONA 1200"
+      },
+      {
+        "codigoModelo": 11202,
+        "nomeModelo": "DAYTONA 660"
+      },
+      {
+        "codigoModelo": 4129,
+        "nomeModelo": "DAYTONA 675i"
+      },
+      {
+        "codigoModelo": 6504,
+        "nomeModelo": "DAYTONA 675R"
+      },
+      {
+        "codigoModelo": 3037,
+        "nomeModelo": "DAYTONA 900"
+      },
+      {
+        "codigoModelo": 3038,
+        "nomeModelo": "DAYTONA 955i"
+      },
+      {
+        "codigoModelo": 3039,
+        "nomeModelo": "DAYTONA SUPER III"
+      },
+      {
+        "codigoModelo": 3040,
+        "nomeModelo": "DAYTONA T-955"
+      },
+      {
+        "codigoModelo": 3041,
+        "nomeModelo": "LEGEND 900"
+      },
+      {
+        "codigoModelo": 3042,
+        "nomeModelo": "ROCKET III 2300cc"
+      },
+      {
+        "codigoModelo": 4130,
+        "nomeModelo": "ROCKET III CLASSIC 2300cc"
+      },
+      {
+        "codigoModelo": 10186,
+        "nomeModelo": "ROCKET III GT 2500cc"
+      },
+      {
+        "codigoModelo": 9123,
+        "nomeModelo": "ROCKET III R 2500cc"
+      },
+      {
+        "codigoModelo": 9672,
+        "nomeModelo": "ROCKET III R Black Edition 2500cc"
+      },
+      {
+        "codigoModelo": 6338,
+        "nomeModelo": "ROCKET III ROADSTER 2300cc"
+      },
+      {
+        "codigoModelo": 11247,
+        "nomeModelo": "ROCKET III STORM Edition GT 2500cc"
+      },
+      {
+        "codigoModelo": 11248,
+        "nomeModelo": "ROCKET III STORM Edition R 2500cc"
+      },
+      {
+        "codigoModelo": 11057,
+        "nomeModelo": "SCRAMBLER 1200 X"
+      },
+      {
+        "codigoModelo": 11662,
+        "nomeModelo": "SCRAMBLER 1200 X ICON EDITION"
+      },
+      {
+        "codigoModelo": 8759,
+        "nomeModelo": "SCRAMBLER 1200 XC"
+      },
+      {
+        "codigoModelo": 8760,
+        "nomeModelo": "SCRAMBLER 1200 XE"
+      },
+      {
+        "codigoModelo": 10939,
+        "nomeModelo": "SCRAMBLER 1200 XE CHROME EDITION"
+      },
+      {
+        "codigoModelo": 11663,
+        "nomeModelo": "SCRAMBLER 1200 XE ICON EDITION"
+      },
+      {
+        "codigoModelo": 11831,
+        "nomeModelo": "SCRAMBLER 400 X"
+      },
+      {
+        "codigoModelo": 11832,
+        "nomeModelo": "SCRAMBLER 400 XC"
+      },
+      {
+        "codigoModelo": 11833,
+        "nomeModelo": "SCRAMBLER 900 ICON EDITION"
+      },
+      {
+        "codigoModelo": 4131,
+        "nomeModelo": "SCRAMBLER 900cc"
+      },
+      {
+        "codigoModelo": 11249,
+        "nomeModelo": "SCRAMBLER 900cc STEALTH EDITION"
+      },
+      {
+        "codigoModelo": 11004,
+        "nomeModelo": "SPEED 400"
+      },
+      {
+        "codigoModelo": 3942,
+        "nomeModelo": "SPEED TRIPLE 1050i"
+      },
+      {
+        "codigoModelo": 7647,
+        "nomeModelo": "SPEED TRIPLE 1050R"
+      },
+      {
+        "codigoModelo": 3043,
+        "nomeModelo": "SPEED TRIPLE 900"
+      },
+      {
+        "codigoModelo": 3044,
+        "nomeModelo": "SPEED TRIPLE 955i"
+      },
+      {
+        "codigoModelo": 3045,
+        "nomeModelo": "SPEED TRIPLE T-509 900cc"
+      },
+      {
+        "codigoModelo": 8724,
+        "nomeModelo": "Speed Twin 1200cc"
+      },
+      {
+        "codigoModelo": 11526,
+        "nomeModelo": "Speed Twin 1200cc RS"
+      },
+      {
+        "codigoModelo": 11250,
+        "nomeModelo": "Speed Twin 1200cc STEALTH EDITION"
+      },
+      {
+        "codigoModelo": 10129,
+        "nomeModelo": "Speed Twin 900cc"
+      },
+      {
+        "codigoModelo": 11251,
+        "nomeModelo": "Speed Twin 900cc STEALTH EDITION"
+      },
+      {
+        "codigoModelo": 3046,
+        "nomeModelo": "SPRINT 900"
+      },
+      {
+        "codigoModelo": 3047,
+        "nomeModelo": "SPRINT RS 955"
+      },
+      {
+        "codigoModelo": 3048,
+        "nomeModelo": "SPRINT ST 1050i"
+      },
+      {
+        "codigoModelo": 3049,
+        "nomeModelo": "SPRINT ST 955"
+      },
+      {
+        "codigoModelo": 7497,
+        "nomeModelo": "STREET  TWIN 900cc"
+      },
+      {
+        "codigoModelo": 7901,
+        "nomeModelo": "STREET CUP 900cc"
+      },
+      {
+        "codigoModelo": 7996,
+        "nomeModelo": "STREET SCRAMBLER 900cc"
+      },
+      {
+        "codigoModelo": 5018,
+        "nomeModelo": "STREET TRIPLE 675"
+      },
+      {
+        "codigoModelo": 6620,
+        "nomeModelo": "STREET TRIPLE 675R"
+      },
+      {
+        "codigoModelo": 10897,
+        "nomeModelo": "STREET TRIPLE 765 R"
+      },
+      {
+        "codigoModelo": 8075,
+        "nomeModelo": "STREET TRIPLE 765 RS"
+      },
+      {
+        "codigoModelo": 11981,
+        "nomeModelo": "STREET TRIPLE 765 RX"
+      },
+      {
+        "codigoModelo": 8076,
+        "nomeModelo": "STREET TRIPLE 765 S"
+      },
+      {
+        "codigoModelo": 12079,
+        "nomeModelo": "THRUXTON 400"
+      },
+      {
+        "codigoModelo": 4132,
+        "nomeModelo": "THRUXTON 900cc"
+      },
+      {
+        "codigoModelo": 7678,
+        "nomeModelo": "THRUXTON R 1200cc"
+      },
+      {
+        "codigoModelo": 6879,
+        "nomeModelo": "THUNDERBIRD 1700 COMMANDER"
+      },
+      {
+        "codigoModelo": 6283,
+        "nomeModelo": "THUNDERBIRD 1700 STORM"
+      },
+      {
+        "codigoModelo": 3050,
+        "nomeModelo": "THUNDERBIRD 900"
+      },
+      {
+        "codigoModelo": 3051,
+        "nomeModelo": "THUNDERBIRD 900 SPORT"
+      },
+      {
+        "codigoModelo": 4741,
+        "nomeModelo": "TIGER 1050"
+      },
+      {
+        "codigoModelo": 6979,
+        "nomeModelo": "TIGER 1050 SPORT"
+      },
+      {
+        "codigoModelo": 9238,
+        "nomeModelo": "TIGER 1200 ALPINE Edition"
+      },
+      {
+        "codigoModelo": 9239,
+        "nomeModelo": "TIGER 1200 DESERT Edition"
+      },
+      {
+        "codigoModelo": 6284,
+        "nomeModelo": "TIGER 1200 EXPLORER"
+      },
+      {
+        "codigoModelo": 7749,
+        "nomeModelo": "TIGER 1200 EXPLORER XCA"
+      },
+      {
+        "codigoModelo": 7679,
+        "nomeModelo": "TIGER 1200 EXPLORER XCX"
+      },
+      {
+        "codigoModelo": 7680,
+        "nomeModelo": "TIGER 1200 EXPLORER XR"
+      },
+      {
+        "codigoModelo": 9848,
+        "nomeModelo": "TIGER 1200 GT EXPLORER"
+      },
+      {
+        "codigoModelo": 11031,
+        "nomeModelo": "TIGER 1200 GT PRO"
+      },
+      {
+        "codigoModelo": 11032,
+        "nomeModelo": "TIGER 1200 RALLY BLACK Edition"
+      },
+      {
+        "codigoModelo": 9849,
+        "nomeModelo": "TIGER 1200 RALLY EXPLORER"
+      },
+      {
+        "codigoModelo": 9850,
+        "nomeModelo": "TIGER 1200 RALLY PRO"
+      },
+      {
+        "codigoModelo": 6657,
+        "nomeModelo": "TIGER 1200 XC EXPLORER"
+      },
+      {
+        "codigoModelo": 8332,
+        "nomeModelo": "TIGER 1200 XCA"
+      },
+      {
+        "codigoModelo": 8333,
+        "nomeModelo": "TIGER 1200 XCX"
+      },
+      {
+        "codigoModelo": 8334,
+        "nomeModelo": "TIGER 1200 XR"
+      },
+      {
+        "codigoModelo": 9800,
+        "nomeModelo": "TIGER 660 SPORT"
+      },
+      {
+        "codigoModelo": 3052,
+        "nomeModelo": "TIGER 750"
+      },
+      {
+        "codigoModelo": 6658,
+        "nomeModelo": "TIGER 800"
+      },
+      {
+        "codigoModelo": 11448,
+        "nomeModelo": "TIGER 800 SPORT"
+      },
+      {
+        "codigoModelo": 6285,
+        "nomeModelo": "TIGER 800 XC"
+      },
+      {
+        "codigoModelo": 7413,
+        "nomeModelo": "TIGER 800 XCA"
+      },
+      {
+        "codigoModelo": 7175,
+        "nomeModelo": "TIGER 800 XCX"
+      },
+      {
+        "codigoModelo": 7368,
+        "nomeModelo": "TIGER 800 XR"
+      },
+      {
+        "codigoModelo": 8437,
+        "nomeModelo": "TIGER 800 XRT"
+      },
+      {
+        "codigoModelo": 7176,
+        "nomeModelo": "TIGER 800 XRX"
+      },
+      {
+        "codigoModelo": 7469,
+        "nomeModelo": "TIGER 800 XRXL"
+      },
+      {
+        "codigoModelo": 3053,
+        "nomeModelo": "TIGER 900"
+      },
+      {
+        "codigoModelo": 11902,
+        "nomeModelo": "TIGER 900 ALPINE Edition"
+      },
+      {
+        "codigoModelo": 11903,
+        "nomeModelo": "TIGER 900 DESERT Edition"
+      },
+      {
+        "codigoModelo": 9156,
+        "nomeModelo": "TIGER 900 GT"
+      },
+      {
+        "codigoModelo": 10853,
+        "nomeModelo": "TIGER 900 GT ARAGON Edition"
+      },
+      {
+        "codigoModelo": 9124,
+        "nomeModelo": "TIGER 900 GT PRO"
+      },
+      {
+        "codigoModelo": 9157,
+        "nomeModelo": "TIGER 900 RALLY"
+      },
+      {
+        "codigoModelo": 10854,
+        "nomeModelo": "TIGER 900 RALLY ARAGON Edition"
+      },
+      {
+        "codigoModelo": 9125,
+        "nomeModelo": "TIGER 900 RALLY PRO"
+      },
+      {
+        "codigoModelo": 3054,
+        "nomeModelo": "TIGER 955i"
+      },
+      {
+        "codigoModelo": 12080,
+        "nomeModelo": "TRACKER 400"
+      },
+      {
+        "codigoModelo": 9639,
+        "nomeModelo": "TRIDENT 660"
+      },
+      {
+        "codigoModelo": 11208,
+        "nomeModelo": "TRIDENT 660 TRIPLE TRIBUTE"
+      },
+      {
+        "codigoModelo": 3055,
+        "nomeModelo": "TRIDENT 750"
+      },
+      {
+        "codigoModelo": 11982,
+        "nomeModelo": "TRIDENT 800"
+      },
+      {
+        "codigoModelo": 3056,
+        "nomeModelo": "TRIDENT 900"
+      },
+      {
+        "codigoModelo": 3057,
+        "nomeModelo": "TROPHY 1200"
+      },
+      {
+        "codigoModelo": 3058,
+        "nomeModelo": "TROPHY 900"
+      },
+      {
+        "codigoModelo": 6659,
+        "nomeModelo": "TROPHY SE 1200"
+      },
+      {
+        "codigoModelo": 3059,
+        "nomeModelo": "TT 600"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "244",
+    "nomeMarca": "Ventane Motors",
+    "modelos": [
+      {
+        "codigoModelo": 10792,
+        "nomeModelo": "MILANO 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10793,
+        "nomeModelo": "ROMA 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10797,
+        "nomeModelo": "VTX 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10798,
+        "nomeModelo": "WIND 2000W (Elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "180",
+    "nomeMarca": "VENTO",
+    "modelos": [
+      {
+        "codigoModelo": 5603,
+        "nomeModelo": "REBELLIAN 250"
+      },
+      {
+        "codigoModelo": 5604,
+        "nomeModelo": "TRITON Li 150"
+      },
+      {
+        "codigoModelo": 5605,
+        "nomeModelo": "VTHUNDER 250"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "256",
+    "nomeMarca": "VESPA",
+    "modelos": [
+      {
+        "codigoModelo": 11544,
+        "nomeModelo": "946 Edição Dragon 150 "
+      },
+      {
+        "codigoModelo": 11560,
+        "nomeModelo": "GTS 300"
+      },
+      {
+        "codigoModelo": 11561,
+        "nomeModelo": "GTS Super 300"
+      },
+      {
+        "codigoModelo": 11562,
+        "nomeModelo": "GTS Super Sport 300 "
+      },
+      {
+        "codigoModelo": 11563,
+        "nomeModelo": "GTS Super Tech 300 "
+      },
+      {
+        "codigoModelo": 11564,
+        "nomeModelo": "GTV 300"
+      },
+      {
+        "codigoModelo": 11570,
+        "nomeModelo": "Primavera 150"
+      },
+      {
+        "codigoModelo": 11571,
+        "nomeModelo": "Primavera Edição Mickey Mouse 150"
+      },
+      {
+        "codigoModelo": 11572,
+        "nomeModelo": "Primavera Sport 150"
+      },
+      {
+        "codigoModelo": 11575,
+        "nomeModelo": "Sprint 150"
+      },
+      {
+        "codigoModelo": 11576,
+        "nomeModelo": "Sprint S 150"
+      },
+      {
+        "codigoModelo": 11577,
+        "nomeModelo": "SXL 150"
+      },
+      {
+        "codigoModelo": 11582,
+        "nomeModelo": "VXL 150"
+      },
+      {
+        "codigoModelo": 11583,
+        "nomeModelo": "VXL Dual 150"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "215",
+    "nomeMarca": "VOLTZ",
+    "modelos": [
+      {
+        "codigoModelo": 9799,
+        "nomeModelo": "EV01 1800W (Elétrica)"
+      },
+      {
+        "codigoModelo": 9510,
+        "nomeModelo": "EV1 Sport 3000W (elétrica)"
+      },
+      {
+        "codigoModelo": 9418,
+        "nomeModelo": "EVS 3000W (elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "243",
+    "nomeMarca": "WATTS",
+    "modelos": [
+      {
+        "codigoModelo": 10647,
+        "nomeModelo": "W125 3000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10940,
+        "nomeModelo": "W160S 10000W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11287,
+        "nomeModelo": "W2 2500W (Elétrica)"
+      },
+      {
+        "codigoModelo": 10941,
+        "nomeModelo": "WS120 3500W (Elétrica)"
+      },
+      {
+        "codigoModelo": 11361,
+        "nomeModelo": "W-Trail 12000W (Elétrica)"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "135",
+    "nomeMarca": "WUYANG",
+    "modelos": [
+      {
+        "codigoModelo": 7723,
+        "nomeModelo": "JET+ 50"
+      },
+      {
+        "codigoModelo": 7442,
+        "nomeModelo": "MIND X50q"
+      },
+      {
+        "codigoModelo": 4377,
+        "nomeModelo": "WY 125-ESD"
+      },
+      {
+        "codigoModelo": 4820,
+        "nomeModelo": "WY 125-ESD PLUS"
+      },
+      {
+        "codigoModelo": 4462,
+        "nomeModelo": "WY 150-EX"
+      },
+      {
+        "codigoModelo": 5495,
+        "nomeModelo": "WY 200 ZH/CARGO 200"
+      },
+      {
+        "codigoModelo": 7063,
+        "nomeModelo": "WY 48Q-2 LIBERTY 50"
+      },
+      {
+        "codigoModelo": 7724,
+        "nomeModelo": "WY 48Q-2 PHOENIX + 50"
+      },
+      {
+        "codigoModelo": 7725,
+        "nomeModelo": "WY 48Q-2 PHOENIX S 50"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "101",
+    "nomeMarca": "YAMAHA",
+    "modelos": [
+      {
+        "codigoModelo": 3060,
+        "nomeModelo": "750 VIRAGO"
+      },
+      {
+        "codigoModelo": 11862,
+        "nomeModelo": "AEROX CONNECTED ABS"
+      },
+      {
+        "codigoModelo": 3061,
+        "nomeModelo": "AXIS 90"
+      },
+      {
+        "codigoModelo": 9950,
+        "nomeModelo": "BW S 50"
+      },
+      {
+        "codigoModelo": 3063,
+        "nomeModelo": "CRYPTON 100"
+      },
+      {
+        "codigoModelo": 3064,
+        "nomeModelo": "DT 180-Z TRAIL"
+      },
+      {
+        "codigoModelo": 3065,
+        "nomeModelo": "DT 200"
+      },
+      {
+        "codigoModelo": 3066,
+        "nomeModelo": "DT 200 R"
+      },
+      {
+        "codigoModelo": 3067,
+        "nomeModelo": "FAZER 600/ FZ6 S"
+      },
+      {
+        "codigoModelo": 9777,
+        "nomeModelo": "FLUO 125 ABS"
+      },
+      {
+        "codigoModelo": 11969,
+        "nomeModelo": "FLUO 125 CONNECTED "
+      },
+      {
+        "codigoModelo": 11330,
+        "nomeModelo": "FZ15 150 FAZER CONNECTED FLEX"
+      },
+      {
+        "codigoModelo": 10084,
+        "nomeModelo": "FZ15 150 FAZER FLEX"
+      },
+      {
+        "codigoModelo": 9240,
+        "nomeModelo": "FZ25 250 FAZER CAPITÃ MARVEL FLEX"
+      },
+      {
+        "codigoModelo": 11245,
+        "nomeModelo": "FZ25 250 FAZER CONNECTED"
+      },
+      {
+        "codigoModelo": 8143,
+        "nomeModelo": "FZ25 250 FAZER FLEX"
+      },
+      {
+        "codigoModelo": 9241,
+        "nomeModelo": "FZ25 250 FAZER PANTERA NEGRA FLEX"
+      },
+      {
+        "codigoModelo": 9951,
+        "nomeModelo": "FZ25 FAZER THOR FLEX"
+      },
+      {
+        "codigoModelo": 4571,
+        "nomeModelo": "FZ6 N"
+      },
+      {
+        "codigoModelo": 3068,
+        "nomeModelo": "FZR 1000"
+      },
+      {
+        "codigoModelo": 3069,
+        "nomeModelo": "FZR 600"
+      },
+      {
+        "codigoModelo": 3070,
+        "nomeModelo": "JOG 50"
+      },
+      {
+        "codigoModelo": 3071,
+        "nomeModelo": "JOG TEEN 50"
+      },
+      {
+        "codigoModelo": 3072,
+        "nomeModelo": "MAJESTY YP 250"
+      },
+      {
+        "codigoModelo": 4211,
+        "nomeModelo": "MT-01 1.670cc"
+      },
+      {
+        "codigoModelo": 9638,
+        "nomeModelo": "MT-03 321 ABS Homem de Ferro"
+      },
+      {
+        "codigoModelo": 7527,
+        "nomeModelo": "MT-03 321/ABS"
+      },
+      {
+        "codigoModelo": 4593,
+        "nomeModelo": "MT-03 660cc"
+      },
+      {
+        "codigoModelo": 11440,
+        "nomeModelo": "MT-03 CONNECTED 321cc ABS"
+      },
+      {
+        "codigoModelo": 11441,
+        "nomeModelo": "MT-07 CONNECTED 689cc ABS"
+      },
+      {
+        "codigoModelo": 7145,
+        "nomeModelo": "MT-07/MT-07 ABS 689cc"
+      },
+      {
+        "codigoModelo": 7064,
+        "nomeModelo": "MT-09 850cc/ABS"
+      },
+      {
+        "codigoModelo": 7470,
+        "nomeModelo": "MT-09 TRACER"
+      },
+      {
+        "codigoModelo": 8804,
+        "nomeModelo": "MT-09 TRACER 900 GT"
+      },
+      {
+        "codigoModelo": 3073,
+        "nomeModelo": "NEO AT 115cc"
+      },
+      {
+        "codigoModelo": 4378,
+        "nomeModelo": "NEO AUTOMATIC 115cc"
+      },
+      {
+        "codigoModelo": 7786,
+        "nomeModelo": "NEO AUTOMATIC 125cc"
+      },
+      {
+        "codigoModelo": 11359,
+        "nomeModelo": "NEOS CONNECTED (Elétrica)"
+      },
+      {
+        "codigoModelo": 7528,
+        "nomeModelo": "NMAX 160"
+      },
+      {
+        "codigoModelo": 10231,
+        "nomeModelo": "NMAX Connected 160 ABS"
+      },
+      {
+        "codigoModelo": 10619,
+        "nomeModelo": "NMAX Connected MANDALORIAN 160 ABS"
+      },
+      {
+        "codigoModelo": 10232,
+        "nomeModelo": "NMAX Connected SE 160 ABS"
+      },
+      {
+        "codigoModelo": 9670,
+        "nomeModelo": "NMAX HOMEM ARANHA 160 ABS"
+      },
+      {
+        "codigoModelo": 9203,
+        "nomeModelo": "NMAX STAR WARS 160 ABS"
+      },
+      {
+        "codigoModelo": 3074,
+        "nomeModelo": "RD 135"
+      },
+      {
+        "codigoModelo": 3075,
+        "nomeModelo": "RD 350 LC/ R"
+      },
+      {
+        "codigoModelo": 3076,
+        "nomeModelo": "RDZ 125"
+      },
+      {
+        "codigoModelo": 3077,
+        "nomeModelo": "RDZ 135"
+      },
+      {
+        "codigoModelo": 3078,
+        "nomeModelo": "ROYAL STAR 1300"
+      },
+      {
+        "codigoModelo": 5163,
+        "nomeModelo": "T115 CRYPTON ED"
+      },
+      {
+        "codigoModelo": 6477,
+        "nomeModelo": "T115 CRYPTON ED PENELOPE"
+      },
+      {
+        "codigoModelo": 5164,
+        "nomeModelo": "T115 CRYPTON K"
+      },
+      {
+        "codigoModelo": 3079,
+        "nomeModelo": "TDM 225"
+      },
+      {
+        "codigoModelo": 3080,
+        "nomeModelo": "TDM 850"
+      },
+      {
+        "codigoModelo": 3081,
+        "nomeModelo": "TDM 900"
+      },
+      {
+        "codigoModelo": 3082,
+        "nomeModelo": "TDR 180"
+      },
+      {
+        "codigoModelo": 6677,
+        "nomeModelo": "TMAX 530"
+      },
+      {
+        "codigoModelo": 3083,
+        "nomeModelo": "TRX 850"
+      },
+      {
+        "codigoModelo": 4483,
+        "nomeModelo": "TT-R 125 E"
+      },
+      {
+        "codigoModelo": 4484,
+        "nomeModelo": "TT-R 125 LE"
+      },
+      {
+        "codigoModelo": 7177,
+        "nomeModelo": "TT-R 125 LWE"
+      },
+      {
+        "codigoModelo": 4485,
+        "nomeModelo": "TT-R 230"
+      },
+      {
+        "codigoModelo": 3084,
+        "nomeModelo": "V-MAX 1200"
+      },
+      {
+        "codigoModelo": 6678,
+        "nomeModelo": "V-MAX 1700"
+      },
+      {
+        "codigoModelo": 3085,
+        "nomeModelo": "WR 200"
+      },
+      {
+        "codigoModelo": 11392,
+        "nomeModelo": "WR 250 F"
+      },
+      {
+        "codigoModelo": 3086,
+        "nomeModelo": "WR 426 F"
+      },
+      {
+        "codigoModelo": 9782,
+        "nomeModelo": "WR 450 F"
+      },
+      {
+        "codigoModelo": 3087,
+        "nomeModelo": "XJ 600"
+      },
+      {
+        "codigoModelo": 5165,
+        "nomeModelo": "XJ6 F"
+      },
+      {
+        "codigoModelo": 6764,
+        "nomeModelo": "XJ6 N SP"
+      },
+      {
+        "codigoModelo": 5166,
+        "nomeModelo": "XJ6 N/ABS"
+      },
+      {
+        "codigoModelo": 3088,
+        "nomeModelo": "XJR 1200"
+      },
+      {
+        "codigoModelo": 9034,
+        "nomeModelo": "XMAX 250 ABS"
+      },
+      {
+        "codigoModelo": 9851,
+        "nomeModelo": "XMAX 250 ABS Darth Vader"
+      },
+      {
+        "codigoModelo": 11288,
+        "nomeModelo": "XMAX 250 CONNECTED "
+      },
+      {
+        "codigoModelo": 11587,
+        "nomeModelo": "XMAX 300 CONNECTED "
+      },
+      {
+        "codigoModelo": 5523,
+        "nomeModelo": "XT 1200 Z  SUPER TÉNÉRÉ/ DX"
+      },
+      {
+        "codigoModelo": 12057,
+        "nomeModelo": "XT 1200 Z S.TÉNÉRÉ 60th ANNIVERSARY"
+      },
+      {
+        "codigoModelo": 3091,
+        "nomeModelo": "XT 225"
+      },
+      {
+        "codigoModelo": 3092,
+        "nomeModelo": "XT 600 E"
+      },
+      {
+        "codigoModelo": 3093,
+        "nomeModelo": "XT 600 Z TENERE"
+      },
+      {
+        "codigoModelo": 3094,
+        "nomeModelo": "XT 660 R"
+      },
+      {
+        "codigoModelo": 5738,
+        "nomeModelo": "XT 660Z TÉNÉRÉ"
+      },
+      {
+        "codigoModelo": 3095,
+        "nomeModelo": "XTZ 125 E"
+      },
+      {
+        "codigoModelo": 3096,
+        "nomeModelo": "XTZ 125 K"
+      },
+      {
+        "codigoModelo": 4486,
+        "nomeModelo": "XTZ 125 XE"
+      },
+      {
+        "codigoModelo": 4487,
+        "nomeModelo": "XTZ 125 XK"
+      },
+      {
+        "codigoModelo": 6765,
+        "nomeModelo": "XTZ 150  CROSSER E/FLEX"
+      },
+      {
+        "codigoModelo": 6766,
+        "nomeModelo": "XTZ 150  CROSSER ED /FLEX"
+      },
+      {
+        "codigoModelo": 8190,
+        "nomeModelo": "XTZ 150 CROSSER S FLEX"
+      },
+      {
+        "codigoModelo": 8191,
+        "nomeModelo": "XTZ 150 CROSSER Z FLEX"
+      },
+      {
+        "codigoModelo": 4195,
+        "nomeModelo": "XTZ 250 LANDER 249cc/LANDER BLUEFLEX/ABS"
+      },
+      {
+        "codigoModelo": 9242,
+        "nomeModelo": "XTZ 250 LANDER CAPITÃO AMÉRICA FLEX ABS"
+      },
+      {
+        "codigoModelo": 11289,
+        "nomeModelo": "XTZ 250 LANDER CONNECTED"
+      },
+      {
+        "codigoModelo": 5442,
+        "nomeModelo": "XTZ 250 TENERE/TENERE BLUEFLEX"
+      },
+      {
+        "codigoModelo": 4658,
+        "nomeModelo": "XTZ 250X"
+      },
+      {
+        "codigoModelo": 11700,
+        "nomeModelo": "XTZ 700 TÉNÉRÉ"
+      },
+      {
+        "codigoModelo": 3097,
+        "nomeModelo": "XTZ 750 S TENERE"
+      },
+      {
+        "codigoModelo": 3098,
+        "nomeModelo": "XV 1100 VIRAGO"
+      },
+      {
+        "codigoModelo": 3099,
+        "nomeModelo": "XV 250 VIRAGO"
+      },
+      {
+        "codigoModelo": 3100,
+        "nomeModelo": "XV 535 S VIRAGO"
+      },
+      {
+        "codigoModelo": 3089,
+        "nomeModelo": "XVS 1100 DRAG STAR"
+      },
+      {
+        "codigoModelo": 3090,
+        "nomeModelo": "XVS 650 DRAG STAR"
+      },
+      {
+        "codigoModelo": 4956,
+        "nomeModelo": "XVS 950 MIDNIGHT STAR"
+      },
+      {
+        "codigoModelo": 3101,
+        "nomeModelo": "YBR 125 E"
+      },
+      {
+        "codigoModelo": 3102,
+        "nomeModelo": "YBR 125 ED"
+      },
+      {
+        "codigoModelo": 4742,
+        "nomeModelo": "YBR 125 FACTOR E"
+      },
+      {
+        "codigoModelo": 4743,
+        "nomeModelo": "YBR 125 FACTOR ED/FACTOR EDITION"
+      },
+      {
+        "codigoModelo": 4744,
+        "nomeModelo": "YBR 125 FACTOR K/ FACTOR K1"
+      },
+      {
+        "codigoModelo": 6568,
+        "nomeModelo": "YBR 125 FACTOR PRO E"
+      },
+      {
+        "codigoModelo": 6569,
+        "nomeModelo": "YBR 125 FACTOR PRO K"
+      },
+      {
+        "codigoModelo": 3103,
+        "nomeModelo": "YBR 125 K"
+      },
+      {
+        "codigoModelo": 7648,
+        "nomeModelo": "YBR 125i FACTOR ED/FLEX"
+      },
+      {
+        "codigoModelo": 11334,
+        "nomeModelo": "YBR 150 FACTOR DX FLEX"
+      },
+      {
+        "codigoModelo": 7387,
+        "nomeModelo": "YBR 150 FACTOR E/FLEX"
+      },
+      {
+        "codigoModelo": 7388,
+        "nomeModelo": "YBR 150 FACTOR ED/FLEX"
+      },
+      {
+        "codigoModelo": 11335,
+        "nomeModelo": "YBR 150 FACTOR FLEX"
+      },
+      {
+        "codigoModelo": 4080,
+        "nomeModelo": "YFM 250 BRUIN 230cc"
+      },
+      {
+        "codigoModelo": 4196,
+        "nomeModelo": "YFM 350 GRIZZLY 350cc"
+      },
+      {
+        "codigoModelo": 4081,
+        "nomeModelo": "YFM 660R 660cc"
+      },
+      {
+        "codigoModelo": 4582,
+        "nomeModelo": "YFM 700R 686cc"
+      },
+      {
+        "codigoModelo": 4082,
+        "nomeModelo": "YFM 80 79cc"
+      },
+      {
+        "codigoModelo": 4083,
+        "nomeModelo": "YFS 200 BLASTER 195cc"
+      },
+      {
+        "codigoModelo": 4583,
+        "nomeModelo": "YFZ 450/ YZ 450 F 449cc"
+      },
+      {
+        "codigoModelo": 6605,
+        "nomeModelo": "YS 150 FAZER ED/FLEX"
+      },
+      {
+        "codigoModelo": 6606,
+        "nomeModelo": "YS 150 FAZER SED/ FLEX"
+      },
+      {
+        "codigoModelo": 3871,
+        "nomeModelo": "YS 250 FAZER/ FAZER L. EDITION /BLUEFLEX"
+      },
+      {
+        "codigoModelo": 3104,
+        "nomeModelo": "YZ 125"
+      },
+      {
+        "codigoModelo": 3105,
+        "nomeModelo": "YZ 250"
+      },
+      {
+        "codigoModelo": 8805,
+        "nomeModelo": "YZ 250 F 250cc"
+      },
+      {
+        "codigoModelo": 8806,
+        "nomeModelo": "YZ 85 LW 85cc"
+      },
+      {
+        "codigoModelo": 3106,
+        "nomeModelo": "YZF 1000 THUNDERACE"
+      },
+      {
+        "codigoModelo": 3107,
+        "nomeModelo": "YZF 600 THUNDERCAT"
+      },
+      {
+        "codigoModelo": 3108,
+        "nomeModelo": "YZF 750"
+      },
+      {
+        "codigoModelo": 3109,
+        "nomeModelo": "YZF R-1 1000"
+      },
+      {
+        "codigoModelo": 10943,
+        "nomeModelo": "YZF R-15 155 ABS"
+      },
+      {
+        "codigoModelo": 12058,
+        "nomeModelo": "YZF R-15 155 ABS 70th ANNIVERSARY"
+      },
+      {
+        "codigoModelo": 7681,
+        "nomeModelo": "YZF R-1M 1000"
+      },
+      {
+        "codigoModelo": 7338,
+        "nomeModelo": "YZF R-3 321/ABS"
+      },
+      {
+        "codigoModelo": 12059,
+        "nomeModelo": "YZF R-3 CONNECTED 321 ABS"
+      },
+      {
+        "codigoModelo": 12060,
+        "nomeModelo": "YZF R-3 CONNECTED 321 ABS 70th ANNIVERSARY"
+      },
+      {
+        "codigoModelo": 12061,
+        "nomeModelo": "YZF R-3 World GP 60th ANNIVERSARY ED."
+      },
+      {
+        "codigoModelo": 3943,
+        "nomeModelo": "YZF R-6 600"
+      },
+      {
+        "codigoModelo": 11984,
+        "nomeModelo": "ZR 125 CONNECTED"
+      }
+    ]
+  },
+  {
+    "codigoMarca": "242",
+    "nomeMarca": "ZONTES",
+    "modelos": [
+      {
+        "codigoModelo": 11052,
+        "nomeModelo": "E 350"
+      },
+      {
+        "codigoModelo": 12067,
+        "nomeModelo": "G 368"
+      },
+      {
+        "codigoModelo": 11053,
+        "nomeModelo": "GK 350"
+      },
+      {
+        "codigoModelo": 10644,
+        "nomeModelo": "R 310"
+      },
+      {
+        "codigoModelo": 11055,
+        "nomeModelo": "R 350"
+      },
+      {
+        "codigoModelo": 11207,
+        "nomeModelo": "S 350"
+      },
+      {
+        "codigoModelo": 10645,
+        "nomeModelo": "T 310"
+      },
+      {
+        "codigoModelo": 11061,
+        "nomeModelo": "T 350"
+      },
+      {
+        "codigoModelo": 11062,
+        "nomeModelo": "T 350 X"
+      },
+      {
+        "codigoModelo": 10646,
+        "nomeModelo": "V 310"
+      },
+      {
+        "codigoModelo": 11065,
+        "nomeModelo": "V 350"
+      }
+    ]
+  }
+]
