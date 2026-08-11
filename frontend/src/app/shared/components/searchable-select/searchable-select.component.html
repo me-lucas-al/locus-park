@@ -35,8 +35,7 @@
           <div class="dropdown-option" (mousedown)="selectOption(option)">
             {{ option.label }}
           </div>
-        }
-        @if (filteredOptions().length === 0) {
+        } @empty {
           <div class="dropdown-no-results">Nenhum resultado encontrado</div>
         }
       </div>

@@ -59,7 +59,7 @@ export class VehicleBrandModelSelectComponent {
   }
 
   protected onBrandSelected(brand: SelectOption): void {
-    if (!brand || !brand.code) {
+    if (!brand.code) {
       this.selectedBrandCode.set('');
       this.modelSelectRef()?.reset();
       this.brandSelected.emit({ code: '', label: '' });

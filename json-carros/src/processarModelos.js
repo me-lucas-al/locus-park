@@ -33,7 +33,7 @@ const KNOWN_CAR_FAMILIES = [
   { match: /\bNIVUS\b/i, name: 'Nivus' },
   { match: /\bVIRTUS\b/i, name: 'Virtus' },
   { match: /\bAMAROK\b/i, name: 'Amarok' },
-  { match: /\bUP\b|\bUP!\b/i, name: 'Up!' },
+  { match: /\bUP\b/i, name: 'Up!' },
   { match: /\bFOX\b/i, name: 'Fox' },
   { match: /\bGOL\b/i, name: 'Gol' },
 
@@ -333,7 +333,7 @@ const CAR_STOP_WORDS = new Set([
   'ATTRACTIVE', 'ESSENCE', 'SPORTING', 'WAY', 'VOLCANO', 'FREEDOM', 'RANCH', 'ULTRA',
   'LIMITED', 'SPORT', 'LONGITUDE', 'LATITUDE', 'TRAILHAWK', 'OVERLAND',
   'ALLURE', 'GRIFFE', 'FEEL', 'SHINE', 'LIVE', 'INTENSE', 'ZEN', 'ICONIC',
-  'EX', 'EXL', 'LX', 'LXS', 'TOURING', 'ALTIS', 'XEI', 'GLI', 'GR-SPORT'
+  'EX', 'EXL', 'LX', 'LXS', 'TOURING', 'ALTIS', 'XEI', 'GR-SPORT'
 ]);
 
 function toTitleCase(str) {
@@ -355,9 +355,12 @@ function cleanCarModelName(brandName, rawName) {
   let clean = rawName.replace(/\//g, ' ').replace(/\s+/g, ' ').trim();
   clean = clean.replace(/\(novo\)|\(nova\)|\(new\)|\(todas as versões\)|\(modelo antigo\)|\(antigo\)/gi, '').trim();
 
+  const brandCleanForLookup = cleanBrandName(brandName);
+
   // Check known family rules first
   for (const family of KNOWN_CAR_FAMILIES) {
-    if (family.match.test(clean)) {
+    const brandOk = !family.brands || family.brands.includes(brandCleanForLookup);
+    if (brandOk && family.match.test(clean)) {
       return { finalName: family.name, original: rawName };
     }
   }
@@ -400,9 +403,11 @@ function cleanCarModelName(brandName, rawName) {
   // Strip brand name from start if present
   const brandWords = brandClean.toUpperCase().split(' ');
   while (true) {
-    const firstWord = clean.trim().split(' ')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
+    const parts = clean.trim().split(' ');
+    const firstWord = parts[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
     if (firstWord && brandWords.includes(firstWord)) {
-      clean = clean.trim().substring(clean.trim().indexOf(' ') + 1).trim();
+      if (parts.length === 1) break;
+      clean = parts.slice(1).join(' ').trim();
     } else {
       break;
     }

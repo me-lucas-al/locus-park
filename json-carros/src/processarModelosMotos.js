@@ -201,9 +201,11 @@ function cleanMotoModelName(brandName, rawName) {
   // Remove brand name from start if present
   const brandWords = brandClean.toUpperCase().split(' ');
   while (true) {
-    const firstWord = clean.trim().split(' ')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
+    const parts = clean.trim().split(' ');
+    const firstWord = parts[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
     if (firstWord && brandWords.includes(firstWord)) {
-      clean = clean.trim().substring(clean.trim().indexOf(' ') + 1).trim();
+      if (parts.length === 1) break;
+      clean = parts.slice(1).join(' ').trim();
     } else {
       break;
     }
