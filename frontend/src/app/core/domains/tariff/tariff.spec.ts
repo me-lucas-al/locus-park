@@ -8,11 +8,14 @@ import {
   TariffConfigurationResponse,
   PricingConfigurationRequest,
   PricingConfigurationResponse,
+  VehicleTypePricingBatchRequest,
+  VehicleTypeMultiplierResponse,
 } from './tariff.types';
 import { environment } from '@environments/environment';
 
 const TARIFF_URL = `${environment.apiUrl}configurations/tariff`;
 const PRICING_URL = `${environment.apiUrl}configurations/pricing`;
+const VEHICLE_PRICING_URL = `${environment.apiUrl}configurations/vehicle-pricing`;
 
 const mockTariffResponse: TariffConfigurationResponse = {
   id: 'tc-1', companyId: 'c-1', toleranceMinutes: 10,
@@ -35,6 +38,18 @@ const mockPricingRequest: PricingConfigurationRequest = {
   dailyTriggerHours: 12,
   dailyValue: 80,
   monthlyBaseValue: 300,
+};
+
+const mockVehiclePricingResponse: VehicleTypeMultiplierResponse[] = [
+  { id: 'vp-1', vehicleType: 'CAR', multiplier: 1.0, label: 'Carro' },
+  { id: 'vp-2', vehicleType: 'MOTORCYCLE', multiplier: 0.6, label: 'Moto' },
+];
+
+const mockVehiclePricingRequest: VehicleTypePricingBatchRequest = {
+  multipliers: [
+    { vehicleType: 'CAR', multiplier: 1.0 },
+    { vehicleType: 'MOTORCYCLE', multiplier: 0.6 },
+  ],
 };
 
 describe('TariffService', () => {
@@ -101,5 +116,22 @@ describe('TariffService', () => {
     expect(req.request.method).toBe('DELETE');
     req.flush(null);
     expect(completed).toBe(true);
+  });
+
+  it('deve buscar multiplicadores por tipo de veículo via GET', async () => {
+    const promise = firstValueFrom(service.getVehiclePricing());
+    const req = httpMock.expectOne(VEHICLE_PRICING_URL);
+    expect(req.request.method).toBe('GET');
+    req.flush(mockVehiclePricingResponse);
+    expect(await promise).toEqual(mockVehiclePricingResponse);
+  });
+
+  it('deve atualizar multiplicadores por tipo de veículo via PUT', async () => {
+    const promise = firstValueFrom(service.updateVehiclePricing(mockVehiclePricingRequest));
+    const req = httpMock.expectOne(VEHICLE_PRICING_URL);
+    expect(req.request.method).toBe('PUT');
+    expect(req.request.body).toEqual(mockVehiclePricingRequest);
+    req.flush(mockVehiclePricingResponse);
+    expect(await promise).toEqual(mockVehiclePricingResponse);
   });
 });

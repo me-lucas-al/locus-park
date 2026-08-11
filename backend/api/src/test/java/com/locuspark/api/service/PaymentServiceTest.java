@@ -1,12 +1,13 @@
 package com.locuspark.api.service;
 
+import com.locuspark.api.entity.Company;
 import com.locuspark.api.entity.Partnership;
 import com.locuspark.api.entity.PricingConfiguration;
 import com.locuspark.api.entity.TariffConfiguration;
 import com.locuspark.api.entity.Ticket;
-import com.locuspark.api.enums.DiscountType;
-import com.locuspark.api.entity.Company;
 import com.locuspark.api.entity.Vehicle;
+import com.locuspark.api.entity.VehicleTypePriceMultiplier;
+import com.locuspark.api.enums.DiscountType;
 import com.locuspark.api.enums.VehicleType;
 import com.locuspark.api.repository.VehicleTypePriceMultiplierRepository;
 import com.locuspark.api.service.payment.GrossStayChargeCalculator;
@@ -30,22 +31,21 @@ import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-@DisplayName("Testes de Serviço de Pagamento - PaymentService")
+@DisplayName("Testes de PaymentService")
 class PaymentServiceTest {
 
-    private static final ZoneId PATIO_ZONE = ZoneId.of("America/Sao_Paulo");
-
-    private static Instant at(LocalDateTime local) {
-        return local.atZone(PATIO_ZONE).toInstant();
-    }
-
     private PaymentService paymentService;
-    private VehicleTypePriceMultiplierRepository multiplierRepository;
     private TariffConfiguration tariff;
     private PricingConfiguration pricing;
+    private VehicleTypePriceMultiplierRepository multiplierRepository;
+
+    private static final ZoneId ZONE = ZoneId.of("America/Sao_Paulo");
+
+    private static Instant at(LocalDateTime ldt) {
+        return ldt.atZone(ZONE).toInstant();
+    }
 
     @BeforeEach
     void setUp() {
@@ -116,6 +116,62 @@ class PaymentServiceTest {
             StayCharge charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
 
             assertThat(charge.gross()).isEqualByComparingTo(charge.net().add(charge.discount()));
+        }
+
+        @Test
+        @DisplayName("Deve aplicar multiplicador de preço de moto (0.6x) no cálculo da estadia")
+        void appliesMotorcycleMultiplierToStayCharge() {
+            UUID companyId = UUID.randomUUID();
+            Company company = Company.builder().id(companyId).build();
+            Vehicle vehicle = Vehicle.builder().type(VehicleType.MOTORCYCLE).build();
+            Ticket ticket = Ticket.builder()
+                    .company(company)
+                    .vehicle(vehicle)
+                    .enteredAt(at(LocalDateTime.of(2026, 1, 1, 10, 0)))
+                    .build();
+            Instant exitTime = at(LocalDateTime.of(2026, 1, 1, 11, 0));
+
+            VehicleTypePriceMultiplier multiplierEntity = VehicleTypePriceMultiplier.builder()
+                    .company(company)
+                    .vehicleType(VehicleType.MOTORCYCLE)
+                    .multiplier(BigDecimal.valueOf(0.60))
+                    .build();
+
+            when(multiplierRepository.findByCompanyIdAndVehicleType(companyId, VehicleType.MOTORCYCLE))
+                    .thenReturn(Optional.of(multiplierEntity));
+
+            StayCharge charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
+
+            assertThat(charge.gross()).isEqualByComparingTo(BigDecimal.valueOf(6.00));
+            assertThat(charge.net()).isEqualByComparingTo(BigDecimal.valueOf(6.00));
+        }
+
+        @Test
+        @DisplayName("Deve aplicar multiplicador de caminhão (1.5x) no cálculo da estadia")
+        void appliesTruckMultiplierToStayCharge() {
+            UUID companyId = UUID.randomUUID();
+            Company company = Company.builder().id(companyId).build();
+            Vehicle vehicle = Vehicle.builder().type(VehicleType.TRUCK).build();
+            Ticket ticket = Ticket.builder()
+                    .company(company)
+                    .vehicle(vehicle)
+                    .enteredAt(at(LocalDateTime.of(2026, 1, 1, 10, 0)))
+                    .build();
+            Instant exitTime = at(LocalDateTime.of(2026, 1, 1, 11, 0));
+
+            VehicleTypePriceMultiplier multiplierEntity = VehicleTypePriceMultiplier.builder()
+                    .company(company)
+                    .vehicleType(VehicleType.TRUCK)
+                    .multiplier(BigDecimal.valueOf(1.50))
+                    .build();
+
+            when(multiplierRepository.findByCompanyIdAndVehicleType(companyId, VehicleType.TRUCK))
+                    .thenReturn(Optional.of(multiplierEntity));
+
+            StayCharge charge = paymentService.calculateStayCharge(ticket, exitTime, tariff, pricing);
+
+            assertThat(charge.gross()).isEqualByComparingTo(BigDecimal.valueOf(15.00));
+            assertThat(charge.net()).isEqualByComparingTo(BigDecimal.valueOf(15.00));
         }
 
         @Test
