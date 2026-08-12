@@ -139,9 +139,9 @@ import { getVehicleColorHex } from '../../utils/colors';
       padding: 2px;
     }
     .truck-svg {
-      width: 82%;
-      height: 85%;
-      max-height: 88px;
+      width: 92%;
+      height: 92%;
+      max-height: 96px;
       transition: all 0.3s ease;
     }
   `]
