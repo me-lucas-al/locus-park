@@ -18,8 +18,8 @@ A aplicação utiliza uma arquitetura totalmente desacoplada, dividida em duas b
 
 ## ✨ Funcionalidades Principais
 
-* *Isolamento Multi-Tenant Estrito*:
-    * Arquitetura de banco compartilhado com coluna discriminadora (company_id). Toda requisição intercepta o token JWT e valida o pátio correto no servidor, impedindo vazamento de dados entre concorrentes.
+* *Separação Total entre Clientes*:
+    * Arquitetura de banco compartilhado com coluna identificadora (company_id). Toda requisição intercepta o token JWT e valida o pátio correto no servidor, impedindo vazamento de dados entre concorrentes.
 
 * *Hierarquia de Níveis de Acesso (RBAC Blindado)*:
     * SUPER_ADMIN: Controle máster global sobre as empresas cadastradas no SaaS.
