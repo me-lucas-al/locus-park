@@ -39,7 +39,7 @@ public class SecurityFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
             String origin = request.getHeader("Origin");
-            if ("http://localhost:4200".equals(origin) || "https://locus-park.vercel.app".equals(origin)) {
+            if ("http://localhost:4200".equals(origin) || "https://locus-park.vercel.app".equals(origin) || "https://locuspark.lucasalmeidasouza.com".equals(origin)) {
                 response.setHeader("Access-Control-Allow-Origin", origin);
             } else {
                 response.setHeader("Access-Control-Allow-Origin", "https://locus-park.vercel.app");
