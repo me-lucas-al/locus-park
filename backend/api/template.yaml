@@ -15,7 +15,7 @@ Parameters:
 Globals:
   Function:
     Runtime: java21
-    Architectures: [x86_64]
+    Architectures: [arm64]
     MemorySize: 1536
     Timeout: 30
     SnapStart:
